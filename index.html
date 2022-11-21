@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript - More effect</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<style>
+		/*.hidden-content{
+			display: none;
+		}
+
+		.hidden-content.btn-reveal{
+			display: block;
+		}
+
+		#modal{
+			background-color:#fff;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform:translate(-50%,-50%);
+			width: 200px;
+			height: 100px;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 1.5rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			animation:animatemodal .3s linear;
+		}
+
+		#modal-container{
+			display: none
+		}
+
+		@keyframes animatemodal {
+			from{
+				top:-300px;
+				opacity: 0
+			}
+			to{
+				top:50%;
+				opacity: 1;
+			}
+		}
+
+		/*accordion*/
+		/*#accordion {
+            border: 1px solid black;
+            display: inline-block;
+            width: 400px;
+        }
+ 
+        #accordion p {
+            margin: 1em;
+        }
+ 
+        .button {
+            float: right;
+            background: #5555ff;
+            padding: 0.1em 1em 0.1em 1em;
+            color: white;
+            cursor: pointer;
+        }
+ 
+        #extra {
+            display: none;
+        }
+ 
+        .head {
+            background: #ccccff;
+            padding: 1em;
+        }*/
+
+         table {
+		   margin-top: 20px;
+		   border: 1px solid silver;
+		   width: 500px;
+		 }
+
+		 th {
+		   text-align: left;
+		 }
+		 
+		 button {
+		   margin-left: 15px;
+		 }
+
+
+
+	</style>
+</head>
+<body>
+
+	<hr/>
+		<span id="latitude"></span>
+		<span id="longitude"></span>
+	<hr/>
+	<hr/>
+		<span id="title"></span>
+		<span id="body"></span>
+	<hr/>
+
+	 	<div id="container">
+		   <table style="display:none">
+		     <thead>
+		       <tr>
+		         <th>Host</th>
+		         <th>Name</th>
+		         <th>ID</th>
+		       </tr>
+		     </thead>
+		     <tbody>
+		       <tr></tr>
+		     </tbody>
+		   </table>
+		</div>
+
+
+	<form>
+		<input type="radio" name="gender" value="female" />
+		<input type="radio" name="gender" value="male" />
+		<input type="radio" name="gender" value="non-binary" />
+		<button type="button" onclick="myFunction()" >Display your label</button>
+		<input type="text" id="results" size="50" />
+	</form>
+
+
+	<input type="radio" name="option " id="r1" value="r1" />
+	<input type="radio" name="option " id="r2" value="r2"/>
+	<button id="btn">Click</button>
+	
+
+	<!-- <img src="https://via.placeholder.50]??" alt="" onerror="this.onerror=null;this.src='https://placeimg.com/200/300/animals'">
+
+	<input type="text" value="nitesh" onfocus="this.value=''">
+
+	<textarea name="" id="" cols="30" rows="10"></textarea>
+
+	<select name="" id="">
+		<option value="">option 1</option>
+		<option value="">option 2</option>
+		<option value="">option 3</option>
+		<option value="">option 4</option>
+	</select> -->
+	<!-- <div class="container">
+		<h1 id="main-heading">Favorite movie franchise</h1>
+		<ul>
+			<li class="list-items">
+				item 1
+			</li>
+			<li class="list-items">
+				item 2
+			</li>
+			<li class="list-items">
+				item 3
+			</li>
+			<li class="list-items">
+				item 4
+			</li>
+			<li class="list-items">
+				item 5
+			</li>
+		</ul>
+	</div> -->
+
+		<!-- <h1 id="main-heading">Heading</h1>
+		<div class="container">
+			<div class="boxes box-1">
+				<h1 id="heading">Example 1</h1>
+				<button onclick="alert('I love javascript')">Enter</button>
+			</div>
+			<div class="boxes box-2">
+				<h1 id="heading">Example 2</h1>
+				<button class="btn-2">Enter</button>
+			</div>
+			<div class="boxes box-3">
+				<h1 id="heading">Example 3</h1>
+				<button class="btn-3">Enter</button>
+			</div>
+		</div> -->
+
+		<!-- <h1 id="main-heading">Event listeners</h1>
+
+		<div class="container">
+			<button class="btn-reveal boxes">Reveal more</button>
+			<div class="hidden-content boxes">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+		</div> -->
+
+		<!-- <div class="div2">
+			2
+			<div class="div1">
+				1
+				<button>Click</button>
+			</div>
+		</div> -->
+
+		<!-- <ul id="sports">
+			<li id="football">Football</li>
+			<li id="basketball">Basketball</li>
+			<li id="boxing">boxing</li>
+			<li id="tennis">tennis</li>
+			<li id="golf">golf</li>
+		</ul> -->
+
+		<!-- <div class="container">
+			<div class="header">
+				<h2>js quote generator</h2>
+
+			</div>
+			<div class="main-content">
+				<div class="text-area">
+					<span class="quote">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</span>
+				</div>
+				<div class="person">Nitesh  Khatri</div>
+				<div class="button-area">
+					<button id="new-quote">New Quote</button>
+				</div>
+			</div>
+		</div> -->
+
+		<!-- <button id="btnopen">Where is our modal</button>
+		<div id="modal-container">
+			<div id="modal">
+				<p>here i am!</p>
+				<button id="btnclose">Remove</button>
+			</div>
+		</div> -->
+
+		<!-- <div id="accordion">
+		    <div class="head">DOM Manipulations Exercise <span class="button" onclick="toggle()">More</span></div>
+		    <div id="extra">
+		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+		            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+		            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+		            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+		            anim id est laborum.</p>
+		    </div>
+		</div> -->
+	
+
+	<script type="text/javascript" src='custom.js'></script>
+</body>
+</html>

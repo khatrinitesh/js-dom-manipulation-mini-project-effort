@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Zero Depreciation",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/DEPR_2.png",
+    "content": "When you make a claim, depreciation on parts is normally charged to you. with this add-on, the insurer will bear the cost. An extremely important add-on to have, especially for car owners. ",
+    "addonPlanCode": "DEPR",
+    "key": "isNillDepreciation",
+    "idKey": 0,
+    "existingAddon": "depreciationInPreviousPolicy"
+  },
+  {
+    "name": "Road Side Assistance",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/RSAC_2.png",
+    "content": "This add-on provides access to services like towing, emergency fuel, battery charge, etc. in case your vehicle breaks down on the road. Particularly useful if you tend to go on long distance trips.",
+    "addonPlanCode": "RSAC",
+    "key": "isRoadsideAssistance",
+    "idKey": 0,
+    "existingAddon": "roadSideAsstInpreviousPolicy"
+  },
+  {
+    "name": "Return To Invoice",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/INPC_2.png",
+    "content": "In case of theft or total loss of your vehicle, insurer will pay you your policy IDV. With this add-on, the insurer will add tax and registration fees to the original payout",
+    "addonPlanCode": "INPC",
+    "key": "isInvoicePrice",
+    "idKey": 0,
+    "existingAddon": "invoicePriceInpreviousPolicy"
+  },
+  {
+    "name": "Engine Protector",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/ENGI_2.png",
+    "content": "This add-on covers damage to your engine by ingress of water, leakage of lubricants, etc. Very useful add-on, especially if it rains where you live",
+    "addonPlanCode": "ENGI",
+    "key": "isEngineProtector",
+    "idKey": 0,
+    "existingAddon": "engineProtectorInPreviousPolicy"
+  },
+  {
+    "name": "Key protector cover",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/KEYC_2.png",
+    "content": "The Company hereby undertakes to pay upto an amount as stated in the Schedule, to indemnify the Insured for the cost incurred towards repairing/replacing the car keys and / or locks and/ or lockset, including the locksmith charges, upon the occurrence of theft/burglary/ loss of or damage to the keys and /or lock and /or the lockset of the Insured’s vehicle, during the Policy Period. ",
+    "addonPlanCode": "KEYC",
+    "key": "isKeyProtector",
+    "idKey": 0,
+    "existingAddon":"keyProtectInPreviousPolicy"
+  },
+  {
+    "name": "Consumables cover",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/CONS_2.png",
+    "content": "This add-on reimburses you for items that are normally consumed during repairs and are unfit for use.  You would be charged for these items separately if you choose not to opt for this cover (ex. Brake oil/lubricants/sealant)",
+    "addonPlanCode": "CONS",
+    "key": "isConsumables",
+    "idKey": 0,
+    "existingAddon": "consumablesInPreviousPolicy"
+  },
+  {
+    "name": "Loss of Personal Belongings cover",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/LOPB_2.png",
+    "content": "The Loss of personal effects(except monies, credit cards and Laptops, mobile) to the maximum of Rs.5000 or Rs.10,000, as the limits may be chosen, are paid when a loss becomes payable under own damage section of the policy. The cover is available with additional Premium of Rs 400 and Rs.650 respectively.",
+    "addonPlanCode": "LOPB",
+    "key": "isLossOfPersoanlBelongings",
+    "idKey": 0,
+    "existingAddon":"lossOfPersonalBelogInPreviousPolicy"
+  },
+  {
+    "name": "Tyre Cover",
+    "value": false,
+    "image": "https://djm4x8vku9x1o.cloudfront.net/img/ADDONS_new/TYRE_2.png",
+    "content": "Whenever replacement of tyre will be allowed it will be of the same make and specification and if tyre of similar specification is not available and replaced tyre is superior to damaged tyre then We will not be liable for betterment charges. Maximum of 4 (four) replacements will be allowed during the Period of Insurance. If damage to tyre and tube is due to the accidental damage to the insured vehicle covered under “Own Damage” section of the policy. Our liability under this cover will be restricted to the difference of depreciation percentage applied under “Own Damage” section and as mentioned above basis the unused tread depth.",
+    "addonPlanCode": "TYRE",
+    "key": "isTyreReplacement",
+    "idKey": 0,
+    "existingAddon": "typeProtectorInPreviousPolicy"
+  }
+]
