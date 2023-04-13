@@ -1,3 +1,45 @@
+const box = document.querySelector('.box');
+box.innerHTML = '<p>Hello there</p>'
+
+const firstChild = document.getElementById('#first-child');
+// firstChild.parentNode;
+
+const groceryList = document.getElementById('groceryList');
+const iceCream = document.getElementById('iceCream');
+groceryList.removeChild(iceCream)
+
+function appendLi()
+{
+  var ul = document.getElementById("lang");
+  var li = document.createElement("li");
+  var text = document.createTextNode("PHP");    
+  li.appendChild(text);
+  ul.appendChild(li);
+}
+
+// function changeImage()
+// {
+//     // var img = document.getElementById('image')
+//     // img.src = 'https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg'
+//     var img = document.getElementById('image').src;
+//     if (img.indexOf('https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg')!=-1) {
+//         document.getElementById('image').src  = 'https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-4.jpg';
+//     }
+//      else {
+//        document.getElementById('image').src = 'https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg';
+//    }
+// }
+
+var toggle = true;
+function chngimg() {
+    if (toggle === true) {
+        document.getElementById('image').src  = 'https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-4.jpg';
+    } else {
+       document.getElementById('image').src = 'https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg';
+    }
+    toggle = !toggle; 
+}
+
 const url = 'https://api.wheretheiss.at/v1/satellites/25544'
 async function getISS(){
   const response = await fetch(url)
