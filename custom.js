@@ -1,21 +1,62 @@
-const box = document.querySelector('.box');
-box.innerHTML = '<p>Hello there</p>'
 
-const firstChild = document.getElementById('#first-child');
-// firstChild.parentNode;
+// var myList = ['abc','xyz','def'];
+// var [,a] = myList;
+// console.log(a)
 
-const groceryList = document.getElementById('groceryList');
-const iceCream = document.getElementById('iceCream');
-groceryList.removeChild(iceCream)
+// console.log('hi')
 
-function appendLi()
-{
-  var ul = document.getElementById("lang");
-  var li = document.createElement("li");
-  var text = document.createTextNode("PHP");    
-  li.appendChild(text);
-  ul.appendChild(li);
-}
+// let word = 'hello \n world!';
+// console.log(word)
+// let x = 5 
+// let y = 5+5
+// console.log(y);
+// if("10" == 10){
+//   console.log('this  will execute')
+// }
+// else{
+//   console.log('this will not always execute')
+// }
+// if(x == 10){
+//   console.log('this will always execute');
+// }
+// else{
+//   console.log('this will not always execute')
+// }
+
+
+// function onContinue(){
+//   const message = confirm('do you want to join if ')
+//   if(message === true){
+//     console.log('this is confirmed')
+//     return true;
+//   }
+//   else{
+//     console.log('this is rejected')
+//     return false;
+//   }
+// }
+
+// const Element = document.getElementById('element');
+// Element.innerHTML = 'this is title heading 1'
+
+// const box = document.querySelector('.box');
+// box.innerHTML = '<p>Hello there</p>'
+
+// const firstChild = document.getElementById('#first-child');
+// // firstChild.parentNode;
+
+// const groceryList = document.getElementById('groceryList');
+// const iceCream = document.getElementById('iceCream');
+// groceryList.removeChild(iceCream)
+
+// function appendLi()
+// {
+//   var ul = document.getElementById("lang");
+//   var li = document.createElement("li");
+//   var text = document.createTextNode("PHP");    
+//   li.appendChild(text);
+//   ul.appendChild(li);
+// }
 
 // function changeImage()
 // {
@@ -30,35 +71,35 @@ function appendLi()
 //    }
 // }
 
-var toggle = true;
-function chngimg() {
-    if (toggle === true) {
-        document.getElementById('image').src  = 'https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-4.jpg';
-    } else {
-       document.getElementById('image').src = 'https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg';
-    }
-    toggle = !toggle; 
-}
+// var toggle = true;
+// function chngimg() {
+//     if (toggle === true) {
+//         document.getElementById('image').src  = 'https://digitalsynopsis.com/wp-content/uploads/2014/06/supercar-wallpapers-bugatti-4.jpg';
+//     } else {
+//        document.getElementById('image').src = 'https://cdn.statusqueen.com/mobilewallpaper/thumbnail/mobile_wallpaper45-209.jpg';
+//     }
+//     toggle = !toggle; 
+// }
 
-const url = 'https://api.wheretheiss.at/v1/satellites/25544'
-async function getISS(){
-  const response = await fetch(url)
-  const data = await response.json()
-  const {latitude,longitude} = data
-  document.getElementById('latitude').textContent = latitude
-  document.getElementById('longitude').textContent = longitude
-}
-getISS()
+// const url = 'https://api.wheretheiss.at/v1/satellites/25544'
+// async function getISS(){
+//   const response = await fetch(url)
+//   const data = await response.json()
+//   const {latitude,longitude} = data
+//   document.getElementById('latitude').textContent = latitude
+//   document.getElementById('longitude').textContent = longitude
+// }
+// getISS()
 
-const url2 = 'https://jsonplaceholder.typicode.com/posts'
-async function getJSON(){
-  const response = await fetch(url2)
-  const data2 = await response.json()
-  const {title,body} = data2
-  document.getElementById('title').textContent = title
-  document.getElementById('body').textContent = body
-}
-getJSON()
+// const url2 = 'https://jsonplaceholder.typicode.com/posts'
+// async function getJSON(){
+//   const response = await fetch(url2)
+//   const data2 = await response.json()
+//   const {title,body} = data2
+//   document.getElementById('title').textContent = title
+//   document.getElementById('body').textContent = body
+// }
+// getJSON()
 
 // let jsonObj = {
 //     name:'harry',
@@ -313,15 +354,50 @@ getJSON()
 // 	}
 // })
 
-function toggle() {
-    let text = document.getElementById("extra");
-    let btn = document.getElementsByClassName("button")[0];
+// function toggle() {
+//     let text = document.getElementById("extra");
+//     let btn = document.getElementsByClassName("button")[0];
 
-    if (text.style.display === "none") {
-        text.style.display = "block";
-        btn.textContent = "Less";
-    } else {
-        text.style.display = "none";
-        btn.textContent = "More";
-    }
-}
+//     if (text.style.display === "none") {
+//         text.style.display = "block";
+//         btn.textContent = "Less";
+//     } else {
+//         text.style.display = "none";
+//         btn.textContent = "More";
+//     }
+// }
+
+
+// build in functions
+// MATH FUNCTIONS
+// console.log(Math.round(11.11));
+// console.log(Math.random() * 100);
+// console.log(Math.floor(11.11));
+// console.log(Math.sqrt(81));
+// console.log(Math.sin(11.11));
+// console.log([12,44,55].length)
+// const num = [12,6,55]
+// // ARRAY FUNCTIONS
+// console.log(num.sort((a,b) => a-b))
+// console.log(num.filter((item) => item > 15))
+// console.log(num.map((item) => item))
+// console.log(num.reduce((a,b) => a+b))
+
+// // STRING FUNCTIONS
+// console.log(num.length)
+// console.log(num.indexOf())
+// console.log('nitesh'.toUpperCase())
+// console.log('NITESH'.toLowerCase())
+// console.log('nitesh'.replace('sameet'))
+
+// // DATE FUNCTIONS 
+// const date = new Date();
+// console.log(Date.now())
+// console.log(date.toLocaleDateString())
+// console.log(date.toISOString())
+// console.log(date.getTime())
+
+// console.log(null == undefined)
+// console.log(null === undefined)
+// console.log(null != undefined)
+
