@@ -401,3 +401,117 @@
 // console.log(null === undefined)
 // console.log(null != undefined)
 
+
+// "Important Window methods in JavaScript 
+// alert('hello world');
+// let name = prompt('please enter your name')
+// const btn = document.getElementById('btn');
+// btn.addEventListener('click',function(){
+//     window.open('https://www.w3schools.com/howto/howto_css_topnav_centered.asp')
+// })
+// window.scrollTo(0,500)
+// window.scrollBy(0,100)
+// window.focus();
+// window.blur();
+// window.location.reload();
+// let currenUrl = window.location.href;
+// window.history.back();
+// window.history.foward();
+// let userAgentString = window.navigator.userAgent;
+// let windowWidth = window.innerWidth;
+// let windowHeight = window.innerHeight;
+
+// Important DOM methods in JavaScript
+// document.getElementById('myDiv').innerHTML = 'hello world';
+// var x = document.getElementsByClassName('myClass').innerHTML = 'hello world';
+// let data = [].map.call(x,elem => elem.textContent)
+// document.write(data);
+
+// let findEleByClass = () => {
+//     let myclass = document.getElementsByClassName('birds cannot_fly');  // With multiple class names.
+//     let msg = document.getElementById('msg');
+   
+//    msg.innerHTML = '';
+
+//     for (i = 0; i <= myclass.length - 1; i++) {
+//         msg.innerHTML +=  myclass[i].innerHTML + '<br />';
+//     }
+// }
+
+// const arr = [1, 2, 3, 4, 5];
+// const res = arr.map(function(x){
+//     return x * 2
+// })
+// console.log(res)
+
+// const numbers = new Set([1,2,3,4,3,2,1]);
+// const word = new Set(['nitesh','nitesh','sameet','sameet','arvind','urvashi'])
+// console.log(numbers);
+// console.log(word);
+
+// var x = document.getElementsByTagName('p');
+// var x = document.querySelector('.myClass');
+// var x = document.querySelectorAll('p');
+// var x = document.createElement('p');
+// document.getElementById('mychild').appendChild('p');
+// document.getElementById('mychild').removeChild('p');
+// document.getElementById('myImage').setAttribute('src','newimage.jpg');
+// var x = document.getElementById('myImage').getAttribute('src');
+
+
+// let x = 'abc'
+// x[1] = 'd'
+// console.log(x);
+
+// for(var i=0;i<5;i++){
+//     setTimeout(() => console.log(i),1)
+// }
+
+// for(var i=0;i<10;i++){
+//     setTimeout(() => console.log(i),100)
+// }
+
+// const json = '{"user1":"John","user2":"Kate","user3":"Peter"}';
+// const map = new Map(Object.entries(JSON.parse(json)))
+// console.log(map)
+
+// const obj = {
+//     user1: 'John',
+//     user2: 'Kate',
+//     user3: 'Peter',
+//   };
+
+//   const arr = Object.entries(obj)
+//   console.log(arr);
+
+
+// const json =
+//   '{"user1":"John","user2":"Kate","user3":"Peter"}';
+// const map = new Map(Object.entries(JSON.parse(json)));
+
+// console.log(JSON.stringify(Object.fromEntries(map)))
+
+// let userName = "Nitesh Khatri";
+// let currentYear = 2023;
+// function greetUser(userName,currentYear){
+//     console.log('hello, ' + userName + '!welcome to' + currentYear+ '.')
+// }
+// greetUser(userName,currentYear)
+
+function User(fName,lName){
+//     this.fName = fName;
+//     this.lName = lName;
+// }
+
+// const user = new User('nitesh','khatri');
+// console.log(user);
+
+// class Product{
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+
+// const product = new Product('book',19.99)
+// console.log(product)
