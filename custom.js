@@ -498,7 +498,7 @@
 // }
 // greetUser(userName,currentYear)
 
-function User(fName,lName){
+// function User(fName,lName){
 //     this.fName = fName;
 //     this.lName = lName;
 // }
@@ -515,3 +515,23 @@ function User(fName,lName){
 
 // const product = new Product('book',19.99)
 // console.log(product)
+
+// const add = (a,b) =>{
+//     return a +b 
+// }
+// console.log(add(10,20))
+
+// function add(a,b){
+//     return a+b 
+// }
+// console.log(add(10,20))
+
+// console.log('nitesh khatri')
+
+// console.log(11+22*22)
+// const a = 'nitesh khatri'
+// const b = 'sameet khatri'
+// console.log(...a,...b)
+
+// const word = 'nitesh'
+// console.log(word.split(''));
