@@ -535,3 +535,198 @@
 
 // const word = 'nitesh'
 // console.log(word.split(''));
+
+// const signUp = (e) => {
+//     e.preventDefault();
+//     const username = document.getElementById('username').value;
+//     const email = document.getElementById('email').value;
+//     const password = document.getElementById('password').value;
+
+//     const user = {
+//         username:username,
+//         email:email,
+//         password:password
+//     }
+
+//     const json = JSON.stringify(user);
+//     localStorage.setItem(user,json);
+//     alert('user added');
+// }
+
+// var x = 2 
+// var y = 2 
+// console.log("==", x == y)
+// console.log("===",x === y)
+// console.log("!=",x != y)
+// console.log("!==",x !== y)
+
+// js array methods 
+// const arr = ['banana','apple','cherry']
+// const iterator = arr.values();
+// for(const value of iterator){
+//     console.log(value)
+// }
+// console.log(arr.length)
+// arr.reverse();
+// console.log(arr)
+// arr.sort();
+// console.log(arr)
+// console.log(arr.at(1));
+// arr.fill('orange',1,2)
+// console.log(arr)
+// const obj = {
+//     0:'apple',
+//     1:'banana',
+//     2:'cherry',
+//     length:3
+// }
+// console.log(obj)
+// const result = Array.from(obj)
+// console.log(result)
+// const str = arr.join('-')
+// console.log(str)
+// const strnew = arr.toString()
+// console.log(strnew)
+// arr.pop()
+// console.log(arr)
+
+// let fruits = ["apple","Banana","cherry"]
+// fruits.forEach(function(item){
+//     console.log(item)
+// })
+
+// let fruits = ["apple","Banana","cherry"]
+// let shiftFruit = fruits.shift();
+// console.log(shiftFruit)
+// console.log(fruits)
+// let numbers = [1,2,3,4,5]
+// numbers.copyWithin(2,0,2)
+// console.log(numbers)
+
+// let fruits = ['apple','banana']
+// fruits.push('cherry','grape')
+// console.log(fruits)
+
+// let fruits = ['apple','banana']
+// fruits.unshift('mango','watermelon')
+// console.log(fruits)
+
+// let fruits = ['apple','banana']
+// let moreFruits = ['cherry','mango']
+// let allFruits = fruits.concat(moreFruits)
+// console.log(allFruits)
+
+// const fruits = ['apple','banana','cherry','orange'];
+// fruits.splice(2,1,'mango','kiwi')
+// console.log(fruits);
+
+// const numbers = [1,[2,[3]],4]
+// const flatnumbers = numbers.flat(Infinity)
+// console.log(flatnumbers)
+
+// const numbers = [1,2,3,4,5,3]
+// const lastIndexOf = numbers.lastIndexOf(3);
+// console.log(lastIndexOf)
+
+// const arr = [5,10,15,20]
+// const index = arr.indexOf(5)
+// console.log(index)
+
+// const arr = Array.of(1,2,3,'four',true)
+// console.log(arr)
+
+// const arr = [2,4,6,8]
+// const isEven = (num) => num % 2 === 0
+// const result = arr.every(isEven)
+// console.log(isEven)
+// console.log(result)
+
+// const arr = [1,2,3,4,5]
+// const slicedArr = arr.slice(2,4)
+// console.log(slicedArr)
+
+// const arr = [1,2,3]
+// const result = arr.flatMap(x => x *2)
+// console.log(result)
+
+// const arr = [10,20,30,40,50]
+// const greaterThen = arr.filter((item) => item > 35)
+
+// const examplegreater = (num) => num > 35 
+// const result = arr.find(examplegreater)
+// console.log(greaterThen)
+// console.log(result)
+
+// const arr = [10,20,30,40,50]
+// const answer = arr.includes(20)
+// console.log(answer)
+
+// const arr = ['a','b','c','d']
+// const iterator = arr.entries()
+// console.log(iterator.next().value)
+// console.log(iterator.next().value)
+// console.log(iterator.next().value)
+// console.log(iterator.next().value)
+
+// const arr = [44,55,66,77]
+// console.log(arr.reduce((a,b) => a+b))
+// console.log(arr.reduceRight((a,b) => a+b))
+
+// const fruits = ['apple','banana','mango']
+// console.log(Array.isArray(fruits));
+// const number = 123
+// console.log(Array.isArray(number))
+
+// const myObj = {a:1,b:2,c:3}
+// const keysArray = Object.keys(myObj)
+// console.log(keysArray)
+
+// const numbers = [1,4,3,4,4,5]
+// console.log(numbers.map((v) => v))
+
+// BOM => BROWSER OBJECT WINDOW the window object to see all the methods and properties
+console.log(window)
+
+// window controls
+console.log(window.open)
+console.log(window.close)
+console.log(window.moveTo)
+
+// navigation
+console.log(navigator.cookieEnabled)
+console.log(navigator.appName)
+console.log(navigator.onLine)
+console.log(navigator.platform)
+console.log(navigator.language)
+
+// location
+console.log(window.location.href);
+console.log(window.location.hostname);
+console.log(window.location.pathname);
+console.log(window.location.protocol);
+console.log(window.location.assign)
+
+// history
+// console.log(window.history.back());
+// console.log(window.history.forward());
+
+// popups
+// console.log(window.alert())
+// console.log(alert())
+// console.log(confirm())
+// console.log(prompt())
+
+// screen
+// console.log(screen.width)
+// console.log(screen.height)
+// console.log(screen.availHeight)
+// console.log(screen.availWidth)
+// console.log(screen.colorDepth)
+// console.log(screen.pixelDepth)
+
+// timeing events can be written without window
+// console.log(window.setTimeout());
+// console.log(setTimeout())
+// console.log(setInterval())
+// console.log(clearTimeout())
+// console.log(clearInterval())
