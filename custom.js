@@ -1,3 +1,10 @@
+// var targetee = document.querySelector('#box');
+// targetee.addEventListener('mousemove',function(e){
+//     var x = e.offsetX
+//     var y = e.offsetY
+//     console.log('offset x :' + x + 'offset y' + y )
+    
+// })
 
 // var myList = ['abc','xyz','def'];
 // var [,a] = myList;
@@ -685,26 +692,26 @@
 // console.log(numbers.map((v) => v))
 
 // BOM => BROWSER OBJECT WINDOW the window object to see all the methods and properties
-console.log(window)
+// console.log(window)
 
-// window controls
-console.log(window.open)
-console.log(window.close)
-console.log(window.moveTo)
+// // window controls
+// console.log(window.open)
+// console.log(window.close)
+// console.log(window.moveTo)
 
-// navigation
-console.log(navigator.cookieEnabled)
-console.log(navigator.appName)
-console.log(navigator.onLine)
-console.log(navigator.platform)
-console.log(navigator.language)
+// // navigation
+// console.log(navigator.cookieEnabled)
+// console.log(navigator.appName)
+// console.log(navigator.onLine)
+// console.log(navigator.platform)
+// console.log(navigator.language)
 
-// location
-console.log(window.location.href);
-console.log(window.location.hostname);
-console.log(window.location.pathname);
-console.log(window.location.protocol);
-console.log(window.location.assign)
+// // location
+// console.log(window.location.href);
+// console.log(window.location.hostname);
+// console.log(window.location.pathname);
+// console.log(window.location.protocol);
+// console.log(window.location.assign)
 
 // history
 // console.log(window.history.back());
@@ -730,3 +737,5 @@ console.log(window.location.assign)
 // console.log(setInterval())
 // console.log(clearTimeout())
 // console.log(clearInterval())
+
+
