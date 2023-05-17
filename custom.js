@@ -738,4 +738,69 @@
 // console.log(clearTimeout())
 // console.log(clearInterval())
 
+var target = document.querySelector('#box');
+// CtrlKey 
+// target.addEventListener('click',function(e){
+//     const econtrol = e.ctrlKey
+//     if(econtrol){
+//         console.log('yes it is control')
+//     }
+//     else{
+//         console.log('yes it is not control')
+//     }
+    
+// })
+// AltKey 
+// target.addEventListener('click',function(e){
+//     const econtrol = e.altKey
+//     if(econtrol){
+//         console.log('yes it is control')
+//     }
+//     else{
+//         console.log('yes it is not control')
+//     }
+    
+// })
+// ShiftKey 
+// target.addEventListener('click',function(e){
+//     const econtrol = e.shiftKey
+//     if(econtrol){
+//         console.log('yes it is control')
+//     }
+//     else{
+//         console.log('yes it is not control')
+//     }
+    
+// })
+// // MetaKey 
+// target.addEventListener('click',function(e){
+//     const econtrol = e.metaKey
+//     if(econtrol){
+//         console.log('yes it is control')
+//     }
+//     else{
+//         console.log('yes it is not control')
+//     }
+    
+// })
+
+target.addEventListener('click',function(e){
+    console.clear();
+    var k;
+    switch(true){
+        case e.metaKey: k = 'Meta key';
+        break;
+        case e.ctrlKey: k = 'Ctrl key';
+        break;
+        case e.altKey: k = 'Alternate key';
+        break;
+        case e.shiftKey: k = 'Shift key';
+        break;
+        default: k ='other key pressed';
+        break;
+    }
+    console.log(k);
+})
+
+
 
