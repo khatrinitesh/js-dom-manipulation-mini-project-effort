@@ -784,23 +784,24 @@ var target = document.querySelector('#box');
     
 // })
 
-target.addEventListener('click',function(e){
-    console.clear();
-    var k;
-    switch(true){
-        case e.metaKey: k = 'Meta key';
-        break;
-        case e.ctrlKey: k = 'Ctrl key';
-        break;
-        case e.altKey: k = 'Alternate key';
-        break;
-        case e.shiftKey: k = 'Shift key';
-        break;
-        default: k ='other key pressed';
-        break;
-    }
-    console.log(k);
-})
+// target.addEventListener('click',function(e){
+//     console.clear();
+//     var k;
+//     switch(true){
+//         case e.metaKey: k = 'Meta key';
+//         break;
+//         case e.ctrlKey: k = 'Ctrl key';
+//         break;
+//         case e.altKey: k = 'Alternate key';
+//         break;
+//         case e.shiftKey: k = 'Shift key';
+//         break;
+//         default: k ='other key pressed';
+//         break;
+//     }
+//     console.log(k);
+// })
 
-
-
+const github = 'https://api.github.com/users/khatrinitesh'
+const user = fetch(github);
+console.log(user);
