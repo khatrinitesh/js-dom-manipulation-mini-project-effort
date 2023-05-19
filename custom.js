@@ -738,7 +738,7 @@
 // console.log(clearTimeout())
 // console.log(clearInterval())
 
-var target = document.querySelector('#box');
+// var target = document.querySelector('#box');
 // CtrlKey 
 // target.addEventListener('click',function(e){
 //     const econtrol = e.ctrlKey
@@ -802,6 +802,336 @@ var target = document.querySelector('#box');
 //     console.log(k);
 // })
 
-const github = 'https://api.github.com/users/khatrinitesh'
-const user = fetch(github);
-console.log(user);
+// const github = 'https://api.github.com/users/khatrinitesh'
+// const user = fetch(github);
+// console.log(user);
+
+// console.log(('b'+' a'+ + 'a'+'a').toLowerCase())
+
+// window.addEventListener('keyup',() => {
+//     console.log('keyup')
+// })
+// window.addEventListener('keydown',() => {
+//     console.log('keydown')
+// })
+// window.addEventListener('keypress',() => {
+//     console.log('keypress')
+// })
+
+// var a = 10
+// console.log(a)
+// var b = 100;
+// console.log(this.a)
+// console.log(this.b)
+// console.log(window.b)
+
+// var a = 10
+// console.log(a);
+
+// var a = 100
+// {
+//     var a = 10
+//     let b = 20
+//     const c = 30
+//     console.log(a)
+//     console.log(b)
+//     console.log(c)
+// }
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+// const c = 100
+// function x(){
+//     const c = 30
+//     console.log(c)
+// }
+// console.log(c)
+
+// let d = 20
+// {
+//     var a = 20
+// }
+
+// const a = 20
+// {
+//     const a  = 100;
+//     console.log(a);
+// }
+
+// function a(){
+//     const x = 10
+//     function b(){
+//         console.log(x)
+//     }
+//     b()
+//     const yy = 1000
+//     function c(){
+//         console.log(yy)
+//     }
+//     return c
+// }
+// var z = a();
+// console.log(z)
+// z();
+
+
+// for (var i = 0; i < 3; i++) {
+//     setTimeout(function log() {
+//       console.log(i); // What is logged?
+//     }, 1000);
+//   }
+
+// for(var i=0;i<10;i++){
+//     setTimeout(function example(){
+//         console.log(i)
+//     },1000)
+// }
+// function multiply(num1, num2) {
+//     return num1 * num2
+//   }
+//   console.log(multiply(10,20))
+
+// var target = document.querySelector('#box');
+// target.addEventListener('mousedown',function(e){
+//     var text = e.button
+//     var color;
+//     switch(text){
+//         case 0:color = 'green';
+//         break;
+//         case 1:color ='red';
+//         break;
+//         case 2:color = 'blue';
+//         break;
+//         case 3:color = 'orange';
+//         break;
+//     }
+//     target.style.backgroundColor = color;
+//     console.log(color);
+// });
+
+// function multiply(num1,num2){
+//     if(num1 !== num2){
+//         return num1 * num2
+//     }
+//     return function doMultiply(num2){
+//         return num1 * num2
+//     }
+// }
+// console.log(multiply(102,20))
+
+// var carName = "Volvo";
+// // code here can use window.carName
+// document.getElementById("demo").innerHTML = "I can display " + window.carName;
+
+// function x(){
+//     var i = 10
+//     setTimeout(function (){
+//         console.log(i)
+//     },1000)
+//     console.log('nitesh khatri is javascript')
+// }
+// x();
+
+// function x(){
+//     for(var i=0;i<10;i++){
+//         setTimeout(function (){
+//             console.log(i)
+//         },1000)
+//         console.log('nitesh khatri is javascript')
+//     }
+// }
+// x();
+
+// function x(){
+//     for(let i=1;i<5;i++){
+//         setTimeout(function (){
+//             console.log(i)
+//         },i*1000)
+//         console.log('nitesh khatri is javascript')
+//     }
+// }
+// x();
+
+// function outer(b){
+//     function inner(){
+//         console.log(a,b)
+//     }
+//     let b = 10
+//     return inner;
+// }
+// var close = outer('sdadds');
+
+// function outer(b,x){
+//     function inner(){
+//         console.log(a,b)
+//         function example(){
+//             console.log(x,y)
+//         }
+//         let y = 1000
+//         return example;
+//     }
+//     let a = 10
+//     return inner;
+// }
+// var close = outer('eadsadad');
+// close()
+
+// var counter = 0 
+// function inc(){
+//     console.log(++counter)
+// }
+// inc()
+// function dec(){
+//     console.log(--counter)
+// }
+// dec()
+
+// var counter = 0 
+// function inc(){
+//     ++counter
+// }
+// function dec(){
+//     --counter
+// }
+// inc()
+// dec()
+
+// function debounce(f,ms){
+//     let timeout;
+//     return function(){
+//         clearTimeout(timeout);
+//         timeout = setTimeout(function(){
+//             f.apply(this,agruments)
+//         },ms);
+//     }
+// }
+// function print(){
+//     console.log('print')
+// }
+// let p = debounce(print,2000);
+// p();
+// setTimeout(() => p(),300);
+// setTimeout(() => p(),700);
+
+
+// const student = {
+//     name:'nitesh'
+// }
+// console.log(student)
+// if("name" in student) {...}
+// if("age" in student) {...}
+
+// let idA = Symbol('hello');
+// let idB = Symbol('hello');
+// console.log(idA == idB)
+// console.log(idA === idB)
+
+
+// const tickerA = {
+//     count:0,
+//     increment:() => {
+//         return ++this.count;
+//     }
+// }
+// const tickerB =  {
+//     count:0,
+//     increment:function(){
+//         return ++this.count;
+//     }
+// }
+// console.log(this.tickerA)
+// console.log(this.tickerB)
+
+// const buffer = new ArrayBuffer(100);
+// const view = new Uint32Array(buffer);
+// console.log(view);
+// view[0] = 11111;
+// console.log(view);
+
+// function checkNetworkConnection(){
+//     const isConnected = navigator.onLine;
+//     console.log(isConnected)
+// }
+// checkNetworkConnection();
+
+// const arr = [
+//     {
+//         "id":1,
+//         "name":"nitesh"
+//     },
+//     {
+//         "id":2,
+//         "name":"sameet"
+//     },
+//     {
+//         "id":3,
+//         "name":"arvind"
+//     },
+//     {
+//         "id":4,
+//         "name":"urvashi"
+//     },
+// ]
+
+// let no = 9007199254740991;
+// let nextNo = no + 2 
+// console.log(nextNo)
+
+// let example1 = {name:"nitesh"};
+// let example2 = {name:"sameet"}
+// console.log(example1,example2)
+// const map = new Map();
+// console.log(map.set(example1,'nitesh is world'))
+
+// let example3 ={name:'mom'}
+// let example4 ={name:'daddy'}
+// console.log(example3,example4);
+// const map2 = new Map()
+// console.log(map2.set(example1,'sameet khatri'))
+
+
+// let example5 = {name:'vishal'}
+// let example6 = {name:'mayur'}
+// console.log(example5,example6)
+// const mapresult = new Map()
+// console.log(mapresult.set(example5,example6,'vishal & mayur is updated'));
+
+// const a = 'sb diesel'
+// const b = 'assurekit'
+// const mapweak111 = new WeakMap()
+// console.log(mapweak111.set(a,'adasd'))
+
+// function counter(){
+//     var count = 0
+//     this.incCounter = function(){
+//         count++
+//         console.log(count)
+//     }
+//     this.decCounter = function(){
+//         count--
+//         console.log(count)
+//     }
+// }
+// var counter1 = new counter();
+// counter1.incCounter();
+
+// function statement 
+function a(){
+    console.log('a is called')
+}
+a()
+
+// function expression
+// var b = function(param1,param2){
+//     console.log(param1)
+// }
+// a()
+
+// const b = function(param1){
+//     return function xyz(){
+
+//     }
+// }
+// console.log(b());
