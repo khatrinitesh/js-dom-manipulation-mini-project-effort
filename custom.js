@@ -1118,10 +1118,10 @@
 // counter1.incCounter();
 
 // function statement 
-function a(){
-    console.log('a is called')
-}
-a()
+// function a(){
+//     console.log('a is called')
+// }
+// a()
 
 // function expression
 // var b = function(param1,param2){
@@ -1135,3 +1135,185 @@ a()
 //     }
 // }
 // console.log(b());
+
+// const values = [10,20]
+// const [bbb=3,b=4,c=5,d]= values
+// console.log(values)
+
+// let iceCream = "chocolate";
+// if (iceCream === "chocolate"){
+//     console.log("yay, i chocolate ice cream!")
+// }
+// else{
+//     console.log("Awwww, but chocolate is my favorite…")
+// }
+
+// function multiply(num1, num2) {
+//     let result = num1 * num2;
+//     return result;
+//   }
+//   console.log(multiply(10,20))
+
+// function sum(a,b){
+//     let example = a+b
+//     return example
+// }
+// console.log(sum(102,22))
+
+// setTimeout(function(){
+//     console.log('timer') 
+// },1000);
+// function x(y){
+//     console.log('x');
+//     y();
+// }
+// x(function y(){
+//     console.log("y");
+// })
+
+// function setUserName() {
+//     const myName = prompt("Please enter your name.");
+//     localStorage.setItem("name", myName);
+//     myHeading.textContent = `Mozilla is cool, ${myName}`;
+//   }
+
+//   function setUserJobtitle(){
+//     const jobtitle = prompt('what is your job title?');
+//     localStorage.setItem('job title',jobtitle)
+//     myHeading1.textContent = `JOB TITLE is cool, ${jobtitle}`;
+//   }
+
+//   function setAge(){
+//     const age = prompt('what is your age');
+//     localStorage.setItem('Age',age)
+//     myAge.innerContext = `my age is ${age}`
+//   }
+
+// let employees = [
+//     {name: "John", salary: 90000, hireDate: "July 1, 2010"},
+//     {name: "David", salary: 75000, hireDate: "August 15, 2009"},
+//     {name: "Ana", salary: 80000, hireDate: "December 12, 2011"},
+// ];
+
+// const result = employees.sort(function(a,b){
+//     const example = b.salary - a.salary
+//     return  example 
+// })
+// console.log(result)
+
+// console.log([] === [])
+
+// console.log([] == [])
+
+// console.log([] !== [])
+
+// for(let step=0;step<5;step++){
+//     console.log('nitesh khatri')
+// }
+
+// function factorial(n) {
+//     if (n === 0 || n === 1) {
+//       return 1;
+//     } else {
+//       return n * factorial(n - 1);
+//     }
+//   }
+//   console.log(factorial(1))
+//   console.log(factorial(2))
+//   console.log(factorial(3))
+//   console.log(factorial(4))
+
+//   function square(n) {
+//     return n * n;
+//   }
+//   console.log(square(9))
+
+// const num1 = 20;
+// const num2 = 3;
+// const name = "Chamakh";
+// function multiply(num1,num2){
+//     const calc = num1 * num2
+//     return calc
+// }
+// console.log(multiply(10,20))
+
+// var name= 'nitesh'
+// function getScore() {
+//     const num1 = 2;
+//     const num2 = 3;
+
+//     function add() {
+//       return `${name} scored ${num1 + num2}`;
+//     }
+//     return add();
+//   }
+
+//   console.log(getScore())
+
+//   console.log(null === undefined)
+//   console.log(null == undefined)
+//   console.log(null !== undefined)
+
+// function getHigher(){
+    
+//     const name= 'nitesh'
+//     const num1 = 10
+//     const num2 = 20 
+//     function added(){
+//         return `${name} expression ${num1 + num2}`
+//     }
+//     return added()
+// }
+// console.log(getHigher())
+
+// function addSquares(a, b) {
+//     function square(x) {
+//       return x * x;
+//     }
+//     return square(a) + square(b);
+//   }
+  
+//   console.log(addSquares(2, 3)); // 13
+//   console.log(addSquares(3, 4)); // 25
+//   console.log(addSquares(4, 5));
+
+// function outside(x) {
+//     function inside(y) {
+//       return x + y;
+//     }
+//     return inside;
+//   }
+  
+//   const fnInside = outside(3); // Think of it like: give me a function that adds 3 to whatever you give it
+//   console.log(fnInside(5)); // 8
+//   console.log(outside(3)(5)); // 8
+
+// function A(x) {
+//     function B(y) {
+//       function C(z) {
+//         console.log(x + y + z);
+//       }
+//       C(3);
+//     }
+//     B(2);
+//   }
+//   A(1); // Logs 6 (which is 1 + 2 + 3
+
+// function nitesh(a){
+//     function sameet(b){
+//         function arvind(c){
+//             console.log(a+b+c)
+//         }
+//         arvind(1)
+//     }
+//     sameet(111)
+// }
+// nitesh(12555)
+
+
+console.log('start')
+setTimeout(function a(){
+    console.log('nitesh khatri')
+},500)
+console.log('end')
+
