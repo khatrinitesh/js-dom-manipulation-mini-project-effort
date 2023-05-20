@@ -1311,9 +1311,113 @@
 // nitesh(12555)
 
 
-console.log('start')
-setTimeout(function a(){
-    console.log('nitesh khatri')
-},500)
-console.log('end')
+// console.log('start')
+// setTimeout(function a(){
+//     console.log('nitesh khatri')
+// },500)
+// console.log('end')
 
+// function cb(){
+//     console.log('callback')
+// }
+// cb();
+
+
+// console.log('start')
+// setTimeout(function a(){
+//     console.log('timer')
+// },100)
+// console.log('end')
+
+// let startDate = new Date()
+// console.log(startDate);
+
+// let startDate = new Date().getTime();
+// console.log(startDate)
+
+// let startDate = new Date().getTime();
+// let endDate = startDate;
+// while(endDate < startDate + 10000){
+//     endDate = new Date().getTime();
+// }
+// console.log('while expired')
+
+// function x(){
+//     console.log('x is called')
+// }
+// x()
+
+// function y(x){
+//     x();
+// }
+
+// const radius = [3,1,2,4]
+// console.log(radius)
+
+
+// const radius = [3,1,2,4]
+// const calArea = function (radius){
+//     const output = [];
+//     for(let i=0;i<radius.length;i++){
+//         output.push(Math.PI * radius[i] * radius[i]);
+//     }
+//     return output;
+// };
+
+// console.log(calArea(radius))
+
+const arr = [1,2,3,4,5]
+function double(x){
+    return x * 2;
+}
+function triple(x){
+    return x * 3;
+}
+function binary(x){
+    return x.toString(2);
+}
+
+function isOdd(x){
+    return x % 2
+}
+function isEven(x){
+    return x % 2 === 0
+}
+// console.log(arr.map(triple))
+// console.log(arr.map(double))
+// console.log(arr.map(binary))
+// console.log(arr.map(isOdd))
+// const resullt = arr.map(isEven)
+// console.log(resullt)
+// console.log(arr.filter((x) => x >3))
+// console.log(arr.filter((x) => x <3))
+
+// function findSum(arr){
+//     let sum = 0
+//     for(let i=0;i<arr.length;i++){
+//         sum = sum + arr[i]
+//     }
+//     return sum
+// }
+// console.log(findSum(arr));
+// const output = arr.reduce(function(acc,curr){
+//     acc = acc + curr;
+//     return acc;
+// })
+// console.log(output)
+
+// function sub(n1,n2){
+//     return n1-n2
+// }
+// const result = `the result subtract ${sub(100,20)}`
+// console.log(result)
+// var x = 21;
+// var girl = function () {
+//     console.log(x);
+//     var x = 20;
+// };
+// girl ();
+
+// const data=[1,2,3,4]
+// data.length=0
+// console.log(data.length)
