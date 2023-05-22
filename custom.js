@@ -2116,3 +2116,529 @@
 // const lname = 'khatri'
 // console.log(fname.concat(lname))
 
+
+// function doSomething(value){
+//     console.log(value.length)
+// }
+// doSomething([1,2,3])
+
+// doSomething(function(){
+//     console.log('nitesh khatri')
+// })
+
+
+// function log(value){
+//     console.log(value)
+// }
+// function calculateValue(num1,num2,print){
+//     const sum = num1 + num2 
+//     print(sum)
+// }
+// calculateValue(10,30,log)
+
+
+// function example(value){
+//     console.log(value)
+// }
+// function calvalue(n1,n2,print){
+//     const sum = n1 * n2 
+//     print(sum)
+// }
+// calvalue(10,20,example)
+
+    /// array destrcuting
+    // const friends = ['vijay','ronak','hitesh','rahul']
+    // const firstFriends = friends[0]
+    // const secondFriends = friends[1]
+    // const [firstFriends,secondFriends,thirdFriends,fourthFriends ='vishal'] = friends
+    // console.log(firstFriends)
+    // console.log(secondFriends)
+    // console.log(fourthFriends)
+
+    // const obj = {
+    //     name:'nitesh',
+    //     age:34,
+    //     hello:function(){
+    //         console.log(this.name,this.age)
+    //     }
+    // }
+    // console.log(obj.hello());
+
+    // const variable = 'username'
+    // const age = 5 
+    // const prop1 = 'ageisLessthan7'
+    // const prop2 = 'ageisMorethan7'
+    // const obj ={
+    //     [variable]:'javascript',
+    //     [age > 2 ? 'yes' : 'no']:true,
+    // }
+    // console.log(obj)
+
+
+    // Object Destructuring
+    // const object = {
+    //     name:'nitesh',
+    //     youtube:'deccode',
+    //     language:'javascript'
+    // }
+    // const name = object.name
+    // const youtube = object.youtube
+    // const language = object.language
+    // console.log(name)
+    // console.log(youtube)
+    // console.log(language)
+
+    //  Page Visibility API
+
+    const object = {
+        name:'nitesh',
+        youtube:'vlogs',
+        language:'js'
+    }
+    // const {name,youtube,language} = object 
+    // console.log(name,youtube,language)
+
+    // const keys = Object.keys(object)
+    // console.log(keys)
+    // const values = Object.values(object)
+    // console.log(values)
+    // const entries = Object.entries(object)
+    // console.log(entries)
+
+    // console.log(Object.assign(object))
+
+    // const exp = 4 < 5 
+    // console.log(exp)
+
+    // How to Store Objects and Arrays in Local Storage
+    // const obj = {
+    //     name:'nitesh',
+    //     age:34 
+    // }
+    // console.log(JSON.stringify(obj))
+    // const result = JSON.stringify(obj)
+    // console.log(JSON.parse(result))
+    // const array = ['nitesh',34,1,2]
+    // const stringArray = JSON.stringify(array)
+    // localStorage.setItem('object',result)
+    // localStorage.setItem('array',stringArray)
+    // const objectfromlocalstorage = localStorage.getItem('object');
+    // const arrayfromlocalstorage = localStorage.getItem('array');
+
+    // const objectParsed = JSON.parse(objectfromlocalstorage)
+    // const arrayParsed = JSON.parse(arrayfromlocalstorage)
+
+    // const isEven = true 
+    // console.log('it is an even')
+    // console.log('how did we get here?')
+    // const number = 50 
+    // if(number > 40){
+    //     console.log('number is greater than 4')
+    // }
+    // else{
+    //     console.log('number is not greater than 4')
+    // }
+
+    
+    // switch (new Date().getDay()) {
+    //     case 0:
+    //       day = "Sunday";
+    //       break;
+    //     case 1:
+    //       day = "Monday";
+    //       break;
+    //     case 2:
+    //        day = "Tuesday";
+    //       break;
+    //     case 3:
+    //       day = "Wednesday";
+    //       break;
+    //     case 4:
+    //       day = "Thursday";
+    //       break;
+    //     case 5:
+    //       day = "Friday";
+    //       break;
+    //     case 6:
+    //       day = "Saturday";
+    //     default:console.log('day is not there')
+    //     break;
+    //   }
+    //   console.log(day)
+
+    // const expression= 110
+    //   switch(expression){
+    //     case 40 : console.log(40);
+    //     break;
+    //     case 30 : console.log(30);
+    //     break;
+    //     case 20 : console.log(20);
+    //     break;
+    //     case 10 : console.log(10);
+    //     break;
+    //     default : console.log('i dont know the result');
+    //     break;
+    //   }
+    //   console.log(expression)
+
+    // let counter = 0
+    // function example(){
+    //     console.log('hi')
+    //     counter++
+    //     if(counter > 10){
+    //         return;
+    //     }
+    //     example();
+    // }
+    // example();
+
+    // const a1 = [1,2,3]
+    // const a2 = [1,2,3]
+    // console.log(...a1,...a2)
+
+
+    // spread operator
+    // const info = {
+    //     name:'nitesh',
+    //     age:34
+    // }
+    // const fullinfo = {
+    //     ...info,
+    //     language:'javascript',
+    //     martialstatus:'single'
+    // }
+    // console.log(fullinfo)
+
+    // function addNum(n1,n2,n3){
+    //     return n1+n2+n3
+    // }
+    // const array = [10,20,30]
+    // const total = addNum(...array)
+    // console.log(total)
+
+    // function example(){
+    //     console.log('nitesh khatri')
+    // }
+    // setTimeout(example,2000)
+
+    // const timer = setTimeout(() => {
+    //     console.log('nitesh is timer')
+    // },1000);
+    // setTimeout(() => {
+    //     clearTimeout(timer)
+    // },3000)
+
+    // const sum = '20' + 30 
+    // // console.log(sum)
+
+    // console.log(typeof sum)
+
+
+    // const sum = 50 + true 
+    // console.log(sum)
+
+    // const value = 0 
+    // if(value){
+    //     console.log('hello')
+    // }
+    // console.log(!value)
+
+    // console.log('20' == 20)
+    // console.log(0 == false)
+
+
+    // console.log(Number(20))
+    // console.log(String(100))
+    // console.log(Number(false))
+    // console.log(Boolean('hello'))
+
+    // console.log(Number('hello'))
+
+
+    // var b = 5 
+
+    // (function() {
+    //     var a = b = 5;
+    //     })();
+        
+    //     console.log(b);
+
+    // const v1 = true
+    // const v2 = false
+    // console.log(!v1)
+    // console.log(!v2)
+
+
+    // hositing with var, let and const declared - undefined error and initialization
+    // let num = 20
+    // function print(){
+    //     console.log(num)
+    //     let num = 10
+    // }
+    // print()
+
+
+    // event bubbling 
+    // const body = document.getElementsByTagName("body")[0]
+    // const div = document.getElementsByTagName("div")[0]
+    // const span = document.getElementsByTagName("span")[0]
+    // const button = document.getElementsByTagName("button")[0]
+    
+    // body.addEventListener('click', () => {
+    //   console.log("body was clicked")
+    // })
+    
+    // div.addEventListener('click', () => {
+    //   console.log("div was clicked")
+    // })
+    
+    // span.addEventListener('click', () => {
+    //   console.log("span was clicked")
+    // })
+    
+    // button.addEventListener('click', () => {
+    //   console.log("button was clicked")
+    // })
+
+    // var v1 = 'nitesh'
+    // function example(){
+    //     var v2 = ' sameet'
+    //     console.log(v2)
+    // }
+    // example()
+    // console.log(v1)
+    // var v1 = 'something else'
+    // console.log(v1)
+
+
+    // var v1 = 'sameet'
+    // function example(){
+    //     console.log(v1)
+    //     // var v1 = 'nitesh'
+    // }
+    // example()
+
+
+    // 3 Ways to Merge Arrays
+    // const a1 = [1,2,3]
+    // const a2 = [4,5,6]
+    // const a3 = [7,8,9]
+    // console.log(...a1,...a2,...a3)
+    // console.log(a1.concat(a2,a3))
+    // console.log(a1.push(10))
+
+    // for(let i=0;i<a2.length;i++){
+    //     a1.push(a2[i])
+    // }
+    // console.log(a1)
+
+    // Generate Random Numbers Within A Range
+    // function getRandom(min,max){
+    //    const floatRandom = Math.random()
+    //    const difference = max - min 
+    //    const randomDifference = floatRandom * difference 
+    //    const randomRange = randomDifference + min
+    //    return randomRange
+    // }
+    // const random = getRandom(5,10)
+    // console.log(random)
+
+    //  string replace with callback function
+    // const phrase = 'I am 34 years old on the 1st.'
+
+    // const pattern = '/\d\g' 
+
+    // const replacement = function(match){
+    //     return `--${match}--`
+    // } 
+
+    // const replaced = phrase.replace(pattern,replacement)
+
+    // console.log(replaced)
+
+    // function declration and function expression and arrow function
+    // expression 
+    // const example1 = function() {
+    //     console.log('arvind khatri is example1')
+    // }
+    // const result1 = function(){
+    //     console.log('nitesh khatri is result1')
+    // }
+    // example1()
+    // result1()
+
+    // // declaration
+    // function example2(){
+    //     console.log('sameet khatri is example2')
+    // }
+    // function result2(){
+    //     console.log('sameet khatri is result2')
+    // }
+    // example2()
+    // result2()
+
+    // // arrow 
+    // const example3 = () => console.log('nitesh khatri is example3')
+    // const result3 = () => console.log('nitesh khatri is result3')
+    // example3()
+    // result3()
+
+    // const array = [1,2,3,4]
+    // array.forEach(function log(item) {
+    //     console.log(item)
+    // })
+
+    //  Conditional (Ternary) Operator
+    // const score = 80 
+    // let scoreRating 
+
+    // if(score > 70){
+    //     scoreRating = 'higher'
+    // }
+    // else{
+    //     scoreRating = 'lower'
+    // }
+
+    // console.log(scoreRating)
+
+    // const score = 30 
+    // let scoreRating 
+    // if(score > 70){
+    //     scoreRating = 'Excellent'
+    // }
+    // else if(score > 60){
+    //     scoreRating = 'very goood'
+    // }
+    // else{
+    //     scoreRating = 'poor'
+    // }
+
+    // console.log(scoreRating)
+
+    // The FALL-THROUGH Behaviour in JavaScript Switch Statements
+    // const expression1 = 10 - 8
+    // switch(expression1){
+        
+    //     case 2:console.log('the answer is 2')
+    //     break;
+    //     case 5:console.log('the answer is 5')
+    //     break;
+    //     default:console.log('there is no answer')
+    //     break;
+    // }
+    // console.log(expression1);
+
+    //UNARY, BINARY and TERNARY Operators
+    // console.log(20+30)
+    // const array = [1,2,3,4]
+    // const result = array.filter((item) => item % 2 === 0)
+    // console.log(result)
+
+    // delete array[2]
+    // console.log(array)
+
+    // assignment
+    // const num = 20
+    // console.log(num)
+
+    // const target = 500
+    // const update = 120;
+    // const scoreRating = update > target ? 'achievement' : 'no achievement'
+    // console.log('sale',scoreRating)
+    // console.log('balance is',target-update)
+
+    // A TERNARY OPERATOR is not a CONDITIONAL OPERATOR
+    // const exampleTypeof = typeof 20 
+    // console.log(exampleTypeof)
+
+    // assignment operator 
+    // const score = 80 
+    // console.log(score>50 ? 'yes': 'no')
+
+    // const array = [1,2,3]
+    // const result = array.map(function(val){
+    //     console.log(val)
+    // })
+
+    // function Result(array,callback){
+    //     for(let i=0;i<array.length;i++){
+    //         const value = array[i]
+    //         callback(value)
+    //     }
+    // }
+
+    // function callbackfunction(value){
+    //     console.log('value is ' + value)
+    // }
+    // Result(array,callbackfunction)
+
+    // function generate(){
+    //     return function(example){
+    //         console.log(example)
+    //     }
+    // }
+    // const print = generate();
+    // print('this is nitesh khatri')
+
+    // DOT NOTATION vs BRACKET NOTATION
+    // const person = {
+    //     name:'nitesh',
+    //     age:34,
+    //     dob:'17/06/1989'
+    // }
+    // person.location = 'mumbai'
+    // person.jobtitle = 'front-end developer'
+    // person.experience = '7+ years'
+    // console.log(person)
+
+    // person.happy = 'smile' // dot notation
+    // const target = person['name']
+    // const target2 = person['happy'] // bracket notation
+    // console.log(target)
+    // console.log(target2)
+    // console.log(person)
+
+    // NULLISH COALESCING OPERATOR
+    // const v1 = false 
+    // const v2 = 'hello'
+    // function returnundefined(){
+    //     return undefined 
+    // }
+    // const result = returnundefined() ?? 20 + 50 
+    // console.log(result)
+
+    // SHORT-CIRCUIT EVALUATION
+    // function a(){
+    //     console.log('i am false')
+    //     return false
+    // }
+    // function b(){
+    //     console.log('i am true')
+    //     return true
+    // }
+    // const result = b() && b() && a()
+    // console.log('result is',result)
+
+    // Question mark ? vs PLUS VS ASTERISK * REGEX QUANTIFIERS
+
+    // how to replace links in a text with custom and clickable anchor links
+    // const str = 'her password are 345543, 99533 and 884499'
+    // const regex = /\d+/g
+    // const updatedStr = str.replace(regex,'******')
+    // console.log(updatedStr)
+
+    // const str = `hi good morning how are you doing 555`
+    // const regex =  /^\d+$/
+    // const updaed = str.replace(regex,'****')
+    // console.log(updaed)
+
+    // const obj = {
+    //     name:'nitesh',
+    //     age:34,
+    //     print:function(){
+    //         console.log(this)
+    //     }
+    // }
+
+    // console.log(obj)
+    // console.log(obj.print())
