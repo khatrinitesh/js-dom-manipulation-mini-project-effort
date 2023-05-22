@@ -2024,3 +2024,95 @@
 //     console.log('i am print')
 // }
 // hof1(print);
+
+
+// const arry = [1,2,3,[5,6],[7]]
+// const result = arry.flat(1)
+// console.log(result)
+
+// const array = [1,2,3,4,5]
+// const newArray = array.map(function(item,index) {
+//     console.log(index,item)
+//     return item * 10
+// })
+// console.log(newArray)
+
+// const array = [1,2,3,4,5]
+// const newArray = array.map(function(item,index) {
+//     if(item % 2 === 0){
+//         return item * 10
+//     }
+//     return item
+// })
+// console.log(newArray)
+
+// const array = [1,2,3,4,5]
+// let sum = 0
+// const result = array.forEach(function(item,index,array){
+//     sum += item
+//     return item * 10
+// })
+// console.log(result)
+
+// const numbers = [1,2,3,4,5]
+// const filtered = numbers.filter(function(item,index,array){
+//     if(item % 2 === 10){
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// })
+// console.log(filtered)
+
+// const numbers = [1,2,3,4,5]
+// const result = [...numbers].pop()
+// console.log(result)
+// console.log(numbers)
+// console.log(numbers.shift())
+// console.log(numbers.unshift(111))
+// console.log(numbers)
+
+// const numbers = [1,2,3,4,5]
+// console.log([...numbers.fill(111)])
+
+// const array = [1,2,3,4,5]
+// console.log(array.fill('nitesh khatri'))
+
+// const numbers = [1,2,3,4,5]
+// console.log(numbers.fill(100,1))
+
+// const value1 = 'hello';
+// const value2 = {name:'nitesh'}
+// const value3 = [1,2,3]
+// console.log(value1)
+// console.log(value2)
+// console.log(value3)
+
+// const isArray1 = Array.isArray(value1)
+// const isArray2 = Array.isArray(value2)
+// const isArray3 = Array.isArray(value3)
+// console.log(isArray1)
+// console.log(isArray2)
+// console.log(isArray3)
+
+// const friends = ['a','b','c','d']
+// console.log(Array.isArray(friends))
+
+// const array1 = [1,2,3,4,5]
+// const array2 = ['nitesh','sameet',20,true,'mango']
+// const array1ToString = array1.join('-')
+// const array2ToString = array1.join('+')
+// console.log(array1ToString)
+// console.log(array2ToString)
+
+// const array = [1,2,3,4,5]
+// const third = array.at(array)
+// console.log(array)
+// console.log(third)
+// console.log(array[3])
+
+// const fname = 'nitesh'
+// const lname = 'khatri'
+// console.log(fname.concat(lname))
+
