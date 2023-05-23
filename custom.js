@@ -2642,3 +2642,20 @@
 
     // console.log(obj)
     // console.log(obj.print())
+
+    // var target = document.querySelector('#box');
+    // window.addEventListener('offine',function(){
+    //     target.innerHTML = 'your offline'
+    //     target.style.backgroundColor ='orange'
+    // })
+    // window.addEventListener('online',function(){
+    //     target.innerHTML = 'your online'
+    //     target.style.backgroundColor ='yellow'
+    // })
+
+    // if(navigator.onLine){
+    //     console.log('online')
+    // }
+    // else{
+    //     console.log('offline')
+    // }
