@@ -2659,3 +2659,990 @@
     // else{
     //     console.log('offline')
     // }
+
+    // JS INTRODUCTION
+      // VARIABLE 1
+    //   let num = 5 
+    //   console.log(num)
+
+    //   var x 
+    //   let y 
+
+    // let x;
+    // x = 5;
+
+
+    // let x = 5;let y = 6;z=7
+    // console.log(x)
+    // console.log(y)
+    // console.log(z)
+
+
+    // // 5 is assigned to variable x
+    // let x = 5; 
+    // console.log(x);
+
+    // // value of variable x is changed
+    // x = 3 
+    // console.log(x)
+
+    //invalid
+    // let example = 5; // Error! new is a keyword.
+    // console.log(example)
+
+    // const x = 5;
+    // console.log(x);
+
+    // const x = 5;
+    // x = 10;  // Error! constant cannot be changed.
+    // console.log(x)
+
+    // const x;  // Error! Missing initializer in const declaration.
+    // x =5 
+    // console.log(x)
+
+    // console.log()
+    // let sum = 44;
+    // console.log(sum)
+
+    // console.log("I love JS");
+
+    // program to print variables values
+    // storing values
+    // const greet = 'Hello';
+    // const name = 'Jack';
+    // console.log(greet + " " +  name)
+
+    // DATA TYPES
+    // const x = 5 
+    // const y = 'nitesh khatri'
+    // const z = 10>9 
+    // const a = ['nitesh','sameet']
+    // const b = {name:'nitesh',age:34}
+    // var example
+    // console.log(typeof x)
+    // console.log(typeof y)
+    // console.log(typeof z)
+    // console.log(typeof a)
+    // console.log(typeof b)
+    // console.log(typeof example)
+    // console.log(typeof example)
+
+    // backticks
+    // const name = 'ram';
+    // const name1 = "hari";
+    // const result = `The names are ${name} and ${name1}`;
+    // console.log(result)
+
+    // const number1 = 3;
+    // const number2 = 3.433;
+    // const number3 = 3e5
+    // console.log(number1,number2,number3)
+
+    // const number1 = 3/0;
+    // console.log(number1);
+
+    // const number2 = -3/0;
+    // console.log(number2);
+
+    // const number3 = "abc"/3; 
+    // console.log(number3);
+
+    // BigInt value
+    // const value1 = 900719925124740998n;
+    // const result1 = value1 + 1n;
+    // const value2 = 900719925124740998n;
+    // // Error! BitInt and number cannot be added
+    // const result2 = value2 + 1;
+    // console.log(value1)
+    // console.log(value2)
+    // console.log(result1)
+    // console.log(result2)
+
+    // const dataChecked = true;
+    // const valueCounted = false;
+    // console.log(dataChecked !== valueCounted)
+
+    // let name;
+    // console.log(name);
+
+    // let name = undefined;
+    // console.log(name);
+
+    // const number = null;
+    // const value1 = Symbol('hello');
+    // const value2 = Symbol('hello');
+    // console.log(value1)
+    // console.log(value2)
+
+    // const student = {
+    //     firstName: 'ram',
+    //     lastName: null,
+    //     class: 10
+    // };
+    // console.log(student)
+
+    // data is of undefined type
+    // let data;
+    // data = 5 
+    // console.log(data)
+
+    // OPERATORS
+     // ASSIGNMENT
+    //  const x = 5 
+    //  console.log(5+8)
+
+    // let x = 5;
+    // let y = 3;
+    // console.log('x + y = ', x + y)
+    // console.log('x + y = ', x - y)
+    // console.log('x + y = ', x * y)
+    // console.log('x + y = ', x / y)
+    // console.log('x + y = ', x % y)
+    // // increment
+    // console.log('++x = ', ++x); // x is now 6
+    // console.log('x++ = ', x++); // prints 6 and then increased to 7
+    // console.log('x = ', x); 
+    // decrement
+    // console.log('--x = ', --x); // x is now 6
+    // console.log('x-- = ', x--); // prints 6 and then decreased to 5
+    // console.log('x = ', x); 
+    // console.log('x ** y =', x ** y);
+
+    // comparison operators
+    // const a = 3 
+    // const b = 2 
+    // console.log(a>b)
+    // console.log(2 == 2); 
+    // console.log(2 === '2'); 
+
+    // console.log(3 !=2)
+    // console.log('hello' != 'Hello')
+    // console.log(2 === 2);
+    // console.log(2 === '2');
+    // console.log(2 !== '2');
+    // console.log(2 !== 2);
+
+    // logical operators
+    // const x = 5, y = 3;
+    // console.log(x < 5 && y < x)
+    // logical and
+    // console.log(true && true);
+    // console.log(true && false);
+    // logical OR
+    // console.log(true || false);
+    // logical NOT
+    // console.log(!true);
+    // console.log('hello' + 'world');
+    // let a = 'JavaScript';
+    // a += 'solid'
+    // console.log(a)
+
+    // COMMENTS
+    
+    // type conversations
+    // console.log('3'+2)
+    // result = '3' + true
+    // console.log(result)
+    // result = '3' + undefined
+    // console.log(result)
+    // result = '3' + null; 
+    // console.log(result)
+
+    // let result;
+    // result = '4' - '2'; 
+    // console.log(result); // 2
+
+    // result = '4' - 2;
+    // console.log(result); // 2
+
+    // result = '4' * 2;
+    // console.log(result); // 8
+
+    // result = '4' / 2;
+    // console.log(result); // 2
+
+    // let result;
+    // result = 'hello' - 'world';
+    // console.log(result); // NaN
+
+    // let result;
+
+    // result = '4' - true;
+    // console.log(result);
+
+    // result ='3' - true
+    // console.log(result)
+
+    // result = 4 + true
+    // console.log(result)
+
+    // null is 0 when used with number
+    // let result;
+    // result = 4 + null;
+    // console.log(result);
+
+
+    // Arithmetic operation of undefined with number, boolean or null gives NaN
+    // let result;
+    // result = 4 + undefined;
+    // console.log(result);  // NaN
+
+    // result = 4 - undefined;
+    // console.log(result);  // NaN
+
+    // result = true + undefined;
+    // console.log(result);  // NaN
+
+    // result = null + undefined;
+    // console.log(result);  // NaN
+
+    // let result;
+    // string to number 
+    // result = Number('324');
+    // console.log(result)
+    // console.log(Number('324e-1'))
+    // console.log(Number(false))
+    // console.log(Number(true))
+    // console.log(Number(null))
+    // console.log(Number(' '))
+    // console.log(parseInt('20.01'))
+    // console.log(Math.floor('20.01'))
+    // console.log(String(324))
+    // console.log(String(2+4))
+    // console.log(String(undefined))
+    // console.log(String(NaN))
+    // console.log(String(true))
+    // console.log(String(false))
+    // console.log(true.toString())
+
+    // console.log(Boolean(''))
+    // console.log(Boolean(0));
+    // console.log(Boolean(1));
+    // console.log(Boolean(undefined));
+    // console.log(Boolean(null));
+    // console.log(Boolean(NaN));
+
+    // const a = 5, b = 2, c = 'hello';
+    // console.log(a == 5);
+    // console.log(b == '2'); 
+    // console.log(c == 'Hello');
+
+    // const a = 3, b = 'hello';
+    // console.log(a != 2);
+    // console.log(b != 'Hello')
+    // console.log(a === 2);
+
+    // const a = 2
+    // const b = 'hello'
+    // console.log(a !== 2);
+    // console.log(b !== 2);
+    // const a = 3, b = 2;
+    // console.log(a > 2);
+    // console.log(a >= 3);
+    // console.log(a < 2);
+    // console.log(b < 3);
+    // console.log(a <= 3)
+    // console.log(a <= 2); 
+
+    // const a = true;
+    // const b = false;
+    // const c = 4;
+    // logical and 
+    // console.log(a && a);
+    // console.log(a && b)
+
+    // console.log(a || b);
+    // console.log(b || b);
+
+    // console.log((c>2) || (c<2));
+
+    // console.log(!a);
+    // console.log(!b);
+
+    // if else statement
+    // const number = prompt("Enter a number: ");
+    // if(number > 0){
+    //     console.log(`The number is positive ${number}`);
+    // }
+    // else{
+    //     console.log("The if statement is easy");
+    // }
+
+    // check if the number is positive, negative or zero
+    // const number = prompt("Enter a number: ");
+
+    // if (number >= 0) {
+    //     if (number == 0) {
+    //         console.log("You entered number 0");
+    //     } else {
+    //         console.log(`You entered a positive number ${number}`);
+    //     }
+    // } else {
+    //     console.log("You entered a negative number");
+    // }
+
+    // const number = 2;
+    // if (number > 0) {
+    //     console.log("The number is positive.");
+    // } else {
+    // console.log("The number is negative or zero.");
+    // }
+
+    // let x = function(num){
+    //     return num * 2
+    // }
+    // console.log(x(4))
+
+    // let x = 2;
+    // let y = x(3);
+    // console.log(y);
+
+    // global scope 
+    // let a = 'hello'
+    // function example(){
+    //     console.log(a)
+    // }
+    // example();
+
+    // function result(){
+    //     a = 'nitesh'
+    // }
+    // result()
+    // console.log(a)
+
+    // function greet(){
+    //     console.log('hello')
+    // }
+    // greet();
+
+    // console.log(2+'3'+2)
+
+    // console.log(2+2+2)
+
+    // let a = "hello";
+
+    // function greet() {
+    //     let b = "nitesh"
+    //     console.log(a + b);
+    // }
+    
+    // greet();
+    // console.log(a + b); // error
+
+    // let a = 'nitesh'
+
+    // function greet(){
+    //     let b = 'khatri'
+    //     console.log(a  + ' ' + b)
+    //     if(b == 'khatri'){
+    //         let c = 'hello '
+    //         console.log(a + ' ' + b + '  ' + c)
+    //     }
+    //     console.log(a + ' ' + b + ' ' + c )
+    // }
+    // greet()
+
+    // const a = 'nitesh'
+    // function example(){
+    //     const a = 'sameet'
+    //     console.log(a)
+    // }
+    // example()
+
+    // console.log(test);   // undefined
+    // const test;
+
+    // let adsadas = 'nitesh khatri'
+    // console.log(adsadas)
+
+    // var test;
+    // console.log(test);
+
+    // a = 5;
+    // console.log(a);
+    // var a = 10
+
+    // var a;
+    // a = 5;
+    // console.log(a);
+
+    // console.log(a);
+    // var a = 5;
+
+    //     console.log(a);
+    // var a = 5;
+
+
+    // var b = 'sameet khatri'
+    // var a = 4;
+    // function greet() {
+    //     b = 'hello';
+    //     console.log(b); // hello
+    //     var b;
+    // }
+    // greet()
+    // console.log(b)
+
+    // program to print the text
+    // greet();
+    // function greet() {
+    //     console.log('Hi, there.');
+    // }
+
+    // greet();
+    // let greet = function(){
+    //     console.log('nitesh khatri')
+    // }
+    // greet()
+
+//    function countDown(num){
+//     console.log(num)
+//    }
+//    countDown(3)
+
+    // function countDown(n) {
+    //     console.log(n);
+    //     countDown(n+1);
+    // }
+
+    // countDown(3);
+    
+    // function example(n){
+    //     console.log(n)
+    //     example(n+1)
+    // }
+    // example(-1)
+
+
+    // this is normal function
+    // function example(){
+    //     console.log()
+    // }
+
+    // // this is arrow function 
+    // const example = () => console.log('nitesh khatri')
+
+    // object 
+    // const person = { 
+    //     name: 'John', 
+    //     age: 20, 
+    // };
+    // accessing property
+    // console.log(person.name); 
+
+    // console.log(person['name'])
+
+    // nested object
+// const student = { 
+//     name: 'John', 
+//     age: 20,
+//     marks: {
+//         science: 70,
+//         math: 75
+//     }
+// }
+// console.log(student.name)
+// console.log(student.marks.science)
+
+// accessing method and property
+// const person = {
+//     name: 'John',
+//     greet: function() { console.log('hello'); }
+// };
+
+// console.log(person.name)
+
+// let number = '23.32';
+// let result = parseInt(number);
+// console.log(number)
+// console.log(result)
+
+// let student = { };
+// console.log(student.name = 'John')
+// student.greet = function(){
+//     console.log('hello')
+// }
+// student.greet();
+
+// const person = {
+//     name: 'John',
+//     age: 30,
+
+//     // accessing name property by using this.name
+//     greet: function() { console.log('The name is' + ' ' + this.name); }
+// };
+
+// console.log(person.greet())
+
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     greet: function() {
+//         let surname = 'Doe';
+//         console.log('The name is' + ' ' + this.name + ' ' + surname); }
+// };
+
+// person.greet();
+
+// for(i=0;i<10;i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1000)
+// }
+
+// function Person(){
+//     this.name = 'nitesh';
+//     this.age = 34
+// }
+// const person = new Person()
+// console.log(person)
+
+// function Person(){
+//     this.name = 'nitesh';
+//     this.age = 34;
+//     this.greet = function(){
+//         console.log('hello')
+//     }
+// }
+// const person1 = new Person();
+// const person2 = new Person();
+// console.log(person1.name);
+// console.log(person2.name);
+
+// constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23,
+
+//      this.greet = function () {
+//         console.log('hello');
+//     }
+// }
+// const person1 = new Person();
+// const person2 = new Person();
+// console.log(person1.name)
+// console.log(person2.name)
+
+// // constructor function
+// function Person () {
+//     this.name = 'John'
+// }
+// // create object
+// const person1 = new Person();
+
+// // access properties
+// console.log(person1.name); 
+
+// function Example(){
+//     this.name = 'fenika',
+//     this.age = 34,
+//     this.jobtitle = 'fe developer'
+// }
+// const result = new Example()
+// console.log(result)
+
+// for(let i=0;i<3;i++){
+//     console.log(i)
+// }
+
+// for(let i=0;i<10;i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1000)
+// }
+
+// function Person(person_name,person_age,person_dob){
+//     this.name = person_name,
+//     this.age = person_age,
+//     this.dob = person_dob,
+//     this.greet = function(){
+//         return('Hi' + + this.name)
+//     }
+// }
+// const person1 = new Person('nitesh',34,'17/06/1989')
+// const person2 = new Person('sameet',41,'14/06/1982')
+// console.log(person1)
+// console.log(person2)
+
+// constructor function
+// function Person1 () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+// function Person2 () {
+//     this.name = 'John',
+//     this.jobtitle = 'front-end developer',
+//     this.location= 'mumbai'
+// }
+// let person1 = new Person1();
+// let person2 = new Person2();
+// person1.gender = 'male'
+// person2.gender = 'female'
+// console.log(person1)
+// console.log(person2)
+
+// constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+// const result = new Person()
+// console.log(result)
+
+// let a = new Object();    // A new Object object
+// let b = new String();    // A new String object
+// let c = new Number();    // A new Number object
+// let d = new Boolean();   // A new Boolean object
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(d)
+
+// const name = new String ('John');
+// console.log(name)
+
+// const number = new Number (57);
+// console.log(number); // 57
+
+// const count = new Boolean(true)
+// console.log(count)
+
+// const student = {
+
+//     // data property
+//     firstName: 'Monica',
+    
+//     // accessor property(getter)
+//     get getName() {
+//         return this.firstName;
+//     }
+// };
+// console.log(student)
+// console.log(student.firstName);
+
+// const student = {
+//     firstName: 'Monica',
+    
+//     //accessor property(setter)
+//     set changeName(newName) {
+//         this.firstName = newName;
+//     }
+// };
+// console.log(student.firstName)
+// student.changeName = 'sameet'
+// console.log(student.firstName)
+
+// const example = {
+//     fName:'nitesh',
+//     set changeExample(newName){
+//         this.fName = newName
+//     }
+// }
+// example.changeExample = 'sameet'
+// console.log(example.fName)
+
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+// const person = new Person()
+// console.log(Person.prototype);
+
+// constructor function
+// function Person () {
+//     this.name = 'John',
+//     this.age = 23
+// }
+// function Person2 () {
+//     this.name = 'Sameet',
+//     this.age = 41
+// }
+
+// const person1 = new Person();
+// const person2 = new Person2();
+// Person.prototype.gender = 'male';
+// console.log(person1.name)
+// console.log(person1.age)
+
+// console.log(person2.name)
+// console.log(person2.age)
+// console.log(Person.prototype)
+// console.log(person1.gender)
+// console.log(person2.gender)
+
+// const words = ['hello', 'world', 'welcome'];
+// console.log(words)
+
+// const array1 = ["eat", "sleep"];
+// const array2 = new Array("eat", "sleep");
+// console.log(array1,array2)
+
+// const myList = [ ];
+// console.log(myList)
+
+// const numberArray = [2,4,6,8]
+// console.log(numberArray)
+
+// const stringArray = ['eat', 'work', 'sleep']
+// console.log(stringArray)
+
+// const newData = ['work', 'exercise', 1, true]
+// console.log(newData)
+
+// const myArray = ['h', 'e', 'l', 'l', 'o'];
+// console.log(myArray[0])
+
+let dailyActivities = ['eat', 'sleep'];
+// console.log(dailyActivities.push('sports'))
+// console.log(dailyActivities.unshift('cricket'))
+// console.log(dailyActivities)
+// console.log('shift', dailyActivities.shift())
+// console.log('pop',dailyActivities.pop())
+// console.log(dailyActivities[1] = 'exercise')
+// console.log(dailyActivities)
+// dailyActivities[3] = 'exercise'
+// console.log(dailyActivities)
+// console.log(dailyActivities.length)
+// console.log(dailyActivities[0].replace('eat','superb'))
+// console.log(dailyActivities)
+// const position = dailyActivities.findIndex('eat');
+// console.log(position)
+// let arr = ['h', 'e'];
+// let arr1 = arr;
+// arr1.push('l')
+// console.log(arr1)
+// console.log(arr)
+
+// const data = [[1, 2, 3], [1, 3, 4], [4, 5, 6]];
+// console.log(data.flat())
+// let studentsData = [['Jack', 24], ['Sara', 23], ['Peter', 24]];
+// console.log(studentsData.flat())
+// console.log(studentsData.filter((val) => val === 'Jack' ))
+// let student1 = ['Jack', 24];
+// let student2 = ['Sara', 23];
+// let student3 = ['Peter', 24];
+// console.log(student1.concat(student2,student3))
+// let x = [
+//     ['Jack', 24],
+//     ['Sara', 23], 
+//     ['Peter', 24]
+//     ];
+//     console.log(x[0])
+//     console.log(x[1])
+//     console.log(x[2])
+
+// let studentsData = [['Jack', 24], ['Sara', 23],];
+// studentsData.forEach((item) => {
+//     item.forEach((data) => {
+//         console.log(data)
+//     })
+// })
+
+
+let studentsData = [['Jack', 24], ['Sara', 23],];
+// for(let i of studentsData){
+//     console.log(i)
+// }
+// looping outer array elements
+// for(let i = 0; i < studentsData.length; i++){
+
+//     // get the length of the inner array elements
+//     let innerArrayLength = studentsData[i].length;
+    
+//     // looping inner array elements
+//     for(let j = 0; j < innerArrayLength; j++) {
+//         console.log(studentsData[i][j]);
+//     }
+// }
+
+// function getAge(...args){
+//     console.log(typeof args)
+// }
+// getAge(22)
+// const obj = {1:"a",2:"b"}
+// console.log(obj.hasOwnProperty("1"))
+// console.log(obj.hasOwnProperty("2"))
+
+
+
+// for(let i=0;i<5;i++){
+//     if(i === 3){
+//         break;
+//     }
+//     setTimeout(() => {
+//         console.log(i)
+//     }, 2000);
+// }
+
+// const name = 'John';
+//strings example
+// const name1 = "Jack";
+// const result = `The names are ${name} and ${name1}`;
+// console.log(name1)
+// console.log(result)
+
+// const text1 = 'hello';
+// const text2 = 'world';
+// const text3 = '     JavaScript    ';
+
+// console.log(text1)
+// console.log(text2)
+// console.log(text2.concat(text3))
+
+// const word = 'nitesh khatri'
+// console.log(word.toUpperCase())
+// console.log(word.length)
+// console.log(word.replace('nitesh','sameet'))
+// console.log(word.split(''))
+// console.log(word.slice(1,2))
+
+// const a = 225 
+// const b = true 
+// console.log(a === b)
+// console.log(a !== b)
+// const result1 = String(a)
+// const result2 = String(b)
+// console.log(result1)
+// console.log(result2)
+
+// console.warn(setInterval(() => console.log('hi'),1000))
+// console.warn(setInterval(() => console.log('hi'),500))
+
+// const student = {
+//     name: 'Monica',
+//     class: 7,
+//     age: 12
+// }
+
+// for(let i in student){
+//     // display the properties
+//     console.log(`${i} => ${student[i]}`)
+// }
+
+// let data = [1,2,3,'nitesh','sameet',null,undefined,true].map((val) => {
+//     if(typeof val === 'string'){
+//         console.log(val)
+//     }
+// })
+
+
+// const salaries= {
+//     Jack : 24000,
+//     Paul : 34000,
+//     Monica : 55000
+// }
+// for(let i in salaries){
+
+//     let salary = "$" + salaries[i]
+//     console.log(`${i} - ${salary}`)
+// }
+
+// const string = 'code';
+
+// // using for...in loop
+// for(let i in string){
+//     console.log(string[i])
+// }
+
+// const arr = [ 'hello', 1, 'JavaScript' ];
+// for(let i in arr){
+//     console.log(arr[i])
+// }
+// for(let i of arr){
+//     console.log(arr[i])
+// }
+
+// let obj = {
+//     name:'nitesh',
+//     age:34,
+//     getIntro:function(){
+//         console.log(this.name + 'from ' + this.city)
+//     }
+// }
+// let obj2 = {
+//     name:'sameet'
+// }
+// obj2._proto__= obj
+
+// console.log(obj2)   
+
+
+// const a = 0xff;
+// console.log(a);
+// const b = 0x00 ;
+// console.log(b);
+
+// const a = 4 + 9;
+// console.log(a);
+
+// const a = '4' + 9;
+// console.log(a);
+
+// const a = '4' - 2;
+// console.log(a);
+
+// const a = '4' / 2;
+// console.log(a);
+
+// const a = '4' * 2;
+// console.log(a);
+
+// console.log(isNaN(9))
+
+// const a = 4 - 'hello';
+// console.log(a);
+
+// const a = 2 / 0;
+// console.log(a);
+
+// const a = -2 / 0;
+// console.log(a)
+
+// BigInt value
+// const value = 900719925124740998n;
+// console.log(value)
+// const value = 900719925124740998n;
+// const value1 = value + 1n;
+// console.log(value1);
+
+// const a = 0.1 + 0.2;
+// console.log(a)
+
+// const a = (0.1 * 10 + 0.2 * 10) / 10;
+// console.log(a);
+
+// const a = 0.1 + 0.2;
+// console.log(a.toFixed(2));
+
+// const a = 9999999999999999
+// console.log(a);
+
+// const a = 45;
+// const b = new Number(45);
+// console.log(b)
+
+// const a = 12;
+// console.log(Number.isInteger(a));
+
+// const b = NaN;
+// console.log(Number.isNaN(b));
+
+// display upto two decimal point
+// const d = 5.1234;
+// console.log(d.toFixed(2));
+
+// const a = Number.MAX_VALUE;
+// console.log(a)
+
+// const a = Number.MAX_SAFE_INTEGER;
+// console.log(a);
+
+// const a = '23'; // string
+// const b = true; // boolean
+// console.log(Number(a))
+// console.log(Number(b))
+
+
+
+
