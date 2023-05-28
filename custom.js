@@ -3644,5 +3644,315 @@ let studentsData = [['Jack', 24], ['Sara', 23],];
 // console.log(Number(b))
 
 
+// let a = 'nitesh khatri'
+// function example(){
+//     console.log(a)
+//     // const a ='sameet khatri'
+// }
+// example()
+
+// const promise = new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//         reject(Error('Promise Rejected Unconditionally.'));
+//     },1000);
+// });
+
+// promise.then((res) => {
+//     console.log(value)
+// })
+// promise.catch((err) => {
+//     console.log(err)
+// })
+
+// const promise = new Promise((resolve,reject) => {
+//     const res = false; 
+//     if(res){
+//         resolve('resolved')
+//     }
+//     else{
+//         resolve(Error('rejected is error'))
+//     }
+// });
+// promise.then((res) => console.log(res),(err) => console.log(err));
+
+// const example = new Promise((resolve,reject) => {
+//     const res = true;
+//     if(res){
+//         resolve('resolved')
+//     }
+//     else{
+//         resolve(Error('rejected is getting an error'))
+//     }
+// });
+// example.then((res) => console.log(res),(err) => console.log(err));
+
+const obj = {
+    name:'nitesh',
+    age:43
+}
+// for(let value in obj){
+//     console.log(Object.values(obj))
+// }
+// for(let value in obj){
+//     console.log(Object.keys(obj))
+// }
+// for(let value in obj){
+//     console.log(Object.entries(obj))
+// }
+
+// let result = Object.entries(obj)
+// console.log(result)
+
+// const weakSet = new WeakSet();
+// console.log(weakSet)
+
+// weakSet.add(obj)
+// console.log(weakSet)
+
+// const weakSet = new WeakSet({a:1})
+// const friends = ['a','b','c']
+// for(let i of friends){
+//     console.log(i)
+// }
+
+// two sets of fruits
+// function union(a,b){
+//     let unionSet = new Set(a)
+//     for(let i of b){
+//         unionSet.add(i)
+//     }
+//     return unionSet
+// }
+// let setA = new Set(['apple', 'mango', 'orange']);
+// let setB = new Set(['grapes', 'apple', 'banana']);
+
+// let result = union(setA,setB)
+// console.log(result);
+
+// function intersection(setA, setB) {
+//     let intersectionSet = new Set();
+
+//     for (let i of setB) {
+//         if (setA.has(i)) {
+//             intersectionSet.add(i);
+//         }
+//     }
+//     return intersectionSet;
+// }
+
+// // two sets of fruits
+// let setA = new Set(['apple', 'mango', 'orange']);
+// let setB = new Set(['grapes', 'apple', 'banana']);
+
+// let result = intersection(setA, setB);
+
+// console.log(result);
+
+// assigning object attributes to variables
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+// let name = person.name;
+// let age = person.age;
+// let gender = person.gender;
+// console.log(name,age,gender);
+
+// const arrValue = ['one', 'two', 'three'];
+// const [x, y, z,p] = arrValue;
+// console.log(x);
+// console.log(y);
+// console.log(z);
+// console.log(p);
+
+// let arrValue = [10];
+// // assigning default value 5 and 7
+// let [x=50,y=20] = arrValue
+// console.log(x)
+// console.log(y)
+
+// const person = {
+//     name: 'Jack',
+// }
+// const {name,age=34} = person 
+// console.log(name)
+// console.log(age)
 
 
+// let x = 4;
+// let y = 7;
+// [x,y] = [y,x]
+// console.log(x,y)
+
+// let x = 'nitesh';
+// let y = 'sameet'
+// [x,y] = [y,x]
+// console.log(x,y)
+
+// const arrValue = ['one', 'two', 'three'];
+// const [x,,z] = arrValue
+// console.log(x,z)
+
+// const arrValue = ['one', 'two', 'three', 'four'];
+// // destructuring assignment in arrays
+// // assigning remaining elements to y
+// const [x, ...y] = arrValue;
+// console.log(x)
+// console.log(y)
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+// let { name, ...rest } = person;
+// console.log(name,rest)
+
+// const arrValue = ['one', 'two', 'three', 'four'];
+// const [...x,y] = arrValue
+// console.log(x,y)
+
+
+// const arrValue = ['one', ['two', 'three']];
+// const [x,[y,z]] = arrValue
+// console.log(x)
+// console.log(y)
+// console.log(z)
+
+// const person = {
+//     name: 'Jack',
+//     age: 26,
+//     hobbies: {
+//         read: true,
+//         playGame: true
+//     },
+//     getResult:function(){
+//         this.name
+//     }
+// }
+
+// console.log(person.getResult());
+// const {name,age,hobbies:{read,playGame}}=person 
+// console.log(name)
+// console.log(age)
+// console.log(read)
+// console.log(playGame)
+
+
+// let age = 7;
+// console.log(`nitesh ${age} is years old.`)
+
+// variables 
+// const currency = '$'
+// let userIncome = 850000
+// console.log(currency + userIncome)
+
+// undefined
+// var a 
+// console.log(a)
+
+// learn js variables
+// let name = 'nitesh'
+// const found = false 
+// var age = 33 
+// console.log(name,found,age)
+
+// declaring variables
+// var age;
+// let weight;
+// const numberOfFingers = 20 
+// console.log(age)
+// console.log(weight)
+// console.log(numberOfFingers)
+
+// template literals
+// let name = 'nitesh khatri'
+// console.log(`hello ${name}`)
+
+// ley keyword
+// let count 
+// console.log(count)
+// count = 10 
+// console.log(count)
+
+// const keyword
+// const numberOfColumns = 4
+// numberOfColumns = 10 
+// console.log(numberOfColumns)
+
+// string concatenation 
+// let service = 'nitesh khatri'
+// let month = 'may 30th'
+// let displayText = `your ${service} ${month}`
+// console.log(displayText)
+
+// function onlyUnique(value,index,array){
+//     return array.indexOf(value) === index
+// }
+// const num = [1,222,32,32,44,55,55,66]
+// const friends = ['vijay','rahul','hitesh','chandresh','ronak','chandresh']
+// console.log(num.reverse().filter(onlyUnique))
+// console.log(friends.filter(onlyUnique).sort((b,a) => b-a))
+
+// console.log(friends.forEach((val) => console.log(val)))
+// const colors = ["red", "green", "blue"];
+// for(let i=0;i<colors.length;i++){
+//     console.log(i + ' ' + colors[i])
+// }
+// for(let i=0;i<friends.length;i++){
+//     console.log(i + ' ' + friends[i])
+// }
+
+// logical operator
+
+// let studentDetails =
+// [
+//    {studentName: "John Smith"},
+//    {studentName: "john smith"},
+//    {studentName: "Carol Taylor"}
+// ];
+// var searchName="John Smith"
+// console.log(studentDetails.filter(obj =>
+// obj.studentName.toLowerCase().indexOf(searchName.toLowerCase()) >= 0));
+
+// var str1 = "TexT with uPPer CAsE aND loWeR cASe";
+// var str2 = "TexT with Upper Case aND LoWER CAse";
+// var output = document.getElementById("str1");
+// output.innerHTML += "str1 = " + str1+ "<br/>";
+// output.innerHTML += "str2 = " + str2 + "<br/>";
+// if (str1.toUpperCase() === str2.toUpperCase()) {
+//     output.innerHTML += "The strings are converted to Uppercase and they are equal" + "<br/>";
+// } else {
+//     output.innerHTML += "The strings are converted to Uppercase and they are not equal";
+// }
+
+// const str = 'HELLO WORLD';
+// const substr = 'hELLo';
+
+// // 👇️ true
+// console.log(str.toLowerCase().includes(substr.toLowerCase()));
+
+
+// const upper = arr.map((val) => {
+//     return val.toUpperCase();
+// })
+// const lower = arr.map((val) => {
+//     return val.toLowerCase();
+// })
+// console.log(upper)
+// console.log(lower)
+
+// const arr = ['apple', 'banana', 'cereal','mango']
+// const upper = [];
+// arr.forEach((item) => {
+//     upper.push(item)
+// })
+// console.log(upper)
+
+const arr = ['BOBBY', 'HADZ', 'COM'];
+const example = [];
+arr.forEach((val) => {
+    example.push(val);
+})
+console.log(example)
