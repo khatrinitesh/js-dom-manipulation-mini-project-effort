@@ -3950,9 +3950,883 @@ const obj = {
 // })
 // console.log(upper)
 
-const arr = ['BOBBY', 'HADZ', 'COM'];
-const example = [];
-arr.forEach((val) => {
-    example.push(val);
-})
-console.log(example)
+// const arr = ['BOBBY', 'HADZ', 'COM'];
+// const example = [];
+// arr.forEach((val) => {
+//     example.push(val);
+// })
+// console.log(example)
+
+// logical opeartors
+// console.log(true || false)
+// console.log(10 > 5 || 10 < 20)
+// console.log(false || false)
+// console.log(10 > 100 || 10 > 20)
+
+// ternary opeartor 
+// let price = 10.5;
+// let day = 'monday'
+// console.log(day === 'monday' ? price -= 1.5 : price += 1.5)
+
+
+// else statement
+// const isTaskCompleted = false;
+// if(isTaskCompleted){
+//     console.log('Task Completed');
+// }
+// else{
+//     console.log('Task InComplete');
+// }
+
+// logical opeartor && 
+// console.log(true && true);
+// console.log(1 > 2 && 2 > 1);
+// console.log(true && false);
+// console.log(4 === 4 && 3 > 1)
+
+// switch statement
+// const food = 'masala dosa'
+// switch(food){
+//     case 'masala dosa': console.log('yes it is masala dosa')
+//     break;
+//     case 'gulab jamun': console.log('yes it is gulab jamun')
+//     break;
+//     case 'jalebi': console.log('yes it is jalebi')
+//     break;
+//     default:console.log('there is no special food item')
+//     break;
+// }
+// console.log(food);
+
+// if statement
+// const isMailSent = false;
+// if(isMailSent){
+//     console.log('Mail sent to recipient');
+// }
+// else{
+//     console.log("Mail doesn't send  to recipient");
+// }
+
+// logical opeartor
+// let lateToWork = true;
+// let oppositveValue = !lateToWork;
+// console.log(oppositveValue)
+
+// comparison opeartor
+// console.log(1 >3)
+// console.log(3 > 1 )
+// console.log(250 >= 250)
+// console.log(1 === 1)
+// console.log(1 === 2)
+// console.log(1 =='1')
+// console.log(1 === '1')
+
+// else if cause 
+// const size = 10
+// if(size > 100){
+//     console.log('Big')
+// }
+// else if(size > 20){
+//     console.log('Medium')
+// }
+// else if(size > 4){
+//     console.log('Small')
+// }
+// else{
+//     console.log('Tiny')
+// }
+
+// truthy and falsy
+
+// arrow functions 
+
+// Arrow function with two parameters
+// const sum = (fParams,lParams) => {
+//     return fParams * lParams
+// }
+// console.log(sum(10,20))
+
+// Arrow function with no parameters
+// const printHello = () => {
+//     console.log('hello')
+// }
+// printHello();
+
+// Arrow functions with a single parameter 
+// const checkWeight = weight => {
+//     console.log(`Baggage weight :  ${weight} kilograms.`)
+// }
+// checkWeight(10)
+
+// arrow function with no parametters
+// const Example = () => {
+//     console.log('nitesh khatri')
+// }
+// Example()
+
+
+// arrow function with three parameters
+// function result(x,y,z){
+//     return x + y / z 
+// }
+// console.log(result(10,20,30))
+
+// defining the function: 
+// function sum(sum1,sum2){
+//     return sum1 + sum2 
+// }
+// console.log(sum(3,6))
+
+// named function
+// function rocketToMars(){
+//     return 'BOM'
+// }
+// console.log(rocketToMars())
+
+// const rocketToMars = function(){
+//     return 'nitesh khatri is rocket to mars'
+// }
+// console.log(rocketToMars())
+
+// const dog = function(){ 
+//     return 'bruno'
+// }
+// console.log(dog())
+
+// the parameter is name 
+// function sayHello(name){
+//     return `hello ${name}`
+// }
+// console.log(sayHello('nitesh'))
+
+// return keyword
+// with return 
+// function sum(a,b){
+//     return a + b 
+// }
+// console.log(sum(10,20)) // it is working there output
+
+// without return 
+// function sum(a,b){
+//     a +b 
+// }
+// console.log(sum(10,20)) // because it doesn't put return then it is not working and showed undefined output.
+
+// function declaration
+// function add(n1,n2){
+//     return n1 + n2 
+// }
+// console.log(add(1,12))
+
+// calling functions
+// function sum(n1,n2){
+//     return n1 + n2 
+// }
+// calling the function
+// sum(10,20)
+
+// scope 
+// function myFunction(){
+//     var pizzaName = 'volvo'
+//     console.log(pizzaName)
+// }
+// myFunction();
+
+// block scoped variables
+// const isLoggedIn = true;
+// if (isLoggedIn == true) {
+//   const statusMessage = 'User is logged in.';
+// }
+// console.log(statusMessage);
+
+// global variables 
+// variable declared globally
+// const color = 'blue'
+// function printColor(){
+//     console.log(color)
+// }
+// printColor() // prints:blue
+
+// arrays
+// const numbers = [1, 2, 3, 4];
+// console.log(numbers.length)
+
+// index
+// Accessing an array element
+// const myArray = [100, 200, 300];
+// console.log(myArray[0])
+// console.log(myArray[1])
+// console.log(myArray[2])
+
+// method .push()
+// adding a single element
+// const cart = ['apple', 'orange'];
+// cart.push('grape')
+// console.log(cart)
+
+// method.pop()
+// const ingredients = ['eggs', 'flour', 'chocolate'];
+// const poppedIngredient = ingredients.pop()
+// console.log(poppedIngredient)
+
+// mutable
+// const name = ['nitesh','sameet']
+// name.push('arvind')
+// console.log(name)
+
+
+// An array containing numbers
+// const numberArray = [0, 1, 2, 3];
+// const mixedArray = [1,'chicken',false];
+// console.log(numberArray,mixedArray)
+
+// while loop infinite continue
+// let i = 0
+// while (i<5){
+//     console.log(i++)
+// }
+
+// reverse loop 
+// const items = ['apricot', 'banana', 'cherry'];
+// for (let i = items.length - 1; i >= 0; i -= 1) {
+//     console.log(`${i}. ${items[i]}`);
+//   }
+
+// do ... while statement
+// x = 0 
+// i = 0;
+// do{
+//     x = x + i;
+//     console.log(x);
+//     i++;
+// }
+// while(i<5)
+
+// // for loop 
+// for(let i=0;i<5;i++){
+//     console.log(i)
+// }
+
+// looping through arrays
+// Output: Every item in the array
+// const array = ['a','b','c','d']
+// for(let i=0;i<array.length;i++){
+//     console.log(i  + ' ' + array[i])
+// }
+
+// break keyword
+// for(let i=0;i<99;i++){
+//     if(i > 5){
+//         break;
+//     }
+//     console.log(i)
+// }
+
+// nested for loop
+// for(let outer=0;outer<2;outer+=1){
+//     for(let inner=0;inner<3;inner+=1){
+//         console.log(`${outer}-${inner}`)
+//     }
+// }
+
+// iterators
+// function assigned to variables
+// let plusFive = (number) => {
+//     return number += 5 
+// }
+// let f = plusFive
+// plusFive(4)
+// f(9)
+// console.log(plusFive)
+
+// callbackfunctions
+// const isEven = (n) => {
+//     return n % 2  == 0
+// }
+// let printMsg = (evenFunc,num) => {
+//     const isNumEven = evenFunc(num);
+//     console.log(`the number ${num} is an even number ${isNumEven}`)
+// }
+// console.log(printMsg(isEven,11))
+
+// js functions - first class objects
+//Assign a function to a variable originalFunc
+// const originalFunc = (num) => { return num + 2 };
+// console.log(originalFunc)
+
+// const newFunc = originalFunc
+// console.log(newFunc)
+
+// newFunc.name; 
+// newFunc.toString();
+// newFunc.isMathfunction = true;
+// const functionNameLength = (func) => {
+//     return func.name.length;
+// }
+// functionNameLength(originalFunc)
+
+// const returnFunc = () => {
+//     return newFunc
+// }
+// console.log(returnFunc)
+
+// reduce method 
+// const arrayOfNumbers = [1, 2, 3, 4];
+// const result = arrayOfNumbers.reduce((accumulator,currentValue) => {
+//     return accumulator + currentValue 
+// })
+// console.log(result)
+
+// forEach method
+
+// const numbers = [28, 77, 45, 99, 27];
+// numbers.forEach((val) => {
+//     console.log(val)
+// })
+
+// filter method
+// const randomNumbers = [4, 11, 42, 14, 39];
+// const result =  randomNumbers.filter((val) => val > 40)
+// console.log(result)
+
+// map method
+// const finalParticipants = ['Taylor', 'Donald', 'Don', 'Natasha', 'Bobby'];
+// const result = finalParticipants.map((members) => {
+//     return members + ' joined the contest.'
+// })
+// console.log(result)
+
+// restrictions in naming properties
+// Example of invalid key names
+// const trainSchedule = {
+//     platform num: 10, // Invalid because of the space between words.
+//     40 - 10 + 2: 30, // Expressions cannot be keys.
+//     +compartment: 'C' // The use of a + sign is invalid unless it is enclosed in quotations.
+//   }
+
+// dot notation for accessing object properties
+// const apple = {
+//     color:'green',
+//     price:{
+//         bulk:'$3/kg',
+//         smallQty:'$4/kg'
+//     }
+// }
+// console.log(apple)
+// console.log(apple.color)
+// console.log(apple.price.bulk)
+// console.log(apple.price.smallQty)
+
+// objects accessing non-existent javascript properties 
+// const classElection = {
+//     date:'17th june 2023'
+// }
+// console.log(classElection.place)
+
+// js objects are mutable 
+// const Student = {
+//     name: 'Sheldon',
+//     score: 100,
+//     grade: 'A',
+// }
+// console.log(Student)
+// delete Student.score
+// const obj1 = new Student  
+// console.log(obj1)
+// console.log(obj1)
+// const student = {
+//     name: 'Sheldon',
+//     score: 100,
+//     grade: 'A',
+//   }
+//   student.grade = 'b'
+  
+// console.log(student)
+
+// javascript for in loop 
+// let mobile = {
+//     brand: 'Samsung',
+//     model: 'Galaxy Note 9'
+// }
+// for(let i in mobile){
+//     console.log(`${i} - ${mobile[i]}`)
+// }
+
+// let array = ['friends','happy','sad','crying']
+// for(let i of array){
+//     console.log(`${i}`)
+// }
+
+//  Properties and values of a JavaScript object
+const classOf2018 = {
+    students: 38,
+    year: 2018
+  }
+
+  // Delete operator
+//   const person = {
+//     firstName: "Matilda",
+//     age: 27,
+//     hobby: "knitting",
+//     goal: "learning JavaScript"
+//   };
+  
+//   delete person.hobby;
+//   console.log(person)
+
+// javascript passing objects as arguments
+// const origNum = 08
+// const oriObj = {
+//     color:'blue'
+// }
+// const changeItUp =  (num,obj) => {
+//     num = 7;
+//     obj.color = 'red'
+// }
+// changeItUp(origNum,oriObj)
+// console.log(origNum)
+// console.log(oriObj)
+
+// const orinString = 'nitesh'
+// const orinNumber = 11
+// const orinObj = {
+//     name:'nitesh'
+// }
+// const orinArray = ['friends','happy','smile']
+
+// const changeItUp = (str,num,obj,arr) => {
+//     str='sameet';
+//     num=22;
+//     obj.name = 'arvind';
+//     arr = ['a','b','c']
+// }
+// changeItUp(orinString,orinNumber,orinObj,orinArray)
+// console.log(orinString)
+// console.log(orinNumber)
+// console.log(orinObj)
+// console.log(orinArray)
+
+// object methods 
+// const engine = {
+//     start(adverb){
+//         console.log(``)
+//     },
+//     sputter:() => {
+//         console.log('The engine sputters...')
+//     }
+// }
+// engine.start('noisily');
+// engine.sputter();
+
+// JavaScript destructuring assignment shorthand syntax
+// const rubiksCubeFacts  = {
+//     possiblePermutations: '43,252,003,274,489,856,000',
+//     invented: '1974',
+//     largestCube: '17x17x17'
+// }
+// const {possiblePermutations,invented,largestCube} = rubiksCubeFacts
+// console.log(possiblePermutations)
+// console.log(invented)
+// console.log(largestCube)
+
+// shorthand property name syntax for object creation
+// const activity = 'Surfing';
+// const beach = {activity}
+// console.log(beach)
+
+// this Keyword
+// const cat = {
+//     name: 'Pipey',
+//   age: 8,
+//   whatName() {
+//     return this.name  
+//   }
+// }
+// console.log(cat.name)
+// console.log(cat.age)
+// console.log(cat.whatName)
+
+
+// javascript function this
+// const restaurant = {
+//     numCustomers: 45,
+//     seatCapacity: 100,
+//     availableSeats() {
+//       // this refers to the restaurant object
+//       // and it's used to access its properties
+//       return this.seatCapacity - this.numCustomers;
+//     }
+//   }
+//   console.log(restaurant.availableSeats())
+
+// const example = {
+//     a:1,
+//     b:2,
+//     resultEe(){
+//      return this.a + this.b    
+//     }
+// }
+// console.log(example.resultEe())
+
+// JavaScript Arrow Function this Scope
+// const myObj = {
+//     data: 'abc',
+//     loggerA: () => { console.log(this.data); },
+//     loggerB() { console.log(this.data); },
+// }
+// console.log(myObj)
+
+// const example = {
+//     data:'abc',
+//     logA() {console.log('logger a ')},
+//     logB:() => {console.log('logger b')}
+// }
+// console.log(example)
+
+// getters and setters intercept property access
+// const myCat = {
+//     _name: 'Snickers',
+//     get name(){
+//       return this._name
+//     },
+//     set name(newName){
+//       //Verify that newName is a non-empty string before setting as name property
+//       if (typeof newName === 'string' && newName.length > 0){
+//         this._name = newName; 
+//       } else {
+//         console.log("ERROR: name must be a non-empty string"); 
+//       }
+//     }
+//   }
+
+// javascript factory functions
+// const dogFactory = (name, age, breed) => {
+//     return {
+//       name: name,
+//       age: age,
+//       breed: breed,
+//       bark() {
+//         console.log('Woof!');  
+//       }
+//     };
+//   };
+
+// javascript getters and setters restricted
+// const myCat = {
+//     _name: 'Dottie',
+//     get name() {
+//       return this._name;  
+//     },
+//     set name(newName) {
+//       this._name = newName;  
+//     }
+//   };
+  
+//   // Reference invokes the getter
+//   console.log(myCat.name);
+  
+//   // Assignment invokes the setter
+//   myCat.name = 'Yankee';
+
+// function getUsers(){
+//     return[
+//         { username: 'john', email: 'john@test.com' },
+//         { username: 'jane', email: 'jane@test.com' },
+//     ]
+// }
+// function findUser(username){
+//     const users = getUsers();
+//     const user = users.find((user) => user.username === username);
+//     return user;
+// }
+// console.log(findUser('jane'))
+
+// function getUsers() {
+//     let users = [];
+  
+//     // delay 1 second (1000ms)
+//     setTimeout(() => {
+//       users = [
+//         { username: 'john', email: 'john@test.com' },
+//         { username: 'jane', email: 'jane@test.com' },
+//       ];
+//     }, 1000);
+  
+//     return users;
+//   }
+//   getUsers();
+
+// const promise = new Promise((resolve, reject) => {
+//     if (success) {
+//       resolve(value);
+//     } else {
+//       reject(error);
+//     }
+// });
+// console.log(promise(success))
+
+// class Person{
+//     constructor(fname,lname){
+//         this.fname = fname;
+//         this.lname = lname
+//     }
+//     getName(){
+//         console.log(`the fullname is ${this.fname} and ${this.lname}`)
+//     }
+// }
+
+// let obj11 = new Person('nitesh','khatri')
+// console.log(obj11.getName())
+
+// class Example {
+//     constructor(fname,lname){
+//         this.fname = fname,
+//         this.lname = lname
+//     }
+//     getName(){
+//         console.log(`the fullname of ${fname} and ${lname}`)
+//     }
+// }
+
+// let obj22 = new Example('nitesh','khatri')
+// console.log(obj22)
+
+
+// function rest parameter (...)
+// function sum(...args){
+//     let sum = 0 
+//     for(let arg of args) sum += arg;
+//     return sum; 
+// }
+// let x = sum(4,8,12,1,22,22)
+// console.log(x)
+
+// const fruits = new Map([
+//     ['apples',500],
+//     ['mango',400],
+//     ['pineapple',300],
+//     ['watermelon',200],
+// ])
+// console.log(fruits)
+
+// const fruits = new Map();
+// fruits.set('apples',5010)
+// fruits.set('pineapple',400)
+// fruits.set('mango',300)
+// fruits.set('grape',200)
+// console.log(fruits)
+
+// let srcObject = {
+//     name:'nitesh khatri',
+//     title:'front-end developer'
+// }
+// let map = new Map(Object.entries(srcObject))
+// console.log(map.get('name'))
+
+// let result = {
+//     name:'nitesh khatri',
+//     age:34
+// }
+// let example = new Map(Object.entries(result));
+// console.log(example.get('age'))
+
+// const letters = new Set(['a','b','c','d'])
+// console.log(letters)
+
+// const a = 'nietsh khatri'
+// const b = 'sameet khatri'
+// const result = new Set([a,b]);
+// console.log(result)
+
+// let veg = new Set();
+// let cucumber = {name:'cucumber'};
+// let onion = {name:'onion'};
+// let potato = {name:'potato'};
+// let watermelon = {name:'watermelon'}
+// console.log(veg.add(cucumber))
+// console.log(veg.add(onion))
+// console.log(veg.add(potato))
+// console.log(veg.add(watermelon))
+
+// console.log(veg.size)
+
+// const letters = new Set(['a','b','c']);
+// let text = '';
+// letters.forEach(function(val){
+//     text += val + "<br>"
+// })
+// document.getElementById('demo').innerHTML = text;
+
+// const example = new Set(['nitesh','sameet','vishal'])
+// let letters = '';
+// example.forEach((val) => {
+//     letters += val + "<br>"
+// })
+// document.getElementById('demo').innerHTML = letters;
+
+// const fruits = new Set(['mango','apple','watermelon','pineapple'])
+// let example = '';
+// fruits.forEach((val) => {
+//     example += val + "<br>"
+// })
+// document.getElementById('demo').innerHTML = example;
+
+// const first = new WeakMap();
+// const currentAge = {};
+// const currentCity = {};
+// first.set(currentAge,30)
+// first.set(currentCity,'mumbai')
+// console.log(first.has(currentCity))
+// console.log(first.delete(currentAge))
+
+// let messages = [
+//     {
+//         text:'nitesh',from:'neads'
+//     },
+//     {
+//         text:'nitesh',from:'neads'
+//     },
+//     {
+//         text:'nitesh',from:'neads'
+//     },
+// ]
+// let read = new WeakSet();
+// console.log(messages.add[0]);
+// console.log(messages.add[1]);
+
+// function showCord(x,y,z){
+//     console.log(`${x} ${y} ${z}`)
+// }
+// const cords = [2,1.5,3.5]
+// showCord(...cords)
+
+// function example(a,b,c){
+//     console.log(`${a} ${b} ${c}`)
+// }
+// const result = [1,2,3]
+// example(...result)
+
+// const boys = ['nitesh','vishal','sameet']
+// const girls = ['swati','aishwarya','priyanka']
+// const all = [...boys,...girls]
+// console.log(all)
+// with an array literal
+
+// const boys = ['pranay','tejas']
+// const girls = ['swati','ashwini']
+// const all = ['eric',...boys,...girls,'happy']
+// console.log(all)
+
+
+//  with object literal
+// let obj1 = {name:'nitesh',age:34,jobtitle:'fe developer'}
+// let obj2 = {name:'sameet',age:41,jobtitle:'field servic engineering'}
+// let combined = {...obj1,...obj2}
+// console.log(combined)
+
+// simple array 
+// const example = [1,2,3,4,5]
+// const [first,second,...third] = example;
+// console.log(first)
+// console.log(third)
+
+// function* getMultipleField(){
+//     return 10;
+//     return 20;
+// }
+
+// const result = getMultipleField();
+// console.log(result)
+
+// const person = {
+//     name:'nitesh',
+//     age:34
+// }
+// console.log(Object.entries(person))
+
+// var p1 = new Promise((success,fail) => {
+//     setTimeout(() => {
+//         console.log(1);
+//         success();
+//     },2000)b
+// });
+// console.log(2)
+
+// var p2 = new Promise((success,fail) => {
+//     setTimeout(() => {
+//         console.log(3)
+//         success();
+//     },1000)
+// });
+
+// var p3 = Promise.all([p1,p2]).then(() => new Promise((success,fail) => {
+//     setTimeout(() => {
+//         console.log(4);
+//         success();
+//     },3000)
+// }));
+// p3.then(() => console.log(5));
+
+// const questionFilter = [
+//     {
+//         "id": 1,
+//         "title": "Video 1",
+//         "video_leght": "00:50:00",
+//         "date": "20.05.2010",
+//         "questions": [
+//             {
+//                 "id": 1,
+//                 "question": "Question 1 ",
+//                 "url": "Link"
+//               },
+//               {
+//                 "id": 2,
+//                 "question": "Question 2",
+//                 "url": "Link"
+//               },
+//               {
+//                 "id": 3,
+//                 "question": "Question 3",
+//                 "url": "Link"
+//               }         
+//         ]
+//     },
+//     {
+//         "id": 2,
+//         "title": "Video 2",
+//         "video_leght": "01:00:00",
+//         "date": "14.07.2016",
+//         "questions":[
+//             {
+//                 "id": 1,
+//                 "question": "Question 1 ",
+//                 "url": "Link"
+//               },
+//               {
+//                 "id": 2,
+//                 "question": "Question 2",
+//                 "url": "Link"
+//               },
+//               {
+//                 "id": 3,
+//                 "question": "Question 3",
+//                 "url": "Link"
+//               }        
+//         ]
+//     }
+// ]
+// const result = questionFilter.map((item) => item.title === 'Video 2')
+// console.log(result)
+
+// let num = 1.23456;
+// console.log(Math.round(num * 100) / 100)
+
+
+// const friends = ['a','b','c']
+// console.log(Math.random() * friends.length)
+
+// console.log(num.toFixed(1))
+// console.log(num.toFixed(5))
+// console.log(num.toFixed(55))
+
+
