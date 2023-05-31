@@ -4830,3 +4830,307 @@ const classOf2018 = {
 // console.log(num.toFixed(55))
 
 
+// https://wtfjs.com/
+// length
+// var foo = ["lval0", "lval1", "lval2", "lval3"];
+// foo[this.length] = 'nitesh';
+// console.log(foo)
+
+// instance of 
+//object and array prototype 
+// console.log(Object.create(Array).length === 1)
+// console.log(Object.create(Array).length === 0)
+
+// two special numbers
+// let i = 1
+// console.log(i*i)
+// console.log(i+1)
+// console.log(i-1)
+// console.log(i/i)
+
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// arr[-1] = "yo wazzzup";
+// console.log(arr.length);
+
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// console.log(arr.length)
+// console.log(arr.slice(0,-1))
+// console.log(arr.slice(0,-2))
+// console.log(arr.slice(0,-4))
+
+// console.log([1,2,3,15,30,7,5,45,60].sort())
+// console.log([1,2,3,4,[5,6],[6,7]].flat())
+
+// alert('hi')
+// console.log(confirm('what are you doing'))
+
+//VARIABLE
+
+// let user = 'nitesh'
+// let age = 34
+// let message = 'hello'
+// console.log(user,age,message)
+
+// let user = 'John',
+//   age = 25,
+//   message = 'Hello';
+//   console.log(user,age,message)
+
+// let message;
+// message = 'Hello!';
+// message = 'World!'; 
+// console.log(message);
+
+// let $ = 1; // declared a variable with the name "$"
+// let _ = 2;
+// console.log($  + _)
+
+// let my-name = 'a'
+// console.log(my-name)
+
+// const myBirthday = '14.06.1982'; // sam
+// console.log(myBirthday)
+
+// const COLOR_RED = "#F00";
+// const COLOR_GREEN = "#0F0";
+// const COLOR_BLUE = "#00F";
+// const COLOR_ORANGE = "#FF7F00";
+// console.log(COLOR_RED)
+// console.log(COLOR_GREEN)
+// console.log(COLOR_BLUE)
+// console.log(COLOR_ORANGE)
+
+// no error
+// let message = "hello";
+// message = 123456;
+// console.log(message);
+
+// let n = 123;
+// n = 12.345;
+// console.log(n)
+
+// alert( 1 / 0 );
+
+// console.log(9007199254740991 + 1);
+// console.log(9007199254740991 + 2);
+
+// const bigInt = 1234567890123456789012345678901234567890n;
+// console.log(bigInt)
+
+// let str = "Hello";
+// let str2 = 'Single quotes are ok too';
+// let phrase = `can embed another ${str}`;
+// console.log(phrase)
+
+// let name = "John";
+// console.log(`${name}`)
+
+// alert( `the result is ${1 + 2}`);
+
+// let nameFieldChecked = true
+// let ageFieldChecked = false;
+// let isGreater = 4 > 1;
+// console.log(isGreater)
+
+// let age = null;
+// console.log(age)
+
+// let age;
+// console.log(age);
+
+// let age = 100;
+// console.log(age)
+
+// console.log(typeof undefined)
+// console.log(typeof 0)
+// console.log(typeof NaN)
+// console.log(typeof true)
+// console.log(typeof 'foo')
+// console.log(typeof Symbol('id'))
+// console.log(typeof Math)
+// console.log(typeof null)
+// console.log(typeof alert)
+
+// let name = "Ilya";
+// console.log(`hello ${name}`)
+
+// let age = prompt('How old are you?', 100);
+// console.log(age)
+
+// let test = prompt("Test");
+// console.log(test)
+
+// let isBoss = confirm("Are you the boss?");
+// console.log(isBoss)
+
+// let value = true;
+// alert(typeof value);
+
+// alert( "6" / "2" );
+
+// let str = "123";
+// console.log(typeof str); 
+// let age = Number("an arbitrary string instead of a number");
+// console.log(typeof age);
+
+// console.log(typeof Number("123"));
+// console.log(typeof Number("123z"));
+// console.log(typeof Number(true));
+// console.log(typeof Number(false));
+
+// console.log(Boolean(0))
+// console.log(Boolean(1))
+// console.log(Boolean('hello'))
+
+// alert( 5 % 2 ); // 1, the remainder of 5 divided by 2
+// alert( 8 % 3 );
+
+// alert( 2 ** 2 ); // 2² = 4
+// alert( 2 ** 3 );
+
+// let s = "my" + "string";
+// alert(s);
+
+// console.log(2 >1);
+// console.log(2 == 1);
+// console.log(2 != 1);
+
+// console.log(5 > 4 )
+
+// console.log('z' > 'a')
+
+// console.log('01' == 1)
+
+// console.log(true == 1)
+// console.log(false == 1)
+
+// let a = 0
+// console.log(Boolean(a))
+
+// let b = '0'
+// console.log(Boolean(b))
+
+// console.log(0 == false);
+// console.log('' == false);
+
+// console.log(null == undefined)
+
+// console.log(null === undefined)
+
+// console.log(null > 0)
+// console.log(null == 0)
+// console.log(null >=  0)
+
+// let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+// if(year === 2015) alert('you are right!')
+// if(year == 2015){
+//     alert( "That's correct!" );
+//     alert( "You're so smart!" );
+// }
+
+// if (year < 2015) {
+//     alert( 'Too early...' );
+//   } else if (year > 2015) {
+//     alert( 'Too late' );
+//   } else {
+//     alert( 'Exactly!' );
+//   }
+
+// let accessAllowed;
+// let age = prompt('how old are you');
+
+// if(age > 18){
+//     accessAllowed = true;
+// }
+// else{
+//     accessAllowed = false;
+// }
+// console.log(accessAllowed)
+
+// let age = 20
+// let accessAllowed = (age > 18) ? true : false;
+// console.log(accessAllowed)
+
+// let score = 75 
+// if(score > 80){
+//     scoretext = 'A+'
+// }
+// else if(score > 74){
+//     scoretext = 'B+'
+// }
+// else if (score > 60){
+//     scoretext = 'C+'
+// }
+// else{
+//     scoretext = 'fail'
+// }
+// console.log(scoretext);
+
+// let example = prompt('what is your output?')
+// if(example == 'Front End Developer'){
+//     alert('right')
+//     document.getElementById('')
+// }
+// else{
+//     alert('you have not right')
+// }
+
+// let result;
+// if (a + b < 4) {
+//   result = 'Below';
+// } else {
+//   result = 'Over';
+// }
+
+// let firstName = "";
+// let lastName = "";
+// let nickName = "SuperCoder";
+// console.log(firstName || lastName || nickName)
+
+// console.log(true && false)
+// console.log(false && true)
+// console.log(true && false)
+// console.log(false && false)
+
+// let hour = 12;
+// let minute = 30;
+// if(hour == 12 && minute == 30){
+//     console.log('the time is 12:30')
+// }
+// else{
+//     console.log("the time won't same 12:30")
+// }
+
+// if(1 && 0){
+//     console.log("won't work, because the result is falsy")
+// }
+
+
+let userName = prompt("Who's there?", '');
+
+if (userName === 'Admin') {
+  let pass = prompt('Password?', '');
+  if (pass === 'TheMaster') {
+    alert( 'Welcome!' );
+  } else if (pass === '' || pass === null) {
+    alert( 'Canceled' );
+  } else {
+    alert( 'Wrong password' );
+  }
+} 
+else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+} else {
+  alert( "I don't know you" );
+}
+
+
+
+
+
+
+
+
+
+
+
