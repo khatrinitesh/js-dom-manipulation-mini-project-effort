@@ -5105,32 +5105,335 @@ const classOf2018 = {
 //     console.log("won't work, because the result is falsy")
 // }
 
+// let userName = prompt("Who's there?", '');
+// if (userName === 'Admin') {
+//   let pass = prompt('Password?', '');
+//   if (pass === 'TheMaster') {
+//     alert( 'Welcome!' );
+//   } else if (pass === '' || pass === null) {
+//     alert( 'Canceled' );
+//   } else {
+//     alert( 'Wrong password' );
+//   }
+// } 
+// else if (userName === '' || userName === null) {
+//   alert( 'Canceled' );
+// } else {
+//   alert( "I don't know you" );
+// }
 
-let userName = prompt("Who's there?", '');
+// var a =  10 
+// {
+//     var a = -10
+// }
+// let b = a 
+// {
+//     let b = -20
+// }
+// console.log(b)
 
-if (userName === 'Admin') {
-  let pass = prompt('Password?', '');
-  if (pass === 'TheMaster') {
-    alert( 'Welcome!' );
-  } else if (pass === '' || pass === null) {
-    alert( 'Canceled' );
-  } else {
-    alert( 'Wrong password' );
-  }
-} 
-else if (userName === '' || userName === null) {
-  alert( 'Canceled' );
-} else {
-  alert( "I don't know you" );
-}
+// b = 25
+// var b 
+// console.log(b)
+
+// let b 
+// b = 25 
+// console.log(b)
+
+// const b 
+// b = 25 
+// console.log(b)
+
+// let i = 0;
+// while(i<=3){
+//     console.log(i)
+//     i++
+// }
+
+// for (let i = 0; i < 3; i++) { // shows 0, then 1, then 2
+//     console.log(i);
+//   }
+
+// let i = 0;
+// while(i<3){
+//     console.log(i)
+//     i++
+// }
+
+// for (let i = 0; i < 10; i++) {
+//     if (i % 2) {
+//       alert( i );
+//     }
+// }
 
 
+// var
+// var a = 'nitesh'
+// function example(){
+//     var a = 'sameet'
+//     console.log(a)
+// }
+// example()
+
+// // let
+// let a = 'nitesh'
+// function example(){
+//     console.log(a)
+//     let a = 'sameet'
+// }
+// example()
+
+// const
+// const a = 'nitesh'
+// function example(){
+//     console.log(a)
+//     const a = 'sameet'
+// }
+// example()
 
 
+// let a = 2+2;
+// switch(a){
+//     case 0:console.log('too small')
+//     break;
+//     case 1:console.log('too medium')
+//     break;
+//     case 3:console.log('too large')
+//     break;
+//     case 4:console.log('too extra large')
+//     break;
+//     default:console.log("I don't know such values")
+//     break;
+// }
 
 
+// const num = [111,22,33]
+// const result = num.map((item) => {
+//     return item * 20
+// })
+// console.log(result)
+
+// console.log('hello')
+// setTimeout(() => {
+//     console.log('how are you')
+// },1000)
+// console.log(a)
+// console.log(b)
+// var a = 10 
+// let b = 20
+// console.log('bye');
 
 
+// const word = 'nitesh khatri is hero khatri'
+// console.log(word.replaceAll('khatri','shah'))
+// let browser = 'Test'
+// switch (browser) {
+//     case 'Edge':
+//     console.log( "You've got the Edge!" );
+//     break;
+//     case 'Chrome':
+//     case 'Firefox':
+//     case 'Safari':
+//     case 'Opera':
+//       console.log( 'Okay we support these browsers too' );
+//       break;
+//     default:
+//       console.log( 'We hope that this page looks ok!' );
+//   }
 
 
+// 
+// let abc = ['banana','apple','watermeon','pineapple']
+// console.log(abc.slice(0,-1))
+// console.log(abc.slice(0,-2))
+// console.log(abc.slice(0,-3))
+// console.log(abc.slice(0,-4))
 
+// let a = prompt('a?', '');
+
+// if (a == 0) {
+//   console.log( 0 );
+// }
+// if (a == 1) {
+//   console.log( 1 );
+// }
+
+// if (a == 2 || a == 3) {
+//   console.log( '2,3' );
+// }
+
+// function showMessage() {
+//     console.log( 'Hello everyone!' );
+//   }
+//   console.log(showMessage())
+
+// function showMessage() {
+//     let message = "Hello, I'm JavaScript!"; // local variable
+//     console.log( message );
+//   }
+
+//   showMessage()
+
+// let message = "Hello, I'm JavaScript!"; // global variable
+// function showMessage() {
+//     console.log( message );
+//   }
+
+//   showMessage()
+
+// const str = 'helllo how are you'
+// const result = str.replace(/helllo/g,'hello nitesh')
+// console.log(result)
+
+// let regularExp = /\d+/g;
+// let strAge = "John: 42, Mike: 44,Sameet:34";
+// document.getElementById("result").innerHTML =strAge.match(regularExp);
+
+// function checkAge(age) {
+//     return (age > 18) || confirm('Did parents allow you?');
+//   }
+//   console.log(checkAge())
+
+// function min(a, b) {
+//     if (a < b) {
+//       return a;
+//     } else {
+//       return b;
+//     }
+//   }
+
+//   console.log(min(10,20))
+
+// function sayHi() {
+//     console.log( "Hello" );
+//   }
+//   sayHi();
+
+// function sayHi() {
+//     console.log( "Hello" );
+//   }
+//   sayHi()
+
+// let c = {greeting:'hey'}
+// let d;
+// d = c 
+// c.greeting = 'hello'
+// console.log(d.greeting)
+
+// const bird = {
+//     size:'small'
+// }
+// const mouse = {
+//     name:'nitesh',
+//     small:true
+// }
+// console.log(bird)
+// console.log(mouse)
+
+// const person = {
+//     name:'nitesh'
+// }
+// Object.defineProperty(person,'age',{value:21});
+// console.log(person)
+// console.log(Object.keys(person))
+
+// for(var i=0;i<3;i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1)
+// }
+// for(let i=0;i<3;i++){
+//     setTimeout(() => {
+//         console.log(i)
+//     },1)
+// }
+
+// const foo = () => console.log('first');
+// const bar = () => setTimeout(() => console.log('second'))
+// const baz = () => console.log('third')
+// foo()
+// bar()
+// baz()
+
+// String.prototype.Example = () => {
+//     return 'nitesh khatri'
+// }
+// const name222 = 'sameet'
+// name222.Example();
+
+
+// function getArgs(...args){
+//     console.log(typeof args)
+// }
+// getArgs(22)
+
+// const getRectArea = function(width, height) {
+//     return width * height;
+//   };
+//   console.log(getRectArea(3, 4));
+
+// let getRectArea = function(width, height) {
+//     return width * height;
+//   };
+//   console.log(getRectArea(3, 4))
+
+// const getExample = function(acc,smile){
+//     return acc + smile 
+// };
+// console.log(getExample(10,20))
+
+// function sum(a,b){
+//     return a+ b 
+// }
+// console.log(sum(10,20))
+// let sum = (a, b) => a + b;
+// console.log(sum(10,20))
+
+// let sayHi = () => console.log("Hello!");
+// sayHi()
+// let btn = document.createElement("button");
+// btn.innerHTML = "Click Me";
+// btn.setAttribute('type','button');
+// document.body.appendChild(btn);
+
+// let btn = document.createElement('button');
+// btn.innerHTML = 'btn'
+// btn.type = 'submit'
+// btn.name = 'bbb'
+// document.body.appendChild(btn)
+
+// var btn = document.getElementById('buttonId');
+// btn.innerText = 'happy'
+
+// btn.addEventListener('click',function(){
+//     btn.innerHTML = 'asdsadad'
+// });
+
+
+// const el = document.createElement('div');
+// el.style.backgroundColor = 'red';
+// el.style.color = 'white';
+// el.style.width = ' 50px';
+// el.style.height = '100px';
+// el.textContent = 'hello world';
+// const box = document.getElementById('boxwrapper');
+// box.appendChild(el);
+
+// const select = document.getElementById('fruit-select');
+// if(select.tagName === 'SELECT'){
+//     console.log('✅ element is a select dropdown');
+// } else {
+//   console.log('⛔️ element is not a select dropdown');
+// }
+
+// function functionMenu(){
+//     console.log('adsad')
+// }
+// function myFunction(){
+//     document.getElementById('result').innerHTML = 'you copied text.'
+// }
+
+// const para = document.getElementById('noContextMenu');
+// para.addEventListener('contextmenu',function(){
+//     console.log('asdad')
+// });
