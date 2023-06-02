@@ -5392,8 +5392,11 @@ const classOf2018 = {
 // let sayHi = () => console.log("Hello!");
 // sayHi()
 // let btn = document.createElement("button");
-// btn.innerHTML = "Click Me";
+// btn.innerHTML = "Click Me 1";
 // btn.setAttribute('type','button');
+// btn.textContent = 'nitesh khatri'
+// btn.classList = 'btn btn-success'
+// btn.className = 'primary'
 // document.body.appendChild(btn);
 
 // let btn = document.createElement('button');
@@ -5437,3 +5440,396 @@ const classOf2018 = {
 // para.addEventListener('contextmenu',function(){
 //     console.log('asdad')
 // });
+
+// for(let i =0;i<5;i++){
+//     console.log(i)
+// }
+
+// let i=0
+// while(i<5){
+//     console.log(i)
+//     i++
+// }
+
+// let day = new Date().getDay();
+// switch(day){
+//     case 0 : console.log('sunday')
+//     break;
+//     case 1 : console.log('monday')
+//     break;
+//     case 2 : console.log('tuesday')
+//     break;
+//     case 3 : console.log('wednesday')
+//     break;
+//     case 4 : console.log('thursday')
+//     break;
+//     case 5 : console.log('friday')
+//     break;
+//     case 6 : console.log('saturday')
+//     break;
+//     default:console.log('no weekday and weekend')
+//     break;
+// }
+// console.log(day)
+
+// let smile = 'smile'
+// console.log(smile  === 'smile' ? 'yes' : 'no')
+
+// const numword = [1,2,3,4,5,'a','b','c', null,undefined]
+// console.log(numword.filter((val) => typeof val !== 'string' && typeof val !== 'object' && typeof val !== 'undefined'))
+
+// const project = [
+//     {
+//         name:'nitesh',age:34
+//     },
+//     {
+//         name:'sameet',age:41
+//     },
+//     {
+//         name:'arvind',age:68
+//     },
+//     {
+//         name:'urvashi',age:65
+//     },
+// ]
+// const result = project.sort(function(a,b){
+//     if(a.name < b.name){
+//         return -1 
+//     }
+//     else{
+//         return 1 
+//     }
+// })
+// console.log(result)
+
+// console.log('nitesh'.split("").reverse("").join(""))
+
+// const fname = 'nitesh'
+// const lname = 'khatri'
+// console.log(fname.concat(' ' + lname))
+
+// console.log('nitesh'.length)
+// console.log('nitesh'.toLocaleUpperCase())
+// console.log('nitesh'.replace('nitesh','sameet'))
+// var myarray = new Array("Orange", "Apple", "Banana", "Cherry", "Mango")
+
+// var newText = createTextNode('the object is constructed from : "+myarray.constructor)');
+// newParagraph.appendChild(newText);
+// var newHeader = document.createElement('h1');
+// newHeader.innerHTML = 'asdad'
+// newHeader.textContent = 'sameeet khatri'
+// document.body.appendChild(newParagraph)
+
+// var div11 = document.getElementById("target");
+// div11.innerHTML = '<p>This is paragraph</p>'
+
+// var refElement = document.getElementById("sister");
+// var parent = refElement.parentNode;
+// var newDiv = document.createElement('div');
+// parent.insertBefore(newDiv,refElement);
+
+// var bdy = document.getElementsByTagName("body")[0];
+// var newDiv = document.createElement("div");
+// bdy.textContent =  'nitesh khatri'
+// bdy.appendChild(newDiv);
+
+
+// var header = document.createElement('h1');
+// header.textContent = 'heading title'
+// document.body.appendChild(header)
+
+
+// const a = 'nitesh khatri'
+// function example(){
+//     const a = 'sameet khatro'
+//     console.log(a)
+// }
+// example()
+
+// let a = 'nitesh khatri'
+// function example(){
+//     console.log(a)
+//     let a = 'sameet khatro'
+// }
+// example()
+// var a = 'nitesh khatri' //global scope
+// function example(){
+//     console.log(a)
+//     // var a = 'sameet khatri' // local scope
+// }
+// example()
+// var txt = document.createTextNode("The new paragraph will contain this text");
+// var para = document.createElement("p");
+// para.textContent = 'nitesh khatri'
+// para.className = 'txt_para'
+// document.body.appendChild(para);
+
+// let user = {     // an object
+//     name: "John",  // by key "name" store value "John"
+//     age: 30        // by key "age" store value 30
+//   };
+//   console.log(user.name)
+//   console.log(user.age)
+
+
+// let user = {
+//     name:'nitesh',
+//     age:34
+// }
+// delete user.age;
+// console.log(user)
+
+// let user = {
+//     name: "John",
+//     age: 30,
+//     "likes birds": true  // multiword property name must be quoted
+//   };
+//   console.log(user.name)
+//   console.log(user.age)
+
+// let user = {};
+// console.log(user['likes','birds']);
+// delete user['likes','birds']
+
+// let key = "likes birds";
+// console.log(key)
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+//   let keys = prompt('What do you want to know about the user?", "name"')
+//   console.log(keys);
+
+// function makeUser(name,age){
+//    return{
+//         name:name,
+//         age:age
+//    }
+// }
+// let user = makeUser('nitesh',34)
+// console.log(user.name)
+
+// let obj = {
+//     for: 1,
+//     let: 2,
+//     return: 3
+//   };
+// console.log(obj.for)  
+
+// let obj = {
+//     0: "test" // same as "0": "test"
+//   };
+//   console.log(0)
+
+// let user = { name: "John", age: 30 };
+// console.log(user.name)
+// console.log(user.age)
+
+// let obj = {
+//     test: undefined
+//   };
+//   console.log(test)
+
+// let codes = {
+//     "49": "Germany",
+//     "41": "Switzerland",
+//     "44": "Great Britain",
+//     // ..,
+//     "1": "USA"
+//   };
+//   for (let code in codes){
+//     console.log(code)
+//   }
+
+// let user = {
+//     name: "John",
+//     surname: "Smith"
+//   };
+//   user.age = 25;
+
+//   console.log(user.name)
+//   console.log(user.surname)
+
+// let user = {};
+// user.name = "John";
+// user.surname = "Smith";
+// user.name = "Pete";
+// delete user.name;
+
+
+// function factory(){
+//     return (a,b) => a+b 
+//   }
+  
+//   const sumFunc1 = factory();
+//   const sumFunc2 = factory();
+  
+//   console.log(sumFunc1)
+//   console.log(sumFunc2)
+//   console.log(sumFunc1 === sumFunc2); 
+//   console.log(sumFunc1 === sumFunc1);
+
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130
+//   }
+//  let sum = 0
+//  for(let key in salaries){
+//     sum += salaries[key]
+//  }
+//  console.log(sum)
+
+// let menu = {
+//     width: 200,
+//     height: 300,
+//     title: "My menu"
+//   };
+
+// let message = "Hello!";
+// let phrase = "sameet";
+
+// let a = {};
+// let b = a;
+// console.log(a===b)
+// console.log(a===b)
+
+
+// const user = {
+//     name:'nitesh'
+// }
+// console.log(user)
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+
+//   let clone = {}
+//   for (let key in user){
+//     clone[key] = user[key]
+//   }
+//   clone.name = 'sameet'
+//   console.log(user.name)
+
+// let user = {name:'nitesh'};
+// let p1 = {canView:true};
+// let p2 = {canEdit:false};
+// Object.assign(user,p1,p2)
+// console.log(user.name)
+// console.log(user.p1)
+// console.log(user.p2)
+
+// let person = {
+//     name:'nitesh',
+//     age:34
+// }
+// let clone = Object.assign({},person)
+// console.log(clone)
+
+// let user = {
+//     name: "John",
+//     sizes: {
+//       height: 182,
+//       width: 50
+//     }
+//   };
+// console.log(user.sizes.height === user.sizes.height)
+
+// let user = {
+//     name: "John",
+//     sizes: {
+//       height: 182,
+//       width: 50
+//     }
+//   };
+//   const clone = structuredClone(user)
+//   console.log(clone.sizes.width)
+
+// let user = {
+//     name: "John"
+//   };
+  
+//   let admin = user;
+//   console.log(admin)
+
+// let user = {
+//     name: "John",
+//     age: 30
+//   };
+  
+//   user.sayHi = function() {
+//     console.log("Hello!");
+//   };
+
+// let user = {
+//     name: "John",
+//     age: 30,
+//     sayHi() {
+//       console.log(user.name); // "user" instead of "this"
+//     }
+//   };
+
+// function sayHi() {
+//     console.log( this.name );
+//   }
+//   sayHi()
+
+// let user = { name: "John" };
+// let admin = { name: "Admin" };
+
+// function sayHi() {
+//   alert( this.name );
+// }
+// sayHi()
+
+// let user = {
+//     firstName: "Ilya",
+//     sayHi() {
+//       let arrow = () => console.log(this.firstName);
+//       arrow();
+//     }
+//   };
+  
+//   user.sayHi();
+
+// function makeUser() {
+//     return {
+//       name: "John",
+//       ref: this
+//     };
+//   }
+  
+//   let user = makeUser();
+//   console.log(user)
+
+// let calculator = {
+//     sum() {
+//       return this.a + this.b;
+//     },
+  
+//     mul() {
+//       return this.a * this.b;
+//     },
+  
+//     read() {
+//       this.a = +prompt('a?', 0);
+//       this.b = +prompt('b?', 0);
+//     }
+//   };
+//   console.log(calculator(sum(10,20)))
+
+// let ladder = {
+//     step: 0,
+//     up() {
+//       this.step++;
+//     },
+//     down() {
+//       this.step--;
+//     },
+//     showStep: function() { // shows the current step
+//       console.log( this.step );
+//     }
+//   };
+
