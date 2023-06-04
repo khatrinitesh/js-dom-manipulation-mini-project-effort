@@ -5833,3 +5833,896 @@ const classOf2018 = {
 //     }
 //   };
 
+// named functions 
+// function myFunction(){
+//     console.log('codenitesh');
+// }
+// myFunction()
+
+// anonymous functions => without name, used as function expression or a agruments
+// let greet = function(name){
+//     console.log(`hello ${name}`)
+// }
+// // greet('nitesh');
+// let welcome = function(name,age){
+//     console.log(`Hello ${name} - ${age} years old`)
+// }
+// welcome('nitesh',34)
+// let introduction = function(name,age,dob){
+//     console.log(`hello ${name}, ${age} is years old and ${dob}`)
+// }
+// introduction('nitesh',34,'17th june 1989')
+
+// arrow functions => introduced in ES6 shorter syntax  & one-lined functions 
+// let greet = () => console.log('hello')
+// console.log(greet())
+// let example = () => console.log('nitesh khatri')
+// example()
+
+// IIF functions => executed immediately after their creation, used to create private scopes and avoid polluting the global namesspace
+// (function(){
+//     let str = 'good evening'
+//     console.log(str)
+// })();
+
+// higher order functions functions that take one or more functions or agruments or return a function
+// eg: map, filter and reduce
+// let ary = [10,20,30]
+// let newAry = ary.map((element) => {
+//     return element + 10
+// })
+// console.log(newAry)
+const numbers = [1,2,3,4,5]
+// function Example(array){
+//     for(let i=0;i<numbers.length;i++){
+//         console.log(array[i])
+//     }
+// }
+// Example(numbers)
+// numbers.forEach((element) => console.log(element * 3))
+
+// function isOdd(array,oddArr = []){
+//     for(let i=0;i<array.length;i++){
+//         if(array[i] % 2 !== 0){
+//             oddArr.push(array[i]);
+//         }
+//         return oddArr
+//     }
+// }
+// const oddArr = isOdd(numbers);
+// console.log(oddArr)
+
+// const oddArray = numbers.filter((number) => number % 2 !== 0)
+// console.log(oddArray)
+// const oddArray = numbers.filter((number) => number % 2 == 0)
+// console.log(oddArray)
+
+// function addOneMore(array,newArr =[]){
+//     for(let i=0;i<array.length;i++){
+//         newArr.push(array[i] + 1)
+//     }
+//     return newArr
+// }
+// const newArr = addOneMore(numbers);
+// console.log(newArr)
+// function AddOneMore(array,newArr=[]){
+//     for(let i=0;i<array.length;i++){
+//         newArr.push(array[i] + 1)
+//     }
+//     return newArr
+// }
+// const newArr = AddOneMore(numbers)
+// console.log(newArr)
+
+// const newArray = numbers.map((ele) => ele + 1)
+// console.log(newArray)
+
+// function getTotalValue(array){
+//     let total = 0;
+//     for(let i=0;i<array.length;i++){
+//         total += array[i]
+//     }
+//     return total
+// }
+// const totalValue = getTotalValue(numbers)
+// console.log(totalValue)
+
+// const totalValue = numbers.reduce((sum,number) => sum + number)
+// console.log(totalValue)
+// const totalValue = numbers.reduce((sum,num) => sum * num)
+// console.log(totalValue)
+
+// function greetings() {
+//     return "Good Morning"
+// }
+// greetings()
+
+// function favouriteFood(){
+//     return 'good morning'
+// }
+// favouriteFood.beans = 'beans'
+// console.log(favouriteFood)
+
+// const num = [10,20,30]
+// const num10 = []
+// for(let i=0;i<num.length;i++){
+//     num10.push(num[i] * 10)
+// }
+// console.log(num10)
+
+// function AddOneMore(array,newArr=[]){
+//     for(let i=0;i<array.length;i++){
+//         newArr.push(array[i] +1)
+//     }
+//     return newArr
+// }
+// const newArr = AddOneMore(numbers)
+// console.log(newArr)
+
+// const num = [10, 20, 30];
+// console.log(num.filter((val) => val > 20))
+
+// const students = [
+//     { name: 'John James', status: true},
+//     { name: 'Micheal Obi', status: false },
+//     { name: 'Bola Ade', status: true },
+//     { name: 'Emmanuel', status: false },
+//     { name: 'Faithfulness Alamu',status: true },
+//   ];
+
+//   const presentStudent= [];
+
+//   for(let i =0;i<students.length;i++){
+//     if(students[i].status >= true){
+//         presentStudent.push(students[i].name)
+//     }
+//   }
+//   console.log(presentStudent)
+
+//   const result = students.filter((val) => val.status === true)
+//   console.log(result)
+//   const result = students.filter((val) => val.status !== true)
+//   console.log(result)
+
+// const person = [
+//     {
+//         name:'nitesh',age:34,status:false
+//     },
+//     {
+//         name:'sameet',age:41,status:true
+//     },
+//     {
+//         name:'mom',age:65,status:true
+//     },
+//     {
+//         name:'daddy',age:65,status:true
+//     },
+// ]
+
+/// for(let i=0;i<person.length;i++){
+//     if(person[i].status === true){
+//         newPerson.push(person[i].name)
+//     }
+// }
+// // console.log(newPerson)
+// for(let i =0;i<person.length;i++){
+//     if(person[i].status === true){
+//         newPerson.push(person[i].name)
+//     }
+// }
+// console.log(newPerson)
+
+
+
+// const numberswww = [10, 29, 11, 43, 37];
+// const sub = numberswww.reduce((a,b) => a+b)
+// console.log(sub)
+
+// constructor function used as blueprints for creating objects with similar properties and methods. they are invoked using the new keyword create instances of objects.
+// function Person(name,place){
+//     this.name = name 
+//     this.place = place 
+// }
+// let user1 = new Person('nitesh','grantroad')
+// console.log(user1)
+
+// function Family(name,place,age){
+//     this.name = name 
+//     this.place = place 
+//     this.age = age 
+// }
+// let user1 = new Family('kiran','kalyan',48)
+// console.log(user1)
+
+
+// a list of array methods 
+// values() 1 
+// const atr = ['appple','banana','curry']
+// const iterator = atr.values()
+// for(const item of iterator){
+//     console.log(item)
+// }
+// const friends = ['a','b','c']
+// const iterator = friends.values();
+// for(let value of iterator){
+//     console.log(value)
+// }
+
+// length() 2
+// const arr = ['nietsh','arvind','urvashi','sameet']
+// console.log(arr.length)
+
+// reverse() 3 
+// const arr = ['nitesh','sameet','urvashi','arvind']
+// console.log(arr.reverse())
+
+// sort() 4 
+// const arr = ['nitesh','sameet','urvashi','arvind']
+// console.log(arr.sort())
+
+// at()  5 
+// const arr = ['nitesh','sameet','urvashi','arvind']
+// console.log(arr.at(2))
+
+// fill() 6
+// const arr = ['nitesh','sameet','urvashi','arvind']
+// console.log(arr.fill('mom',1,2))
+
+//  from() 7
+// const objexample  = {
+//     0:'apple',
+//     1:'banan',
+//     2:'mango',
+//     3:'cherry',
+//     length:4
+// }
+// const arr = Array.from(obj)
+// console.log(objexample)
+
+// join() 8 
+// const arr = ['a','b','c']
+// const str = arr.join(', ')
+// console.log(str)
+
+// toString()
+// const arr = ['apple','mango','cherry']
+// console.log(arr.toString())
+
+// pop() this method removes the last element from an array and returns that element 
+// const arr = ['apple','mango','cherry']
+// arr.pop()
+// console.log(arr)
+
+// forEach() method executes a provided function once for each array element. it doesnt return anything it just executes the callback function on each element of the array
+// let fruits = ['apple','mango','watermelon','pineapple']
+// const result = fruits.forEach(function(item){
+//     console.log(item)
+// })
+
+// shift() method removes the first element from an array and returns that removed element. this method changes the length of the array.
+// let fruits = ['apple','mango','pineapple','watermelon']
+// const result = fruits.shift()
+// console.log(result)
+
+// copyWithin() method shallow copies part of an array to another location in the same array and returns the modified location in the same array and returns the modified array without modifiying its length. syntax copyWithin(target,start,end)
+// let numbersww = [1,2,3,4,5]
+// const result = numbersww.copyWithin(1,2)
+// console.log(result)
+
+// push() method adds one or more elements to the ened of an array and returns the new length of the array
+// let friends = ['cherry','apple','peas','watermelon','pomegranatee','guava']
+// console.log(friends.length)
+// const result = friends.push('kiwi')
+// console.log(result)
+
+// unshift() methods add one or more elements to the beginning of an array and returns the new length of the array 
+// let fruits = ['apple','mango','watermelon','strawberry']
+// console.log(fruits.length)
+// const result = fruits.unshift('kiwi')
+// console.log(result)
+
+// concat() method is used to merge two or more arrays. this method doesnt change the existing arrays, but instead of returns a new array
+// const a = 'nitesh'
+// const b = 'sameet'
+// console.log(a.concat(' ',b))
+
+// splice()method changes the contents of an array by removing or replacing existing elements and/or adding new elements in place
+// const fruits = ['apple','mango','watermelon','pineapple','kiwi']
+// const result = fruits.splice(2,2)
+// console.log(result)
+
+// flat() this method creates a new array with all sub-array elements concatentated into it recursively up to the specified depth
+// const number = [1,[2,3],4,5]
+// console.log(number.flat())
+
+// lastIndexOf() this method returns the last index at which a given element can be found in the array
+// const numbersgg = [1,2,3,4,5]
+// const lastIndexOf = numbers.lastIndexOf(3);
+// console.log(lastIndexOf)
+
+// indexOf() this method returns the index of the first occurence of a specified element in an array. if the element is not present, it returns -1 
+// const arr = [5,10,15,30]
+// const index = arr.indexOf(30)
+// console.log(index)
+
+// of() this method creates a new array instance with a variable number of arguments, regardless of number or types of the arguments.
+// const arr = Array.of(1,2,3,'four',true)
+// console.log(arr)
+// const example = ['nitesh','sameet',true,1,2,3,44]
+// console.log(example)
+
+// every() this method checks if all elements in an array a test (provided as a function). it returns true if all elements pass the test; otherwise it returns false 
+// const arr = [2,4,6,8]
+// const arrodd = [ 1,3,5,7,9,11]
+// const isEven = (num) => num % 2 === 0 
+// const isOdd = (num) => num % 2 !== 0
+// const result = arr.every(isEven)
+// const resultOdd = arrodd.every(isOdd)
+// console.log(result)
+// console.log(resultOdd)
+
+// slice() this method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included).
+// const arr = [1,2,3,4,5,6]
+// const result = arr.slice(2,3)
+// console.log(result)
+
+// https://codeburst.io/javascript-array-distinct-5edc93501dc4
+// const distinct = (value,index,self) => {
+//     return self.indexOf(value) === index 
+// }
+// const years = [2011,2011,2012,2013,2014]
+// console.log(years.filter(distinct))
+
+// const distinct = (value,index,arr) => {
+//     return arr.indexOf(value) === index 
+// }
+// const years = [2011,2011,2012,2013,2014]
+// const word = ['vishal','vishal','mayur']
+// console.log(...new Set(word))
+// console.log(Array.from(new Set(word)))
+// console.log(...new Set(years))
+// console.log(Array.from(new Set(years)))
+// console.log(years.filter(distinct))
+// console.log(Array.from(new Set(years)))
+const array = [
+    {name:'nitesh',age:34},
+    {name:'sameet',age:41},
+    {name:'urvashi',age:65},
+    {name:'arvind',age:68},
+    {name:'nitesh',age:34},
+]
+// const result = [...new Set(array.map((val) => val.name))]
+// console.log(result)
+
+
+// const word = 'nitesh khatri'
+// console.log(word.split("").reverse("").join(""))
+
+// const a = 10
+// const b = 20
+// console.log(a+b)
+// console.log(a-b)
+// console.log(a%b)
+// console.log(a*b)
+
+// flatmap() this method maps each element using a mapping function, then flattens the result into a new array
+// const arr = [1,2,3]
+// const result = arr.flatMap((x) => [x*2])
+// console.log(result)
+
+// findIndex() this method returns the index of the first element in an array that passes a test (provided as a function). if no element passes the test , it returns - 1 
+// const arr = [1,3,4,5,66,77]
+// const result = (num)=> num > 30 
+// const index = arr.findIndex(result)
+// console.log(index)
+
+
+// find() this method returns the value of the first element in an array that passes a test (provided as a function). if no element passes the test, it returns undefined.
+// const arr = [10,20,30,40,50]
+// const greaterThan = (num) =>  num > 30
+// const result = arr.find(greaterThan)
+// console.log(result)
+
+// includes() this method determines whether an array includes a certain value among its entries, returning true or false as appropriate 
+// const arr = [10,20,30,40]
+// const mark = arr.includes(100)
+// console.log(mark)
+
+// entries() this method returns a new Array iterator object that contains the key/value pairs for each index in the array 
+// const arr = ['a','b','c']
+// const iterator = arr.entries();
+// console.log(iterator.next().value)
+// console.log(iterator.next().value)
+// console.log(iterator.next().value)
+
+// reduce() this method applies a function to each element of an array and reduces that array to a single value .
+// const resultarr = [10,20,3045,55,666,777]
+// const result = resultarr.reduce((a,b) => a+b)
+// console.log(result)
+
+// reduceRight() this method is similar to the reduce() method. however, it is iterates over the array elements from right to left instead from left to right
+// const resultarr = [10,20,3045,55,666,777]
+// const result = resultarr.reduceRight((a,b) => a+b)
+// console.log(result)
+
+// isArray() this method determines whether the passed value in an array or not
+// const fruits = ['apple','pineapple','watermelon','guava']
+// const result = Array.isArray(fruits)
+// console.log(result)
+// const person = {
+//     name:'nitesh',
+//     age:34
+// }
+// const result = Array.isArray(person)
+// console.log(result)
+
+// filter() this method creates a new array with all elements that pass the test implemented by the provided function 
+// const numbers111 = [10,20,30,40]
+// const filtermap = numbers111.filter((number) => {
+//     return number > 20
+// })
+// console.log(filtermap)
+
+// keys() this method returns an array containing the keys of the given object
+// const myObj = {a:1,b:2,c:3}
+// const keysArray = Object.keys(myObj)
+// const valuesArray = Object.values(myObj)
+// const entriesArray = Object.entries(myObj)
+// console.log(keysArray)
+// console.log(valuesArray)
+// console.log(entriesArray)
+
+// map() this method creates a new array with the results of calling a provided function on every element in the calling array 
+// const numbersword = [1,2,3,45,6,7,7]
+// const result = numbersword.map((val) => val * val)
+// console.log(result)
+
+// get current date and time
+// const now = new Date().getFullYear()
+// console.log(now)
+
+// check if a variable is an array
+// const friends = ['nitesh','sameet','mom','daddy']
+// console.log(Array.isArray(friends))
+
+// Merge two arrays
+// const a1 = 'aaa'
+// const a2 = 'bbb'
+// const newArray = a1.concat(a2)
+// console.log(newArray)
+
+// remove duplicates from an array
+// const friends = ['vishal','mayur','vishal']
+// const result = friends.map((array,index,item) => array.index(item) === index)
+// console.log(result)
+// function distinct(ele,index,arr){
+//     return arr.indexOf(ele) === index
+// }
+// function remoeDup(data){
+//     return data.filter((val,index) => data.indexOf(val) === index)
+// }
+// function ExampleDelDup(val,index,arr){
+//     return arr.indexOf(val) === index
+// // }
+// function remveDup(data){
+//     return data.filter((val,index) => data.indexOf(val) === index)
+// }
+// console.log(remveDup(friends))
+// console.log(friends.filter(ExampleDelDup))
+// console.log([...new Set(friends)])
+// console.log(Array.from(new Set(friends)))
+
+// console.log(Array.from(new Set(friends)))
+// console.log([...new Set(friends)])
+// function getDup(data){
+//     return data.filter((val,index) => data.indexOf(val) !== index)
+// }
+// function removeDup(data){
+//     return [...new Set(data)]
+// }
+// console.log(removeDup(friends))
+// console.log(getDup(friends))
+// https://levelup.gitconnected.com/7-ways-to-remove-duplicates-from-array-in-javascript-cea4144caf31
+
+// sort an array in asc / des order
+// const arraynumber = [22,5,4,55,56,77,88,1,2,3,3]
+// const asc = arraynumber.sort((a,b) => a-b)
+// console.log(asc)
+// const dsc = arraynumber.sort((a,b) => b-a)
+// console.log(dsc)
+// const word = ['happy','sad','crying','angry','scared','excellent','very good','poor']
+// const result = word.sort(function(a,b) {
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(result)
+
+// reverse an array
+// console.log([1,2,34,55,66,77,3,4,5].reverse())
+
+// converting string to number 
+// const word = 56+66
+// console.log(parseInt(word))
+
+// generate a random number between two values
+// const max = 10
+// const min = 5
+// const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+// console.log(randomNumber)
+
+// check if a string contains a substring
+// const word = 'how are you doing'
+// console.log(word.includes('doing'))
+
+// get the length of an object
+// const person = {
+//     name:'nitesh',
+//     age:32,
+//     mobile:9920767524,
+//     email:'nitesh.khatri88@gmail.com'
+// }
+// console.log(Object.keys(person).length)
+
+// convert object to array
+// console.log(Object.entries(person))
+
+// check if an object is empty
+// console.log(Object.entries(person))
+
+// get current URL
+// console.log(window.location.url)
+
+// redirect to a new URL
+// console.log(window.location.replace(url))
+
+// set a cookie 
+// document.cookie = 'name=value;expiresdate;path=path;domain=domain;secure';
+
+// check if a cookie exists
+// document.cookie.split(';').some((item) => item.trim().startsWith('name='));
+
+// get the current viewport dimensions
+// const viewportWidth = Math.max(document.documentElement.clientWidth || 0,window.innerWidth || 0)
+// const viewportHeight = Math.max(document.documentElement.clientHeight || 0,window.innerHeight || 0)
+
+// copy text to clipboard
+// navigator.clipboard.writeText(text);
+
+// async/await
+// async function Example(){
+//     return 'hello'
+// }
+// console.log(Example())
+
+// async function Example1(){
+//     return 'hello'
+// }
+// console.log(Example1())
+
+// function Example2(){
+//     return Promise.resolve('sameet')
+// }
+// console.log(Example2())
+
+// async function Example(){
+//     let myPromise = new Promise(function(resolve,reject){
+//         resolve('nitesh khatri')
+//     });
+//     document.getElementById('demo').innerHTML = await myPromise
+// }
+// Example();
+
+// async function Example(){
+//     let myExample = new Promise(function(resolve,reject){
+//         resolve('nitesh khatri')
+//     })
+//     document.getElementById('demo').innerHTML = await myExample
+// }
+// Example();
+
+// async function Example(){
+//     let myPromise = new Promise(function(resolve,reject){
+//         setTimeout(function() {
+//             resolve('nitesh khatri')
+//         },1000)
+//     })
+//     document.getElementById('demo').innerHTML = await myPromise
+// }
+// Example();
+
+// async function Example(){
+//     let myPromise = new Promise(function(resolve,reject){
+//         setTimeout(function(){
+//             resolve('sameet khatri')
+//         },1000)
+//     })
+//     document.getElementById('demo').innerHTML = await myPromise
+// }
+// Example()
+
+// async function Example(){
+//     console.log('async function')
+//     return Promise.resolve(1)
+// }
+// Example()
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// console.log(promise)
+
+// let example = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         resolve('nitesh khatri')
+//     },1000);
+// })
+// console.log(example)
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//        resolve('nitesh khatri') 
+//     },1000);
+// })
+
+// async function Fantastic(){
+//     let result = await promise;
+//     console.log(result)
+//     console.log('hello')
+// }
+// Fantastic()
+
+// const a = 'nitesh khatri'
+// function Example(){
+//     const a = 'sameet khatri'
+//     console.log(a)
+// }
+// Example()
+// let promise1 = 'nitesh'
+// let promise2 = 'sameet'
+// let promise3 = 'arvind'
+// async function Example(){
+//     let result1 = await promise1
+//     let result2 = await promise2
+//     let result3 = await promise3
+//     console.log(result1)
+//     console.log(result2)
+//     console.log(result3)
+// }
+// Example()
+
+// let promise1 = 'nitesh'
+// let promise2 = 'sameet'
+// let promise3 = 'arvind'
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// async function Example(){
+//     let result1 = await promise1
+//     let result2 = await promise2
+//     let result3 = await promise3
+//     console.log(result1)
+//     console.log(result2)
+//     console.log(result3)
+// }
+// Example()
+
+// // console.log('1'+'1')
+// console.log('1'-1)
+// console.log(1 + '1' - 1);
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//        resolve('nitesh khatri') 
+//     },1000);
+// })
+// async function Example(){
+//     let result = promise 
+//     console.log(result)
+//     console.log('hello')
+// }
+// Example()
+
+// arName = "Volvo";
+// const carName;
+// console.log(arName)
+
+// function Person(first,last,age,eyeColor){
+//     this.first = first
+//     this.last = last
+//     this.age = age
+//     this.eyeColor = eyeColor
+// }
+// Person.prototype.nationality ='English'
+// const myExample = new Person('nitesh','khatri',34,'black')
+// console.log(myExample.nationality)
+// console.log(myExample)
+
+// function User(first,last){
+//     this.first = first
+//     this.last = last
+// }
+
+// User.prototype.dob = '17/06/1989'
+// User.prototype.email = 'nitesh.khatri88@gmail.com'
+// const myExample = new User('nitesh','khatri')
+// console.log(myExample)
+// console.log(myExample.dob)
+
+
+// constructor function
+// function Person(){
+//     this.first = 'nitesh' 
+//     this.last = 'khatri'
+// }
+// creating objects
+// const person1 = new Person()
+// const person2 = new Person()
+// console.log(person1)
+// console.log(person2)
+
+// adding property to constructor function
+// Person.prototype.gender = 'male'
+
+// prototype value of person
+// console.log(Person.prototype)
+
+// inheriting the prototype from prototype
+// console.log(person1)
+// console.log(person2)
+// const person = new Person();
+// console.log(Person.prototype)
+
+// constructor function 
+// function User(){
+//     this.fullname = 'nitesh khatri',
+//     this.age = 34,
+//     this.jobtitle = 'front-end developer'
+// }
+// function User2(){
+//     this.fullname = 'sameet khatri',
+//     this.age = 41,
+//     this.jobtitle = 'field service engineering'
+// }
+// createing objects
+// const user1 = new User();
+// const user2 = new User2();
+
+// adding property to constructor function
+// User1.prototype.gender ='male'
+// User2.prototype.gender ='female'
+// console.log(User.prototype)
+// console.log(user1)
+// console.log(user2)
+// console.log(user2.gender)
+// function Example(fname,lname){
+//     this.fname = fname
+//     this.lname = lname
+// }
+// let user = new Example('nitesh','khatri')
+// console.log(user)
+
+// function Person(){
+//     this.fname = 'nitesh'
+//     this.lname = 'khatri'
+// }
+// Person.prototype.gender = 'male'
+// let user = new Person()
+// console.log(Person.gender)
+// console.log(user)
+
+// function Person(){
+//     this.name = ' nitesh'
+// }
+// Person.prototype.name = 'sameet'
+// Person.prototype.age = 41
+// const person1 = new Person()
+// console.log(person1.name)
+// console.log(person1.age)
+
+
+// class Product1{
+//     constructor(fname,age){
+//         this.fname = fname;
+//         this.age = age;
+//     }
+// }
+
+// const user = new Product1('nitesh khatri',34)
+// console.log(user)
+
+// class Example{
+//     constructor(name,age,dob){
+//         this.name = 'name';
+//         this.age = 'age';
+//         this.dob = 'dob'
+//     }
+// }
+
+// const user = new Example('nitesh',34,'17th june 1989')
+// console.log(user)
+
+// Array.prototype.myUpperCase = function(){
+//     for(let i=0;i<this.length;i++){
+//         this[i] = this[i].toUpperCase();
+//     }
+// }
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.myUpperCase();
+// console.log(fruits)
+
+// Array.prototype.myExample = function(){
+//     for(let i=0;i<this.length;i++){
+//         this[i] = this[i].toUpperCase();
+//     }
+// }
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.myExample();
+// console.log(fruits)
+
+// let text = 'how you doing where are you doing'
+// console.log(text.match('are'))
+
+// console.log('nitesh khatri'.endsWith('khatri'))
+// console.log('nitesh khatri'.startsWith('khatri'))
+
+// console.log('nietsh khatri'.charAt())
+
+// console.log('nitesh khatri'.charCodeAt('khatri'))
+
+// function myDisplay(some){
+//     document.getElementById("demo").innerHTML = some;
+// }
+
+// function myCalc(a,b){
+//     let sum = a+b
+//     myDisplay(sum) 
+// }
+// myCalc(10,20)
+
+
+// function ExampleTwo(superb){
+//     document.getElementById('good').innerHTML = superb;
+// }
+// function myDisplay(a,b){
+//     let sum =  a-b 
+//     ExampleTwo(sum)
+// }
+// myDisplay(102,22)
+
+// function Result(excellent){
+//     document.getElementById('good').innerHTML = excellent
+// }
+// function myCalc(a,b){
+//     let multiple = a*b 
+//     Result(multiple)
+// }
+// myCalc(10,20);
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//         console.log('nitesh khatri')
+//     },100)
+// })
+// async function myExample(){
+//     let result = await promise 
+//     console.log(result)
+//     let example = await promise 
+//     console.log(example)
+// }
+// myExample()
+
+// let um = 5*5 
+// console.log(typeof um)
+
+
+
+
+
