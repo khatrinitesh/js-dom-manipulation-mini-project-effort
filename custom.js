@@ -5872,7 +5872,7 @@ const classOf2018 = {
 //     return element + 10
 // })
 // console.log(newAry)
-const numbers = [1,2,3,4,5]
+// const numbers = [1,2,3,4,5]
 // function Example(array){
 //     for(let i=0;i<numbers.length;i++){
 //         console.log(array[i])
@@ -6722,7 +6722,214 @@ const array = [
 // let um = 5*5 
 // console.log(typeof um)
 
+// const person = {
+//     fullName:function(fname,lname){
+//         console.log(`hello ${fname} ${lname}`)
+//     }
+// }
+// person.fullName.call(null,'nitesh','khatri')
+
+// const user = {
+//     fullName:function(fname,lname,age){
+//         console.log(`helllo ${fname} ${lname} ${age}`)
+//     }
+// }
+// user.fullName.call(null,'sameet','khatri',41)
+
+// const user = {
+//     fullName:function(fname,lname,age){
+//         console.log(`${fname} ${lname} ${age}`)
+//     }
+// }
+// user.fullName.call(null,'nitesh','khatri',34)
+
+// const numbers = [1,2,3,4,5]
+// const max = Math.max.apply(null,numbers)
+// console.log(max)
+// const min = Math.min.apply(null,numbers)
+// console.log(min)
+
+// const greet = function(greeting){
+//     console.log(`${greeting} ${this.name}`)
+// }
+// const person = {
+//     name:"nitesh khatri"
+// }
+// const greetPerson = greet.bind(person,'hello')
+// greetPerson()
+
+// const Example = {
+//     fullName:function(fname,lname,age){
+//         console.log(`${fname} ${lname} ${age}`)
+//     }
+// }
+// Example.fullName.call(null,'nitesh','khatri',34)
+
+// let john = {
+//     name:'nitesh',
+//     sayHi:function(){
+//         console.log('hi buddy')
+//     }
+// }
+// nitesh.sayHi()
+
+// let str = "Hello";
+// console.log(str.toUpperCase())
+
+// console.log( typeof 0 );
+
+// let zero = new Number(0)
+// if(zero){
+//     console.log(zero)
+// }
+
+// let num = Number("123"); 
+// console.log(num)
+
+// let num = Number("123")
+// console.log(typeof num)
+
+// let arr = ["I", "go", "home"];
+// delete arr[1]
+// console.log(arr)
+
+// var stringname = 'nitesh khatri'
+// console.log(stringname)
+// var stringname=new String("string literal");  
+// console.log(stringname)
+
+// const element = document.getElementById("div1");
+// const node = document.createTextNode("This is a new paragraph.");
+// para.appendChild(node)
+// const child = document.getElementById("p1");
+// element.insertBefore(para,child)
+
+// let str = 'Hello World';
+// let ch1 = str[0]
+// console.log(ch1)
 
 
+// const friends = ['vishal','vishal','mayur']
+// const distinct = (value,index,self) => {
+//     return self.indexOf(value === index)
+// }
+// function removeDup(data){
+//     return [...new Set(data)]
+// }
 
+// console.log(friends.filter(distinct))
+// console.log(...new Set(friends))
+// console.log(Array.from(new Set(friends)))
+// console.log(removeDup(friends))
+// console.log(Array.from(new Set(friends)))
+// const result = friends.map((arr,index,ele) => arr.indexOf(ele) === index)
+// console.log(result)
 
+// let str = 'nitesh khatri'
+// for(let i=0;i<str.length;i++){
+//     console.log(str[i])
+// }
+
+// console.log("a" < "b"); //true
+// console.log("b" < "a"); //false
+// console.log("Apple" == "Apple"); //true
+// console.log("Apple" == "apple"); //false
+// console.log("Apple" === "Apple"); //true
+// console.log("Apple" === "apple"); //false
+// console.log("Apple".localeCompare("Apple")); //0
+// console.log("Apple".localeCompare("apple")); //1
+
+const people = ['vishal','abhijeet','simchal','vishal','abhisar']
+// const result = people.sort(function(a,b) {
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(result)
+
+const wordnumber = ['nitesh','khatri',1,2,null,undefined]
+// const filter = wordnumber.filter((val) => typeof val == 'string' || typeof val == 'number' || typeof val == 'undefined')
+// console.log(filter)
+// const filter = wordnumber.filter((val) => typeof val !== 'object' && typeof val !== 'undefined')
+// console.log(filter)
+// console.log(wordnumber.toString().toUpperCase())
+
+// function Person(fname,lname,age,dob){
+//     this.fname = fname
+//     this.lname = lname
+//     this.age = age
+//     this.dob = dob
+// }
+// let example = new Person('nitesh','khatri',34,'17/06/1989')
+// console.log(example);
+
+// function Person(first, last, age, eye,dob) {
+//     this.firstName = first;
+//     this.lastName = last;
+//     this.age = age;
+//     this.eyeColor = eye;
+//     this.dateofbirth = dob
+//   }
+//   Person.prototype.name = function(){
+//     return this.firstName + " " + this.lastName
+//   }
+//   Person.prototype.dob = function(){
+//     return this.dob
+//   }
+//   const Example = new Person('nitesh','khatri',34,'black','17th june 1989')
+//   console.log(Example.name())
+//   console.log(Example.dob())
+
+// function Person(fname,lname,age){
+//     this.firstName =fname
+//     this.lastName =lname
+//     this.age =age
+// }
+
+// Person.nationality = "English";
+// Person.dob = '17/06/1989'
+// Person.jobtitle = 'front-end developer'
+
+// const myFather = new Person('arvind','khatri',68)
+// const myMother = new Person('urvashi','khatri',65)
+// console.log(myFather)
+// console.log(myMother)
+// console.log(Person.nationality)
+// console.log(Person.dob)
+
+const friends = ['vishal','vishal','mayur','sonal']
+// const distinct = ((value,index,arr) => {
+//     return arr.indexOf(value) === index
+// })
+// console.log(friends.filter(distinct))
+// console.log(Array.from(new Set(friends)))
+// console.log([...new Set(friends)])
+
+// const result = friends.sort(function(a,b)  {
+//     if(a<b){
+//         return -1 
+//     }
+//     else{
+//         return 1 
+//     }
+// })
+// console.log(result)
+
+// const numberword = [55,66,4,11,22]
+// console.log(numberword.sort((a,b) => b-a))
+// for(let key of numberword){
+//     console.log(key)
+// }
+
+// setTimeout(()=>{
+//     console.log('nitesh khatri')
+// },1000)
+
+// setTimeout(()=>{
+//     for(let i =0;i<10;i++){
+//         console.log(i)
+//     }
+// },1000)
