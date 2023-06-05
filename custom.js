@@ -6933,3 +6933,26 @@ const friends = ['vishal','vishal','mayur','sonal']
 //         console.log(i)
 //     }
 // },1000)
+
+// let promise = new Promise(function(resolve,reject) {
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)  
+// })
+// async function Example(){
+//     let result = await promise
+//     console.log(`${result} is superb`)
+// }
+// Example()
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// async function Example(){
+//     let result = await promise 
+//     console.log(`${result} is superb`)
+// }
+// Example();
+
