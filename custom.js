@@ -6956,3 +6956,120 @@ const friends = ['vishal','vishal','mayur','sonal']
 // }
 // Example();
 
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// async function Example(){
+//     let result = await promise 
+//     console.log(result)
+// }
+// Example()
+
+// const sum = (a,b) =>{
+//     return a + b 
+// }
+// console.log('sum',sum(10,20))
+// const minus = (a,b) =>{
+//     return a - b 
+// }
+// console.log('minus',minus(10,20))
+// const multiply = (a,b) =>{
+//     return a * b 
+// }
+// console.log('multiply',multiply(10,20))
+// const divide = (a,b) =>{
+//     return a / b 
+// }
+// console.log('divide',divide(10,20))
+
+const mindset = ['vijay','vishal','pranay','vishal']
+const distinct = (value,index,arr) => {
+    return arr.indexOf(value) === index
+}
+// console.log(Array.from(new Set(mindset)))
+// console.log(mindset.filter(distinct))
+// console.log(new Set(mindset))
+// console.log(...new Set(mindset))
+// console.log([...new Set(mindset)])
+// const sortorder = mindset.sort(function(a,b){
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(sortorder)
+// const situation = [1,2,3,4,5,5,6]
+// console.log(situation.sort((a,b) => b-a))
+
+// console.log('situation'.split("").reverse("").join(""))
+// console.log('mindset'.replace('mindset','situation'))
+// console.log('mindset'.repeat(4))
+// console.log('mindset'.toLocaleLowerCase())
+// console.log('mindset'.toLocaleUpperCase())
+
+// class User {
+//     constructor(fname,lname){
+//         this.fname = fname
+//         this.lname = lname
+//     }
+// }
+// let ability = new User('sameet','khatri')
+// let motivation = new User('nitesh','khatri')
+// // console.log(ability)
+// // console.log(motivation)
+// console.log('ability',{...ability},'motivation',{...motivation})
+
+// function Emp(fname,lname,age){
+//     this.fname = fname;
+//     this.lname = lname;
+//     this.age =age;
+// }
+
+// Emp.prototype.company = 'assurekit'
+// Emp.prototype.dob = '14/06/1982'
+// let teamwork = new Emp('nitesh','khatri',34)
+// let tasks = new Emp('sameet','khatri',41)
+// const result1 = 'nitesh'.__proto__.company = ' assurekit'
+// const result2 = 'sameet'.__proto__.company = ' hologic'
+// console.log(teamwork.fname,teamwork.lname,teamwork.age,result1)
+// console.log(tasks.fname,tasks.lname,tasks.age,result2)
+// console.log({...teamwork,result1})
+// console.log({...tasks,result2})
+
+// function Cat(name, color) {
+//     this.name = name;
+//     this.color = color;
+//   }
+
+//   Cat.prototype.age = 34 
+//   let user = new Cat('kitten','black')
+//   console.log(user.name,user.color,user.age)
+//   console.log(Cat.hasOwnProperty('color'))
+//   console.log(Cat.hasOwnProperty('name'))
+
+// const a = 'nitesh khatri'
+// const b = 'sameet khatri'
+// console.log(...a,...b)
+
+// const preparation = ['a','b',1,2,3,4,5,null,undefined]
+// const result = preparation.filter((val) => typeof val !== 'object' && typeof val !== 'undefined')
+// const result = preparation.filter((val) => typeof val === 'object' || typeof val === 'undefined')
+// const result = preparation.filter((val) => typeof val === 'number' || typeof val === 'string')
+// const result = preparation.filter((val) => typeof val === 'number')
+// const result = preparation.filter((val) => typeof val === 'string')
+// const result = preparation.filter((val) => typeof val === 'object')
+// const result = preparation.filter((val) => typeof val === 'undefined')
+// console.log(result)
+
+// console.log(null === undefined)
+// console.log(null == undefined)
+
+// console.log(1 === '1')
+// console.log(1 == '1')
+
+
