@@ -6900,7 +6900,7 @@ const wordnumber = ['nitesh','khatri',1,2,null,undefined]
 // console.log(Person.nationality)
 // console.log(Person.dob)
 
-const friends = ['vishal','vishal','mayur','sonal']
+// const friends = ['vishal','vishal','mayur','sonal']
 // const distinct = ((value,index,arr) => {
 //     return arr.indexOf(value) === index
 // })
@@ -6986,9 +6986,9 @@ const friends = ['vishal','vishal','mayur','sonal']
 // console.log('divide',divide(10,20))
 
 const mindset = ['vijay','vishal','pranay','vishal']
-const distinct = (value,index,arr) => {
-    return arr.indexOf(value) === index
-}
+// const distinct = (value,index,arr) => {
+//     return arr.indexOf(value) === index
+// }
 // console.log(Array.from(new Set(mindset)))
 // console.log(mindset.filter(distinct))
 // console.log(new Set(mindset))
@@ -7072,4 +7072,202 @@ const distinct = (value,index,arr) => {
 // console.log(1 === '1')
 // console.log(1 == '1')
 
+// function compare(different){
+//     return (different ? 'yes' : 'no')
+// }
+// console.log(compare(no));
 
+// const age = 50;
+// const result = age>=35  ? 'true' : 'false'
+// console.log(result)
+
+// const age = 62
+// let comment = ''
+// if(age>90){
+//     comment = 'A+'
+// }
+// else if(age > 70){
+//     comment =  'B'
+// }
+// else if(age > 60){
+//     comment = 'C'
+// }
+// else{
+//     comment = 'failed'
+// }
+// console.log(comment);
+
+// var a = 'nitesh khatri'
+// function child(){
+//     console.log(a)
+// }
+// function rich(){
+//     child();
+//     var a = 'sameet khatri'
+// }
+// rich();
+
+// function Example(){
+//     setTimeout(() => {
+//         console.log('happ timer')
+//     },1000)
+// }
+
+// let objesssct = {
+//     name: "Nishant",
+//     age: 24, 
+//     salary: 200,
+//     height: '20 meters',
+//     weight: '70 KG'
+// }
+// let user = Object.assign({},objesssct)
+// console.log(user)
+
+// class Example{
+//     constructor(fname,lname){
+//         this.fname = fname
+//         this.lname = lname
+//     }
+// }
+// let user = new Example('nitesh','khatri')
+// Example.prototype.age = 34
+// Example.__proto__.jobtitle = 'developer'
+// console.log(user,user.age)
+
+
+//     let objesssct = {
+//         name: "Nishant",
+//         age: 24, 
+//         salary: 200,
+//         height: '20 meters',
+//         weight: '70 KG'
+//     }
+// let { name, salary, weight } = objesssct;
+// console.log(name,salary,weight)
+
+// function sample(a, b) {
+//     return [a + b, a * b]
+// }
+// console.log(sample(10,20))
+
+// let array1 = [1, 2, 3, 4, 5,5]
+// let array2 = [6, 7, 8, 9, 10,10]
+// console.log(array1.concat(array2))
+// console.log(Array.from(new Set(array1.concat(array2))))
+// const easy = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// const mood = ['happy','sad','crying','anxiety','anxiety']
+// console.log(mood.filter(easy))
+// console.log(Array.from(new Set(mood)))
+
+// console.log('nitesh'.split("").reverse("").join(""))
+// console.log('nitesh'.length)
+// console.log('nitesh'.repeat(2))
+// const word = 'how are you doing, where are you right now'
+// const example = '/are/d'
+// console.log(word.   example)
+// let array1 = [1, 2, 3, 4, 5]
+// let array2 = [6, 7, 8, 9, 10]
+// console.log(...array1,...array2)
+
+// let array1 = [1, 2, 3, 4, 5]
+// let array2 = [6, 7, ...array1, 8, 9, 10]
+// console.log(array2)
+
+// let object1 = {
+//     firstName: "Nishant",
+//     age: 24, 
+//     salary: 300,
+// }
+
+// let object2 = {
+//     lastName: "Kumar",
+//     height: '20 meters',
+//     weight: '70 KG'
+// }
+// let combinedobject = {...object1,...object2}
+// console.log(combinedobject)
+
+// const note = {
+//     id: 1,
+//     title: 'My first note',
+//     date: '09/01/2010',
+//   }
+//   const id = note.id 
+//   const title = note.title
+//   const date = note.date 
+//   console.log(id)
+//   console.log(title)
+//   console.log(date)
+//   console.log(new Date().getFullYear())
+
+// const note = {
+//     id: 1,
+//     title: 'My first note',
+//     date: '01/01/1970',
+//     author: {
+//       firstName: 'Sherlock',
+//       lastName: 'Holmes',
+//     },
+//   }
+//   console.log(note.id)
+//   console.log(note.title)
+//   console.log(note.date)
+//   console.log(note.author.firstName)
+//   console.log(note.author.lastName)
+
+// const tools = ['hammer', 'screwdriver']
+// const otherTools = ['wrench', 'saw']
+// const result = [...tools,...otherTools]
+// console.log(result)
+
+// const user = {
+//     id: 3,
+//     name: 'Ron',
+//   }
+  
+//   const updatedUser = { ...user, isLoggedIn: true }
+//   console.log(updatedUser)
+
+// const person = {
+//     name:'nitesh',
+//     age:34
+// }
+// const user = {...person,email:'nitesh.khatri88@gmail.com'}
+// console.log(user)
+
+// const user = {
+//     id: 3,
+//     name: 'Ron',
+//     organization: {
+//       name: 'Parks & Recreation',
+//       city: 'Pawnee',
+//     },
+//   }
+//   console.log(user.organization.name)
+//   console.log(user.organization.city)
+
+// const group = ['nitesh','khatri',34]
+// const [fname,...rest] = group 
+// console.log(fname)
+// console.log(rest)
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// async function Example(){
+//     let result = await promise 
+//     console.log(result)
+// }
+// Example()
+
+// function Parent(){
+//     console.log('nitesh')
+//     function Child(){
+//         console.log('sameet')
+//     }
+// }
+// Parent()

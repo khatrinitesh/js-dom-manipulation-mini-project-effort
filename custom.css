@@ -4,9 +4,22 @@
     background-color: orange;
 }
 
+ul,ol{
+  list-style-type: none;
+  margin:0;
+}
+
 body {
     padding: 20px;
     background-color: pink;
+  }
+
+  input[type='radio']{
+    accent-color: blue;
+  }
+
+  img{
+    -webkit-box-reflect:right;
   }
 /*   
   div {
@@ -20,3 +33,55 @@ body {
     padding: 20px;
     background-color: blue;
   } */
+
+  .listcounter{
+    counter-reset: counterlist;
+  }
+
+  .listcounter li:before{
+    content:counter(counterlist) " -" ;
+    counter-increment:counterlist;
+  }
+  p.rtl {
+    direction: rtl;
+  }
+
+  table,
+  table tr th,
+  table tr td{
+    border:1px solid black;
+    gap:30px;
+    /* empty-cells: hide; */
+  }
+
+  .col{
+    column-count: 3;
+    column-gap: 100px;
+    background-color: powderblue;
+  }
+
+
+  .smileyimg{
+    image-rendering:high-quality;
+  }
+
+  .resize{
+    inline-size: 100px;
+    block-size: 50px;
+    background-color: powderblue;
+  }
+  .resizetwo{
+    background-color: red;
+    inset-block-end: 100px;
+    inset-block-start: 100px;
+    margin-block-start: 200px;
+    margin-block-end: 35px;
+    margin-inline-end: 35px;
+    margin-inline-start:100px;
+  }
+
+  
+  .imgmask{
+    -webkit-mask-image: radial-gradient(black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(black 50%, rgba(0, 0, 0, 0.5));
+  }
