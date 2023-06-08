@@ -7271,3 +7271,17 @@ const mindset = ['vijay','vishal','pranay','vishal']
 //     }
 // }
 // Parent()
+
+// let obj1 = {
+//  fname:'nitesh',
+//  lname:'khatri',
+//  age:34,
+//  mob:9920767524
+// }
+
+// obj1.jobtitle = 'front-end developer'
+// obj1.__proto__.gender = 'male'
+// const user = obj1.__proto__.gender = 'male'
+// console.log(obj1,obj1.jobtitle);
+// console.log(user);
+
