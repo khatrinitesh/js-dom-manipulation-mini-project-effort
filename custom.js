@@ -7285,3 +7285,513 @@ const mindset = ['vijay','vishal','pranay','vishal']
 // console.log(obj1,obj1.jobtitle);
 // console.log(user);
 
+// const str = "Hello World";
+// console.log(str.charAt(0))
+
+// const str = "Hello World";
+// console.log(str.charCodeAt(0));
+
+// const str = "Hello";
+// const str2 = " World";
+// console.log(str.concat(str2))
+
+// console.log('nitesh khatri'.startsWith('n'))
+// console.log('nitesh khatri'.endsWith('i'))
+
+// console.log('how are you doing, where are you right now'.includes('happy'))
+// console.log('how are you doing, where are you right now'.includes('smile'))
+// console.log('how are you doing, where are you right now'.includes('now'))
+
+// console.log('nitesh khatri'.indexOf('khatri'))
+
+// console.log('nitesh khatri'.lastIndexOf('khatri'))
+
+// console.log('nitesh khatri'.match(/[a-z]/))
+// console.log('nitesh khatri'.matchAll(/[a-z]/g))
+
+// console.log('nitesh'.padStart(20,'nitesh'))
+
+// console.log('sameet'.padEnd(22,'sameet'))
+
+// console.log('happy'.repeat(10))
+
+// console.log('nitesh'.replace('sameet'))
+
+// const result =  'how are you, where are you now?'
+// console.log(result.replaceAll('are','stupid'))
+
+// const str = 'nitesh khatri'
+// const regex = /[^\h/h]/g;
+// console.log(str.regex)
+
+// console.log('nitesh'.slice(0,5))
+
+// console.log('nitesh'.split(''))
+
+// const friends = ['vijay','vijay','vishal']
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// console.log(friends.filter(distinct))
+// console.log(Array.from(new Set(friends)))
+// console.log(new Set(friends))
+
+// console.log('nitesh'.startsWith('khatri'))
+
+// const str =' nitesh khatri'
+// console.log(str.substring(1,4))
+
+// console.log('nitesh'.substr(1,2))
+
+// console.log('NITESH KHATR'.toLocaleLowerCase())
+// console.log('NITESH KHATR'.toLocaleUpperCase());
+
+// console.log('nitesh'.toString())
+// const str = "  Hello  World  ";
+// console.log(str.trim())
+
+// console.log('nitesh'.trimEnd())
+
+// console.log('nitesh'.trimStart());
+
+// console.log('nitesh'.length)
+// console.log('nitesh'.nth(3n))
+// console.log('nitesh'.charAt(7))
+// console.log('nitesh'.toLowerCase())
+// console.log('nitesh'.toUpperCase())
+
+// console.log('nitesh'.indexOf('t'))
+
+// console.log('nitesh'.split(" "))
+
+// console.log('nitesh   '.trim())
+// console.log('nitesh' < 'sameet')
+// console.log('sameet' > 'nitesh')
+// console.log('nitesh'.includes('n'))
+// console.log('sameet'.includes('n'))
+// console.log('nitesh'.includes('n'))
+// console.log('sameet'.includes('sa'))
+// console.log('nitesh '.repeat(10,))
+// console.log('nitesh'.endsWith('h'))
+// console.log('nitesh'.charCodeAt('n'))
+// console.log('nitesh'.concat('sameet'))
+// console.log('nitesh'.concat(' - ' ,' +', 'sameet'))
+// console.log('nitesh'.slice(1,3))
+// console.log('nitesh'.substr('nitesh'))
+// console.log('nitesh'.trimLeft('sameet'))
+// console.log('nitesh'.trimRight('vishal'))
+// console.log('nitesh'.toLocalCompare('sameet'))
+let names = ["Zoe", "Adam", "Dan"]
+// console.log(names.toString())
+// console.log(names.join(' and '))
+// concat 
+// let nums = [1, 2, 3]
+// let nums2 = [4, 5, 6]
+// let nums3 = [7, 8, 9]
+// console.log(nums.concat(nums2).concat(nums3))
+
+// let arr = ["Danny", "Joe"]
+// arr.splice(1,0,'nitesh','sameet')
+// console.log(arr)
+
+// let arr = ["Danny", "Joe"]
+// let spliced = arr.splice(0,2,'sameet','arvind')
+// console.log(spliced)
+
+// let arr = ["Danny", "Joe", "Amy"]
+// console.log(arr.splice(1,2,'nitesh','sameet'))
+
+// let arr = ["Danny", "Joe", "Amy"]
+// console.log(arr.slice(0))
+
+// let arr = ["Danny", "Joe", "Amy", "Joe"]
+// console.log(arr.indexOf("Joe"))
+
+// let arr = ["Danny", "Joe", "Amy", "Joe"]
+// console.log(arr.lastIndexOf("Amy"))
+
+// let numbers = [1,2,3,4]
+// console.log(numbers.forEach((val) => console.log(val)))
+
+// let numbers = [1, 2, 3, 4]
+// let dblnums = numbers.map(n => n *2 )
+// console.log(dblnums)
+
+// let dblnumsresult = numbers.map((n,i) => {
+//     if(i % 2 === 1 ) return n * 2 
+//     else return n 
+// })
+// console.log(dblnumsresult)
+
+// let articles = [
+//     { title: "PHP classes", author: "Danny Adams" ,status:true},
+//     { title: "Python arrays", author: "Amy Sanders",status:false },
+//     { title: "PHP php", author: "Amy Sanders",status:false },
+//     { title: "Arrays in PHP", author: "Danny Adams" ,status:true},
+//   ]
+//   let PHPArticles = articles.filter((val) => val.status ===  false && val.title.includes('PHP'))
+//   console.log(PHPArticles)
+
+// let cities = [
+//     { name: "Stokington", rivers: 3 },
+//     { name: "Phillydelfia", rivers: 6 },
+//     { name: "New Ports", rivers: 2 },
+//   ]
+
+//   console.log(cities.filter((val) => val.rivers > 2))
+
+// let numbers = [1, 2, 3, 4]
+// let total = numbers.reduce((total,currentNum) => total + currentNum)
+// console.log(total)
+
+// let arr = [1, 2, 3]
+// let max = arr.reduce((a,b) => {
+//     return Math.max(a,b)
+// },-Infinity)
+// console.log(max)
+// let minresult = arr.reduce((a,b) => {
+//     return Math.min(a,b)
+// })
+// console.log(minresult)
+
+let numbers = [4, 6, 14, 16]
+// some
+// let GreaterThen = numbers.some((n) => n>6)
+// console.log(GreaterThen)
+// let lessThen = numbers.some((n) => n<6)
+// console.log(lessThen)
+
+// every 
+// let GreaterThen = numbers.every((n) => n>2)
+// console.log(GreaterThen)
+// let lessThen = numbers.every((n) => n<2)
+// console.log(lessThen)
+
+
+// // The flat() method creates a new array with all sub-array elements concatenated into it recursively up to the specified depth.
+// let arr = [1,2,3,[1,2],4]
+// console.log(arr.flat())
+
+// let arr = [1, 2, 3, [1, 2], [1, [1, 2]]]
+// console.log(arr.flat())
+// console.log(arr.flat(2))
+
+// let stock = [
+//     { item: "ketchup", quantity: 32 },
+//     { item: "mayo", quantity: 9 },
+//     { item: "hot sauce", quantity: 12 },
+//     { item: "ketchup", quantity:22 },
+//   ]
+//   console.log(stock.find((val) => val.item === 'ketchup'))
+
+// let stock = [
+//     { item: "ketchup", quantity: 32 },
+//     { item: "mayo", quantity: 9 },
+//     { item: "hot sauce", quantity: 12 },
+//   ]
+
+//   console.log(stock.findIndex((val) => val.item === 'mayo'))
+
+// let name1s = ["Zoe", "Adam", "Dan"]
+// console.log(name1s.sort())
+
+// let numbers1 = [3, 1, 7, 2]
+// console.log(numbers1.sort((a,b) => a-b))
+// console.log(numbers1.sort((a,b) => b-a))
+
+// const list = [😫, 😫, 😫, 😫];
+// console.log(list.map((val) => val))
+
+// const list = [1, 2, 3, 4];
+// console.log(list.map((val) => val * 2))
+
+// const list = ['happy', 'crying', 'smile', 'angry'];
+// console.log(list.filter((val) => val !== 'happy' && val !== 'smile' && val !== 'crying'))
+
+// const list = [1, 2, 3, 4];
+// const result = list.reduce((a,b) => {
+//     return a + b 
+// })
+// console.log(result)
+// const list = [1, 2, 3, 4];
+// const result = list.reduceRight((a,b) => {
+//     return a +b 
+// })
+// console.log(result)
+
+// const list = ['nitesh','sameet','mom','daddy']
+// console.log(list.fill('om namah shivay'))
+
+// const list = ['happy', 'crying', 'smile', 'angry','angry'];
+// console.log(list.find((val) => val = 'smile'))
+// console.log(list.indexOf((val) => val === 'happy'))
+// const list = [1, 2, 3, 4, 5];
+// console.log(list.includes(11))
+// console.log(list.pop())
+// console.log(list.push('excellent'))
+// console.log(list.shift('how are you'))
+// console.log(list.unshift('how are you'))
+// console.log(list)
+// console.log(list.splice(1,3,'sameet'))
+// console.log(list.slice(3))
+// console.log(list.join('-'))
+
+// console.log(list.reverse())
+
+// console.log(list.sort())
+
+// console.log(list.some((val) => val === 'happy'))
+
+// console.log(list.every((val) => val === 'happy'))
+
+// console.log(Array.isArray(list))
+// console.log(Array.from(new Set(list)))
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// console.log(list.filter(distinct))
+
+// const listExample = Array.of(list)
+// console.log(listExample);
+
+
+// const result = list.at(-1)
+// console.log(result)
+
+// console.log(list.copyWithin(1,3))
+// const listemoji = ['😀', '😫', ['😀',' 😫',' 🤪']];
+// console.log(listemoji.flatMap())
+// console.log(listemoji.flatMap());
+
+// function regular 
+// function sum(a,b){
+//     return a +b 
+// }
+// console.log(sum(10,20))
+
+// function expression
+// const sum = function (a,b) {
+//     return a +b 
+// }
+// console.log(sum(20,20))
+
+// arrow function 
+// const sum = (a,b) => {
+//     return a+ b
+// }
+// console.log(sum(10,20))
+
+// generator function 
+// function* indexGenerator(){
+//     let index = 0;
+//     while(true){
+//         yield index++
+//     }
+// }
+// const g = indexGenerator();
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+
+// function* indexExample(){
+//     let index = 0;
+//     while(true){
+//         yield index++ 
+//     }
+// }
+// const g = indexExample();
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+
+// console.time("time");
+// for(let i=0;i<10;i++){
+//     console.log(i)
+// }
+// console.timeEnd('timeend')
+
+// const objectExample = { a: 1, b: 2, c: 3 }
+// console.log(Object.assign({},objectExample))
+
+// const remoDup =(arr) => [...new Set(arr)]
+// console.log(remoDup([1, 2, 3, 3, 4, 4, 5, 5, 6]))
+
+// const random = (min,max) = Math.floor(Math.random() * (max-min+1))
+// console.log(random)
+
+// const random = (min,max,step=1) => Math.floor(Math.random() * (max-min+1)) * step + min;
+// console.log(random(1,20,33))
+
+// number is even or not
+// const isEven = (num) => num % 2 === 0 
+// console.log(isEven(2))
+
+// number is odd or not
+// const isOdd = (num) => num % 2 !== 0 
+// console.log(isOdd(1))
+
+// find the factorial of a number
+// const factorial = (num) => (num === 0 ? 1 : num * factorial(num - 1))
+// console.log(factorial)
+
+// find the sum of an array 
+// const sum = (arr22) => arr22.reduce((a,b) => a+b)
+// console.log(sum([10,20]))
+
+// Find median of an array
+// const median = (arr) => {
+//     const mid = Math.floor(arr.length / 2),
+//       nums = [...arr].sort((a, b) => a - b);
+//     return arr.length % 2 !== 0 ? nums[mid] : (nums[mid - 1] + nums[mid]) / 2;
+//   };
+//   console.log(median([1, 2, 3, 4])); 
+
+// Find largest numbers
+// const arrggg = [11,33,55,66,77]
+// const findLargest = (arr) => arr.map((subArr) => Math.max(...subArr));
+// const character = (arr) => arr.map((respect) => Math.max(...respect))
+// const character = (arr) => arr.map((respect) => Math.min(...respect))
+// console.log(character([arrggg]))
+// console.log(findLargest([arrggg]))
+
+// function* HappyCustom(){
+//     let index = 0;
+//     while(true){
+//         yield index++
+//     }
+// }
+// const result = HappyCustom();
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// console.log(result.next().value);
+// find average of numbers 
+// const arrggg = [11,33,55,66,77]
+// const findAvg= (arr) => arr.reduce((a,b) => a+b,0) / arr.length
+// console.log(findAvg(arrggg))
+
+// find smallest numbers
+// const arrggg = [11,33,55,66,77]
+// const smallestFind = arr => arr.map((val) => Math.min(...val))
+// console.log(smallestFind([arrggg]))
+
+// find mode of an array
+// const mode = (arr) => {
+//     const counts = arr.reduce((a, b) => {
+//       a[b] = (a[b] || 0) + 1;
+//       return a;
+//     }, {});
+//     const maxCount = Math.max(...Object.values(counts));
+//     return Object.keys(counts).filter((key) => counts[key] === maxCount);
+//   };
+//   console.log(mode([3, "a", "a", "a", 2, 3, "a", 3, "a", 2, 4, 9, 3]));
+
+// find the range of an array
+// const range = (arr) => Math.max(...arr) - Math.min(...arr)
+// console.log(range([1,2,3,4]))
+
+// pick a random elemen from an array 
+// const pick = (arr) => arr[Math.floor(Math.random() * arr.length)]
+// console.log(pick)
+
+// map an array without map()
+// const map = (arr,cb) => Array.from(arr,cb)
+// console.log(map([1,2,3,4],(n) => n * 2))
+
+
+// empty an array without .splice()
+// const empty = (arr) => {
+//     arr.length = 0
+//     return arr 
+// }
+// console.log(empty([1,2,3,4]))
+
+const friends= [1,2,3,4]
+// const empty = (arr) => {
+//     arr.length = 0 
+//     return arr 
+// }
+// console.log(empty(friends))
+
+// convert array to object 
+// const toObject = (arr) => ({...arr})
+// console.log(toObject(friends))
+
+// find intersection of two arrays
+// const intersection = (arr1,arr2) => {
+//     const set = new Set(arr1)
+//     return arr2.filter((x) => set.has(x));
+// }
+// console.log(intersection([1,2,3],[2,3,4]))
+// const intersection = (arr1,arr2) => {
+//     const set = new Set(arr1)
+//     return arr2.filter((x) => set.has(x))
+// }
+// console.log(intersection([1,2,3],[2,3,4,5]))
+
+// const intersection = (arr1,arr2) => {
+//     const set = new Set(arr1)
+//     return arr2.filter((x) => set.has(x))
+// }
+// console.log(intersection([1,2,3],[2,3,4,5]))
+
+// remove falsy values from an array
+// const compact = arr => arr.filter(Boolean)
+// console.log(compact([0,1,false,2,'',3,"a","e",NaN,"s",34]))
+// const compact = (arr) => arr.filter(Boolean)
+// console.log(compact([1,2,3,4,5,null,undefined,"NaN",0,true,1,false]))
+
+
+// rounding number to n decimal place
+// const round = (num,decimals=0) => num.toFixed(decimals) 
+// console.log(round(1.244666,3))
+
+// reverse string
+// const reverseString = (str) => str.split("").reverse().join("");
+// console.log(reverseString('nitesh'))
+// console.log(reverseString('sameet'))
+// console.log(reverseString('arvind'))
+// console.log(reverseString('urvashi'))
+
+// find longest word in a string
+// const longestTest = (str) => str.split(" ").reduce((a,b) => (a.length > b.length ? a:b))
+// console.log(longestTest('How are you where are you doing happy concatenate wonderful fantastic marvellous '))
+
+// generate title case 
+// const titlecase = (str) => str.split(" ").map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase()).join(" ")
+// console.log(titlecase('nitesh khatri'))
+
+// is string Palindrome
+// const isPalindrome = (str) => str === str.split("").reverse().join("");
+// console.log(isPalindrome("canal")); 
+
+// Copy to Clipboard
+// const copyToClipboard = navigator.clipboard.writeText(text)
+// copyToClipboard('nitesh khatri')
+
+// find a vowel in a string
+// const findVowel = (str) => str.match(/[aeiou]/gi)
+// console.log(findVowel('sameet'))
+
+// email validator
+// const validateEmail = (email) => {
+//     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+//     return re.test(String(email).toLowerCase());
+// };
+// console.log(validateEmail('abc@aaa.co'); // true
+
+// Validate only character and space
+// const validateName = (name) => /^[A-Za-z\s]+$/.test(name);
+// console.log(validateName("abc")); // true
+// console.log(validateName("123")); // false
+
