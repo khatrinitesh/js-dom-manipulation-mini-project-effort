@@ -7795,3 +7795,126 @@ const friends= [1,2,3,4]
 // console.log(validateName("abc")); // true
 // console.log(validateName("123")); // false
 
+// Validate only number
+// const validateNum = (number) => /^[0-9]+$/.test(number);
+// console.log(validateNum('123'))
+// console.log(validateNum(123))
+
+// casting values in arrays using map
+// const CastingValue = (arr) => arr.map(Number)
+// console.log(CastingValue(["1", "2", [3],'nitesh']))
+
+// Date and object
+// check object is emppty or not 
+// const isEmpty = (obj) => Object.keys(obj).length === 0
+// console.log(isEmpty({}))
+
+// get the current date 
+// const getDate = () => new Date();
+// console.log(getDate())
+
+// find the day of the week
+// const getDayName = (date) => {
+//     const days = [
+//         "Sunday",
+//         "Monday",
+//         "Tuesday",
+//         "Wednesday",
+//         "Thursday",
+//         "Friday",
+//         "Saturday",
+//     ]
+//     return days[date.getDay()]
+// }
+// console.log(getDayName(new Date()))
+
+// find the day of the year
+// const getDayOfYear = (date) => {
+//     const firstDay = new Date(date.getFullYear(), 0, 1);
+//     return Math.ceil((date - firstDay) / 86400000);
+//   };
+//   console.log(getDayOfYear(new Date()));
+
+// find the number of days in a month 
+// const getDaysInMonth = (date) =>
+//   new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+// console.log(getDaysInMonth(new Date())); // 31
+
+// Find the current month
+// const getMonthName =(date) => {
+//     const days = [
+//         "January",
+//     "February",
+//     "March",
+//     "April",
+//     "May",
+//     "June",
+//     "July",
+//     "August",
+//     "September",
+//     "October",
+//     "November",
+//     "December",
+//     ]
+//     return days[date.getMonth()]
+// }
+// console.log(getMonthName(new Date))
+
+// find the numbers of seconds until midnight
+// const getSecondsUntilMidnight = (date) =>
+//   (24 - date.getHours()) * 60 * 60 +
+//   (60 - date.getMinutes()) * 60 +
+//   (60 - date.getSeconds());
+// console.log(getSecondsUntilMidnight(new Date()))
+
+// Log Time from Date
+// const logTime1 = (date) => date.toTimeString().slice(0, 8);
+// logTime1(new Date()); 
+// const logTime2 = (date) => date.toLocaleTimeString("en-GB");
+// logTime2(new Date());
+
+// format json output with spaces
+// const formatJSON = (json) => JSON.stringify(json,null,2)
+// console.log(formatJSON({ a: 1, b: 2 }))
+
+// deep clone an object
+// const clone = (obj) => JSON.parse(JSON.stringify(obj));
+// console.log(clone({ a: 1, b: 2 })); // { a: 1, b: 2 }
+
+// const deepCopy = (obj,copy =({})) => {
+//     if(!obj || typeof obj !== 'object') return obj;
+//     for(const key in obj){
+//         if(obj.hasOwnProperty(key)) copy[key] = deepCopy(obj[key]);
+//     }
+//     return copy;
+// }
+// console.log(deepCopy({name:'n'}))
+
+// let promise  = new Promise(function(resolve,reject) {
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+
+// async function Careful(){
+//     let people = await promise
+//     console.log(people)
+// }
+// Careful()
+
+// const wait = (ms) => new Promise((resolve) => setTimeout(resolve,ms));
+// wait(1000).then(() => console.log("You'll see this after 1 second"));
+// await wait(1000);
+
+// is function async 
+// const isAsync = (fn) => fn.constructor.name === 'Asyncfunction'
+// console.log(isAsync(async () => {}));
+
+// convert to rem 
+// const ConverterRem = (px) => `${px / 16}rem`
+// console.log(ConverterRem(22))
+
+// window and dom 
+// cont getSelectedText = () => window.getSelection().toString();
+// console.log(getSelectedText());
+
