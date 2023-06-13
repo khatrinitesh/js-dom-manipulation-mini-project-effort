@@ -1,3 +1,4 @@
+
 // var targetee = document.querySelector('#box');
 // targetee.addEventListener('mousemove',function(e){
 //     var x = e.offsetX
@@ -1190,10 +1191,17 @@
 //   }
 
 // let employees = [
-//     {name: "John", salary: 90000, hireDate: "July 1, 2010"},
 //     {name: "David", salary: 75000, hireDate: "August 15, 2009"},
+//     {name: "John", salary: 90000, hireDate: "July 1, 2010"},
 //     {name: "Ana", salary: 80000, hireDate: "December 12, 2011"},
 // ];
+
+// const app = document.getElementById('app');
+// employees.map(({name,salary,hireDate}) => {
+//     datatoShow = `${name} : ${salary} : ${hireDate}`
+//     app.innerHTML = datatoShow
+//     console.log('data===>',datatoShow)
+// })
 
 // const result = employees.sort(function(a,b){
 //     const example = b.salary - a.salary
@@ -7716,7 +7724,7 @@ let numbers = [4, 6, 14, 16]
 // }
 // console.log(empty([1,2,3,4]))
 
-const friends= [1,2,3,4]
+// const friends= [1,2,3,4]
 // const empty = (arr) => {
 //     arr.length = 0 
 //     return arr 
@@ -7917,4 +7925,619 @@ const friends= [1,2,3,4]
 // window and dom 
 // cont getSelectedText = () => window.getSelection().toString();
 // console.log(getSelectedText());
+
+
+// Arrays
+// const numbersresult = [1,2,3,4,5]
+// console.log(numbersresult.length)
+// accessing an array elements
+// const myArray = [100, 200, 300]
+// console.log(myArray[0])
+// console.log(myArray[1])
+// console.log(myArray[2])
+
+// Method .push()
+// const card = ['apple', 'orange'];
+// const cart = card.push('mango')
+// console.log(cart)
+
+// method.pop()
+// const ingredients = ['eggs', 'flour', 'chocolate'];
+// const poppedIngredient  = ingredients.pop();
+// console.log(poppedIngredient)
+
+// mutable 
+// const names1 = ['Alice', 'Bob'];
+// names1.push('sameet')
+// console.log(names1)
+
+// Arrays
+// const numberArray = [0, 1, 2, 3];
+// const mixedArray = [1, 'chicken', false];
+// console.log(mixedArray)
+
+// const cities = ["Tokyo","Cairo","Los Angeles","Paris","Seattle"];
+// const newCityArr = cities.slice(2,4);
+// console.log(newCityArr)
+
+// console.log(typeof(null))
+// console.log(typeof(undefined))
+
+// let a = null 
+// console.log(a)
+
+// let a = undefined
+// console.log(a)
+
+// console.log(null == undefined)
+// console.log(null === undefined)
+// console.log(null !== undefined)
+// const myArray = [1, 2, 3, 4];
+// console.log(myArray.length)
+// console.log(myArray.push(11))
+// console.log(myArray.pop())
+// console.log(myArray.shift())
+// console.log(myArray.slice(1,3))
+// console.log(myArray.splice(2,1,'a','b'))
+// console.log(myArray.concat(111))
+// console.log(myArray.copyWithin(111))
+// const iterator = myArray.entries();
+// console.log(iterator)
+// const keys = myArray.keys();
+// for(const key of keys){
+//     console.log(key)
+// }
+// function* Example(){
+//     let index = 0;
+//     while(true){
+//         yield index++;
+//     }
+// }
+// const result = Example()
+// console.log(result.next().value)
+// console.log(result.next().value)
+// console.log(result.next().value)
+// console.log(result.next().value)
+// console.log(result.next().value)
+// console.log(result.next().value)
+// console.log(result.next().value)
+// const distinct = (val,index,array) => {
+//     return array.indexOf(val) === index
+// }
+// const friendsresult = ['mago','kiwi','blueburry','cherry','apple','pineapple','watermelon','watermelon']
+// console.log(friendsresult.filter(distinct))
+// console.log(Array.from(new Set(friendsresult)))
+// console.log(new Set(friendsresult))
+
+// const myArray = ['apple', 'banana', 'orange'];
+// const keys = myArray.keys()
+// const keyArray = Array.from(keys).map(key => key * 2)
+// console.log(keyArray)
+
+// const numbersres = [2, 4, 6, 8];
+// const areAllEven = numbersres.every((num) => num % 2=== 0)
+// console.log(areAllEven)
+
+// const arr = new Array(5)
+// console.log(arr.fill(0))
+
+// const numbers11 = [2, 4, 6, 8, 10];
+// const result = numbers11.find((val) => val > 5 )
+// console.log(result)
+
+// const numbershhh = [2, 4, 6, 8, 10];
+// const firstevenindex = numbershhh.findIndex(num => num % 2 === 0)
+// console.log(firstevenindex)
+
+// const arr = [1,2,[3,4]]
+// console.log(arr.flat())
+
+// const arr = [1,2,[3,4],[5,6]]
+// const mappedArr = arr.flat()
+// console.log(mappedArr)
+
+// const myArray = ['apple', 'banana', 'orange'];
+// console.log(myArray.forEach((val) => val * 2))
+
+// const myObject = {
+//     myArray:[1,2,3],
+//     multiplyBy:2,
+//     multiply:function(){
+//         this.myArray.forEach(function(element,index,array){
+//             array[index] = element * this.multiplyBy;
+//         },this);
+//     }
+// }
+// myObject.multiply();
+// console.log(myObject.myArray)
+
+// const arrword = ["apple", "banana", "orange"];
+// console.log(arrword.includes('watermelon'))
+// console.log(arrword.includes('pineapple'))
+// console.log(arrword.includes('apple'))
+// const fruitsString = arrword.join();
+// console.log(fruitsString)
+// function joinArgs() {
+//     const argsArray = Array.from(arguments);
+//     const argsString = argsArray.join(', ');
+//     console.log(argsString);
+//   }
+
+// const numbers11 = [1, 2, 3, 4, 5, 6, 5, 7];
+// const result = numbers11.lastIndexOf(5)
+// console.log(result)
+
+// const people11 = [
+//     { name: "John", age: 25 },
+//     { name: "Jane", age: 30 },
+//     { name: "Bob", age: 25 },
+//     { name: "Mary", age: 35 },
+//   ];  
+// const lastIndex = people11.lastIndexOf({ name: "Bob", age: 25 });
+// console.log(lastIndex)
+
+// function a(){
+//     for(var i=0;i<3;i++){
+//         setTimeout(function log(){
+//             console.log(i);
+//         },i*3000)
+//     }
+// }
+// a()
+
+// var person  = {
+//     name:'nitesh khatri',
+//     hello:function (thing){
+//         console.log(this.name + ' says hello  ' + thing)
+//     },
+// };
+
+
+
+// class Product{
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+// let user = new Product('nitesh',333)
+// let user2 = new Product('sameet',1333)
+// console.log(user)
+// console.log(user2)
+
+// var careful = {
+//     name:'nitesh',
+//     friend:function(could){
+//         console.log(`${this.name} says hello ${could}`)
+//     }
+// }
+// careful.friend('excellent')
+
+// var alterEgo = {
+//     name:"sameet"
+// }
+
+// careful.hello.friend(alterEgo,['world']);
+
+// function addFive(a){
+//     return a + 5 
+// }
+// console.log(addFive(10))
+
+// function minusFive(a){
+//     return a - 10
+// }
+// console.log(minusFive(10))
+
+
+// const evaluate = compose(addFive,minusFive,minusFive)
+// console.log(evaluate(5))
+
+// function showText(text,time){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve(text)
+//         },time)
+//     })
+// }
+// Promise.all([showText('nitesh',1000),Promise.resolve('hi')]).then((value) => console.log(value))
+
+// function Permission(text,time){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve(text)
+//         },time)
+//     })
+// }
+// Promise.all([Permission('nitesh',1000),Promise.resolve('hi')]).then((val) => console.log(val))
+
+// function Yourself(text,time){
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             resolve(text)
+//         },time)
+//     });
+// }
+// Promise.all([Yourself('nitesh',1000),Promise.resolve('hi happy'),Promise.reject('superb')]).then((val) => console.log(val))
+
+// function myPromiseAll(promises){
+//     let result = [];
+//     return new Promise((resolve,reject) => {
+//         promises.forEach((p,index) => {
+//             p.then(result => {
+//                 result.push(res)
+//                 if(index === promises.length -1 ){
+//                     resolve(result)
+//                 }
+//             }).catch((err) => reject(err))
+//         })
+//     })
+// }
+
+// console.log('nitesh'.split("").reverse("").join(""))
+
+// const option = ['vishal','vishal','suresh','chandresh','arvind']
+// const distinct = (val,index,array) => {
+//     return array.indexOf(val) === index
+// }
+// console.log(option.filter(distinct))
+
+// const numword = [1,2,44,55,11,22,33]
+// console.log(numword.sort((a,b) => a-b))
+// console.log(numword.sort((a,b) => b-a))
+
+
+// const result = option.sort(function(a,b){
+//     if(a<b){
+//         return -1 
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(result)
+// const person =[
+//     {
+//         name:'nitesh',age:34,jobtitle:'front-end developer'
+//     },
+//     {
+//         name:'sameet',age:41,jobtitle:'field service engineering'
+//     },
+//     {
+//         name:'arvind',age:68,jobtitle:'ladies tailor'
+//     },
+//     {
+//         name:'urvashi',age:65,jobtitle:'housewife'
+//     },
+//     {
+//         name:'god saibaba',age:100,jobtitle:'bhajan mantra'
+//     },
+// ]
+
+// const result = person.filter((val) => val.name === 'nitesh')
+// console.log(result)
+// const result = person.filter((val) => val.name !== 'nitesh')
+// console.log(result)
+// const result = person.filter((val) => val.age > 45)
+// console.log(result)
+// const result = person.filter((val) => val.age > 45)
+// console.log(result)
+// const isEven = person.age % 2 === 0 
+// console.log(isEven)
+// const isOdd = person.age % 2 !== 0 
+// console.log(isOdd)
+
+
+
+// class Happy {
+//     constructor(fname,lname){
+//         this.fname = fname,
+//         this.lname = lname
+//     }
+// }
+
+// let user1 = new Happy('nitesh','khatri')
+// let user2 = new Happy('sameet','khatri')
+// user1.age = 34
+// user1.jobtitle = 'front-end developer'
+// user1.location = 'india'
+
+// user2.age = 41
+// user2.jobtitle = 'field service engineering'
+// user2.location = 'usa'
+// console.log(user1)
+// console.log(user2)
+
+// const currentDate = new Date();
+// console.log(currentDate)
+
+// const date = new Date();
+// console.log(date.toDateString())
+
+// const date = new Date();
+// console.log(date.toISOString())
+// console.log(date.toLocaleDateString())
+// console.log(`${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`)
+
+
+// let emp = [
+//     {
+//         name:'nitesh',
+//         age:34
+//     },
+//     {
+//         name:'sameet',
+//         age:41
+//     },
+//     {
+//         name:'arvind',
+//         age:68
+//     },
+//     {
+//         name:'urvashi',
+//         age:65
+//     },
+// ]
+
+// console.log(emp)
+// const result = emp.sort(function(a,b) {
+//     if(a.age > b.age){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(result)
+
+// console.log(emp.filter((val) => val.age !== 65))
+// console.log(emp.filter((val) => val.age !== 68))
+// console.log(emp.filter((val) => val.age !== 41))
+// console.log(emp.filter((val) => val.age !== 34))
+// console.log(emp)
+
+
+// const titlecase2 = (str) => str.split(" ").map((word) => word[0].toUpperCase() + word.slice(1).toLowerCase()).join(" ")
+// console.log(titlecase2('nitesh khatri'))
+
+// const firstPromise = new Promise((resolve,reject) => {
+//     setTimeout(resolve,500,'one')
+// })
+// console.log(firstPromise)
+
+// const secondPromise = new Promise((resolve,reject) => {
+//     setTimeout(resolve,200,'two')
+// })
+// console.log(secondPromise)
+// Promise.race([firstPromise,secondPromise]).then(res => console.log(res));
+
+// const firstPromise = new Promise((resolve,reject) => {
+//     setTimeout(resolve,200,'one')
+// })
+// const secondPromise = new Promise((resolve,reject) => {
+//     setTimeout(resolve,300,'two')
+// })
+// Promise.race([firstPromise,secondPromise]).then((res) => console.log(res))
+
+// const firstOption = new Promise((resolve,reject) => {
+//     setTimeout(resolve,100,'nitesh')
+// })
+// const secondOption = new Promise((resolve,reject) => {
+//     setTimeout(resolve,500,'sameet')
+// })
+// Promise.all([firstOption,secondOption]).then((res) => console.log(res))
+
+
+// Btn = document.getElementById('add');
+// Btn.addEventListener('click',() => {
+//     console.log('hi happy promgramming coding')
+// },{once : true})
+
+// function* Example(){
+//     let index = 0 
+//     while(true){
+//         yield index++
+//     }
+// }
+// const g = Example();
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+// console.log(g.next().value)
+
+// const testPromise = new Promise((resolve,reject) => {
+//     let value = 5 
+//     if(value < 4 ){
+//         resolve('value is less than 4')
+//     }
+//     else{
+//         reject('value is greater than 4')
+//     }
+// })
+// testPromise
+// .then((result) => {
+//     console.log('===>',result)
+// })
+// .catch((error) => console.log('error',error));
+
+// const ExamplePromise = new Promise((resolve,reject) => {
+//     let value = 5 
+//     if(value < 4){
+//         resolve('value is less than 4')
+//     }
+//     else{
+//         reject('value is greater than 4 ')
+//     }
+// })
+// ExamplePromise
+// .then((res) => {
+//     console.log('res')
+// })
+// .catch((error) => console.log('error',error))
+
+// function Test(){
+//     console.log('1')
+//     setTimeout(function(){console.log('2')},1000);
+//     setTimeout((function(){console.log('3')})(),3000);
+//     console.log('4')
+// }
+// Test()
+
+// const pattern = /n/g 
+// console.log(pattern.test('nitesh'))
+
+
+// const obj11= {
+//     id: 1,
+//     first: 'bobby',
+//     last: 'hadz',
+//     salary: 500,
+//     address: {
+//       country: 'Belgium',
+//       city: 'Ghent',
+//     },
+//   };
+//   const resultjsonstring = JSON.stringify(obj11)
+//   const resultjsonparse = JSON.parse(resultjsonstring)
+//   console.log(resultjsonstring)
+//   console.log(resultjsonparse)
+//   delete obj11.address.country // remove country
+//   obj11.address.country = 'India' // modify for country
+//   console.log(obj11)
+
+//   const friendsexample = ['vijay','vijay','chandresh','amit']
+//   const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index 
+//   }
+// const resultsort = friendsexample.sort(function(a,b) {
+//     if(a<b) {
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+//   console.log(friendsexample.filter(distinct))
+// console.log(resultsort)
+
+// // how to empty a javascript array 
+// let arr = [1,2,3,4,5]
+// // console.log(arr=[])
+// console.log(arr.length = 0)
+// console.log(arr.splice(0,arr.length))
+
+// function sum(a){
+//     return function(b){
+//         if(!b){
+//             return a 
+//         }
+//         return sum(a+b)
+//     }
+// }
+// console.log(sum(1)(2)(3)(4)(5)(6)());
+
+// function add(a){
+//     return function(b){
+//         if(!b){
+//             return a 
+//         }
+//         return add(a+b)
+//     }
+// }
+// console.log(add(1)(2)(3)(4)());
+
+// function minus(a){
+//     return function(b){
+//         if(!b){
+//             return a
+//         }
+//         return minus(a-b)
+//     }
+// }
+// console.log(minus(1)(2)(3)())
+
+
+// const a = 'nitesh khatri'
+// function Spend(){
+//     console.log(a)
+//     const a = 'sameet khatri'
+// }
+// Spend()
+
+// let promise = new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//       resolve('nitesh khatri')  
+//     },1000)    
+// })
+// console.log(promise)
+// async function Happy(){
+//     let result = promise 
+//     console.log(result)
+// }
+// Happy()
+
+// const MathExample = new Promise((resolve,reject) => {
+//     let value = 10
+//     if(value > 4){
+//         resolve('yes')
+//     }
+//     else{
+//         reject('no')
+//     }
+// })
+// MathExample.then((res) => console.log('--->',res).catch((error) => console.log(error)))
+
+// const student= {
+//     name:'nitesh',
+//     age:34,
+//     subject:'english'
+// }
+// let studentOne = {...student,name:'sameet',age:41}
+// const {name,...rest} = student
+// console.log(name)
+// console.log(rest)
+// console.log(studentOne)
+// const superb = ['vishal','rahul','tejas']
+// const [first,...rest] = superb 
+// console.log(first)
+// console.log(rest)
+// const newSuperb = [...superb,'ravi','pranay']
+// console.log(newSuperb)
+
+// const curreny = (a) => {
+//     return (b) => {
+//         return a * b 
+//     }
+// }
+// console.log(curreny(10)(20))
+
+// var a = ['','one ','two ','three ','four ', 'five ','six ','seven ','eight ','nine ','ten ','eleven ','twelve ','thirteen ','fourteen ','fifteen ','sixteen ','seventeen ','eighteen ','nineteen '];
+// var b = ['', '', 'twenty','thirty','forty','fifty', 'sixty','seventy','eighty','ninety'];
+
+// function inWords (num) {
+//     if ((num = num.toString()).length > 9) return 'overflow';
+//     n = ('000000000' + num).substr(-9).match(/^(\d{2})(\d{2})(\d{2})(\d{1})(\d{2})$/);
+//     if (!n) return; var str = '';
+//     str += (n[1] != 0) ? (a[Number(n[1])] || b[n[1][0]] + ' ' + a[n[1][1]]) + 'crore ' : '';
+//     str += (n[2] != 0) ? (a[Number(n[2])] || b[n[2][0]] + ' ' + a[n[2][1]]) + 'lakh ' : '';
+//     str += (n[3] != 0) ? (a[Number(n[3])] || b[n[3][0]] + ' ' + a[n[3][1]]) + 'thousand ' : '';
+//     str += (n[4] != 0) ? (a[Number(n[4])] || b[n[4][0]] + ' ' + a[n[4][1]]) + 'hundred ' : '';
+//     str += (n[5] != 0) ? ((str != '') ? 'and ' : '') + (a[Number(n[5])] || b[n[5][0]] + ' ' + a[n[5][1]]) + 'only ' : '';
+//     return str;
+// }
+
+// document.getElementById('number').onkeyup = function () {
+//     document.getElementById('words').innerHTML = inWords(document.getElementById('number').value);
+// };
+
+// function Example(){
+//     a = 20
+//     let b=  20
+// }
+// Example();
+
+// console.log(a) // a is global and declare variable is 20
+// // console.log(b) // because it is block scope for let and const
+
+
 
