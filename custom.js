@@ -8578,3 +8578,8 @@ let numbers = [4, 6, 14, 16]
 //  console.log(age)
 
 // createNewAge()
+
+// let arr = [5, 5];
+// arr.unshift('3',4);
+// arr.push('4',3);
+// console.log(arr[4] + arr[5]);
