@@ -8563,3 +8563,18 @@ let numbers = [4, 6, 14, 16]
 // const a = {name:"A"}
 // const b = {name:"B"}
 // test.bind(a).call(b);
+
+// function drink(beverage) {
+//     return beverage === 'coffee' ? 'coffee' : 'water';
+//    }
+//    console.log(drink({name:'coffee'}));
+
+// const age = 21 // global scope variable declare and assign
+
+// createNewAge = ()=> {
+//  let age = 12  // block scope let declare and assign
+//  console.log(age)
+//  }
+//  console.log(age)
+
+// createNewAge()
