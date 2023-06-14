@@ -8539,5 +8539,27 @@ let numbers = [4, 6, 14, 16]
 // console.log(a) // a is global and declare variable is 20
 // // console.log(b) // because it is block scope for let and const
 
+// let promise = new Promise((res,rej) => rej())
+// .then(() => console.log('hello'),() => console.log('world'))
+// .catch(() => console.log('friend'))
 
+// var myVariable = 10
+// console.log(myVariable)
 
+// const myVariable = 10
+// console.log(myVariable)
+
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// const example = ['vijay','vijay','vishal']
+// console.log(example.filter(distinct))
+// console.log(Array.from(new Set(example)))
+// console.log(new Set(example))
+
+// function test(){
+//     console.log(this.name)
+// }
+// const a = {name:"A"}
+// const b = {name:"B"}
+// test.bind(a).call(b);
