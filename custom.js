@@ -8583,3 +8583,177 @@ let numbers = [4, 6, 14, 16]
 // arr.unshift('3',4);
 // arr.push('4',3);
 // console.log(arr[4] + arr[5]);
+
+// map and filter method
+let arr = [1,2,3,4,5]
+// const arrMapResult = arr.map((item) => item  > 2)
+// console.log(arrMapResult)
+// const arrFilterResult = arr.filter((item) => item > 3)
+// const arrEven = arr.filter((val) =>  val % 2 ===0)
+// const arrOdd = arr.filter((val) =>  val % 2 !==0)
+// console.log(arrFilterResult)
+// console.log(arrEven)
+// console.log(arrOdd)
+
+
+// var element = document.getElementById('superb')
+// element.innerHTML = 'nitesh khatri adsd'
+// var para = document.createElement('p')
+// para.innerHTML = 'lorem ipsum'
+// var div = document.getElementById('superb');
+// div.appendChild(para)
+// let a = 'hello world';
+// console.log(a)
+// var a = 'nitesh khatri'
+// let newArr = stringWord.split(" ")
+// let newStr = '';
+// newArr.map((item,index) => {
+//     for(let index=0;index<array.length;index++){
+//         const element = array[index];
+//     }
+// })
+// console.log(newArr)
+
+// console.log('nitesh'.split("").reverse("").join(""))
+// let stringWord = 'this is my country'
+// console.log(stringWord)
+
+// string to object 
+// let input = 'this is my home'
+// let objee = {};
+// function strToObj(data){
+//     console.log(data)
+//     for(let index=0;index<data.length;index++){
+//         objee[data[index]] = data[index].length
+//     }
+//     return objee
+// }
+// let result = strToObj(input.split(' '))
+// console.log(JSON.stringify(result));
+
+let a = 'nitesh'
+let b = 'sameet'
+// if(a.length === b.length){
+//     if(a === b){
+//         console.log('yes')
+//     }
+//     else{
+//         console.log('no')
+//     }
+// }
+// else{
+//     console.log('length of string different')
+// }
+// if(a === b && a.toLowerCase() === b.toLowerCase()){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+// if(a.length === b.length && a.split("").sort().join("") === b.split("").sort().join("")){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+
+// const friends = ['vijay','vijay','chandresh']
+// const numword = [1,2,44,55,66,11,22,22]
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// console.log(numword.filter(distinct))
+// const result = numword.sort((a,b) => {
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1 
+//     }
+// })
+// console.log(result)
+// console.log(numword.sort((a,b) => a-b))
+// console.log(numword.sort((a,b) => b-a))
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// let x = function (x,y){
+//     return x * y 
+// }
+// console.log(x(10,20))
+
+// class Person {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//   }
+// let user = new Person('nitesh')
+// let user2 = new Person('sameet')
+// console.log(user)
+// console.log(user2)
+
+// function sum(x, y = 5) {
+
+//     // take sum
+//     // the value of y is 5 if not passed
+//     console.log(x + y);
+// }
+
+// console.log(sum(10,20))
+
+// const first_name = "Jack";
+// const last_name = "Sparrow";
+// console.log(first_name + last_name)
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+// let name = person.name
+// let age = person.age
+// let gender = person.gender
+// console.log(name,age,gender)
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+// let {name,age,gender} = person 
+// console.log(name)
+// console.log(age)
+// console.log(gender)
+
+// let countValue = new Promise(function (resolve, reject) {
+//     reject('Promise rejected'); 
+//  });
+//  console.log(countValue)
+
+// let promise = new Promise((resolve,reject) => {
+//     let value = 5 
+//     if(value < 10){
+//         console.log('yes')
+//     }
+//     else{
+//         console.log('no')
+//     }
+// })
+
+// let promise = new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//         resolve('nitesh khatri')
+//     },1000)
+// })
+// async function Example(){
+//     let result = promise 
+//     console.log(result)
+// }
+// Example()
+
+let ranks = ['A', 'B', 'C'];
+// for(let i =0;i<ranks.length;i++){
+//     console.log(i + " " + ranks[i])
+// }
+// for (let custom of ranks){
+//     console.log(custom)
+// }
