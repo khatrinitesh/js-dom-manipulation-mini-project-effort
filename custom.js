@@ -8750,10 +8750,36 @@ let b = 'sameet'
 // }
 // Example()
 
-let ranks = ['A', 'B', 'C'];
+// let ranks = ['A', 'B', 'C'];
 // for(let i =0;i<ranks.length;i++){
 //     console.log(i + " " + ranks[i])
 // }
 // for (let custom of ranks){
 //     console.log(custom)
 // }
+// let timeVar = setTimeout(function(){
+//     console.log('nitesh khatri')
+// },100);
+// let timeInt = setInterval(function(){
+//     console.log('after 2 sec')
+// },90);
+
+// function stop(){
+//     clearTimeout(timeVar)
+//     clearInterval(timeInt)
+// }
+
+// let mywindow
+// let btn1 = document.getElementById('window1');
+// let btn2 = document.getElementById('window2');
+// let closebtn = document.getElementById('btnclose');
+// btn1.addEventListener('click',function(){
+//     mywindow = window.open('https://www.facebook.com/')
+// });
+// btn2.addEventListener('click',function(){
+//     mywindow = window.open('https://www.twitter.com/')
+// });
+// closebtn.addEventListener('click',function(){
+//     mywindow.close()
+// });
+
