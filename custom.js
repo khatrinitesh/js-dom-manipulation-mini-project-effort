@@ -8585,7 +8585,7 @@ let numbers = [4, 6, 14, 16]
 // console.log(arr[4] + arr[5]);
 
 // map and filter method
-let arr = [1,2,3,4,5]
+// let arr = [1,2,3,4,5]
 // const arrMapResult = arr.map((item) => item  > 2)
 // console.log(arrMapResult)
 // const arrFilterResult = arr.filter((item) => item > 3)
@@ -8631,8 +8631,8 @@ let arr = [1,2,3,4,5]
 // let result = strToObj(input.split(' '))
 // console.log(JSON.stringify(result));
 
-let a = 'nitesh'
-let b = 'sameet'
+// let a = 'nitesh'
+// let b = 'sameet'
 // if(a.length === b.length){
 //     if(a === b){
 //         console.log('yes')
@@ -8876,3 +8876,180 @@ let b = 'sameet'
 //     console.log('data is not an integer')
 // }
 // console.log(data === parseInt(10) ? 'yes' : 'no')
+
+// const object = {
+//     prop1: 1,
+//     prop2: 2 
+//   }
+//   object.prop1 = 5
+//   object.prop2 = 10
+//   console.log(object);
+
+// object1 = {
+//     prop1:1,
+//     prop2:2,
+// }
+// object2 = Object.freeze(object1)
+//   console.log(object1 === object2)
+
+// let obj2 = {
+//     a: 1,
+//     b: 2
+//   };
+//   console.log(Object.freeze(obj2))
+
+// let arr = [12, 25, 31, 23, 75, 81, 100]
+// console.log(arr.sort((a,b) => a -b))
+// console.log(arr.sort((a,b) => b-a))
+// let word = ['stepping','morning','night','noon','evening']
+// const resultword = word.sort(function(a,b) {
+//     if(a>b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(resultword)
+
+// var animals = [
+//     'cat', 'dog', 'elephant', 'bee', 'ant'
+// ];
+// console.log(animals.sort())
+
+// var string = ["Suraj", "Sanjeev", "Rajnish", "Yash", "Ravi"];
+// console.log("Original String");
+// console.log(string)
+// console.log(string)
+// console.log(string)
+
+var employeeList = [
+    {id: 101, name: 'Rhonda', age: 20, dept: 'Audit'},
+    {id: 111, name: 'Susan', age: 28, dept: 'Accounts'},
+    {id: 191, name: 'Stephen', age: 32, dept: 'Audit'},
+    {id: 131, name: 'Napoleon', age: 20, dept: 'HR'}
+   ];
+// const result1 = employeeList.find((val) => {
+//     return val.dept === 'Audit'
+// })
+// console.log(result1)
+// const result2 = employeeList.filter((val) => {
+//     return val.dept !== 'Accounts' && val.dept !== 'HR'
+// })
+// console.log(result2)
+// const result2 = employeeList.filter((val) => {
+//     return val.dept !== 'Audit' 
+// })
+// console.log(result2)
+// const result2 = employeeList.filter((val) => {
+//     return val.dept !== 'Audit' 
+// })
+// console.log(result2)
+
+// const listArray = ["Manish", "Chandan", "Piyush", "Manish", "Sunil", "Chandan"] 
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index
+// }
+// console.log(listArray.filter(distinct))
+
+// Find maximum & minimum value in a numbered array
+// var employeeList = [
+//     {id: 101, name: 'Rhonda', age: 20, dept: 'Audit'},
+//     {id: 111, name: 'Susan', age: 28, dept: 'Accounts'},
+//     {id: 191, name: 'Stephen', age: 32, dept: 'Audit'},
+//     {id: 131, name: 'Napoleon', age: 19, dept: 'HR'}
+//    ];
+//    let maxValue = employeeList.reduce((acc,value) => {
+//     return ( acc = acc > value.age ? acc:value.age)
+//    })
+//    console.log(maxValue)
+
+// Find the average of the numbers in the numbered array
+// const arr = [1, 2, 3, 4, 5];
+// const average = arr.reduce((a,b) => a+b,0) / arr.length
+// console.log(average)
+
+// How can you uppercase the first character in a string array?
+// const str = 'flexiple';
+// console.log(str.toUpperCase())
+// console.log(str.charAt(0).toUpperCase() + str.slice(1))
+// const str = 'i have learned something new today'
+// const str2 = arr.join(" ")
+// console.log(str2)
+// console.log('nitesh khatri'.charAt(0).toUpperCase() + 'nitesh khatri'.slice(1))
+// const result = 'sameet khatri'
+// const arr = result.split(" ")
+// for (let i=0;i<arr.length;i++){
+//     arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+// }
+// const final = arr.join(" ")
+// console.log(final)
+// const result = 'SAMEET KHATRI'
+// const arr = result.split(" ")
+// for (let i=0;i<arr.length;i++){
+//     arr[i] = arr[i].charAt(0).toLowerCase() + arr[i].slice(1)
+// }
+// const str2 = arr.join(" ")
+// console.log(str2)
+
+// var a = ['hello', 'world'];
+// console.log(a.join(" "))
+
+// var word = ['how','are','you']
+// console.log(word.join(" "))
+
+// How can you extract a few fields from the given JSON object and form a new array?
+// var input = {
+//     "products": [{
+//       "productId": "a01",
+//       "uuid": "124748ba-6fc4f"
+//     }, {
+//       "productId": "b2",
+//       "uuid": "1249b9ba-64d"
+//     }, {
+//       "productId": "c03",
+//       "uuid": "124c78da-64"
+//     }, {
+//       "productId": "d04",
+//       "uuid": "124ee9da-6"
+//     }]
+//   };
+//   var op = input.products.map(function(item){
+//     return item.productId
+//   })
+//   console.log(op)
+
+  //  Filter the given object based on certain conditions and return the corresponding object?
+//   let objtest = {
+//     'Students': [{
+//         "name": "Raj",
+//         "Age": "15",
+//         "RollNumber": "123",
+//         "Marks": "99",
+ 
+//     }, {
+//         "name": "Aman",
+//         "Age": "14",
+//         "RollNumber": "223",
+//         "Marks": "69",
+//     },
+//     {
+//         "name": "Vivek",
+//         "Age": "13",
+//         "RollNumber": "253",
+//         "Marks": "89",
+//     },
+//     ]
+// };
+// let newArray = objtest.Students.filter(function (el){
+//     return el.RollNumber >= 200
+// })
+// console.log(newArray)
+
+
+
+
+
+
+
+
