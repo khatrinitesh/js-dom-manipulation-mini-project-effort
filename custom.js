@@ -8783,3 +8783,96 @@ let b = 'sameet'
 //     mywindow.close()
 // });
 
+// class Rectangle{
+//     constructor(height,width){
+//         this.height = height
+//         this.width = width
+//     }
+
+//     // getter
+//     get area(){
+//         return this.calcArea()
+//     }
+
+//     // method 
+//     calcArea(){
+//         return this.width * this.height
+//     }
+//     *getSides(){
+//         yield this.height;
+//         yield this.width;
+//         yield this.height;
+//         yield this.width;
+//     }
+// }
+// const square = new Rectangle(10,10)
+// console.log(square.area);
+
+// function Pen(name,color,price){
+//     this.name = name
+//     this.color = color
+//     this.price = price
+// }
+// const pen1 = new Pen('marker','blue','3/-')
+// const pen2 = new Pen('Reynolds','red','23/-')
+// const pen3 = new Pen('parker','purple','13/-')
+// console.log(pen1,pen2,pen3)
+// console.log({...pen1},{...pen2},{...pen3})
+
+// Pen.prototype.showPrice = function(){
+//     console.log(`Price of ${this.name} is ${this.price}`);
+// }
+// Pen.prototype.showColor = function(){
+//     console.log(`Price is ${this.name} color is ${this.color}`)
+// }
+// console.log(pen1.showPrice())
+// console.log(pen1.showColor())
+// console.log(pen2.showColor())
+
+// class Person{
+//     constructor(name,age){
+//         this.name = name
+//         this.age = age
+//     }
+//     greet(){
+//         console.log(`hello ${this.name}`)
+//     }
+//     exampleage(){
+//         console.log(`hi ${this.age}`)
+//     }
+// }
+// class Student extends Person{
+
+// }
+// let student1 = new Student('nitesh',34);
+// student1.greet();
+// student1.exampleage();
+
+// const distinct = (val,index,arr) => {
+//     return arr.indexOf(val) === index 
+// }
+// console.log(arry.filter(distinct))
+// console.log([...new Set(arry)])
+// console.log(Array.from([...new Set(arry)]))
+// const arry = [1, 2, 1, 3, 4, 3, 5];
+// const arrygr = ['vijay', 'vijay', 'vijay','vishal', 'rahul', 'hites', 'bhavik', 'maulik','hites'];
+// const count = {}
+// arrygr.forEach(function(i){
+//     count[i] = (count[i] || 0) + 1
+// })
+// console.log(count)
+// const counts = arrygr.reduce((acc,value) => ({
+//     ...acc,
+//     [value]:(acc[value] || 0) + 1
+// }))
+// console.log(counts)
+
+//  How to check if a given number is an integer?
+// const data = 10 
+// if(data === parseInt(data,10)){
+//     console.log('data is an integer')
+// }
+// else{
+//     console.log('data is not an integer')
+// }
+// console.log(data === parseInt(10) ? 'yes' : 'no')
