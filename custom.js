@@ -7687,6 +7687,8 @@ let numbers = [4, 6, 14, 16]
 // const arrggg = [11,33,55,66,77]
 // const findAvg= (arr) => arr.reduce((a,b) => a+b,0) / arr.length
 // console.log(findAvg(arrggg))
+// const average = arr => arr.reduce((a,b) => a+b,0) / arr.length
+// console.log(average([1,2,2,3,4,4]))
 
 // find smallest numbers
 // const arrggg = [11,33,55,66,77]
@@ -9046,10 +9048,534 @@ var employeeList = [
 // })
 // console.log(newArray)
 
+// const result = document.getElementById('result')
+// const filter = document.getElementById('filter')
+// const listItems = []
+// getData()
+// filter.addEventListener('input', (e) => filterData(e.target.value))
+// async function getData() {
+// const res = await fetch('https://randomuser.me/api?results=50')
+// const { results } = await res.json()
+// // Clear result
+// result.innerHTML = ''
+// results.forEach(user => {
+// const li = document.createElement('li')
+// listItems.push(li)
+// li.innerHTML = `
+// <img src="${user.picture.large}" alt="${user.name.first}">
+// <div class="user-info">
+// <h4>${user.name.first} ${user.name.last}</h4>
+// <p>${user.location.city}, ${user.location.country}</p>
+// </div>
+// `
+// result.appendChild(li)
+// })
+// }
+// function filterData(searchTerm) {
+//   listItems.forEach(item => {
+//   if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
+//   item.classList.remove('hide')
+//   } else {
+//   item.classList.add('hide')
+//   }
+// })
+// }
+
+// (function () {
+//   const second = 1000,
+//   minute = second * 60,
+//   hour = minute * 60,
+//   day = hour * 24;
+//   //I'm adding this section so I don't have to keep updating this pen every year :-)
+//   //remove this if you don't need it
+//   let today = new Date(),
+//   dd = String(today.getDate()).padStart(2, "0"),
+//   mm = String(today.getMonth() + 1).padStart(2, "0"),
+//   yyyy = today.getFullYear(),
+//   nextYear = yyyy + 1,
+//   dayMonth = "05/29/",
+//   birthday = dayMonth + yyyy;
+//   today = mm + "/" + dd + "/" + yyyy;
+//   if (today > birthday) {
+//   birthday = dayMonth + nextYear;
+//   }
+//   //end
+//   const countDown = new Date(birthday).getTime(),
+//   x = setInterval(function() {
+//   const now = new Date().getTime(),
+//   distance = countDown - now;
+//   document.getElementById("days").innerText = Math.floor(distance / (day)),
+//   document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+//   document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+//   document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+//   //do something later when date is reached
+//   if (distance < 0) {
+//   document.getElementById("headline").innerText = "It's my birthday!";
+//   document.getElementById("countdown").style.display = "none";
+//   document.getElementById("content").style.display = "block";
+//   clearInterval(x);
+//   }
+//   //seconds
+//   }, 0)
+//   }());
+
+// Given an array of strings, reverse each word in the sentence?
+// console.log('Hello World how is it outside'.split("").reverse().join(""))
+
+// How to check if an object is present in an Array or not?
+// const nums = [ 1, 3, 5, 7];
+// console.log(nums.includes(2))
+// console.log(nums.includes(3,0));
+
+// How to empty an array?
+// let arr = [1,2,3,4,5]
+// console.log(arr=[])
+// console.log(arr.length = 0)
+// console.log(arr.splice(0,arr.length))
+
+// What is IIFEs (Immediately Invoked Function Expressions)?
+// function Greet(){
+//   console.log("Welcome to GFG!");
+// }
+// Greet();
+// (function(){
+//   console.log("Welcome to immediately invoked function expression creation and execution!");
+// })();
+// (function myExample(){
+//   console.log('nitesh khatri')
+// })()
+// function myFunc(){
+//   (function(){
+//     console.log('welcome to')
+//   })()
+//   console.log('hi there')
+// }
+// myFunc()
+
+// function myFunc(){
+//   (function(){
+//     console.log('nitesh khatri')
+//   })()
+//   console.log('sameet katri')
+// }
+// myFunc()
+
+// function myFunc(){
+//   (function(){
+//     console.log('nitesh')
+//   })()
+//   console.log('sameet')
+// }
+// myFunc()
+
+// How do you sort and reverse an array without changing the original array?
+// const originalArray = ['a', 'b', 'c', 'd', 'e', 'f'];
+// const newArray = Array.from(originalArray).reverse()
+// console.log(newArray)
+// console.log(originalArray.reverse())
+// console.log(originalArray.toReversed())
+
+// const grade = 30;
+// switch(true){
+//   case grade>75:console.log('A+')
+//   break;
+//   case grade>60:console.log('B+')
+//   break;
+//   case grade>35:console.log('C')
+//   break;
+//   default:console.log('failed')
+// }
+// console.log(grade)
+
+// const word = 'nitesh';
+// switch(word){
+//   case 'nitesh':console.log('yes nitesh')
+//   break;
+//   case 'sameet':console.log('yes sameet')
+//   break;
+//   case 'arvind':console.log('yes arvind')
+//   break;
+//   default:console.log('no word')
+// }
+// console.log(word)
+
+// Write a function to check if a given string is Palindrome or not?
+// const word = 'nitesh khatri'
+// const regexword = '/nitesh/g'
+// console.log(regexword.match(word))
+
+// How can you combine two Arrays into a third Array using spread operator?
+// const bikes = ['Royal Enfield', 'JAWA', 'Ather'];
+// const cars = ['Jaguar', 'BMW', 'TATA'];
+// console.log(bikes.push(...cars))
+// console.log(...bikes,...cars)
+
+// const cars = ['🚗', '🚙'];
+// const trucks = ['🚚', '🚛'];
+// console.log(...cars.concat(...trucks))
+// console.log(cars.push(...trucks))
+
+// const array1 = [1, 2, 3]
+// const array2 = [4, 5, 6]
+// for(let i=0;i<array2.length;i++){
+//   array1.push(array2[i])
+// }
+// console.log(array1)
+// console.log(array1.push(array2))
+// const array1 = [1, 2, 3]
+// const array2 = [4, 5, 6]
+// const array3 = [7, 8, 9]
+// array3.push(...array2,...array1)
+// console.log(array3)
+
+// const merge =(first,second) => {
+//   for(let i=0;i<second.length;i++){
+//     first.push(second[i])
+//   }
+//   return first;
+// }
+// console.log(merge([1,2,3], [4,5,6]))
+
+// const merge = (first,second) => {
+//   for(let i=0;i<second.length;i++){
+//     first.push(second[i])
+//   }
+//   return first;
+// }
+// const merge = (first,second) => {
+//   for(let i =0;i<second.length;i++){
+//     first.push(second[i])
+//   }
+//   return  first
+// }
+// console.log(merge(merge([1,2,3],[4,5,6]),[6,7,8,8]))
+// console.log(merge(merge([1,2,3],[4,5,6]),[7,8,9]))
+
+// const wordduplicate = [11,22,33,44,55,55,66,66]
+// console.log(...new Set(wordduplicate))
+// console.log(Array.from([...new Set(wordduplicate)]))
+// const mergeArr = (arr1,arr2) => [...new Set([...arr1,...arr2])]
+// console.log(mergeArr(mergeArr([1,2,3],[4,5,6],[5,6,7]),[99,11]))
+
+// const arr = [1,2,23]
+// console.log(arr.length = 0)
+// console.log(arr.length)
+// console.log(arr.splice(0,arr.length))
+
+// let firstArray = [1, 2, 3, 'Shinchan']
+// let secondArray = ['Nohara', 4, 5, 6]
+// let thirdArray = [7, 8, 9, 'Himawari']
+// console.log(...firstArray,...secondArray,...thirdArray)
+
+// const maxNumber = arr => Math.max(...arr)
+// const minNumber = arr => Math.min(...arr)
+// console.log(maxNumber([33,44,555]))
+// console.log(minNumber([33,44,555]))
+
+// How can you Insert an element at a specific index in an Array?
+// const arrayConstructor = new Array('nitesh','sameet','arvind')
+// console.log(arrayConstructor)
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// fruits.push('grape')
+// console.log(fruits)
 
 
+// let friends =['a','b','c']
+// for(let key in friends){
+//   console.log(key)
+// }
+// for(let key of friends){
+//   console.log(key)
+// }
 
+// const myObject = [
+//   {
+//     first: "one",
+//     second: "two",
+//   },
+//   {
+//     third: "third",
+//     fourth: "fourth",
+//   },
+//   {
+//     fifth: "fifth",
+//     sixth: "sixth",
+//   },
+// ];
+// for(const [key,value] of Object.entries(myObject)){
+//   console.log(key,value)
+// }
 
+// const peopl1e = [
+//   {name: 'Tom', age: 25},
+//   {name: 'John', age: 40},
+//   {name: 'Dillon', age: 30},
+// ];
 
+// const resultfiler = peopl1e.filter((val) => val.age > 30)
+// console.log(resultfiler)
 
+// var list = ["January", "March","April","June"];
+// splicing the array elements using splice() method
+// list.splice(1,0,'february')
+// console.log(list)
+// splicing the output elements after the first splicing
+// list.splice(4,0,'May')
+// console.log(list)
 
+// const books = [
+//   "You don't know JS", // Index 0
+//   'Eloquent JavaScript', // Index 1
+//   'JavaScript: The Good Parts', // Index 2
+// ]
+
+// books[1] = 'Jquery'
+// books[2] = 'JavaScript: The Definitive Guide'
+// console.log(books)
+
+// const books = [
+//   "You don't know JS", // Index 0
+//   'Eloquent JavaScript', // Index 1
+//   'JavaScript: The Good Parts', // Index 2
+// ]
+// const booksexample = books.indexOf('JavaScript: The Good Parts')
+// console.log(booksexample)
+// const fakebookexample = books.indexOf('Fake book')
+// console.log(fakebookexample)
+
+// const books = [
+//   "You don't know JS", // Index 0
+//   'Eloquent JavaScript', // Index 1
+//   'JavaScript: The Good Parts', // Index 2
+// ]
+// const examplebook = books.splice(2,1,'JavaScript: The Definitive Guide')
+// console.log(books)
+// console.log(examplebook)
+
+// 29. How can you Delete an element at a specific index in an Array?
+// const arrayOfLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
+// const copyWithoutFirstElement  = arrayOfLetters.splice(1);
+// console.log(copyWithoutFirstElement)
+// const slice2 = arrayOfLetters.slice(0,-1)
+// console.log(slice2)
+// const result = arrayOfLetters.filter(function(letter){
+//   return letter !== 'd'
+// })
+// console.log(result)
+
+// const arrayOfLetters = ['a', 'b', 'c', 'd', 'e', 'f'];
+
+// const arrayWithoutB = [];
+
+// for(let i=0;i<arrayOfLetters.length;i++){
+//   if(arrayOfLetters[i] !== 'b'){
+//     arrayWithoutB.push(arrayOfLetters[i])
+//   }
+// }
+
+// console.log(arrayWithoutB); // ['a', 'c', 'd', 'e', 'f']
+// const arrayOfNumbers = [1, 2, 3, 4];
+
+// const previousFirstElementOfTheArray = arrayOfNumbers.shift();
+// console.log(arrayOfNumbers)
+// const arrayOfNumbers = [1, 2, 3, 4];
+// const previousSecondElementOfTheArray = arrayOfNumbers.splice(1, 1);
+// console.log(arrayOfNumbers)
+
+// 30 How can you delete a specific element?
+// const myArray = [1, 2, 3, 4, 5];
+// const x = myArray.pop()
+// console.log(x)
+// console.log(myArray.slice(1,1))
+
+// const myArray = [1, 2, 3, 4, 5];
+// const result = myArray[1]
+// console.log(result)
+
+// const myArray = [1, 2, 3, 4, 5];
+// const result = myArray.splice(1,1)
+// console.log(result)
+
+// const myArray = [1, 2, 3, 4, 5];
+// const index = myArray.indexOf(2)
+// const x = myArray.splice(index,1);
+// console.log(x)
+// console.log(index)
+
+// 31 How do you clone an Object?
+// const employee = {
+//   name : 'Dhoni',
+//   age : 41,
+//   height : 5.8,
+// }
+// const copyobject = employee
+// console.log(copyobject)
+// console.log(JSON.stringify(employee))
+
+// const myArray = [1, 2, 3, 4, 5];
+// myArray.push(6,7,8)
+// console.log(myArray)
+
+// const countries = ["Nigeria", "Ghana", "Rwanda"];
+// countries.unshift('South africa','Australia')
+// console.log(countries)
+
+// How to remove an element from the end of the array?
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let elemsToDelete = 3;
+// arr.splice(arr.length - elemsToDelete)
+// console.log("modified array",arr)
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let arrremove = 3 
+// arr.splice(arr.length - arrremove)
+// console.log(arr)
+// const withoutLast = arr.slice(0,-2);
+// console.log(withoutLast)
+
+// const msg = new String('Yes, You Can DO It!')
+// console.log(msg.split(""))
+// console.log(msg)
+// let str = "Yes, You Can Do It!";
+// console.log(str[0])
+// console.log(str[1])
+// console.log(str[2])
+// console.log(str[3])
+// let name = 'Tapas Adhikary';
+// let [firstName, lastName] = name.toUpperCase()
+// console.log(firstName, lastName);
+// let fullname = ['nitesh khatri','sameet khatri']
+// let [fname,lname] = fullname.toUpperCase()
+// console.log(fname,lname)
+
+// let btn = document.getElementById("btn")
+   
+// // Get the counter element
+// let counter = document.getElementById("counter")
+
+// // Apply the addEventListener method
+// btn.addEventListener("click", () => {
+   
+//    // Increase the existing value by 1
+//    // Use the parseInt method to convert the existing
+//    // value (which is in string format) into integer
+//    counter.innerText = parseInt(counter.innerText) + 1
+// })
+
+// let arr1 = ['nitesh', 'sameet', 3, 4, 5];
+// arr1.push(6)
+// arr1.push(7)
+// arr1.push(8)
+// document.write(arr1)
+
+// let resEle = document.querySelector(".result");
+// let BtnEle = document.querySelector(".Btn");
+// let student = {};
+// BtnEle.addEventListener("click", () => {
+//    student.name = 'Rohan Sharma';
+//    student.age = 16;
+//    student.place = 'Delhi';
+//    student.displayInfo = function(){
+//       return 'Name = '+this.name+' : Age = '+this.age+' : Place = '+this.place;
+//     }
+//     student.explaininfo = function(){
+//       return `Name ${this.name}`
+//     }
+// resEle.innerHTML += student.displayInfo();
+// resEle.innerHTML += student.explaininfo();
+// });
+
+// class Example{
+//   constructor(fname,lname){
+//     this.fname = fname
+//     this.lname = lname
+//   }
+// }
+
+// let user1 = new Example('nitesh','khatri')
+// console.log(user1)
+// Example.prototype.email = 'nitesh.khatri88@gmail.com'
+// Example.prototype.dob = '17th june 1989'
+// console.log(Example.prototype.email)
+// console.log(Example.prototype.dob)
+
+// 37. How can you replace an existing element in an object?
+const myArray = [
+  {name: 'Sam', age: 24}, 
+  {name: 'Rayan', age: 26},
+  {name: 'Raja', age: 34},
+];
+// const myObject = {name:'nitesh',age:34}
+// const myObject1 = {name:'sameet',age:41}
+// const index = myArray.findIndex(item => item.name === 'Rayan')
+// const index1 = myArray.findIndex(item => item.name === 'Sam')
+// myArray.splice(index,1,myObject)
+// console.log(myArray)
+// myArray.splice(index1,1,myObject1)
+// const changeName = {name:'vishal',age:45}
+// const indexfind = myArray.findIndex(item => item.name === 'Sam')
+// myArray.splice(indexfind,1,changeName)
+// console.log(myArray)
+
+// let selectedColors = ['Red', 'Blue', 'Orange', 'Black', 'Pink'];
+// selectedColors[0] = 'green'
+// selectedColors[1] = 'purple'
+// console.log(selectedColors)
+
+// let user1 = {
+//   name:"nitesh",
+//   age:34,
+//   dob:14061982
+// }
+// const changeName = {name:"sameet "}
+// console.log({...user1,...changeName})
+
+// let promise = new Promise((resolve,reject) => {
+//   let value = 20 
+//   if(value > 10){
+//     resolve('yes')
+//   }
+//   else{
+//     reject('no')
+//   }
+// })
+// async function Example(){
+//   let result = await promise 
+//   console.log(result)
+// }
+// Example()
+
+// How do you write a function which can take (x) number of parameters?
+// function add(a,b){
+//   return a +b 
+// }
+// console.log(add(10,20))
+// function add(){
+//   console.log(arguments);
+//   var sum = 0 
+//   for(let i=0;i<arguments.length;i++){
+//     sum += arguments[i]
+//   }
+//   return sum
+// }
+// console.log(add(10,50))
+// console.log(add(10,20))
+// console.log(add(10,60))
+// console.log(add(10,6110))
+
+// How do you create an Array out of a given sentence?
+// let sentence = "The big question was how to end it";
+// let arraycc = sentence.split(" ",3)
+// console.log(arraycc)
+
+// let name = "John Doe is doing fine."
+// const result = name.split(" ",1)
+// console.log(result)
+
+// let nameChars  = 'nitesh khatri'
+// let nameCharsReversed = nameChars.toUpperCase().split("").reverse("").join("");
+// let initialletter = nameChars.split(" ").map(word => word.charAt(0)).join(" ")
+// console.log(nameCharsReversed)
+// console.log(initialletter)
+
+// How do you replace a given string in the string of arrays?
