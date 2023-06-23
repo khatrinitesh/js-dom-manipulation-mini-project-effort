@@ -10153,3 +10153,139 @@ const date2 = new Date("December 15, 2010");
 // 93 Which keyword can be used to deploy inheritance in ES6?
 // 94 What is the difference between for..of and for..in?
 // 95. How to set a property in localStorage?
+
+// function myFunction(){
+//   let a = 4;
+//   return a * a 
+// }
+// console.log(myFunction())
+
+// let counter = 0
+// function add(){
+//   counter += 1
+//   return counter
+// }
+// console.log(add())
+
+// for(let i=0;i<10;i++){
+//   setTimeout(() => {
+//     console.log(i)
+//   },500)
+// }
+// for(let i=0;i<10;i++){
+//   setInterval(() => {
+//     console.log(i)
+//   },500)
+// }
+
+// function myFunction(){
+//   console.log('word is interval')
+// }
+// setInterval(myFunction,1000)
+// clearInterval(myFunction)
+
+// function myFunction(){
+//   console.log('nitesh khatri')
+// }
+// setInterval(myFunction,100)
+// clearInterval(myFunction)
+
+// function Example(){
+//   console.log('nitesh khatri')
+// }
+// setTimeout(Example,1000)
+// clearTimeout(Example)
+
+// let promise = new Promise((resolve,reject) => {
+//   let value = 50 
+//   if(value > 20){
+//     resolve('yes')
+//   }
+//   else{
+//     reject('yes')
+//   }
+// })
+// async function Example(){
+//   let result = await promise 
+//   console.log(result)
+// }
+// Example()
+
+// const word = 'nitesh'
+// switch(word){
+//   case 'nitesh' :console.log('yes nitesh')
+//   break;
+//   case 'sameet' :console.log('yes nitesh')
+//   break;
+//   case 'arvind' :console.log('yes nitesh')
+//   break;
+//   default:console.log('no it is not match')
+// }
+// console.log(word)
+
+// ternary opeartor
+// const example = true 
+// console.log(example ? "yes" :  "no")
+
+// function clock(){
+//   return new Date().toLocaleTimeString()
+// }
+// const result = setInterval(clock,100)
+// clearInterval(result)
+// console.log(result)
+
+
+// function sum(a){
+//   return function(b){
+//     return function(c){
+//       return a+b+c
+//     }
+//   }
+// }
+// console.log(sum(10)(20)(30))
+
+// function sum(a){
+//   return function(b){
+//     return function(c){
+//       return function(d){
+//         return ((a+b)*c-d)
+//       }
+//     }
+//   }
+// }
+// console.log(sum(10)(20)(30)(5000))
+
+// let promise1 = 'nitesh'
+// let promise2 = 'sameet'
+// let promise3 = 'arvind'
+// Promise.all([promise1, promise2, promise3]).then((values) => {
+//   console.log(values);
+// });
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = 42;
+// const promise3 = new Promise((resolve, reject) => {
+//   setTimeout(resolve, 100, 'foo');
+// });
+// Promise.all([promise1,promise2,promise3]).then((values) => console.log(values))
+
+  // p1 = Promise.resolve(50)
+  //   p2 = 200
+  //   p3 = new Promise(function(resolve,reject){
+  //     setTimeout(resolve,1000,'geek')
+  //   })
+  //   Promise.all([p1,p2,p3]).then(function(values) {
+  //     console.log(values)
+  //   })
+
+// let a = 5;
+// let b = 10;
+// function addNumbers() {
+//   let a = 2;
+//   let b = 4;
+//   let sum = a + b;
+//   console.log(sum);
+// }
+// addNumbers();
+// console.log(a + b);
+
