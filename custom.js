@@ -1,3 +1,143 @@
+// Event Delegation in JavaScript
+
+// Temporal Dead Zone (TDZ) and Hoisting in JavaScript – Explained with Examples
+
+// opeartors => assignment / comparison / logical / conditional / bitwise / unary / typeof / precedence
+
+// conditional statement => if / if else / switch 
+
+// looop statement => while / do while / for loop / nested for loops / for in loop / for of loop / break / continue 
+
+// function => What is a function in JavaScript?
+// How to call a function in JavaScript using arguments?
+// Pass By Value in JavaScript
+// Function return (or return statement)
+// Nested functions
+// Rest parameter
+// Anonymous functions
+// Recursion
+// Arrow Function
+
+// objects => 
+// What is an Object?
+// Types of Objects
+// Array Object
+// Properties of Array Object
+// Methods of Array Object
+// String Object
+// Properties of String Object
+// Methods of String Object
+// Math Object
+// Properties of Math Object
+// Methods of Math Object
+// Date Object
+// Methods of Date Object
+// Global Object
+// Properties of Global Object
+// Methods of Global Object
+// Number Object
+// Properties of Number Object
+// Methods of Number Object
+// Creating your own Objects
+// Defining methods
+
+// window and frame objects 
+// Top-level Objects
+// Window Object
+// Creating a Window
+// Communicating with the user
+// Working with Timeouts
+// Some properties of Window Object
+// Some other useful methods of Window Object
+// Location Object
+// Properties of Location Object
+// Methods of Location Object
+// Document Object
+// Properties of Document Object
+// Methods of Document Object
+// The Navigator Object
+// Properties of Navigator Object
+// Methods of Navigator Object
+// History Object
+// Properties of History Object
+// Methods of History Object
+// Screen Object
+// Working with Frames
+// Creating frames
+// The frame tree
+// Accessing frames
+// Nested frames
+// Frame object model
+// Frame element object
+
+// event handling
+// Events
+// How does it work?
+// Objects and Events
+// Creating an Event handler
+// Changing Event handlers
+// Managing JavaScript Events
+// Mouse Events
+// Keyboard Events
+// The onLoad and onUnload Events
+// Event Simulation
+// The Event object
+// Event capturing
+// Turning off Event capturing
+// Event bubbling
+// Preventing Event bubbling
+
+// Exception Handling
+// Exceptions and Errors
+// Exception mechanism
+// “try-catch-finally” constructions
+// Throwing exceptions
+// Error Object
+// Properties of Error Object
+// Methods of Error Object
+
+// form
+// The Form Object
+// Accessing Forms within JavaScript
+// Accessing Form elements
+// About <input> element objects
+// Properties of Form Object
+// Methods of Form Object
+// Fieldset and Legend Element Objects
+// Label Element Object
+// Text Input Object
+// Properties of Text Input Object
+// Methods of Text Input Object
+// Password Input Object
+// Hidden Input Object
+// Textarea Element Object
+// Properties of Textarea Element Object
+// Button Element Object
+// Checkbox Input Object
+// Properties of Checkbox Input Object
+// Method of Checkbox Input Object
+// Radio Input Object
+// Properties of Radio Input Object
+// Methods of Radio Input Object
+// Image Input Object
+// Properties of Image Input Object
+// Select Element Object
+// Properties of Select Element Object
+// Methods of Select Element Object
+// Option Element Object
+// File Input Element Object
+
+// document object model 
+// Document Object Model (DOM) and W3C
+// DOM Levels
+// DOM and JavaScript
+// New DOM Concepts
+// Element Referencing
+// Hierarchy of nodes
+// Node properties
+// Node methods
+// Generating new node content
+// Replacing node content
 
 // var targetee = document.querySelector('#box');
 // targetee.addEventListener('mousemove',function(e){
@@ -30,7 +170,6 @@
 // else{
 //   console.log('this will not always execute')
 // }
-
 
 // function onContinue(){
 //   const message = confirm('do you want to join if ')
@@ -10289,3 +10428,655 @@ const date2 = new Date("December 15, 2010");
 // addNumbers();
 // console.log(a + b);
 
+// const arr1 = [1,3,8,5]
+// console.log(arr1.length = 0)
+
+// map function structure
+// const arrayword = [1,4,9,16]
+// const map1 = Array.prototype.map.call(arrayword,((item) => {return item * 2}))
+// const map2 = arrayword.map(x => x * 2)
+// console.log(map1)
+// console.log(map2)
+
+// filter function structure 
+// const numbers1 = [1,2,3,4,5,6,7,8,,9,10];
+// const updatearray = Array.prototype.filter.call(numbers1,(element) => {return element > 5})
+// console.log(updatearray)
+// const updatearray2 = numbers1.filter((element) => element > 5)
+// console.log(updatearray2)
+
+// Promises function structure => Useful JavaScript functions for Web Developers 👾
+// async function Parent(){
+//   try{
+//     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     const data = await res.json()
+//     console.log(data)
+//   }
+//   catch{
+//     (error) => {console.log(error)}
+//   }
+// }
+
+// ternary operator
+// const value1 = (5<7) ? "True" : "false"
+// console.log(value1)
+// const value2 = (6>10) ? "True" : "False"
+// console.log(value2)
+
+// const superb = [1,2,3,4,5]
+// console.log(Array.prototype.map.call(superb,(item) => {return item *2 }))
+// console.log(superb.map((item) => {return item *2 }))
+// console.log(Array.prototype.filter.call(superb,(item) => {return item > 4}))
+// console.log(superb.filter((item) => {return item > 4}))
+
+// const profile = {
+//   'name' : 'John Doe',
+//   'age' : 15
+//   }
+//   const jsonresult = JSON.stringify(profile)
+//   console.log(jsonresult)
+
+// function foo(){
+//   console.log(this.bar)
+// }
+// var bar = 'nitesh khatri'
+// foo()
+
+// var colors = ['red','orange','purple','pink']
+// var colorsIndex = colors.indexOf('pink')
+// console.log(colorsIndex)
+
+// console.log(null == undefined)
+// console.log(null !== undefined)
+// console.log(null === undefined)
+// console.log(undefined !== undefined)
+// console.log('2'-'2'-'2'+'2')
+
+// var developers = ["hello", "meet", "me"];
+// developers.forEach((item) => {
+//   console.log(item.toUpperCase())
+// })
+
+// const data = {name:"nitesh khatri",age:34}
+// console.log(typeof data.name !== 'Sameet')
+
+// function add(a, b) {
+// 	const sum = a + b
+//     return sum
+// }
+// console.log(add(10,20))
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// console.log([11,222,44,3,33,44].filter(distinct))
+
+const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
+// const result = friendsgroup.sort(function(a,b) {
+//   if(a<b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result)
+// const numberwise = [1,22,3,4,102,33]
+// const result2 = numberwise.sort(function(a,b) {
+//   if(a>b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result2)
+
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// console.log('nitesh khatri'.toUpperCase())
+
+// console.log(Array.isArray(friendsgroup))
+
+// const wordnumberwise = ['nitesh',11,null,undefined,'11']
+// const result = wordnumberwise.filter((val) => typeof val === 'string' || typeof val === 'number' || typeof val === 'undefined')
+// console.log(result)
+// console.log(wordnumberwise.map((val) => val))
+// const personwise = [
+//   {id:1,name:'nitesh',age:34},
+//   {id:2,name:'sameet',age:41},
+//   {id:3,name:'arvind',age:68},
+//   {id:4,name:'urvashi',age:65},
+// ]
+// const resultnew = Array.prototype.filter.call(personwise,((item) => item.age > 45))
+// console.log(resultnew)
+
+// class Person {
+//   constructor(text,fname,lname,age){
+//     this.user = text
+//     this.FirstName = fname  
+//     this.LastName = lname
+//     this.Age = age
+//   }
+// }
+// let user1 = new Person('Person1','nitesh','khatri',34)
+// let user2 = new Person('Person2','sameet','khatri',41)
+// let user3 = new Person('Person3','urvashi','khatri',65)
+// let user4 = new Person('Person4','arvind','khatri',68)
+// console.log(user1)
+// console.log(user2)
+// console.log(user3)
+// console.log(user4)
+
+// console.log([...'nitesh'])
+
+// let promiseresult = new Promise((resolve,reject) =>{
+//   let value = 10
+//   if(value > 5){
+//     resolve('yes')
+//   }
+//   reject('no')
+// })
+// async function Output(){
+//   let superb = await promiseresult
+//   console.log(superb)
+// }
+// Output()
+
+// let n1 = 'nitesh khatri'
+// function Happy(){
+//   setTimeout(() => {
+//     return console.log(n1)
+//   },1000)
+// }
+// Happy()
+// let n1 = 'nitesh khatri'
+// function Happy(){
+//   setInterval(() => {
+//     return console.log(n1)
+//   },100)
+// }
+// Happy()
+
+// const word = 'sameet'
+// switch(word){
+//   case 'nitesh' : console.log('yes nitesh')
+//   break;
+//   case 'nitesh' : console.log('yes nitesh')
+//   break;
+//   default:console.log('no it is not match')
+//   break;
+// }
+// console.log(word)
+// const myFun = new Function("5 + 2");
+// console.log(myFun)
+// console.log(typeof 62)
+// console.log(typeof 'nitesh')
+// console.log(typeof ['nitesh','sameet'])
+// console.log(typeof {name:'nitesh',age:34})
+// console.log(typeof null)
+// console.log(typeof undefined)
+// console.log(typeof 1100 > 62)
+
+// let x = 10
+// function Example(){
+//   x = 20 
+// }
+// Example();
+// console.log(x)
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// const friends = ['vijay','rahul','vijay']
+// console.log(friends.filter(distinct))
+// console.log(Array.from([...new Set(friends)]))
+// console.log([...new Set(friends)])
+
+// console.log([...'nitesh'])
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// class Car{
+//   constructor(make,model){
+//       this.make = make 
+//       this.model = model
+//   }
+//   startEngine() {
+//   console.log(`starting the ${this.make} ${this.model}`)
+//   }
+// }
+//   const myCar = new Car('maruti','corolla')
+//  myCar.startEngine()
+// class Happy{
+//   constructor(make,model){
+//     this.make = make 
+//     this.model = model 
+//   }
+//   functionExample(){
+//     console.log(`hello ${this.make} ${this.model}`)
+//   }
+// }
+// const myExample = new Happy('superb','awesome')
+// console.log(myExample.functionExample())
+
+// const calculator = {
+//     add:function(a,b){
+//       return a +b 
+//     },
+//     minus:function(a,b) {
+//       return a- b 
+//     },
+//     multply:function(a,b) {
+//       return a * b 
+//     },
+//     divide:function(a,b) {
+//       return a / b 
+//     },
+// }
+// console.log(calculator.add(10,20))
+// console.log(calculator.minus(10,20))
+// console.log(calculator.multply(10,20))
+// console.log(calculator.divide(10,20))
+
+// destructing arrays
+// const myArray = [1,2,3]
+// const [a,b,c] = myArray
+// console.log(a)
+// console.log(b)
+// console.log(c)
+
+
+// const myObject = {name:'nitesh',age:34,address:{city:'mumbai',state:"maharashtra"}}
+// const {name,age} = myObject
+// console.log(name)
+// console.log(age)
+// const {name,age,address:{state,city}} = myObject
+// console.log(name)
+// console.log(age)
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// const groupwise = ['filtration','filtration','diesel','oil','brake']
+// const numberwisearr = [4,6,11,22,33,55,1111,222,11,22]
+// console.log(Array.prototype.map.call(groupwise))
+// console.log(groupwise.filter(distinct))
+// console.log([...new Set(groupwise)])
+// console.log(Array.from([...new Set(groupwise)]))
+
+// const result = numberwisearr.sort(function(a,b){
+//   if(a<b){
+//     return - 1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result.filter(distinct))
+
+
+// console.log('nitesh'.split('').reverse('').join(''))
+// const arrr = [55,[2,3]]
+// console.log(arrr.flat())
+// console.log(Array.prototype.flat.call(arrr))
+
+// const asddasd = [1, 4, 9];
+// const roots = asddasd.map((val) => Math.sqrt(val))
+// console.log(roots)
+// const kvArray = [
+//   { key: 1, value: 10 },
+//   { key: 2, value: 20 },
+//   { key: 3, value: 30 },
+// ];
+// const example = kvArray.map(({key,value}) => ({[key]:value}))
+// console.log(example)
+//
+// const numbers22 = [1, 4, 9];
+// const doubles = numbers22.map((num) => num * 2);
+// console.log(doubles)
+
+// we used implicit returns for both of the arrow functions we passsed to the matp method
+// const arrsss = ['a','b','c']
+// const explicit_result = arrsss.map((val) => {
+//   return val 
+// })
+// console.log(explicit_result)
+
+// const implicit_result = arrsss.map((val) => val)
+// console.log(implicit_result)
+
+// const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
+// plants.pop()
+// plants.push('potato')
+// plants.unshift('peas')
+// plants.shift('peas')
+// console.log(plants.indexOf('cauliflower'))
+// console.log(plants.lastIndexOf('tomato'))
+// console.log(plants.length)
+// console.log(plants.toString().toUpperCase())
+// console.log(plants.toString().split("").reverse("").join(""))
+// console.log(plants.splice(1,4))
+// console.log(plants.slice(1,1))
+
+
+// let age = 50
+// function printAge(){
+//   console.log(age)
+//   let age = 100 
+// }
+// printAge()
+
+// function Example(){
+//   function print(){
+//     console.log(age)
+//   }
+//   const age = 20
+//   print()
+// }
+// Example()
+
+// console.log(x)
+// var x = 10
+// console.log(x)
+// var c = 100
+// console.log(c)
+// let a = 10,b = 20
+// let sum = a +b 
+// console.log(sum)
+
+
+// let result = 'nitesh is result'
+// console.log(result)
+// let a = 'nitesh'
+// let b = 'sameet'
+// console.log(a,b)
+
+// const myNames = 'nitesh'
+// if(myNames === 'nitesh'){
+//   console.log(`Nitesh is ${job}`)
+//   const age = 2023 - 1989
+//   console.log(age)
+//   const job = 'teacher';
+//   console.log(x)
+// }
+
+// console.log("Program Started and Variable z is in Temporal Dead Zone");
+// console.log("Variable z is in Temporal Dead Zone");
+// console.log("Variable z is in Temporal Dead Zone");
+// console.log("Variable z is in Temporal Dead Zone");
+// console.log("Variable z is in Temporal Dead Zone");
+// let z = 6;
+// console.log("Now Variable z is not in Temporal Dead Zone");
+// console.log(z);
+
+// var x = 6 
+// let z = 6 
+// console.log(x)
+// console.log(z)
+// console.log(x)
+// console.log(z)
+
+// let people_details = [
+//   {name: "ABC", age: 18},
+//   {name: "GeeksforGeeks", age: 30},
+//   {name: "DEF", age: 50},
+// ];
+// console.log(people_details.filter((val) => val.age > 41))
+// console.log(people_details.filter((val) => val.name === 'ABC' || val.name === 'DEF'))
+// console.log(people_details.map((val) => val.age))
+// console.log(people_details.map((val) => val.name))
+// console.log(people_details.map((val,index) => typeof val.name))
+// console.log(people_details.map((val,index) => typeof val.age))
+
+
+// let btn = document.getElementById('buttonId');
+// btn.addEventListener('click',function(){
+//   console.log('hi')
+// })
+
+// const buttons = document.getElementsByClassName('buttonClass');
+// for(const btn of buttons){
+//   btn.addEventListener('click',() => console.log('adsa'))
+// }
+
+// const buttons = document.getElementsByClassName('buttonClass2');
+// for(const btn of buttons){
+//   btn.addEventListener('click',() => console.log('this is called of button'))
+// }
+
+// document.body.addEventListener('click',() => {
+//   console.log('Body click event in capture phase')
+// },{once:false})
+
+// document.getElementById('buttons').addEventListener('click',(event) => {
+//   if(event.target.className === 'buttonClass')
+//   console.log('Click!')
+// })
+// let menu = document.querySelector('#menu');
+// menu.addEventListener('click',(event)=>{
+//   let target = event.target;
+//   switch(target.id){
+//       case 'home':
+//       console.log('Home menu item was clicked');
+//       break;
+//       case 'dashboard':
+//       console.log('Dashboard menu item was clicked');
+//       break;
+//       case 'report':
+//       console.log('Report menu item was clicked');
+//       break;
+//     }
+// })
+// for(let step=0;step<5;step++){
+//   console.log(`'Walking east one step' ${step}`)
+// }
+
+// const groupwise = ['vijay','happy','ronak']
+
+// const persongroup = [
+//   {
+//     name:'nitesh',
+//     age:34
+//   },
+//   {
+//     name:'sameet',
+//     age:41
+//   },
+//   {
+//     name:'urvashi',
+//     age:41
+//   },
+//   {
+//     name:'arvind',
+//     age:67
+//   },
+// ]
+// for(let superb of groupwise){
+//   console.log(superb)
+// }
+// for(let superb in groupwise){
+//   console.log(superb)
+// }
+// for(let example in persongroup){
+//   console.log(example)
+// }
+
+// let n = 0
+// let y = 0
+// while(n < 10){
+//   n++
+//   y += n
+// }
+
+// for(let i =0;i<10;i++){
+//   if(i === 5){
+//     continue;
+//   }
+//   console.log(i)
+// }
+
+// for(let i =0;i<10;i++){
+//   if(i === 5){
+//     break;
+//   }
+//   console.log(i)
+// }
+
+// let i = 0
+// let n = 0
+// while(i < 10){
+//   i++;
+//   if(i === 4){
+//     continue;
+//   }
+//   n += i;
+//   console.log(n)
+// }
+
+// var obj11 = [
+//   { name: 'Max', age: 23 },
+//   { name: 'John', age: 20 },
+//   { name: 'Caley', age: 18 }
+// ];
+// obj11.forEach((val) => console.log(val))
+
+// for(var value of obj11){
+//   console.log(value)
+// }
+
+// console.log(Object.entries(obj11))
+
+// Object.keys(obj11).forEach((val) => console.log(obj11[val]))
+
+// for(const superb of Object.keys(obj11)){
+//   console.log(obj11[superb])
+// }
+
+// for(const superb of Object.values(obj11)){
+//   console.log(superb)
+// }
+
+// for(var key in obj11){
+//   console.log(obj11[key])
+// }
+
+// const data = [
+//   { name: 'John', age: 30, group: 'A' },
+//   { name: 'Mary', age: 25, group: 'B' },
+//   { name: 'Mike', age: 20, group: 'A' },
+//   { name: 'Jane', age: 15, group: 'C' },
+//   { name: 'Peter', age: 25, group: 'B' }
+// ];
+
+// for(let superb of data){
+//   console.log(superb)
+// }
+// for(let superb in Object.keys(data)){
+//   console.log(data[superb])
+// }
+// for(let superb in data){
+//   console.log(data[superb])
+// }
+// for(let superb in Object.entries(data)){
+//   console.log(data[superb])
+// }
+
+// data.forEach(function(item,index){
+//   console.log(item)
+// })
+
+// for(const key in data){
+//   console.log(key,data[key])
+// }
+
+// for(const item of data){
+//   console.log(item )
+// }
+
+// let len = data.length,count = 0;
+// while(len--){
+//   console.log(data[count])
+//   count++
+// }
+
+// for(let i =0;i<data.length;i++){
+//   console.log(i,data[i])
+// }
+// const filterddata = data.filter((val) => {
+//   return val.age >= 24
+// })
+// console.log(filterddata)
+
+// const customers = [
+//   { name: 'Sara', birthday: '1995-4-12', credit: 725, group: 'A' },
+//   { name: 'Mary', birthday: '1985-3-14', credit: 515, group: 'B' },
+//   { name: 'Zoya', birthday: '1999-2-12', credit: 325, group: 'A' },
+//   { name: 'Peter', birthday: '1992-1-10', credit: 875, group: 'C' },
+//   { name: 'Mike', birthday: '1997-5-14', credit: 825, group: 'B' }
+// ];
+// const resultsort = customers.sort(function(a,b){
+//   if(a.name>b.name){
+//     return -1
+//   }
+//   else{
+//     return 1 
+//   }
+// })
+// console.log(resultsort)
+
+// let str = 'nitesh khatri'
+// if(str.length === 0){
+//   console.log('yes it is empty')
+// }
+// else{
+//   console.log('no, it is not empty')
+// }
+
+
+// event loop
+// console.log('before delay ')
+// function delayExample(sec){
+//   let start = now = Date.now();
+//   while(now-start < (sec * 1000)){
+//     now = Date.now();
+//   }
+// }
+// delayExample(5);
+// console.log('after delay');
+
+// function ExampleOne(){
+//   console.log('inside level one')
+// }
+// function Exampletwo(){
+//   ExampleOne()
+// }
+// function Main(){
+//   Exampletwo()
+// }
+// Main()
+
+// function One(){
+//   console.log('god = nitesh get job selected')
+// }
+// function Two(){
+//   One()
+// }
+// function Main(){
+//   Two()
+// }
+// Main()
+
+// let result = 'nitesh khatri'
+// console.log(setTimeout(result,1000))
+// const result = 'nitesh khatri ---'
+// function Example(){
+//   setTimeout(() => {
+//     return console.log(result)
+//   },1000)
+// }
+// Example()
+
+const imgwallpaper =  new Image(200,200)
+imgwallpaper.src = "https://picsum.photos/200/301";
+imgwallpaper.style.border = '10px solid red'
+document.body.appendChild(imgwallpaper)
