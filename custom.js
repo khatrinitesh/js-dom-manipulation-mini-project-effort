@@ -10677,6 +10677,255 @@ const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
 // console.log(calculator.minus(10,20))
 // console.log(calculator.multply(10,20))
 // console.log(calculator.divide(10,20))
+// const arr1 = [1,3,8,5]
+// console.log(arr1.length = 0)
+
+// map function structure
+// const arrayword = [1,4,9,16]
+// const map1 = Array.prototype.map.call(arrayword,((item) => {return item * 2}))
+// const map2 = arrayword.map(x => x * 2)
+// console.log(map1)
+// console.log(map2)
+
+// filter function structure 
+// const numbers1 = [1,2,3,4,5,6,7,8,,9,10];
+// const updatearray = Array.prototype.filter.call(numbers1,(element) => {return element > 5})
+// console.log(updatearray)
+// const updatearray2 = numbers1.filter((element) => element > 5)
+// console.log(updatearray2)
+
+// Promises function structure => Useful JavaScript functions for Web Developers 👾
+// async function Parent(){
+//   try{
+//     const res = await fetch('https://jsonplaceholder.typicode.com/posts')
+//     const data = await res.json()
+//     console.log(data)
+//   }
+//   catch{
+//     (error) => {console.log(error)}
+//   }
+// }
+
+// ternary operator
+// const value1 = (5<7) ? "True" : "false"
+// console.log(value1)
+// const value2 = (6>10) ? "True" : "False"
+// console.log(value2)
+
+// const superb = [1,2,3,4,5]
+// console.log(Array.prototype.map.call(superb,(item) => {return item *2 }))
+// console.log(superb.map((item) => {return item *2 }))
+// console.log(Array.prototype.filter.call(superb,(item) => {return item > 4}))
+// console.log(superb.filter((item) => {return item > 4}))
+
+// const profile = {
+//   'name' : 'John Doe',
+//   'age' : 15
+//   }
+//   const jsonresult = JSON.stringify(profile)
+//   console.log(jsonresult)
+
+// function foo(){
+//   console.log(this.bar)
+// }
+// var bar = 'nitesh khatri'
+// foo()
+
+// var colors = ['red','orange','purple','pink']
+// var colorsIndex = colors.indexOf('pink')
+// console.log(colorsIndex)
+
+// console.log(null == undefined)
+// console.log(null !== undefined)
+// console.log(null === undefined)
+// console.log(undefined !== undefined)
+// console.log('2'-'2'-'2'+'2')
+
+// var developers = ["hello", "meet", "me"];
+// developers.forEach((item) => {
+//   console.log(item.toUpperCase())
+// })
+
+// const data = {name:"nitesh khatri",age:34}
+// console.log(typeof data.name !== 'Sameet')
+
+// function add(a, b) {
+// 	const sum = a + b
+//     return sum
+// }
+// console.log(add(10,20))
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// console.log([11,222,44,3,33,44].filter(distinct))
+
+const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
+// const result = friendsgroup.sort(function(a,b) {
+//   if(a<b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result)
+// const numberwise = [1,22,3,4,102,33]
+// const result2 = numberwise.sort(function(a,b) {
+//   if(a>b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result2)
+
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// console.log('nitesh khatri'.toUpperCase())
+
+// console.log(Array.isArray(friendsgroup))
+
+// const wordnumberwise = ['nitesh',11,null,undefined,'11']
+// const result = wordnumberwise.filter((val) => typeof val === 'string' || typeof val === 'number' || typeof val === 'undefined')
+// console.log(result)
+// console.log(wordnumberwise.map((val) => val))
+// const personwise = [
+//   {id:1,name:'nitesh',age:34},
+//   {id:2,name:'sameet',age:41},
+//   {id:3,name:'arvind',age:68},
+//   {id:4,name:'urvashi',age:65},
+// ]
+// const resultnew = Array.prototype.filter.call(personwise,((item) => item.age > 45))
+// console.log(resultnew)
+
+// class Person {
+//   constructor(text,fname,lname,age){
+//     this.user = text
+//     this.FirstName = fname  
+//     this.LastName = lname
+//     this.Age = age
+//   }
+// }
+// let user1 = new Person('Person1','nitesh','khatri',34)
+// let user2 = new Person('Person2','sameet','khatri',41)
+// let user3 = new Person('Person3','urvashi','khatri',65)
+// let user4 = new Person('Person4','arvind','khatri',68)
+// console.log(user1)
+// console.log(user2)
+// console.log(user3)
+// console.log(user4)
+
+// console.log([...'nitesh'])
+
+// let promiseresult = new Promise((resolve,reject) =>{
+//   let value = 10
+//   if(value > 5){
+//     resolve('yes')
+//   }
+//   reject('no')
+// })
+// async function Output(){
+//   let superb = await promiseresult
+//   console.log(superb)
+// }
+// Output()
+
+// let n1 = 'nitesh khatri'
+// function Happy(){
+//   setTimeout(() => {
+//     return console.log(n1)
+//   },1000)
+// }
+// Happy()
+// let n1 = 'nitesh khatri'
+// function Happy(){
+//   setInterval(() => {
+//     return console.log(n1)
+//   },100)
+// }
+// Happy()
+
+// const word = 'sameet'
+// switch(word){
+//   case 'nitesh' : console.log('yes nitesh')
+//   break;
+//   case 'nitesh' : console.log('yes nitesh')
+//   break;
+//   default:console.log('no it is not match')
+//   break;
+// }
+// console.log(word)
+// const myFun = new Function("5 + 2");
+// console.log(myFun)
+// console.log(typeof 62)
+// console.log(typeof 'nitesh')
+// console.log(typeof ['nitesh','sameet'])
+// console.log(typeof {name:'nitesh',age:34})
+// console.log(typeof null)
+// console.log(typeof undefined)
+// console.log(typeof 1100 > 62)
+
+// let x = 10
+// function Example(){
+//   x = 20 
+// }
+// Example();
+// console.log(x)
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// const friends = ['vijay','rahul','vijay']
+// console.log(friends.filter(distinct))
+// console.log(Array.from([...new Set(friends)]))
+// console.log([...new Set(friends)])
+
+// console.log([...'nitesh'])
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// class Car{
+//   constructor(make,model){
+//       this.make = make 
+//       this.model = model
+//   }
+//   startEngine() {
+//   console.log(`starting the ${this.make} ${this.model}`)
+//   }
+// }
+//   const myCar = new Car('maruti','corolla')
+//  myCar.startEngine()
+// class Happy{
+//   constructor(make,model){
+//     this.make = make 
+//     this.model = model 
+//   }
+//   functionExample(){
+//     console.log(`hello ${this.make} ${this.model}`)
+//   }
+// }
+// const myExample = new Happy('superb','awesome')
+// console.log(myExample.functionExample())
+
+// const calculator = {
+//     add:function(a,b){
+//       return a +b 
+//     },
+//     minus:function(a,b) {
+//       return a- b 
+//     },
+//     multply:function(a,b) {
+//       return a * b 
+//     },
+//     divide:function(a,b) {
+//       return a / b 
+//     },
+// }
+// console.log(calculator.add(10,20))
+// console.log(calculator.minus(10,20))
+// console.log(calculator.multply(10,20))
+// console.log(calculator.divide(10,20))
 
 // destructing arrays
 // const myArray = [1,2,3]
