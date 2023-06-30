@@ -139,6 +139,63 @@
 // Generating new node content
 // Replacing node content
 
+// Throttling vs denouncing
+// •html5 features
+// •Js- Async & await
+// •webpack
+// •current project related question
+// •on code to solve- Create a webpage with API ( React.js )
+// •What are PROMISES,ASYNC &  AWAIT
+// •CLOSURES
+// •HOISTING
+// •one code to solve
+// •Difference between functional & class based component of react
+// •life cycle method of redux and react
+// •USE EFFECT-MOUNTING UNMOUNTING AND UPDATING
+// •what is web pack?
+// •how to optimize the web page?
+// •what is deep copy & shallow copy ?
+// •react life cycle
+// •hooks -use effect and state hook
+// •MOUNTING UNMOUNTING
+// •ask to design code
+// •Ues of this,Promise, hooks,use state,css,html5,constructor,ES6
+// •Scss,webpack
+// •css box-model.
+// •How to optimize multiple svgs
+// •Optimising fonts loads
+// •Optimize CSS for multiple (as in 100s) sites using similar css
+// •Object Oriented CSS
+// •Web security
+// •Graphql and rest API
+// •How to query graphql from FE side
+// •Oauth integration
+// •Web pack
+// •const obj={a:1,b:{c:3,d:[10]}} , extract a,b values from this
+// const arr=[{id:1,status:1},{id:2,status:2},{id:3,status:1}]
+// Ans :[{id:1,status:1},
+// •{id:3,status:1}]]
+// •https://onecompiler.com/javascript/3wyx24ssq
+// •ES6 Practice - JavaScript - OneCompiler
+// •const obj={a:1,c:{d:1}};
+// const obj={a:1,c:{ arr:[1,2,3,4] }};
+// const obj=[{id:1},{id:2},{id:3},{id:2}];
+// •ES6 features
+// •Vanilla Javascript
+// •design HTML in vanilla js fetch API data populate the data only using acodian element of html.
+// •Class component vs Function component
+// •React Memo
+// •Use Memo Vs use call back
+// •Css flexbox and grid
+// •Flex box properties
+// •ALL THE PROPERTIES OF SASS
+// •USE EFFECT-MOUNTING UNMOUNTING AND UPDATING
+// PROMISES
+// •how to create a images using •Java script
+// •How to add styling using JS
+// •how to create mixin in saas
+// •declaring a variable in CSS
+
 // var targetee = document.querySelector('#box');
 // targetee.addEventListener('mousemove',function(e){
 //     var x = e.offsetX
@@ -10511,7 +10568,7 @@ const date2 = new Date("December 15, 2010");
 // }
 // console.log([11,222,44,3,33,44].filter(distinct))
 
-const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
+// const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
 // const result = friendsgroup.sort(function(a,b) {
 //   if(a<b){
 //     return -1
@@ -11325,7 +11382,277 @@ const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
 // }
 // Example()
 
-const imgwallpaper =  new Image(200,200)
-imgwallpaper.src = "https://picsum.photos/200/301";
-imgwallpaper.style.border = '10px solid red'
-document.body.appendChild(imgwallpaper)
+// const imgwallpaper =  new Image(200,200)
+// imgwallpaper.src = "https://picsum.photos/200/301";
+// imgwallpaper.style.border = '10px solid red'
+// document.body.appendChild(imgwallpaper)
+
+// Throttling vs denouncing
+// var searchBar = document.getElementById('search-bar');
+// var numberOfKeyPresses = 0;
+// var numberOfApiCalls = 0;
+
+// function getSearchResult(){
+//   numberOfApiCalls += 1;
+//   console.log('Number of API Calls : ' + numberOfApiCalls);
+// }
+// searchBar.addEventListener('input',function(e){
+//   numberOfKeyPresses += 1;
+//   console.log('Search Keyword : ' + e.target.value)
+//   console.log('Number of Key Presses : ' + numberOfKeyPresses);
+//   getSearchResult();
+// })
+
+// function ExampleResolve(){
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       resolve('resolved')
+//     }, 1000);
+//   })
+// }
+// async function Final(){
+//   console.log('calling');
+//   const result = await ExampleResolve();
+//   console.log(result)
+// }
+// Final();
+
+// const p1 = Promise.resolve(2);
+// const p2 = 1337
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('foo')
+//   },1000)
+// })
+// Promise.all([p1,p2,p3]).then((values) => {
+//   console.log(values)
+// })
+
+// const e1 =  Promise.resolve('nitesh khatri')
+// const e2 = 'sameet khatri'
+// const e3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('finally')
+//   },500)
+// })
+// Promise.all([e1,e2,e3]).then((values) => console.log(values))
+
+// const example1 = Promise.resolve("REsolved");
+// const example2 = 'middle'
+// const example3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('finally')
+//   },1000)
+// })
+// Promise.all([example1,example2,example3]).then((val) => console.log(val))
+
+const words = ["hello","world"]
+// const reverse = string => [...string].reverse().join()
+// console.log(words.map(reverse))
+// console.log(words.map(word => word.toUpperCase()))
+// const fruits = [
+//   { name: "Apple",
+//     price: 25,
+//     emoji: "🍏",
+//   },
+//   { name: "Banana",
+//     price: 40,
+//     emoji: "🍌",
+//   },
+//   { name: "Melon",
+//     price: 75,
+//     emoji: "🍉",
+//   },
+// ]
+// console.log(fruits.map((val) => val.name))
+// const result = fruits.sort(function(a,b) {
+//   if(a.emoji>b.emoji){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(result)
+
+
+
+// let employee = {
+//   eid: "E102",
+//   ename: "Jack",
+//   eaddress: "New York",
+//   salary: 50000
+// }
+// let example = JSON.stringify(employee)
+// console.log(example)
+// let newEmp = JSON.parse(JSON.stringify(employee))
+// console.log(newEmp)
+
+// const friendsgroup1 = ['vijay','rahul','vishal','vishal','arvind']
+
+// const resultsort = friendsgroup1.sort(function(a,b){
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(resultsort)
+
+// let arreee = [1,2,3,4,4]
+// function sum(num,arr){
+//   for(let i=0;i<arreee.length;i++){
+//     for(let j=1;j<arr.length;j++){
+//       let sum = arr[i] + arr[j]
+//       if(num === sum){ 
+//         return [i,j]
+//       }
+//     }
+//   }
+// }
+// console.log(sum(16,arr))
+
+// let superb = [11,22,33,44]
+// function sum(num,superb){
+//   for(let i=0;i<superb.length;i++){
+//     for(let j=0;j<superb.length;j++){
+//       let sum = superb[i] + superb[j]
+//       if(num === sum) return [i,j]
+//     }
+//   }
+// }
+// console.log(sum(16,arr))
+
+// let examplearr = [12,3,55,4,10]
+// function square(num,examplearr){
+//   for(let i=0;i<examplearr.length;i++){
+//     for(let j=0;j<examplearr.length;j++){
+//       let square = examplearr[i] + examplearr[j]
+//       if(num === square) return [i,j]
+//     }
+//   }
+// }
+// console.log(square(11,examplearr))
+
+// let person = { name: 'Ronak' };
+// const superb = [person]
+// person = null 
+// console.log(superb)
+
+
+// shallow copy object 
+// const obj2 = { name: 'Version 1', additionalInfo: { version: 1 } };
+// const shallowCopy1  = {...obj2}
+// console.log(shallowCopy1)
+// shallowCopy1.name = 'sameet'
+// shallowCopy1.additionalInfo.version = 2 
+// console.log(shallowCopy1)
+
+// deep copy object
+// const obj3 = {name:'nitesh',age:34}
+// console.log(JSON.parse(JSON.stringify(obj3)))
+
+// Spread Operator: The spread operator is a concise way to shallow copy an array or object in JavaScript. Let’s consider an example:
+// const originalArr = [1, 2, 3];
+// const result = [...originalArr]
+// console.log(result)
+
+// Array.slice(): The slice() method creates a shallow copy of an array by extracting a portion of it. Here's an example:
+// const originalArr = [1, 2, 3];
+// const result = originalArr.slice();
+// console.log(result)
+
+// Object.assign(): When it comes to objects, Object.assign() can be used to create a shallow copy. It copies the values of all enumerable properties from one or more source objects to a target object:
+// const originalObj = { name: 'John', age: 25 };
+// const shallowobject = Object.assign({},originalObj)
+// console.log(shallowobject)
+
+// JSON.parse() and JSON.stringify(): One popular method to perform deep copying is by utilizing JSON.parse() and JSON.stringify() methods:
+// const originalArray = [1, 2, 3];
+// const deepresult = JSON.parse(JSON.stringify(originalArray))
+// console.log(deepresult)
+
+// Third-party Libraries: Alternatively, you can use third-party libraries like Lodash or Underscore.js, which provide convenient deep copy functions:
+// const originalObject = { name: 'John', age: 25 };
+// const result = _.cloneObject(originalObject)
+// console.log(result)
+
+// var obj1 = {
+//   x:  43,
+//   y:  "Hello world!",
+//   z: function(){
+//      return this.x;
+//   }
+// }
+// console.log(obj1)
+
+// var person = {
+//   name:'nitesh',
+//   z:function(){
+//     return this.name 
+//   }
+// }
+// console.log(person)
+
+// a = 1 
+// console.log('a=' + a)
+
+// Hoisting takes place in the local scope as well
+// function Example(){
+//   x = 33 
+//   console.log(x)
+//   var x 
+// }
+// Example()
+
+// var x = 2;
+// var y = "2";
+// console.log(x == y)  // Returns true since the value of both x and y is the same
+// console.log(x === y) // Returns false since the typeof x is "number" and typeof y is "string"
+
+// console.log(3+ '3')
+
+// console.log(3 = 3)
+// const Add = (a,b) => {
+//   const sum = a +b 
+//   return sum 
+// }
+// console.log(Add(10,20))
+// const Minus = (a,b) => {
+//   const sum = a - b 
+//   return sum 
+// }
+// console.log(Minus(10,20))
+// const Multiple = (a,b) => {
+//   const sum = a * b 
+//   return sum 
+// }
+// console.log(Multiple(10,20))
+// const Divide = (a,b) => {
+//   const sum = a / b 
+//   return sum 
+// }
+// console.log(Divide(10,20))
+
+// const result = (num) => num & 1 ? 'yes' : 'No' ;
+// console.log(result(111))
+
+// console.log(11 && 1 ? 'true' : 'false')
+
+// (function(){
+//   // do something
+// })
+
+// console.log(typeof firstname)
+// console.log(firstname)
+// if(true){
+//   console.log(typeof firstname)
+//   console.log(firstname)
+//   let firstname = 'nitesh' 
+// }
+
+// pi 
+// const pi = 'nitesh'
+// console.log(pi)
+
