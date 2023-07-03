@@ -11656,3 +11656,84 @@ const words = ["hello","world"]
 // const pi = 'nitesh'
 // console.log(pi)
 
+// const friendsgroupwww = ['vijay','vishal','ronak','amit','kaplesh','kaplesh']
+// const groupnumberwise = [11,22,33,44,55,666,77,77,88,99,99]
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// console.log(friendsgroupwww.filter(distinct))
+// console.log(Array.from([...new Set(friendsgroupwww)]))
+// console.log([...new Set(friendsgroupwww)])
+// console.log(groupnumberwise.filter(distinct))
+
+// let age = 100
+// console.log(age);
+
+// console.log(typeof undefined)
+// console.log(typeof 0)
+// console.log(typeof 10n)
+// console.log(typeof true)
+// console.log(typeof 'foo')
+// console.log(typeof Symbol("id"))
+// console.log(typeof Math)
+// console.log(typeof null)
+// console.log(typeof alert)
+
+
+// var a = 'sameet'
+// function Example(){
+//   console.log(a);
+// }
+// var a = 'nitesh'
+// Example()
+
+// let a = 'nitesh'
+// function Example(){
+//   console.log(a)
+// }
+// let a = 'sameet'
+// console.log(a)
+
+// function sum(a){
+//   return function(b){
+//     return function(c){
+//       return a +b +c 
+//     }
+//   }
+// }
+// console.log(sum(10)(20)(30))
+
+// let message 
+// message = 'hello'
+// console.log(message)
+
+// let user = 'John', age = 25, message = 'Hello';
+// console.log(user)
+// console.log(age)
+// console.log(message)
+// console.log(user.concat(age,message))
+
+// let $ = 1
+// let _ = 2 
+// console.log($)
+// console.log(_)
+
+
+// const myBirthday = '18.04.1982';
+// console.log(myBirthday)
+
+// const COLOR_RED = "#F00";
+// const COLOR_GREEN = "#0F0";
+// const COLOR_BLUE = "#00F";
+// const COLOR_ORANGE = "#FF7F00";
+// let color = COLOR_ORANGE
+// console.log(color)
+
+
+
+
+
+
+
+
+
