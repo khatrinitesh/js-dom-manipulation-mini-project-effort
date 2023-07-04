@@ -11729,11 +11729,207 @@ const words = ["hello","world"]
 // let color = COLOR_ORANGE
 // console.log(color)
 
+// const birthday = '18.04.1982';
+// console.log(birthday)
+
+// let str = "Hello";
+// let str2 = 'Single quotes are ok too';
+// let phrase = `can embed another ${str}`;
+// console.log(str)
+// console.log(str2)
+// console.log(phrase)
+
+// let name = "John";
+// console.log(name)
+// let promise = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('nitesh khatri')
+//   },1000)
+// })
+
+// async function Example() {
+//   let result = await promise 
+//   console.log(result)
+// }
+// Example()
+
+// const p1 = Promise.resolve('nitesh')
+// const p2 = 'nitesh 111'
+// const p3 = 'sameet'
+// Promise.all([p1,p2,p3]).then((values) => console.log(values))
+// let example = new Promise((resolve,reject) => {
+//   let value = 10
+//   if(value >5){
+//     resolve('yes')
+//   }
+//   else{
+//     reject('no')
+//   }
+// })
+// async function Finally(){
+//   let smile = await example;
+//   console.log(smile)
+// }
+// Finally()
+
+// let numbersw = [1, 2, 3];
+// let result = numbersw.reduce((a,b) => {
+//   return a + b 
+// },0)
+// console.log(result)
+
+// const randomValue = 21;
+// function getInfo() {
+//   console.log(typeof randomValue);
+//   const randomValue = 'adam';
+// }
+// getInfo();
+
+// function sum(a){
+//   return function(b){
+//     return function(c){
+//       return a  + b + c 
+//     }
+//   }
+// }
+// console.log(sum(10)(20)(30))
+
+// let hour = 12
+// let minute = 30 
+// if(hour == 12 && minute == 30){
+//   console.log('the time is 12:30')
+// }
+// else{
+//   console.log('the time is 1:00')
+// }
+
+// let array11 = [{id:1,name:'One'}, {id:2, name:'Two'}, {id:3, name: 'Three'}];
+// let res = array11.map((val) => {return {...val}})
+// console.log(res)
+// res.find(a => a.id == 2).name = 'sameet'
+// console.log(res)
 
 
+// let originalArray = [
+//   { id: 1, name: "John" },
+//   { id: 2, name: "Jane" },
+//   { id: 3, name: "Mark" }
+// ];
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6]
+// console.log(...array1,...array2)
+// let deepCopy = JSON.parse(JSON.stringify(originalArray))
+// originalArray[0].name =' sameet'
+// console.log(deepCopy)
+// console.log(originalArray)
+// const resultarray = originalArray.map((val) => ({...val}))
+// console.log(resultarray)
+
+// const mergedArray = [
+//   ...array1,
+//   ...array2
+// ];
+// console.log(mergedArray)
+
+// const original = ['zero', 'one'];
+// const newArray = [...original];
+// console.log(newArray)
+// console.log(original)
+// console.log(newArray)
+// const string = 'hi';
+// console.log(string)
+// const set = new Set([1,2,3])
+// console.log(set)
+// const nodeList = document.querySelectorAll('p');
+// console.log(nodeList)
+
+// const array123 = [1, 2, 3, 4, 5];
+// console.log(Math.max(...array123))
+// console.log(Math.min(...array123))
+
+// function update(arr, id, updatedData) {
+//   return arr.map((item) => (item.id === id ? { ...item, ...updatedData } : item))
+// }
+
+// const arr1 = [
+//   { id: '01', name: 'John', email: 'john@email.com' },
+//   { id: '02', name: 'Sara', email: 'sara@email.com' },
+//   { id: '03', name: 'Michael', email: 'michael@email.com' },
+// ]
+
+// const id = '01'
+// const updatedData = {email:'xyz@gmail.com'}
+
+// const result = update(arr1,id,updatedData)
+
+// console.log(result)
+
+// const obj1 = {
+//   id: '01',
+//   name: 'John',
+//   id: '02',
+// }
+// console.log(obj1)
+
+// function update(arr,id,updateData){
+//   return arr.map((val) => {return val.id === id ? {...val,...updateData}: val})
+// }
+// const arr1 = [
+//   { id: '01', name: 'John', email: 'john@email.com' },
+//   { id: '02', name: 'Sara', email: 'sara@email.com' },
+//   { id: '03', name: 'Michael', email: 'michael@email.com' },
+// ]
+// const id = '01'
+// const updateData =  {name:'sameet',email:'sameet1922@gmail.com'}
+// const result = update(arr1,id,updateData)
+// console.log(result)
+
+// let i = 0
+// while(i<3){
+//   console.log(i);
+//   i++
+// }
+
+// const example = name => console.log('heu' + name)
+// console.log(example)
+
+// let example = 2 
+// if(example !== 32){
+//   console.log('yes')
+// }
+// else{
+//   console.log('no')
+// }
+
+// console.log(3**2)
+
+// const x = 10
+// const y = 20
+// console.log(x -= y)
+
+// let age = 32
+// let isAdult = age > 17 ? 'adult' : 'child'
+// console.log(isAdult)
 
 
+// class Example{
+//   constructor(fname,lname){
+//     this.firstName = fname
+//     this.lastName = lname
+//   }
+// }
+// let user1 = new Example('nitesh','khatri')
+// let user2 = new Example('sameet','khatri')
+// let user3 = new Example('arvind','khatri')
+// console.log(user1)
+// console.log(user2)
+// console.log(user3)
 
+// console.log(" " == 0);
+
+// console.log(0 === false)
+// console.log(0 == false)
+// console.log('' === false)
 
 
 
