@@ -121,6 +121,43 @@
 </head>
 <body onoffline="offlineFunction()">
 
+	<div class="form" id="formDiv">
+		<form id="myForm">
+			<!-- first name -->
+			<div>
+		  <label class="firstName">First name</label>
+		  <input type="text" placeholder="John" required="required" id="firstName" pattern="[A-Za-z]{1,20}"><br>
+		</div>
+
+		<!-- last name -->
+		<div>
+		  <label class="lastName">Last name</label>
+		  <input type="text" placeholder="AppleSeed" required="required" id="lastName" pattern="[A-Za-z]{1,20}">
+		</div>
+
+		<div>
+		  <!-- email -->
+		  <label class="email">Email</label>
+		  <input type="email" placeholder="j.appleseed@example.co.uk" size="42" required="required" id="email">
+		</div>
+
+		<div>
+		  <!-- mobile number -->
+		  <label class="tel">Mobile Number</label>
+		  <input placeholder="Your Mobile Number" size="42" required="required" id="number" pattern="[0-9]{6,13}">
+		</div>
+
+		  <!-- The Submit button -->
+		  <button class="submit">
+			<span title="What are you waiting for? Click it!">Submit</span>
+		</button>
+		</form>
+	  </div>
+	  
+	  <h1 id="hiddenMessage" style="display: none">Thank You!</h1>
+
+	  <hr/>
+
 	<label>Search Here : </label>
     <input type="text" id="search-bar" />
 

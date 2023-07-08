@@ -1,0 +1,36 @@
+- What are the different data types in JavaScript?
+- How do you declare a variable in JavaScript?
+- What is the difference between let, const, and var?
+- How does hoisting work in JavaScript?
+- What are closures in JavaScript?
+- How do you use callbacks in JavaScript?
+- What are Promises in JavaScript?
+- How do you handle errors in JavaScript?
+- How do you create and manipulate objects in JavaScript?
+- What is the difference between == and === in JavaScript?
+- What are the different types of Operators in JavaScript?
+- What is the difference between null and undefined in JavaScript?
+- How do you handle asynchronous code in JavaScript?
+- What is the event loop in JavaScript?
+- How do you use this keyword in JavaScript?
+- What is the difference between call, apply, and bind methods in JavaScript?
+- How do you create a class in JavaScript?
+- What is the difference between E85 and E86?
+- What are arrow functions in JavaScript?
+- What is template literals in JavaScript?
+- What are rest and spread operators in JavaScript?
+- What is destructuring in JavaScript?
+- How do you handle date and time in JavaScript?
+- How do you handle regular expressions in JavaScript?
+- What are the different ways to create a function in JavaScript?
+- What is the difference between synchronous and asynchronous code in JavaScript?
+- What is the difference between let and var?
+- What are the different types of loops in JavaScript?
+- How do you break out of a loop in JavaScript?
+- How do you handle multiple asynchronous requests in JavaScript?
+- How do you check if a variable is an array in JavaScript?
+- What are the different types of scopes in JavaScript?
+- How do you use try and catch blocks in JavaScript?
+- How do you create a new element in the DOM using JavaScript?
+- What are the different types of events in JavaScript?
+- How do you prevent default behavior in an event in JavaScript?

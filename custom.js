@@ -3644,7 +3644,7 @@ let dailyActivities = ['eat', 'sleep'];
 // })
 
 
-let studentsData = [['Jack', 24], ['Sara', 23],];
+// let studentsData = [['Jack', 24], ['Sara', 23],];
 // for(let i of studentsData){
 //     console.log(i)
 // }
@@ -6388,13 +6388,13 @@ const classOf2018 = {
 // console.log(Array.from(new Set(years)))
 // console.log(years.filter(distinct))
 // console.log(Array.from(new Set(years)))
-const array = [
-    {name:'nitesh',age:34},
-    {name:'sameet',age:41},
-    {name:'urvashi',age:65},
-    {name:'arvind',age:68},
-    {name:'nitesh',age:34},
-]
+// const array = [
+//     {name:'nitesh',age:34},
+//     {name:'sameet',age:41},
+//     {name:'urvashi',age:65},
+//     {name:'arvind',age:68},
+//     {name:'nitesh',age:34},
+// ]
 // const result = [...new Set(array.map((val) => val.name))]
 // console.log(result)
 
@@ -11931,5 +11931,129 @@ const words = ["hello","world"]
 // console.log(0 == false)
 // console.log('' === false)
 
+// function f1() {
+//   console.log('f1')
+// }
+// function f2() {
+//   console.log('f2')
+// }
+// function f3() {
+//   console.log('f3')
+// }
 
+// // Invoke the functions one by one
+// f1();
+// f2();
+// f3();
 
+// const birthday = new Date(1989,6,19)
+// console.log(birthday.getFullYear())
+// console.log(birthday.getMonth())
+// console.log(birthday.getDay())
+// console.log(birthday.getHours())
+
+// let a =5 
+// b = 6 
+// console.log(`sum of 5+6 is ${a + b }`)
+
+// function doSomething(){
+//   return 'hello'
+// }
+// const name = 'nitesh'
+// const age = 34
+// const sentence = `my name is ${name} & age is ${age}`
+// console.log(sentence)
+
+// const a = 20
+// const b = 30
+// const c = `the sume of ${a + b}`
+// console.log(c)
+
+// arrow functions
+// const add = (a,b) => a+b 
+// console.log(add(10,20))
+
+// ternary operator 
+
+// const fashion = 10
+// const result = fashion > 10 ? 'y' : 'n'
+// console.log(result)
+
+// for(var i=0;i<=5;i++){
+//   console.log(i)
+// }
+
+// const sleep = (delay=    ) = new Promise((resolve) => {
+//   setTimeout(resolve,delay);
+// })
+// async function display(){
+//   await sleep(2000)
+//   console.log('waited for 2 seconds')
+//   await sleep(4000) 
+//   console.log('waited for 4 seconds')
+// }
+// display()
+
+// const arraygroup = [11,11,12,13]
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// console.log(Array.from([...new Set(arraygroup)]))
+// console.log(...new Set(arraygroup))
+// console.log(arraygroup.filter(distinct))
+
+// generate a random string 
+// const random = Math.random().toString(36).slice(2);
+// console.log(random)
+
+// remove falsy values from an array 
+// const arraygroup = [0,'nitesh khatri',NaN,5,true,undefined,false,null];
+// const resultarraygroup = arr => arr.filter(Boolean)
+// console.log(resultarraygroup(arraygroup))
+
+// function Example(){
+//   let count = 0
+
+//   return function(){
+//     count++
+//     console.log(count)
+//   };
+// }
+// const counter = Example();
+// counter();
+// counter();
+
+// function Example(factor){
+//   return function(number){
+//     return number * factor
+//   }
+// }
+// const double = Example(11);
+// console.log(double(22))
+// const triple = Example(122);
+// console.log(triple(22))
+
+// function Superb(happy){
+//   return function(sad){
+//     return happy * sad
+//   }
+// }
+// const double = Superb(10)
+// console.log(double(20))
+
+// function Finally(one){
+//   return function(two){
+//     return two * one 
+//   }
+// }
+// const result = Finally(10)
+// console.log(result(2022))
+
+document.getElementById("myForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // pause submission
+  document.getElementById("hiddenMessage").style.display = "block";
+  document.getElementById("formDiv").style.display = "none";
+  // setTimeout(function() {
+  //   e.target.submit()
+  // }, 10000)
+})
