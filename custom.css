@@ -181,3 +181,11 @@ body {
       }
     }
     
+
+    h2:after{
+      content:attr(data-color)
+    }
+
+    p:after{
+      content: attr(title);
+    }

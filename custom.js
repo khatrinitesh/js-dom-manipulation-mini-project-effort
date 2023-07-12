@@ -12049,11 +12049,1233 @@ const words = ["hello","world"]
 // const result = Finally(10)
 // console.log(result(2022))
 
-document.getElementById("myForm").addEventListener("submit", function(e) {
-  e.preventDefault(); // pause submission
-  document.getElementById("hiddenMessage").style.display = "block";
-  document.getElementById("formDiv").style.display = "none";
-  // setTimeout(function() {
-  //   e.target.submit()
-  // }, 10000)
-})
+// document.getElementById("myForm").addEventListener("submit", function(e) {
+//   e.preventDefault(); // pause submission
+//   document.getElementById("hiddenMessage").style.display = "block";
+//   document.getElementById("formDiv").style.display = "none";
+//   // setTimeout(function() {
+//   //   e.target.submit()
+//   // }, 10000)
+// })
+
+// var message = 'niesh khatri'
+// console.log(message)
+
+// var firstName = 123 
+// console.log(firstName)
+
+
+// console.log(window.firstName)
+
+// const name = 'nitesh'
+// function Example(){
+//   console.log(name)
+// }
+// Example()
+
+// let age = 16 
+// let msg = ''
+// if(age > 70){
+//   msg = 'A'
+// }
+// else if(age > 60){
+//   msg = 'B'
+// }
+// else if(age > 35){
+//   msg = c
+// }
+// else{
+//   msg = 'it is failed'
+// }
+// console.log(msg)
+
+// let promise = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('nitesh khatri')
+//   },100)
+// })
+// async function Example(){
+//   let result = promise 
+//   console.log(result)
+// }
+// Example()
+
+// let promise = new Promise((resolve,reject) => {
+//   let value = 50
+//   if(value > 35){
+//     resolve('yes')
+//   }
+//   else{
+//     reject('no')
+//   }
+// })
+
+// async function Example(){
+//   let result = promise
+//   console.log(result)
+// }
+// Example()
+
+// let x = 0
+// while(x < 10){
+//   x++
+//   console.log(x)
+// }
+
+// let x  = 30
+// switch(x){
+//   case 10 : console.log('yes it is 10');
+//   break;
+//   case 20 : console.log('yes it is 20');
+//   break;
+//   case 30 : console.log('yes it is 30');
+//   break;
+//   default : console.log('no it is not there');
+//   break;
+// }
+
+// let x = 20
+// do{
+//   console.log(x)
+//   x++
+// }
+// while(x<10)
+
+// function firstName(){
+//   console.log('first name is nitesh')
+// }
+// firstName()
+
+// function add(a,b){
+//   console.log(a+b)
+// }
+// add(10,2)
+
+// function add(){
+//   console.log(arguments)
+//   let sum = 0
+//   for(let i=0;i<arguments.length;i++){
+//     sum+=arguments[i]
+//   }
+// }
+// let c = add(10,5,6,6,7)
+// console.log(c)
+
+// function add(){
+//   console.log(arguments)
+//   let sum = 0
+//   for(i=0;i<arguments.length;i++){
+//     sum += arguments[i]
+//   }
+// }
+// const c = add(10,22,33,45)
+// console.log(c)
+
+// console.log("Hello" - 1);
+
+
+// function add(a,b){
+//   return a +b 
+// }
+// let sum = add 
+
+// function avg(a,b,fun){
+//   return fun(a,b)/2
+// }
+// let avgvalue = avg(10,20,sum)
+// console.log(avgvalue)
+
+
+// var obj1 = {
+//    x:  43,
+//    y:  "Hello world!",
+//    z: function(){
+//       return this.x;
+//    }
+// }
+// console.log(obj1.z());
+
+// hoistedVariable = 3;
+// console.log(hoistedVariable)
+// var hoistedVariable
+
+// function hoistedFunction(){
+//   console.log('hello world')
+// }
+// hoistedFunction(); 
+
+// doSomething()
+// function doSomething(){
+//   x = 33 
+//   console.log(x)
+//   var x 
+// }
+
+// var x  
+// console.log(x)
+// x = 30
+
+// var a = 'nitesh khatr'
+// function Example(){
+//   console.log(a)
+//   a = 'sameet'
+// }
+// Example()
+
+// var x = 2;
+// var y = "2";
+// console.log(x === y)
+// console.log(x == y)
+// console.log(x !== y)
+
+// var x = 220;
+// var y = "Hello";
+// var z = undefined;
+// // console.log(x || y)
+// console.log(x && y)
+// if(x && y){
+//   console.log('code runs')
+// }
+// if(x || z){
+//   console.log('nitesh khatri')
+// }
+
+// console.log(typeof NaN)
+
+// function Example(fn){
+//   fn();
+// }
+// Example(function () {console.log('nitesh khatri')})
+
+// function Supberb(fn){
+//   fn();
+// }
+// Supberb(function() {console.log('nitesh khatri')})
+
+// function Excellent(){
+//   return function(){
+//     return 'do something';
+//   }
+// }
+// var x = Excellent();
+// x();
+
+// function Happy(a){
+//   return function(b){
+//     return function(c){
+//       return a+b+c 
+//     }
+//   }
+// }
+// console.log(Happy(10)(20)(30))
+
+// var obj1 = {
+//   name:  "vivek",
+//   getName: function(){
+//     console.log(this.name);
+//   }
+// }
+
+// var getName = obj1.getName;
+// console.log(obj1.getName())
+
+// function sayHello(){
+//   return "Hello " + this.name;
+// }
+// var obj2 = {
+//   name:'nitesh'
+// }
+// sayHello(obj2);
+
+// var person = {
+//   age: 23,
+//   getAge: function(){
+//     return this.age;
+//   }
+// }        
+// var person2 = {age:54}
+// console.log(person.getAge.call(person2))
+
+// function saySomething(message){
+//   return this.name + " is " + message;
+// }     
+// var person4 = {name:'nitesh'}
+// saySomething.call(person4)
+
+// function add(a){
+//   return function(b){
+//     return a+b 
+//   }
+// }
+// console.log(add(10)(20))
+
+// function multiply(a,b){
+//   return a*b;
+// }
+
+// function currying(fn){
+//   return function(a){
+//     return function(b){
+//       return fn(a,b)
+//     }
+//   }
+// }
+
+// var curriedMultiply = currying(multiply);
+// console.log(multiply(30,30))
+// console.log(curriedMultiply(30)(30))
+
+// function add(a,b){
+//   return a+b 
+// }
+
+// function currying(fn){
+//   return function(a){
+//     return function(b){
+//       return fn(a,b)
+//     }
+//   }
+// }
+// const result = currying(add);
+// const result1 = result(20)(30)
+// const result2 = result(55)(30)
+// console.log(result1)
+// console.log(result2)
+
+// BELOW CODE - GLOBAL SCOPE
+// var globalVariable = "Hello world is global scope";
+// function One(){
+//   return globalVariable
+// }
+// function Two(){
+//   return One()
+// }
+// console.log(Two())
+
+// BELOW CODE - FUNCTION SCOPE
+// function awesomeFunction(){
+//   var a = 2 
+//   var multiplyBy2 = function(){
+//     console.log(a*2)
+//   }
+// }
+// console.log(a)
+// multiplyBy2();
+
+// BELOW CODE - BLOCK SCOPE
+// {
+//   let x = 34 
+// }
+// console.log(x)
+
+// for(let i=0;i<2;i++){
+//   console.log(i)
+// }
+
+// BELOW CODE - SCOPE CHAIN 
+// var y = 24;
+// function favFunction(){
+//   var x = 667;
+//   var anotherFavFunction = function(){
+//     console.log(x); // Does not find x inside anotherFavFunction, so looks for variable inside favFunction, outputs 667
+//   }
+
+//   var yetAnotherFavFunction = function(){
+//     console.log(y); // Does not find y inside yetAnotherFavFunction, so looks for variable inside favFunction and does not find it, so looks for variable in global scope, finds it and outputs 24
+//   }
+
+//   anotherFavFunction();
+//   yetAnotherFavFunction();
+// }
+// favFunction();
+
+// var Person = function(pName){
+//   var name = pName;
+//   this.getName = function(){
+//     return name;
+//   }
+// }
+// var person = new Person('nitesh');
+// console.log(person.getName())
+
+// var Person = function(pName){
+//   var name = pName;
+//   this.getName = function(){
+//     return name;
+//   }
+// }
+// var person = new Person('nitesh')
+// console.log(person.getName())
+
+// var Person = function(Pname){
+//   var name = Pname 
+//   this.getName = function(){
+//     return name;
+//   }
+// }
+// var person = new Person('nitesh');
+// console.log(person.getName())
+
+// const info = {
+//   name:'nitesh',
+//   age:34 
+// }
+// console.log(Object.seal(info))
+// console.log(Object.preventExtensions(info))
+// console.log(Object.freeze(info))
+
+// function randomFunc(){
+//   var obj1 = {
+//     name:'nitesh',
+//     age:34
+//   }
+//   return function(){
+//     console.log(obj1.name + ' is ' + 'awesome');
+//   }
+// }
+// var initialClosure = randomFunc();
+// initialClosure();
+
+// function Start(){
+//   var obj1 = {
+//     name:'nitesh'
+//   }
+//   return function(){
+//     console.log(obj1.name + ' is ' + 'awesome')
+//   }
+// }
+// const exampleStart = Start()
+// exampleStart()
+
+// Object prototypes
+// var arr1 = [];
+// arr1.push(2);
+// console.log(arr1)
+
+// var lovely = [];
+// lovely.push('happy','smile')
+// console.log(lovely)
+
+// function divideByHalf(sum){
+//   console.log(Math.floor(sum / 2));
+// }
+// function multiplybyHalf(sum){
+//   console.log(sum * 2 )
+// }
+// function opeartionOnSum(num1,num2,opeartion){
+//   var sum = num1 + num2 
+//   opeartion(sum)
+// }
+// opeartionOnSum(3,3,divideByHalf)
+// opeartionOnSum(1,3,multiplybyHalf)
+
+// function One(sum){
+//   console.log(Math.floor(sum/2))
+// }
+// function Two(sum){
+//   console.log(sum * 2 )
+// }
+// function Operation(n1,n2,operation){
+//   var sum = n1 + n2 
+//   operation(sum)
+// }
+// Operation(1,1,One)
+// Operation(1,33,Two)
+
+// function addTo256(num){
+//   return num + 340
+// }
+// console.log(addTo256(20))
+// console.log(addTo256(30))
+// console.log(addTo256(40))
+
+// function add(number){
+//   if(number <= 0){
+//     return 0;
+//   }
+//   else{
+//     return number + add(number - 1);
+//   }
+// }
+
+// function computeSum(arr){
+//   if(arr.length === 1){
+//     return arr[0];
+//   }
+//   else{
+//     return arr.pop() + computeSum(arr);
+//   }
+// }
+// console.log(computeSum([7, 8, 9, 99]))
+
+// function Person(name,age,gender){
+//   this.Name = name;
+//   this.Age = age;
+//   this.Gender = gender;
+// }
+// var person1 = new Person('nitesh',34,'male')
+// var person2 = new Person('sameet',41,'male')
+// var person3 = new Person('urvashi',65,'female')
+// var person4 = new Person('arvind',68,'male')
+// console.log(person1,person2,person3,person4)
+
+// var add = function(a,b){
+//   return a + b;
+// }
+// var arrowAdd = (a,b) => a+b 
+// console.log(add(10,10))
+// console.log(arrowAdd(10,20))
+// const sum = (a,b) => a+b 
+// const multiple = (a,b) => a*b 
+// const minus = (a,b) => a-b 
+// const divide = (a,b) => a/b 
+// console.log(sum(10,20))
+// console.log(multiple(10,20))
+// console.log(minus(10,20))
+// console.log(divide(10,20))
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// const groupwise = ['vijay','ronak','ronak','vijay','chandresh','bhavik']
+// const onoowise = [22,44,55,1,1,2,3,4,55,66,77,88,110]
+// console.log(groupwise.filter(distinct))
+// console.log([...new Set(groupwise)])
+// console.log(Array.from([...new Set(groupwise)]))
+
+// const result1 = groupwise.sort(function(a,b){
+//   if(a<b){
+//     return -1 
+//   }
+//   else{
+//     return 1 
+//   }
+// })
+// console.log(result1.filter(distinct))
+
+// const result2 = onoowise.sort(function(a,b){
+//   if(a>b){
+//     return -1 
+//   }
+//   else{
+//     return 1 
+//   }
+// })
+// console.log(result2.filter(distinct))
+// const groupwise =['nitesh','sameet',1,2,null,undefined,NaN]
+// const person = [
+//   {id:1,name:'nitesh',age:34},
+//   {id:2,name:'sameet',age:41},
+//   {id:3,name:'vishal',age:45},
+//   {id:4,name:'mayur',age:47},
+//   {id:5,name:'nilesh',age:47},
+//   {id:6,name:'sonal',age:47},
+//   {id:6,name:'nitesh',age:22},
+// ]
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// const result = person.filter((item) => item.name === 'nitesh')
+// console.log(result)
+
+// const result2 = Array.from(new Set(person.map(s => s.id))).map(id => {
+//   return{
+//     id:id,
+//     name:person.find(s => s.id === id).name
+//   };
+// });
+// console.log(result2)
+
+// const distinctObject = person.map((item) => item.name).filter((name,index,currentVal) => currentVal.indexOf(name) === index)
+
+// const distinctObject = person.map((item) => item.name).filter((name,index,currentVal) => currentVal.indexOf(name) === index)
+// console.log(distinctObject)
+
+// const ageDistinct = [...new Set(person.map((item) => item.age))]
+// console.log(ageDistinct)
+// const example = [null,undefined,NaN,false,true,11,'nitesh']
+// console.log(example.filter(Boolean))
+
+// console.log(2+'2')
+// console.log(2-'2')
+// var name = 'nitesh'
+// if(true){
+//   var name = 'sameet'
+//   console.log(name)
+// }
+
+// var user1 = {
+//   id:1,
+//   name:'nitesh',
+//   age:34,
+//   location:'mumbai'
+// }
+// var user2 = {
+//   id:2,
+//   name:'sameet',
+//   age:41,
+//   location:'usa'
+// }
+// var combineuser = [user1,user2]
+// console.log(combineuser)
+
+// let a = 10,b=20
+// [b,a] = [a,b]
+// console.log(a,b)
+
+// console.log(3 && 2 && 1 && 0 && false)
+
+// let num = [2,15,7,8,20,55,3]
+// num.sort()
+// console.log(num[2])
+
+// var variable1 = 23;
+// let variable2 = 89;
+// function catchValues(){
+//   console.log(variable1);
+//   console.log(variable2);
+
+// // Both the variables can be accessed anywhere since they are declared in the global scope
+// }
+// catchValues()
+
+// function varVsLetFunction(){
+//   let awesomeCar1 = "Audi";
+//   var awesomeCar2 = "Mercedes";
+// }
+// console.log(awesomeCar1);
+// console.log(awesomeCar2);
+
+// function extractingArgs(...args){
+//   return args[1];
+// }
+// function addAllArgs(...args){
+//   let sumOfArgs = 0;
+//   let i = 0;
+//   while(i < args.length){
+//     sumOfArgs += args[i];
+//     i++;
+//   }
+//   return sumOfArgs;
+// }
+// console.log(addAllArgs(6, 5, 7, 99))
+// console.log(addAllArgs(1,3,4))
+
+// function addFourNumbers(num1,num2,num3,num4){
+//   return num1 + num2 + num3 + num4;
+// }
+// let fourNumbers = [5,6,7,8]
+// addFourNumbers(...fourNumbers)
+// let array1 = [3,4,5,6]
+// let clonedArray1 = [...array1]
+// console.log(clonedArray1)
+
+// let obj1 = {x:'Hello', y:'Bye'};
+// let clonedObj1 = {...obj1}
+// // console.log(clonedObj1)
+
+// let obj2 = {z:'Yes', a:'No'};
+// let merged = {...obj1,...obj2}
+// console.log(merged)
+
+  // p1 = Promise.resolve(50)
+  //   p2 = 200
+  //   p3 = new Promise(function(resolve,reject){
+  //     setTimeout(resolve,100,'geek')
+  //   })
+  //   Promise.all([p1,p2,p3]).then(function(values) {
+  //     console.log(values)
+  //   })
+
+  // p1 = Promise.resolve('nitesh')
+  // p2 = 50
+  // p3 = new Promise(function(resolve,reject){
+  //   setTimeout(resolve,100,'sameet')
+  // });
+  // Promise.all([p1,p2,p3]).then(function(values){
+  //   console.log(values)
+  // })
+
+  // let result = new Promise(function(resolve,reject){
+  //   let value = 20
+  //   if(value > 30){
+  //     console.log('yes')
+  //   }
+  //   else{
+  //     console.log('no')
+  //   }
+  // })
+  // async function Example(){
+  //   let final = await result 
+  //   console.log(final)
+  // }
+  // Example()
+
+  // function Student(name,rollNumber,grade,section){
+  //   this.name = name;
+  //   this.rollNumber = rollNumber;
+  //   this.grade = grade;
+  //   this.section = section;
+  // }
+  // Student.prototype.getName = function(){
+  //   return `== ${this.name} ${this.rollNumber} ${this.grade} ${this.section}`
+  // }
+
+  // let student1 = new Student('nitesh',34,'6th',"A")
+  // student1.getName
+  // console.log(student1)
+
+  // let student2 = new Student('sameet',41,'7th','B')
+  // student2.getName
+  // console.log(student2)
+  // function* genFunc(){
+  //   yield 3;
+  //   yield 4;
+  // }
+  // genFunc()
+
+  // function* iteratorFunc() {
+  //   let count = 0;
+  //   for (let i = 0; i < 2; i++) {
+  //       count++;
+  //       yield i;   
+  //   } 
+  //   return count;
+  // }
+  // let iterator = iteratorFunc();
+  // console.log(iterator.next())
+  // console.log(iterator.next())
+  // console.log(iterator.next())
+  // console.log(iterator.next())
+  // console.log(iterator.next())
+
+  // function* Superb(){
+  //   let count = 0;
+  //   for(let i=0;i<1;i++){
+  //     count++
+  //     yield i 
+  //   }
+  //   return count 
+  // }
+  // let iteratorcount = Superb()
+  // console.log(iteratorcount.next())
+  // console.log(iteratorcount.next())
+  // console.log(iteratorcount.next())
+  // console.log(iteratorcount.next())
+  // console.log(iteratorcount.next())
+
+  // function* Happy(){
+  //   let count = 0
+  //   for(let i=0;i<10;i++){
+  //     count++;
+  //     yield i 
+  //   }
+  //   return count 
+  // }
+  // let countnumberwise = Happy()
+  // console.log(countnumberwise.next())
+  // console.log(countnumberwise.next())
+  // console.log(countnumberwise.next())
+  // console.log(countnumberwise.next())
+  // console.log(countnumberwise.next())
+  // console.log(countnumberwise.next())
+
+//   const map1 = new Map();
+// map1.set('Value', 1);
+// console.log(map1)
+
+// const numbersw = [3,5,2,4,1];
+// let newNumbers = numbersw.reverse();
+// console.log(newNumbers)
+// console.log(newNumbers[2])
+// console.log(newNumbers[1])
+
+// function Superb(array){
+//   return array.filter((item) => item % 2 === 0)
+// }
+// console.log(Superb([1,2,3,3,4,5,5,6,7,8]))
+
+// function Example(array){
+//   const newarr = array.map((item,i) => item + i)
+//   return newarr 
+// }
+// console.log(Example([1,2,3]))
+
+// function multiply(a,b){
+//   return a * b 
+// }
+// function minus(a,b){
+//   return a - b 
+// }
+// function add(a,b){
+//   return a + b 
+// }
+// function divide(a,b){
+//   return a / b 
+// }
+// function currency(fn){
+//   return function(a){
+//     return function(b){
+//       return fn(a,b)
+//     }
+//   }
+// }
+// var example1 = currency(multiply)
+// var example2 = currency(minus)
+// var example3 = currency(add)
+// var example4 = currency(divide)
+// console.log(example1(10)(20))
+// console.log(example2(10)(20))
+// console.log(example3(10)(20))
+// console.log(example4(10)(20))
+
+// const groupwise = ['nitesh','sameet','arvind','sameet','vishal','ashwini','vishal']
+// const nowise = [1,2,2,3,4,5,6,777,88,88]
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// const resultgrpwise = nowise.sort(function(a,b){
+//   if(a<b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(resultgrpwise.filter(distinct))
+
+// console.log(10 === "10");
+
+const classDetails = {
+  strength: 78,
+  benches: 39,
+  blackBoard:1
+}
+
+// const {strength,benches,blackBoard} = classDetails
+// console.log(classDetails)
+// console.log(strength)
+// console.log(benches)
+// console.log(blackBoard)
+// const {strength,...rest} = classDetails
+// console.log(rest)
+
+// array destructing 
+const arr1 = [1, 2, 3, 4];
+// // console.log(...arr1)
+// console.log(arr1[0])
+// console.log(arr1[1])
+// console.log(arr1[2])
+// console.log(arr1[3])
+// the sample example using object destructing
+// const [first,second,...rest] = arr1 
+// console.log(first)
+// console.log(second)
+// console.log(rest)
+
+// x = 24 
+// let x 
+// function Example(){
+//   message = 'hello'
+//   let message 
+// }
+// Example()
+
+// fname = 'nitesh'
+// let fname 
+// function Example(){
+//   sname = 'khatri'
+//   let sname 
+// }
+// Example()
+
+// fname = 'nitesh'
+// const fname 
+// function Example(){
+//   sname = 'khatri'
+//   const sname 
+// }
+// Example()
+
+// var scope = "global scope";
+// function check(){
+//   var scope = 'local scope'
+//   function f(){
+//     return scope
+//   }
+//   return f
+// }
+// console.log(check())
+
+// var scope = 'global scope'
+// function Example(){
+//   var scope = 'local scope'
+//   function f(){
+//     return scope
+//   }
+//   return f 
+// }
+// console.log(Example())
+
+// function func1(){
+//   setTimeout(() => {
+//     console.log(x)
+//     console.log(y)
+//   },500)
+  
+//   var x = 'abc'
+//   let y = 'def'
+// }
+// func1()
+
+// function Example(a){
+//   return function(b){
+//     return function(c){
+//       return function(d){
+//        return a+b+c*d
+//       }
+//     }
+//   }
+// }
+// console.log(Example(10)(20)(30)(40))
+
+// function func2(){
+//   for(var i=0;i<3;i++){
+//     setTimeout(() => console.log(i++),200)
+//   }
+// }
+// func2()
+
+// (function(){
+//   setTimeout(() => console.log(1),500);
+//   console.log(2);
+//   setTimeout(() => console.log(3),200)
+//   console.log(4)
+// })();
+
+// let x= {}, y = {name:"Ronny"},z = {name:"John"};
+// x[y] = {name:"Vivek"};
+// x[z] = {name:"Akki"};
+// console.log(x[y]);
+
+// function runFunc(){
+//   console.log("1" + 1);
+//   console.log("A" - 1);
+//   console.log(2 + "-2" + "2");
+//   console.log("Hello" - "World" + 78);
+//   console.log("Hello"+ "78");
+// }
+// runFunc();
+
+// let a = 0;
+// let b = false;
+// console.log(a === b)
+// console.log(a == b)
+
+// var x = 23;
+// (function(){
+//   var x = 34 
+//   (function random(){
+//     x++;
+//     console.log(x);
+//     var x = 21
+//   })()
+// })()
+
+// function random(){
+//   var x 
+//   x++ 
+//   console.log(x)
+//   x = 21
+// }
+// random()
+
+// let hero = {
+//   powerLevel: 99,
+//   getPower(){
+//     return this.powerLevel;
+//   }
+// }
+// let getPower = hero.getPower;
+// let hero2 = {
+//   powerLevel:42
+// }
+// console.log(getPower())
+// console.log(getPower.apply(hero2))
+
+// const a = function(){
+//   console.log(this);
+//   const b = {
+//     func1:function(){
+//       console.log(this)
+//     }
+//   }
+
+//   const c = {
+//     func2:() => {
+//       console.log(this)
+//     }
+//   }
+//   b.func1()
+//   c.func2()
+// }
+// a();
+
+// const b = {
+//   name:"Vivek",
+//   f: function(){
+//     var self = this;
+//     console.log(this.name);
+//     (function(){
+//       console.log(this.name);
+//       console.log(self.name);
+//     })();
+//   }
+// }
+// b.f();
+
+// (function(a){
+//   return (function(){
+//     console.log(a)
+//     a = 23 
+//   })()
+// })(45);
+
+// function bigFunc(element){
+//   let newArray = new Array(700).fill('heart');
+//   return newArray[element]
+// }
+// console.log(bigFunc(11000))
+// console.log(bigFunc(800))
+
+// function randomFunc(){
+//   for(var i=0;i<2;i++){
+//     setTimeout(() => console.log(i),100)
+//   }
+// }
+// randomFunc()
+
+
+  // var newP = document.createElement('p');
+  // var textNode = document.createTextNode('this is paragraph happy');
+  // newP.appendChild(textNode)
+  // document.getElementById('parent1').appendChild(newP)
+
+
+  // console.log('nitesh khatri'.split("").reverse("").join(""))
+
+  // const vowels = ['a', 'e', 'i', 'o', 'u']
+  // for(let final of vowels){
+  //   console.log(final.toUpperCase())
+  // }
+  // for(let final in vowels){
+  //   console.log(final.toUpperCase())
+  // }
+
+  // let obj1 = { id: "1", name: "user22", age: "26", work: "programmer" };
+  // console.log(Object.keys(obj1))
+  // console.log(Object.values(obj1))
+  // console.log(Object.entries(obj1))
+
+  // const b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  // for(let i=0;i<b.length;i++){
+  //   console.log(b[i])
+  // }
+  // for(var i=0;i<10;i++){
+  //   console.log(b[i])
+  // }
+
+//   var hello = 'Hello!';
+//   function sayHello() {
+//     console.log(hello);
+//   }
+// sayHello();
+
+// function sayHello() {
+//   var hello = 'Hello!';
+//   console.log(hello);
+// }
+//  sayHello()
+
+// function Example(){
+//   var hello = 'nitesh'
+//   console.log(hello)
+// }
+// Example()
+// above code - Variables declared inside a function are local variables. They can only be accessed from within that function; they are not accessible from outside code. An example showing local scope of a variable
+
+// anonymous function => anonymous functions without name used as function expression or a agruments
+// let example = function(name) {
+//   console.log(`this is an example ${name}`)
+// }
+// example('nitesh')
+
+// arrow functions => arrow functions introduced in es6, shorter syntax and one lined functions 
+// let greet = () => console.log('nitesh khatri is arrow function')
+// greet()
+
+// immediately invoked function expression IIFE executed immediately after their creation used to create private scope and avoid polluting the global namespace 
+// (function(){
+//   let str = 'goood evening'
+//   console.log(str)
+// })()
+
+// (function(){
+//   let name = 'nitesh khatri is IIDF'
+//   console.log(name)
+// })()
+
+// higher order function functions that take one or more functions as agruments or return a function 
+// map, filter and reduce
+// let arrwise = [10,20,33]
+// const result = arrwise.map((item )=> item * 2)
+// console.log(result)
+// const result = arrwise.filter((item) => item > 20)
+// console.log(result)
+// const result = arrwise.reduce((a,b) => a+b)
+// console.log(result)
+
+// global scope 
+// var name = 'nitesh khatri'
+// function example(){
+//   console.log(name)
+// }
+// example()
+
+// local or function scope => Variables declared inside a function are local variables. They can only be accessed from within that function; they are not accessible from outside code. An example showing local scope of a variable
+// function example(){
+//   let name = 'nitesh'
+//   console.log(name)
+// }
+// example()
+
+// block scope => Unlike var variables, let and const variables can be scoped to the nearest pair of curly brackets in ES6. They can't be reached from outside that pair of curly braces, which means they can't be accessed from the outside. An example showing the block scope of a variable.
+// {
+//   let hello = 'message is hello'
+//   var language = 'message is english'
+//   var example = 'message is sachin tendulkar'
+//   const happy = 'message is happy'
+// }
+// console.log(language)
+// // console.log(hello)
+// console.log(example)
+// console.log(happy);
+
+// scope chain 
+// let a = 'a'
+// function foo(){
+//   let b ='b'
+//   console.log(b)
+//   console.log(a)
+//   randomNumber = 33 
+//   console.log(randomNumber)
+// }
+// foo()
+
+// Example('tiger')
+// function Example(text){
+//   console.log(text)
+// }
+
+// function Example(a,b,c){
+//   return a+b*c
+// }
+// console.log(Example(10,20,30))
+
+// var arr2 = [13,40,47];
+// var odd = arr2.filter(x => x % 2);
+// console.log(odd)
+
+// let i =0;
+// while(i<10){
+//   console.log(i)
+//   i++
+// }
+
+// let i =0
+// while(i<50){
+//   console.log(i)
+//   i++
+// }
+
+// let i = 0
+// while(i<10){
+//   console.log(i)
+//   i = i + 2
+// }
+
+// for(let i=0;i<10;i++){
+//   if(i === 4){
+//     break;
+//   }
+//   console.log(i)
+// }
+
+// for(let i=0;i<10;i++){
+//   if(i === 4){
+//     continue;
+//   }
+//   console.log(i)
+// }
+
+// var a= "11";  
+// var counter = 22;  
+// const result = a + counter 
+// console.log(result)
+
+// block scope 
+// {
+//   let example1 = 'hello example'
+//   const example2 = 'hello example2'
+//   var example3 = 'hello example3'
+//   console.log(example2)
+// }
+// console.log(example1)
+// console.log(example2)
+// console.log(example3)
+// function Example(){
+//   let superb = 'superb'
+//   console.log(superb)
+// }
+// Example()
+
+// var name = 'nitesh khatri'
+// function printMe(){
+//   console.log(name)
+// }
+// printMe()
+
+// console.log(num)
+// var num = 20
+// num = 30
+
+// const person = {
+//   fullName(name,age){
+//     console.log(`Full form is ${name} ${age}`)
+//   }
+// }
+// console.log(person.fullName.call(null,'sameet',41))
+
+// const nwose = [11,22,33]
+// console.log(Math.max.apply(null,nwose))
+// console.log(Math.min.apply(null,nwose))
+
+// [1,2,3,4,5].forEach(v => {
+//   if(v % 2 === 0){
+//     return
+//   }
+//   console.log(v)
+// })
+
+// let array = [1, 2, 3, 4, 5];
+// let max = 0
+// array.forEach((ele) => {
+//   if(ele > max){
+//     max = v 
+//   }
+// })
+// console.log(max)
+
+// const array1 = ['a', 'b', 'c'];
+// array1.forEach((item) => console.log(item))
+
