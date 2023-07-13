@@ -13279,3 +13279,45 @@ const arr1 = [1, 2, 3, 4];
 // const array1 = ['a', 'b', 'c'];
 // array1.forEach((item) => console.log(item))
 
+// console.log(1 + - 1 + 1 - - 1);
+
+// const numberswise = [1,2,3,4,5]
+// const [y] = numberswise
+// console.log(y)
+
+// console.log(['n'] === ['n'])
+
+// console.log(0 === 0)
+
+// console.log(false === false)
+// console.log(true === true)
+// console.log(false !== false)
+
+const smile = [55,46,111,22,98,[55,25],[88]]
+// console.log(smile.push(99))
+// console.log(smile.unshift(45))
+// console.log(smile.pop())
+// console.log(smile.shift())
+// console.log(smile.filter((val) => val > 55))
+// console.log(smile.map((val) => val))
+// console.log(smile.join('-'))
+// console.log(smile.concat([55,125,130]))
+// console.log(smile.flat())
+// // console.log(smile.slice(1,3))
+// console.log(smile.some((val) => val > 55))
+// console.log(smile.every((val) => val > 55))
+// console.log(smile.find((val) => val > 55))
+// console.log(smile.findIndex((val) => val > 55))
+// console.log(smile.indexOf((val) => val > 55))
+// console.log(smile.includes((val) => val === 55))
+// console.log(smile.at(6))
+// console.log(smile.sort((a,b) => a-b)) // ascending
+// console.log(smile.sort((a,b) => b-a)) // descending
+// console.log(smile.reverse())
+// console.log(smile.fill(11111))
+// console.log(smile.splice(1,4,'nitesh'))
+// console.log(smile.findLastIndex((val) => val === 111))
+// console.log(smile.findLast((val) => val === 111))
+
+
+
