@@ -20,6 +20,7 @@ body {
 
   img{
     -webkit-box-reflect:right;
+    max-width: 100%;
   }
 /*   
   div {

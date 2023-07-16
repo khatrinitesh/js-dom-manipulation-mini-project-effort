@@ -13293,7 +13293,7 @@ const arr1 = [1, 2, 3, 4];
 // console.log(true === true)
 // console.log(false !== false)
 
-const smile = [55,46,111,22,98,[55,25],[88]]
+// const smile = [55,46,111,22,98,[55,25],[88]]
 // console.log(smile.push(99))
 // console.log(smile.unshift(45))
 // console.log(smile.pop())
@@ -13320,4 +13320,223 @@ const smile = [55,46,111,22,98,[55,25],[88]]
 // console.log(smile.findLast((val) => val === 111))
 
 
+// function myFunction() {
+//   let a = 4;
+//   console.log(a *a)
+// }
+// myFunction()
 
+// let a = 4
+// function myFunction(){
+//   console.log(a *a )
+// }
+// myFunction()
+
+// let counter = 0;
+// function add(){
+//   console.log(counter += 1)
+// }
+// add()
+// add()
+// add()
+// add()
+
+// let counter = 0
+// function Example(){
+//   console.log(counter += 1)
+// }
+// Example()
+// Example()
+// Example()
+// Example()
+
+// function init(){
+//   var name = 'nitesh'
+//   function displayName(){
+//     console.log(name)
+//   }
+//   displayName()
+// }
+// init()
+
+// function start(){
+//   var name = 'nitesh'
+//   function displaystart(){
+//     console.log(name)
+//   }
+//   displaystart()
+// }
+// start()
+
+// if(Math.random() > 0.5){
+//   var x = 1
+// }
+// else{
+//   var x = 2
+// }
+// console.log(x)
+
+// (function example(){
+//   console.log('nitesh')
+//   function happy(){
+//     console.log('sameet')
+//   })
+// })()
+
+// (function Example(){
+//   const name = 'nitesh khatri'
+//   function Inside(){
+//     console.log(name)
+//   }
+//   return Inside()
+// })()
+// const happy = Example()
+// happy()
+
+// function result(a){
+//   return function(b){
+//     return function(c){
+//       return function(d){
+//         return a+b+c*d
+//       }
+//     }
+//   }
+// }
+// console.log(result(10)(20)(30)(50))
+
+// let promise = new Promise((resolve,reject) => {
+//   let value = 35
+//   if(value > 20){
+//     console.log('yes')
+//   }
+//   else{
+//     console.log('no')
+//   }
+// })
+// async function Example(){
+//   let result = await promise 
+//   console.log(result)
+// }
+// Example()
+
+// const p1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the first promise has resolved');
+//     resolve(10);
+//   },1*1000);
+// });
+
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the second promise has resolved');
+//     resolve(20);
+//   },2*1000)
+// });
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the third promise has been resolved');
+//     resolve(30) 
+//   },3*1000)
+// });
+// Promise.all([p1,p2,p3]).then((results) => {
+//   const total = results.reduce((a,b) => a+b)
+//   console.log(`Results: ${results}`)
+//   console.log(`Total: ${total}`)
+// })
+
+// const p1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the first promise has been resolved');
+//     resolve(10);
+//   },1*1000)
+// })
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the second promise has been resolved');
+//     resolve(20)
+//   },2*1000)
+// })
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the third promise has been resolved');
+//     resolve(30)
+//   },3*1000)
+// })
+// Promise.all([p1,p2,p3]).then((results) => {
+//   const total = results.reduce((a,b) => a+b)
+//   console.log(`Results ${results}`)
+//   console.log(`Total ${total}`)
+// })
+
+// const p1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the first promise has been resolved');
+//     resolve(10)
+//   },1*1000)
+// })
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the second promise has been rejected')
+//     reject('failed')
+//   },2*1000)
+// })
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     console.log('the third promise has been resolved');
+//     resolve(30)
+//   },3*1000)
+// })
+// Promise.all([p1,p2,p3]).then((results) => console.log(results))
+
+// what is the output of the following code?
+// const cmd = 'git clone twitter threads'
+// console.log(cmd.slice(10,17))
+
+// fetch('https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr',{
+//     method: 'GET',
+// 	headers: {
+// 		'X-RapidAPI-Host': 'imdb8.p.rapidapi.com',
+// 		'X-RapidAPI-Key': 'b33c73dbf3msh6cf91065eab6867p177a37jsnbeffe3c0615f'
+// 	}
+// })
+// .then((response) => response.json())
+// .then((data) => {
+//   const list = data.d;
+//   list.map((item) => {
+//     console.log(item)
+//     const name = item.l
+//     const serial = item.q
+//     const poster = item.i.imageUrl;
+//     const movie = `<li><img src="${poster}"/> <h2>${name} - ${serial}</h2></li>`
+//     document.querySelector(".movies").innerHTML += movie;
+//   })
+// })
+// .catch(error => {
+//     console.log(error)
+// })
+// console.log (greeter);
+// var greeter = "say hello"
+
+// var greeter;
+// console.log(greeter); // greeter is undefined
+// greeter = "say hello"
+
+// var greeter 
+// function Example(){
+//   console.log(greeter)
+// }
+// var greeter = 'it is greeter'
+// Example()
+// console.log('polyfill of prmise.race')
+// const p1 = new Promise((resolve,reject) => {
+//   resolve('success')
+// })
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     // api call
+//     resolve('failed')
+//   },100)
+// })
+// const p3 = 10
+
+// Promise.race([p1,p2,p3]).then((data) => console.log(data)).catch(e => console.error(data))
