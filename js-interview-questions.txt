@@ -52,4 +52,5 @@
 - What are the primitive data types in JavaScript?
 - What has to be done in order to put Lexical Scoping into practice?
 - what is the diff between javascript and jquery?
-- what is the dom?
+- what is the dom?'
+- what is the primitive and reference data types in javascript?

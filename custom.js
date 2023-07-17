@@ -13540,3 +13540,345 @@ const arr1 = [1, 2, 3, 4];
 // const p3 = 10
 
 // Promise.race([p1,p2,p3]).then((data) => console.log(data)).catch(e => console.error(data))
+
+
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// const groupwise = [1,222,222,33,44,55]
+// const namewise = ['nitesh','nitesh','sameet','urvashi','urvashi']
+// console.log(groupwise.filter(distinct))
+// console.log(namewise.filter(distinct))
+// console.log([...new Set(namewise)])
+// console.log([...new Set(groupwise)])
+// console.log(Array.from([...new Set(groupwise)]))
+// console.log(Array.from([...new Set(namewise)]))
+
+const person = [
+  {id:1,name:'nitesh',age:34},
+  {id:2,name:'sameet',age:41},
+  {id:3,name:'urvashi',age:65},
+  {id:4,name:'arvind',age:68},
+  {id:5,name:'nitesh',age:34},
+]
+
+// const sortdsc = person.sort((a,b) => {
+//   if(a.name>b.name){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(sortdsc)
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// const sortasc = person.sort((a,b) => {
+//   if(a.name<b.name && a.age < b.age){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(sortasc)
+// const resultperson = person.filter((item) => item.age > 45)
+// console.log(resultperson)
+// const resultpersonname = person.filter((item) => item.id > 2)
+// console.log(resultpersonname)
+
+// console.log('nitesh khatri'.repeat(2))
+// console.log('nitesh'.replace('nitesh','sameeet'))
+// console.log('nitesh'.split('').reverse('').join(''))
+
+// const mood = 'nitesh'
+// console.log(`i feel ${mood.repeat(3)}`)
+
+// const a = 'nitesh'
+// function Example(){
+//   console.log(a)
+//   const a = 'sameet'
+// }
+// Example()
+
+// function example(){
+//   if(true){
+//     var x = 5 
+//   }
+//   console.log(x)
+// }
+// example()
+
+// function example(){
+//   if(true){
+//     let x = 5 
+//     console.log(x)
+//   }
+//   console.log(x)
+// }
+// example()
+
+// function One(a){
+//   return function(b){
+//     return function(c){
+//       return function(d){
+//         return a + b + c * d 
+//       }
+//     }
+//   }
+// }
+// console.log(One(1)(2)(3)(10))
+
+// function One(){
+//   var name = 'nitesh khatri'
+//   function Two(){
+//     console.log(name)
+//   }
+//   Two()
+// }
+// One()
+
+// const p1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve('nitesh khatri')
+//   },1000)
+// })
+// const p2 = 1100
+// const p3 = 'nitesh khatr'
+// Promise.all([p1,p2,p3]).then((data) => console.log(data))
+// console.log([10] === [10])
+// console.log(8 + + '10')
+
+
+// console.log('nitesh')
+// console.log([1,1,2,3,4,5])
+// const array = [1,22,33,44]
+// console.log(array.push(1))
+
+// different data types in JavaScript
+// const n1 = 42
+// const n2 = '3.14'
+// console.log(n1)
+// console.log(n2)
+
+// const string1 = 'nitesh'
+// const string2 = `javascript`
+// console.log(string1)
+// console.log(string2)
+
+// console.log(10>2)
+
+// var a 
+// console.log(a)
+
+// const null1 = {name:'nitesh'}
+// console.log(typeof null1)
+// console.log(Object.keys(null1))
+// console.log(Object.values(null1))
+
+// const arrgroup = ['nitesh','sameet','arvind','urvashi']
+// console.log(arrgroup)
+
+// function Example(){
+//   console.log('this is an example')
+// }
+// Example()
+
+// declare a variable in JavaScript
+// var greeting = 'greeting is variable'
+// console.log(greeting)
+
+// let count  = 10
+// console.log(count)
+
+// const PI = 3.14
+// console.log(PI)
+
+// difference between let, const, and var
+// >> temporal dead zone
+// function myFun(){
+//   const greeting = 'hi'
+//   console.log(`${greeting} ${name}`)
+//   const name = 'nitesh'
+// }
+// myFun()
+
+// hoisting work in JavaScript
+// console.log(x)
+// var x = 5 
+// console.log(x)
+
+// foo()
+// function foo(){
+//   console.log('hello world')
+// }
+
+// console.log(x)
+// x = 5 
+
+// function greet(){
+//   console.log('nitesh khatri is greeting')
+// }
+// greet()
+
+// var greet 
+// greet()
+// greet = function(){
+//   console.log('hello')
+// }
+
+// closures in JavaScript
+// function outerFunction(){
+//   var outputname = 'i am from the outer function'
+//   function innerFunction(){
+//     console.log(outputname)
+//   }
+//   return innerFunction;
+// }
+// var closure = outerFunction()
+// closure();
+
+// function OuterFunction(){
+//   var name = 'nitesh khatri'
+//   function innerFunction(){
+//     console.log(name)
+//   }
+//   return innerFunction;
+// }
+// const result = OuterFunction()
+// result()
+
+// callbacks in JavaScript
+// function greeting(name,callback11){
+//   console.log('hello', + name + '!');
+//   callback11();
+// }
+// function sayGoodBye(){
+//   console.log('goodbye')
+// }
+// greeting('nitesh',sayGoodBye)
+
+// function Example(name,callback){
+//   console.log(`hello ${name}`)
+//   callback()
+// }
+// function sayGoodBye(){
+//   console.log('Goodbye');
+// }
+// Example('nitesh',sayGoodBye)
+
+// function Example(name,callback){
+//   console.log(`Hello ${name}`);
+//   callback()
+// }
+// function sayGoodBye(){
+//   console.log('sayGoodBye')
+// }
+// Example('nitesh',sayGoodBye)
+
+// Promises in JavaScript
+// const fetchData = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     const data = {
+//       message:'date fetch successfully'
+//     }
+//     resolve(data)
+//   },20)
+// })
+// fetchData.then((data) => console.log(data.message)).catch((error) => console.log(error.message))
+
+// const FetchData = new Promise((resolve,reject) => {
+//   let value = 50
+//   setTimeout(() => {
+//     if(value > 30){
+//       resolve('yes')
+//     }
+//     else{
+//       reject('no')
+//     }
+//   },20)
+// })
+// FetchData.then((data) => console.log(data)).catch((error) => console.log(error))
+
+// var x = 10;
+// var y = "5";
+
+// if (x === y) {
+//  console.log("Option A");
+// } else if (x == y) {
+//  console.log("Option B");
+// } else if (x > y) {
+//  console.log("Option C");
+// } else {
+//  console.log("Option D");
+// }
+
+// const p1 = 'nitesh khatri'
+// const p2 = Promise.resolve('sameet khatri')
+// const p3 = 5555
+// Promise.all([p1,p2,p3]).then((data) => console.log(data))
+
+// function fetchData(){
+//   return new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//       const data = 'some fetched data'
+//       if(data){
+//         resolve(data)
+//       }
+//       reject('data is not found')
+//     },100)
+//   })
+// }
+// fetchData().then((value) => console.log(value)).catch((error) => console.log(error));
+
+// async function fetchData(){
+//   return new Promise((resolve,reject) => {
+//     setTimeout(() => {
+//       const data = 'some fetched data'
+//       if(data){
+//         resolve(data)
+//       }
+//       reject('data is not found')
+//     },100)
+//   })
+// }
+// fetchData().then((result) => console.log(result)).catch((error) => console.log(error))
+
+// handle errors in JavaScript
+// function divide(a,b){
+//   if(b===0){
+//     throw new Error('division by zero');
+//   }
+//   return a /b 
+// }
+// divide(10,20)
+
+// function Person(name,age,city){
+//   this.Name = name;
+//   this.Age = age;
+//   this.City = city;
+// }
+// const person1 = new Person('nitesh',34,'mumbai')
+// console.log(person1)
+
+// class Person{
+//   constructor(name,age,city){
+//     this.Name = name;
+//     this.Age = age;
+//     this.City = city;
+//   }
+// }
+
+// const person1 = new Person('nitesh',34,'mumbai')
+// console.log(person1)
+
+const Person = {
+  name:"nitesh",
+  age:34,
+  city:'mumbai',
+  getfull: function(){
+    console.log(`hello ${this.name} ${this.age} ${this.city}`)
+  }
+}
+Person.getfull()
