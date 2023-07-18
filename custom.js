@@ -13554,13 +13554,13 @@ const arr1 = [1, 2, 3, 4];
 // console.log(Array.from([...new Set(groupwise)]))
 // console.log(Array.from([...new Set(namewise)]))
 
-const person = [
-  {id:1,name:'nitesh',age:34},
-  {id:2,name:'sameet',age:41},
-  {id:3,name:'urvashi',age:65},
-  {id:4,name:'arvind',age:68},
-  {id:5,name:'nitesh',age:34},
-]
+// const person = [
+//   {id:1,name:'nitesh',age:34},
+//   {id:2,name:'sameet',age:41},
+//   {id:3,name:'urvashi',age:65},
+//   {id:4,name:'arvind',age:68},
+//   {id:5,name:'nitesh',age:34},
+// ]
 
 // const sortdsc = person.sort((a,b) => {
 //   if(a.name>b.name){
@@ -13873,12 +13873,371 @@ const person = [
 // const person1 = new Person('nitesh',34,'mumbai')
 // console.log(person1)
 
-const Person = {
-  name:"nitesh",
-  age:34,
-  city:'mumbai',
-  getfull: function(){
-    console.log(`hello ${this.name} ${this.age} ${this.city}`)
-  }
+// const Person = {
+//   name:"nitesh",
+//   age:34,
+//   city:'mumbai',
+//   getfull: function(){
+//     console.log(`hello ${this.name} ${this.age} ${this.city}`)
+//   }
+// }
+// Person.getfull()
+
+// arithmetic operators
+// addition
+// subtraction 
+// multiple
+// division
+// remainder
+// exponentation
+// equal to
+// not equal to 
+// strict equal to 
+// strict not equal to 
+// greater than
+// less than
+// greater than or equal to 
+// less than or equal to
+// logical &&
+// logical ||
+// logical !
+// bitwise and 
+// bitwise |
+// bitwise ^
+// bitwise ~
+// bitwise <<
+// bitwise >>
+// unary plus
+// unary minus
+// incrment ++
+// decrement -- 
+// logical not !
+// typeof 
+// ternary operator 
+
+// difference between null and undefined in 
+// let x 
+// console.log(x)
+
+// function greet(name){
+//   console.log(`HELLO ${name}`)
+// }
+// greet('nitesh')
+
+// let user = null;
+// console.log(user)
+
+// let person = {
+//   name:'nitesh',
+//   age:34
+// }
+// delete person.age
+// console.log(person)
+
+// class Example{
+//   constructor(name,age){
+//     this.Name=name,
+//     this.Age=age
+//   }
+// }
+// let p1 = new Example('nitesh',34)
+// let p2 = new Example('sameet',41)
+// console.log({...p1,...p2})
+
+// let value = null
+// if(value === null){
+//   console.log('value is null')
+// }
+// else{
+//   console.log('value is not null')
+// }
+
+
+// function Outer(){
+//   var name = 'nitesh khatri'
+//   function Inner(){
+//     console.log(name)
+//   }
+//   return Inner;
+// }
+// var result = Outer()
+// result()
+
+// function Example(name,callback){
+//   console.log(`hello ${name}`) 
+//   callback()
+// }
+// function GoodBye(){
+//   console.log('Goodbye')
+// }
+// Example('nitesh',GoodBye)
+
+// function fetchData(callback){
+//   setTimeout(function(){
+//     const data = 'some data';
+//     callback(data)
+//   },100)
+// }
+// function processData(data){
+//   console.log('processing data',data)
+// }
+// fetchData(processData)
+
+// function fetchData(callback){
+//   setTimeout(function(){
+//     const data = 'some data'
+//     callback(data)
+//   },100)
+// }
+// function processData(data){
+//   console.log('processing data',data)
+// }
+// fetchData(processData)
+
+// function fetchData(){
+//   return new Promise(function(resolve,reject) {
+//     setTimeout(function(){
+//       const data = 'some fetched data'
+//       resolve(data)
+//     },1000)
+//   })
+// }
+// function processData(data){
+//   console.log('processing data',data)
+// }
+// fetchData().then(processData).catch(function(error) {console.log('error',error)})
+
+// function fetchData(){
+//   return new Promise(function(resolve,reject){
+//     setTimeout(function() {
+//       const data = 'some fetched data'
+//       resolve(data)
+//     },100)
+//   })
+// }
+// function processData(data){
+//   console.log('processing data',data)
+// }
+// fetchData().then(processData).catch(function(error) {console.log('error',error)})
+
+// const p1 = 'nitesh khatri'
+// const p2 = Promise.resolve('sameet khatri')
+// const p3 = 123456
+// Promise.all([p1,p2,p3]).then((data) => console.log(data))
+
+// function myFnc(){
+//   const name = 'nitesh'
+//   console.log(`hello ${name} ${age}`)
+//   const age = 34
+// }
+// myFnc();
+
+// event loop 
+// console.log('start')
+// setTimeout(function(){
+//   console.log('timeout callback')
+// },100)
+// Promise.resolve().then(function(){
+//   console.log('promise resolved')
+// });
+// console.log('end')
+
+// console.log('start')
+// setTimeout(function(){
+//   console.log('timeout callback')
+// },100)
+// Promise.resolve().then(function(){
+//   console.log('promise resolved')
+// })
+// console.log('end')
+
+// console.log('start')
+// setTimeout(function(){
+//   console.log('timeout callback')
+// },1000)
+// Promise.resolve().then(function(){
+//   console.log('promise resolved')
+// })
+// console.log('end')
+
+// difference between call, apply, and bind methods 
+// function greet(name){
+//   console.log(`hello ${name}`)
+// }
+// greet.call(null,'nitesh')
+
+// function Example(name,age){
+//   console.log(`hello ${name} ${age}`)
+// }
+// Example.call(null,'nitesh',34)
+
+// function Example(name,age,email){
+//   console.log(`Hello ${name} ${age} ${email}`)
+// }
+// Example.apply(null,['nitesh',34,'nitesh.khatri88@gmail.com'])
+
+// function greet(name){
+//   console.log(`hello ${name}`)
+// }
+// const greetNew = greet.bind(null,'nitesh')
+// greetNew()
+
+
+// function result(name,age){
+//   console.log(`hello ${name} ${age}`)
+// }
+// const final = result.bind(null,'nitesh',34)
+// final()
+
+// function Example(name,age){
+//   console.log(`hello ${name} ${age}`)
+// }
+// Example.apply(null,['nitesh',34])
+
+// function Example(name,age){
+//   console.log(`hello ${name} ${age}`)
+// }
+// const final = Example.bind(null,'nitesh',34)
+// final()
+
+// create a class in JavaScript
+// class Person{
+//   constructor(name,age,city){
+//     this.Name = name
+//     this.Age = age
+//     this.City = city
+//   }
+// }
+// let n1 = new Person('nitesh',34,'mumbai')
+// let n2 = new Person('sameet',41,'usa')
+// let n3 = new Person('mayur',47,'dubai')
+// console.log({...n1},{...n2},{...n3})
+
+// arrow functions in JavaScript
+// const happynum = [1,2,3,4,5]
+// const doubled = happynum.map((item) => item *2)
+// console.log(doubled)
+
+// template literals in JavaScript
+// const name = 'John';
+// const greeting = `Hello, ${name}!`;
+// console.log(name)
+// console.log(greeting)
+
+// const multiline = `
+//   This is a
+//   multiline
+//   string.
+// `;
+// console.log(multiline)
+
+// const a = 5;
+// const b = 10;
+// const sum = `the sum of ${a} and ${b} is ${a+b}`
+// console.log(a)
+// console.log(b)
+// console.log(sum)
+
+// function customTag(strings,...values){
+//   console.log(strings)
+//   console.log(values)
+//   return strings[0] + values[0].toUpperCase() + strings[1]
+// }
+// const name  = 'nitesh'
+// const result = customTag`hello, ${name}`
+// console.log(result)
+
+// rest and spread operators
+// function sum(...numbers){
+//   return numbers.reduce((acc,val) => acc + val,0)
+// }
+// console.log(sum(1,2,3,4,5,6,7,8))
+
+// function final(...numbers){
+//   return numbers.reduce((a,b) => a+b,0)
+// }
+// console.log(final(1,2,3,4,5,66))
+
+// const numbersww = [1, 2, 3, 4, 5];
+// console.log(numbersww)
+
+// const numbersCopy = [...numbersww]
+// console.log(...numbersCopy)
+
+// const arrn1 = [1, 2, 3];
+// const arrn2 = [4, 5, 6];
+// console.log([...arrn1,...arrn2])
+
+// const obj1 = { x: 1, y: 2 };
+// const obj2 = { z: 3 };
+// console.log({...obj1,...obj2})
+
+// const arr11 = [0, ...numbers, 6, 7];
+// console.log(arr11.filter(Boolean))
+
+// const result = ['nitesh',1,21,3,null,undefined,false,true]
+// console.log(result.filter(Boolean))
+
+// object destructuring in JavaScript
+const person = {
+  name: 'John',
+  age: 30,
+  country: 'USA'
+};
+// const {name,age} = person 
+// console.log(name)
+// console.log(age)
+
+// const { name, age, country = 'Unknown' } = person;
+// console.log(name)
+// console.log(age)
+// console.log(country)
+// const {name:fullName,age:Age} = person 
+// console.log(fullName)
+// console.log(Age)
+
+// var x = 1 
+// function foo(){
+//   var x = 2 
+//   if(true){
+//     console.log(x)
+//   }
+// }
+// foo()
+
+// handle date and time in JavaScript
+const date = new Date()
+// console.log(date.toLocaleString('en-US'))
+// console.log(date)
+// console.log(date.getFullYear())
+// console.log(date.getMonth())
+// console.log(date.getHours())
+// console.log(date.getMilliseconds())
+
+// const personnew = {
+//   name:'nitesh is good human'
+// }
+// console.log(personnew)
+
+// const employee = {
+//   jobtitle:"FE developer"
+// }
+// employee.__proto__ = personnew 
+// console.log(employee)
+// console.log(employee.name)
+// Object.setPrototypeOf(employee,personnew)
+// const superb = {
+//   name:'nitesh is superb'
+// }
+// const newcompany = {
+//   jobtitle:"UI developer"
+// }
+// newcompany.__proto__ = superb
+// console.log(newcompany,newcompany.jobtitle)
+
+function Person(name){
+  this.name = name
 }
-Person.getfull()
+Person.prototype.sayHello = function(){
+  console.log(`hello, my name is ${name}`)
+}

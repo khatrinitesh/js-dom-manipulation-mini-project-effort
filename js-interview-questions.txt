@@ -15,7 +15,6 @@
 - How do you use this keyword in JavaScript?
 - What is the difference between call, apply, and bind methods in JavaScript?
 - How do you create a class in JavaScript?
-- What is the difference between E85 and E86?
 - What are arrow functions in JavaScript?   
 - What is template literals in JavaScript?
 - What are rest and spread operators in JavaScript?
