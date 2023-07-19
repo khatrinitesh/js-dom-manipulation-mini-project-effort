@@ -14361,4 +14361,21 @@ const date = new Date()
 //   return total + value
 // }
 
+// different ways to create a function
+// declaration 
+// function add(a,b){
+//   return a+b 
+// }
+// console.log(add(10,20))
 
+// expression
+// const add = function(a,b){
+//   return a+b 
+// }
+// console.log(add(10,20))
+
+// arrow
+// const add =(a,b) => {
+//   return a + b 
+// }
+// console.log(add(20,30))
