@@ -14235,9 +14235,130 @@ const date = new Date()
 // newcompany.__proto__ = superb
 // console.log(newcompany,newcompany.jobtitle)
 
-function Person(name){
-  this.name = name
-}
-Person.prototype.sayHello = function(){
-  console.log(`hello, my name is ${name}`)
-}
+// function Person(name){
+//   this.name = name
+// }
+// Person.prototype.sayHello = function(){
+//   console.log(`hello, my name is ${name}`)
+// }
+// handle regular expressions 
+// const regex = new RegExp(/^n....h$/);
+// console.log(regex.test('nitesh'))
+
+// const groupwise = ['nitesh','nitesh','sameet','arvind']
+// console.log(groupwise.fill('filled'))
+// console.log(groupwise.some('nitesh'))
+// const resultwise = groupwise.filter((val) => val !== 'nitesh')
+// console.log(resultwise)
+// const resultwise = groupwise.filter((val) => val === 'nitesh')
+// const distinct = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// console.log(resultwise.filter(distinct))
+// const dscsort = groupwise.sort(function(a,b) {
+//   if(a>b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(dscsort.filter(distinct))
+// const ascsort = groupwise.sort(function(a,b) {
+//   if(a<b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(ascsort.filter(distinct))
+
+// a test function: returns an even number
+// function isEven(elementeven){
+//   return elementeven % 2 === 0
+// }
+// function isOdd(elementodd){
+//   return elementodd % 2 !== 0
+// }
+// defining an array
+// let numberswise = [1, 3, 2, 5, 4];
+// console.log(numberswise.some(isEven))
+// console.log(numberswise.some(isOdd))
+// console.log(numberswise.every(isEven))
+// console.log(numberswise.every(isOdd))
+
+
+// even
+// const resulteven = [1,2,3,4,5,6,7,8,9,10].filter((val) => val % 2 === 0)
+// console.log(resulteven)
+// odd
+// const resultodd = [1,2,3,4,5,6,7,8,9,10].filter((val) => val % 2 !== 0)
+// console.log(resultodd)
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// arrayword.push(111)
+// console.log(arrayword)
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// arrayword.pop()
+// console.log(arrayword)
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// arrayword.shift()
+// console.log(arrayword)
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// arrayword.unshift(111)
+// console.log(arrayword)
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.concat(2,2,2,2,3,4,5))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.join('-'))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.slice(1))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.indexOf(111))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.includes(7))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.find((n) => n % 8 === 0))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.findIndex((n) => n % 5 === 0))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.map((n) => n % 2 !== 0))
+
+// const arrayword = [1,2,3,4,5,6,7,8,9,10]
+// console.log(arrayword.filter((n) => n % 8 === 0))
+
+// a test function: returns age that is less that 18
+// function checkMinor(age) {
+//   return age < 18;
+// }
+// const ageArray = [34,23,20,26,12]
+// let check = ageArray.some(checkMinor);
+// console.log(check)
+
+// const groupwise = [44,55,66,12,3,333,444]
+// const filtergroupwise1 = groupwise.reduce((a,b) => a+b)
+// console.log(filtergroupwise1)
+
+// const filtergroupwise2 = groupwise.reduceRight((a,b) => a+b)
+// console.log(filtergroupwise2)
+
+// var nowse = [45,4,9,16,24]
+// var sum = nowse.reduce(myFunction);
+// document.getElementById('demonew').innerHTML = 'the sum is ' + sum
+// function myFunction(total,val,index,array){
+//   return total + value
+// }
+
+
