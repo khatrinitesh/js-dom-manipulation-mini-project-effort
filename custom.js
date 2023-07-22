@@ -14379,3 +14379,19 @@ const date = new Date()
 //   return a + b 
 // }
 // console.log(add(20,30))
+
+// const Happy = new Promise((resolve,reject) => {
+//   const sum = 1+1 
+//   if(sum == 2){
+//     resolve('nitesh')
+//   }
+//   reject('sameet')
+// })
+// Promise.all([Happy]).then((val) => console.log(val))
+
+// Promise.all([Promise.resolve('Good1'),Promise.resolve('Good2'),Promise.reject('Good3')])
+// .then((val) => console.log(val))
+// .catch((val) => console.error(val))
+
+// console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())
+
