@@ -14395,3 +14395,52 @@ const date = new Date()
 
 // console.log(('b' + 'a' + + 'a' + 'a').toLowerCase())
 
+// object destructing 
+// let student = {
+//  name:'nitesh',
+//  age:34,
+//  course:"Computer Science"
+// }
+// let studentName = student.name
+// let studentAge = student.age
+// let studentCourse = student.course 
+
+// console.log(studentName)
+// console.log(studentAge)
+// console.log(studentCourse)
+
+// array destructing
+let colors = ['red','blue','green']
+
+// below normal destructing
+// let fColor = colors[0]
+// let sColor = colors[1]
+// let tColor = colors[2]
+// console.log(fColor)
+// console.log(sColor)
+// console.log(tColor)
+// below array destructing
+// const [fColor,sColor,tColor] = colors 
+// console.log(fColor)
+// console.log(sColor)
+// console.log(tColor)
+
+// const fruits = ['apple', 'banana', 'orange'];
+// fruits[3] = 'grape';
+// console.log(fruits.length);
+
+// const myString = "Hello, World!";
+// const result = myString.substring(0, 5);
+// console.log(result);
+
+// console.log('start');
+// const promise1 = new Promise((resolve,reject) => {
+//   console.log(1)
+// })
+// console.log(promise1)
+
+
+
+
+
+
