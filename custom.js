@@ -14439,8 +14439,72 @@ let colors = ['red','blue','green']
 // })
 // console.log(promise1)
 
+// const usersArray = [
+//   { name: 'Alice', age: 25 },
+//   { name: 'Bob', age: 30 },
+//   { name: 'Charlie', age: 22 },
+// ];
 
+// const result = usersArray.map((val) => ({[val.name]:val.age}))
+// console.log(result)
 
+// const fruits = ['apple', 'banana', 'orange'];
+// const fruitObject = fruits.map((val,index) => ({
+//   id:index+1,
+//   name:val
+// }))
+// console.log(fruitObject)
 
+// const products = [
+//   { id: 1, name: 'Laptop', price: 1000, category: 'Electronics' },
+//   { id: 2, name: 'Smartphone', price: 800, category: 'Electronics' },
+//   { id: 3, name: 'Chair', price: 150, category: 'Furniture' },
+//   { id: 4, name: 'Tablet', price: 500, category: 'Electronics' },
+//   { id: 5, name: 'Desk', price: 250, category: 'Furniture' }
+// ];
+// const electronicProducts = products.filter((product) => product.category === 'Electronics')
+// console.log(electronicProducts)
 
+// const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi'];
+// fruits.splice(2,2)
+// console.log(fruits)
 
+// const colors1 = ['red', 'green', 'blue'];
+// colors1.splice(1,0,'yellow','orange')
+// console.log(colors1)
+
+// const animals = ['dog', 'cat', 'elephant', 'tiger'];
+// animals.splice(1,2,'lion','zebra')
+// console.log(animals)
+
+// const fruits = ['apple', 'banana', 'orange', 'grape', 'kiwi','apple'];
+// const numwise = [1,22,33,44,55,77,888,99,66,55,44,55]
+// console.log([...new Set(fruits)])
+// console.log(Array.from([...new Set(fruits)]))
+// const distinctarray = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// console.log(fruits.filter(distinctarray))
+// console.log(numwise.filter(distinctarray))
+// const orangeIndexOf = fruits.indexOf('orange')
+// console.log(orangeIndexOf)
+// const pearIndex = fruits.indexOf('pear')
+// console.log(pearIndex)
+
+// console.log(5 == '5')
+// console.log(5 === '5')
+// console.log(5 !== '5')
+// console.log(5 !== 5)
+
+// const multiply = function(a,b){
+//   return a *b 
+// }
+// console.log(multiply(10,20))
+
+// const divide = (a,b) => a+b 
+// console.log(divide(10,20))
+
+// const number = [1,2,3,4,5]
+// number.forEach((val) => console.log(val))
+
+// font-family:'Open Sans'
