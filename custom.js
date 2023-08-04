@@ -14508,3 +14508,69 @@ let colors = ['red','blue','green']
 // number.forEach((val) => console.log(val))
 
 // font-family:'Open Sans'
+
+// function square(number){
+//   return number * number 
+// }
+// function withLogging(func){
+//   return function(...args){
+//     console.log(`Calling function with arguments: ${args}`)
+//     const result = func (...args);
+//     console.log(`Function result: ${result}`)
+//     return result;
+//   }
+// }
+// const enhancedSquare = withLogging(square)
+// const result = enhancedSquare(5);
+// console.log(result)
+
+// function addThreeNumbers(a,b,c){
+//   return a + b + c 
+// }
+// function curryAdd(a){
+//   return function (b){
+//     return function (c){
+//       return a + b + c 
+//     }
+//   }
+// }
+// const one = curryAdd(5)
+// const example = one(22)
+// console.log(example(222))
+
+// function add(a){
+//   return function(b){
+//     return function(c){
+//       return a + b +c 
+//     }
+//   }
+// }
+// const add1 = add(1)
+// const add2 = add(2)
+// console.log(result)
+
+// const result = add(1)(2)(3)
+// console.log(result)
+// Regular function that takes three arguments
+
+// function add(a,b,c){
+//   return a+b+c 
+// }
+// // Curried version of the add function
+// function curriesAdd(a){
+//   return function(b){
+//     return function(c){
+//       return a+b+c 
+//     }
+//   }
+// }
+// const addWithCurrying = curriedAdd;
+// const result = addWithCurrying(2)(3)(10)
+// console.log(result)
+
+// remove decimals
+// let x = Math.trunc(8.7512356)
+// console.log(x)
+
+// console.log(Math.trunc(55.666))
+
