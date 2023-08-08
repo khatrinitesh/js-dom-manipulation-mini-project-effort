@@ -14574,3 +14574,64 @@ let colors = ['red','blue','green']
 
 // console.log(Math.trunc(55.666))
 
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// const originalArray = [1, 2, 2, 3, 4, 4, 5];
+// const distinctarray =  (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// // console.log([...new Set(originalArray)])
+// // console.log(Array.from([...new Set(originalArray)]))
+// const final = originalArray.filter(distinctarray)
+// console.log(final)
+
+// const people1 = [
+//   { name: "Alice", age: 30 },
+//   { name: "Bob", age: 25 },
+//   { name: "Charlie", age: 40 },
+//   { name: "Charlie", age: 40 },
+// ];
+// const distinctobject = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+// const resultasc = people1.sort((a,b) => a.age-b.age)
+// console.log(resultasc)
+// const resultdsc = people1.sort((a,b) => b.age-a.age)
+// console.log(resultdsc)
+// const dsc = people1.sort(function(a,b) {
+//   if(a.age>b.age){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// const distinctpeople = Array.from(new Set(people1.map(person => person.name))).map(name => {
+//   return people1.find(person => person.name === name)
+// })
+// console.log(distinctpeople)
+// const asc = people1.sort(function(a,b) {
+//   if(a.name<b.name){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(asc)
+console.log('banana'.charAt(2)) 
+console.log('banana'[2]) // "n"
+
+// console.log(typeof nitesh)
+console.log(typeof 'nitesh')
+console.log(typeof 111)
+console.log(typeof [1,2,2,3])
+console.log(typeof {name:'nitesh',age:34})
+console.log(typeof 4+4)
+console.log(typeof 8+9*1)
+console.log(typeof undefined)
+console.log(typeof null)
+console.log(typeof NaN)
+console.log(typeof NaN)
+console.log(typeof true)
+
