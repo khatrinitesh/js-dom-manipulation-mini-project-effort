@@ -5,7 +5,9 @@
   },
   "dependencies": {
     "nodeman": "^1.1.2",
-    "nodemon": "^2.0.22",
     "redux-saga": "^1.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
