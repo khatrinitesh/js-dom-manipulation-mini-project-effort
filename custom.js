@@ -14969,3 +14969,60 @@ const numbers1 = [1, 2, 3]
 //     innerFunction()
 // }
 // Outerfunction()
+
+// console.log(typeof 1)
+// console.log(typeof 'nitesh')
+// console.log(typeof 1 > 10)
+// console.log(typeof false)
+// console.log(typeof null)
+// console.log(typeof undefined)
+// console.log(typeof [55, 85])
+// console.log(typeof { name: 'nitesh', age: 34 })
+// console.log(typeof 5588)
+
+// const values = [3, 1, 3, 5, 2, 4, 4, 4];
+// console.log([...new Set(values)])
+
+// const users = [
+//     { id: 11, name: 'Adam', age: 23, group: 'editor' },
+//     { id: 47, name: 'John', age: 28, group: 'admin' },
+//     { id: 85, name: 'William', age: 34, group: 'editor' },
+//     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+// ];
+// let res = users.filter((i) => i.age >= 30)
+// console.log(res)
+
+// const cities = {
+//     Lyon: 'France',
+//     Berlin: 'Germany',
+//     Paris: 'France'
+// };
+// const resultcities = cities.map((val) => val)
+// console.log(resultcities)
+
+// const users = [
+//     { id: 11, name: 'Adam', age: 23, group: 'editor' },
+//     { id: 47, name: 'John', age: 28, group: 'admin' },
+//     { id: 85, name: 'William', age: 34, group: 'editor' },
+//     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+// ];
+// const resultusers = users.map(({ id, name, age }) => `id - ${id}, name - ${name}, age - ${age}`)
+// console.log(resultusers)
+
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// const a = 'a'
+// const b = 'b'
+// const merge = a + " " + b
+// console.log(merge)
+
+// const a = 'nitesh'
+// const Upper = a.toUpperCase()
+// console.log(Upper)
+
+// const a = 'sachin'
+// const replacea = a.replace('sachin', 'rahul')
+// console.log(replacea)
+
+// const a = 'nit'
+// console.log(a.repeat(5, '++'))
