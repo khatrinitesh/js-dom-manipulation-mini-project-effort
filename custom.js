@@ -14619,19 +14619,130 @@ let colors = ['red','blue','green']
 //   }
 // })
 // console.log(asc)
-console.log('banana'.charAt(2)) 
-console.log('banana'[2]) // "n"
+// console.log('banana'.charAt(2)) 
+// console.log('banana'[2]) // "n"
 
 // console.log(typeof nitesh)
-console.log(typeof 'nitesh')
-console.log(typeof 111)
-console.log(typeof [1,2,2,3])
-console.log(typeof {name:'nitesh',age:34})
-console.log(typeof 4+4)
-console.log(typeof 8+9*1)
-console.log(typeof undefined)
-console.log(typeof null)
-console.log(typeof NaN)
-console.log(typeof NaN)
-console.log(typeof true)
+// console.log(typeof 'nitesh')
+// console.log(typeof 111)
+// console.log(typeof [1,2,2,3])
+// console.log(typeof {name:'nitesh',age:34})
+// console.log(typeof 4+4)
+// console.log(typeof 8+9*1)
+// console.log(typeof undefined)
+// console.log(typeof null)
+// console.log(typeof NaN)
+// console.log(typeof NaN)
+// console.log(typeof true)
+
+// var myVar
+// console.log(myVar)
+// myVar = 10
+// console.log(myVar)
+
+// function sayHello(){
+//   console.log('hello world')
+// }
+// sayHello()
+
+// sayHello()
+// function sayHello(){
+//   console.log('function is say hello')
+// }
+
+// sayHi()
+// var sayHi = function(){
+//   console.log('hello world')
+// }
+
+// console.log(x)
+// var x = 5 
+
+// console.log(x)
+// let x = 5 
+
+// console.log(x)
+// const x = 5 
+
+// foo()
+// function foo(){
+//   console.log('nitesh khatri')
+// }
+
+// example()
+// var example = function(){
+//   console.log('this is an example')
+// }
+
+// function outerFunction(){
+//   function innerFunction(){
+//     return x+ y 
+//   }
+//   return innerFunction()
+// }
+// const addFive = outerFunction(5);
+// console.log(addFive(3));
+// console.log(addFive(10))
+
+// function ouerFunction(){
+//   var outeranswer = ' am outer anser'
+//   function innerFunction(){
+//     console.log(outeranswer)
+//   }
+//   return innerFunction
+// }
+// const Superb = ouerFunction();
+// Superb()
+
+// function counter(){
+//   var count =  0 
+//   return {
+//     increment:function(){
+//       count++
+//     },
+//     decrement:function(){
+//       count--
+//     },
+//     getCount:function(){
+//       return count
+//     }
+//   }
+// }
+
+// var counterInstance = counter();
+// counterInstance.increment();
+// counterInstance.decrement();
+// console.log(counterInstance.getCount())
+
+// function outerFunction(x){
+//   function innerFunction(y){
+//     return x + y 
+//   }
+//   return innerFunction
+// }
+// const c1 = outerFunction(20);
+// const c2 = outerFunction(30);
+// console.log(c1(20))
+// console.log(c2(20))
+
+// function Animal(name){
+//   this.name = name;
+// }
+// Animal.prototype.sayHello = function(){
+//   console.log(`Hello, I am from ${this.name}`)
+// }
+// function Dog(name,breed){
+//   Animal.call(this,name);
+//   this.breed = breed;
+// }
+// Dog.prototype = Object.create(Animal.prototype)
+// Dog.prototype.constructor = Dog; 
+// Dog.prototype.bark = function(){
+//   console.log('nitesh khatri')
+// }
+
+// const dog1 = new Dog('Nitesh','Golden Retriver');
+// const dog2 = new Dog('Sameet','Madad');
+// dog1.sayHello();
+// dog2.sayHello();
 
