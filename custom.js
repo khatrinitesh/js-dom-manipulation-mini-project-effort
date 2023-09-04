@@ -14619,21 +14619,21 @@ let colors = ['red', 'blue', 'green']
 //   }
 // })
 // console.log(asc)
-// console.log('banana'.charAt(2))
-// console.log('banana' [2]) // "n"
+console.log('banana'.charAt(2)) 
+console.log('banana'[2]) // "n"
 
 // console.log(typeof nitesh)
-// console.log(typeof 'nitesh')
-// console.log(typeof 111)
-// console.log(typeof [1,2,2,3])
-// console.log(typeof {name:'nitesh',age:34})
-// console.log(typeof 4+4)
-// console.log(typeof 8+9*1)
-// console.log(typeof undefined)
-// console.log(typeof null)
-// console.log(typeof NaN)
-// console.log(typeof NaN)
-// console.log(typeof true)
+console.log(typeof 'nitesh')
+console.log(typeof 111)
+console.log(typeof [1,2,2,3])
+console.log(typeof {name:'nitesh',age:34})
+console.log(typeof 4+4)
+console.log(typeof 8+9*1)
+console.log(typeof undefined)
+console.log(typeof null)
+console.log(typeof NaN)
+console.log(typeof NaN)
+console.log(typeof true)
 
 // // https://github.com/Asabeneh/Destructuring-in-JavaScript
 const numbers1 = [1, 2, 3]
