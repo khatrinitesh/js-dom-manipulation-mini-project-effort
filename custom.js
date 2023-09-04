@@ -2394,11 +2394,11 @@
 
 //  Page Visibility API
 
-const object = {
-        name: 'nitesh',
-        youtube: 'vlogs',
-        language: 'js'
-    }
+// const object = {
+//         name: 'nitesh',
+//         youtube: 'vlogs',
+//         language: 'js'
+//     }
     // const {name,youtube,language} = object 
     // console.log(name,youtube,language)
 
@@ -3597,7 +3597,7 @@ const object = {
 // const myArray = ['h', 'e', 'l', 'l', 'o'];
 // console.log(myArray[0])
 
-let dailyActivities = ['eat', 'sleep'];
+// let dailyActivities = ['eat', 'sleep'];
 // console.log(dailyActivities.push('sports'))
 // console.log(dailyActivities.unshift('cricket'))
 // console.log(dailyActivities)
@@ -3890,10 +3890,10 @@ let dailyActivities = ['eat', 'sleep'];
 // });
 // example.then((res) => console.log(res),(err) => console.log(err));
 
-const obj = {
-        name: 'nitesh',
-        age: 43
-    }
+// const obj = {
+//         name: 'nitesh',
+//         age: 43
+//     }
     // for(let value in obj){
     //     console.log(Object.values(obj))
     // }
@@ -11446,7 +11446,7 @@ const friendsgroup = ['nilesh', 'vijay', 'vishal', 'chandersh', 'ronak', 'shefal
 // })
 // Promise.all([example1,example2,example3]).then((val) => console.log(val))
 
-const words = ["hello", "world"]
+// const words = ["hello", "world"]
     // const reverse = string => [...string].reverse().join()
     // console.log(words.map(reverse))
     // console.log(words.map(word => word.toUpperCase()))
@@ -14623,20 +14623,20 @@ console.log('banana'.charAt(2))
 console.log('banana'[2]) // "n"
 
 // console.log(typeof nitesh)
-console.log(typeof 'nitesh')
-console.log(typeof 111)
-console.log(typeof [1,2,2,3])
-console.log(typeof {name:'nitesh',age:34})
-console.log(typeof 4+4)
-console.log(typeof 8+9*1)
-console.log(typeof undefined)
-console.log(typeof null)
-console.log(typeof NaN)
-console.log(typeof NaN)
-console.log(typeof true)
+// console.log(typeof 'nitesh')
+// console.log(typeof 111)
+// console.log(typeof [1,2,2,3])
+// console.log(typeof {name:'nitesh',age:34})
+// console.log(typeof 4+4)
+// console.log(typeof 8+9*1)
+// console.log(typeof undefined)
+// console.log(typeof null)
+// console.log(typeof NaN)
+// console.log(typeof NaN)
+// console.log(typeof true)
 
 // // https://github.com/Asabeneh/Destructuring-in-JavaScript
-const numbers1 = [1, 2, 3]
+// const numbers1 = [1, 2, 3]
     // const countries = ['Finland', 'Sweden', 'Norway']
     // for (const num of numbers1) {
     //     console.log(num)
@@ -15094,14 +15094,46 @@ const numbers1 = [1, 2, 3]
 // console.log(student)
 // console.log({...student})
 
-const name = 'ram';
-console.log(typeof name)
-console.log(typeof 45)
-console.log(typeof ['sachin','rahul','laxman'])
-console.log(typeof {name:'sachin',age:34,mobile:1234567890})
-console.log(typeof true)
-console.log(typeof false)
-console.log(typeof null)
-console.log(typeof undefined)
-console.log(typeof NaN)
-console.log(typeof 0)
+// const name = 'ram';
+// console.log(typeof name)
+// console.log(typeof 45)
+// console.log(typeof ['sachin','rahul','laxman'])
+// console.log(typeof {name:'sachin',age:34,mobile:1234567890})
+// console.log(typeof true)
+// console.log(typeof false)
+// console.log(typeof null)
+// console.log(typeof undefined)
+// console.log(typeof NaN)
+// console.log(typeof 0)
+
+// var x = 10
+// console.log(x)
+
+// var _val = 'nitesh'
+// console.log(_val)
+
+// var x = 10
+// var y = 20
+// var z = x+y 
+// console.log(z)
+
+// var x = 20 // global variable
+// function abc(){ 
+//     var x = 10 // local variable
+//     console.log(x)
+// }
+// abc()
+
+// var data = 200
+// function a(){
+//     console.log(data)
+// }
+// a()
+
+const Btn = document.querySelector("#buttonA");
+const Heading = document.querySelector("#headingA");
+Btn.addEventListener('click',function(){
+    const name = prompt('what is your name');
+    alert(`Hello ${name}, nice to see you `) 
+    Heading.textContent = `Welcome ${name}`
+});
