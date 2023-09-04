@@ -15026,3 +15026,82 @@ const numbers1 = [1, 2, 3]
 
 // const a = 'nit'
 // console.log(a.repeat(5, '++'))
+
+// var myVar = 42;
+// let myLet = "Sling Academy";
+// const myConst = [1, 2, 3];
+// console.log(typeof myVar)
+// console.log(typeof myLet)
+// console.log(typeof myConst)
+
+// console.log("Hello " + 42);
+// console.log(42 + "");
+// console.log("42" - 0);
+// console.log(parseInt("42"));
+// console.log(parseFloat("3.14")); 
+// console.log((42).toString());  
+// console.log(Number('42'))
+
+// function myFunction() {
+//     var x = 42;
+//     console.log(x); // 42
+// }
+// myFunction()
+// const name1 = 'ram';
+// const name2 = "hari";
+// const result = `the names are ${name1} and ${name2}`;
+// console.log(result)
+
+// const number1 = 3;
+// const number2 = 3.433;
+// const number3 = 3e5 // 3 * 10^5
+// const n1 = 3/0
+// console.log(n1)
+// const n2 = -3/0
+// console.log(n2)
+// const n3 = "abc"/3
+// console.log(n3)
+
+// const value1 = 900719925124740998n;
+// console.log(value1)
+
+// let name 
+// console.log(name)
+
+// var name 
+// console.log(name)
+
+// const name 
+// console.log(name)
+
+// const number = null;
+// console.log(number)
+
+// const value1 = Symbol('hello1');
+// const value2 = Symbol('hello2');
+// console.log(value1)
+// console.log(value2)
+
+// const rd = Symbol('rahul dravid')
+// const st = Symbol('sachin tendulkar')
+// console.log(rd, ' ' ,st)
+
+// const student = {
+//     firstName: 'ram',
+//     lastName: null,
+//     class: 10
+// };
+// console.log(student)
+// console.log({...student})
+
+const name = 'ram';
+console.log(typeof name)
+console.log(typeof 45)
+console.log(typeof ['sachin','rahul','laxman'])
+console.log(typeof {name:'sachin',age:34,mobile:1234567890})
+console.log(typeof true)
+console.log(typeof false)
+console.log(typeof null)
+console.log(typeof undefined)
+console.log(typeof NaN)
+console.log(typeof 0)
