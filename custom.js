@@ -2394,11 +2394,11 @@
 
     //  Page Visibility API
 
-    const object = {
-        name:'nitesh',
-        youtube:'vlogs',
-        language:'js'
-    }
+    // const object = {
+//         name:'nitesh',
+//         youtube:'vlogs',
+//         language:'js'
+//     }
     // const {name,youtube,language} = object 
     // console.log(name,youtube,language)
 
@@ -3597,7 +3597,7 @@
 // const myArray = ['h', 'e', 'l', 'l', 'o'];
 // console.log(myArray[0])
 
-let dailyActivities = ['eat', 'sleep'];
+// let dailyActivities = ['eat', 'sleep'];
 // console.log(dailyActivities.push('sports'))
 // console.log(dailyActivities.unshift('cricket'))
 // console.log(dailyActivities)
@@ -3891,18 +3891,18 @@ let dailyActivities = ['eat', 'sleep'];
 // example.then((res) => console.log(res),(err) => console.log(err));
 
 const obj = {
-    name:'nitesh',
-    age:43
-}
-// for(let value in obj){
-//     console.log(Object.values(obj))
-// }
-// for(let value in obj){
-//     console.log(Object.keys(obj))
-// }
-// for(let value in obj){
-//     console.log(Object.entries(obj))
-// }
+        name: 'nitesh',
+        age: 43
+    }
+    // for(let value in obj){
+    //     console.log(Object.values(obj))
+    // }
+    // for(let value in obj){
+    //     console.log(Object.keys(obj))
+    // }
+    // for(let value in obj){
+    //     console.log(Object.entries(obj))
+    // }
 
 // let result = Object.entries(obj)
 // console.log(result)
@@ -11446,34 +11446,34 @@ const friendsgroup = ['nilesh','vijay','vishal','chandersh','ronak','shefali']
 // })
 // Promise.all([example1,example2,example3]).then((val) => console.log(val))
 
-const words = ["hello","world"]
-// const reverse = string => [...string].reverse().join()
-// console.log(words.map(reverse))
-// console.log(words.map(word => word.toUpperCase()))
-// const fruits = [
-//   { name: "Apple",
-//     price: 25,
-//     emoji: "🍏",
-//   },
-//   { name: "Banana",
-//     price: 40,
-//     emoji: "🍌",
-//   },
-//   { name: "Melon",
-//     price: 75,
-//     emoji: "🍉",
-//   },
-// ]
-// console.log(fruits.map((val) => val.name))
-// const result = fruits.sort(function(a,b) {
-//   if(a.emoji>b.emoji){
-//     return -1
-//   }
-//   else{
-//     return 1
-//   }
-// })
-// console.log(result)
+const words = ["hello", "world"]
+    // const reverse = string => [...string].reverse().join()
+    // console.log(words.map(reverse))
+    // console.log(words.map(word => word.toUpperCase()))
+    // const fruits = [
+    //   { name: "Apple",
+    //     price: 25,
+    //     emoji: "🍏",
+    //   },
+    //   { name: "Banana",
+    //     price: 40,
+    //     emoji: "🍌",
+    //   },
+    //   { name: "Melon",
+    //     price: 75,
+    //     emoji: "🍉",
+    //   },
+    // ]
+    // console.log(fruits.map((val) => val.name))
+    // const result = fruits.sort(function(a,b) {
+    //   if(a.emoji>b.emoji){
+    //     return -1
+    //   }
+    //   else{
+    //     return 1
+    //   }
+    // })
+    // console.log(result)
 
 
 
@@ -14635,10 +14635,21 @@ let colors = ['red','blue','green']
 // console.log(typeof NaN)
 // console.log(typeof true)
 
-// var myVar
-// console.log(myVar)
-// myVar = 10
-// console.log(myVar)
+// // https://github.com/Asabeneh/Destructuring-in-JavaScript
+const numbers1 = [1, 2, 3]
+    // const countries = ['Finland', 'Sweden', 'Norway']
+    // for (const num of numbers1) {
+    //     console.log(num)
+    // }
+    // for (const international of countries) {
+    //     console.log(international)
+    // }
+    // let n1 = numbers1[0]
+    // let n2 = numbers1[1]
+    // let n3 = numbers1[2]
+    // console.log(n1)
+    // console.log(n2)
+    // console.log(n3)
 
 // function sayHello(){
 //   console.log('hello world')
@@ -14746,3 +14757,69 @@ let colors = ['red','blue','green']
 // dog1.sayHello();
 // dog2.sayHello();
 
+
+// closure
+// function Outerfunction() {
+//     function innerFunction() {
+//         console.log('inner function')
+//     }
+//     innerFunction()
+// }
+// Outerfunction()
+
+// console.log(typeof 1)
+// console.log(typeof 'nitesh')
+// console.log(typeof 1 > 10)
+// console.log(typeof false)
+// console.log(typeof null)
+// console.log(typeof undefined)
+// console.log(typeof [55, 85])
+// console.log(typeof { name: 'nitesh', age: 34 })
+// console.log(typeof 5588)
+
+// const values = [3, 1, 3, 5, 2, 4, 4, 4];
+// console.log([...new Set(values)])
+
+// const users = [
+//     { id: 11, name: 'Adam', age: 23, group: 'editor' },
+//     { id: 47, name: 'John', age: 28, group: 'admin' },
+//     { id: 85, name: 'William', age: 34, group: 'editor' },
+//     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+// ];
+// let res = users.filter((i) => i.age >= 30)
+// console.log(res)
+
+// const cities = {
+//     Lyon: 'France',
+//     Berlin: 'Germany',
+//     Paris: 'France'
+// };
+// const resultcities = cities.map((val) => val)
+// console.log(resultcities)
+
+// const users = [
+//     { id: 11, name: 'Adam', age: 23, group: 'editor' },
+//     { id: 47, name: 'John', age: 28, group: 'admin' },
+//     { id: 85, name: 'William', age: 34, group: 'editor' },
+//     { id: 97, name: 'Oliver', age: 28, group: 'admin' }
+// ];
+// const resultusers = users.map(({ id, name, age }) => `id - ${id}, name - ${name}, age - ${age}`)
+// console.log(resultusers)
+
+// console.log('nitesh khatri'.split("").reverse("").join(""))
+
+// const a = 'a'
+// const b = 'b'
+// const merge = a + " " + b
+// console.log(merge)
+
+// const a = 'nitesh'
+// const Upper = a.toUpperCase()
+// console.log(Upper)
+
+// const a = 'sachin'
+// const replacea = a.replace('sachin', 'rahul')
+// console.log(replacea)
+
+// const a = 'nit'
+// console.log(a.repeat(5, '++'))
