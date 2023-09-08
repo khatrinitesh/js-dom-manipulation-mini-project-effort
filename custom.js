@@ -14823,3 +14823,4 @@ const numbers1 = [1, 2, 3]
 
 // const a = 'nit'
 // console.log(a.repeat(5, '++'))
+
