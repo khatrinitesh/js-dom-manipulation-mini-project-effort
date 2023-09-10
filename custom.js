@@ -14824,3 +14824,25 @@ const numbers1 = [1, 2, 3]
 // const a = 'nit'
 // console.log(a.repeat(5, '++'))
 
+const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
+// const sortasc = nameWise.sort(function(a,b) {
+//   if(a<b){
+//     return -1 
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(sortasc)
+// const sortdesc = nameWise.sort(function(a,b) {
+//   if(a>b){
+//     return -1 
+//   }
+//   else{
+//     return 1
+//   }
+// })
+// console.log(sortdesc)
+const distinctgrp = (val,index,arr) => {
+  return arr.indexOf(val) === index
+}
