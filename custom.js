@@ -14843,6 +14843,55 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 //   }
 // })
 // console.log(sortdesc)
-const distinctgrp = (val,index,arr) => {
-  return arr.indexOf(val) === index
-}
+// const distinctgrp = (val,index,arr) => {
+//   return arr.indexOf(val) === index
+// }
+
+// const person11 = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   age: 30,
+//   email: 'johndoe@example.com'
+// };
+// console.log(Object.keys(person11))
+// console.log(Object.values(person11))
+// console.log(Object.entries(person11))
+
+// // Sample array with duplicate values
+// const arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+
+// // Use a Set to store unique values
+// const uniquearr = [...new Set(arrayWithDuplicates)]
+// console.log(uniquearr)
+
+// const array = [1, 2, 2, 3, 4, 4, 5, 6, 6];
+// // Using a Set to get unique values
+// const uniqueArray = [...new Set(array)]
+// console.log(uniqueArray)
+
+// const fruits = ['apple', 'banana', 'cherry', 'date'];
+// console.log(fruits.at(0))
+// console.log(fruits.at(1))
+// console.log(fruits.at(2))
+// console.log(fruits.at(3))
+// const fruits1 = ['apple', 'banana', 'cherry', 'date', 'fig'];
+// console.log(fruits1.at(2)) // Access the element at index 2 (cherry)
+// console.log(fruits1.filter((val) => val !== 'apple'))
+
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+// const array3 = [7, 8, 9];
+// const concatenatedArray = array1.concat(...array2,...array3)
+// console.log(concatenatedArray)
+
+const originalArray = [1, 2, 3];
+const newArray = originalArray.concat(4,5,6)
+console.log(newArray)
+
+
+
+
+
+
+
+
