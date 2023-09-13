@@ -14884,14 +14884,16 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const concatenatedArray = array1.concat(...array2,...array3)
 // console.log(concatenatedArray)
 
-const originalArray = [1, 2, 3];
-const newArray = originalArray.concat(4,5,6)
-console.log(newArray)
+// const originalArray = [1, 2, 3];
+// const newArray = originalArray.concat(4,5,6)
+// console.log(newArray)
 
+// const myArray = [1, 2, 3];
+// Use the constructor property to get the constructor function
+// const constructorFunction = myArray.constructor;
+// console.log(constructorFunction)
 
-
-
-
-
-
-
+const myArray = [1, 2, 3, 4, 5];
+// copy elements starting from the second-to-last index to the end
+myArray.copyWithin(-2)
+console.log(myArray)
