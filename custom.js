@@ -14893,7 +14893,40 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const constructorFunction = myArray.constructor;
 // console.log(constructorFunction)
 
-const myArray = [1, 2, 3, 4, 5];
+// const myArray = [1, 2, 3, 4, 5];
 // copy elements starting from the second-to-last index to the end
-myArray.copyWithin(-2)
-console.log(myArray)
+// myArray.copyWithin(-2)
+// console.log(myArray)
+
+// const fruits = ['apple', 'banana', 'cherry'];
+// const iterator = fruits.entries();
+// for(const entry of iterator){
+//   console.log(entry);
+// }
+
+// const myMap = new Map();
+// myMap.set('name','ntesh')
+// myMap.set('age',30)
+// const iterator = myMap.entries();
+// for(const entry of iterator){
+//   console.log(entry)
+// }
+
+// const myMap = new Map();
+// myMap.set('name','nitesh');
+// myMap.set('age',34);
+// const iterator = myMap.entries();
+// for(entry of iterator){
+//   console.log(entry)
+// }
+
+// const fruits = ['banana','apple','cherry'];
+// const checkLength =  function(fruit){
+//   return fruit.length > this.minLen;
+// }
+// const criteria = {minLen:5};
+// const allMeetCriteria = fruits.every(checkLength,criteria)
+// console.log(allMeetCriteria)
+
+
+
