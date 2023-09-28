@@ -14981,5 +14981,254 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // let counter = 0;
 // console.log(counter++)
 
-const text = "Hello World";
-console.log(text.toUpperCase())
+// const text = "Hello World";
+// console.log(text.toUpperCase())
+
+// let formatted = false 
+// if(formatted){
+//   console.log('yes')
+// }
+// else{
+//   console.log('no')
+// }
+
+// let message = "Welcome to JavaScript";
+// console.log(message);
+
+// if(window.localStorage){
+//   console.log('The local storage is supported')
+// }
+
+// let message = "Hello";
+// console.log(message)
+
+// const a = 10
+// const b = 20
+// console.log(a+b)
+
+// var a = 'nitesh'
+// function Call(){
+//   var a = 'sameet'
+//   console.log(a)
+// }
+// Call()
+
+// const a = 'nitesh'
+// function Call(){
+//   console.log(a)
+//   const a = 'sameet'
+// }
+// Call()
+
+// let a = 'nitesh'
+// function Call(){
+//   let a = 'sameet'
+//   console.log(a)
+// }
+// Call()
+
+// const sum = (a,b) => {
+//   return a +b 
+// }
+// console.log(sum(20,30))
+
+// function sum(a,b){
+//   return a +b 
+// }
+// console.log(sum(30,30))
+
+// let counter = 120;
+// console.log(counter)
+
+// let counter = 120;
+// console.log(typeof(counter)); // "number"
+
+// counter = false; 
+// console.log(typeof(counter)); // "boolean"
+
+// counter = "Hi";
+// console.log(typeof(counter)); // "string"
+
+// let counter;
+// console.log(counter) // undefined
+
+// var counter;
+// console.log(counter) // undefined
+
+// const counter;
+// console.log(counter) // undefined
+
+// console.log(null === undefined); // false
+// console.log(null == undefined); // true
+// console.log(null != undefined); // false
+// console.log(null !== undefined); // true
+
+// let price = 200.00; // interpreted as an integer 200
+// console.log(price)
+
+// console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+// console.log(Number.MIN_VALUE); // 5e-324
+
+// console.log(Number.MAX_VALUE + Number.MAX_VALUE); // Infinity
+// console.log(-Number.MAX_VALUE - Number.MAX_VALUE); // -Infinity
+
+// console.log('a'/2); // NaN;
+
+// console.log(NaN/2); // NaN
+// console.log(NaN == NaN); // false
+// console.log(isNaN(30))
+// console.log(isNaN('nitesh'))
+// console.log(isNaN(null))
+// console.log(isNaN(undefined))
+// console.log(isNaN(['a','b']))
+// console.log(isNaN(true))
+// console.log(isNaN(false))
+// console.log(isNaN(2))
+
+// let message = 'I\'m also a valid string';
+// console.log(message);
+
+// let str = 'JavaScript'
+// console.log(str)
+
+// let inProgress = true;
+// let completed = false;
+// console.log(typeof inProgress)
+// console.log(typeof completed)
+// console.log(Boolean('Hi'));// true
+// console.log(Boolean(''));  // false
+// console.log(Boolean(20));  // true
+// console.log(Boolean(Infinity));  // true
+// console.log(Boolean(0));  // false
+// console.log(Boolean({foo: 100}));  // true on non-empty object
+// console.log(Boolean(null));// false
+// console.log(Boolean(undefined));// false
+// console.log(Boolean(['a','b']));// false
+
+// let s1 = Symbol();
+// console.log(Symbol() == Symbol())
+
+// let pageView = 9007199254740991n;
+// console.log(typeof(pageView)); // 'bigint'
+// console.log(9007199111222555333999n)
+
+// let emptyObject = {};
+// console.log(emptyObject)
+
+// let person1 = {
+//   firstName: 'John',
+//   lastName: 'Doe'
+// };
+// console.log(person1.firstName)
+// console.log(person1.lastName)
+// const {firstName,lastName} = person1 
+// console.log(firstName,lastName)
+
+// let contact = {
+//   firstName: 'John',
+//   lastName: 'Doe',
+//   email: 'john.doe@example.com',
+//   phone: '(408)-555-9999',
+//   address: {
+//       building: '4000',
+//       street: 'North 1st street',
+//       city: 'San Jose',
+//       state: 'CA',
+//       country: 'USA'
+//   }
+// }
+// console.log(contact.firstName,contact.lastName,contact.email,contact.phone)
+// console.log(contact.address.building,contact.address.city,contact.address.state,contact.address.country)
+
+// let num1222 = 071;
+// console.log(num1222);
+
+// let num = 080;
+// console.log(num);
+
+// let num = 0o71;
+// console.log(num);
+// const budget = 1000000000;
+// console.log(budget)
+
+// BigInt
+// const max = 9_223_372_036_854_775_807n;
+
+// // binary
+// let nibbles = 0b1011_0101_0101;
+
+// // octal
+// let val = 0o1234_5670;
+
+// hex
+// let message = 0xD0_E0_F0;
+// console.log(max)
+// console.log(nibbles)
+// console.log(val)
+// console.log(message)
+
+// let a = 051;
+// console.log(a); // 41
+
+// let b = 058; // invalid octal
+// console.log(b);
+
+// const distinctval = (val,index,arr) => {
+//   return arr.indexOf(val) === index 
+// }
+// console.log(['a','a','b','c'].filter(distinctval))
+
+// const arr111 = [1, 2, 2, 3, 4, 4, 5];
+
+// function distinct(val, index, arr) {
+//   // Check if the current value is the first occurrence of this value in the array.
+//   return arr.indexOf(val) === index;
+// }
+// const uniqueArr = arr111.filter(distinct);
+// console.log(uniqueArr);
+
+// const data = [
+//   { name: 'John Doe' },
+//   { name: 'Jane Smith' },
+//   { name: 'Bob Johnson' },
+//   { name: 'Alice Brown' },
+//   { name: 'nitesh khatri' },
+//   { name: 'sameet khatri' },
+//   { name: 'arvind khatri' },
+// ];
+// console.log(data.filter((val) => val.name !== 'John Doe' && val.name !== 'Jane Smith'))
+
+// const searchTerm = 'John';
+// const filteredData = data.filter((item) => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+// console.log(filteredData)
+
+// const searchTerm2 = 'Khatri'
+// const filteredData = data.filter((item) => item.name.toLowerCase().includes(searchTerm2.toLowerCase()));
+// console.log(filteredData)
+// let str = "Hello";
+// console.log(str[0]);
+
+// let str = "Hello";
+// console.log(str[str.length -1])
+
+// let className = 'content'
+// className += ' contentBox'
+// className += ' contentSpacing'
+// console.log(className);
+
+
+// let introduction = 'hello'
+// let name = 'nitesh'
+// console.log(`${introduction} ${name}`)
+// let result = 'a' < 'b';
+// console.log(result)
+
+// const a = [1,2,3]
+// const b =  a 
+// b.push(4)
+// console.log(a)
+// console.log(b)
+
+
+
+
