@@ -14894,39 +14894,43 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // console.log(constructorFunction)
 
 // const myArray = [1, 2, 3, 4, 5];
-// copy elements starting from the second-to-last index to the end
+// // copy elements starting from the second-to-last index to the end
 // myArray.copyWithin(-2)
 // console.log(myArray)
 
-// const fruits = ['apple', 'banana', 'cherry'];
-// const iterator = fruits.entries();
-// for(const entry of iterator){
-//   console.log(entry);
-// }
+// function personFn(name,age){
+//   var personObj = {};
+//   personObj.name = name;
+//   personObj.age = age;
 
-// const myMap = new Map();
-// myMap.set('name','ntesh')
-// myMap.set('age',30)
-// const iterator = myMap.entries();
-// for(const entry of iterator){
-//   console.log(entry)
+//   return personObj
 // }
+// var shawn = personFn('ntesh',34)
+// console.log(shawn)
 
-// const myMap = new Map();
-// myMap.set('name','nitesh');
-// myMap.set('age',34);
-// const iterator = myMap.entries();
-// for(entry of iterator){
-//   console.log(entry)
+// function PersonConstructor(name,age){
+//   this.name = name;
+//   this.age = age ;
 // }
+// var example1 = new PersonConstructor('nitesh',34)
+// var example2 = new PersonConstructor('sameet',41)
+// console.log(example1,example2)
 
-// const fruits = ['banana','apple','cherry'];
-// const checkLength =  function(fruit){
-//   return fruit.length > this.minLen;
+// function Demo() {
+//   console.log(this);
+//   this.value = 5;
+//   return 10;
 // }
-// const criteria = {minLen:5};
-// const allMeetCriteria = fruits.every(checkLength,criteria)
-// console.log(allMeetCriteria)
+// Demo()
+
+// let username = ['a','b']
+// let [a,b]  = ['p','w']
+// console.log(a,b)
+
+// let [user1,user2] = ['ajay','john']
+// console.log(user1,user2)
+// [user1,user2] = [user2,user1]
+// console.log(user1,user2)
 
 // const originalArray = [1, 2, 3, 4, 5];
 // const newArray = [...originalArray].fill(0)
@@ -14952,4 +14956,30 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const num1 = [1, 2, 3, 4, 5, 6];
 // const evenNum = numbers.filter((val) => val % 2 !== 0)
 // console.log(evenNum)
+// let numArray=  [10,20,30,40,50]
+// let [firstNum,,,,lastNum] = numArray;
+// console.log(firstNum,lastNum)
 
+// const people1 = ["Sam", "Alex", "Charlie"];
+// people1.forEach(person => {
+//   console.log(person);
+// });
+
+// const frigroup = ['a','b','c']
+// frigroup.forEach(element => {
+//   console.log(element)
+// })
+
+// const person11 = {
+//   key: "value",
+//   first_name: "John",
+//   last_name: "Doe"
+// };
+
+// console.log(Object.keys(person11))
+
+// let counter = 0;
+// console.log(counter++)
+
+const text = "Hello World";
+console.log(text.toUpperCase())
