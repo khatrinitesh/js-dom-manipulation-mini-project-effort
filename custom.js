@@ -14928,5 +14928,28 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const allMeetCriteria = fruits.every(checkLength,criteria)
 // console.log(allMeetCriteria)
 
+// const originalArray = [1, 2, 3, 4, 5];
+// const newArray = [...originalArray].fill(0)
+// console.log(newArray)
 
+// const myArray = [1, 2, 3, 4, 5];
+// const fillArray = myArray.fill(0,1,4)
+// console.log(fillArray)
+
+// const myArray = [1, 2, 3, 4, 5];
+// myArray.fill(0);
+// console.log(myArray)
+
+// const myArray = [1, 2, 3, 4, 5];
+// // Fill a portion of the array with a static value (e.g., -1) from index 1 to 3 (inclusive)
+// myArray.fill(-1, 1, 4);
+// console.log(myArray)
+
+// const num1 = [1, 2, 3, 4, 5, 6];
+// const evenNum = numbers.filter((val) => val % 2 == 0)
+// console.log(evenNum)
+
+// const num1 = [1, 2, 3, 4, 5, 6];
+// const evenNum = numbers.filter((val) => val % 2 !== 0)
+// console.log(evenNum)
 
