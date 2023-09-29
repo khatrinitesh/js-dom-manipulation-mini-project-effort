@@ -15229,6 +15229,58 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // console.log(a)
 // console.log(b)
 
+// function btnAlert(){
+//   alert('welcoem to the javascript')
+// }
 
+// how to create an array with values
+// const numbers12 = [0, 3.14, 9.81, 37, 98.6, 100] // array of numbers
+// const fruits = ['banana', 'orange', 'mango', 'lemon'] // array of strings, fruits
+// const vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // array of strings, vegetables
+// const animalProducts = ['milk', 'meat', 'butter', 'yoghurt'] // array of strings, products
+// const webTechs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB'] // array of web technologies
+// const countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] // array of strings, countries
 
+// console.log('Numbers',numbers12.length)
+// console.log('Numbers',fruits.length)
+// console.log('Numbers',vegetables.length)
+// console.log('Numbers',animalProducts.length)
+// console.log('Numbers',webTechs.length)
+// console.log('Numbers',countries.length)
 
+// array can have items of different data types
+// const arr22 = [
+//   'Asabeneh',
+//   250,
+//   true,
+//   { country: 'Finland', city: 'Helsinki' },
+//   { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] },
+// ] // arr containing different data types
+// console.log(arr22)
+
+// let js = 'JavaScript is best'
+// const charsInJavaScript = js.split('')
+// console.log(charsInJavaScript)
+// console.log(js.split('').reverse('').join(''))
+
+// let companiesString = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+// console.log(companiesString.split(','))
+
+// let txt =
+//   'I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+//   console.log(txt.split(' '))
+  //  the text has special characters think how you can just get only the words
+
+// accessing array items using index
+// const fruits = ['banana', 'orange', 'mango', 'lemon']
+// const lastIndex = fruits.length - 1
+// console.log(lastIndex)
+// lastFruit = fruits[lastIndex]
+// console.log(lastFruit)
+// console.log(fruits[0])
+// console.log(fruits[1])
+// console.log(fruits[2])
+// console.log(fruits[3])
+
+// const numbers1111 = [0, 3.14, 9.81, 37, 98.6, 100] // set of numbers
+// console.log(numbers1111)
