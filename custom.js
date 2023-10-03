@@ -15284,3 +15284,88 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 
 // const numbers1111 = [0, 3.14, 9.81, 37, 98.6, 100] // set of numbers
 // console.log(numbers1111)
+
+
+// const peoplegrp = [
+//   { id: 1, name: 'Alice' },
+//   { id: 2, name: 'Bob' },
+//   { id: 3, name: 'Charlie' },
+//   { id: 4, name: 'David' },
+// ];
+// Example 1: Find a person by name
+// const personToFind = 'Bob';
+// const foundPerson = people.find(person => person.name === personToFind);
+// if(foundPerson){
+//   console.log('Found ${foundPerson.name}, ID: ${foundPerson.id}')
+// }
+// else{
+//   console.log(`Person with name ${personToFind} not found`);
+// }
+// Example 2: Find a person by ID
+// const idToFind = 3;
+// const foundPersonById = people.find(person => person.id === idToFind);
+// console.log(foundPersonById)
+// if(foundPersonById){
+//   console.log(`Found ${foundPersonById.name}, ID: ${foundPersonById.id}`);
+// }
+// else{
+//   console.log(`Person with ID ${idToFind} not found`);
+// }
+
+// const numbe = [10,20,30,40,50]
+// const target = 30;
+// const index = numbe.indexOf(target);
+// if(index != -1){
+//   console.log(`Element has ${target} found at index ${index}`);
+// }
+// else{
+//   console.log(`Element has ${target} not found`);
+// }
+
+// const myArr = [1, 2, 3, 4, 5, 6];
+// const newArr = myArr.flatMap((x) => x * 2);
+// console.log(newArr)
+// const nestedArray = [1, [2, 3], [4, [5, 6]]];
+// const flattenedArray = nestedArray.flat()
+// console.log(flattenedArray)
+
+// const nestedArray = [1, [2, 3], [4, [5, 6]]];
+// const deeplyRest = nestedArray.flat(2)
+// console.log(deeplyRest)
+
+// forEach()
+// const items = [1, 2, 3];
+// items.forEach(async (item) => {
+//   const val = await someAsyncFunction(item);
+//   console.log(val)
+// });
+
+// const numbe = [1,2,3,4]
+// numbe.forEach((number,index,array) => {
+//   if(number % 2 === 0){
+//     array.splice(index,1)
+//   }
+// }) 
+// console.log(numbe)
+
+// const numbe = [1,2,3]
+// let sum = 0
+// numbe.forEach((n) => {
+//   sum += n
+// });
+// console.log(sum)
+
+// const str = 'Hello';
+// console.log(Array.from(str))
+
+// const mySet = new Set([1, 2, 3, 3, 4, 5]);
+// const newArray = Array.from(mySet)
+// console.log(newArray)
+
+// const numbers111 = [1, 2, 3, 4];
+// const newArray = Array.from(numbers111,(x) => x * 2)
+// console.log(newArray)
+
+
+
+
