@@ -14958,5 +14958,7 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // let counter = 0;
 // console.log(counter++)
 
-const text = "Hello World";
-console.log(text.toUpperCase())
+// const text = "Hello World";
+// console.log(text.toUpperCase())
+
+
