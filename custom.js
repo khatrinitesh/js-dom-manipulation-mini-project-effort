@@ -15367,5 +15367,53 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // console.log(newArray)
 
 
+ // Attach a single event listener to the parent <ul> element
+//  const myList = document.getElementById('myList');
+//  myList.addEventListener('click', function (event) {
+//      const clickedElement = event.target;
+     
+//      // Check if the clicked element is an <li> element
+//      if (clickedElement.tagName === 'LI') {
+//          // Handle the click event on <li> elements
+//          console.log('Clicked on', clickedElement.textContent);
+//      }
+//  });
+
+// const randomString = () => Math.random().toString(36).slice(2)
+// console.log(randomString)
+
+// const randomString = (length = 10) => {
+//   let result = '';
+//   while(result.length < length){
+//     result += Math.random().toString(36).slice(2);
+//   }
+//   return result.slice(0,length)
+// }
+// console.log(randomString)
+
+// copy content to clipboard
+// const copyToClipboard = (text) => navigator.clipboard.writeText(text);
+// console.log(copyToClipboard('hello text'))
+
+// clear all cookies
+// const clearCookies = document.cookie.split(';').forEach(cookie => document.cookie = cookie.replace(/^+/,''))
+
+// get the seelected text
+// const copySelected = () => window.getSelection().toString();
+// getSelectedText();
+
+// scroll to the top of the page
+// const goToTop = () => window.scrollTo(0,0)
+// goToTop();
+
+// check whether the user has scrolled to the bottom of a page
+// const scrolledToBottom = () => document.documentElement.clientHeight + window.scrollY >= document.documentElement.scrollHeight;
 
 
+
+
+
+
+
+
+ 
