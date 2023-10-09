@@ -14961,6 +14961,45 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const text = "Hello World";
 // console.log(text.toUpperCase())
 
+// (function(){
+//   console.log(i); //Error: i not defined
+//   if("5"==="5"){
+//   console.log(i); //Error: i not defined
+//   let i = 100;
+//   console.log(i); //Should print '100' (delete the first two logs)
+//   }
+//   console.log(i);//Error: i not defined
+// })
+//   ();
 
+// (function(){
+//   const message ="what up";
+//   console.log(message);
+//   message = "bye"; //Error: Message is already declared
+//   console.log(message);
+//   })();
 
- 
+// (function(){
+//   var message = {body:"what up", title:"rcs"};
+//   //Runkit is being weird please fix the obvious syntax error
+//   //If you know why this is happening please comment below!
+//   console.log(message);
+//   message.body = "bye";
+//   message.send = true;
+//   console.log(message);
+//   message = 100; //Error: message is already declared
+//   })();
+
+// function whatUp(){
+//   console.log('what up');
+//   } 
+  // whatUp();
+  // var whatUp = function(){
+  //   console.log('what up');
+  //   }
+  //   whatUp();
+
+  
+  
+  
+  
