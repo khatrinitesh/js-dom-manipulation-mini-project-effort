@@ -14961,5 +14961,200 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const text = "Hello World";
 // console.log(text.toUpperCase())
 
+// class Animal{
+//   constructor(name){
+//     this.name = name; 
+//   }
+
+//   speak(){
+//     console.log(`${this.name} makes a sound.`)
+//   }
+// }
+
+// class Dog extends Animal{
+//   constructor(name,breed){
+//     super(name);
+//     this.breed = breed;
+//   }
+
+//   speak(){
+//     console.log(`${this.name} barks.`)
+//   }
+
+//   fetch(){
+//     console.log(`${this.name} fetches a ball.`)
+//   }
+// }
+
+// const genericAnimal = new Animal('Generic Animal');
+// const myDog = new Dog('Buddy','Golden Retriever');
+
+// genericAnimal.speak();
+// myDog.speak();
+// myDog.fetch();
+
+// function findDuplicates(arr){
+//   const set = new Set();
+//   const duplicates = [];
+//   for(const item of arr){
+//       duplicates.push(item);
+//       if(set.has(item)){
+//         duplicates.push(item)
+//       }
+//       else{
+//         set.add(item);
+//       }
+//       return duplicates
+//     }
+// }
+  
+// const myArray = [1, 2, 3, 2, 4, 5, 4, 6];
+// const duplicates = findDuplicates(myArray);
+// console.log(duplicates)
+
+// function findDuplicates(arr){
+//   const duplicates = [];
+//   for(let i=0;i<arr.length;i++){
+//     for(let j=1+1;j<arr.length;j++){
+//       if(arr[i] === arr[j] && !duplicates.includes(arr[i])){
+//         duplicates.push(arr[i])
+//       }
+//     }
+//   }
+//   return duplicates;
+// }
+
+// const myArray = [1, 2, 3, 2, 4, 5, 4, 6]
+// const duplicates = findDuplicates(myArray);
+// console.log(duplicates)
+
+// function findDuplicates(arr){
+//   return arr.reduce((acc,currentValue,index,array) => {
+//     if(arr.indexOf(currentValue,index+1) !== -1 && acc.indexOf(currentValue) === -1){
+//       acc.push(currentValue)
+//     }
+//     return acc;
+//   },[])
+// }
+
+// const myArray = [1, 2, 3, 2, 4, 5, 4, 6]
+// const duplicates = findDuplicates(myArray)
+// console.log(duplicates)
+
+// const myArray = [1, 2, 3, 2, 4, 5, 4, 6]
+// const result = myArray.length;
+// console.log(result)
+
+// function countDuplicates(arr) {
+//   const countMap = {};
+//   const duplicates = {};
+  
+//   for (let item of arr) {
+//     if (countMap[item] === undefined) {
+//       countMap[item] = 1;
+//     } else {
+//       countMap[item]++;
+//       if (countMap[item] === 2) {
+//         duplicates[item] = 2;
+//       }
+//     }
+//   }
+
+//   return duplicates;
+// }
+// const arr2 = [1, 2, 2, 3, 4, 4, 4, 5];
+// const duplicate = countDuplicates(arr2)
+// console.log(duplicate)
+
+// function isInteger(number) {
+//   // Use the Number.isInteger() method if available (ES6+)
+//   if (Number.isInteger(number)) {
+//     return true;
+//   } else {
+//     // If the Number.isInteger() method is not available
+//     return Math.floor(number) === number;
+//   }
+// }
+// console.log(isInteger(10))
+// console.log(isInteger(20))
+// console.log(isInteger(30))
+// console.log(isInteger(40))
+// console.log(isInteger(-5))
+// console.log(isInteger(0.25));
+
+// const x = 5;
+// x = 10 
+// console.log(x)
+
+// const arradda = [1, 2, 3];
+// console.log(arradda.push(10))
+
+// const person1 = {
+//   name:'nitesh',
+//   age:30
+// }
+// console.log(Object.freeze(person1))
+
+// person.age = 31
+// person.address = 'amir house'
+
+// console.log(person)
+
+// const pi = 3.14159;
+// console.log(pi)
+
+// const personeg = Object.freeze({ name: "John", age: 30 });
+// console.log(personeg)
+
+// const numbers11 = [5, 2, 9, 1, 5, 6];
+// const resultNumber = numbers11.sort(function(a,b){
+//   return a - b 
+// })
+// console.log(resultNumber)
+
+// const numbers11 = [5, 2, 9, 1, 5, 6];
+// const resultNumber = numbers11.sort(function(a,b){
+//   return b - a
+// })
+// console.log(resultNumber)
+
+// const fruits = ['banana', 'apple', 'cherry', 'date', 'fig'];
+// const resultFruits = fruits.sort(function(a,b){
+//   return b.localeCompare(a);
+// })
+// console.log(resultFruits)
+
+// const resultfruits = fruits.sort((a,b) => b.localeCompare(a))
+// console.log(resultfruits)
 
 
+
+const arr111111 = [1, 2, 2, 3, 4, 4, 5];
+// const uniqueValues = [...new Set(arr111111)]
+// console.log(uniqueValues)
+// const arrUni = []
+// for(const value of arr111111){
+//   if(!arrUni.includes(value)){
+//     arrUni.push(value)
+//   }
+// }
+// console.log(arrUni)
+
+// const uniqueValue = arr111111.filter((value,index,self) => self.indexOf(value) === index)
+// console.log(uniqueValue)
+
+// const uniqueValue = arr111111.filter((value,index,self) => self.indexOf(value) === index)
+// console.log(uniqueValue)
+
+// function findUniqueSortedValues(arr) {
+//   // Use a Set to store unique values
+//   const uniqueValues = new Set(arr);
+
+//   // Convert the Set back to an array and sort it
+//   const sortedUniqueValues = Array.from(uniqueValues).sort((a, b) => a - b);
+
+//   return sortedUniqueValues;
+// }
+// const arr123 = [4, 2, 2, 5, 1, 4, 3, 1, 5];
+// const uniqueSortedValue = findUniqueSortedValues(arr123)
+// console.log(uniqueSortedValue)
