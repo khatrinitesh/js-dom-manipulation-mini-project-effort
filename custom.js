@@ -14960,47 +14960,6 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 
 // const text = "Hello World";
 // console.log(text.toUpperCase())
-// var object1 = {
-//   name:'nitesh',
-//   age:34
-// }
-// console.log(object1(name,age))
 
 
-// function constructor => create any function apply the new operator to create object instances.
-// function Person(name,age){
-//   this.name = name;
-//   this.age = age;
-// }
-
-// const nk = new Person('nitesh',34)
-// const sk = new Person('sameet',41)
-// console.log(nk,sk)
-
-// var object = new Object();
-// console.log(object);
-
-// function Person(name){
-//   this.name = name;
-//   this.age = 25;
-// }
-// const nk = new Person('nitesh')
-// console.log(nk)
-
-// function Person(){}
-// Person.prototype.name = 'nitesh'
-// var object = new Object();
-// console.log(object);
-
-// class Person{
-//   constructor(name){
-//     this.name = name;
-//   }
-// }
-// var object = new Person('nitesh')
-
-// var object = new (function(){
-//   this.name = 'nitesh'
-// })
-// console.log(object)
 
