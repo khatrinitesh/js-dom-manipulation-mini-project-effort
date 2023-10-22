@@ -3890,10 +3890,10 @@
 // });
 // example.then((res) => console.log(res),(err) => console.log(err));
 
-const obj = {
-        name: 'nitesh',
-        age: 43
-    }
+// const obj = {
+//         name: 'nitesh',
+//         age: 43
+//     }
     // for(let value in obj){
     //     console.log(Object.values(obj))
     // }
@@ -4562,10 +4562,10 @@ const obj = {
 // }
 
 //  Properties and values of a JavaScript object
-const classOf2018 = {
-    students: 38,
-    year: 2018
-  }
+// const classOf2018 = {
+//     students: 38,
+//     year: 2018
+//   }
 
   // Delete operator
 //   const person = {
@@ -9121,12 +9121,12 @@ let numbers = [4, 6, 14, 16]
 // console.log(string)
 // console.log(string)
 
-var employeeList = [
-    {id: 101, name: 'Rhonda', age: 20, dept: 'Audit'},
-    {id: 111, name: 'Susan', age: 28, dept: 'Accounts'},
-    {id: 191, name: 'Stephen', age: 32, dept: 'Audit'},
-    {id: 131, name: 'Napoleon', age: 20, dept: 'HR'}
-   ];
+// var employeeList = [
+//     {id: 101, name: 'Rhonda', age: 20, dept: 'Audit'},
+//     {id: 111, name: 'Susan', age: 28, dept: 'Accounts'},
+//     {id: 191, name: 'Stephen', age: 32, dept: 'Audit'},
+//     {id: 131, name: 'Napoleon', age: 20, dept: 'HR'}
+//    ];
 // const result1 = employeeList.find((val) => {
 //     return val.dept === 'Audit'
 // })
