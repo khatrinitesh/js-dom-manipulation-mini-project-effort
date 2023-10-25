@@ -15158,3 +15158,8 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // const arr123 = [4, 2, 2, 5, 1, 4, 3, 1, 5];
 // const uniqueSortedValue = findUniqueSortedValues(arr123)
 // console.log(uniqueSortedValue)
+
+const a = { name: 'Alice' };
+const b = a;
+b.name = 'Bob';
+console.log(a.name);
