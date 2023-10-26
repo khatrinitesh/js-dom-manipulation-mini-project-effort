@@ -11,7 +11,7 @@
 // function => What is a function in JavaScript?
 // How to call a function in JavaScript using arguments?
 // Pass By Value in JavaScript
-// Function return (or return statement)
+// Function return (or return state)
 // Nested functions
 // Rest parameter
 // Anonymous functions
@@ -15159,7 +15159,34 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // const uniqueSortedValue = findUniqueSortedValues(arr123)
 // console.log(uniqueSortedValue)
 
-const a = { name: 'Alice' };
-const b = a;
-b.name = 'Bob';
-console.log(a.name);
+// const a = { name: 'Alice' };
+// const b = a;
+// b.name = 'Bob';
+// console.log(a.name);
+
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+// const array3 = [7, 8, 9];
+// const concatenatedArray = array1.concat(array2,array3)
+// console.log("Concatenated Array (Using concat):", concatenatedArray)
+
+// const spreadConcatenatedArray  = [...array1,...array2,...array3]
+// console.log(spreadConcatenatedArray)
+
+// const [a,b,c] = [123,'second',true]
+// console.log(a)
+// console.log(b,c)
+// const [,b] = [123,'second',true]
+// console.log(b)
+// const [a,b,...rest] = [123,'second',true,false,42]
+// console.log(a,b,...rest)
+
+// let x = true 
+// let y = false 
+// console.log([x,y] = [y,x])
+
+// last element of an array
+// var array = [1,2,3,4,5]
+// console.log(array.slice(-2))
+
+
