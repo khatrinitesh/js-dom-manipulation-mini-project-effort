@@ -15189,4 +15189,30 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // var array = [1,2,3,4,5]
 // console.log(array.slice(-2))
 
+// start >>>> ARRAY 
 
+// const array1 = [1, 2, 3];
+// const array2 = [4, 5, 6];
+// const array3 = [7, 8, 9];
+// const concatenatedArray = array1.concat(array2, array3);
+// console.log(concatenatedArray)
+
+// const fruits = new Array("apple", "banana", "cherry");
+// console.log(fruits)
+// console.log(fruits)
+
+// const numbersr = new Array(4);
+// console.log(numbersr)
+
+// const fruits = new Array();
+// fruits[0] = 'apple'
+// fruits[1] = 'grape'
+// fruits[3] = 'pineapple'
+// console.log(fruits)
+
+// const numbersr = [1, 2, 3, 4, 5];
+// numbersr.copyWithin(3, 0); 
+// console.log(numbersr);
+
+
+// end >>>> ARRAY 
