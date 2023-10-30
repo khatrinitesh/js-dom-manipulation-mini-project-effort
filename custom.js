@@ -15288,16 +15288,16 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(min)
 
 // 13. Find the average of the numbers in the numbered array?
-const numbersss = [5, 2, 9, 1, 5, 6];
+// const numbersss = [5, 2, 9, 1, 5, 6];
 // let sum = 0;
 // for(let i=0;i<numbersss.length;i++){
 //   sum += numbersss[i]
 // }
 // const avg = sum / numbersss.length 
 // console.log(avg);
-const sum = numbersss.reduce((one,two) => one + two,0)
-const avg = sum / numbersss.length
-console.log(avg);
+// const sum = numbersss.reduce((one,two) => one + two,0)
+// const avg = sum / numbersss.length
+// console.log(avg);
 
 // 14.  How can you uppercase the first character in a string array?
 // const stringArray = ["apple", "banana", "cherry", "date"];
@@ -15367,6 +15367,134 @@ console.log(avg);
 // }
 
 // 20. How to empty an array?
+// const myArray = [1, 2, 3, 4, 5];
+// console.log(myArray.length = 0)
+// const resultsplice = myArray.splice(0)
+// console.log(resultsplice)
+// let myArray = [1, 2, 3, 4, 5];
+// const resultempty = myArray.length = 0
+// console.log('empty',resultempty)
+
+// 21. What is IIFEs (Immediately Invoked Function Expressions)?
+// (function(){
+//   // you code here
+// })();
+// (function(){
+//   var message = 'hello, life';
+//   console.log(message)
+// })()
+
+// (function(){
+//   var a = 'nitesh';
+//   var b = 'sameet';
+//   var c = 'arvind';
+//   var d = 'urvashi';
+//   console.log(a,b,c,d)
+// })()
+
+// function Outer(){
+//   console.log('outer')
+//   function Inner(){
+//     console.log('inner')
+//   }
+//   return Inner();
+// }
+// Outer()
+// (function(){
+//   var privateVariable = 43 
+//   function inner(){
+//     console.log('this is a private function');
+//   }
+//   console.log('inside the iife '  + privateVariable)
+// })()
+
+// 22. How do you sort and reverse an array without changing the original array?
+// const originalArray = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5];
+// const sortedReversedArray = originalArray.slice();
+// console.log(sortedReversedArray)
+// console.log(sortedReversedArray.sort((a,b) => a-b))
+// console.log(sortedReversedArray.sort((a,b) => b-a))
+// console.log(sortedReversedArray.reverse())
+
+// 23. Write a function to check if a given string is Palindrome or not?
+// function isPalindrome(str){
+//   const cleanStr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+//   const reversedStr = cleanStr.split('').reverse().join('');
+//   return cleanStr === reversedStr;
+// }
+// const teaString1 = 'racecar';
+// const teaString2 = 'hello'
+// console.log(teaString1)
+// console.log(teaString2)
+
+// 24. How can you combine two Arrays into a third Array using spread operator?
+// const firstArray = [1, 2, 3];
+// const secondArray = [4, 5, 6];
+// const combinedArray = [...firstArray,...secondArray]
+// console.log(combinedArray)
+
+// 25. How can you Insert an element at a specific index in an Array?
+// const myArray = [1, 2, 3, 4, 5];
+// console.log(myArray.splice(2,0,6));
+// const index = 2 
+// const elementToInsert = 6 
+// const newArray = [...myArray.slice(0,index),elementToInsert,...myArray.slice(index)]
+// console.log(newArray)
+
+// 26. How can you Replace an element at a specific index in an Array?
+// const myArray = [1, 2, 3, 4, 5];
+// const indexToReplace = 2
+// const newValue = 'test'
+// console.log(myArray[indexToReplace] = newValue)
+
+// 27. How can you Delete an element at a specific index in an Array?
+// const myArray = [1, 2, 3, 4, 5];
+// const indexToDelete = 4 
+// console.log(myArray.splice(indexToDelete,1))
+// const indexToDelete = 2 
+// const newArray = myArray.filter((_, index) => index !== indexToDelete);
+// console.log(newArray)
+
+// 28. How can you delete a specific element?
+// const myArray = [1, 2, 3, 4, 5];
+// const elementToDelete = 3;
+// const indexToDelete = myArray.indexOf(elementToDelete)
+// if(indexToDelete !== -1){
+//   myArray.splice(indexToDelete,1)
+// }
+// console.log(indexToDelete)
+// const newArray = myArray.filter((item) => item !== elementToDelete)
+// console.log(newArray)
+
+// 29. How do you clone an Object?
+// const originalObject = { name: "John", age: 30 };
+// console.log({...originalObject})
+// console.log(Object.assign({},originalObject))
+// console.log(JSON.parse(JSON.stringify(originalObject)))
+
+// 30. How do you add an element at the beginning of an array?
+// const myArray = [2, 3, 4, 5];
+// const elementToAdd = 1; // Element to add at the beginning
+// myArray.unshift(elementToAdd)
+// console.log(myArray)
+
+// 31.  How to remove an element from the end of the array?
+// const myArray = [1,2, 3, 4, 5,6];
+// myArray.pop()
+// console.log(myArray)
+
+// 32. How can you split a string into an Array?
+// const myString = "apple,banana,cherry,date";
+// const myArray = myString.split(",")
+// console.log(myArray)
+
+// 33. How can you remove an element from the beginning of the array?
+// const myArray = [1,2, 3, 4, 5,6];
+// myArray.shift()
+// console.log(myArray)
+
+// 34. How can you add an element to an object?
+
 
 
 // remove duplicate values from array values 
