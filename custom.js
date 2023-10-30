@@ -11,7 +11,7 @@
 // function => What is a function in JavaScript?
 // How to call a function in JavaScript using arguments?
 // Pass By Value in JavaScript
-// Function return (or return state)
+// Function return (or return statement)
 // Nested functions
 // Rest parameter
 // Anonymous functions
@@ -15164,55 +15164,206 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // b.name = 'Bob';
 // console.log(a.name);
 
-// const array1 = [1, 2, 3];
-// const array2 = [4, 5, 6];
-// const array3 = [7, 8, 9];
-// const concatenatedArray = array1.concat(array2,array3)
-// console.log("Concatenated Array (Using concat):", concatenatedArray)
+// 4 How to find the count of duplicates in an array?
+// function countDuplicates(arr) {
+//   const countMap = {}; // Create an empty object to store element counts
 
-// const spreadConcatenatedArray  = [...array1,...array2,...array3]
-// console.log(spreadConcatenatedArray)
+//   for (const item of arr) {
+//     if (countMap[item]) {
+//       // If the element exists in the countMap, increment the count
+//       countMap[item]++;
+//     } else {
+//       // If the element is not in the countMap, initialize its count to 1
+//       countMap[item] = 1;
+//     }
+//   }
 
-// const [a,b,c] = [123,'second',true]
-// console.log(a)
-// console.log(b,c)
-// const [,b] = [123,'second',true]
-// console.log(b)
-// const [a,b,...rest] = [123,'second',true,false,42]
-// console.log(a,b,...rest)
+//   // Create an array to store the duplicates
+//   const duplicates = [];
 
-// let x = true 
-// let y = false 
-// console.log([x,y] = [y,x])
+//   // Iterate through the countMap and find elements with a count greater than 1
+//   for (const item in countMap) {
+//     if (countMap[item] > 1) {
+//       duplicates.push({ element: item, count: countMap[item] });
+//     }
+//   }
 
-// last element of an array
-// var array = [1,2,3,4,5]
-// console.log(array.slice(-2))
+//   return duplicates;
+// }
 
-// start >>>> ARRAY 
+// const myArray = [1, 2, 2, 3, 4, 4, 4, 5];
+// const duplicates = countDuplicates(myArray)
+// console.log(duplicates)
 
-// const array1 = [1, 2, 3];
-// const array2 = [4, 5, 6];
-// const array3 = [7, 8, 9];
-// const concatenatedArray = array1.concat(array2, array3);
-// console.log(concatenatedArray)
+// 5 How to check if a given number is an integer?
+// function isInteger(number){
+//   return Number.isInteger(number);
+// }
+// const n1 = 42;
+// const n2 = 3.4;
+// const n3 = "7";
 
-// const fruits = new Array("apple", "banana", "cherry");
-// console.log(fruits)
-// console.log(fruits)
+// console.log(isInteger(n1));
+// console.log(isInteger(n2));
+// console.log(isInteger(n3));
 
-// const numbersr = new Array(4);
-// console.log(numbersr)
+// 6 Explain the difference between Object.freeze() vs const?
+// const pi = 3.14159;
+// const pi1 = 3.14;
+// const person1 = {name:'nitesh'};
+// person1.name = 'sameet';
+// const person2 = Object.freeze({name:'sameet'});
+// const user = Object.freeze({info:{name:'michale'}});
+// user.info.name = 'sameet'
+// console.log(user)
 
-// const fruits = new Array();
-// fruits[0] = 'apple'
-// fruits[1] = 'grape'
-// fruits[3] = 'pineapple'
-// console.log(fruits)
+// 7 How to Sort a Number Array?
+// const numbersUes = [5, 2, 9, 1, 5, 6];
+// const result = numbersUes.sort((a,b) => b-a)
+// console.log(result)
+// const sortAsc = [...numbersUes].sort((a,b) => a-b)
+// console.log(sortAsc)
+// const sortDsc = [...numbersUes].sort((a,b) => b-a)
+// console.log(sortDsc)
 
-// const numbersr = [1, 2, 3, 4, 5];
-// numbersr.copyWithin(3, 0); 
-// console.log(numbersr);
+// 8 Sort a given array of strings
+// const strings = ["banana", "apple", "cherry", "date", "fig"];
+// console.log(strings.sort());
+// const resultStrings = strings.sort(function(a,b) {
+//   if(a<b){
+//     return -1
+//   }
+//   else{
+//     return 1
+//   }
+// })
 
+// console.log(resultStrings)
 
-// end >>>> ARRAY 
+// 9 How to find unique values in an array?
+// const array = [1, 2, 2, 3, 4, 4, 5];
+// const uniqueArray = [...new Set(array)]
+// console.log(uniqueArray)
+// const uniqueArray = [...new Set(array)]
+// console.log(uniqueArray)
+
+// const array = [1, 2, 2, 3, 4, 4, 5];
+// const uniqueValues = array.reduce((one,two) => {
+//   if(!one.includes(two)){
+//     one.push(two)
+//   }
+//   return one 
+// },[])
+// console.log(uniqueValues)
+
+// 10 How to find unique values from an Array in sorted order?
+// const array = [5, 3, 2, 4, 2, 1, 5];
+// const uniqueValueSet = [...new Set(array)]
+// console.log(uniqueValueSet)
+// const uniqueArray = [...array]
+// console.log(uniqueArray)
+// console.log(array.sort((a,b) => a-b))
+
+// 11  Find maximum value in a numbered array?
+// const numbersResult = [5, 2, 9, 1, 5, 6];
+// const max = Math.max(...numbersResult)
+// console.log(max)
+// let max = numbersResult[0]
+// for(let i =0;i<numbersResult.length;i++){
+//   if(numbersResult[i] > max){
+//     max = numbersResult[i]
+//   }
+// }
+// console.log(max)
+
+// 12 Find minimum value in a numbered array?
+// const min = Math.min(...numbersResult)
+// console.log(min)
+// let min = numbersResult[0]
+// for(let i=0;i<numbersResult.length;i++){
+//   if(numbersResult[i] < min){
+//     min = numbersResult[i]
+//   }
+// }
+// console.log(min)
+
+// 13. Find the average of the numbers in the numbered array?
+const numbersss = [5, 2, 9, 1, 5, 6];
+// let sum = 0;
+// for(let i=0;i<numbersss.length;i++){
+//   sum += numbersss[i]
+// }
+// const avg = sum / numbersss.length 
+// console.log(avg);
+const sum = numbersss.reduce((one,two) => one + two,0)
+const avg = sum / numbersss.length
+console.log(avg);
+
+// 14.  How can you uppercase the first character in a string array?
+// const stringArray = ["apple", "banana", "cherry", "date"];
+// const capitzlied = stringArray.map((val) => val.charAt(0).toUpperCase())
+// console.log(capitzlied)
+
+// 15. How to make a sentence out of the given string array?
+// const stringArray = ["I", "love", "programming", "in", "JavaScript"];
+// const resulStringArray = stringArray.concat(' ')
+// console.log(resulStringArray)
+
+// 16. How can you extract a few fields from the given JSON object and form a new array?
+// const data = [
+//   { id: 1, name: "John", age: 30, city: "New York" },
+//   { id: 2, name: "Alice", age: 25, city: "San Francisco" },
+//   { id: 3, name: "Bob", age: 35, city: "Los Angeles" },
+// ]
+// // const extractedData = data.map(item => ({name:item.name,age:item.age}))
+// // console.log(extractedData)
+// const filterData = data.filter((val) => val.name !== 'John' && val.age > 34)
+// console.log(filterData)
+
+// 17. Filter the given object based on certain conditions and return the corresponding object?
+// const peopleArray = [
+//   { name: "John", age: 35 },
+//   { name: "Alice", age: 25 },
+//   { name: "Bob", age: 42 },
+//   { name: "Eve", age: 28 },
+// ]
+// const condition = 30 
+// const filteredPeople = peopleArray.filter((val) => val.age > condition)
+// console.log(filteredPeople)
+
+// 18.  Given an array of strings, reverse each word in the sentence?
+// const sentenceArray = ["Hello", "world", "this", "is", "a", "test"];
+// const reversedArray = sentenceArray.map(word => {
+//   return word.split('').reverse().join('');
+// })
+// console.log(reversedArray)
+
+// 19. How to check if an object is present in an Array or not?
+// const fruits = ["apple", "banana", "cherry", "date"];
+// const searchFruit = 'cherry';
+// if(fruits.indexOf(searchFruit) !== -1){
+//   console.log(`${searchFruit} is in the array`)
+// }
+// else{
+//   console.log(`${searchFruit} is not in the array`)
+// }
+
+// const searchFruit = 'pineapple'
+// if(fruits.indexOf(searchFruit)){
+//   console.log(`${searchFruit} is in array`)
+// }
+// else{
+//   console.log(`${searchFruit} is not in array`)
+// }
+
+// function isInArray(array,element){
+//   return array.includes(element);
+// }
+// if(isInArray(fruits,searchFruit)){
+//   console.log(`${searchFruit} is in the array`)
+// }
+// else{
+//   console.log(`${searchFruit} is not in the array`)
+// }
+
+// 20. How to empty an array?
