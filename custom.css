@@ -1,6 +1,7 @@
 .myList {
   list-style: none;
   padding: 0;
+  width: calc(100% /85px);
 }
 
 .myList li {

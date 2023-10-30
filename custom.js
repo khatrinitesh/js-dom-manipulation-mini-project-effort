@@ -15367,3 +15367,485 @@ console.log(avg);
 // }
 
 // 20. How to empty an array?
+
+
+// remove duplicate values from array values 
+// const arr123 = [1,34,1,56]
+// const uniqueValues = new Set(arr123)
+// const uniqueArray = Array.from(arr123)
+// console.log(uniqueArray)
+// console.log(uniqueValues)
+
+// js array methods and properties
+// at
+// const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+// const firstFruit = fruits[0]; // "apple"
+// const secondFruit = fruits[1]; // "banana"
+// const lastFruit = fruits[fruits.length - 1]; // "elderberry"
+// console.log('firstFruit',firstFruit)
+// console.log('secondFruit',secondFruit)
+// console.log('lastFruit',lastFruit)
+// let index = 2 
+// console.log(fruits.at(index))
+
+// entries 
+// const person12 = {
+//   name: "John",
+//   age: 30,
+//   city: "New York"
+// };
+// // Accessing object entries
+// console.log("Name",person12.name)
+// console.log("City",person12.age)
+// console.log("Age",person12.city)
+// console.log('first fruit',fruits[0])
+// console.log('second fruit',fruits[1])
+// console.log('last fruit',fruits[fruits.length -1])
+
+// every
+// const numbers2 = [1, 2, 3, 4, 5, 6];
+// const allEven = numbers2.every(function(num){
+//   return num % 2 === 0
+// })
+// console.log(allEven)
+// const numbers2 = [2, 4, 7, 8, 10];
+// const areAllEven = numbers2.every(function (element) {
+//   return element % 2 === 0;
+// });
+// console.log("Are all elements even?",areAllEven)
+
+// fill
+// const numbers2 = [1, 2, 3, 4, 5];
+// console.log(numbers2.fill(55));
+
+//filter 
+// const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8];
+// const resultNum = numbers2.filter((val) => val % 2 === 0)
+// console.log(resultNum)
+
+// find
+// const numbers2 = [1, 3, 5, 4, 7, 9, 8];
+// const resultNum = numbers2.find((val) => val % 2 === 0)
+// console.log(resultNum)
+
+// findIndex
+// const numbers22 = [1, 3, 5, 4, 7, 9, 8];
+// const firstEvenIndex = numbers22.findIndex(function(element){
+//   return element % 2 === 0
+// })
+// console.log("Index of the first even number:", firstEvenIndex)
+
+// flat 
+// const arrayflat = [1, 2, [3, 4], [5, [6, 7]]];
+// const flat1 = arrayflat.flat(1)
+// console.log(flat1)
+// const flat2 = arrayflat.flat(2)
+// console.log(flat2)
+
+// flatMap
+// const array = [1, 2, [3, 4], [5, [6, 7]]];
+// const flattenedAndMappedArray = array.flatMap(function(element){
+//   if(Array.isArray(element)){
+//     return element.map(subElem => subElem * 2)
+//   }
+//   else{
+//     return element
+//   }
+// })
+// console.log(flattenedAndMappedArray)
+// const flattenedAndMappedArray = array.flatMap(ele => Array.isArray(ele) ? ele.map(subEle => subEle * 2) : ele)
+// console.log(flattenedAndMappedArray)
+
+// forEach 
+// const fruits11 = ["apple", "banana", "cherry", "date"];
+// fruits11.forEach((ele,index) => {
+//   console.log(`Element at index ${index} : ${ele}`)
+// })
+
+// Array.from 
+// const str = "Hello";
+// const strArray = Array.from(str);
+// console.log(strArray)
+// const numbers22 = [1, 2, 3, 4, 5];
+// const reusltNum = Array.from(numbers22)
+// console.log(reusltNum)
+// const numbers12 = [1, 2, 3, 4, 5];
+// const squaredNumbers = Array.from(numbers12, x => x * x)
+// console.log(squaredNumbers)
+
+// includes 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const isBanana = fruitsP.includes('banana')
+// console.log(isBanana)
+// const isNotMatch = fruitsP.includes('Date')
+// console.log(isNotMatch)
+// const numbers222 = [1, 2, 3, 4, 5, 6, 7];
+// const isSaveIncluded = numbers222.includes(7,4)
+// console.log(isSaveIncluded)
+// const isTenIncluded = numbers.includes(10, 4);
+// console.log(isTenIncluded)
+// console.log("Is 7 included starting from index 4? " + isSaveIncluded); // Output: true
+// console.log("Is 10 included starting from index 4? " + isTenIncluded); 
+
+// indexOf
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const bananaIndex = fruitsP.indexOf('banana')
+// console.log(bananaIndex)
+// const grapeIndex = fruitsP.indexOf('grape')
+// console.log(grapeIndex)
+// const numbers22 = [1, 2, 3, 4, 5,6,7];
+// const sevenIndex = numbers22.indexOf(7,4)
+// console.log(sevenIndex)
+// const tenIndex  = numbers22.indexOf(10,4)
+// console.log(tenIndex)
+
+// isArray 
+// const arr12 = [1, 2, 3];
+// const str1 = "Hello";
+// const obj = { key: "value" };
+// console.log(Array.isArray(arr12))
+// console.log(Array.isArray(str1))
+// console.log(Array.isArray(obj))
+
+// JavaScript Array Methods and Properties >> JOIN 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const commaSeparatedFruits = fruitsP.join(", ")
+// console.log(commaSeparatedFruits)
+// const hyphenSeparatedFruits  = fruitsP.join("- ")
+// console.log(hyphenSeparatedFruits)
+// const emptySeparatedFruits   = fruitsP.join("")
+// console.log(emptySeparatedFruits )
+
+// JavaScript Array Methods and Properties >> KEYS 
+// const person122 = {
+//   name: "John",
+//   age: 30,
+//   city: "New York"
+// };
+// console.log(Object.keys(person122))
+
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP[0])
+// console.log(fruitsP[1])
+// const myMap = new Map();
+// const k1 = {id:1}
+// const k2 = 'stringKey'
+// myMap.set(k1,'value for key1')
+// myMap.set(k2,'value for key2')
+// console.log(myMap.get(k1))
+// console.log(myMap.get(k2))
+
+// JavaScript Array Methods and Properties >> LASTINDEXOF
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+// const searchElement = 4;
+// let lastIndex  = -1;
+// for(let i=numbers22.length - 1;i>=0;i--){
+//   if(numbers22[i] === searchElement){
+//     lastIndexOf = i;
+//     break;
+//   }
+// }
+// if(lastIndex  !== -1){
+//   console.log("Last index of " + searchElement + " is: " + lastIndex)
+// }
+// else{
+//   console.log(searchElement + " not found in the array.");
+// }
+
+// JavaScript Array Methods and Properties >> LENGTH 
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+// const ArrayLengthy = numbers22.length 
+// console.log(ArrayLengthy)
+
+// JavaScript Array Methods and Properties >> MAP 
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+// const squaredAndDoubled = numbers22.map(function(ele,index,array){
+//   return ele * ele * 2 
+// })
+// console.log(squaredAndDoubled)
+// const squareAndDoubled = numbers22.map(ele => ele * ele * 2 )
+// console.log(squareAndDoubled)
+
+// JavaScript Array Methods and Properties >> POP 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP.pop())
+// console.log(fruitsP.at(-1))
+
+// JavaScript Array Methods and Properties >> PROTOTYPE 
+// function Person(first, last, age, eyecolor) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.eyeColor = eyecolor;
+// }
+// const myFather = new Person('arvind','khatri','black')
+// const myMother = new Person('urvashi','khatri','black')
+// Person.prototype.nationality = 'English'
+// console.log(myFather.nationality)
+// console.log(myMother.nationality)
+
+// JavaScript Array Methods and Properties >> PUSH
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const newLength = fruitsP.push('grape','elderberry')
+// console.log('modified' + fruitsP)
+// console.log(newLength)
+
+// JavaScript Array Methods and Properties >> REDUCE 
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+// const sum1 = numbers22.reduce(function(a,b){
+//   return a +b 
+// })
+// console.log(sum1)
+// const sum2 = numbers22.reduce((a,b) => {
+//   return a +b 
+// })
+// console.log(sum2)
+
+// JavaScript Array Methods and Properties >> REDUCERIGHT
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+// let result = 0 
+// for(let i=numbers22.length - 1;i>=0;i--){
+//   result += numbers22[i]
+// }
+// console.log('Result: ' + result)
+
+// JavaScript Array Methods and Properties >> REVERSE 
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1]; 
+// console.log(numbers22.reverse())
+
+// JavaScript Array Methods and Properties >> SHIFT
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1]; 
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+// console.log(numbers22.shift())
+
+// JavaScript Array Methods and Properties >> SLICE 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP.slice(1, 3))
+
+// JavaScript Array Methods and Properties >> SOME 
+// const numbers22 = [1, 2, 3, 4, 5, 4, 3, 2, 1]; 
+// const hasEvenNumbers = numbers22.some(function(ele) {
+//   return ele %  2 === 0 
+// })
+// console.log(hasEvenNumbers)
+// const hasEvenNumbers = numbers22.some((ele) => ele % 2 === 0)
+// console.log(hasEvenNumbers)
+
+// JavaScript Array Methods and Properties >> SORT
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP.sort((a,b) => a -b ))
+// const descarray = fruitsP.sort(function(a,b){
+//   if(a>b){
+//     return -1
+//   }
+//   else{
+//     return1 
+//   }
+// })
+// console.log(descarray)
+
+// JavaScript Array Methods and Properties >> SPLICE 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const removedFruit = fruitsP.splice(1,2)
+// console.log(removedFruit)
+
+// JavaScript Array Methods and Properties >> TOSTRING 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP.toString())
+
+// JavaScript Array Methods and Properties >> UNSHIFT
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// const newLength = fruitsP.unshift('pineapple','grape');
+// console.log('modified : ' + fruitsP)
+// console.log(newLength)
+
+// JavaScript Array Methods and Properties >> VALUEOF 
+// const fruitsP = ["apple", "banana", "cherry", "date"];
+// console.log(fruitsP.valueOf())
+
+// JavaScript String Methods >> charAt
+// const text = "Hello, World!";
+// console.log(text.charAt(3))
+// console.log(text.charAt(5))
+// console.log(text.charAt(text.length - 1))
+
+// JavaScript String Methods >> charCodeAt
+// const text = "Hello, World!";
+// console.log(text.charCodeAt(0))
+// console.log(text.charCodeAt(1))
+// console.log(text.charCodeAt(text.length - 1))
+
+// JavaScript String Methods >> concat
+// const fname = "nitesh";
+// const lname = "khatri";
+// console.log(fname.concat(' ',lname))
+
+// JavaScript String Methods >> constructor
+// const stringLiteral = "Hello, World!";
+// const stringObject = new String("Hello, World!");
+// console.log(stringLiteral.constructor)
+// console.log(stringObject.constructor)
+
+// JavaScript String Methods >> endsWith
+// const text = "Hello, World";
+// console.log(text.endsWith('world'));
+// console.log(text.endsWith('hello',5));
+
+// JavaScript String Methods >> fromCharCode
+// const charCode1 = 72; // 'H'
+// const charCode2 = 101; // 'e'
+// const charCode3 = 108; // 'l'
+// const charCode4 = 108; // 'l'
+// const charCode5 = 111; // 'o'
+
+// const text = String.fromCharCode(charCode1,charCode2,charCode3,charCode4,charCode5)
+// console.log(text)
+
+// JavaScript String Methods >> includes
+// const text = 'nitesh'
+// console.log(text.includes('p'))
+// console.log(text.includes('nit'))
+
+// JavaScript String Methods >> indexOf()
+// const text = 'nitesh'
+// console.log(text.indexOf('h'))
+
+// JavaScript String Methods >> lastIndexOf()
+// const text = 'nitesh'
+// console.log(text.lastIndexOf('h'))
+
+// JavaScript String Methods >> length 
+// const text = 'nitesh'
+// console.log(text.length)
+
+// JavaScript String Methods >> localeCompare()
+// const string1 = "apple";
+// const string2 = "banana";
+// const result = string1.localeCompare(string2)
+// if(result < 0) {
+//   console.log("string1 comes before string2 in the locale.");
+// } else if (result > 0) {
+//   console.log("string2 comes before string1 in the locale.");
+// } else {
+//   console.log("Both strings are equivalent in the locale.");
+// }
+
+// JavaScript String Methods >> match
+// let text = "The rain in SPAIN stays mainly in the plain";
+// console.log(text.match(/ain/g))
+
+// JavaScript String Methods >> prototype
+// String.prototype.customMethod = function(){
+//     return this.toUpperCase()
+// }
+// const myString = 'hello world'
+// console.log(myString.customMethod)
+
+// JavaScript String Methods >> repeat 
+// const myString = 'nitesh khatri'
+// console.log(myString.repeat(10))
+
+// JavaScript String Methods >> replace
+// const myString = 'nitesh khatri nitesh khatri'
+// console.log(myString.replace('nitesh','sameet'))
+
+// JavaScript String Methods >> replaceAll
+// const myString = 'nitesh khatri nitesh khatri'
+// console.log(myString.replaceAll('nitesh','sameet'))
+
+// JavaScript String Methods >> search
+// const myString = 'where are you? how are you doing?'
+// console.log(myString.search('where'))
+
+// JavaScript String Methods >> slice
+// const text = "Hello, World!";
+// const portion1 = text.slice(0, 5);   // Extracts from index 0 to 5, "Hello"
+// const portion2 = text.slice(0,7); 
+// console.log("Portion 1: " + portion1);
+// console.log("Portion 2: " + portion2);
+
+// JavaScript String Methods >> split
+// const text = "apple,banana,cherry,date";
+// const fruitsArray = text.split(",", 2);
+// console.log(fruitsArray);
+
+// JavaScript String Methods >> startsWith
+// const text = "nitesh khatri is best";
+// console.log(text.startsWith('best'));
+
+// JavaScript String Methods >> substr
+// const text = "Hello, World!";
+// const p1 = text.substr(0,5)
+// const p2 = text.substr(7)
+// console.log(p1)
+// console.log(p2)
+
+// JavaScript String Methods >> substring
+// const text = "This is a sample text for substring example.";
+// // Extract a substring from index 5 to 10
+// const substring1 = text.substring(5, 11); // "is a s"
+// console.log(substring1)
+// const substring2 = text.substring(11);
+// console.log(substring2)
+// const substring3 = text.substring(-3, 22);
+// const substring4 = text.substring(10, 5);
+// console.log("Substring 1: " + substring1);
+// console.log("Substring 2: " + substring2);
+// console.log("Substring 3: " + substring3);
+// console.log("Substring 4: " + substring4);
+
+// JavaScript String Methods >> toLocaleLowerCase()
+// const text = "Hello, World!";
+// const lowerCaseText = text.toLocaleLowerCase("arabia");
+// console.log(lowerCaseText)
+
+// JavaScript String Methods >> toLocaleUpperCase()
+// const text = "Hello, World!";
+// const lowerCaseText = text.toLocaleUpperCase("arabia");
+// console.log(lowerCaseText)
+
+// JavaScript String Methods >> toLowerCase()
+// const text = "Hello, World!";
+// const lowerCaseText = text.toLowerCase("arabia");
+// console.log(lowerCaseText)
+
+// JavaScript String Methods >> toString()
+// const text = 'hello'
+// console.log(text.toString())
+
+// JavaScript String Methods >> toUpperCase()
+// const text = 'nitesh khatri'
+// console.log(text.toUpperCase())
+
+// JavaScript String Methods >> trim()
+// const text = 'hello   world'
+// console.log(text)
+
+// JavaScript String Methods >> trimEnd()
+// const text = 'hello world   '
+// console.log(text.length)
+// console.log(text.trimEnd().length)
+
+// JavaScript String Methods >> trimStart()
+// const text = '    hello world'
+// console.log(text.length)
+// console.log(text.trimStart().length)
+
+// JavaScript String Methods >> valueOf()
+// const text = 'hello world'
+// console.log(text.valueOf())
+
+// JavaScript Number Methods >> constructor
+// function Person(name){
+//   this.name = name 
+// }
+// const person122 = new Person('nitesh')
+// console.log(person122)
+
+// JavaScript Number Methods >> constructor
