@@ -16065,7 +16065,60 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(Number.MAX_VALUE)
 // console.log(Number.MIN_VALUE)
 
+// console.log((-Number.MAX_VALUE) * 2)
+// console.log((-Number.MIN_VALUE) * 2)
 
+// console.log((Number.POSITIVE_INFINITY) * 2)
 
+// console.log(parseFloat(10))
+// console.log(parseFloat('10'))
+// console.log(parseFloat('10.33'))
+// console.log(parseFloat('34 45 66'))
+// console.log(parseFloat('he was 40'))
 
+// console.log(parseInt("10"))
+// console.log(parseInt("10.00"))
+// console.log(parseInt("10.33"))
+// console.log(parseInt("34 45 66"))
+// console.log(parseInt(" 60 "))
+// console.log(parseInt("40 years"))
+// console.log(parseInt("he was 40"))
 
+// console.log(Number.prototype.myMethod = function(){
+//   return this.valueOf() / 2
+// })
+
+// const num = 14000
+// console.log(num.toExponential())
+
+// const num = 5.78899
+// console.log(num.toFixed())
+
+// let num = 1000000;
+// console.log(num.toLocaleString())
+// let text = num.toLocaleString("fi-FI");
+// console.log(text)
+
+// let num = 13.3714;
+// console.log(num.toPrecision(2));
+
+// let num = 15;
+// let text = num.toString();
+// console.log(text)
+
+// const num = 10
+// console.log(num.valueOf());
+
+// JavaScript Math Object Methods & Properties  
+// console.log(Math.abs(-111))
+// console.log(Math.acos(-111))
+// console.log(Math.acosh(-111))
+// console.log(Math.asin(-111))
+// console.log(Math.atan(-111))
+// console.log(Math.atan2(-111))
+// console.log(Math.cbrt(-111))
+// console.log(Math.ceil(55))
+// console.log(Math.clz32(-111))
+// console.log(Math.cos(-111))
+// console.log(Math.E(-111))
+// console.log(Math.exp(-55))
