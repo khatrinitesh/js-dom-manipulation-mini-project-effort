@@ -16014,5 +16014,58 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // }
 // const person122 = new Person('nitesh')
 // console.log(person122)
+// const num = 42;
+// console.log(num.constructor);
 
-// JavaScript Number Methods >> constructor
+// const str = "Hello";
+// console.log(str.constructor)
+
+// function Person(name){
+//   this.name = name; 
+// }
+// const person12 = new Person('nitesh')
+// console.log(person12)
+
+// console.log(Number.isFinite(42));
+// console.log(Number.isFinite(-123.45));
+// console.log(Number.isFinite(0));
+// console.log(Number.isFinite(Infinity));
+// console.log(Number.isFinite(-Infinity));
+// console.log(Number.isFinite(NaN));
+// console.log(Number.isFinite("42"));
+
+// console.log(Number.isInteger(42))
+// console.log(Number.isInteger(-123))
+// console.log(Number.isInteger(0))
+// console.log(Number.isInteger(42.0))
+// console.log(Number.isInteger(42.5))
+// console.log(Number.isInteger("42"))
+// console.log(Number.isInteger(NaN))
+// console.log(Number.isInteger(Infinity))
+
+// console.log(Number.isNaN(123))
+// console.log(Number.isNaN('s'))
+// console.log(Number.isNaN(0))
+// console.log(Number.isNaN(null))
+// console.log(Number.isNaN(undefined))
+// console.log(Number.isNaN(-11))
+// console.log(Number.isNaN(0/0))
+// console.log(Number.isNaN(' '))
+// console.log(Number.isNaN('2005/12/12'))
+// console.log(Number.isNaN(' '))
+
+// console.log(Number.isSafeInteger(123))
+// console.log(Number.isSafeInteger(0))
+// console.log(Number.isSafeInteger(-123))
+// console.log(Number.isSafeInteger(0.5))
+// console.log(Number.isSafeInteger(0/0)) 
+
+// console.log(Number.MAX_SAFE_INTEGER)
+// console.log(Number.MIN_SAFE_INTEGER)
+// console.log(Number.MAX_VALUE)
+// console.log(Number.MIN_VALUE)
+
+
+
+
+

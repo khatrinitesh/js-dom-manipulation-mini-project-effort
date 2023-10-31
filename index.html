@@ -158,7 +158,7 @@
 		<form id="myForm">
 			<!-- first name -->
 			<div>
-		  <label class="firstName">First name</label>
+		  <label class="firstName" for="">First name</label>
 		  <input type="text" placeholder="John" required="required" id="firstName" pattern="[A-Za-z]{1,20}"><br>
 		</div>
 
@@ -390,7 +390,9 @@
 	<!-- <h1>signup </h1>ack
 	<div>
 		<form onsubmit="signUp()">
-			<label for="username">username</label>
+			<label htmlfor="username">username</label>
+
+
 			<input type="text" id="useckrname"/>
 
 			<label for="email">email</label>
@@ -404,11 +406,14 @@
 	</div> -->
 
 	<!-- <div>
-    	<p class='birds'>Rock Pigeon</p>
-        <p class='birds cannot_fly'>Ostriches</p>
-        <p class='birds'>Mourning Dove</p>
-        <p class='birds'>Black Vulture</p>
-        <p class='birds cannot_fly'>Campbell teal</p>
+    	<div>
+  <p className="birds">Rock Pigeon</p>
+  <p className="birds cannot_fly">Ostriches</p>
+  <p className="birds">Mourning Dove</p>
+  <p className="birds">Black Vulture</p>
+  <p className="birds cannot_fly">Campbell teal</p>
+</div>
+
     </div>
     
     <input type='button' id='bt' onclick='findEleByClass()' value='Show elements with multiple class name'>
