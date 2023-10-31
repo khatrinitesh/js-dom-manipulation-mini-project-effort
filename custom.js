@@ -15494,6 +15494,45 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(myArray)
 
 // 34. How can you add an element to an object?
+// const myObject = {};
+// const newKey = 'dynamicKey'
+// myObject[newKey] = 'dynamic value'
+// console.log(myObject)
+// const myObject = {key1:"value1",key2:'value'}
+// const newKey = 'dynamickey'
+// const newValue = 'dynamic value'
+// myObject[newKey] = newValue
+// console.log(myObject)
+
+//35. How can you replace an existing element in an object?
+// const myObject = {key1:"value1",key2:'value2'}
+// const exisintKey = 'key1'
+// const newValue  = 'dynamic Value'
+// myObject[exisintKey] = newValue
+// const newKey1 = 'example1'
+// const newValue1 = 'Example 1 is happy'
+// myObject[newKey1] = newValue1
+// console.log(myObject)
+
+//36.How can you combine two objects?
+// const object1 = { key1: "value1" };
+// const object2 = { key2: "value2" };
+// const combinedObject = Object.assign({},object1,object2)
+// console.log(combinedObject)
+// const combinedObject = {...object1,...object2}
+// console.log(combinedObject)
+
+//37. How do you write a function which can take (x) number of parameters?
+// function sum(...numbers){
+//   return numbers.reduce((x,y) => x + y , 0)
+// }
+// console.log(sum(10,20,333))
+// console.log(sum(10,20,30))
+// console.log(sum(11))
+// console.log(sum())
+
+//38. How do you create an Array out of a given sentence?
+
 
 
 
