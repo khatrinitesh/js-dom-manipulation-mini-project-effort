@@ -16122,3 +16122,120 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(Math.cos(-111))
 // console.log(Math.E(-111))
 // console.log(Math.exp(-55))
+// console.log(Math.expm1(55))
+// console.log(Math.floor(1.588))
+// console.log(Math.fround(11.55))
+// console.log(Math.LN2(0.693))
+// console.log(Math.log(10))
+// console.log(Math.log10(55))
+// console.log(Math.LOG10E(555))
+// console.log(Math.log1p(111))
+// console.log(Math.log2(111))
+// console.log(Math.LOG2E(111))
+// console.log(Math.max(55,44,88,5))
+// console.log(Math.min(55,44,88,5))
+
+// const radius = 0
+// const circumference = 2 * Math.PI * radius;
+// const area = Math.PI * Math.pow(radius,2);
+// console.log(`${radius}`)
+// console.log(`${circumference}`)
+// console.log(`${area}`)
+
+// const numbers122 = [8.5,4.5,63.66]
+// const numersCeil = numbers122.map(Math.ceil)
+// console.log(numbers122)
+// console.log(numersCeil)
+// console.log(Math.pow(4,3))
+// console.log(Math.random(10,20))
+// console.log(Math.round(25.55))
+// console.log(Math.sign(-222))
+// console.log(Math.sin(125))
+// console.log(Math.sinh(55))
+// console.log(Math.sqrt(625))
+// console.log(Math.sign(85))
+// console.log(Math.sin(555))
+// console.log(Math.sinh(122))
+// console.log(Math.SQRT1_2(64))
+// console.log(Math.SQRT2(64))
+// console.log(Math.tan(65))
+// console.log(Math.tanh(85))
+// console.log(Math.trunc(15.5550000))
+
+// JavaScript Date Methods and Properties
+// console.log(new Date().constructor)
+// console.log(new Date().getDate())
+// console.log(new Date().getDay())
+// console.log(new Date().getMonth())
+// console.log(new Date().getFullYear())
+// console.log(new Date().getUTCFullYear())
+// console.log(new Date().getMilliseconds())
+// console.log(new Date().getTime())
+// console.log(new Date().getTimezoneOffset())
+// console.log(new Date().getUTCDay())
+// console.log(new Date().getSeconds())
+// console.log(new Date().getFullYear())
+// console.log(new Date().getHours())
+// console.log(new Date().getMinutes())
+// console.log(new Date().getSeconds())
+// console.log(new Date().getTime())
+// console.log(new Date().getTimezoneOffset())
+// console.log(new Date().getUTCDate())
+// console.log(new Date().getUTCDay())
+// console.log(Date.now())
+// console.log(Date.parse("march 21,2011"))
+// Date.prototype.gettingMonth = function(){
+//   if(this.getMonth() == 0) {
+//     return 'January'
+//   }
+//   if(this.getMonth() == 1) {
+//     return 'February'
+//   }
+//   if(this.getMonth() == 2) {
+//     return 'March'
+//   }
+//   if(this.getMonth() == 3) {
+//     return 'April'
+//   }
+//   if(this.getMonth() == 4) {
+//     return 'May'
+//   }
+//   if(this.getMonth() == 5) {
+//     return 'June'
+//   }
+//   if(this.getMonth() == 6) {
+//     return 'July'
+//   }
+//   if(this.getMonth() == 7) {
+//     return 'August'
+//   }
+//   if(this.getMonth() == 8) {
+//     return 'September'
+//   }
+//   if(this.getMonth() == 9) {
+//     return 'October'
+//   }
+//   if(this.getMonth() == 10) {
+//     return 'November'
+//   } 
+//   if(this.getMonth() == 11) {
+//     return 'December'
+//   }
+// }
+// const d  = new Date();
+// console.log(d.getMonth())
+
+// console.log(new Date().setDate(15))
+// console.log(new Date().toLocaleDateString())
+// console.log(new Date().toLocaleString())
+// console.log(new Date().toLocaleTimeString())
+// console.log(new Date().toString())
+// console.log(new Date().toUTCString())
+// console.log(Date.UTC)
+// console.log(new Date().valueOf())
+
+
+
+
+
+
