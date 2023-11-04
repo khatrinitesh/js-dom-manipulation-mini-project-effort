@@ -7043,7 +7043,7 @@
 // console.log("Apple".localeCompare("Apple")); //0
 // console.log("Apple".localeCompare("apple")); //1
 
-const people = ['vishal','abhijeet','simchal','vishal','abhisar']
+// const people = ['vishal','abhijeet','simchal','vishal','abhisar']
 // const result = people.sort(function(a,b) {
 //     if(a<b){
 //         return -1
@@ -14179,11 +14179,11 @@ const arr1 = [1, 2, 3, 4];
 // console.log(result.filter(Boolean))
 
 // object destructuring in JavaScript
-const person = {
-  name: 'John',
-  age: 30,
-  country: 'USA'
-};
+// const person = {
+//   name: 'John',
+//   age: 30,
+//   country: 'USA'
+// };
 // const {name,age} = person 
 // console.log(name)
 // console.log(age)
@@ -15532,6 +15532,200 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(sum())
 
 //38. How do you create an Array out of a given sentence?
+// const sentence = "This is a sample sentence.";
+// const wordArray = sentence.split(" ")
+// console.log(wordArray)
+
+// 39.  How do you replace a given string in the string of arrays?
+// const stringArray = ["Hello, world!", "This is a sample sentence.", "Replace me!"];
+// const search = 'Replace me';
+// const replacement = 'Replaced';
+// const replacedArray = stringArray.map(str => str.replace(search,replacement))
+// console.log(replacedArray)
+
+//40. How do you write an add() function using javascript currying concept?
+// function add(x){
+//   return function(y){
+//     return x + y 
+//   }
+// }
+// const add5 = add(5);
+// console.log(add5(4));
+// const add10 = add(10);
+// console.log(add10(20));
+
+// 41. Implement a groupBy method in JavaScript?
+// function groupBy(array,criterian){
+//   function groupBy(array, criterion) {
+//     return array.reduce((result, item) => {
+//       const key = typeof criterion === 'function' ? criterion(item) : item[criterion];
+//       if (!result[key]) {
+//         result[key] = [];
+//       }
+//       result[key].push(item);
+//       return result;
+//     }, {});
+//   }
+//   const people = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 25 },
+//     { name: 'Charlie', age: 30 },
+//     { name: 'David', age: 25 },
+//   ];
+  
+//   const groupedByAge = groupBy(people, 'age');
+//   console.log(groupedByAge);
+
+// 42. Explain WeakSet in javascript with an example?
+// const myWeakSet = new WeakSet();
+// const obj1 = {name:'nitesh'};
+// const obj2 = {name:'sameet'};
+// const obj3 = {name:'arvind'};
+// myWeakSet.add(obj1);
+// myWeakSet.add(obj2);
+// myWeakSet.add(obj3);
+// console.log(myWeakSet.has(obj1))
+// console.log(myWeakSet.has(obj2))
+// console.log(myWeakSet.has(obj3))
+// myWeakSet.delete(obj3)
+// console.log(myWeakSet.has(obj3))
+// const myWeakSet = new WeakSet();
+// const objp = {name:'a'}
+// const objb = {name:'b'}
+// const objc = {name:'c'}
+// myWeakSet.add(objp);
+// myWeakSet.add(objb);
+// myWeakSet.add(objc);
+// console.log(myWeakSet.has(objb));
+// console.log(myWeakSet.has(objp));
+// console.log(myWeakSet.has(objc));
+
+// 43. Explain WeakMap in javascript with an example?
+// const myWeakMap = new WeakMap();
+// const k1 = {}
+// const k2 = {}
+// myWeakMap.set(k1,'value associated with k1')
+// myWeakMap.set(k2,'value associated with k2')
+// console.log(myWeakMap.get(k1))
+// console.log(myWeakMap.get(k2))
+// console.log(myWeakMap.has(k1))
+// console.log(myWeakMap.has(k2))
+// console.log(myWeakMap.has(k1))
+
+// 44. Explain what is Object Destructuring with an example?
+// const person = {
+//   firstName: 'Alice',
+//   age: 30,
+// };
+// // Destructuring the 'person' object with default values
+// const {firstName,lastName = 'khatri',age} = person
+// console.log(firstName)
+// console.log(lastName)
+// console.log(age)
+
+// 45. How can we generate a random alphanumeric string in JavaScript?
+// function generateRandomAlphaNumericString(length){
+//   const alphanumericCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+//   let result = ''
+//   for(let i=0;i<length;i++){
+//     const randomIndex = Math.floor(Math.random() * alphanumericCharacters.length)
+//     result += alphanumericCharacters.charAt(randomIndex)
+//   }
+//   return result;
+// }
+// const randomString = generateRandomAlphaNumericString(10);
+// console.log(randomString)
+
+// 46. How can we call a function which logs a message after every 5 seconds?
+// function logMsg(){
+//   console.log('nitesh khatri')
+// }
+// const intervalID = setInterval(logMsg,1000)
+// console.log(intervalID)
+
+// let count = 0;
+// const maxCount = 10;
+
+// const intervalID = setInterval(function(){
+//   logMsg();
+//   count++;
+
+//   if(count >= maxCount){
+//     clearInterval(intervalID)
+//   }
+// },500)
+
+// 47. How can we delay calling a function after 5 seconds?
+// function delayedFunction(){
+//   console.log('Function called after 1 seconds');
+// }
+// setTimeout(delayedFunction,1000)
+
+//48. Write a function that performs binary search on a sorted array?
+// function binarySearch(arr, target) {
+//   let left = 0;
+//   let right = arr.length - 1;
+
+//   while (left <= right) {
+//     const mid = Math.floor((left + right) / 2);
+
+//     if (arr[mid] === target) {
+//       return mid; // Found the target, return its index
+//     }
+
+//     if (arr[mid] < target) {
+//       left = mid + 1; // Target is in the right half
+//     } else {
+//       right = mid - 1; // Target is in the left half
+//     }
+//   }
+
+//   return -1; // Target not found in the array
+// }
+// const sortedArray = [1, 3, 5, 7, 9, 11, 13, 15, 17];
+// const targetValue  = 11;
+// const result = binarySearch(sortedArray,targetValue);
+// if(result !== -1){
+//   console.log(`Found ${targetValue} at index ${result}`)
+// }
+// else{
+//   console.log(`${targetValue} not found in the array`);
+// }
+
+//49. How can we parse a given JSON object?
+// const jsonString = '{"name": "Alice", "age": 30, "city": "New York"}';
+// const jsonObject = JSON.parse(jsonString);
+// console.log(jsonObject)
+// console.log(jsonString)
+
+// 50. How do you check whether a string contains a substring?
+// const mainString = "Hello, World!";
+// const substring = "World 1";
+// if(mainString.includes(substring)){
+//   console.log(`"${mainString}" contains the substring "${substring}"`)
+// }
+// else{
+//   console.log(`"${mainString}" does not contain the substring "${substring}"`);
+// }
+
+// 51. How do I get query string values in javascript?
+// const queryString = window.location.search; // Get the query string
+// const urlParams = new URLSearchParams(queryString);
+
+// // Access the values using the get() method
+// const p1 = urlParams.get('p1')
+// const p2 = urlParams.get('p2');
+// console.log(param1); // Output: "value1"
+// console.log(param2); // Output: "value2"
+
+// 52. How to create and trigger events in javascript?
+// const customEvent = new CustomEvent('myEvent',{
+//   detail:{message:'Custom event trigged'}
+// });
+// const myElement = document.getElementById('myElement');
+// myElement.dispatchEvent(customEvent);
+
+// 53.  How to display the current date in javascript?
 
 
 
