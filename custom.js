@@ -16797,17 +16797,16 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(new Date().toString())
 // console.log(new Date().toUTCString())
 // console.log(Date.UTC)
-<<<<<<< HEAD
 // console.log(new Date().valueOf())
 
+// const numbersOne = [1, 2, 3];
+// const numbersTwo = [4, 5, 6];
+// const numbersCombined = [...numbersOne, ...numbersTwo];
+// console.log(numbersCombined)
 
-
-
-
-
-
-
-
-=======
-// console.log(new Date().valueOf())
->>>>>>> 4bfc315f97deda54645f5a1dd0e6f1265858e644
+// const d = new Date();
+// console.log(d)
+// var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var len = txt.length;
+// console.log(txt)
+// console.log(len)
