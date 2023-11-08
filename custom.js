@@ -16025,8 +16025,81 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // myDog.bark();
 
 // 72.How do you check whether an object can be extendable or not?
+// const user = {
+//   name: "Jane",
+//   surname: "Traveller",
+//   stayDuration: "3 weeks",
+//   roomAssigned: 1022,
+// }
+// const group1 = {}
+// const grp = [111,22,22]
+// console.log(Object.isExtensible(user)); 
+// console.log(Object.isExtensible(group1)); 
+// console.log(Object.isExtensible(grp)); 
 
+// 73. How do you prevent an object from extending
+// const obj = {};
+// const obj2 = Object.preventExtensions(obj);
+// console.log(obj === obj2)
+// const empty = {}
+// console.log(Object.preventExtensions(empty))
 
+//74. How do you find the Vowels?
+// program to count the number of vowels in a string
+// const countVowels = str => Array.from(str).filter(letter => 'aeiou'.includes(letter)).length;
+// console.log(countVowels('abcdefghijklmnopqrstuvwxyz'))
+// console.log(countVowels('test'))
+// console.log(countVowels('ddd'))
+
+//75. What are default values in destructuring assignment?
+// const settings = {
+//   speed: 150
+// }
+// const {speed = 750, width = 500} = settings;
+// console.log(speed);
+// const mySpeed = 0;
+// const speed = mySpeed || 760;
+// console.log(speed)
+// const { dogName = 'snickers' } = { dogName: undefined }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: null }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: false }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: 0 }
+// console.log(dogName)
+
+// 76. How do you swap variables in destructuring assignment
+// let a 
+// let b 
+// [a,b] = [1,2,3]
+// console.log(a)
+// console.log(b)
+// let a = 13;
+// let b = 22;
+// [a,b] = [b,a]
+// console.log(a,b)
+
+// 77. How do you combine two or more arrays
+// const a1 = ['a','b','c']
+// const a2 = ['d','e','f']
+// const mergeResult = [...a1,...a2];
+// console.log(mergeResult)
+// const heroes = ['nitesh']
+// heroes.push('hitman')
+// console.log(heroes)
+
+//78. How to create a specific number of copies for a string
+// var st = "Today is Monday.";
+// var times = 5;
+// var repeatedSt = "";
+// while(times > 0){
+//   repeatedSt += st;
+//   times-- ;
+// }
+// console.log(st)
+// console.log(repeatedSt)
+// console.log(times)
 
 // remove duplicate values from array values 
 // const arr123 = [1,34,1,56]
