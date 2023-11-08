@@ -7043,7 +7043,7 @@
 // console.log("Apple".localeCompare("Apple")); //0
 // console.log("Apple".localeCompare("apple")); //1
 
-const people = ['vishal','abhijeet','simchal','vishal','abhisar']
+// const people = ['vishal','abhijeet','simchal','vishal','abhisar']
 // const result = people.sort(function(a,b) {
 //     if(a<b){
 //         return -1
@@ -10037,8 +10037,8 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 
 // 57. How do you compare time for two dates?
-const date1 = new Date("December 15, 2010");
-const date2 = new Date("December 15, 2010");
+// const date1 = new Date("December 15, 2010");
+// const date2 = new Date("December 15, 2010");
 // if(date1 < date2){
 //   console.log('date1 is earlier than date2')
 // }
@@ -14179,11 +14179,11 @@ const arr1 = [1, 2, 3, 4];
 // console.log(result.filter(Boolean))
 
 // object destructuring in JavaScript
-const person = {
-  name: 'John',
-  age: 30,
-  country: 'USA'
-};
+// const person = {
+//   name: 'John',
+//   age: 30,
+//   country: 'USA'
+// };
 // const {name,age} = person 
 // console.log(name)
 // console.log(age)
@@ -15532,9 +15532,574 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(sum())
 
 //38. How do you create an Array out of a given sentence?
+// const sentence = "This is a sample sentence.";
+// const wordArray = sentence.split(" ")
+// console.log(wordArray)
+
+// 39.  How do you replace a given string in the string of arrays?
+// const stringArray = ["Hello, world!", "This is a sample sentence.", "Replace me!"];
+// const search = 'Replace me';
+// const replacement = 'Replaced';
+// const replacedArray = stringArray.map(str => str.replace(search,replacement))
+// console.log(replacedArray)
+
+//40. How do you write an add() function using javascript currying concept?
+// function add(x){
+//   return function(y){
+//     return x + y 
+//   }
+// }
+// const add5 = add(5);
+// console.log(add5(4));
+// const add10 = add(10);
+// console.log(add10(20));
+
+// 41. Implement a groupBy method in JavaScript?
+// function groupBy(array,criterian){
+//   function groupBy(array, criterion) {
+//     return array.reduce((result, item) => {
+//       const key = typeof criterion === 'function' ? criterion(item) : item[criterion];
+//       if (!result[key]) {
+//         result[key] = [];
+//       }
+//       result[key].push(item);
+//       return result;
+//     }, {});
+//   }
+//   const people = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 25 },
+//     { name: 'Charlie', age: 30 },
+//     { name: 'David', age: 25 },
+//   ];
+  
+//   const groupedByAge = groupBy(people, 'age');
+//   console.log(groupedByAge);
+
+// 42. Explain WeakSet in javascript with an example?
+// const myWeakSet = new WeakSet();
+// const obj1 = {name:'nitesh'};
+// const obj2 = {name:'sameet'};
+// const obj3 = {name:'arvind'};
+// myWeakSet.add(obj1);
+// myWeakSet.add(obj2);
+// myWeakSet.add(obj3);
+// console.log(myWeakSet.has(obj1))
+// console.log(myWeakSet.has(obj2))
+// console.log(myWeakSet.has(obj3))
+// myWeakSet.delete(obj3)
+// console.log(myWeakSet.has(obj3))
+// const myWeakSet = new WeakSet();
+// const objp = {name:'a'}
+// const objb = {name:'b'}
+// const objc = {name:'c'}
+// myWeakSet.add(objp);
+// myWeakSet.add(objb);
+// myWeakSet.add(objc);
+// console.log(myWeakSet.has(objb));
+// console.log(myWeakSet.has(objp));
+// console.log(myWeakSet.has(objc));
+
+// 43. Explain WeakMap in javascript with an example?
+// const myWeakMap = new WeakMap();
+// const k1 = {}
+// const k2 = {}
+// myWeakMap.set(k1,'value associated with k1')
+// myWeakMap.set(k2,'value associated with k2')
+// console.log(myWeakMap.get(k1))
+// console.log(myWeakMap.get(k2))
+// console.log(myWeakMap.has(k1))
+// console.log(myWeakMap.has(k2))
+// console.log(myWeakMap.has(k1))
+
+// 44. Explain what is Object Destructuring with an example?
+// const person = {
+//   firstName: 'Alice',
+//   age: 30,
+// };
+// // Destructuring the 'person' object with default values
+// const {firstName,lastName = 'khatri',age} = person
+// console.log(firstName)
+// console.log(lastName)
+// console.log(age)
+
+// 45. How can we generate a random alphanumeric string in JavaScript?
+// function generateRandomAlphaNumericString(length){
+//   const alphanumericCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+//   let result = ''
+//   for(let i=0;i<length;i++){
+//     const randomIndex = Math.floor(Math.random() * alphanumericCharacters.length)
+//     result += alphanumericCharacters.charAt(randomIndex)
+//   }
+//   return result;
+// }
+// const randomString = generateRandomAlphaNumericString(10);
+// console.log(randomString)
+
+// 46. How can we call a function which logs a message after every 5 seconds?
+// function logMsg(){
+//   console.log('nitesh khatri')
+// }
+// const intervalID = setInterval(logMsg,1000)
+// console.log(intervalID)
+
+// let count = 0;
+// const maxCount = 10;
+
+// const intervalID = setInterval(function(){
+//   logMsg();
+//   count++;
+
+//   if(count >= maxCount){
+//     clearInterval(intervalID)
+//   }
+// },500)
+
+// 47. How can we delay calling a function after 5 seconds?
+// function delayedFunction(){
+//   console.log('Function called after 1 seconds');
+// }
+// setTimeout(delayedFunction,1000)
+
+//48. Write a function that performs binary search on a sorted array?
+// function binarySearch(arr, target) {
+//   let left = 0;
+//   let right = arr.length - 1;
+
+//   while (left <= right) {
+//     const mid = Math.floor((left + right) / 2);
+
+//     if (arr[mid] === target) {
+//       return mid; // Found the target, return its index
+//     }
+
+//     if (arr[mid] < target) {
+//       left = mid + 1; // Target is in the right half
+//     } else {
+//       right = mid - 1; // Target is in the left half
+//     }
+//   }
+
+//   return -1; // Target not found in the array
+// }
+// const sortedArray = [1, 3, 5, 7, 9, 11, 13, 15, 17];
+// const targetValue  = 11;
+// const result = binarySearch(sortedArray,targetValue);
+// if(result !== -1){
+//   console.log(`Found ${targetValue} at index ${result}`)
+// }
+// else{
+//   console.log(`${targetValue} not found in the array`);
+// }
+
+//49. How can we parse a given JSON object?
+// const jsonString = '{"name": "Alice", "age": 30, "city": "New York"}';
+// const jsonObject = JSON.parse(jsonString);
+// console.log(jsonObject)
+// console.log(jsonString)
+
+// 50. How do you check whether a string contains a substring?
+// const mainString = "Hello, World!";
+// const substring = "World 1";
+// if(mainString.includes(substring)){
+//   console.log(`"${mainString}" contains the substring "${substring}"`)
+// }
+// else{
+//   console.log(`"${mainString}" does not contain the substring "${substring}"`);
+// }
+
+// 51. How do I get query string values in javascript?
+// const queryString = window.location.search; // Get the query string
+// const urlParams = new URLSearchParams(queryString);
+
+// // Access the values using the get() method
+// const p1 = urlParams.get('p1')
+// const p2 = urlParams.get('p2');
+// console.log(param1); // Output: "value1"
+// console.log(param2); // Output: "value2"
+
+// 52. How to create and trigger events in javascript?
+// const customEvent = new CustomEvent('myEvent',{
+//   detail:{message:'Custom event trigged'}
+// });
+// const myElement = document.getElementById('myElement');
+// myElement.dispatchEvent(customEvent);
+
+// 53.  How to display the current date in javascript?
+// Create a new Date object
+// const currentDate = new Date();
+// console.log(currentDate.getFullYear());
+// console.log(currentDate.getMonth())
+// console.log(currentDate.getDate())
+// currentDate.getHours();
+// currentDate.getMinutes();
+// currentDate.getSeconds();
+
+// Get the individual components of the date
+// const year = currentDate.getFullYear();
+// const month = currentDate.getMonth() + 1; // Months are 0-based, so add 1
+// const day = currentDate.getDate();
+// const hours = currentDate.getHours();
+// const minutes = currentDate.getMinutes();
+// const seconds = currentDate.getSeconds();
+
+// // Create a formatted date string
+// const formattedDate = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+// console.log(formattedDate)
+
+// 54. How do you compare time for two dates?
+// const date1 = new Date('2023-01-15T12:00:00');
+// const date2 = new Date('2023-01-20T15:30:00');
+// if (date1.getTime() < date2.getTime()) {
+//   console.log('date1 comes before date2');
+// } else if (date1.getTime() > date2.getTime()) {
+//   console.log('date1 comes after date2');
+// } else {
+//   console.log('date1 and date2 are the same');
+// }
+
+// 55. How do you check if a string starts with another string?
+// const mainString = "Hello, world!";
+// const substring = "Hello";
+// const regex = new RegExp(`^${substring}`);
+// if (regex.test(mainString)) {
+//   console.log("mainString starts with the substring.");
+// } else {
+//   console.log("mainString does not start with the substring.");
+// }
+
+// 56. How do you remove whitespaces from a given string?
+// const inputString = "   This is a string    with spaces.   ";
+// console.log(inputString.trim());
+
+// 57. How do you assign default values to variables
+// const name = ''; // Falsy value
+// const defaultName = 'John';
+// const finalname = name || defaultName
+// console.log(finalname)
+// const age = null; // Null value
+// const defaultAge = 30;
+// const finalAge = age ?? defaultAge 
+// console.log(finalAge)
+// function greet(name='Guest'){
+//   console.log(`hello, ${name}`)
+// }
+// greet()
+// greet('nitesh')
 
 
+// 58. For a given function, count the number of parameters expected by a function?
+// function exampleFunction(a, b, c) {
+//   return a+b+c
+// }
+// const paramCount = exampleFunction.length;
+// console.log(`The function expects ${paramCount} parameters.`);
 
+// 59. Implement a method which generates 5 random numbers?
+// function generateRandomNumbers(min, max, count) {
+//   const randomNumbers = [];
+//   for (let i = 0; i < count; i++) {
+//     const randomNumber = Math.random() * (max - min) + min;
+//     randomNumbers.push(randomNumber);
+//   }
+
+//   return randomNumbers;
+// }
+// const min = 1;
+// const max = 100;
+// const count = 5;
+// const randomNumbers = generateRandomNumbers(min,max,count);
+// console.log(randomNumbers)
+
+// setTimeout(() => {console.log('1')},0)
+// Promise.resolve('hello').then(() => console.log('2'));
+// console.log('3');
+
+// 60 Implement a method which generates random numbers between 41 and 67 and sort
+// function generateAndSortRandomNumbers(count) {
+//   const randomNumbers = [];
+
+//   // Generate 'count' random numbers between 41 and 67
+//   for (let i = 0; i < count; i++) {
+//     const randomNumber = Math.floor(Math.random() * (67 - 41 + 1) + 41);
+//     randomNumbers.push(randomNumber);
+//   }
+
+//   // Sort the array in ascending order
+//   randomNumbers.sort((a, b) => a - b);
+
+//   return randomNumbers;
+// }
+// const count = 5; // Number of random numbers
+// const sortedRandomNumbers = generateAndSortRandomNumbers(count);
+// console.log(sortedRandomNumbers);
+
+// 61. How to write an Object and implement multiple function chaining?
+// const Calculator  = { 
+//   result:0,
+//   add:function(value){
+//     this.result += value;
+//     return this;
+//   },
+//   subtract:function(value){
+//     this.result -= value; 
+//     return this;
+//   },
+//   multiply:function(value){
+//     this.result *= value;
+//     return this;
+//   },
+//   divide: function (value) {
+//     this.result /= value;
+//     return this; // Return the object for chaining
+//   },
+//   clear: function () {
+//     this.result = 0;
+//     return this; // Return the object for chaining
+//   },
+//   getResult: function () {
+//     return this.result;
+//   },
+// };
+// const result = Calculator.add(5).subtract(3).multiply(4).divide(2).getResult();
+// console.log(result);
+
+// 62. How do you determine whether an object is frozen or not?
+// const myObject = { prop1: 42, prop2: "Hello" };
+// Object.freeze(myObject)
+// if(!Object.isExtensible(myObject)){
+//   console.log('The object is frozen.')
+// }
+// else{
+//   console.log('The object is not frozen.')
+// }
+
+// 63. How do you determine two values are the same or not using an object?
+// const value1 = 5;
+// const value2 = "5";
+// if(value1 == value2){
+//   console.log('The values are equal (with type coercion)');
+// }
+// else{
+//   console.log("The values are not equal (with type coercion).");
+// }
+// const obj1 = { key: "value" };
+// const obj2 = { key: "value" };
+// const obj3 = obj1;
+// if(obj1 == obj2){
+//   console.log("obj1 and obj2 are the same object.");
+// } else {
+//   console.log("obj1 and obj2 are different objects.");
+// }
+
+// 64. How do you copy properties from one object to another object
+// const sourceObject = { prop1: "value1", prop2: "value2" };
+// const targetObject = {}
+// // console.log(targetObject)
+// for(const key in sourceObject){
+//   if(sourceObject.hasOwnProperty(key)){
+//     targetObject[key] = sourceObject[key]
+//   }
+// }
+// Object.assign(targetObject,sourceObject)
+
+// 65. How do you determine if an object is sealed or not?
+// const myObject = {
+//   prop1: 'value1',
+//   prop2: 'value2',
+// };
+// Object.seal(myObject);
+// if(Object.isSealed(myObject)){
+//   console.log('The object is sealed.');
+// } else {
+//   console.log('The object is not sealed.');
+// }
+
+// 66. How do you get an enumerable key and value pairs?
+// const obj = {
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+// };
+// const keys = Object.keys(obj);
+// keys.forEach(key => {
+//   const value = obj[key]
+//   console.log(`key : ${key}, Value:${value}`)
+// })
+
+// const entries = Object.entries(obj);
+// entries.forEach(([key,value]) => {
+//   console.log(`key: ${key},value:${value}`);
+// });
+
+// for(const[key,value] of Object.entries(obj)){
+//   console.log(`key :${key},value:${value}`);
+// }
+
+// 67. What is the main difference between Object.values and Object.entries method?
+// const obj = {
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+// };
+// const values = Object.values(obj)
+// console.log(values)
+
+// const entries = Object.entries(obj)
+// console.log(entries)
+
+// 68. . How can you get the list of keys of any object?
+// const obj = {
+//   key1: 'value1',
+//   key2: 'value2',
+//   key3: 'value3',
+// };
+// const keys = Object.keys(obj)
+// console.log(keys)
+// const keys = [];
+// for(const key in obj){
+//   if(obj.hasOwnProperty(key)){
+//     keys.push(key)
+//   }
+// }
+// console.log(keys)
+
+// const keys = Reflect.ownKeys(obj);
+// console.log(keys)
+
+//69. How do you encode an URL
+// const originalURL = "https://www.example.com/search?q=query string with special characters&param=value";
+// const encodeURL = encodeURIComponent(originalURL)
+// console.log(encodeURL)
+// const w3schools = "https://www.w3schools.com/howto/howto_css_social_media_buttons.asp"
+// console.log(encodeURIComponent(w3schools))
+
+// 70. How do you define property on an Object constructor
+// function Person(name, age,desc) {
+//   this.name = name;
+//   this.age = age;
+//   this.desc = desc;
+// }
+
+// Define a property on the constructor's prototype
+// Person.prototype.description = 'A human being'
+// const p1 = new Person('nitesh',30,'a human being 1')
+// const p2 = new Person('sameet',41,'a human being 2')
+
+// console.log(p1)
+// console.log(p2)
+// console.log(p1.description)
+// console.log(p2.description)
+
+// function Example(name,city){
+//   this.name = name;
+//   this.city = city;
+// }
+// const pro1 = Example.prototype.address = 'amir house'
+// const pro2 = Example.prototype.address = 'illignos'
+// const n1 = new Example('nitesh','mumbai')
+// const s1 = new Example('sameet','chicago')
+// console.log(n1,pro1)
+// console.log(s1,pro2)
+
+// 71. How can you call the constructor of a parent class?
+// class Animal{
+//   constructor(name){
+//     this.name = name;
+//   }
+//   speak(){
+//     console.log(`${this.name} makes a sound.`)
+//   }
+// }
+// class Dog extends Animal{
+//   constructor(name,breed){
+//     super(name);
+//     this.breed = breed;
+//   }
+//   bark(){
+//     console.log(`${this.name} (a ${this.breed}) barks.`);
+//   }
+// }
+// const myDog = new Dog('Buddy','Golden Retriever');
+// myDog.speak();
+// myDog.bark();
+
+// 72.How do you check whether an object can be extendable or not?
+// const user = {
+//   name: "Jane",
+//   surname: "Traveller",
+//   stayDuration: "3 weeks",
+//   roomAssigned: 1022,
+// }
+// const group1 = {}
+// const grp = [111,22,22]
+// console.log(Object.isExtensible(user)); 
+// console.log(Object.isExtensible(group1)); 
+// console.log(Object.isExtensible(grp)); 
+
+// 73. How do you prevent an object from extending
+// const obj = {};
+// const obj2 = Object.preventExtensions(obj);
+// console.log(obj === obj2)
+// const empty = {}
+// console.log(Object.preventExtensions(empty))
+
+//74. How do you find the Vowels?
+// program to count the number of vowels in a string
+// const countVowels = str => Array.from(str).filter(letter => 'aeiou'.includes(letter)).length;
+// console.log(countVowels('abcdefghijklmnopqrstuvwxyz'))
+// console.log(countVowels('test'))
+// console.log(countVowels('ddd'))
+
+//75. What are default values in destructuring assignment?
+// const settings = {
+//   speed: 150
+// }
+// const {speed = 750, width = 500} = settings;
+// console.log(speed);
+// const mySpeed = 0;
+// const speed = mySpeed || 760;
+// console.log(speed)
+// const { dogName = 'snickers' } = { dogName: undefined }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: null }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: false }
+// console.log(dogName)
+// const { dogName = 'snickers' } = { dogName: 0 }
+// console.log(dogName)
+
+// 76. How do you swap variables in destructuring assignment
+// let a 
+// let b 
+// [a,b] = [1,2,3]
+// console.log(a)
+// console.log(b)
+// let a = 13;
+// let b = 22;
+// [a,b] = [b,a]
+// console.log(a,b)
+
+// 77. How do you combine two or more arrays
+// const a1 = ['a','b','c']
+// const a2 = ['d','e','f']
+// const mergeResult = [...a1,...a2];
+// console.log(mergeResult)
+// const heroes = ['nitesh']
+// heroes.push('hitman')
+// console.log(heroes)
+
+//78. How to create a specific number of copies for a string
+// var st = "Today is Monday.";
+// var times = 5;
+// var repeatedSt = "";
+// while(times > 0){
+//   repeatedSt += st;
+//   times-- ;
+// }
+// console.log(st)
+// console.log(repeatedSt)
+// console.log(times)
 
 // remove duplicate values from array values 
 // const arr123 = [1,34,1,56]
@@ -16232,6 +16797,7 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(new Date().toString())
 // console.log(new Date().toUTCString())
 // console.log(Date.UTC)
+<<<<<<< HEAD
 // console.log(new Date().valueOf())
 
 
@@ -16242,3 +16808,6 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 
 
 
+=======
+// console.log(new Date().valueOf())
+>>>>>>> 4bfc315f97deda54645f5a1dd0e6f1265858e644
