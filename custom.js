@@ -16810,3 +16810,12 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // var len = txt.length;
 // console.log(txt)
 // console.log(len)
+
+const arrayresult = [1,2,3]
+const itr = arrayresult[Symbol.iterator]()
+console.log(itr.next())
+console.log(itr.next())
+console.log(itr.next())
+console.log(itr.next())
+console.log(itr.next())
+console.log(itr.next())
