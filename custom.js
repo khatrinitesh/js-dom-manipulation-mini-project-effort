@@ -7658,7 +7658,7 @@ let names = ["Zoe", "Adam", "Dan"]
 // })
 // console.log(minresult)
 
-let numbers = [4, 6, 14, 16]
+// let numbers = [4, 6, 14, 16]
 // some
 // let GreaterThen = numbers.some((n) => n>6)
 // console.log(GreaterThen)
@@ -16966,8 +16966,60 @@ const items = ['item1','item2','item3']
 //   console.log(i)
 // }
 
+// const users = [
+//   {fname:'nitesh',age:34},
+//   {fname:'sameet',age:41},
+//   {fname:'mom',age:45,},
+//   {fname:'daddy',age:55,}
+// ]
+// users.forEach(function(user){
+//   console.log(user.fname)
+// });
+// users.forEach(function(user){
+//   console.log(user.age)
+// });
+// for(let user of users){
+//   console.log(user)
+// }
 
+// const squareNumber = [25,255,99].map(function(num,index){
+//   return `${index} ${num * num}`
+// })
+// console.log(squareNumber)
+// console.log(99*99)
 
+// const numberwise = [1,3,2,6,4,8]
+// const isEven = function(num){
+//   return num % 2 === 0
+// }
+// console.log(numberwise.filter(isEven))
+// const reduceAns = numberwise.reduce((a,b) => a+b)
+// console.log(reduceAns)
 
-
+const userCart =[
+  {
+    "userId": 1,
+    "id": 1,
+    "price":10,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "price":11,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "price":30,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+];
+var reduced = userCart.reduce(function(a, b){
+  return a + b.price},0);
+console.log(reduced) // r
 
