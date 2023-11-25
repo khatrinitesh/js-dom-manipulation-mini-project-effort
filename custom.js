@@ -7660,7 +7660,7 @@ let names = ["Zoe", "Adam", "Dan"]
 // })
 // console.log(minresult)
 
-let numbers = [4, 6, 14, 16]
+// let numbers = [4, 6, 14, 16]
 // some
 // let GreaterThen = numbers.some((n) => n>6)
 // console.log(GreaterThen)
@@ -17307,4 +17307,230 @@ const arrayN = [20,34,55,66,1122,3333]
 // console.log(Date.UTC)
 // console.log(new Date().valueOf())
 
+<<<<<<< HEAD
+=======
+// const numbersOne = [1, 2, 3];
+// const numbersTwo = [4, 5, 6];
+// const numbersCombined = [...numbersOne, ...numbersTwo];
+// console.log(numbersCombined)
+
+// const d = new Date();
+// console.log(d)
+// var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// var len = txt.length;
+// console.log(txt)
+// console.log(len)
+
+// const arrayresult = [1,2,3]
+// const itr = arrayresult[Symbol.iterator]()
+// console.log(itr.next())
+// console.log(itr.next())
+// console.log(itr.next())
+// console.log(itr.next())
+// console.log(itr.next())
+// console.log(itr.next())
+
+// console.log(this)
+// console.log(window)
+// var firstName = 'test1'
+// console.log(firstName)
+// var firstName = 'test2'
+
+// let firstName = 'nitesh'
+// console.log(firstName)
+
+// const firstName = 'nitesh'
+// console.log(firstName)
+
+// function getFullName(fName,lName){
+//   console.log(arguments);
+//   let myVar =  'var inside func'
+//   console.log(myVar);
+//   const fullName  = fName + lName 
+//   return fullName
+// }
+// const personName  = getFullName('nitesh','khatri')
+// console.log(personName)
+
+// const printName  = function(){
+//   const firstName = 'nitesh';
+//   const lastName = 'khatri';
+//   function myFunction(){
+//     console.log(firstName);
+//     console.log(lastName);
+//   }
+//   myFunction()
+// }
+// printName()
+
+// iterables
+// const firstName = 'nitesh'
+// for(example of firstName){
+//   console.log(example)
+// }
+
+// const users = {
+//   'key1':'value1',
+//   'key2':'value2',
+// }
+// for(user of users){
+//   console.log(user)
+// }
+
+// const fName = 'nitesh'
+// console.log(fName.length)
+// console.log(fName[2])
+
+// const numberslist = new Set([1,2,3,3,4,4,5,5,5,6,6,6,7,8])
+// console.log(numberslist)
+
+const items = ['item1','item2','item3']
+// const numberslist = new Set([1,2,3,3,4,4,5,5,5,6,6,6,7,8])
+// console.log(numberslist.add(1))
+// console.log(numberslist.add(2))
+// console.log(numberslist.add(1))
+// if(numberslist.has(4)){
+//   console.log('there is an including number wise')
+// }
+// else{
+//   console.log('there is not an including number wise')
+// }
+// const numberslist = new Set()
+// numberslist.add(1)
+// numberslist.add(11)
+// numberslist.add(12)
+// numberslist.add(25)
+// // console.log(numberslist)
+
+// for(let list of numberslist){
+//   console.log(list)
+// }
+
+// const myArray = [55,55,6,6,77,78,80,81]
+// const uniqueA = new Set(myArray)
+// console.log(uniqueA)
+// for(let use of uniqueA){
+//   console.log(use)
+// }
+
+// const person = {
+//   fName:'test',
+//   age:34,
+//   1:'one'
+// }
+// console.log(person[1])
+// const fName = person.fName
+// const age = person.age
+// console.log(fName,'-',age)
+// for(let key in person){
+//   console.log(typeof key)
+// }
+// const personalFamily = new Map();
+// personalFamily.set('firstName','test');
+// personalFamily.set('lastName','test1');
+// personalFamily.set('age','24');
+// console.log(personalFamily)
+
+// const person1 = {
+//   id:1,
+//   firstName:'test'
+// }
+// const userInfo  = new Map();
+// userInfo.set(person1,{age:24,dob:'17/06/1989'})
+// console.log(userInfo)
+// const person1 = {
+//   id:1,
+//   fname:'test1'
+// }
+// const person2 = {
+//   id:2,
+//   fname:'test2'
+// }
+// const userInfo = new Map()
+// userInfo.set(person1,{age:34,gender:'male'})
+// userInfo.set(person2,{age:41,gender:'male'})
+// console.log(userInfo)
+
+// const obj1 = {
+//   'key1':'test1',
+//   'key2':'test2',
+// }
+// const obj2 = Object.assign({},obj1) 
+// console.log(obj2)
+
+// const user = {
+//   fname:'nitesh',
+//   address:{houseNumber:'1234'}
+// }
+// console.log(user?.fname)
+// console.log(user?.address?.houseNumber)
+
+// most important array methods
+// const numbersList = [4,2,5,8,55,8,68]
+// function multiply(number,index){
+//   console.log('index is ',index);
+//   console.log(`${number}*2=${number*2}`);
+// }
+
+// for(let i=0;i<numbersList.length;i++){
+//   console.log(i)
+// }
+
+// const users = [
+//   {fname:'nitesh',age:34},
+//   {fname:'sameet',age:41},
+//   {fname:'mom',age:45,},
+//   {fname:'daddy',age:55,}
+// ]
+// users.forEach(function(user){
+//   console.log(user.fname)
+// });
+// users.forEach(function(user){
+//   console.log(user.age)
+// });
+// for(let user of users){
+//   console.log(user)
+// }
+
+// const squareNumber = [25,255,99].map(function(num,index){
+//   return `${index} ${num * num}`
+// })
+// console.log(squareNumber)
+// console.log(99*99)
+
+// const numberwise = [1,3,2,6,4,8]
+// const isEven = function(num){
+//   return num % 2 === 0
+// }
+// console.log(numberwise.filter(isEven))
+// const reduceAns = numberwise.reduce((a,b) => a+b)
+// console.log(reduceAns)
+
+const userCart =[
+  {
+    "userId": 1,
+    "id": 1,
+    "price":10,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  {
+    "userId": 1,
+    "id": 2,
+    "price":11,
+    "title": "qui est esse",
+    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+  },
+  {
+    "userId": 1,
+    "id": 3,
+    "price":30,
+    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+  },
+];
+var reduced = userCart.reduce(function(a, b){
+  return a + b.price},0);
+console.log(reduced) // r
+>>>>>>> 0570e5c30571f237425d52a27aa44f4f6663c7ab
 
