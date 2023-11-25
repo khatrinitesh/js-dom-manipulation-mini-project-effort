@@ -1,5 +1,7 @@
 // Event Delegation in JavaScript
 
+const { stdChannel } = require("redux-saga");
+
 // Temporal Dead Zone (TDZ) and Hoisting in JavaScript – Explained with Examples
 
 // opeartors => assignment / comparison / logical / conditional / bitwise / unary / typeof / precedence
@@ -12861,7 +12863,7 @@ const classDetails = {
 // console.log(rest)
 
 // array destructing 
-const arr1 = [1, 2, 3, 4];
+// const arr1 = [1, 2, 3, 4];
 // // console.log(...arr1)
 // console.log(arr1[0])
 // console.log(arr1[1])
@@ -16101,6 +16103,512 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(repeatedSt)
 // console.log(times)
 
+// 79. What is the easiest way to convert an array to an object?
+// const arr2 = ['zero', 'one', 'two'];
+// const obj1 = Object.assign({},arr2)
+// console.log(obj1)
+
+// 80. Verify that a function argument is a Number or not?
+// function isNumber(value){
+//   return typeof value === 'number'
+// }
+// console.log(isNumber(43))
+
+// const currentDate = new Date();
+// const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+// const monthsOfYear = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+//81. What is the easiest way to resize an Array?
+// const oldArray = [1, 2, 3];
+// const newArray = new Array(oldArray.length);
+// for(let i=0;i<oldArray.length;i++){
+//   newArray[i] = oldArray[i]
+// }
+// console.log(newArray)
+
+//82. What's the difference between a function expression and function declaration?
+// const getRectangleArea = function(w,h){
+//   return w * h
+// }
+// console.log(getRectangleArea(3,10))
+// const ExampleArea = function(w,h){
+//   return w * h 
+// }
+// console.log(ExampleArea(10,20))
+
+//83. How to detect a mobile device with JavaScript?
+
+//84. Why do we use The some() method in Arrays?
+// function checkAvailability(arr,val){
+//   return arr.some(function(arrVal){
+//     return val === arrVal
+//   })
+// }
+// function func(){
+//   let arr = [2,6,8,1]
+//   console.log(checkAvailability(arr,2))
+//   console.log(checkAvailability(arr,11))
+// }
+// func()
+// function isGreat(ele,idx,arr){
+//   return ele > 5;
+// }
+// function func(){
+//   let arr = [11,22,33,44]
+//   let val=   arr.some(isGreat)
+//   console.log(val)
+// }
+// func()
+
+// 85. How to add 15 minutes to a JavaScript Date?
+// const nums = [34, 2, 48, 91, 12, 32];
+// function addMinutes(date,minutes){
+//   date.setMinutes(date.getMinutes() + minutes)
+//   return date;
+// }
+// const result1  = addMinutes(new Date(),10)
+// console.log(result1)
+
+//86. Explain JavaScript Promises with an example?
+// let promise = new Promise(function(resolve,reject){
+//   let value = 'water'
+//   resolve(value)
+// })
+// console.log(promise);
+
+//87. Which keyword can be used to deploy inheritance in ES6?
+// function Vehicle(name,type){
+//   this.name = name 
+//   this.type = type 
+// }
+// Vehicle.prototype.getName = function getName(){
+//   return this.name 
+// }
+// Vehicle.prototype.getType = function getType(){
+//   return this.type 
+// }
+// var car =  new Vehicle('bmw','car')
+// console.log(car.getName())
+// console.log(car.getType())
+
+//88. What is the difference between for..of and for..in?
+// let list = [4, 5, 6];
+// for(let i in list){
+//   console.log(i)
+// }
+// for(let i of list){
+//   console.log(i)
+// }
+// const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for(const index in digits){
+//   console.log(digits[index]);
+// }
+// const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for(const index of digits){
+//   console.log(digits[index])
+// }
+
+// const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for(const digit of digits){
+//   console.log(digit)
+// }
+// const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// for(const digit of digits){
+//   if(digit % 2 === 0){
+//     continue;
+//   }
+//   console.log(digit)
+// }
+// const str = "Hello World";
+// for(let example of str){
+//   console.log(example)
+// }
+// for(let example in str){
+//   console.log(example)
+// }
+// const student = {
+//   registration: "123456",
+//   name: "Sandeep",
+//   age: 33,
+// }
+// Object.defineProperty(student,"marks",{
+//   value:98,
+//   enumerable:false
+// })
+// console.log(student.marks)
+// for(key in student){
+//   console.log(key)
+// }
+
+
+//89. How to set a property in localStorage
+// const user = { brand:"Suzuki", color:"white", price:10000 };
+// console.log(localStorage.setItem('car',JSON.stringify(car)));
+// const userArray = ["Obaseki",25]
+// localStorage.setItem('user', JSON.stringify(userArray));
+// const userData = JSON.parse(localStorage.getItem('user'));
+// console.log(userData)
+// var answer = localStorage.key(1);
+// console.log(answer)
+// window.localStorage.setItem("grade","One");
+// const Car = {
+//   brand:"Suzuki",
+//   color:"white",
+//   price:10000
+// }
+// console.log(window.localStorage.setItem('car',JSON.stringify(Car)))
+// window.localStorage.getItem('car');
+// JSON.parse(window.localStorage.getItem('car'))
+
+// 90.  Give a list of the various ways using which an HTML element can be accessed within a JavaScript code?
+// Accessing the element by getElementById method
+// let temp = document.getElementById("Geeksforgeeks");
+// console.log(temp)
+
+// 91. State the difference between Apply and Call?
+// const func = function() {
+//   console.log("Hello world!");
+// };
+// func()
+// function test(...arguments){
+//   console.log(this.num, arguments);//100, [1,2,3]
+// }
+// test.apply({num:100},[1,2,3])
+
+// 92. What is the difference between undefined and not defined in JavaScript?
+// var a; 
+// console.log(a)
+// a;
+// console.log(a)
+// a = undefined 
+// console.log(a)
+
+// 93. Explain Closure in JavaScript with an example?
+// function outerFunction(){
+//   var a= 1 
+//   function innerFunction(){
+//     console.log(a)
+//   }
+//   return innerFunction()
+// }
+// outerFunction();
+
+// 94. How to calculate the length of an associative array using JavaScript?
+// const obj = {
+//   key1: "value1",
+//   key2: "value2",
+//   key3: "value3",
+// };
+// let length = 0;
+// for (const key in obj){
+//   length++;
+// }
+// console.log(length)
+
+// 95. Explain JavaScript promise.all with an example?
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => resolve("one"), 1000);
+// });
+// console.log(p1);
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => resolve('one'),1000)
+// })
+// console.log(p2)
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => resolve('two'),2000)
+// })
+// console.log(p3)
+
+// const p1 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log('The first promise has resolved');
+//     resolve(10);
+//   }, 1 * 1000);
+// });
+// const p2 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log('The second promise has resolved');
+//     resolve(20);
+//   }, 2 * 1000);
+// });
+// const p3 = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log('The third promise has resolved');
+//     resolve(30);
+//   }, 3 * 1000);
+// });
+// Promise.all([p1,p2,p3]).then((results) => {
+//   const total = results.reduce((p,c) => p+c)
+//   console.log(`Results: ${results}`)
+//   console.log(`Total: ${total}`)
+// })
+
+// 96. Explain Promise.race with an example?
+// const p1 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve(10)
+//   },1000)
+// })
+// console.log(p1)
+// const p2 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve(10)
+//   },1000)
+// })
+// console.log(p2)
+// const p3 = new Promise((resolve,reject) => {
+//   setTimeout(() => {
+//     resolve(10)
+//   },1000)
+// })
+// console.log(p3)
+
+//97.  Give an example of an Anonymous function?
+// (function() {  
+//   console.log('Hello');  
+// })();  
+// (function(){
+//   console.log('nitesh khatri')
+// })()
+// (function(){
+//   console.log('sameet khatri')
+// })()
+// (function(){
+//   console.log('urvashi khatri')
+// })()
+// (function(){
+//   console.log('arvind khatri')
+// })()
+// var greet = function(){
+//   console.log('welcome javascript code')
+// }
+// greet()
+
+//98. What is Prototype Property? Explain with an Example
+// constructor function
+// function Person () {
+//   this.name = 'John',
+//   this.age = 23
+// }
+// Person.prototype.address = 'amir house'
+// console.log(Person())
+
+// 99. Explain function hoisting with an exampl
+// var a = 100;
+// console.log(a)
+// function hoist() {
+//   a = 20;
+//   var b = 100;
+// }
+// function hoist() {
+//   console.log(message);
+//   var message='Hoisting is all the rage!'
+// }
+// hoist();
+// function hoist() {
+//   var message;
+//   console.log(message);
+//   message='Hoisting is all the rage!'
+// }
+// hoist()
+// function hoist() {
+//   var message='Hoisting is all the rage!'
+//   return (message);
+// }
+// hoist()
+// console.log(hoist); 
+// let hoist = 'Velit pariatur consequat amet proident id Lorem nisi. Eiusmod aliqua et aliqua exercitation consectetur duis ipsum. Qui adipisicing reprehenderit laboris deserunt magna veniam laboris excepteur voluptate magna eiusmod ut consequat eu. Reprehenderit duis incididunt cillum duis. Ipsum reprehenderit officia eiusmod quis eiusmod nostrud commodo. Do quis elit sunt non pariatur culpa Lorem.'
+// console.log(hoist); 
+// const hoist = 'The variable has been hoisted.';
+// const PI = 111;
+// console.log(PI); // Ouput: SyntaxError: Missing initializer in const declaration
+
+// 100. How to implement Bubble sort in JavaScript?
+// const bubbleSort = array => {
+// 	let swapped;
+// 	do {
+// 		swapped = false;
+// 		array.forEach((number, index) => {
+// 			if (number > array[index + 1]) {
+// 				[array[index], array[index + 1]] = [array[index + 1], array[index]];
+// 				swapped = true;
+// 			}
+// 		});
+// 	} while (swapped);
+// 	return array;
+// };
+
+// function _bubbleSort(array) {
+// 	for (let i = 0; i < array.length; i++) {
+// 		for (let j = 0; j < array.length - i - 1; j++) {
+// 			if (array[j] > array[j + 1]) {
+// 				const less = array[j + 1];
+// 				array[j + 1] = array[j];
+// 				array[j] = less;
+// 			}
+// 		}
+// 	}
+
+// 	return array;
+// }
+// mocha.setup("bdd");
+// const { assert } = chai;
+// describe("Bubble Sort", () => {
+// 	it("Should implement bubble sort", () => {
+// 		assert.deepEqual(bubbleSort([5, 4, 3, 2, 1]), [1, 2, 3, 4, 5]);
+// 		assert.deepEqual(bubbleSort([5, 3, 1, 2, 4]), [1, 2, 3, 4, 5]);
+// 		assert.deepEqual(_bubbleSort([5, 4, 3, 2, 1]), [1, 2, 3, 4, 5]);
+// 		assert.deepEqual(_bubbleSort([5, 3, 1, 2, 4]), [1, 2, 3, 4, 5]);
+// 	});
+// });
+
+// mocha.run();
+
+// 101. How to find prime numbers in an Array?
+// function checkPrime(num){
+//   for (let i = 2; i < num; i++){
+//     if(num % i === 0){
+//       }
+//     }
+//  }
+//  function detectPrime(arr){
+//      if (checkPrime){
+//          return true;
+//           }else{
+//             return false;
+//        }
+// }
+// console.log(detectPrime([15,110,7,22,25]));// true
+// console.log(detectPrime([15,110,77,290,20]));// false
+
+// 102. How to generate fibonacci series in JavaScript?
+// let fn1 = 0, fn2 = 1, nextFibonacci;
+// console.log('Fibonacci Series upto 8 terms is:');
+// for (let i = 1; i <= 8; i++) {
+//    console.log(fn1);
+//    nextFibonacci = fn1 + fn2;
+//    fn1 = fn2;
+//    fn2 = nextFibonacci;
+// }
+
+// function f1(){
+//   let n1 = 100;
+//   let n2 = 200;
+//   return [n1,n2]
+// }
+// let result = f1()
+// console.log(result)
+
+// let myStringSingle = 'Hello, World!';
+// let myStringDouble = "Hello, World!";
+// console.log(myStringSingle)
+// console.log(myStringDouble)
+
+// const myString = 'nitesh khatri'
+// let length = myString.length; 
+// console.log(length)
+
+// console.log(42)
+// console.log('nitesh khatri')
+
+// Array methods - filter - for each - join - every - some - find index
+const arrayN = [20,34,55,66,1122,3333]
+// for(let i=0;i<=arrayN.length;i++){
+//   console.log(arrayN[i])
+// }
+// arrayN.forEach(function(){
+//   console.log('function called')
+// })
+// arrayN.forEach(function(val,index){
+//   console.log(val)
+// })
+// console.log(arrayN.some((value) => {
+//   return value > 10
+// }))
+// console.log(arrayN.filter((val) => val > 70))
+// console.log(arrayN.findIndex((val) =>{return val == 9999}))
+
+// function printNames(){
+//   let name = 'nitesh';
+//   const name2 = 'sameet';
+//   const name3 = 'arvind';
+//   console.log(name,name2,name3)
+// }
+// printNames()
+
+// function outer(x){
+//   function inner(y){
+//     return x + y;
+//   }
+//   return inner();
+// }
+// const outerResult = outer(30);
+// console.log(outerResult)
+
+// function f2(){
+//   console.log('secondfunc calling')
+// }
+// f2()
+
+// function personName(){
+//   console.log('nitesh khatri')
+// }
+// personName()
+
+// function personName(names){
+//   console.log(names)
+// }
+// personalName('nitesh')
+
+// function add(a,b){
+//   console.log(a+b)
+// }
+// add(3,10)
+
+// const expFunc = function(x,y){
+//   console.log(x,y)
+// }
+// expFunc(10,20)
+
+// function add(a,b){
+//   return a +b 
+// }
+// console.log(add(10,20))
+
+
+// function add(a,b){
+//   let data = a+b 
+//   return data; 
+// }
+// console.log(add(20,30))
+
+// function minus(a,b){
+//   let data = a -b 
+//   return data 
+// }
+// console.log(minus(10,20))
+
+// function multiple(a,b){
+//   let data = a*b 
+//   return data 
+// }
+// console.log(multiple(20,3))
+
+// function add(a,b=40){
+//   return a +b 
+// }
+// console.log(add(20))
+
+
+
+
+
+
+
+
+
+
+
 // remove duplicate values from array values 
 // const arr123 = [1,34,1,56]
 // const uniqueValues = new Set(arr123)
@@ -16798,3 +17306,5 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log(new Date().toUTCString())
 // console.log(Date.UTC)
 // console.log(new Date().valueOf())
+
+
