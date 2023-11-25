@@ -16512,7 +16512,7 @@ const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // console.log('nitesh khatri')
 
 // Array methods - filter - for each - join - every - some - find index
-const arrayN = [20,34,55,66,1122,3333]
+// const arrayN = [20,34,55,66,1122,3333]
 // for(let i=0;i<=arrayN.length;i++){
 //   console.log(arrayN[i])
 // }
@@ -17307,8 +17307,6 @@ const arrayN = [20,34,55,66,1122,3333]
 // console.log(Date.UTC)
 // console.log(new Date().valueOf())
 
-<<<<<<< HEAD
-=======
 // const numbersOne = [1, 2, 3];
 // const numbersTwo = [4, 5, 6];
 // const numbersCombined = [...numbersOne, ...numbersTwo];
@@ -17532,5 +17530,4 @@ const userCart =[
 var reduced = userCart.reduce(function(a, b){
   return a + b.price},0);
 console.log(reduced) // r
->>>>>>> 0570e5c30571f237425d52a27aa44f4f6663c7ab
 
