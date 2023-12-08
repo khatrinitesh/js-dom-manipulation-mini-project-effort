@@ -12848,11 +12848,11 @@ const words = ["hello", "world"]
 
 // console.log(10 === "10");
 
-const classDetails = {
-  strength: 78,
-  benches: 39,
-  blackBoard:1
-}
+// const classDetails = {
+//   strength: 78,
+//   benches: 39,
+//   blackBoard:1
+// }
 
 // const {strength,benches,blackBoard} = classDetails
 // console.log(classDetails)
@@ -14826,7 +14826,7 @@ const numbers1 = [1, 2, 3]
 // const a = 'nit'
 // console.log(a.repeat(5, '++'))
 
-const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
+// const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 // const sortasc = nameWise.sort(function(a,b) {
 //   if(a<b){
 //     return -1 
@@ -15131,7 +15131,7 @@ const nameWise = ['sujeet','ramesh','piyush','mayank','vighnesh']
 
 
 
-const arr111111 = [1, 2, 2, 3, 4, 4, 5];
+// const arr111111 = [1, 2, 2, 3, 4, 4, 5];
 // const uniqueValues = [...new Set(arr111111)]
 // console.log(uniqueValues)
 // const arrUni = []
@@ -17543,6 +17543,19 @@ console.log(reduced) // r
 // console.log(maparray)
 // const a = Object.assign(people,person => person.name[0])
 // console.log(a)
+
+// console.log('script start')
+// for(let i=1;i<5;i++){
+//   console.log('inside for loop')
+// }
+// console.log('script end');
+
+
+function Hello(){
+  console.log('hello word')
+}
+setTimeout(Hello,1500)
+
 
 
 
