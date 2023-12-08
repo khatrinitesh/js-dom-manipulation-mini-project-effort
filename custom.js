@@ -17531,3 +17531,19 @@ var reduced = userCart.reduce(function(a, b){
   return a + b.price},0);
 console.log(reduced) // r
 
+// const people  = [
+//   {name:'nitesh',age:34},
+//   {name:'sameet',age:41},
+//   {name:'urvashi',age:65},
+//   {name:'arvind',age:68},
+//   {name:'manisha',age:44},
+// ]
+
+// const maparray = people.map((val) => val.name)
+// console.log(maparray)
+// const a = Object.assign(people,person => person.name[0])
+// console.log(a)
+
+
+
+
