@@ -1,6 +1,6 @@
 // Event Delegation in JavaScript
 
-const { stdChannel } = require("redux-saga");
+// const { stdChannel } = require("redux-saga");
 
 // Temporal Dead Zone (TDZ) and Hoisting in JavaScript – Explained with Examples
 
@@ -17551,12 +17551,409 @@ console.log(reduced) // r
 // console.log('script end');
 
 
-function Hello(){
-  console.log('hello word')
-}
-setTimeout(Hello,1500)
+// function Hello(){
+//   console.log('hello word')
+// }
+// setTimeout(Hello,1500)
+
+// console.log('start')
+// setTimeout(() => {
+// 	console.log('inside settimeout')
+// },1000)
+// console.log('end')
+
+// for(let i=0;i<50;i++){
+// 	console.log(i)
+// }
+
+// console.log('start')
+// setInterval(() => {
+// 	console.log(Math.random())
+// },500)
+// console.log('end')
 
 
+// const body = document.body 
+// const button = document.querySelector('button')
+// const resultInterval = setInterval(() => {
+// 	const red = Math.floor(Math.random() * 126)
+// 	const blue = Math.floor(Math.random() * 126)
+// 	const green = Math.floor(Math.random() * 126)
+// 	const rgb = `rgba(${red} ${green} ${blue})`
+// 	body.style.backgroundColor = rgb;
+// },1000)
+// console.log(resultInterval)
+// button.addEventListener("click",() => {
+// 	clearInterval(resultInterval)
+// })
+
+// function myFunc(){
+// 	console.log('the console log is called')
+// }
+// myFunc()
+// function myFunc2(){
+// 	console.log('the console log 2 is called')
+// }
+// myFunc2()
+// function getTwoNumbers(n1,n2){
+// 	console.log(n1+n2)
+// }
+// getTwoNumbers(10,20)
+
+// function getTwoNumbersAndAdd(n1,n2,onSuccess,onFailure){
+// 	if(typeof n1 ===  'number' && typeof n2 === 'number'){
+// 		onSuccess(n1,n2)
+// 	}
+// 	else{
+// 		onFailure();
+// 	}
+// }
+// getTwoNumbersAndAdd(4,4,(n1,n2) => {
+// 	console.log(n1 + n2)
+// }, () => {
+// 	console.log('wrong data type')
+// 	console.log('please pass numbers only')
+// })
+
+// const heading1 = document.querySelector('.heading1')
+// setTimeout(() => {
+// 	heading1.textContent = 'heading 1'
+// 	heading1.style.color = 'red'
+// },1000);
+// setTimeout(() => {
+// 	heading2.textContent = 'heading 2'
+// 	heading2.style.color = 'purple'
+// },3000);
+// const h1 = document.querySelector('.heading1')
+// const h2 = document.querySelector('.heading2')
+// const h3 = document.querySelector('.heading3')
+// const h4 = document.querySelector('.heading4')
+// const h5 = document.querySelector('.heading5')
+// setTimeout(() => {
+// 	console.log(h1)
+// 	h1.style.color = 'red'
+// 	h1.textContent = 'nitesh khatri'
+// 	h1.style.backgroundColor = 'orange'
+// }	)
+// function changeText(element, text, color, time, onSuccessCallback, onFailureCallback) {
+//   setTimeout(()=>{
+//     if(element){
+//       element.textContent = text;
+//       element.style.color = color;
+//       if(onSuccessCallback){
+//         onSuccessCallback();
+//       }
+//     }else{
+//       if(onFailureCallback){
+//         onFailureCallback();
+//       }
+//     }
+//   },
+// // pyramid of doom
+// changeText(heading1, "one","violet",1000,()=>{
+//   changeText(heading2, "two","purple",2000,()=>{
+//     changeText(heading3, "three","red",1000,()=>{
+//       changeText(heading4, "four","pink",1000,()=>{
+//         changeText(heading5, "five","green",2000,()=>{
+//           changeText(heading6, "six","blue",1000,()=>{
+//             changeText(heading7, "seven","brown",1000,()=>{
+//               changeText(heading8, "eight","cyan",1000,()=>{
+//                 changeText(heading9, "nine","#cda562",1000,()=>{
+//                   changeText(heading10, "ten","dca652",1000,()=>{
+                    
+//                   },()=>{console.log("Heading10 does not exist")})
+//                 },()=>{console.log("Heading9 does not exist")})
+//               },()=>{console.log("Heading8 does not exist")})
+//             },()=>{console.log("Heading7 does not exist")})
+//           },()=>{console.log("Heading6 does not exist")})
+//         },()=>{console.log("Heading5 does not exist")})
+//       },()=>{console.log("Heading4 does not exist")})
+//     },()=>{console.log("Heading3 does not exist")})
+//   },()=>{console.log("Heading2 does not exist")})
+// },()=>{console.log("Heading1 does not exist")})
+// const randomString = () => Math.random().toString(35).slice(2)
+// console.log(randomString)
 
 
+// const randomString = (length =10) => {
+// 	let result = ''
+// 	while(result.length < length){
+// 		result += Math.random().toString(36).slice(2);
+// 	}
+// 	return result.slice(0,length)
+// }
 
+// const copyClipboard = (text) => navigator.clipboard.writeText(text);
+// console.log(copyClipboard('hello world'))
+
+// const getSelectedText = () => window.getSelection().toString();
+// console.log(getSelectedText)
+
+// const goToTop = () => window.scrollTo(0,0)
+// console.log(goToTop)
+
+// const isTabView = () => !document.hidden;
+// console.log(isTabView)
+
+// const redirect  = url => location.href = url 
+// console.log(redirect('https://www.google.com/'))
+
+// const showPrintDialog = () => window.print()
+// console.log(showPrintDialog)
+
+// const randomBoolean = () => Math.random() >= .5;
+// console.log(randomBoolean());
+
+// const randomNumber = Math.random() * (max - min) + min 
+// console.log(randomNumber)
+
+// const isInteger = (num) => num % 1 === 0 
+// console.log(isInteger)
+
+// const arr11 = [1,2,3,4,5,5,6,7,7]
+// const removeDuplicates = (arr) => [...new Set(arr11)]
+// console.log(removeDuplicates([]))
+
+
+// const isArray = (arr) => Array.isArray(arr11);
+// console.log(isArray[1,2,3])
+
+// console.log(isArray({name:'nitesh'}))	
+// console.log(isArray('nitesh'))
+
+// const isWeekend = (date) => [0,6].indexOf(date.getDay()) !== -1
+// // console.log(isWeekend)
+// // console.log(isWeekend(new Date(2021,4,14)))
+// // console.log(isWeekend(new Date(2021,4,15)))
+
+// const daysDiff = (date,date2) => Math.ceil(Math.abs(date - date2) / 8640000);
+// console.log(daysDiff(new Date('2021-05-10'), new Date('2021-11-25')))
+
+// const capitazlied = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+// console.log(capitazlied('hello world'))
+
+// get the day of the year from a date
+// const dayOfYear = (date) => Math.floor((date - new Date(date.getFullYear(),0,0)) / (100*60*60*24))
+// console.log(dayOfYear(new Date()))
+
+// check if a string is a palindrome
+// const isPalindrome = str => str === str.split('').reverse().join('');
+// console.log(isPalindrome('racecar'));
+// console.log(isPalindrome('hello'));
+// console.log(isPalindrome('nitesh khatri'))
+
+// get the first elements of an array
+// const take = (arr,n) => arr.slice(0,n)
+// console.log(take([1,2,3,4,5,6,7,8,9,10],6));
+
+// get the last n elements of an array 
+// const takeRight = (arr,n ) => arr.slice(-n);
+// console.log(takeRight([1,2,3,4,4,,6],3))
+
+// remove all vowels from a string
+// const removeVowels = (str) => str.replace(/[aeiou]/gi,'')
+// console.log(removeVowels('hello world'))
+
+// check if a string contains a substring
+// const contains = (str,substr) => str.includes(substr);
+// console.log(contains('hello world','world'))
+// console.log(contains('hello','world'))
+
+// get the current time in a hh:mm:ss format
+// const getTime = () => new Date().toLocaleTimeString()
+// console.log(getTime())
+
+// check if an objects is empty
+// const isEmpty = obj => Object.keys(obj).length === 0
+// console.log(isEmpty({}))
+// console.log(isEmpty({name:'test'}))
+
+// check if the provided array is not empty 
+// check if the provided array is not empty 
+// const isArrayNotEmpty = (arr) => {
+// 	// check if 'arr' is an empty and has more than 0 elemens 
+// 	return Array.isArray(arr) && arr.length > 0
+// }
+// console.log(isArrayNotEmpty([]))
+// console.log(isArrayNotEmpty([1,2,3]))
+
+// find the max value in an array
+// const arrayMath = [2,44,22]
+// console.log(Math.max(1,333,55))
+// console.log(Math.min(1,333,55))
+
+// const isEmpty = obj => Object.keys(obj).length === 0
+// console.log(isEmpty({}))
+// console.log(isEmpty({name:'test'}))
+
+// checks if the provided array is not empty
+// const isArrayEmpty = (arr) => {
+// 	return Array.isArray(arr) && arr.length > 0
+// }
+// console.log(isArrayEmpty([]));
+// console.log(isArrayEmpty([1,2,3,4]));
+
+// find the max value in an array
+// get the current date and time 
+// console.log(new Date())
+// console.log(new Date().toLocaleTimeString())
+
+// const array1 = [22,55,66,77,1,3]
+// const sortAsc = array1.sort(function(a,b){
+// 	if(a>b){
+// 		return -1
+// 	}
+// 	else{
+// 		return 1
+// 	}
+// })
+// console.log(sortAsc)
+// const sortDsc = array1.sort(function(a,b){
+// 	if(a<b){
+// 		return -1
+// 	}
+// 	else{
+// 		return 1
+// 	}
+// })
+// console.log(sortDsc)
+
+// extract the domain name from an email
+// const email = 'nitesh.khatri88@gmail.com'
+// const extractDomain = (email) => email.split('@')[1]
+// console.log(extractDomain(email))
+
+// flattern an nested array 
+// const flat = (arr) => arr.flat(1);
+// console.log(flat(['cat',['lion','tigers']]))
+
+// generates a random color in hexadecimal format
+// const randomColor = () => `#${Math.random().toString(16).slice(2,8).padEnd(6,'0')}`
+// console.log(randomColor());
+// console.log(randomColor());
+
+// checks if a given value is a valid hexadecimal color code
+// const isHexColor = (hex) => {
+// 	const regex = /#?([0-9A-Fa-f]{6}|[0-9A-Fa-f]{3})/;
+// 	return regex.test(hex)
+// }
+// console.log(isHexColor)
+
+
+// get the current time in a specific timezone
+// const currentTimeZone = (timezone) => new Date().toLocaleTimeString('en-US',{timezone:timezone})
+// console.log(currentTimeZone('Europe/London'))
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => response.json()).then((json) => console.log(json)).catch((err) => console.log('error is',err))
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => response.json()).then((json) => console.log(json)).catch((err) => console.log('error is',err))
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => response.json()).then((json) => console.log(json)).catch((err) => console.log('error is',err))
+
+// convert a string to kebab-case
+// const toKebabCase = (str) => str.toLowerCase().replace(/\s+/g,'-')
+// console.log(toKebabCase('hello world'))
+// console.log(toKebabCase('this is a test'))
+
+// shuffle an array
+// const shuffle = arr => arr.sort(() => Math.random() - 0.5);
+// console.log(shuffle([1,2,3,4,5,6]));
+
+// shuffle an array using the fisher- yates (knuth) shuffle algorithm
+// const fisherYatesShuffle = (arr) => {
+// 	for(let i=arr.length-1;i>0;i--){
+// 		const j = Math.floor(Math.random() * (i+1));
+// 		[arr[i],arr[j] = [arr[j],arr[i]];
+// 	}
+// 	return arr;
+// }
+
+// const originalArray = [1,2,3,4,5]
+// const shuffleArray = fisherYatesShuffle([...originalArray]);
+// console.log(shuffleArray)
+
+// convert RGB color code to valid hexadecimal color code
+// const rtoH = (r,g,b) => "#" + ((1<<24)) + (r<16) + (g<<8+b).toString(16).slice(1)
+// console.log(rtoH(255,255,255))
+
+// fetch('https://jsonplaceholder.typicode.com/todos/1').then((response) => {
+// 	if(response.ok){
+// 		console.log('positive')
+// 		return response.json()
+// 	}
+// 	console.log('negative')
+// })
+// .then((json) => console.log(response.json))
+// .catch((err) => console.log('error in',err))
+
+// async function makeRequest(){
+// 	try{
+// 		const response = await fetch('https://jsonplaceholder.typicode.com/todos/')
+// 		const data = await response.json()
+// 		console.log(data)
+// 	}
+// 	catch(err){
+// 		console.log('error is',err)
+// 	}
+// }
+// makeRequest()
+
+// truncate a number to a fixed decimal point
+// const round = (n,d) => Number(Math.round(n + "e" + d) + "e" + d)
+// console.log(round(1.005,2))
+// console.log(round(1.555,2))
+
+// remove falsy values from array 
+// const removeFalsy = (arr) => arr.filter(Boolean)
+// console.log(removeFalsy([0,1,'nitesh',NaN,null,undefined,2,true,false]))
+
+// a function that toggles a boolean value 
+// const toggleBoolean = () => (bool = !bool)
+// console.log(toggleBoolean)
+
+// swapping two variables
+// [foo,bar] = [bar,foo]
+// console.log(foo,bar)
+
+// let a1 = 10
+// let b1 = 20
+// [a1,b1] = [b1,a1]
+// console.log(a1,b1)
+
+// merging multiple arrays using concatenation
+// the concat method returns a new array containing elements from both arr1 and arr2
+// const arr1  = ['a','b','c']
+// const arr2  = ['d','e','f']
+// const merged = arr1.concat(arr2)
+// console.log(merged)
+
+// merging multiple arrays using spread operator 
+// the spread operator is concise and visually clear it takes the elements from both arrays and creates a new array 
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// console.log(...arr1,...arr2)
+
+// merging multiple arrays using push and apply 
+// this approach modifies arr1 in place by using push along with apply to add elements from arr2
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// console.log(arr1.push.apply(arr1,arr2))
+
+// let a = 5;
+// let b = 10;
+// [a,b] = [b,a]
+// console.log('after swapping')
+// console.log('a',a)
+// console.log('b',b)
+
+// merging multiple arrays using push and spread opeartor 
+// the spread opeartor is used to expand the elements of arr2 into individual argruments for the push method 
+// const arr111 = [1,2,3]
+// const arr222 = [4,5,6]
+// console.log(arr111.push(arr222))
+
+// merging multiple arrays using concat with spread operator the spread opeartor is used to expand 
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// const mergedArray = arr1.concat(arr2)
+// console.log(mergedArray)
