@@ -17957,3 +17957,147 @@ console.log(reduced) // r
 // const arr2 = [4,5,6]
 // const mergedArray = arr1.concat(arr2)
 // console.log(mergedArray)
+
+// const bucket = ['coffee','chips','vegetables','salt','rice']
+// new Promise((resolve,reject) => {
+// 	if(bucket.includes('vegetables') && bucket.includes('salt') && bucket.includes('rice')){
+// 		resolve('fried rice')
+// 	}else{
+// 		reject('couldnt do it')
+// 	}
+// })
+// console.log(bucket);
+
+// friedRicePromise.then((myfriedrice) => {
+// 	console.log('let us eat',myfriedrice)
+// })
+
+// for(let i=0;i<=100;i++){
+// 	console.log(Math.random(),i)
+// }
+
+// console.log('script ')
+
+// myPromise().then((value) => {
+// 	console.log(value)
+// 	value += 'bar';
+// 	return value;
+// })
+// .then((value) => {
+// 	console.log(value)
+// });
+
+// "nitesh".then((value) => {
+// 	console.log(value)
+// })
+
+// const trueTypeOf = (obj) => {
+// 	return Object.prototype.toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+// }
+// console.log(trueTypeOf(''))
+// console.log(trueTypeOf(0))
+// console.log(trueTypeOf())
+// console.log(trueTypeOf(null))
+// console.log(trueTypeOf({}))
+// console.log(trueTypeOf([]))
+// console.log(trueTypeOf(0))
+// console.log(trueTypeOf(() => {}))
+
+// truncate string at the end 
+// the function will truncate the input string to the specified length and add an ellipsis () at the ened if the string is longer than the specified length
+
+// const truncateString = (string,length) => {
+// 	return string.length < length ? string : `${string.slice(0,length-3)}....`
+// }
+// console.log(truncateString('hi, i should be truncated because i am too long!',36))
+
+// truncae string from the middle
+// the function is to truncate the input string while keeping the specified number of characters from the start and end, and adding an ellipsis (...) in the middle
+// const truncateString = (string,length) => {
+// 	return string.length < length ? string : `${string.slice(0,length - 3)}...`
+// }
+// console.log(truncateString('hi, i should be truncated because i am too long!',36))
+
+// get the value of a browser cookie by it is name
+// const getCookieValue = (name) => {
+// 	const cookies = `${document.cookie}`;
+// 	const cookieArray = cookies.split(`;${name}=`)
+// 	const cookieValue = cookieArray.pop().split(';').shift();
+// 	return cookieValue;
+// }
+// const getValue = getCookieValue("_ga")
+// console.log(getValue)
+
+
+// get the time hh:mm:ss from a javascript date object
+// const getTimeFromDate = (date) => {
+// 	return date.toTimeString().slice(0,9)
+// }
+// const exampleDate = new Date(2021,0,10,17,30,0);
+// const timeString = getTimeFromDate(exampleDate)
+// console.log(timeString)
+
+// check if a number is even or odd
+// const isEven = num => num % 2 === 0 
+// console.log(isEven(11))
+
+// converts the first character of a given string to lowercase
+// const lowercaseFirst = (str) => {
+// 	const firstCharLowerCase = str.charAt(0).toLowerCase();
+// 	const restOfString = str.slice(1);
+// 	return `${firstCharLowerCase}${restOfString}`;
+// }
+// console.log(lowercaseFirst('Hello World'));
+
+// repeats a given string a specific number of times
+// const repeat = (str,numberOfTimes) => {
+// 	return str.repeat(numberOfTimes)
+// }
+// console.log(repeat)
+
+// check if the code is running in node.js 
+// const isNode = typeof process !== 'undefined' && process.versions !== null && process.versions.node == ui;
+// console.log(isNode)
+
+// get all siblings of a given element
+// const siblings = ele => Array.from(ele.parentNode.children).filter(child => child != ele)
+// console.log(siblings)
+
+// go back to the previous page using the history object 
+// history.back()
+// or 
+// history.go(-1)
+
+// function to get the largest element in an array
+// const getLargest = (arr) => {
+// 	return arr.reduce((largest,num) => Math.max(largest,num), -Infinity)
+// }
+// const arr1 = [13,6,7,88,11,1122,333]
+// console.log(getLargest(arr1))
+// console.log(Math.max(...arr1))
+// console.log(Math.min(...arr1))
+
+// Function to remove HTML tags from a given String
+// function removeHTMLTags(inputString){
+// 	 return inputString.replace(/<[^>]*>/g, '');
+// }
+
+// const htmlString = '<p>This is <b>an example</b> <a href="#">HTML</a> string.</p>'
+// const stringWithoutHtml = removeHTMLTags(htmlString)
+// console.log(stringWithoutHtml)
+
+// function isDOMElement(value) {
+//   return value instanceof Element || value instanceof HTMLDocument;
+// }
+
+// const element = document.getElementById('exampleElement');
+// const isElement = isDOMElement(element);
+// console.log(isElement);  // Output: true
+
+ document.getElementById('commonAncestor').addEventListener('click', function (event) {
+    // Check if the clicked element is an <li> inside the #commonAncestor
+    if (event.target.tagName === 'LI') {
+      alert('Clicked on: ' + event.target.textContext)
+    }
+  });
+
