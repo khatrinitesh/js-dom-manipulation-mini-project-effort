@@ -18287,10 +18287,171 @@ const items = ['item1','item2','item3']
 // 	console.log(result)
 // })
 
-function multiply(a){
-	return function(b){
-		return a  * b 
-	}
-}
-var data = multiply(2)
-console.log(data(4))
+// function multiply(a){
+// 	return function(b){
+// 		return a  * b 
+// 	}
+// }
+// var data = multiply(2)
+// console.log(data(4))
+
+// Explain the primary distinction between the Array.forEach() loop and Array.map() method, as well as when to choose one over the other.
+// let numbers = [1, 2, 3, 4];
+// numbers.forEach((item) => {
+// 	console.log(item * 2)
+// })
+// numbers.forEach(function(item) {
+// 	console.log(item * 2)
+// })
+// let doubledNumbers = numbers.map(function(item) {
+// 	return item * 2 
+// })
+// console.log(doubledNumbers)
+
+// What is a common scenario for employing anonymous functions?
+// 1) event handling
+// 2) callback functions 
+// 3) array methods (etc. map filter and reduce)
+// 4) immediately invoked function expressions (IIFE)
+// 5) as arguments for higder order functions
+// 6) timeouts and intervals 
+// 7) dynamic function creation
+
+// document.getElementById('myButton').addEventListener('click',function(){
+// 	console.log('this is result')
+// })
+
+// fetchData('https://www.google.com',function(data){
+// 	console.log('data received',data)
+// })
+
+// let numbers = [1, 2, 3, 4];
+// const doublednum = numbers.map(function(val) {
+// 	return val * 2
+// })
+// console.log(doublednum)
+
+// (function(){
+// 	// private scope
+// 	var localVar = 'i am local'
+// 	console.log(localVar)
+// })()
+
+// let numbers = [55,88,11,22]
+
+// let filteredNumbers = numbers.filter(function(val) {
+// 	return val > 33
+// })
+// console.log(filteredNumbers)
+
+// setTimeout(function(){
+// 	console.log('this is timeout')
+// },600)
+
+// var dyamicfunction = function(){
+// 	console.log('dynamic function')
+// }
+// dyamicfunction()
+
+// (function(name){
+// 	console.log('hello' , + name)
+// })('nitesh')
+
+// for(var i=0;i<5;i++){
+// 	(function(j){
+// 		setTimeout(function(){
+// 			console.log(j)
+// 		},100)
+// 	})(i)
+// }
+
+// var myArray = [1, 2, 3];
+// var myString = "Hello, World!";
+// var myFunction = function(){
+// 	console.log('i am a function')
+// }
+// myFunction()
+
+// window.alert("This is a host object");
+// var httpRequest = new XMLHttpRequest();
+
+// native object 
+// var myArray = [1, 2, 3];
+// console.log(Array.isArray(myArray))
+
+// host object 
+// var elementBtn = document.getElementById('myButton')
+// console.log(elementBtn.tagName)
+
+// Clarify the distinctions among 'function User(){}', 'var user = User()', and 'var user = new User()
+// function User(){
+// 	this.name = 'nitesh'
+// 	this.age = 34
+// }
+// var user1 = new User();
+// console.log(user1)
+
+// function User(){
+// 	this.name = 'nitesh'
+// 	this.age = 34
+// }
+// var user = User()
+// console.log(user)
+// console.log(name)
+
+// function User(){
+// 	this.name = 'nitesh'
+// 	this.age = 34
+// }
+// var user = new User()
+// console.log(user.name)
+
+// Can you elucidate the purposes of Function.call and Function.apply, along with their notable differences
+// function greet(name){
+// 	console.log(`Hello, ${name}. I am ${this.title}`)
+// }
+
+// var person = {title:'mr'}
+// greet.call(person,'nitesh')
+
+// function greet(name,city){
+// 	console.log(`hello ${name}. I am ${this.title}, city is ${city}`)
+// }
+// var person = {title:'MR'}
+// greet.apply(person,['nitesh','mumbai'])
+
+// function example(name,city,mobile){
+// 	console.log(`hello ${this.title} ${name} - ${city} ${mobile}`)
+// }
+
+// var person = {title:"mr"}
+// example.apply(person,['nitesh','mumbai',1234567890])
+
+// Describe the Function.prototype.bind method.
+// function greet(name,greeting){
+// 	console.log(`${greeting} ${name} i am ${this.title}`)
+// }
+
+// var person = {title:'mr'}
+// var greetPerson  = greet.bind(person,'nitesh')
+// greetPerson('hello')
+
+// var obj = {x:43}
+// function getX(){
+// 	return this.x
+// }
+// var result = getX.bind(obj)
+// console.log(result())
+
+// function add(a,b){
+// 	return a +b 
+// }
+// console.log(add(10,20))
+
+// function Example(value){
+// 	this.property = value 
+// }
+// var example = Example.bind(null,'example value')
+// var instance = new example();
+// console.log(instance.property)
+
