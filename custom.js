@@ -18455,3 +18455,72 @@ const items = ['item1','item2','item3']
 // var instance = new example();
 // console.log(instance.property)
 
+//  Explain the differences between feature detection, feature inference, and utilizing the User Agent (UA) string.
+// if(typeof window.localStorage !== 'undefined'){
+// 	localStorage.setItem('key','value')
+// }
+// else{
+// 	console.log('local storage is not supported.')
+// }
+
+// if(window.localStorage){
+// 	localStorage.setItem('key','value')
+// }
+// else{
+// 	console.log('local storage is not supported')
+// }
+
+// var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+// if(isMobile){
+// 	console.log('mobile device detected')
+// }
+
+// Define the concept of "hoisting."
+// console.log(x)
+// var x = 5
+// console.log(x)
+
+// sayHello()
+// function sayHello(){
+// 	console.log('hello world')
+// }
+
+// console.log(myVar)
+// var myVar = 10 
+// console.log(myVar)
+
+// What is type coercion, and what are some common pitfalls associated with relying on it in JavaScript code?
+// var number = 42
+// var string = 'the answer is  ' + number 
+// console.log(string)
+
+// var numberString = "42"
+// var sum = numberString + 10
+// console.log(sum)
+// var sumresult = Number(numberString) + 10
+// console.log(sumresult)
+
+// var booleanValue =  true
+// var stringBoolean = String(booleanValue)
+// console.log(stringBoolean)
+// console.log("5" == 5);
+// var value = 'hello'
+// if(value){
+// 	console.log('truthy')
+// }
+
+// console.log('5'+5)
+// console.log('5'-5)
+// var result = "2" * "3";
+// console.log(result)
+
+// console.log('5'===5)
+
+// var numericString = "42";
+// var number = Number(numericString)
+// console.log(number)
+
+// var value = "42"
+// if(typeof value === 'number'){
+// 	console.log(value)
+// }
