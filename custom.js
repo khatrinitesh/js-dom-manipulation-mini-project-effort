@@ -17504,32 +17504,32 @@ const items = ['item1','item2','item3']
 // const reduceAns = numberwise.reduce((a,b) => a+b)
 // console.log(reduceAns)
 
-const userCart =[
-  {
-    "userId": 1,
-    "id": 1,
-    "price":10,
-    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-  },
-  {
-    "userId": 1,
-    "id": 2,
-    "price":11,
-    "title": "qui est esse",
-    "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
-  },
-  {
-    "userId": 1,
-    "id": 3,
-    "price":30,
-    "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
-    "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
-  },
-];
-var reduced = userCart.reduce(function(a, b){
-  return a + b.price},0);
-console.log(reduced) // r
+// const userCart =[
+//   {
+//     "userId": 1,
+//     "id": 1,
+//     "price":10,
+//     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+//     "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+//   },
+//   {
+//     "userId": 1,
+//     "id": 2,
+//     "price":11,
+//     "title": "qui est esse",
+//     "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla"
+//   },
+//   {
+//     "userId": 1,
+//     "id": 3,
+//     "price":30,
+//     "title": "ea molestias quasi exercitationem repellat qui ipsa sit aut",
+//     "body": "et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut"
+//   },
+// ];
+// var reduced = userCart.reduce(function(a, b){
+//   return a + b.price},0);
+// console.log(reduced) // r
 
 // const people  = [
 //   {name:'nitesh',age:34},
@@ -18094,10 +18094,203 @@ console.log(reduced) // r
 // const isElement = isDOMElement(element);
 // console.log(isElement);  // Output: true
 
- document.getElementById('commonAncestor').addEventListener('click', function (event) {
-    // Check if the clicked element is an <li> inside the #commonAncestor
-    if (event.target.tagName === 'LI') {
-      alert('Clicked on: ' + event.target.textContext)
-    }
-  });
+ // document.getElementById('commonAncestor').addEventListener('click', function (event) {
+ //    // Check if the clicked element is an <li> inside the #commonAncestor
+ //    if (event.target.tagName === 'LI') {
+ //      alert('Clicked on: ' + event.target.textContext)
+ //    }
+ //  });
 
+ // es5 function 
+ // function es5function(){
+ // 	var self = this;
+ // 	setTimeout(function(){
+ // 		console.log(self);
+ // 	},1000)
+ // }
+ // es5function();
+
+
+// es6 function 
+// function ES6function(){
+// 	setTimeout(() => {
+// 		console.log(this);
+// 	},1000)
+// }
+// ES6function()
+// class myExample{
+// 	constructor(){
+// 		this.property = 42
+// 	}
+// 	myMethod(){
+// 		console.log(this.property)
+// 	}
+// }
+// const myInstance = new myExample();
+// myInstance.myMethod();
+
+// let myObject = {
+// 	property:'hello',
+// 	myMethod:function(){
+// 		console.log(this.property)
+// 	}
+// }
+
+
+// let anotherObject = {
+// 	property:'world'
+// }
+// let myMethodWithoutBoundThis = myObject.myMethod.bind(anotherObject)
+// myMethodWithoutBoundThis();
+
+// function Person(name){
+// 	this.name  =name;
+// }
+
+// Person.prototype.sayHello = function(){
+// 	console.log('hello, my name is ' + this.name)
+// }
+
+// var person1 = new Person('nitesh')
+
+// person1.sayHello()
+
+// var parent = {
+// 	greet:function(){
+// 		console.log('Hello from the parent object')
+// 	}
+// }
+
+// var child = Object.create(parent)
+// console.log(child.greet())
+
+
+// var parentBox = {
+// 	greet:function(){
+// 		console.log('hello from the parent object')
+// 	}
+// }
+
+// var childBox = Object.create(parentBox)
+// console.log(childBox.greet())
+
+// function Animal(name){
+// 	this.name = name
+// }
+// Animal.prototype.makesound = function(){
+// 	console.log('some generic sound')
+// }
+
+// function Dog(name){
+// 	Animal.call(this,name)
+// }
+
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
+
+// Dog.prototype.makeSound = function(){
+// 	console.log('woof')
+// }
+// var myDog = new Dog('buddy')
+// myDog.makeSound();
+
+// differentiate between a variable that is null, undefined, or undeclared.
+// var x 
+// console.log(x)
+
+// function exampleFunction(y){
+
+// 	console.log(y)
+// }
+// var person = null;
+// console.log(person)
+// console.log(undeclaredVariable);
+// 'use strict'
+// undeclaredVariable = 42
+// console.log(undeclaredVariable)
+
+//----------------------- Define what a closure is and describe its uses and advantages. -----------------------//
+// function outerFunction(){
+// 	console.log('outer function')
+// 	function innerFunction(){
+// 		console.log('inner function')
+// 	}
+// 	innerFunction()
+// }
+// outerFunction()
+
+// function outerFunction(){
+// 	var outerVariable = 'nitesh khatri'
+// 	function innerFunction(){
+// 		console.log(outerVariable)
+// 	}
+// 	return innerFunction
+// }
+// var closureFunction = outerFunction()
+// closureFunction()
+
+// function createCounter(){
+// 	var count = 0;
+// 	return function(){
+// 		return ++count 
+// 	}
+// }
+
+// var counter = createCounter()
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+// function createCount(){
+// 	var count = 0 
+// 	return function(){
+// 		return ++count 
+// 	}
+// }
+
+// var counter = createCount()
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+// console.log(counter())
+
+// function createCounter(){
+// 	var count = 0 
+// 	return function(){
+// 		return ++count
+// 	}
+// }
+
+// var counter = createCounter()
+// console.log(counter())
+
+// function greetinGenerator(greeting){
+// 	return function(name){
+// 		console.log(greeting + ',' + name + '!')
+// 	}
+// }
+// var resultexample = greetinGenerator('hello')
+// resultexample('nitesh')
+
+// var resultexample1 = greetinGenerator('goodbye')
+// resultexample1('sameet')
+
+// function fetchData(url,callback){
+// 	setTimeout(function(){
+// 		var data = 'data from ' + url 
+// 		callback(data)
+// 	},1000)
+// }
+
+// fetchData('https://www.google.com',function(result){
+// 	console.log(result)
+// })
+
+function multiply(a){
+	return function(b){
+		return a  * b 
+	}
+}
+var data = multiply(2)
+console.log(data(4))
