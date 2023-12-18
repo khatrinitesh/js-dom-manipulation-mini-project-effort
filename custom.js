@@ -18524,3 +18524,26 @@ const items = ['item1','item2','item3']
 // if(typeof value === 'number'){
 // 	console.log(value)
 // }
+
+  // document.getElementById('parent').addEventListener('click', function() {
+  //   console.log('Parent clicked');
+  // }, true);
+
+  // document.getElementById('child').addEventListener('click', function() {
+  //   console.log('Child clicked');
+  // });
+
+  // 
+
+  // What distinguishes an "attribute" from a "property"?
+// var inputElement = document.getElementById('myInput');
+// var inputValue = inputElement.value 
+// console.log(inputValue)
+
+//  Explain the differences between == and ===.
+console.log('5' === 5)
+console.log('5' == 5)
+var x = 5;
+var y = '5';
+console.log(x === y)
+console.log(x == y)
