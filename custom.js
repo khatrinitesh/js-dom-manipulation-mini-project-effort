@@ -18541,9 +18541,46 @@ const items = ['item1','item2','item3']
 // console.log(inputValue)
 
 //  Explain the differences between == and ===.
-console.log('5' === 5)
-console.log('5' == 5)
-var x = 5;
-var y = '5';
-console.log(x === y)
-console.log(x == y)
+// console.log('5' === 5)
+// console.log('5' == 5)
+// var x = 5;
+// var y = '5';
+// console.log(x === y)
+// console.log(x == y)
+
+// Discuss the same-origin policy's implications for JavaScript.
+
+// Why is it referred to as a "Ternary operator," and what does the term "Ternary" signify?
+// var result = 'test'
+// console.log(result === 'test' ? 'yes' : 'no')
+
+// var score = 25
+// if(score > 35){
+// 	result = 'yes'
+// }
+// else{
+// 	result = 'no'
+// }
+// console.log(result)
+
+// Define strict mode and outline some of its advantages and disadvantages.
+
+// function asynchronousFunction() {
+//   console.log("Step 1");
+
+//   setTimeout(function () {
+//     console.log("Step 2 (after a delay)");
+//   }, 1000);
+
+//   console.log("Step 3");
+// }
+
+// asynchronousFunction();
+
+// console.log("Step 1");
+
+// Promise.resolve().then(function () {
+//   console.log("Step 2 (microtask)");
+// });
+
+// console.log("Step 3");
