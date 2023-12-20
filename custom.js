@@ -17562,6 +17562,7 @@ const items = ['item1','item2','item3']
 // },1000)
 // console.log('end')
 
+
 // for(let i=0;i<50;i++){
 // 	console.log(i)
 // }
@@ -18584,3 +18585,115 @@ const items = ['item1','item2','item3']
 // });
 
 // console.log("Step 3");
+
+// var x = 1
+// if(true){
+//   var x = 2
+//   console.log(x)
+// }
+
+// let y =  1
+// if(true){
+//   let y = 2
+//   console.log(y)
+// }
+// console.log(y)
+
+// const z = 1
+// console.log(z)
+
+// Compare ES6 classes and ES5 function constructors, and furnish a use case for the arrow (=>) function syntax.
+// class Person {
+//   constructor(name,age){
+//     this.name = name 
+//     this.age = age 
+//   }
+//   sayHello(){
+//     console.log(`hello my name is ${this.name} and i am ${this.age} years old.`)
+//   }
+// }
+// const person1 = new Person('nitesh',34)
+// person1.sayHello();
+
+// function Person(name,age){
+//   this.name = name 
+//   this.age = age 
+
+//   this.sayHello = function(){
+//     console.log('hello, my name is ' + this.name + 'my age is ' + this.age)
+//   }
+// }
+// var person1 = new Person('niesh',34)
+// person1.sayHello();
+
+// const add = (a,b) =>a +b 
+// console.log(add(10,20))
+
+// const square = function(x){
+//   return x * x 
+// }
+// const squareArrow = (x ) => x * x 
+// console.log(squareArrow) 
+
+// Describe the advantages of using the arrow syntax for methods in constructors.
+// function myClass(){
+//   this.value = 42;
+
+//   this.method = () => {
+//     console.log(this.value)
+//   }
+//   this.method2 = () => {
+//     console.log(this.value)
+//   }
+// }
+// myClass()
+
+// Define a higher-order function and provide an example of object or array destructuring.
+// function multipler(factor){
+//   return function(number){
+//     return factor * number
+//   }
+// }
+// const double = multipler(2)
+// const triple = multipler(3)
+// console.log(double(5))
+// console.log(triple(5))
+
+// const person = {
+//   fName:'tet',
+//   lName:'khatri',
+//   age:34
+// }
+// const {fName,lName,age} = person 
+// console.log(fName)
+// console.log(lName)
+// console.log(age)
+
+// const numbers = [1,2,3,4,5]
+// const [f,s,t,...v] = numbers 
+// console.log(f)
+// console.log(s)
+// console.log(t)
+// console.log(v)
+
+// Give an example of generating a string using ES6 Template Literals and explain their benefits.
+// const name = 'test'
+// const age = 34 
+// const greeting = `hello my name ${name} ${age}`
+// console.log(greeting)
+
+// const multilineText = `
+//   This is a multiline string
+//   that spans across multiple lines.
+// `;
+// console.log(multilineText)
+// const a = 5 
+// const b = 10
+// const result = `the sum of ${a} and ${b} is ${a+b}`
+// console.log(result)
+
+// function customTag(strings,...values){
+//   return `${strings[0]} - ${values.join(', ')} - ${strings[1]}`
+// }
+// const taggedResult = customTag`First part ${name} Second part ${age} years old.`;
+// console.log(taggedResult)
