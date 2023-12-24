@@ -18697,3 +18697,438 @@ const items = ['item1','item2','item3']
 // }
 // const taggedResult = customTag`First part ${name} Second part ${age} years old.`;
 // console.log(taggedResult)
+
+// function curry(fn) {
+//   return function curried(...args) {
+//     if (args.length >= fn.length) {
+//       return fn(...args);
+//     } else {
+//       return function (...moreArgs) {
+//         return curried(...args, ...moreArgs);
+//       };
+//     }
+//   };
+// }
+
+
+// // example function to be curried
+// function add(a,b,c){
+//   return a+b+c 
+// }
+// console.log(add(10,20,30))
+
+// // using curry to create a new function 
+// const curriedArrary = curry(add)
+// // console.log(curriedArrary)
+
+// // partial application
+// const add5 = curriedArrary(5);
+// const add5and6 = add5(6);
+// console.log(add5and6)
+
+// Discuss the benefits of using spread syntax and differentiate it from rest syntax.
+// array/object expansion
+// const arr1 = [1,2,3]
+// const arr2 = [4,5,6]
+// console.log(arr1.concat(arr2))
+
+// function agrumetns
+// function add(a,b,c){
+//   return a +b +c 
+// }
+// console.log(add(10,20,30))
+
+// cloning array / objects
+// const originalArray = [1,2,3]
+// const copyArray = [...originalArray]
+// const originalObject = {a:1,b:2}
+// const copyObject = {...originalObject}
+// console.log(originalArray)
+// console.log(copyArray)
+// console.log(copyObject)
+
+// function parameters
+// function sum(...numbers){
+//   return numbers.reduce((acc,num) => acc + num,0)
+// }
+// console.log(sum(20,30,50))
+
+
+// destructing assignments
+// const [first,...rest] = [1,2,3,4,5]
+// console.log(first)
+// console.log(rest)
+
+// Explain how code sharing between files can be accomplished.
+// export const add = (a,b) => a+b 
+// import {add} from './file1.js'
+// console.log(add(10,20))
+
+//  Define what a promise is and describe its applications.
+// Explore how Object-Oriented Programming (OOP) principles can be applied when coding in JavaScript.
+
+// basics of js (variables, hoisting of variables)
+// var x = 10;
+// console.log(x)
+
+// let y = 20
+// console.log(y)
+
+// const PI = 3.04
+// console.log(PI)
+
+//  hositing
+// console.log(a)
+// var a = 5 
+// console.log(a)
+
+// console.log(b)
+// let b = 10
+
+// console.log(name)
+// var name = 'nitesh'
+
+// console.log(age)
+// var age = 34
+
+// functions (arrow functions, higher order functions)
+// const add = function(a,b){
+//   return a +b 
+// }
+// console.log(add(20,30))
+
+// implicit return 
+// const square = (x) => x  * x 
+// console.log(square)
+
+// no binding of us 
+// function Person(){
+//   this.age = 0 
+//   setInterval(function growUp(){
+//     this.age++
+//     console.log(this.age)
+//   },1000)
+// }
+// const person = new Person()
+// console.log(person)
+
+// function as arguments
+// function operaNumb(a,b,operation){
+//   return operation(a,b)
+// }
+// const add = (a,b) => a+b 
+// const multiply  = (a,b) => a * b 
+// console.log(operaNumb(3,4,add))
+// console.log(operaNumb(3,4,multiply))
+
+// function as return values
+// function multiplier(factor){
+//   return function (number){
+//     return number * factor 
+//   }
+// }
+// const multiplyByTwo = multiplier(2)
+// console.log(multiplyByTwo(5))
+
+// function as return values 
+// function multipler(factor){
+//   return function(number){
+//     return number * factor 
+//   }
+// }
+// const multiplyByTwo = multipler(2)
+// console.log(multiplyByTwo)
+
+// built in higher order functions 
+// const numbers = [1, 2, 3, 4, 5];
+// const doubled = numbers.map((num )=> num * 2 )
+// console.log(doubled)
+
+// const evenN = numbers.filter((val) => val % 2)
+// console.log('even ' + evenN)
+
+// const oddN = numbers.filter((val) => val !== 1)
+// console.log('odd ' + oddN)
+
+// arrays and objects (array destructuring, object destructuring, rest operator, spread operator)
+// const numbers = [1, 2, 3, 4, 5];
+// const [first,second,...rest] = numbers 
+// console.log(first)
+// console.log(second)
+// console.log(rest)
+
+// object desctructing 
+// const person = {name:'nitesh',age:34,country:'india'}
+// const {name,age,...details} = person 
+// console.log(name)
+// console.log(age)
+// console.log(details)
+
+// console.log([] == ![]);
+
+// array destructing
+// const colors1 = ['red', 'green', 'blue'];
+// const [firstcolor,secondcolor,thirdcolor] = colors1 
+// console.log(firstcolor)
+// console.log(secondcolor)
+// console.log(thirdcolor)
+
+// object destructing
+// const person = {
+//   name:'nitesh',
+//   age:34,
+//   city:'mumbai'
+// }
+// const {name,city} = person 
+// console.log(name)
+// console.log(city)
+
+// rest operator
+// const [first,second,...rest] = [1,2,3,4,5]
+// console.log(rest)
+
+// const {a,b,...otherProps} = {a: 1, b: 2, c: 3, d: 4}
+// console.log(otherProps)
+
+// spread operator
+// const arr1 = [1,2,3]
+// const arr2 = [...arr1]
+// console.log(arr2)
+
+// const obj1 = { a: 1, b: 2}
+// const obj2 = {...obj1,c:3,d:4}
+// console.log(obj2)
+
+// conditions in js (if else, ternary operator, using && ||, optional chaining
+// let x = 0
+// if(x >0){
+//   console.log('positive')
+// }
+// else if(x<0){
+//   console.log('negative')
+// }
+// else{
+//   console.log('zero')
+// }
+
+// ternary operator
+// let x = 10
+// let result = (x>0) ? 'positive' : (x<0) ? 'negative' : 'zero';
+// console.log(result)
+
+// logical operator (&& and ||)
+// let y = 10
+// if(y>0 && y<100){
+//   console.log(`x is between 0 and 100`)
+// }
+// using ||
+// let x = 10
+// if(x === 0 || x === 1){
+//   console.log(`x is either 0 or 1`)
+// }
+
+// optional chaining
+// let user = {
+//   name:'nitesh',
+//   address:{
+//     city:'mumbai',
+//     zipcode:'10001'
+//   }
+// }
+// let city = user.address ? user.address.city : 'unknown'
+// let cityWithOptionalChaining = user.address?.city || 'unknown';
+// console.log(city)
+// console.log(cityWithOptionalChaining)
+
+// array methods (map, filter, reduce, sort)
+// map method
+// const numbers = [1, 2, 3, 4, 5];
+// const result = numbers.map((val) => val * 2 )
+// console.log(result)
+// filter method 
+// const resultfilter = numbers.filter((val) => val > 4)
+// console.log(resultfilter)
+// reduce method 
+// const resultreduce = numbers.reduce((a,b) => a +b )
+// console.log(resultreduce)
+// sort method 
+// const fruits = ['banana', 'apple', 'orange', 'grape'];
+// const resultfruits = fruits.sort(function(a,b) {
+//   if(a<b){
+//     return -1 
+//   }
+//   else{
+//     return 0 
+//   }
+// })
+// console.log(resultfruits)
+
+// event listeners (onclick, onblur, onchange, onfocus, settimeout, setinterval)
+// onclick
+// document.getElementById('btn').onclick = function(){
+//   alert("hi")
+// }
+// onblur 
+// document.getElementById('myInput').onclick = function(){
+//   console.log('input lost focus')
+// }
+
+// onchange 
+// document.getElementById('myselect').onchange = function(){
+//   console.log('selection changed')
+// }
+
+// onfocus 
+// document.getElementById('myInput').onfocus = function(){
+//   console.log('input focused')
+// }
+
+// settimeout 
+// setTimeout(function(){
+//   console.log('Delayed function executed after 2000 milliseconds')
+// },1000)
+
+// setInterval
+// let counter = 0 
+// const intervalID = setInterval(function(){
+//   console.log('Interval function executed every 1000 milliseconds');
+//   counter++
+//   if(counter === 5){
+//     clearInterval(intervalID)
+//   }
+// },1000)
+
+// asynchronous events (callbacks, callback hell, promises and promise APIs)
+// function fetchData(callback){
+//   setTimeout(function(){
+//     console.log('Data fetched successfully')
+//     callback()
+//   },1000)
+// }
+// function processData(){
+//   console.log('data processed')
+// }
+// fetchData(processData)
+
+// function fetchData(){
+//   return new Promise(function(resolve,reject){
+//     setTimeout(function(){
+//       console.log('data fetched successfully')
+//       resolve()
+//     },1000)
+//   })
+// }
+
+// function processData(){
+//   console.log('Data processed')
+// }
+// fetchData(processData)
+
+// chaining promises
+// fetchData()
+//     .then(function() {
+//         return processData();
+//     })
+//     .then(function() {
+//         console.log('All tasks completed');
+//     })
+//     .catch(function(error) {
+//         console.error('An error occurred:', error);
+//     });
+
+// Promise APIs 
+// fetch('https://jsonplaceholder.typicode.com/comments')
+// .then((response) => response.json())
+// .then((data) => console.log('data',data))
+// .catch((error) => console.log('error',error))
+
+// async/await
+// async function fetchData(){
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       console.log('Data fetched successfully');
+//       resolve('data');
+//     },1000)
+//   })
+// }
+// async function processData(){
+//   console.log('Data processed')
+// }
+// async function fetchDataAndProcess(){
+//   try{
+//     const data = await fetchData();
+//     processData(data);
+//     console.log('all tasks completed.');
+//   }
+//   catch(error){
+//     console.error('an error occurred',error)
+//   }
+// }
+// fetchDataAndProcess();
+
+// aync await (alternative for promises)
+// async function exampleAsyncFunction(){
+//   return 'hello world'
+// }
+// async function fetchData(){
+//   return new Promise(resolve => {
+//     setTimeout(() => {
+//       resolve('data recovered successfully')
+//     },1000)
+//   })
+// }
+
+// async function exampleasyncusage(){
+//   const result = await fetchData()
+//   console.log(result)
+// }
+// exampleasyncusage()
+
+// async function example1(){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       console.log('data recovered successfully 1')
+//     },1000)
+//   })
+// }
+// async function dataProcess(){
+//   const result = await example1()
+//   console.log(result)
+// }
+// dataProcess()
+
+// async function fetchData(){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('data successfully')
+//     },1000)
+//   })
+// }
+// async function exampleAsyncUsage(){
+//   const result = await fetchData()
+//   console.log(result)
+// }
+// exampleAsyncUsage()
+
+// async function fetchData(){
+//   return new Promise((resolve) => {
+//     setTimeout(() => {
+//       resolve('data superman')
+//     },1000)
+//   })
+// }
+// async function simple(){
+//   const result = await fetchData()
+//   console.log(result)
+// }
+// simple()
+
+// try, catch (for error handling)
+// try{
+//   const result = someFunction();
+//   console.log(result)
+// }
+// catch(error){
+//   console.error('an error occured',error)
+// }
+
