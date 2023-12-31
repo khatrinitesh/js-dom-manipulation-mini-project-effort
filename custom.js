@@ -19132,3 +19132,27 @@ const items = ['item1','item2','item3']
 //   console.error('an error occured',error)
 // }
 
+// let str = ' welcome to this javascript series'
+// console.log(str.split("").reverse("").join(""))
+// console.log(str.split(" ").reverse(""))
+
+
+// let x = 'nitesh'
+// let y = 'sameet'
+// let a = x.toLowerCase().split("").sort().join("")
+// let b = y.toLowerCase().split("").sort().join("")
+// let result = (a == b) ? true : false 
+
+// function common(str){
+//   return str.toLowerCase().split("").sort().join("")
+// }
+// let x ='nitesh'
+// let y = 'nitesh'
+// let a = common(x)
+// let b = common(y)
+// let result = (a === b) ? true : false
+// console.log(result)
+
+
+
+
