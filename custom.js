@@ -19153,6 +19153,118 @@ const items = ['item1','item2','item3']
 // let result = (a === b) ? true : false
 // console.log(result)
 
+// let x  = 10 
+// let y = 20 
+// function add(a,b){
+//   let c = a+b 
+//   return c 
+// }
+// let multiply = function(a,b){
+//   let c =  a *b 
+//   return c 
+// }
+// let add1 = add(x,y)
+// let multiply =  multiply(x,y)
 
+// abc()
+// var a = 10 
+// function abc(){
+//   console.log('this is a final')
+// }
+// abc()
 
+// Basics of Programming in JavaScript
+// *** variable and data types
+// let x1 = 5 
+// const pi = 3.14 
+// console.log(x1)
+// console.log(pi)
+
+//  data types
+// let name = 'nitesh'
+// let age = 33
+// let isStudent = true
+// // console.log(name)
+// console.log(age === 33)
+// console.log(isStudent ? 'yes' : 'no')
+// console.log(typeof name)
+// console.log(typeof age)
+// console.log(typeof isStudent)
+// console.log(typeof {name:'nitesh'})
+// console.log(typeof ['pineapple','mango'])
+// console.log(typeof null)
+// console.log(typeof undefined)
+
+// operators => Arithmetic, Comparison, Logical, Assignment operators.
+// console.log(5+3)
+// console.log(5 === '5')
+// console.log(true && false)
+
+// conditional flow => conditional statements if, else if, else
+// let num = 10
+// if(num > 10){
+//   console.log('positive')
+// }
+// else if(num < 0){
+//   console.log('negative')
+// }
+// else{
+//   console.log('zero')
+// }
+
+// loops - for, while and do-while
+// for(let i=0;i<5;i++){
+//   console.log(i)
+// }
+// let i = 0
+// while(i < 5){
+//   console.log(i)
+//   i++
+// }
+
+// functions - define functions using the function keyword
+// function greet(name){
+//   console.log('hello', + name + '!')
+// }
+// greet('nitesh')
+
+// arrow functions are a concise way to define functions
+// const add = (a,b) => a +b 
+// console.log(add(10,20))
+
+// arrays => arrys hold collection of data.
+// let fruits = ['apple', 'orange', 'banana'];
+// console.log(fruits[0])
+
+// objects => objects store data in key-value pairs
+// let person = {
+//   name:'nitesh',
+//   age:34,
+//   isStudent:false
+// }
+// console.log(person.name)
+// console.log(person.age)
+// console.log(person.isStudent)
+
+// dom manipulation => javascript is often used to interact with the document object model (dom) to change html content, styles or structure
+
+// error handling 
+// // use 'try', 'catch' and 'finally' to handle errors
+// try{
+// // Code that might throw an error
+// }
+// catch(error){
+// // Handle the error
+// }
+// finally(){
+//    // Code that always runs
+// }
+
+// asynchronous javascrpt -> js supports asynchronous programming using promises and async/await
+// async function fetchData(){
+//   let response = await fetch("https://jsonplaceholder.typicode.com/todos")
+//   let data = await response.json()
+//   console.log(data)
+// }
+// fetchData()
 
