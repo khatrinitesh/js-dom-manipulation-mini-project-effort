@@ -19268,3 +19268,69 @@ const items = ['item1','item2','item3']
 // }
 // fetchData()
 
+// Hello world program
+// console.log("Hello, World!");
+
+// Declare variable using var
+// var message = 'hello world'
+// console.log(message);
+
+// var message = 'updated message.'
+// console.log(message)
+
+// More about variable
+// variable scope - global scope
+// var globalVar = "I am a global variable";
+// function example(){
+//   console.log(globalVar)
+// }
+// example()
+// local scope - using var
+// let localVar = 'hello world'
+// function example(){
+//   console.log(localVar)
+// }
+// example()
+// variable hosting 
+// console.log(hoistedvar)
+// var hoistedVar = 'I am hoisted'
+// console.log(hoistedVar)
+
+// reassigning and mutability
+// var mutableVar = 'original value';
+// console.log(mutableVar)
+// mutableVar = 'updated value'
+// console.log(mutableVar)
+
+// constants (`const`)
+// const pi = 3.14159
+// console.log(pi)
+
+// block scope => (`let`)
+// if(true){
+//   let blockVar = ' i am a block-scoped variable';
+//   console.log(blockVar)
+// }
+
+// if(true){
+//   let example = 'happy new year 2024'
+//   console.log(example)
+// }
+
+// closure 
+// function outerFunction(){
+//   var outerVar = 'i am from outer function'
+
+//   function innerFunction(){
+//     console.log(outerVar)
+//   }
+//   return innerFunction;
+// }
+// var closurefunction = outerFunction()
+// closurefunction()
+
+
+
+
+
+
