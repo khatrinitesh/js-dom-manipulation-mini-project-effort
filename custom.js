@@ -19329,8 +19329,59 @@ const items = ['item1','item2','item3']
 // var closurefunction = outerFunction()
 // closurefunction()
 
+// const student = {
+//   name:'nitesh 1',
+//   age:34,
+//   dob:'17/06/1989',
+//   printname1:function(){
+//     console.log(this.name,this.age,this.dob)
+//   }
+// }
+// student.printname1()
 
+// const student2 = {
+//   name:"sachin tendulkar",
+//   age:41,
+//   dob:'17/06/1973',
+// }
 
+// student.printname1.call(student2)
+
+// console.log(window.x())
+// let a = 'nitesh khatri'
+// console.log(a)
+
+// var a = 'nitesh khatri is resulted'
+// function Example(){
+//   console.log(a)
+// }
+// Example()
+
+// const obj = {
+//   a:10,
+//   x:function(){
+//     const y = () => {
+//      console.log(this)
+//     }
+//     y()
+//   }
+// }
+// obj.x();
+
+// let v1 = 'nitesh'
+// let v2 = 'khatri'
+// console.log(v1.concat(" ",v2))
+
+// let x = 9
+// function myfunc(){
+//   if(x === 15){
+//     console.log('true')
+//   }
+//   else{
+//     console.log('false')
+//   }
+// }
+// myfunc()
 
 
 
