@@ -19383,5 +19383,79 @@ const items = ['item1','item2','item3']
 // }
 // myfunc()
 
+// let x = 10;
+// function myfunc(){
+//   switch(x){
+//     case 20: console.log('a+');
+//     break;
+//     case 35: console.log('b');
+//     break;
+//     case 21:
+//     case 22:
+//     case 23:
+//     case 24:console.log('the value is between 21 and 24');
+//     default:console.log('no value of x matches');
+//   }
+// }
+// let answer = myfunc();
 
+// function myfunc(){
+//   let i = 0
+//   while(i > 0){
+//     console.log(i)
+//     i--;
+//   }
+// }
+// myfunc()
 
+// let myvar = myfunc();
+// console.log('the value of i ',myvar)
+
+// function myfunc(){
+//   let i = 0;
+//   let myarray = [1,2,3,4,5,6,7,8,9,10]
+//   // while(i < 6){
+//   //   myarray.push(i)
+//   //   i++;
+//   // }
+//   for(let i=0;i<=myarray.length;i++){
+//     console.log(myarray[i])
+//   }
+
+//   let my2darray = [[1,2,[3,4],[5,6]]]
+//   console.log(my2darray[0][0])
+// }
+// let myvar = myfunc()
+// console.log('the value of variable is ' +  myvar)
+
+// function countdown(number){
+//   console.log(number)
+//   let newnumber = number - 1 
+//   if(newnumber > 0){
+//     countdown(newnumber)
+//   }
+// }
+// countdown(15)
+
+// function addmyarray(arr,n){
+//   let sum = 0 
+//   for(let i =0;i<n;i++){
+//     sum = sum + arr[i]
+//   }
+//   return sum;
+// }
+// let myarr = [12,13,14]
+// addmyarray(myarr)
+
+// var a = window.prompt('enter first number :')
+// var b = window.prompt('enter second number :')
+// var mysum = a+b
+
+// const myvar = {firstName:'nitesh',lastName:'khatri',age:34}
+// document.getElementById('myp1').innerHTML = myvar.firstName + "&nbsp;" + myvar.lastName + "&nbsp;" +  myvar.age 
+
+let mysentence = "";
+for(let x in myvar){
+  mysentence = mysentence + myvar[x] + " "
+}
+console.log(mysentence)
