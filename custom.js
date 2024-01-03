@@ -19463,12 +19463,134 @@ const items = ['item1','item2','item3']
 // }
 // console.log(mysentence)
 
-const person = {
-  name:'nitesh',
-  age:34
-}
+// const person = {
+//   name:'nitesh',
+//   age:34
+// }
 // console.log(Object.values(person))
 
-let mystring123 = JSON.stringify(person)
-console.log(mystring123)
+// let mystring123 = JSON.stringify(person)
+// console.log(mystring123)
+
+
+// function countdown(number){
+//   console.log(number)
+//   let newnumber = number - 1 
+
+//   if(newnumber>0){
+//     countdown(newnumber)
+//   }
+// }
+// countdown(5)
+
+// function addmyarray(arr,n){
+//   let sum = 0;
+//   for(let i=0;i<n;i++){
+//     sum = sum + arr[i]
+//   }
+//   return sum
+// }
+// let myarr = [1,2,3,4,5]
+// let myvar = addmyarray(myarr,4)
+// console.log(myvar)
+
+// let i=0;
+// let arr1 = [1,2,3,4,511]
+// for(let i=0;i<arr1.length;i++){
+//   console.log('asdsada', arr1[i])
+// }
+
+// function addmyArray(arr,n){
+//   if(n<=0){
+//     return 0
+//   }
+//   else{
+//     return sum
+//   }
+// }
+
+// function btnExample(){
+//   document.getElementById('mydemo').innerHTML = 'adsdd'
+//   console.log('clicked')
+// }
+
+// string indexing
+// let myString = "Hello, World!";
+// console.log(myString[0])
+// console.log(myString[7])
+
+// console.log(myString.charAt[1])
+// console.log(myString.charAt[12])
+
+// let modifiedString = myString.substring(0,7) + 'J' + myString.substring(8);
+// console.log(modifiedString)
+
+// Useful string methods
+// length methods = return the length of a string
+// let str = 'hello world'
+// console.log(str.length)
+// charAt method = return the character at a specified index
+// console.log(str.charAt(7))
+// substring method = extracts a portion of a string between two specified indices
+// console.log(str.substring(0,5))
+// indexOF method = returns the index of the first occurrence of a specified substring 
+// console.log(str.indexOf('e'))
+// replace method = replaces a specified substring or pattern with another string 
+// console.log(str.replace('hello','hi'))
+// toLowerCase() method = converts a string to lowercase or uppercase
+// console.log(str.toLowerCase())
+// toUpperCase() method = converts a string to uppercase or lowercase
+// console.log(str.toUpperCase())
+// trim method = removes whitespace from both ends of a string
+// console.log(str.trim())
+// spit method = splits a string into an array of substring based on a specified delimiter
+// let strarray = "apple,orange,banana"
+// let fruits = strarray.split(",")
+// console.log(fruits)
+
+// Template Strings 
+// let name = 'nitesh'
+// let age = 34
+// let message = `${name} - age is ${age}`
+// console.log(message)
+
+// let a = 10
+// let b = 20
+// let result  = `${a} - ${b}`
+// console.log(result)
+
+// let multiLine = `
+// This is a
+// multi-line
+// string.`;
+// console.log(multiLine)
+
+// Null, undefined, BigInt, typeof
+// null 
+// let nullVariable = null
+// console.log(nullVariable)
+// console.log(typeof nullVariable)
+
+// undefined 
+// let undefinedVariable;
+// console.log(undefinedVariable)
+// console.log(typeof undefinedVariable)
+
+// BigInt
+// let bigIntNumber = 9007199254740991n;
+// console.log(bigIntNumber)
+// console.log(typeof bigIntNumber)
+
+// example to show typeof for different data types
+// let stringVariable = 'hello';
+// let numberVariable = 42
+// let booleanVariable = true 
+// let objectVariable = {key:'value'}
+// let arrayVariable = [1,2,3,4,5]
+// console.log(typeof stringVariable)
+// console.log(typeof numberVariable)
+// console.log(typeof booleanVariable)
+// console.log(typeof objectVariable)
+// console.log(typeof arrayVariable) // (Note: arrays are also of type 'object' in JavaScript)
+
 
