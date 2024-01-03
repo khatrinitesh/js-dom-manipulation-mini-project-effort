@@ -19451,11 +19451,24 @@ const items = ['item1','item2','item3']
 // var b = window.prompt('enter second number :')
 // var mysum = a+b
 
-// const myvar = {firstName:'nitesh',lastName:'khatri',age:34}
-// document.getElementById('myp1').innerHTML = myvar.firstName + "&nbsp;" + myvar.lastName + "&nbsp;" +  myvar.age 
+// const myvar = {firstName:'nitesh',lastName:'khatri',age:34,fullname:function(){
+//   return this.firstName + " " + this.lastName + " " + this.age
+// }}
+// document.getElementById('myp1').innerHTML = myvar.fullname()
+// myvar.rollnum = 35
+// delete myvar.lastName
+// let mysentence = "";
+// for(let x in myvar){
+//   mysentence = mysentence + myvar[x] + " "
+// }
+// console.log(mysentence)
 
-let mysentence = "";
-for(let x in myvar){
-  mysentence = mysentence + myvar[x] + " "
+const person = {
+  name:'nitesh',
+  age:34
 }
-console.log(mysentence)
+// console.log(Object.values(person))
+
+let mystring123 = JSON.stringify(person)
+console.log(mystring123)
+
