@@ -1,0 +1,56 @@
+🚀 Master Your Front-End Developer Interview with these 50 JavaScript Questions! 🚀
+
+1. What is the DOM?
+2. Explain the differences between `null` and `undefined`.
+3. How does the "strict mode" in JavaScript work?
+4. What is the purpose of the `async` keyword?
+5. Differentiate between synchronous and asynchronous code.
+6. What is a callback function?
+7. Explain the concept of "hoisting."
+8. How does the "debouncing" of a function work?
+9. What is the purpose of the `bind` method?
+10. Describe the differences between cookies, sessionStorage, and localStorage.
+
+11. How does CORS (Cross-Origin Resource Sharing) work?
+12. What is the purpose of the `this` keyword in JavaScript?
+13. Explain the differences between `==` and `===`.
+14. How does the event delegation pattern work?
+15. What is a closure, and how is it used?
+16. How can you optimize website performance?
+17. What is the difference between arrow functions and regular functions?
+18. Describe the principles of responsive design.
+19. Explain the concept of currying in JavaScript.
+20. What is the role of the `use strict` directive?
+
+21. How do you handle errors in JavaScript?
+22. Explain the significance of the Document Object Model (DOM).
+23. What is the purpose of the `map` function in JavaScript?
+24. Differentiate between shallow and deep copying objects.
+25. How does event bubbling work in the DOM?
+26. Explain the concept of two-way data binding.
+27. What is the role of a closure in JavaScript?
+28. How can you optimize the loading time of a website?
+29. What is the significance of the `async` and `await` keywords?
+30. Describe the differences between local storage and session storage.
+
+31. How does the "typeof" operator work in JavaScript?
+32. Explain the principles of the Single Responsibility Principle (SRP) in software design.
+33. What is the purpose of the `finally` block in a try-catch-finally statement?
+34. How can you handle cross-browser compatibility issues?
+35. What is the role of the `replace` method in strings?
+36. How does the prototype chain work in JavaScript?
+37. Describe the differences between REST and GraphQL.
+38. What is the purpose of the `reduce` function in JavaScript?
+39. Explain the concept of memoization.
+40. How does the "box model" work in CSS?
+
+41. What are web components, and how do they work?
+42. Differentiate between call, apply, and bind methods.
+43. How can you optimize images for the web?
+44. Explain the purpose of the `defer` attribute in script tags.
+45. What is the role of the `let` and `const` keywords in block scope?
+46. Describe the differences between CSS Grid and Flexbox.
+47. How do you handle asynchronous code in JavaScript?
+48. Explain the purpose of the `Intersection Observer` API.
+49. What are the benefits of using a CSS preprocessor like Sass?
+50. How can you improve website accessibility?
