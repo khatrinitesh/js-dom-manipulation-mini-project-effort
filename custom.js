@@ -19593,4 +19593,26 @@ const items = ['item1','item2','item3']
 // console.log(typeof objectVariable)
 // console.log(typeof arrayVariable) // (Note: arrays are also of type 'object' in JavaScript)
 
+// what is event delegation, and how does it function in JavaScript?
+ // Common ancestor (ul element)
+//  const myList = document.getElementById('myList');
+
+//  // Event listener on the common ancestor
+//  myList.addEventListener('click', function(event) {
+//    // Check if the clicked element is an li element
+//    if (event.target.tagName === 'LI') {
+//      // Output the text content of the clicked li element
+//      console.log(event.target.textContent);
+//    }
+//  });
+
+// const person = {
+//   name:'nitesh',
+//   age:34,
+//   dob:'17/06/1989'
+// }
+// const {name,age,dob} = person 
+// console.log(name)
+// console.log(age)
+// console.log(dob)
 
