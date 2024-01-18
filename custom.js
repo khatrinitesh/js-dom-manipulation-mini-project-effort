@@ -19616,3 +19616,240 @@ const items = ['item1','item2','item3']
 // console.log(age)
 // console.log(dob)
 
+//------------ comments
+// this is a comment
+/* or this is a comment */
+
+//------------ variable creation
+// let school = 'fellowship school'
+// console.log(school)
+// let fullPackage = 'shecodesprop'
+// console.log(fullPackage)
+// let projects = 4
+// console.log(projects)
+// let awesome = true 
+// console.log(awesome)
+
+//------------ alert 
+// alert('ola')
+
+//------------ variable operations
+// let x = 2 
+// let y = 10
+// let z =  x + y 
+// console.log(z)
+
+// let city = 'mumbai'
+// let country = 'india'
+// let place = city + ' ' + country 
+// console.log(place)
+
+//------------ prompt
+// let firstname = prompt('what is your firstname')
+// let lastname = prompt('what is your lastname')
+// let fullname = firstname + ' ' + lastname 
+// alert(fullname)
+
+//------------ variable data types
+// let age = 23
+// let name =  'nitesh'
+// let canCode = true 
+// let objectProp = {name:'nitesh',age:34}
+// let arrayProp = ['a','b','c','d']
+// console.log(typeof age)
+// console.log(typeof name)
+// console.log(typeof canCode)
+// console.log(typeof objectProp)
+// console.log(typeof arrayProp)
+
+//------------ if else
+// let country = prompt('what country are you from?')
+// if(country === 'India'){
+//   alert('it is match - India')
+// }
+// else{
+//   alert('it is not match - India')
+// }
+// let score = 35
+// if(score == 35){
+//   console.log('yes, it is perfect score')
+// }
+// else{
+//   console.log('yes, it is not perfect score')
+// }
+
+//------------ if else statement
+// let age = prompt('how old are you?')
+// if(age < 17){
+//   console.log('you can apply')
+// }
+// else{
+//   console.log('you cannot apply')
+// }
+
+
+//------------ structure structure types
+// let students = ['vishal','nilesh','mayur'] // array
+// let example = {
+//   fname:'nitesh',
+//   lname:'khatri',
+//   age:34,
+//   canCode:true
+// }
+// console.log(example) // object
+
+//------------ creating a string 
+// let name = 'testing'
+// console.log(name) // string
+
+//------------ string concatenation
+// let firstName = "Julie";
+// let lastName = "Johnson";
+// let fullName = `${firstName} ${lastName}`
+// console.log(fullName)
+// console.log(firstName.concat(' ',lastName))
+
+//------------ nested if else statements
+// let age = 150
+// if (age<18){
+//   console.log('you can apply')
+// }
+// else{
+//   if(age>120){
+//     console.log('you can apply')
+//   }
+//   else{
+//     console.log('you cannt apply')
+//   }
+// }
+
+//------------ trim 
+// let city = " Montrea  l  ";
+// let strimmed = city.trim();
+// console.log(strimmed)
+
+//------------ logical or 
+// let age = 24
+// let gender = 'male'
+// if(age < 5 || gender === 'male'){
+//   console.log('you can join')
+// }
+// else{
+//   console.log('you cannt join')
+// }
+
+//------------ replace
+// let city = 'mumbai'
+// console.log(city.replace('mumbai','gujarat'))
+
+//------------ logical and 
+// let continent = 'Europe'
+// let language = 'Portuguese1'
+// if(continent === 'Europe' || language === 'Portuguese'){
+//   alert("You are from Portugal 🇵🇹");
+// } else {
+//   alert("You are not from Portugal");
+// }
+
+//------------ toLowerCase
+// let upper = 'BC'
+// console.log(upper.toLowerCase())
+
+// //------------ toUpperCase
+// let upper = 'bc'
+// console.log(upper.toUpperCase())
+
+//------------ comparison and logical operators
+// console.log(2>3) // false
+// console.log(2<3) // true
+// console.log(2<=2) // true
+// console.log(3>=2) // true
+// console.log(2===5) // false
+// console.log(2!==3) // true
+// console.log(1+2===4) // false
+
+//------------ template literals 
+// let fname = 'test f'
+// let lname = 'test l'
+// console.log(`${fname} ${lname}`)
+
+//------------ dates get current time
+// console.log(new Date())
+
+//------------ array declaration
+// let myList = []
+// let fruits = ["apples", "oranges", "bananas"]
+// myList = ['banana', 3, go, ['John', 'Doe'], {'firstName': 'John', 'lastName': 'Smith'}]
+// console.log(myList)
+
+//------------ create a date
+// let date1 = Date.parse("01 Jan 2025 00:00:00 GMT")
+// console.log(date1)
+
+//------------ access an array 
+// const fruits = ["apples", "oranges", "bananas"]
+// console.log(fruits[0])
+// console.log(fruits[1])
+// console.log(fruits[2])
+// console.log(fruits[3])
+
+//------------ get date data 
+// let now = new Date();
+// console.log(now.getDate())
+// console.log(now.getMinutes())
+// console.log(now.getHours())
+// console.log(now.getSeconds())
+// console.log(now.getMonth())
+// console.log(now.getFullYear())
+
+//------------ update an array item
+// let fruits = ['apple','pineapple','watermelon','guava']
+// let replaceFruits = fruits[0] = 'grape'
+// console.log(replaceFruits)
+// console.log(fruits)
+
+//------------ round 
+// console.log(Math.round(5.6))
+
+//------------ while loop
+// let times = 0
+// while(times < 100){
+//   console.log(times)
+//   times = times + 1
+// }
+// while(times < 1000){
+//   console.log(times)
+//   times = times  +  1
+// }
+// let fruits = ['apple','pineapple','watermelon','guava']
+// for(let i =0;i<fruits.length;i++){
+//   console.log(i + ' ' + fruits[i])
+// }
+
+//------------ floor 
+// console.log(Math.floor(5.32))
+
+//------------ forEach loop
+// let fruits = ['apple','pineapple','watermelon','guava']
+// // fruits.forEach((item) => console.log(item))
+// fruits.forEach(function(val) {
+//   console.log(val)
+// })
+
+//------------ ceil 
+// console.log(Math.ceil(10.566))
+
+//------------ do while loop
+// let times = 1
+// do{
+//   console.log(times)
+//   times = times + 1
+// }
+// while(times < 10)
+// do{
+//   console.log(times)
+//   times = times + 1
+// }
+// while(times < 546)
+
+//------------ min 
