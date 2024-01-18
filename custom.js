@@ -20101,3 +20101,94 @@ const items = ['item1','item2','item3']
 // boxElement.style.border = "5px solid blue";
 // boxElement.style.borderRadius = "10px";
 // boxElement.style.boxShadow = "5px 5px 5px 5px #999";
+
+//------------- What is event delegation, and how does it function in JavaScript?
+// const commonAncestor = document.getElementById('commonAncestor');
+// commonAncestor.addEventListener('click', function(event) {
+//   // Handle the event here
+// });
+
+// commonAncestor.addEventListener('click', function(event) {
+//   const targetElement = event.target;
+//   // Check if the target element matches the desired criteria
+//   if (targetElement.matches('.specificElement')) {
+//       // Handle the event for the specific element
+//   }
+// });
+// commonAncestor.addEventListener('click', function(event) {
+//   const targetElement = event.target;
+//   // Check if the target element matches the desired criteria
+//   if (targetElement.matches('.specificElement')) {
+//       // Handle the event for the specific element
+//       console.log('Specific element clicked!');
+//   }
+// });
+
+//-------------- Can you provide an illustration of how ES6 has altered the approach to working with "this" in JavaScript?
+// function TraditionalFunction() {
+//   this.value = 1;
+
+//   // Regular function expression as a method
+//   this.method = function() {
+//     setTimeout(function() {
+//       // In a regular function, "this" refers to the global object (e.g., window in a browser)
+//       console.log("TraditionalFunction - Regular function:", this.value); // undefined or unexpected value
+//     }, 1000);
+//   };
+// }
+
+// const instance = new TraditionalFunction();
+// instance.method();
+// function ES6Function() {
+//   this.value = 1;
+
+//   // Arrow function as a method
+//   this.method = function() {
+//     setTimeout(() => {
+//       // In an arrow function, "this" is lexically scoped and retains the value from the enclosing context
+//       console.log("ES6Function - Arrow function:", this.value); // 1 (expected value)
+//     }, 1000);
+//   };
+// }
+
+// const es6Instance = new ES6Function();
+// es6Instance.method();
+
+//------------------ Differentiate between a variable that is null, undefined, or undeclared.
+// let x;
+// console.log(x);
+// function exampleFunction(param) {
+//   console.log(param); // undefined if no argument is passed
+// }
+// const obj = {};
+// console.log(obj.nonExistentProperty);
+
+// let y = null;
+// console.log(y);
+// const objWithNullProperty = { prop: null };
+// console.log(objWithNullProperty.prop);
+// console.log(z);
+
+//--------------Define what a closure is and describe its uses and advantages.
+// function outerFunction(x) {
+//   // Inner function defined within the outer function
+//   function innerFunction(y) {
+//     // Accesses both x from outerFunction and y from its own parameters
+//     return x + y;
+//   }
+
+//   // Returning the inner function from the outer function
+//   return innerFunction;
+// }
+
+// // Creating a closure by calling outerFunction and storing the returned inner function
+// const closure = outerFunction(10);
+
+// // Using the closure to add 5 to the original x (10)
+// const result = closure(5);
+// console.log(result); // Outputs 15
+
+
+
+
+
