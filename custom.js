@@ -19853,3 +19853,251 @@ const items = ['item1','item2','item3']
 // while(times < 546)
 
 //------------ min 
+// console.log(Math.min(2, 5, 1))
+
+//------------ for loop
+// for(let i=0;i<10;i++){
+//   console.log('i is ' + i)
+// }
+// let mylist= ['p','t','s','n','k','d']
+// for(let i=0;i<mylist.length;i++){
+//     console.log('i have ' + mylist[i] + 'in my shopping bag.')
+// }
+
+//------------ max 
+// console.log(Math.max(2, 5, 1))
+
+//------------ random 
+// console.log(Math.random(11))
+
+//------------ remove first item 
+// let fruits = ['apple','pineapple','watermelon','guava']
+// let removedfirstitem = fruits.shift()
+// console.log(removedfirstitem) 
+
+//------------ Creating a new object
+// let fruit = new Object();
+// let user = {}
+// let student = {
+//   fname:'nitesh',
+//   lname:'khatri'
+// }
+// let anotherStudent = {
+//   fname:'ni',
+//   lname:'ni',
+//   female:true,  
+//   greet:function(){
+//     console.log('hey')
+//   }
+// }
+// console.log(anotherStudent)
+// console.log(student)
+// console.log(user)
+// console.log(fruit)
+
+//------------ Functions
+// function sayFact(){
+//   let name = prompt('what is your name');
+//   if(name === 'nitesh'){
+//     console.log('Your name comes from the Greek -> Nitesh')
+//   }
+//   else{
+//     console.log("Your name doesn't comes from the Greek -> Nitesh")
+//   }
+// }
+// sayFact()
+
+//------------ Reading an object properties 
+// let user = {
+//   firstName: "Lady",
+//   lastName: "Gaga",
+//   gender: "female",
+// };
+// console.log(user.firstName); 
+// console.log(user.lastName); 
+// console.log(user['firstName'])
+// console.log(user['lastName'])
+// console.log(user.firstName)
+// console.log(user.lastName)
+// console.log(user['gender'])
+
+//------------ JS Functions Parameters
+// function fullName(firstName, lastName) {
+//   alert(firstName + " " + lastName);
+// }
+// let firstName = prompt("What's your first name?");
+// let lastName = prompt("What's your last name?");
+// fullName(firstName,lastName)
+// function fullName(fname,lname){
+//   console.log(`${fname} ${lname}`)
+// }
+// const fname = prompt('what is your first name')
+// const lname = prompt('what is your last name')
+// fullName(fname,lname)
+
+//------------ Adding object properties 
+// let user = {
+//   firstName: "Lady",
+//   lastName: "Gaga",
+//   gender: "female",
+// };
+// user.profession = 'fe developer'
+// user.dob = 'dd/mm/yyyy'
+// console.log(user)
+
+//------------ js function return 
+// function add(x, y) {
+//   return x + y;
+// }
+// let result = add(3,4)
+// let result2 = add(result,0)
+// function getFullName(fname,lname){
+//   let fullName = fname + lname
+//   return fullName
+// }
+// let userFullName = getFullName("Kate", "Robinson");
+// console.log(userFullName); 
+
+//------------ object arrays 
+// let users = [
+//   {
+//     firstName: "Bradley",
+//     lastName: "Cooper",
+//   },
+//   {
+//     firstName: "Lady",
+//     lastName: "Gaga",
+//   },
+// ];
+// users.forEach(function(user,index){
+//   for(let prop in user){
+//     console.log(prop + " " + user[prop] )
+//   }
+// })
+// users.map(function(val){
+//   console.log(val)
+// })
+
+//------------ Closures
+// function hello(){
+//   function go(name){
+//     console.log(name)
+//   }
+//   let name ='example testing'
+//   go(name)  
+// }
+// hello()
+
+//------------ enumerating the properties of an object 
+// let user = {
+//   firstName: 'Lady',
+//   lastName: 'Gaga',
+//   gender: 'female'
+// }
+// for(let prop in user){
+//   console.log(prop)
+//   console.log(user[prop])
+// }
+
+//------------ debugging 
+// console.log(name)
+// console.log('let us code')
+
+//------------ events
+// function sayHi(){
+//   console.log('hi')
+// }
+// sayHi()
+
+//------------ selectors
+// let li = document.querySelector('li')
+// let day = document.querySelector('.day');
+// let paragraph = document.querySelector('#myList p');
+
+//------------ creating an event listener
+// function sayHi(){
+//   console.log('hi')
+// }
+// let element = document.querySelector('#city')
+// element.addEventListener('click',sayHi)
+
+//------------ QuerySelectorAll
+// let lis = document.querySelectorAll('li')
+// let para = document.querySelector('#listspecial p');
+
+//------------ setTimeout 
+// function example() {
+//       console.log('nitesh')
+// }
+// setTimeout(example,800)
+
+//------------ ajax with fetch
+// let serverurl = 'https://jsonplaceholder.typicode.com'
+// let endpoint = 'users/1'
+// fetch(serverurl + '/' + endpoint)
+// // below code i did code 
+// .then((res) => (
+//   res.json()
+// ))
+// .then((json) => {
+//   console.log(json)
+// })
+
+//------------ ajax with axios
+// function showUser(response){
+//   console.log(`${response.data.name}`)
+// }
+
+// let url = "https://jsonplaceholder.typicode.com/users/2"
+// axios.get(url).then(showUser);
+
+//------------ element manipulation
+// let li = document.querySelector("li#special");
+// let likedd = document.querySelector("#liked");
+// likedd.classList.remove("liked");
+// li.classList.remove("something");
+// li.classList.add('backgroundclor');
+
+//------------ html content 
+// let li = document.querySelector('#special')
+// li.innerHTML = 'hiii'
+
+//------------ forms
+// function signUp(event){
+//   event.preventDefault();
+//   let input = document.querySelector('#email');
+//   console.log(input.value)
+// }
+// let form = document.querySelector('form');
+// form.addEventListener('submit',signUp)
+
+//------------ html attributes manipulation
+// let button = document.querySelector("input#button");
+// button.setAttribute("disabled", "disabled");
+// let email = document.querySelector("input#email");
+// email.setAttribute('required')
+
+//------------ css styles 
+// const box = document.querySelector('.gsapbox');
+// gsap.to(box,{
+//   duration: 2,
+//   x: 200, // Move the box 200 pixels to the right
+//   rotation: 360, // Rotate the box 360 degrees
+//   backgroundColor: '#e74c3c', // Change the background color
+//   ease: 'power2.out', // Easing function
+//   onComplete: () => {
+//     console.log('Animation complete');
+//   },
+// })
+
+//----------- css styles
+// let boxElement = document.querySelector("#boxElement");
+// boxElement.style.width = "100px";
+// boxElement.style.height = "100px";
+// boxElement.style.backgroundColor = "red";
+// boxElement.style.padding = "10px 20px";
+// boxElement.style.marginRight = "10px";
+// boxElement.style.color = "#fff";
+// boxElement.style.border = "5px solid blue";
+// boxElement.style.borderRadius = "10px";
+// boxElement.style.boxShadow = "5px 5px 5px 5px #999";

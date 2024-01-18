@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Javascript - More effect</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+		rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 
 	<style>
@@ -77,7 +79,7 @@
             padding: 1em;
         }*/
 
-         /* table {
+		/* table {
 		   margin-top: 20px;
 		   border: 1px solid silver;
 		   width: 500px;
@@ -92,42 +94,69 @@
 		 } */
 
 
-		 h1{
-			color:red;
+		h1 {
+			color: red;
 			font-size: 50px;
 			text-decoration: overline !important;
-		 }
+		}
 
-		 h1{
-			color:green !important;
+		h1 {
+			color: green !important;
 			font-size: 40px;
 			text-decoration: line-through;
-		 }
+		}
 
-		 .world{
-			color:cyan !important;
+		.world {
+			color: cyan !important;
 			font-size: 30px;
 			text-decoration: line-through;
-		 }
-		 #world{
-			color:blue;
+		}
+
+		#world {
+			color: blue;
 			font-size: 20px;
 			text-decoration: line-through;
-		 }
+		}
 
-
+		.gsapbox {
+			width: 100px;
+			height: 100px;
+			background-color: #3498db;
+			border-radius: 8px;
+			cursor: pointer;
+		}
 	</style>
 	<link rel="stylesheet" href="custom.css">
 </head>
+
 <body onoffline="offlineFunction()">
+	<div id="boxElement">boxElement</div>
+
+	<div class="gsapbox"></div>
+
+	<input type="text" id="button">
+	<input type="email" id="email">
+
+	<form>
+		<input type="text" id="email" />
+	</form>
+
+	<span class="liked" id="liked">liked</span>
+	<span id="something" class="something">something</span>
+
+	<ul>
+		<li id="special">special</li>
+		<li id="special" class="something">special</li>
+		<li id="special">special</li>
+	</ul>
 
 	<ul id="myList">
 		<li>Item 1</li>
 		<li>Item 2</li>
 		<li>Item 3</li>
 		<li>Item 4</li>
-	  </ul>
-	
+	</ul>
+
 
 	<p id="mydemo"></p>
 	<p class="demo11"></p>
@@ -151,42 +180,42 @@
 
 	<input type="text" id="myInput" value="This is a default value">
 
-<div id="parent">
-	parent 
-	<button id="child">Click me</button>
-</div>
+	<div id="parent">
+		parent
+		<button id="child">Click me</button>
+	</div>
 
 
 	<button id="myButton">Click btton</button>
 	<ul id="commonAncestor">
-	  <li>Item 1</li>
-	  <li>Item 2</li>
-	  <li>Item 3</li>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
 	</ul>
 	<h2 class="heading1">heading1</h2>
 
 	<button>Button</button>
 
 	<div>
-		 <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
-  <i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
+		<i></i>
 	</div>
 	<div id="mocha"></div>
 
 	<ul id="myList" class="myList">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
-    </ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+	</ul>
 
-	<hr/>
+	<hr />
 	<!-- inline script -->
 	<button onclick="alert('welcome to the javascript')">Click</button>
 
@@ -196,134 +225,150 @@
 	<button id="buttonA">Press me</button>
 	<h3 id="headingA"></h3>
 
-<div id='demonew'></div>
+	<div id='demonew'></div>
 
 	<!-- <div class="movies"></div> -->
-	<p id="parent1">firstP<p> </body> 
+	<p id="parent1">firstP
+	<p>
+</body>
 
-	<p title="About title">About title information</p>
+<p title="About title">About title information</p>
 
-	<h2 style="color:pink">Style Attribute</h2>
+<h2 style="color:pink">Style Attribute</h2>
 
-	<textarea spellcheck="true">This is a paragph.</textarea>
+<textarea spellcheck="true">This is a paragph.</textarea>
 
-	<h2 hidden draggable="true">This is heading</h2>
+<h2 hidden draggable="true">This is heading</h2>
 
-	<h2 dir="ltr" data-color="red">Custom attribute</h2>
+<h2 dir="ltr" data-color="red">Custom attribute</h2>
 
-	<div class="form" id="formDiv">
-		<form id="myForm">
-			<!-- first name -->
-			<div>
-		  <label class="firstName" for="">First name</label>
-		  <input type="text" placeholder="John" required="required" id="firstName" pattern="[A-Za-z]{1,20}"><br>
+<div class="form" id="formDiv">
+	<form id="myForm">
+		<!-- first name -->
+		<div>
+			<label class="firstName" for="">First name</label>
+			<input type="text" placeholder="John" required="required" id="firstName" pattern="[A-Za-z]{1,20}"><br>
 		</div>
 
 		<!-- last name -->
 		<div>
-		  <label class="lastName">Last name</label>
-		  <input type="text" placeholder="AppleSeed" required="required" id="lastName" pattern="[A-Za-z]{1,20}">
+			<label class="lastName">Last name</label>
+			<input type="text" placeholder="AppleSeed" required="required" id="lastName" pattern="[A-Za-z]{1,20}">
 		</div>
 
 		<div>
-		  <!-- email -->
-		  <label class="email">Email</label>
-		  <input type="email" placeholder="j.appleseed@example.co.uk" size="42" required="required" id="email">
+			<!-- email -->
+			<label class="email">Email</label>
+			<input type="email" placeholder="j.appleseed@example.co.uk" size="42" required="required" id="email">
 		</div>
 
 		<div>
-		  <!-- mobile number -->
-		  <label class="tel">Mobile Number</label>
-		  <input placeholder="Your Mobile Number" size="42" required="required" id="number" pattern="[0-9]{6,13}">
+			<!-- mobile number -->
+			<label class="tel">Mobile Number</label>
+			<input placeholder="Your Mobile Number" size="42" required="required" id="number" pattern="[0-9]{6,13}">
 		</div>
 
-		  <!-- The Submit button -->
-		  <button class="submit">
+		<!-- The Submit button -->
+		<button class="submit">
 			<span title="What are you waiting for? Click it!">Submit</span>
 		</button>
-		</form>
-	  </div>
-	  
-	  <h1 id="hiddenMessage" style="display: none">Thank You!</h1>
+	</form>
+</div>
 
-	  <hr/>
+<h1 id="hiddenMessage" style="display: none">Thank You!</h1>
 
-	<label>Search Here : </label>
-    <input type="text" id="search-bar" />
+<hr />
+
+<label>Search Here : </label>
+<input type="text" id="search-bar" />
 
 
-	<ul id="menu">
-		<li><a id="home">home</a></li>
-		<li><a id="dashboard">Dashboard</a></li>
-		<li><a id="report">report</a></li>
-	</ul>
+<ul id="menu">
+	<li><a id="home">home</a></li>
+	<li><a id="dashboard">Dashboard</a></li>
+	<li><a id="report">report</a></li>
+</ul>
 
-	<div id="buttons"> <!-- Step 1 -->
-		<button class="buttonClass">Click me</button>
-		<button class="buttonClass">Click me</button>
-		<!-- buttons... -->
-		<button class="buttonClass">Click me</button>
-	</div>
-
-	<button class="buttonClass2">Click me</button>
-
+<div id="buttons"> <!-- Step 1 -->
 	<button class="buttonClass">Click me</button>
+	<button class="buttonClass">Click me</button>
+	<!-- buttons... -->
+	<button class="buttonClass">Click me</button>
+</div>
 
-	<button id="buttonId">Click me</button>
-	
-	<!-- <button id="btn">Click btn</button>
+<button class="buttonClass2">Click me</button>
+
+<button class="buttonClass">Click me</button>
+
+<button id="buttonId">Click me</button>
+
+<!-- <button id="btn">Click btn</button>
 	<span id="counter">0</span> -->
 
-	<button class="Btn">CLICK HERE</button>
-	<div class="result"></div>
+<button class="Btn">CLICK HERE</button>
+<div class="result"></div>
 
 
-	<div class="container"> <h1 id="headline">Countdown to my birthday</h1> <div id="countdown"> <ul> <li><span id="days"></span>days</li> <li><span id="hours"></span>Hours</li> <li><span id="minutes"></span>Minutes</li> <li><span id="seconds"></span>Seconds</li> </ul> </div> <div id="content" class="emoji"> <span></span> <span></span> <span></span> </div> </div>
+<div class="container">
+	<h1 id="headline">Countdown to my birthday</h1>
+	<div id="countdown">
+		<ul>
+			<li><span id="days"></span>days</li>
+			<li><span id="hours"></span>Hours</li>
+			<li><span id="minutes"></span>Minutes</li>
+			<li><span id="seconds"></span>Seconds</li>
+		</ul>
+	</div>
+	<div id="content" class="emoji"> <span></span> <span></span> <span></span> </div>
+</div>
 
-	<div class="container">
-		<header class="header">
+<div class="container">
+	<header class="header">
 		<h4 class="title">Live User Filter</h4>
 		<small class="subtitle">Search by name and/or location</small>
 		<input type="text" id="filter" placeholder="Search">
-		</header>
-		<ul id="result" class="user-list">
+	</header>
+	<ul id="result" class="user-list">
 		<li>
-		<h3>Loading...</h3>
+			<h3>Loading...</h3>
 		</li>
-		</ul>
-		</div>
-		<hr/>
+	</ul>
+</div>
+<hr />
 
-	<button id="window1">facebook</button>
-	<button id="window2">twitter</button>
-	<button id="btnclose">clos</button>
+<button id="window1">facebook</button>
+<button id="window2">twitter</button>
+<button id="btnclose">clos</button>
 
-	<hr/>
+<hr />
 
-	<button onclick="stop()">stop</button>
+<button onclick="stop()">stop</button>
 
-	<hr/>
+<hr />
 
-	<span id="superb">Nitesh khatri is superb</span>
+<span id="superb">Nitesh khatri is superb</span>
 
-	<hr/>
-	<span id="words"></span>
+<hr />
+<span id="words"></span>
 <input id="number" type="text" />
-<hr/>
+<hr />
 
-	<button id="add">add</button>
+<button id="add">add</button>
 
-	<span id="app"></span>
-	<hr/>
+<span id="app"></span>
+<hr />
 
-	<img src="https://www.w3schools.com/cssref/img_5terre.jpg" alt="" class="imgmask" width="600" height="400">
-	<div class="resizetwo">resizetwo</div>
+<img src="https://www.w3schools.com/cssref/img_5terre.jpg" alt="" class="imgmask" width="600" height="400">
+<div class="resizetwo">resizetwo</div>
 
-	<div class="resize">Resize</div>	
+<div class="resize">Resize</div>
 
-	<img src="https://www.w3schools.com/cssref/smiley.gif" alt="" class="smileyimg">
+<img src="https://www.w3schools.com/cssref/smiley.gif" alt="" class="smileyimg">
 
-	<div class="col">Ea fugiat consequat laborum sit sint. Ipsum labore in quis quis sunt mollit qui ullamco nisi. Elit et culpa veniam aliqua. Aliquip anim elit magna officia excepteur aliqua. Occaecat aliqua adipisicing proident velit exercitation quis dolore id ipsum aute. Fugiat consectetur ipsum aliquip laboris in magna. Dolore sint labore sunt minim irure ullamco minim tempor velit culpa aliqua dolor dolore.</div>
+<div class="col">Ea fugiat consequat laborum sit sint. Ipsum labore in quis quis sunt mollit qui ullamco nisi. Elit et
+	culpa veniam aliqua. Aliquip anim elit magna officia excepteur aliqua. Occaecat aliqua adipisicing proident velit
+	exercitation quis dolore id ipsum aute. Fugiat consectetur ipsum aliquip laboris in magna. Dolore sint labore sunt
+	minim irure ullamco minim tempor velit culpa aliqua dolor dolore.</div>
 
 <p class="rtl">nitesh khatri</p>
 
@@ -343,42 +388,42 @@
 	</tr>
 </table>
 
-	<ul class="listcounter">
-		<li>
-			list item
-		</li>
-		<li>
-			list item
-		</li>
-		<li>
-			list item
-		</li>
-	</ul>
+<ul class="listcounter">
+	<li>
+		list item
+	</li>
+	<li>
+		list item
+	</li>
+	<li>
+		list item
+	</li>
+</ul>
 
-	<img src="https://www.w3schools.com/cssref/img_tree.gif"/>
+<img src="https://www.w3schools.com/cssref/img_tree.gif" />
 
-	<div id="div1">
+<div id="div1">
 	<p id="p1"></p>
 </div>
 
 <input type="radio" name="radio" id="radio1">
 <input type="radio" name="radio" id="radio2">
 
-	<h1 id="demo"></h1>
-	<h1 id="good"></h1>
+<h1 id="demo"></h1>
+<h1 id="good"></h1>
 
-	<span id="sister"></span>
-	<span id="target"></span>
+<span id="sister"></span>
+<span id="target"></span>
 
-	
 
-	<!-- <ul class="tab_list" id="tab_list">
+
+<!-- <ul class="tab_list" id="tab_list">
 		<li data-tab="tab1" class="active listitem">
 			<a href="" class="linknav">list1</a>
 		</li>
 	</ul> -->
 
-	<!-- <input type="text" onclick="">
+<!-- <input type="text" onclick="">
 	<input type="text" onblur="">
 	<input type="text" ondblclick="">
 	<input type="text" onmousedown="">
@@ -390,10 +435,10 @@
 	<input type="text" onfocus="">
 	<input type="text" onformchange="">
 	<input type="text" onforminput=""> -->
-	<!-- <input type="text" oncontextmenu="functionMenu()" value="nitesh katr"> -->
-	<!-- <input type="text" oncopy="myFunction()" value="Try to copy this text"> -->
+<!-- <input type="text" oncontextmenu="functionMenu()" value="nitesh katr"> -->
+<!-- <input type="text" oncopy="myFunction()" value="Try to copy this text"> -->
 
-	<!-- <div oncopy="myFunction()">nitesh khatri</div>
+<!-- <div oncopy="myFunction()">nitesh khatri</div>
 	<div id="result"></div>
 
 	<p id="noContextMenu">The context menu has been disabled on this paragraph.</p>
@@ -407,7 +452,7 @@
 
 	<div id="boxwrapper"></div>	 -->
 
-	<!-- <button id="buttonId">Click me</button>	
+<!-- <button id="buttonId">Click me</button>	
 
 
 	<div id="result"></div>
@@ -416,18 +461,18 @@
 	<h1 class="hello" id="world" style="text-decoration: underline;">hello, world</h1> -->
 
 
-	<!-- <div id="str1"></div>
+<!-- <div id="str1"></div>
 
 	<div id="box"></div> -->
 
-	<!-- <div>
+<!-- <div>
 		<span>
 		  <button>Click Me!</button>
 		</span>
 	  </div> -->
 
 
-	<!-- <div class="container" class="box">container</div>
+<!-- <div class="container" class="box">container</div>
 
 	<button onclick="setAge()">click age</button>
 	<p id="myage"></p>
@@ -444,7 +489,7 @@
 	<h1 id="heading">heading</h1>
 	<p id="para">paragraph</p> -->
 
-	<!-- <h1>signup </h1>ack
+<!-- <h1>signup </h1>ack
 	<div>
 		<form onsubmit="signUp()">
 			<label htmlfor="username">username</label>
@@ -462,7 +507,7 @@
 		</form>
 	</div> -->
 
-	<!-- <div>
+<!-- <div>
     	<div>
   <p className="birds">Rock Pigeon</p>
   <p className="birds cannot_fly">Ostriches</p>
@@ -476,12 +521,12 @@
     <input type='button' id='bt' onclick='findEleByClass()' value='Show elements with multiple class name'>
     <p id="msg"></p> -->
 
-	<!-- <div class="myClass"></div> -->
-	<!-- <div id="myDiv"></div> -->
-	<!-- <button id="btn">Click</button> -->
+<!-- <div class="myClass"></div> -->
+<!-- <div id="myDiv"></div> -->
+<!-- <button id="btn">Click</button> -->
 
 
-	<!-- <button onclick="onContinue()">Click</button>
+<!-- <button onclick="onContinue()">Click</button>
 
 	<h1 id="element">heading title</h1>
 	<p>This is a paragraph.</p>
@@ -545,7 +590,7 @@
 	<button id="btn">Click</button>
 	 -->
 
-	<!-- <img src="https://via.placeholder.50]??" alt="" onerror="this.onerror=null;this.src='https://placeimg.com/200/300/animals'">
+<!-- <img src="https://via.placeholder.50]??" alt="" onerror="this.onerror=null;this.src='https://placeimg.com/200/300/animals'">
 
 	<input type="text" value="nitesh" onfocus="this.value=''">
 
@@ -557,7 +602,7 @@
 		<option value="">option 3</option>
 		<option value="">option 4</option>
 	</select> -->
-	<!-- <div class="container">
+<!-- <div class="container">
 		<h1 id="main-heading">Favorite movie franchise</h1>
 		<ul>
 			<li class="list-items">
@@ -578,7 +623,7 @@
 		</ul>
 	</div> -->
 
-		<!-- <h1 id="main-heading">Heading</h1>
+<!-- <h1 id="main-heading">Heading</h1>
 		<div class="container">
 			<div class="boxes box-1">
 				<h1 id="heading">Example 1</h1>
@@ -594,7 +639,7 @@
 			</div>
 		</div> -->
 
-		<!-- <h1 id="main-heading">Event listeners</h1>
+<!-- <h1 id="main-heading">Event listeners</h1>
 
 		<div class="container">
 			<button class="btn-reveal boxes">Reveal more</button>
@@ -608,7 +653,7 @@
 			</div>
 		</div> -->
 
-		<!-- <div class="div2">
+<!-- <div class="div2">
 			2
 			<div class="div1">
 				1
@@ -616,7 +661,7 @@
 			</div>
 		</div> -->
 
-		<!-- <ul id="sports">
+<!-- <ul id="sports">
 			<li id="football">Football</li>
 			<li id="basketball">Basketball</li>
 			<li id="boxing">boxing</li>
@@ -624,7 +669,7 @@
 			<li id="golf">golf</li>
 		</ul> -->
 
-		<!-- <div class="container">
+<!-- <div class="container">
 			<div class="header">
 				<h2>js quote generator</h2>
 
@@ -647,7 +692,7 @@
 			</div>
 		</div> -->
 
-		<!-- <button id="btnopen">Where is our modal</button>
+<!-- <button id="btnopen">Where is our modal</button>
 		<div id="modal-container">
 			<div id="modal">
 				<p>here i am!</p>
@@ -655,7 +700,7 @@
 			</div>
 		</div> -->
 
-		<!-- <div id="accordion">
+<!-- <div id="accordion">
 		    <div class="head">DOM Manipulations Exercise <span class="button" onclick="toggle()">More</span></div>
 		    <div id="extra">
 		        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -665,8 +710,12 @@
 		            anim id est laborum.</p>
 		    </div>
 		</div> -->
-	
 
-	<script type="text/javascript" src='custom.js'></script>
+
+<!-- Include GSAP script -->
+<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src='custom.js'></script>
 </body>
+
 </html>
