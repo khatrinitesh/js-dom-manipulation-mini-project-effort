@@ -20252,6 +20252,7 @@ const items = ['item1','item2','item3']
 // // Using the closure to add 5 to the original x (10)
 // const result = closure(5);
 // console.log(result); // Outputs 15
+// console.log('asdda')
 
 
 
