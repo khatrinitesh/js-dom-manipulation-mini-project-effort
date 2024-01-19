@@ -20101,3 +20101,71 @@ const items = ['item1','item2','item3']
 // boxElement.style.border = "5px solid blue";
 // boxElement.style.borderRadius = "10px";
 // boxElement.style.boxShadow = "5px 5px 5px 5px #999";
+
+//---- Explain the primary distinction between the Array.forEach() loop and Array.map() method, as well as when to choose one over the other
+const numbers = [1, 2, 3, 4];
+// numbers.forEach((val,index)  => {
+//   console.log(val)
+// })
+// numbers.map((val,index) => {
+//   console.log(val)
+// })
+
+//----- What is a common scenario for employing anonymous functions
+// callback functions
+// setTimeout(function(){
+//   console.log('timeout complete')
+// },1000)
+// immediately invoked function expressions (IIFE)
+// (function(){
+//   setTimeout(() =>{
+//     console.log('IIFE')
+//   },1000)
+// })()
+// array methods 
+// const squareNum = numbers.map(function(num) {
+//   return num * 2 
+// })
+// console.log(squareNum)
+// event handlers
+// document.getElementById("myButton").addEventListener("click", function() {
+//   console.log("Button clicked!");
+// });
+// as arguments in higher-order-functions 
+// function example(result){
+//   result()
+// }
+// example(function(){
+//   console.log("Callback function called!");
+// })
+// Dynamic Function Creation:
+// const operation = (addition) => addition ? (a,b) => a - b : (a,b) => a -b 
+// const add = operation(true)
+// const subtract = operation(true)
+// console.log(add(20,30))
+// console.log(subtract(20,30))
+
+//--- Distinguish between host objects and native objects
+
+//---- Clarify the distinctions among 'function User(){}', 'var user = User()', and 'var user = new User()
+// function User() {
+//   this.name = "John";
+// }
+// var UserInstance = new User();
+// console.log(UserInstance.name)
+// console.log(window.name); 
+
+// function User() {
+//   this.name = "John";
+// }
+// const userName = new User()
+// console.log(userName.name)
+
+//--- Can you elucidate the purposes of Function.call and Function.apply, along with their notable differences?
+// function example(msg){
+//   console.log(`${msg} ${this.name}`)
+// }
+// const person = {name:'nitesh'}
+// example.call(person,'hello')
+
+
