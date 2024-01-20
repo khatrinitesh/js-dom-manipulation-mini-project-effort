@@ -20254,7 +20254,11 @@ const items = ['item1','item2','item3']
 // console.log(result); // Outputs 15
 // console.log('asdda')
 
-
+// const data = {
+//   silk:'html'
+// }
+// data.name = 'nitesh'
+// console.log(data)
 
 
 
