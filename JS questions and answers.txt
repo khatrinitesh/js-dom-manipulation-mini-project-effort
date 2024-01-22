@@ -893,4 +893,71 @@ If you can correctly answer, you’re already 90% ahead of your competition.
 -Describe the differences between "mutable" and "immutable" data structures in JavaScript.
 -Discuss the differences between "Cookies" and "Local Storage" for client-side data storage.
 -Describe the differences between "call stack" and "callback queue" in the context of asynchronous JavaScript.
-
+// -----------------------------------------------------------
+Interview Question: 13. Whats the difference between var,let and const?
+- Scope: 
+var - variables declared with var are function scoped(available throughout the function where its declared) or global scope(if declared outside a function).
+let and const - block scoped.
+- Reassignment: 
+var,let - variables declared with var and let can be reassigned. 
+const - variables declared with const cannot be reassigned.
+- Hoisting:
+var - will be hoisted to the top of the scope and initialized with undefined.
+let and const - will be hoisted to the top of the scope but will not be assigned any value.
+// -----------------------------------------------------------
+Essential Concepts for Every JS Developer
+1️⃣ JavaScript Engines: Learn about the engines that execute JavaScript, such as V8 (used in Chrome).
+2️⃣ Value Types and Reference Types: Understand the distinction between primitive types and objects.
+3️⃣ Primitive Types: Know the fundamental data types like string, number, boolean, null, undefined.
+4️⃣ Expression vs Statement: Distinguish between expressions and statements in JavaScript code.
+5️⃣ Function Scope, Block Scope, and Lexical Scope: Grasp how scopes work in JavaScript.
+6️⃣ Message Queue and Event Loop: Understand asynchronous JavaScript through the event loop.
+7️⃣ setTimeout, setInterval, and requestAnimationFrame: Manage time-related operations effectively.
+8️⃣ == vs === vs typeof: Differentiate between loose equality, strict equality, and the typeof operator.
+9️⃣ Call Stack: Learn how the call stack manages function calls and execution flow.
+🔟 IIFE, Modules, and Namespaces: Organize and encapsulate code using Immediately Invoked Function Expressions and modularization.
+1️⃣1️⃣ Bitwise Operators, Type Arrays, and Array Buffers: Handle binary data efficiently with low-level operations.
+1️⃣2️⃣ DOM and Layout Trees: Understand the Document Object Model for web development.
+1️⃣3️⃣ Factory Functions and Classes: Explore different approaches for creating objects.
+1️⃣4️⃣ this, call, apply, and bind: Master context management and the 'this' keyword.
+1️⃣5️⃣ new, Constructor, instanceof, and Instances: Grasp object instantiation and constructor functions.
+1️⃣6️⃣ Prototypal Nature : Utilize prototype-based inheritance for code efficiency.
+1️⃣7️⃣ Object.create and Object.assign: Learn to create and manipulate objects effectively.
+1️⃣8️⃣ map, reduce, filter: Master array methods for functional programming.
+1️⃣9️⃣ Pure Functions, Side Effects, State Mutation, and Event Propagation: Write clean and maintainable code.
+2️⃣0️⃣ Closures: Manage variable scope and create modular code.
+2️⃣1️⃣ High Order Functions: Use higher-order functions for concise and expressive code.
+2️⃣2️⃣ Recursion: Solve problems efficiently with recursive functions.
+2️⃣3️⃣ Collections and Generators: Understand data structures and generators for data manipulation.
+2️⃣4️⃣ Asynchronous Operations: Handle asynchronous operations with callbacks, promise-based patterns and async/await .
+2️⃣5️⃣Partial Applications, Currying, Compose, and Pipe: Explore functional programming concepts for code modularity.
+2️⃣6️⃣ Data Structures & Algorithms: Explore various data structures for problem-solving.
+2️⃣7️⃣ Inheritance, Polymorphism, and Code Reuse: Master object-oriented programming concepts for scalability.
+2️⃣8️⃣ Design Patterns: Apply reusable solutions to common problems for improved code architecture.
+2️⃣9️⃣ Clean Code: Prioritize writing clean and readable code following best practices for maintainability.
+// -----------------------------------------------------------
+Here are some random JavaScript fun facts😱:
+1. null is an object
+2. NaN is a number
+3. There was a time undefined could be redefined
+4. Math.max() < Math.min()
+5. Array.sort() sorts all arrays lexically
+6. [] == false // -> true
+7. undefined is not a function
+8. "b" + "a" + + "a" + "a" === "baNaNa"
+9. {} + [] // 0
+10. [] + {} // "[object Object]"
+11. [] + [] // ""
+12. {} + {} // "[object Object][object Object]"
+Know any other funny JS facts? Do Share them!
+// -----------------------------------------------------------
+Certainly! Here's a brief overview of some key JavaScript ES6 features:
+𝟏-𝐀𝐫𝐫𝐨𝐰 𝐅𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐬: Arrow functions provide a concise syntax for writing functions in JavaScript.
+𝟐-𝐓𝐞𝐦𝐩𝐥𝐚𝐭𝐞 𝐋𝐢𝐭𝐞𝐫𝐚𝐥𝐬: Template literals enable the creation of dynamic strings with embedded expressions.
+𝟑-𝐋𝐞𝐭 𝐚𝐧𝐝 𝐂𝐨𝐧𝐬𝐭 𝐃𝐞𝐜𝐥𝐚𝐫𝐚𝐭𝐢𝐨𝐧𝐬: ES6 introduced the let and const keywords for block-scoped variable declarations.
+𝟒-𝐃𝐞𝐬𝐭𝐫𝐮𝐜𝐭𝐮𝐫𝐢𝐧𝐠 𝐀𝐬𝐬𝐢𝐠𝐧𝐦𝐞𝐧𝐭: Destructuring assignment allows you to extract values from arrays or objects into distinct variables.
+𝟓-𝐒𝐩𝐫𝐞𝐚𝐝 𝐚𝐧𝐝 𝐑𝐞𝐬𝐭 𝐎𝐩𝐞𝐫𝐚𝐭𝐨𝐫𝐬: The spread operator (...) is used to spread elements of an array or object, while the rest operator gathers them.
+𝟔-𝐃𝐞𝐟𝐚𝐮𝐥𝐭 𝐏𝐚𝐫𝐚𝐦𝐞𝐭𝐞𝐫𝐬:
+ES6 enables the use of default parameter values in function declarations.
+These features enhance the readability, flexibility, and conciseness of JavaScript code, offering developers powerful tools for modern web development.
+// -----------------------------------------------------------

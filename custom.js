@@ -20260,5 +20260,16 @@ const items = ['item1','item2','item3']
 // data.name = 'nitesh'
 // console.log(data)
 
+// let x = 5 
+// let y = 10
+// if(x>y){
+//   console.log('x is greater than y')
+// }
+// else if(x<y){
+//   console.log('x is less than y')
+// }
+// else{
+//   console.log('x is equal to y')
+// }
 
 
