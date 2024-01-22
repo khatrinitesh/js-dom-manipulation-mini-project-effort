@@ -867,3 +867,30 @@ and -Infinity.
 The parseFloat() function is used to parse a string and extract a floating-point
 number from it. It converts the initial portion of the string that represents a valid
 floating-point number into a number value.
+
+
+// -----------------------------------------------------------
+These are the most asked JavaScript interview questions I’ve seen in the 12 years of my career. 
+If you can correctly answer, you’re already 90% ahead of your competition. 
+-What is the DOM (Document Object Model)?
+-How does the "EventEmitter" class work in Node.js?
+-What is the purpose of the "bind" method in JavaScript?
+-Describe the purpose of the "Proxy" object in JavaScript.
+-What is the purpose of the "spread" operator in JavaScript?
+-What is the purpose of the "Symbol" data type in JavaScript?
+-What is the purpose of the "use strict" directive in JavaScript?
+-Discuss the concept of the "async/await" feature in JavaScript.
+-Describe the differences between "=="" and "===" in JavaScript.
+-Discuss the differences between the "call," "apply," and "bind" methods.
+-Describe the role of the "fetch" API in making asynchronous HTTP requests.
+-Discuss the role of the "webpack" module bundler in JavaScript development.
+-Explain the differences between "shallow copy" and "deep copy" in JavaScript.
+-What is the purpose of the "map," "reduce," and "filter" functions in JavaScript?
+-Explain the differences between "document.onload" and "DOMContentLoaded."
+-Describe the differences between "let," "const," and "var" for variable declaration
+-What is the purpose of the "IIFE" (Immediately Invoked Function Expression) pattern?
+-Explain the concept of the "Event Loop" and how it relates to asynchronous programming.
+-Describe the differences between "mutable" and "immutable" data structures in JavaScript.
+-Discuss the differences between "Cookies" and "Local Storage" for client-side data storage.
+-Describe the differences between "call stack" and "callback queue" in the context of asynchronous JavaScript.
+
