@@ -867,3 +867,203 @@ and -Infinity.
 The parseFloat() function is used to parse a string and extract a floating-point
 number from it. It converts the initial portion of the string that represents a valid
 floating-point number into a number value.
+
+// Event Delegation in JavaScript
+
+// const { stdChannel } = require("redux-saga");
+
+// Temporal Dead Zone (TDZ) and Hoisting in JavaScript – Explained with Examples
+
+// opeartors => assignment / comparison / logical / conditional / bitwise / unary / typeof / precedence
+
+// conditional statement => if / if else / switch 
+
+// looop statement => while / do while / for loop / nested for loops / for in loop / for of loop / break / continue 
+
+// function => What is a function in JavaScript?
+// How to call a function in JavaScript using arguments?
+// Pass By Value in JavaScript
+// Function return (or return statement)
+// Nested functions
+// Rest parameter
+// Anonymous functions
+// Recursion
+// Arrow Function
+
+// objects => 
+// What is an Object?
+// Types of Objects
+// Array Object
+// Properties of Array Object
+// Methods of Array Object
+// String Object
+// Properties of String Object
+// Methods of String Object
+// Math Object
+// Properties of Math Object
+// Methods of Math Object
+// Date Object
+// Methods of Date Object
+// Global Object
+// Properties of Global Object
+// Methods of Global Object
+// Number Object
+// Properties of Number Object
+// Methods of Number Object
+// Creating your own Objects
+// Defining methods
+
+// window and frame objects 
+// Top-level Objects
+// Window Object
+// Creating a Window
+// Communicating with the user
+// Working with Timeouts
+// Some properties of Window Object
+// Some other useful methods of Window Object
+// Location Object
+// Properties of Location Object
+// Methods of Location Object
+// Document Object
+// Properties of Document Object
+// Methods of Document Object
+// The Navigator Object
+// Properties of Navigator Object
+// Methods of Navigator Object
+// History Object
+// Properties of History Object
+// Methods of History Object
+// Screen Object
+// Working with Frames
+// Creating frames
+// The frame tree
+// Accessing frames
+// Nested frames
+// Frame object model
+// Frame element object
+
+// event handling
+// Events
+// How does it work?
+// Objects and Events
+// Creating an Event handler
+// Changing Event handlers
+// Managing JavaScript Events
+// Mouse Events
+// Keyboard Events
+// The onLoad and onUnload Events
+// Event Simulation
+// The Event object
+// Event capturing
+// Turning off Event capturing
+// Event bubbling
+// Preventing Event bubbling
+
+// Exception Handling
+// Exceptions and Errors
+// Exception mechanism
+// “try-catch-finally” constructions
+// Throwing exceptions
+// Error Object
+// Properties of Error Object
+// Methods of Error Object
+
+// form
+// The Form Object
+// Accessing Forms within JavaScript
+// Accessing Form elements
+// About <input> element objects
+// Properties of Form Object
+// Methods of Form Object
+// Fieldset and Legend Element Objects
+// Label Element Object
+// Text Input Object
+// Properties of Text Input Object
+// Methods of Text Input Object
+// Password Input Object
+// Hidden Input Object
+// Textarea Element Object
+// Properties of Textarea Element Object
+// Button Element Object
+// Checkbox Input Object
+// Properties of Checkbox Input Object
+// Method of Checkbox Input Object
+// Radio Input Object
+// Properties of Radio Input Object
+// Methods of Radio Input Object
+// Image Input Object
+// Properties of Image Input Object
+// Select Element Object
+// Properties of Select Element Object
+// Methods of Select Element Object
+// Option Element Object
+// File Input Element Object
+
+// document object model 
+// Document Object Model (DOM) and W3C
+// DOM Levels
+// DOM and JavaScript
+// New DOM Concepts
+// Element Referencing
+// Hierarchy of nodes
+// Node properties
+// Node methods
+// Generating new node content
+// Replacing node content
+
+// Throttling vs denouncing
+// •html5 features
+// •Js- Async & await
+// •webpack
+// •current project related question
+// •on code to solve- Create a webpage with API ( React.js )
+// •What are PROMISES,ASYNC &  AWAIT
+// •CLOSURES
+// •HOISTING
+// •one code to solve
+// •Difference between functional & class based component of react
+// •life cycle method of redux and react
+// •USE EFFECT-MOUNTING UNMOUNTING AND UPDATING
+// •what is web pack?
+// •how to optimize the web page?
+// •what is deep copy & shallow copy ?
+// •react life cycle
+// •hooks -use effect and state hook
+// •MOUNTING UNMOUNTING
+// •ask to design code
+// •Ues of this,Promise, hooks,use state,css,html5,constructor,ES6
+// •Scss,webpack
+// •css box-model.
+// •How to optimize multiple svgs
+// •Optimising fonts loads
+// •Optimize CSS for multiple (as in 100s) sites using similar css
+// •Object Oriented CSS
+// •Web security
+// •Graphql and rest API
+// •How to query graphql from FE side
+// •Oauth integration
+// •Web pack
+// •const obj={a:1,b:{c:3,d:[10]}} , extract a,b values from this
+// const arr=[{id:1,status:1},{id:2,status:2},{id:3,status:1}]
+// Ans :[{id:1,status:1},
+// •{id:3,status:1}]]
+// •https://onecompiler.com/javascript/3wyx24ssq
+// •ES6 Practice - JavaScript - OneCompiler
+// •const obj={a:1,c:{d:1}};
+// const obj={a:1,c:{ arr:[1,2,3,4] }};
+// const obj=[{id:1},{id:2},{id:3},{id:2}];
+// •ES6 features
+// •Vanilla Javascript
+// •design HTML in vanilla js fetch API data populate the data only using acodian element of html.
+// •Class component vs Function component
+// •React Memo
+// •Use Memo Vs use call back
+// •Css flexbox and grid
+// •Flex box properties
+// •ALL THE PROPERTIES OF SASS
+// •USE EFFECT-MOUNTING UNMOUNTING AND UPDATING
+// PROMISES
+// •how to create a images using •Java script
+// •How to add styling using JS
+// •how to create mixin in saas
+// •declaring a variable in CSS
