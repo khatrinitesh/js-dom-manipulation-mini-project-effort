@@ -20054,14 +20054,22 @@ const items = ['item1', 'item2', 'item3']
 // console.log(result); // Outputs 15
 // console.log('asdda')
 
+// const data = {
+//   silk:'html'
+// }
+// data.name = 'nitesh'
+// console.log(data)
 
-//
-// console.log(myVar)
-// var myvar = 10
-// console.log(myvar)
-
-// console.log(myLet)
-// let myLet = 20
-// console.log(myLet)
+// let x = 5
+// let y = 10
+// if(x>y){
+//   console.log('x is greater than y')
+// }
+// else if(x<y){
+//   console.log('x is less than y')
+// }
+// else{
+//   console.log('x is equal to y')
+// }
 
 
