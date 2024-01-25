@@ -1160,3 +1160,195 @@ These features enhance the readability, flexibility, and conciseness of JavaScri
 // •How to add styling using JS
 // •how to create mixin in saas
 // •declaring a variable in CSS
+// -----------------------------------------------------------
+The JavaScript Tree:
+|
+|── Variables
+| ├── var
+| ├── let
+| └── const
+|
+|── Data Types
+| ├── String
+| ├── Number
+| ├── Boolean
+| ├── Object
+| ├── Array
+| ├── Null
+| └── Undefined
+|
+|── Operators
+| ├── Arithmetic
+| ├── Assignment
+| ├── Comparison
+| ├── Logical
+| ├── Unary
+| └── Ternary (Conditional)
+|
+|── Control Flow
+| ├── if statement
+| ├── else statement
+| ├── else if statement
+| ├── switch statement
+| ├── for loop
+| ├── while loop
+| └── do-while loop
+|
+|── Functions
+| ├── Function declaration
+| ├── Function expression
+| ├── Arrow function
+| └── IIFE (Immediately Invoked Function Expression)
+|
+|── Scope
+| ├── Global scope
+| ├── Local scope
+| ├── Block scope
+| └── Lexical scope
+|
+|── Arrays
+| ├── Array methods
+| | ├── push()
+| | ├── pop()
+| | ├── shift()
+| | ├── unshift()
+| | ├── splice()
+| | ├── slice()
+| | └── concat()
+| └── Array iteration
+| ├── forEach()
+| ├── map()
+| ├── filter()
+| └── reduce()
+|
+|── Objects
+| ├── Object properties
+| | ├── Dot notation
+| | └── Bracket notation
+| ├── Object methods
+| | ├── Object.keys()
+| | ├── Object.values()
+| | └── Object.entries()
+| └── Object destructuring
+|
+|── Promises
+| ├── Promise states
+| | ├── Pending
+| | ├── Fulfilled
+| | └── Rejected
+| ├── Promise methods
+| | ├── then()
+| | ├── catch()
+| | └── finally()
+| └── Promise.all()
+|
+|── Asynchronous JavaScript
+| ├── Callbacks
+| ├── Promises
+| └── Async/Await
+|
+|── Error Handling
+| ├── try...catch statement
+| └── throw statement
+|
+|── JSON (JavaScript Object Notation)
+|
+|── Modules
+| ├── import
+| └── export
+|
+|── DOM Manipulation
+| ├── Selecting elements
+| ├── Modifying elements
+| └── Creating elements
+|
+|── Events
+| ├── Event listeners
+| ├── Event propagation
+| └── Event delegation
+|
+|── AJAX (Asynchronous JavaScript and XML)
+|
+|── Fetch API
+|
+|── ES6+ Features
+| ├── Template literals
+| ├── Destructuring assignment
+| ├── Spread/rest operator
+| ├── Arrow functions
+| ├── Classes
+| ├── let and const
+| ├── Default parameters
+| ├── Modules
+| └── Promises
+|
+|── Web APIs
+| ├── Local Storage
+| ├── Session Storage
+| └── Web Storage API
+|
+|── Libraries and Frameworks
+| ├── React
+| ├── Angular
+| └── Vue.js
+|
+|── Debugging
+| ├── Console.log()
+| ├── Breakpoints
+| └── DevTools
+|
+|── Others
+| ├── Closures
+| ├── Callbacks
+| ├── Prototypes
+| ├── this keyword
+| ├── Hoisting
+| └── Strict mode
+|
+|____________ END __________________
+
+// -----------------------------------------------------------
+which operator is used for strict equality
+====
+// -----------------------------------------------------------
+What is the difference between map() and filter() in javascript ?
+Both map and filter are useful methods when working with arrays in javascript.
+Map() will transform each element of an array and creates a new array which contains the transformed elements. Whereas., filter() will creates a new array with only those elements which satisfies the specified condition.
+// -----------------------------------------------------------
+𝐊𝐢𝐥𝐥𝐞𝐫 𝐓𝐨𝐨𝐥𝐬 𝐅𝐨𝐫 𝐅𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫 🧑‍💻
+Here is the top list ⬇️
+01. Get Pixel Snap
+02. Code to Go
+03. Unused CSS
+04. Responsively
+05. Web Gradients
+06. Spline
+07. Shape Divider
+08. Get Waves
+09. Blob Maker
+10. Animista
+11. Lorem Ipsum
+12. Google Fonts
+13. Landing Page
+14. Museum of Websites
+// -----------------------------------------------------------
+We hardly get chance🙃 to build project from scratch in our organization.
+But trust😉 me if you get the chance ,the learning curve is good that I won't be explaining, whoever here as done it will know it.
+There are so many things,tools to choose from .some of the things like 
+Folder structure 
+Ui libraries or own design system Plain react or next js or Preact Linters Prettier Typescript or javascript 🤞
+ TDD to follow or for later 😂 Redux /Recoil /zod 
+Api fetching libraries React query or go with redux toolkit only camelCase component and so on
+what's your take on this
+i basically start with bare minimum setup and mostly focus on scalable folder 📂 structure and keep on adding as per the requirement comes .
+will write a detailed blog on this.
+// -----------------------------------------------------------
+What are the differences between map and forEach in javascript ?
+map method is used to transform the elements of an array whereas forEach method is used to loop through the elements of an array.
+map method will return a new array with the transformed values whereas forEach method will not return a new array.
+map method can be used with other array methods like filter. whereas forEach method cannot be used with other array methods as it does not return an array.
+// -----------------------------------------------------------
+Frontend System Design - Short Polling in #react 🚀🔥
+Short polling is a simpler form of asynchronous communication, where the client sends periodic requests to the server at fixed intervals, checking for updates. This method is less efficient compared to long polling, as it often results in frequent unnecessary requests. Even if no new data is available, the client continues to send requests, potentially causing an increase in network traffic and server load.
+In React, you can achieve short polling by using setInterval to repeatedly make API requests at regular intervals.
+Upcoming Post on Long Polling with an example🔥
