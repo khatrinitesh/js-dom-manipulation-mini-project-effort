@@ -1352,3 +1352,23 @@ Frontend System Design - Short Polling in #react 🚀🔥
 Short polling is a simpler form of asynchronous communication, where the client sends periodic requests to the server at fixed intervals, checking for updates. This method is less efficient compared to long polling, as it often results in frequent unnecessary requests. Even if no new data is available, the client continues to send requests, potentially causing an increase in network traffic and server load.
 In React, you can achieve short polling by using setInterval to repeatedly make API requests at regular intervals.
 Upcoming Post on Long Polling with an example🔥
+// -----------------------------------------------------------
+how do you check if a variable is an array 
+Array.isArray(x)
+// -----------------------------------------------------------
+creating dom manipulation
+- document.createElement('like that div,ul,li,p,h1,h2,h3,h4,h5,h6')
+- .appendChild()
+- removeChild()
+- remove()
+- document.querySelector('#elementID')
+- document.querySelectorAll('#elementID')
+- element.style.fontSize = '10px'
+- element.id = 'myId'
+- element.classList.add('myClass')
+- element.classList.remove('myClass')
+- element.innerText = 'hello'
+- element.textContent = 'happy coding'
+- element.setAttribute(attribute,value)
+- element.removeAttribute(attribute)
+// -----------------------------------------------------------
