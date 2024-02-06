@@ -1437,3 +1437,45 @@ When to use lookup tables?
 // -----------------------------------------------------------
 what is the type of null - object?
 // -----------------------------------------------------------
+Essential Concepts for Every JS Developer 
+1️⃣ JavaScript Engines: Learn about the engines that execute JavaScript, such as V8 (used in Chrome).
+2️⃣ Value Types and Reference Types: Understand the distinction between primitive types and objects.
+3️⃣ Primitive Types: Know the fundamental data types like string, number, boolean, null, undefined.
+4️⃣ Expression vs Statement: Distinguish between expressions and statements in JavaScript code.
+5️⃣ Function Scope, Block Scope, and Lexical Scope: Grasp how scopes work in JavaScript.
+6️⃣ Message Queue and Event Loop: Understand asynchronous JavaScript through the event loop.
+7️⃣ setTimeout, setInterval, and requestAnimationFrame: Manage time-related operations effectively.
+8️⃣ == vs === vs typeof: Differentiate between loose equality, strict equality, and the typeof operator.
+9️⃣ Call Stack: Learn how the call stack manages function calls and execution flow.
+🔟 IIFE, Modules, and Namespaces: Organize and encapsulate code using Immediately Invoked Function Expressions and modularization.
+1️⃣1️⃣ Bitwise Operators, Type Arrays, and Array Buffers: Handle binary data efficiently with low-level operations.
+1️⃣2️⃣ DOM and Layout Trees: Understand the Document Object Model for web development.
+1️⃣3️⃣ Factory Functions and Classes: Explore different approaches for creating objects.
+1️⃣4️⃣ this, call, apply, and bind: Master context management and the 'this' keyword.
+1️⃣5️⃣ new, Constructor, instanceof, and Instances: Grasp object instantiation and constructor functions.
+1️⃣6️⃣ Prototypal Nature : Utilize prototype-based inheritance for code efficiency.
+1️⃣7️⃣ Object.create and Object.assign: Learn to create and manipulate objects effectively.
+1️⃣8️⃣ map, reduce, filter: Master array methods for functional programming.
+1️⃣9️⃣ Pure Functions, Side Effects, State Mutation, and Event Propagation: Write clean and maintainable code.
+2️⃣0️⃣ Closures: Manage variable scope and create modular code.
+2️⃣1️⃣ High Order Functions: Use higher-order functions for concise and expressive code.
+2️⃣2️⃣ Recursion: Solve problems efficiently with recursive functions.
+2️⃣3️⃣ Collections and Generators: Understand data structures and generators for data manipulation.
+2️⃣4️⃣ Asynchronous Operations: Handle asynchronous operations with callbacks, promise-based patterns and async/await .
+2️⃣5️⃣Partial Applications, Currying, Compose, and Pipe: Explore functional programming concepts for code modularity.
+2️⃣6️⃣ Data Structures & Algorithms: Explore various data structures for problem-solving.
+2️⃣7️⃣ Inheritance, Polymorphism, and Code Reuse: Master object-oriented programming concepts for scalability.
+2️⃣8️⃣ Design Patterns: Apply reusable solutions to common problems for improved code architecture.
+2️⃣9️⃣ Clean Code: Prioritize writing clean and readable code following best practices for maintainability.
+// -----------------------------------------------------------
+console.log(true+true+true*3)
+// -----------------------------------------------------------
+ 7 Javascript concepts that are most probable to be asked in the FE engineering interviews
+🔥 What is the exact difference between event bubbling and delegation, and explain the phases involved in this whole process? 
+🔥 What are closures in Javascript, and how does it differentiate the "this" accordingly?
+🔥 Why is the Javascript code snippet preferably added to the end of the <body>, how can we replicate the same use case placing it elsewhere?
+🔥 Before promises, how were the asynchronous calls being made and what changes did promises, async/await add to it?
+🔥 How can you access the CSS variables/custom properties in Javascript?
+🔥 What data structures are behind the DOM and its implementation?
+🔥 How does the hoisting work on the "var" function and variable declarations, Is there any priority?
+// -----------------------------------------------------------

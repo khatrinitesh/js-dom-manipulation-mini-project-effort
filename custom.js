@@ -20071,5 +20071,4 @@ const items = ['item1', 'item2', 'item3']
 // else{
 //   console.log('x is equal to y')
 // }
-
-
+// console.log(true+true+true*3)
