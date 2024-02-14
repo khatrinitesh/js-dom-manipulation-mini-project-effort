@@ -1479,3 +1479,71 @@ console.log(true+true+true*3)
 🔥 What data structures are behind the DOM and its implementation?
 🔥 How does the hoisting work on the "var" function and variable declarations, Is there any priority?
 // -----------------------------------------------------------
+document object model
+=> get elements
+- getElementById
+- getElementsByTagName
+- getElementsByClassName
+- querySelector
+- querySelectorAll
+=> create and delete elements
+- createElement
+- PARENT.appendChild
+- PARENT.removeChild
+- PARENT.replaceChild
+- PARENT.insertBEFORE
+=> text contents
+- NODE.innerHTML
+- NODE.textContent
+- NODE.value
+=> CSS
+- NODE.className
+- NODE.classList
+- NODE.classList.add
+- NODE.classList.remove
+- NODE.classList.toggle
+=> attributes 
+- NODE.hasAttribute
+- NODE.setAttribute 
+- NODE.removeAttribute 
+- NODE.getAttribute
+// -----------------------------------------------------------
+basic the operators 
+=> arithmetic 
+- plus, concatentation (addition) + 
+- increment ++ 
+- minus (subtraction) -
+- decrement -- 
+- multiply * 
+- divide /
+- modulues % (remainder)
+=> comparison
+- more than >
+- more than or equals >= 
+- less than <
+- less than or equals <= 
+- equals to ===
+- equals to (with type checking) ===
+- not equals to !=
+- not equals to (with type checking) !==
+=> bitwise 
+- and &
+- or |
+- xor ^ 
+- not ~
+- shift left << 
+- shift right >>
+- shift right (pad with zero) >>>
+=> logical 
+- and && 
+- or ||  
+- not !
+=> conditional 
+var x = condition ? on true : on false 
+=> assignment 
+- assign value to  =  
+- add and design +=
+- subtract and design -= 
+- multiply and design *= 
+- divide and assign /= 
+- modulus and design %=
