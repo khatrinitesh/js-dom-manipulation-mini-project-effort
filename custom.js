@@ -20072,3 +20072,6 @@ const items = ['item1', 'item2', 'item3']
 //   console.log('x is equal to y')
 // }
 // console.log(true+true+true*3)
+
+// const cl = console.log.bind(console)
+// console.log(cl)
