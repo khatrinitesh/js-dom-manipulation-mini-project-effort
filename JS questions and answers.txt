@@ -1592,3 +1592,117 @@ array methods
 - reverse 
 - slice 
 - reverse 
+// -----------------------------------------------------------
+JavaScript topics you need to master to crack amazing Frontend Interviews -
+1. Fundamentals: Start with the basics - variables, data types, and operators.
+2. Functions: Dive deep into functions, understanding scope, closures, and the 'this' keyword.
+3. ES6 Features: Get comfortable with arrow functions, destructuring, spread/rest operators, and template literals.
+4. Async JavaScript: Promises and async/await for handling asynchronous operations.
+5. DOM Manipulation: Know how to interact with the Document Object Model (DOM) effectively.
+6. Event Handling: Learn about event listeners, event delegation, and the event object.
+7. Prototypes and Classes: Understand JavaScript's prototypal inheritance and ES6 classes.
+8. Closures: Master this concept, as it's often tested in interviews.
+9. Module Systems: Explore CommonJS, AMD, and ES6 modules.
+10. AJAX and Fetch API: Learn how to make asynchronous HTTP requests.
+11. Design Patterns: Know the most common patterns like Singleton, Observer, and Module.
+12. JSON: Understand JSON parsing and stringify.
+13. Error Handling: Learn how to handle errors gracefully with try...catch.
+14. Data Structures: Arrays, objects, maps, and sets are essential.
+15. Functional Programming: Concepts like map, filter, and reduce are valuable.
+16. Build Tools: Grasp Webpack and Babel for bundling and transpiling.
+17. Testing: Explore testing frameworks like Jest and Mocha.
+18. Debugging: Proficiency with browser developer tools is a must.
+19. ESLint and Code Style: Adhere to clean code practices.
+20. Security: Understand common web security vulnerabilities (e.g., XSS, CSRF).
+21. Promises and Async/Await: Master asynchronous programming.
+22. Modern JavaScript Frameworks: Learn a popular framework like React, Angular, or Vue.js.
+23. Working with APIs: Know how to integrate external APIs into your applications.
+24. Documentation: Keep your code well-documented for clarity.
+25. Automation: Grasp task runners like Grunt and Gulp.
+26. Progressive Web Apps (PWAs): Understand PWA concepts and service workers.
+27. Web Performance: Optimize your code for speed and efficiency.
+// -----------------------------------------------------------
+In this part , we are going to learn about different data types in Javascript. There are 2 Data Types in Javascript
+1) Primitive Data Type
+string / boolean / number / null / undefined 
+2) Reference ( Non - Primitive) Data Type 
+object / array / function 
+string quotes '' 
+double quotes ""
+back-ticks ``
+// -----------------------------------------------------------
+I had a nice interview (30 mins) today for a senior role. Great questions were asked and the interviewer did not expect me to know the perfect answers.
+Questions were asked around:
+- JS object references.
+- Cloning Objects
+- Classes
+- Microfrontends
+- Reconciliation and Diffing
+- APIs
+- Problematic Feature I worked on
+- Using JSON to structure components.
+I really need to go through JS fundamentals once again. I will also launch some questions based on the above soon on Frontend Hire.
+// -----------------------------------------------------------
+Here are top 30 interview questions for mastering DOM - 
+1. What is the DOM, and how does it relate to HTML?
+2. How can you access elements in the DOM using JavaScript?
+3. Explain the differences between getElementById, getElementsByClassName, and getElementsByTagName.
+4. What is the purpose of the querySelector method, and how does it differ from querySelectorAll?
+5. Explain the concept of event bubbling and how it impacts event handling in the DOM.
+6. How do you stop event propagation in the DOM?
+7. What is event delegation, and why is it useful in DOM manipulation?
+8. How can you dynamically create HTML elements using JavaScript?
+9. Explain the differences between the textContent and innerHTML properties.
+10. How can you modify CSS properties of an element in the DOM using JavaScript?
+11. Explain the purpose of the setAttribute and getAttribute methods in DOM manipulation.
+12. What is the difference between appendChild and insertBefore methods for adding elements to the DOM?
+13. How do you remove elements from the DOM using JavaScript?
+14. What is the purpose of the parentNode property in DOM manipulation?
+15. Explain how to clone an element in the DOM using JavaScript.
+16. How do you check if an element exists in the DOM using JavaScript?
+17. What is the purpose of the classList property, and how can you use it to manipulate classes?
+18. How do you add and remove classes from an element in the DOM?
+19. Explain the differences between classList.add, classList.remove, and classList.toggle.
+20. How can you traverse the DOM tree using JavaScript?
+21. What are data attributes (data-*), and how can you use them in DOM manipulation?
+22. Explain the purpose of the style property in DOM manipulation.
+23. How can you retrieve the dimensions (width and height) of an element in the DOM?
+24. What is the purpose of the offset properties (offsetWidth, offsetHeight, offsetLeft, offsetTop) in DOM manipulation?
+25. How do you handle form manipulation in the DOM using JavaScript?
+26. Explain the differences between innerText, textContent, and innerHTML.
+27. How do you detect if an element is hidden or visible in the DOM?
+28. What are the differences between the client and offset properties in DOM manipulation?
+29. How can you handle scroll events in the DOM using JavaScript?
+30. Explain the differences between createDocumentFragment and createElement in DOM manipulation.
+// -----------------------------------------------------------
+Are you preparing for a JavaScript Interview? 🤔🤔
+Here are some commonly asked JavaScript questions to help you ace your interview! 💻
+🔹 Understanding Hoisting and its impact on variable and function declarations
+🔹 The differences between let, const, and var in variable declaration and scope
+🔹 Exploring Closures and their practical applications in JavaScript
+🔹 Prototypal Inheritance vs. Classical Inheritance: A comparison of object-oriented paradigms
+🔹 The 'this' keyword in JavaScript and how its value is determined
+🔹 Callbacks, Promises, and Async/Await: Managing asynchronous operations in JavaScript
+🔹 Diving into ES6 features like Arrow functions, Template literals, and Destructuring
+🔹 Exploring Higher-order Functions and their role in functional programming
+🔹 The significance of the Event Loop and Concurrency Model in JavaScript
+🔹 Handling errors and exceptions using try...catch blocks in JavaScript
+🔹 Deep dive into Array methods like map, filter, reduce, and forEach
+🔹 Understanding the concept of Prototypes and how they relate to Objects
+🔹 Scope chain and Lexical Scoping: How JavaScript handles variable access
+🔹 The difference between == and === in JavaScript for value comparison
+🔹 Caching and Memoization techniques for optimizing performance
+🔹 JavaScript Design Patterns for writing efficient and maintainable code
+🔹 Throttling and Debouncing: Controlling the rate of function execution
+🔹 Common array and string manipulation techniques in JavaScript
+🔹 Exploring ES modules and their role in modern JavaScript development
+🔹 Functional vs. Class Components in React: Choosing the right approach
+🔹 JavaScript's new features in ES7, ES8, and beyond
+🔹 DOM manipulation and event handling using Vanilla JavaScript
+🔹 Understanding CORS (Cross-Origin Resource Sharing) and how to handle it
+🔹 Implementing data structures like linked lists, stacks, and queues in JavaScript
+🔹 The importance of Web APIs and how to work with them in JavaScript
+🔹 Unit testing with popular testing frameworks like Jest or Mocha
+🔹 JavaScript bundlers and their role in optimizing code for production
+🔹 Security best practices for JavaScript applications, including XSS and CSRF protection
+🔹 The concept of currying and partial application in functional programming
