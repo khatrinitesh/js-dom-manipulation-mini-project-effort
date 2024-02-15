@@ -20536,5 +20536,5 @@ const items = ['item1', 'item2', 'item3']
 // console.log(message)
 
 const isReverse = 'nitesh khatri'.split().join('').reverse();
-console.lo
+console.log(isReverse)
 
