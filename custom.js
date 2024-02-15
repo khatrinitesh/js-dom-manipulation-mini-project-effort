@@ -6991,7 +6991,7 @@ const wordnumber = ['nitesh', 'khatri', 1, 2, null, undefined]
 // }
 // console.log('divide',divide(10,20))
 
-const mindset = ['vijay', 'vishal', 'pranay', 'vishal']
+// const mindset = ['vijay', 'vishal', 'pranay', 'vishal']
 // const distinct = (value,index,arr) => {
 //     return arr.indexOf(value) === index
 // }
@@ -20535,7 +20535,24 @@ const items = ['item1', 'item2', 'item3']
 // let message = `this is age ${age}`
 // console.log(message)
 
-const test = 'nitesh'
-const isReverse = test.split("").join("").reverse("");
-console.log(isReverse)
+// const test = 'happy coding'
+// const colleagues = ['pawan','prathmesh','vishal','koushik']
+// console.log(colleagues[1])
+// const isReverse = test.split("").reverse().join("");
+// console.log(isReverse)
+// console.log(test[6])
 
+
+// const persons = ['vishal','nilesh','bhavin','mayur','bhavini','sonal','jackie','bhagyesh','deepa','ragini','urvashi','arvind','hemala','dinesh','sameet','manisha','jinal','jigisha','mita delhi','mita kalyan','bhagyesh','kajal','chetna','shantilal','suhas','ashok','jackie','anita','yashvit','nitesh']
+// const mappedpersons = persons.map((val,index) => {
+//     return{
+//         index:index + 1,
+//         name:val
+//     }
+// })
+// console.log(mappedpersons)
+// const filteredpersons = persons.filter((val) => val === 'yashvit')
+// console.log(filteredpersons)
+
+// let arr1 = ['nitesh','sameet']
+// console.log(arr1.length)
