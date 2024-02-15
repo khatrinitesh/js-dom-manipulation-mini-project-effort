@@ -20075,3 +20075,463 @@ const items = ['item1', 'item2', 'item3']
 
 // const cl = console.log.bind(console)
 // console.log(cl)
+
+
+// Example array of strings
+// var myfriends = ['pawan','prathmesh','rahul','vighnesh']
+// var numberwise = [10,203,405,50]
+// const sortasc = myfriends.slice().sort(function(a,b) {
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// const sortdsc = myfriends.slice().sort(function(a,b) {
+//     if(a>b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log('ascending',sortasc)
+// console.log('descending',sortdsc)
+// const sortascnum = numberwise.slice().sort(function(a,b) {
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// const sortdscnum = numberwise.slice().sort(function(a,b) {
+//     if(a>b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log('ascending',sortascnum)
+// console.log('descending',sortdscnum)
+//Use a loop to update the original array in place
+// const originalArrays = myfriends.map(val => val.toUpperCase())
+// console.log(originalArrays)
+
+// var $cvityname = 'mumbai'
+// console.log($cvityname)
+
+// var $dob = '17/06/1989'
+// console.log($dob)
+
+// var isRaining = 'nitesh' 
+// if(isRaining === 'nitesh'){
+//     console.log('yes it is nitesh')
+// }
+// else{
+//     console.log('yes it is not nitesh')
+// }
+
+
+// function declaration
+// function sum(a,b){
+//     return a + b 
+// }
+// console.log(sum(10,20))
+
+// function expression
+// let sum = function(a,b) {
+//     return a + b 
+// }
+// console.log(sum(10,50))
+
+// arrow function 
+// const sum = (a,b) => {
+//     return a +b 
+// }
+// console.log(sum(20,30))
+
+// named function expression
+// const add = function sum(a,b){
+//     return a + b 
+// }
+// console.log(add(210,20))
+
+// function constructor 
+// const add = new Function('a','b','return a+b');
+// const sub = new Function('a','b','return a-b');
+// const multiply = new Function('a','b','return a*b');
+// const divide = new Function('a','b','return a/b');
+// console.log(add(10,20))
+// console.log(sub(10,20))
+// console.log(multiply(10,20))
+// console.log(divide(10,20))
+
+// var badMemories = null 
+// console.log(typeof badMemories)
+
+// let str = 5 
+// console.log(typeof String(str))
+// console.log(typeof str + '')
+
+// -- Variable Hoisting
+// console.log(x)
+// var x = 5 
+// console.log(x)
+// var x 
+// console.log(x)
+// x = 5
+// console.log(x)
+
+// -- function hositing
+// sayHello()
+// function sayHello(){
+//     console.log('hello world')
+// }
+// function sayHello(){
+//     console.log('hello world')
+// }
+// sayHello()
+
+// -- impact on variable declarations
+// console.log(y)
+// var y = 10
+// console.log(y)
+
+// -- impact on function declarations
+// greet()
+// function greet(){
+//     console.log('hello, there')
+// }
+
+// -- impact on function expressions
+// sayHi()
+// var sayHi = function(){
+//     console.log('hello, there')
+// }
+
+//  The differences between let, const, and var in variable declaration and scope
+// reassignment
+// function exampleVar(){
+//     if(false){
+//         var x = 10
+//     }
+//     console.log(x)
+// }
+// exampleVar()
+
+// function exampleLet(){
+//     if(true){
+//         let x = 10
+//         console.log(x)
+//     }
+//     console.log(x)
+// }
+// exampleLet()
+
+// function exampleConst(){
+//     const x = 10
+//     z = 40
+// }
+// exampleConst()
+
+// console.log(isNaN('nitesh'))
+// console.log(isNaN('55'))
+// console.log('dob',isNaN('17/06/1989'))
+// console.log('array wordwise',isNaN(['nitesh','test']))
+// console.log('array numberwise',isNaN([22,22]))
+
+// console.log(0/0)
+// console.log('abc'*5)
+// let x 
+// let result = x * 10
+// console.log(result)
+// console.log(NaN + 5)
+// let result = 'test'
+// if(isNaN(result)){
+//     console.log('the result is NaN')
+// }
+// else{
+//     console.log('the result is a number')
+// }
+// let sum = 'vinod' - 5
+// console.log(sum)
+// console.log('test' - 'test')
+// console.log(10-20)
+// console.log(false-true)
+// console.log(true-true)
+// var result = 50+125
+// console.log(result.toFixed(0))
+// var str1  = 'test1'
+// var str2 = 'test2'
+// console.log(str1 + str2)
+// console.log(5 === 5)
+// console.log(5 !== 5)
+
+// let num1 = 1
+// let num2 = '1'
+// if(num1 === num2){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+
+
+// var x = 5 
+// var y = 10
+// console.log(x > 0 && y < 0)
+
+// const person = [
+//     {id:1,name:'test1',age:35},
+//     {id:2,name:'test2',age:45},
+//     {id:3,name:'test3',age:55},
+//     {id:4,name:'test4',age:65},
+//     {id:5,name:'test5',age:33},
+//     {id:6,name:'test6',age:23},
+// ];
+// const filtered = person.filter((val) => val.name !== 'test1' && val.name !== 'test3')
+// console.log(filtered);
+// const isOpen = false
+// const isClose = true
+// console.log(!isOpen)
+// console.log(isClose)
+
+// let age = 35
+// let result = age > 20 ? 'yes' : 'no'
+// console.log(result)
+
+// let score = 111
+// console.log(`${score} > 35 ? 'pass' : 'fail'`)
+// console.log(isNaN('20'+10+10))
+// console.log(isNaN('test+test'))
+// console.log(typeof ("5-3"));
+// console.log(typeof ['test','test2']);
+// console.log(typeof [10,20,30]);
+// console.log(typeof '17/06/1989');
+// var temp = 40
+// if(temp > 30){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+// console.log(typeof ('5'-3))
+// var temperature = 30
+// if(temperature > 40){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+// var temperature = 30
+// if(temperature > 40){
+//     console.log('yes')
+// }
+// else if(temperature > 20 && temperature > 10){
+//     console.log('asdad')
+// }
+// else{
+//     console.log('no')
+// }
+
+// function enableDesignMode(){
+//     document.designMode = 'on'
+// }
+// function disableDesignMode(){
+//     document.designMode = 'off'
+// }
+
+// let userAge = 40
+// let  isCitizen = true;
+// let isRegistered = false
+// if(userAge >18){
+//     if(isCitizen){
+//         if(isRegistered){
+//             console.log('you are eligible to vote')
+//         }
+//         else{
+//             console.log('you are not eligible due to registration status')
+//         }
+//     }
+//     else{
+//         console.log('you are not eligible due to citizenship status')
+//     }
+// }
+// else{
+//     console.log('you are not eligible to vote (younger')
+// }
+
+// var num = '6'
+
+// ===
+// if(num % 2 === 0){
+//     console.log('number is even') // even should be like 2  4 6 8 10 12 
+// }
+// else{
+//     console.log('number is odd') // odd should be like 1 3 5 7 9 11 13
+// }
+
+// not equal !==
+// if(num % 2 !== 0){
+//     console.log('number is even') // even should be like 2  4 6 8 10 12 
+// }
+// else{
+//     console.log('number is not even') // odd should be like 1 3 5 7 9 11 13
+// }
+
+
+// var num = 12;
+// if(num === 0){
+//     console.log('num is zero')
+// }
+// else if(num > 0){
+//     console.log('num is positive')
+// }
+// else{
+//     console.log('num is negative')
+// }
+
+// let fruit = 'mango'
+// switch(fruit){
+//     case "mango":console.log('it is a mango')
+//     break;
+//     default:
+//         console.log('it is not there any item in fruit')
+// }
+// let day = 'sadsad'
+// switch(day){
+//     case "sunday":console.log('sunday')
+//     break;
+//     case "monday":console.log('monday')
+//     break;
+//     case "tuesday":console.log('tuesday')
+//     break;
+//     case "wednesday":console.log('wednesday')
+//     break;
+//     case "thursday":console.log('thursday')
+//     break;
+//     case "friday":console.log('friday')
+//     break;
+//     case "saturday":console.log('saturday')
+//     break;
+//     default:console.log('there is no mention weekday and weekoff')
+// }
+
+// let i = 1
+// while(i < 10){
+//     console.log(i)
+//     i++
+// }
+
+
+// let i = 1
+// do{
+//     console.log(i)
+//     i++;
+// }
+// while(i < 10)
+
+// let i = 1
+// do{
+//     console.log(i)
+//     i++
+// }
+// while(i < 10)
+
+// var num = 1 
+// do{
+//     console.log(num)
+//     num++
+// }
+// while(num < 20)
+
+// let example = 20
+// while(example < 100){
+//     console.log(example)
+//     example++
+// }
+
+
+// let fruit = 'watermelon'
+// switch(fruit){
+//     case 'mango':console.log('this is mango')
+//     break;
+//     case 'mango':console.log('this is watermelon')
+//     break;
+//     case 'mango':console.log('this is pineapple')
+//     break;
+//     case 'mango':console.log('this is cherry')
+//     break;
+//     case 'mango':console.log('this is grape')
+//     break;
+//     default:console.log('there is no fruit any item')
+//     break;
+// }
+
+// var num = 12;
+// var isPrime = true
+// if(num == 15){
+//     console.log('yes')
+// }
+// else{
+//     console.log('no')
+// }
+
+// let i = 0
+// for(let i=0;i<10;i++){
+//     console.log(i)
+//     i++
+// }
+
+// var year = 2002
+// if((year % 4 === 0 && year % 100 === 0) || year % 400 ===0){
+//     console.log(`${year}, it is a leap year`)
+// }
+// else{
+//     console.log(`${year},it is not a leap year`)
+// }
+
+// for (var i=1;i<10;i++){
+//     console.log(i,'*')
+// }
+
+// var a  = 5;
+// var b = 10;
+// function sum(a,b){
+//     return a + b 
+// }
+// console.log(sum(2,45))
+
+// var c = 10
+// var d = 20
+// function sum1(a,b){
+//     return a + b 
+// }
+// console.log(sum1(2,111))
+
+// function outer(){
+//     function inner(){
+//         console.log('inner')
+//     }
+//     inner()
+// }
+// outer()
+
+// function greet(){
+//     console.log('welcome to thape technical JS course');
+// }
+// greet()
+
+// var result  = (function(a,b){
+//     console.log(a,b)
+//     return a + b 
+// })(10,20)
+// console.log(result)
+
+// let age = 30
+// let message = `this is age ${age}`
+// console.log(message)
+

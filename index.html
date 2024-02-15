@@ -125,11 +125,52 @@
 			border-radius: 8px;
 			cursor: pointer;
 		}
+
+		.post{
+			container-type: inline-size;
+			container-name:mypost;
+		}
+
+		.post .card h2{
+			color:red;
+		}
+		@container mypost (max-width:767px){
+			.post .card h2{
+				color:blueviolet;
+			}
+		}
+
+		.happybox{
+			container-name: myhappy;
+			container-type: inline-size;
+		}
+
+		.happybox h2{
+			color:orange;
+		}
+		@container myhappy (max-width:600px){
+			.happybox h2{
+				color:blue;
+			}
+		}
 	</style>
 	<link rel="stylesheet" href="custom.css">
 </head>
 
 <body onoffline="offlineFunction()">
+
+	<div class="post">
+		<div class="card">
+			<h2>head title</h2>
+		</div>
+		<div class="happybox">
+			<h2>happy box</h2>
+		</div>
+	</div>
+
+	<button onclick="enableDesignMode()">Enable Design Mode</button>
+	<button onclick="disableDesignMode()">Disable Design Mode</button>
+	
 	<div id="boxElement">boxElement</div>
 
 	<div class="gsapbox"></div>
