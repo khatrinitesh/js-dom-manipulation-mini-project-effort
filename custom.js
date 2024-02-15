@@ -20535,3 +20535,6 @@ const items = ['item1', 'item2', 'item3']
 // let message = `this is age ${age}`
 // console.log(message)
 
+const isReverse = 'nitesh khatri'.split().join('').reverse();
+console.lo
+
