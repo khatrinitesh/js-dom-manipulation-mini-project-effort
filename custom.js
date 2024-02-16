@@ -20557,4 +20557,235 @@ const items = ['item1', 'item2', 'item3']
 // let arr1 = ['nitesh','sameet']
 // console.log(arr1.length)
 
+// let fruits = new Array('apple','banana','orange')
+// console.log(fruits)
+// console.log(fruits[0])
+// for(let item of fruits){
+//     console.log(item)
+// }
+// for(let item=0;item<fruits.length;item++){
+//     console.log(fruits[item])
+// }
+// for(let item in fruits){
+//     console.log(item)
+// }
+// for (let i=0;i<fruits.length;i++){
+//     console.log(i,fruits[i])
+// }
+// for (let item in fruits){
+//     console.log(item)
+// }
+// const numbersWise = [1,2,23,5,5,5,6,8,98,9,99]
+// const result = numbersWise.unshift()
+// console.log(result)
+// console.log(numbersWise > 10)
+
+// let text = 'Hello javascript welcome to our world best javascript course'
+// console.log(text.search(/javascript/g))
+// let example = 'test'
+// const result = example === 'test' ? 'yes' : 'no'
+// console.log(result)
+
+// let text = 'hello javascript, welcome to our world best javascript best javascript course'
+// console.log(text.matchAll(/javascript/g))
+
+// let n1 = 'nitesh '
+// let n2 = 'khatri'
+// let combined = n1 + n2
+// console.log(combined)
+
+// const collagues = ['prathmesh','pawan','vighnesh','ramesh','sumit','nitesh']
+// const sortasc = collagues.slice().sort(function(a,b){
+//     if(a<b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(sortasc)
+// const sortdsc = collagues.slice().sort(function(a,b){
+//     if(a>b){
+//         return -1
+//     }
+//     else{
+//         return 1
+//     }
+// })
+// console.log(sortdsc)
+// const result = 'hello example'
+// console.log(result)
+// let result = 'hello example'
+// console.log(result)
+// var result = 'hello example'
+// console.log(result)
+
+// function outer(){
+//     function inner(){
+//         console.log('this is inner')
+//     }
+//     inner()
+// }
+// outer()
+
+// const fruits = ['apple','pineapple','watermelon','grape']
+// let numbersWise = [1, 5, 8, 10, 12];
+// let evenIndex = numbersWise.findIndex((val) =>val % 2 ===0)
+// console.log(evenIndex)
+
+// let myArray = [1, 2, 3];
+// let notAnArray = 'Hello, world!';
+// console.log(Array.isArray(myArray))
+// console.log(Array.isArray(notAnArray))
+// if (fruits.length >= 2) {
+//     // Use splice to remove the last 2nd item (at index length - 2)
+//     fruits.splice(fruits.length - 3, 3);
+//   }
+  
+//   console.log(fruits)
+
+// const mapFruits = fruits.map((val) =>{
+//     return val.toUpperCase()
+// })
+// console.log(mapFruits)
+// const mapFruits = fruits.reverse((val) =>{
+//     return val.toUpperCase()
+// })
+// console.log(mapFruits)
+// const resultFruits = fruits.sp lice(2,2);
+// console.log('original array', fruits)
+// console.log('modified array', resultFruits)
+
+// const fname = 'prathmesh'
+// const lname = 'chande'
+// const merge = fname.concat(' ',lname)
+// console.log(merge)
+
+// const fullname = 'prathmesh'
+// console.log(fullname.split('').reverse().join(''))
+
+// const numberWise = [1,2,3,4,5,6,7,8,9]
+// const finalnumWise = numberWise.indexOf(6)
+// console.log(finalnumWise)
+
+// const result = numberWise.lastIndexOf(6)
+// console.log(result)
+
+// const monthWise = ['jan','feb','mar','apr','may','jun']
+// console.log(monthWise[2])
+
+// let value = 6
+// const numbers = [1,2,3,4,5,6,7,8,9]
+// const resultsss = numbers.filter((val) => {
+//     return val === value 
+// })
+// console.log(resultsss)
+
+// const person = [
+//     {
+//       "id": 1,
+//       "name": "Leanne Graham",
+//       "username": "Bret",
+//       "email": "Sincere@april.biz",
+//       "address": {
+//         "street": "Kulas Light",
+//         "suite": "Apt. 556",
+//         "city": "Gwenborough",
+//         "zipcode": "92998-3874",
+//         "geo": {
+//           "lat": "-37.3159",
+//           "lng": "81.1496"
+//         }
+//       },
+//       "phone": "1-770-736-8031 x56442",
+//       "website": "hildegard.org",
+//       "company": {
+//         "name": "Romaguera-Crona",
+//         "catchPhrase": "Multi-layered client-server neural-net",
+//         "bs": "harness real-time e-markets"
+//       }
+//     },
+//     {
+//       "id": 2,
+//       "name": "Ervin Howell",
+//       "username": "Antonette",
+//       "email": "Shanna@melissa.tv",
+//       "address": {
+//         "street": "Victor Plains",
+//         "suite": "Suite 879",
+//         "city": "Wisokyburgh",
+//         "zipcode": "90566-7771",
+//         "geo": {
+//           "lat": "-43.9509",
+//           "lng": "-34.4618"
+//         }
+//       },
+//       "phone": "010-692-6593 x09125",
+//       "website": "anastasia.net",
+//       "company": {
+//         "name": "Deckow-Crist",
+//         "catchPhrase": "Proactive didactic contingency",
+//         "bs": "synergize scalable supply-chains"
+//       }
+//     },
+// ]
+
+// const products = [
+//     {name:'laptop',price:1200},
+//     {name:'phone',price:800},
+//     {name:'tablet',price:300},
+//     {name:'smartwatch',price:150},
+//     {name:'smartwatch',price:111150},
+// ]
+// console.log(products.filter((val) => val.name === 'smartwatch'))
+
+// let arrayWithDuplicates = [1, 2, 2, 3, 4, 4, 5];
+// let result = [...new Set(arrayWithDuplicates)]
+// console.log(result)
+// let uniqueArray = arrayWithDuplicates.filter((val,index,self) => {
+//     return self.indexOf(val) === index
+// })
+// console.log(uniqueArray)
+
+// const amt = 70650;
+// const incentivePercentage = 17; // Note: Percentage is given without '%'
+// const incentiveDecimal = incentivePercentage / 100;
+
+// const calculator = amt * incentiveDecimal;
+// console.log(calculator)
+// const finalCalc = calculator + amt 
+// console.log(finalCalc); 
+
+// let textsss = 'hello javascript, welcome to our world best Javascript course'
+
+// let matchResult = text.matchAll("best")
+// for(let item of matchResult){
+//     console.log(item)
+// }
+
+// let includesResult = text.includes('welcome')
+// console.log(includesResult)
+
+// console.log(Math.pow(2,4))
+// console.log(2**3)
+// let squareRoot = Math.sqrt(625)
+// console.log(squareRoot)
+// let logResult = Math.log(1)
+// console.log(logResult)
+// console.log(Math.random() * 100)
+// console.log(Math.round(Math.random() * 100))
+// const originalArray = [1.23, 2.89, 4.56, 7.89];
+// const roundedArray = originalArray.map((val) => Math.round(val))
+// console.log(roundedArray)
+
+// const originalObject = {
+//     a: 1.23,
+//     b: 2.89,
+//     c: 4.56,
+//     d: 7.89
+// };
+// const roundedObject = Object.fromEntries(Object.entries(originalObject).map(([key,value]) => [key,Math.round(value)]))
+// console.log(roundedObject)
+
+// console.log((Math.random() * 100).toFixed(3))
 
