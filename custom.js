@@ -20556,3 +20556,5 @@ const items = ['item1', 'item2', 'item3']
 
 // let arr1 = ['nitesh','sameet']
 // console.log(arr1.length)
+
+
