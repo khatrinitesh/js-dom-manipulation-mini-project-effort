@@ -20789,3 +20789,6 @@ const items = ['item1', 'item2', 'item3']
 
 // console.log((Math.random() * 100).toFixed(3))
 
+window.alert('hi alert')
+
+
