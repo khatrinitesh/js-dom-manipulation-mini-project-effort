@@ -20789,6 +20789,79 @@ const items = ['item1', 'item2', 'item3']
 
 // console.log((Math.random() * 100).toFixed(3))
 
-window.alert('hi alert')
+// window.alert('hi alert')
+
+// const groupwise = ['filtration','autographic','elf','upcl']
+// for(let result of groupwise){
+//     console.log(result)
+// }
+// for(let result in groupwise){
+//     console.log(result)
+// }
+
+console.log('Available Screen Width:', window.screen.availWidth)
+
+// // Create a comment node
+// var para = document.createElement('p')
+// para.textContent = 'this is a paragraph '
+// para.setAttribute('style','color:white;border:1px solid blue;background:orange;padding:5px 10px;border-radius:10px')
+// // Create a text node with some content
+// var textNode1 = document.createTextNode('this is a happy | ')
+// var textNode2 = document.createTextNode('wonderful tasty | ')
+// var textNode3 = document.createTextNode('be positive | ')
+// var textNode4 = document.createTextNode('believe yourself')
+// para.appendChild(textNode1)
+// para.appendChild(textNode2)
+// para.appendChild(textNode3)
+// para.appendChild(textNode4)
+// document.body.appendChild(para);
+//  var comment = document.createComment("This is a comment added dynamically.");
+//  // Append the comment to the body of the document
+//  document.body.appendChild(comment)
+
+// // Get the inner height of the browser window
+// var windowHeight = window.innerHeight;
+// var windowWidth = window.innerWidth;
+// var windowOuterHeight = window.outerHeight;
+// var windowOuterWidth = window.outerWidth;
+// // inner width and height
+// console.log('Inner width is ' + windowWidth)
+// console.log('Inner height is ' + windowHeight)
+// // outer width and height
+// console.log(`Outer Height is ${windowOuterWidth}`)
+// console.log(`Outer Height is ${windowOuterHeight}`) 
+
+
+
+// // Create a button element
+//        var buttonElement = document.createElement("button");
+//        // Set the button's text content
+//        buttonElement.textContent = "Click me!";
+//         // Set the id of the button
+//        buttonElement.id = "myButton";
+//        buttonElement.setAttribute('id','myBu55tton')
+//        // Set a style attribute using setAttribute
+//        buttonElement.setAttribute("style", "font-size: 16px;background:red;padding:5px 20px;border:0;color:white");
+//         // Add a click event listener to the button
+//        buttonElement.addEventListener("click", function() {
+//            alert("Button clicked!");
+//        });
+//         // Append the button to the body of the document
+//        document.body.appendChild(buttonElement);
+
+// // Create a new paragraph element
+//    var paragraph = document.createElement("p");
+
+//    // Create text content for the paragraph
+//    var textNode = document.createTextNode("This is a dynamically created paragraph.");
+//     // Append the text node to the paragraph element
+//    paragraph.appendChild(textNode);
+//     // Append the paragraph element to the body of the document
+//    document.body.appendChild(paragraph);
+
+
+
+
+
 
 
