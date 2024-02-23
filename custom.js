@@ -20859,9 +20859,55 @@ console.log('Available Screen Width:', window.screen.availWidth)
 //     // Append the paragraph element to the body of the document
 //    document.body.appendChild(paragraph);
 
+// const firstname = 'nitesh'
+// const surname = 'khatri'
+// const fullname = `${firstname} ${surname}`
+// console.log(fullname)
+
+// const sum = function(a,b) {
+// return a  + b 
+// }
+// console.log(sum(10,20))
+
+// console.log('test'.split("").reverse("").join(""))
+
+// function add(a,b){
+//  return a + b 
+// }
+// console.log(add(10,20))
+
+// const arr1 = ['fruit','grape','pineapple','watermelon']
+// const arr2 = ['cherry','mosabmi','banana']
+// const copyarr = [...arr1,...arr2]
+// console.log(copyarr);
+
+// const greeting = 'hello'
+// console.log(greeting)
+
+
+// const name = "John";
+// const message = greeting + name + "! Welcome to our website.";
+// console.log(${name}  ${message})
 
 
 
 
+
+
+
+
+
+
+
+html
+css3 / scss / tailwindcss / styled components/ bootstrap
+vanilla jaascript all programming 
+library > jquery ajax > react axios / fetch 
+redux state mangement
+router 
+Provider store={store}
+api call integratio n
+.env = ''
+uyseeffect try and catfch
 
 
