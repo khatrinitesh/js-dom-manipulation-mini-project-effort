@@ -20799,7 +20799,7 @@ const items = ['item1', 'item2', 'item3']
 //     console.log(result)
 // }
 
-console.log('Available Screen Width:', window.screen.availWidth)
+// console.log('Available Screen Width:', window.screen.availWidth)
 
 // // Create a comment node
 // var para = document.createElement('p')
@@ -20889,25 +20889,14 @@ console.log('Available Screen Width:', window.screen.availWidth)
 // const message = greeting + name + "! Welcome to our website.";
 // console.log(${name}  ${message})
 
+// let obj = [
+//     {id:1,name:'text1'},
+//     {id:2,name:'text2'},
+//     {id:3,name:'text3'},
+//     {id:4,name:'text4'},
+// ]
+// console.log({...obj})
 
 
-
-
-
-
-
-
-
-
-html
-css3 / scss / tailwindcss / styled components/ bootstrap
-vanilla jaascript all programming 
-library > jquery ajax > react axios / fetch 
-redux state mangement
-router 
-Provider store={store}
-api call integratio n
-.env = ''
-uyseeffect try and catfch
 
 
