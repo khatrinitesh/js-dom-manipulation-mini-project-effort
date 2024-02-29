@@ -1913,3 +1913,25 @@ Interview question 32: List out some key features of ES6 ?
 - Default parameters
 //--------------------------------------------------------------------------
 Which event is triggered when a user clicks on an HTML element?
+onclick=''
+//--------------------------------------------------------------------------
+What is the difference between Object.create and Object.assign methods in javascript ?
+Object.create: This is used when we want to inherit the properties from an existing object while creating a new object.
+let animal = {
+ name: "Animal name"
+};
+let cat = Object.create(animal);
+Object.assign: This is used when we want to include properties from multiple objects into new object what we are creating.
+let teacher = {
+ name: "Saikrishna"
+};
+let lesson= {
+lessonName: "Datastructures"
+}
+let course = Object.assign({},teacher,lesson);
+//--------------------------------------------------------------------------
+Different ways to create an object in javascript ?
+- Using Object literal syntax
+- Using Object constructor function
+- Using Object.create method
+- Using Object.assign Method

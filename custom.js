@@ -20897,6 +20897,33 @@ const items = ['item1', 'item2', 'item3']
 // ]
 // console.log({...obj})
 
+// let happy = {
+//     name1:'hritisk'
+// }
+// let occupation = {
+//     name2:'sameet'
+// }
+// let result2 = Object.assign({},happy,occupation)
+// console.log(result2)
 
-
+// let teacher = {
+//     name: "Saikrishna"
+//    };
+   
+//    let lesson= {
+//    lessonName: "Datastructures"
+//    }
+   
+//    let course = Object.assign({},teacher,lesson);
+//    console.log(course)
+// let numberdd = 55
+// if(numberdd === 90){
+//     console.log('a+')
+// }
+// else if(numberdd === 35){
+//     console.log('b')
+// }
+// else{
+//     console.log('d')
+// }
 
