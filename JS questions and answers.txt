@@ -1935,3 +1935,190 @@ Different ways to create an object in javascript ?
 - Using Object constructor function
 - Using Object.create method
 - Using Object.assign Method
+//--------------------------------------------------------------------------
+Introduction
+Running JavaScript
+Comment Your Code
+Declare Variables
+Storing Values with the Assignment Operator
+Initializing Variables with the Assignment Operator
+Uninitialized Variables
+Case Sensitivity in Variables
+Basic Math
+Increment and Decrement
+Decimal Numbers
+Multiply Two Decimals
+Divide Decimals
+Finding a Remainder
+Augmented Math Operations
+Declare String Variables
+Escaping Literal Quotes
+Quoting Strings with Single Quotes
+Escape Sequences
+Plus Operator
+Plus Equals Operator
+Constructing Strings with Variables
+Appending Variables to Strings
+Length of a String
+Bracket Notation
+Understand String Immutability
+Find the Nth Character
+Word Blanks
+Arrays
+Nest Arrays
+Access Array Data
+Modify Array Data
+Access Multi-Dimensional Arrays
+push()
+pop()
+shift()
+unshift()
+Shopping List
+Write Reusable with Functions
+Arguments
+Global Scope
+Local Scope
+Global vs Local Scope in Functions
+Return a Value from a Function
+Undefined Value returned
+Assignment with a Returned Value
+Stand in Line
+Boolean Values
+If Statements
+Equality Operators
+And / Or Operators
+Else Statements
+Else If Statements
+Logical Order in If Else Statements
+Chaining If Else Statements
+Golf Code
+Switch Statements
+Returning Boolean Values from Functions
+Return Early Pattern for Functions
+Counting Cards
+Build Objects
+Dot Notation
+Bracket Notation
+Variables
+Updating Object Properties
+Add New Properties to Object
+Delete Properties from Object
+Objects for Lookups
+Testing Objects for Properties
+Manipulating Complex Objects
+Nested Objects
+Nested Arrays
+Record Collection
+While Loops
+For Loops
+Odd Numbers With a For Loop
+Count Backwards With a For Loop
+Iterate Through an Array with a For Loop
+Nesting For Loops
+Do...While Loops
+Profile Lookup
+Random Fractions and Whole Numbers
+parseInt Function
+Ternary Operator
+Multiple Ternary Operators
+var vs let
+const Keyword
+Mutate an Array Declared with const
+Prevent Object Mutation
+Arrow Functions
+Default Parameters
+Rest Operator
+Spread Operator
+Destructuring Assignment
+Template Literals
+Simple Fields
+Declarative Functions
+class Syntax
+getters and setters
+import and export
+//--------------------------------------------------------------------------
+Timestamps
+Getting Started 
+What is TypeScript: 
+Installing & Using TypeScript 
+The Advantages of TypeScript 
+Course Outline 
+How to Get the Most out of This Course 
+Setting Up our Development Environment 
+The Course Project Setup 
+Module Introduction 
+Using Types 
+TypeScript Types vs JavaScript Types 
+Numbers, Strings and Boolean
+Type Assignment and Type Inference 
+Object Types 
+Array Types
+Tuples
+Enums
+The Any Type
+Union Types
+Literal Types
+Type Aliases
+Function Return Types and Void
+Function Types
+Function Types and Callbacks
+The Unknown Type
+The Never Type
+Wrap Up
+Module Introduction
+Watch Node
+Compiling the Entire Project
+Include and Exclude Files
+Setting a Compilation Target
+Understanding TypeScript Libs
+More Options
+Source Maps
+Rootdir and Outdir
+noemit on Error
+Strict Compilation Options
+Code Quality Options
+Debugging with Visual Studio Code
+Wrap Up
+//--------------------------------------------------------------------------
+What is TypeScript?
+Your First TypeScript Program
+Declaring Variables
+Types
+Type Assertions
+Arrow Functions
+Interfaces
+Classes
+Objects
+Constructors
+Access Modifiers
+Access Modifiers in Constructor Parameters
+Properties
+Modules
+//--------------------------------------------------------------------------
+💡 Sharpen your frontend skills with these engaging design challenges that will help you prepare for interviews and showcase your creativity in building visually appealing and user-friendly interfaces.
+1️⃣ Implement Star Rating functionality
+2️⃣ Design a Pop Over component
+3️⃣ Create an Accordion UI component
+4️⃣ Design a Carousel for displaying images
+5️⃣ Build a grid using HTML/CSS and JavaScript with search, sort, and event bubbling (Amazon onsite)
+6️⃣ Design a responsive NavBar
+7️⃣ Implement Infinite Scroll feature
+8️⃣ Develop Typeahead/Autocomplete functionality using a trie data structure
+9️⃣ Implement a Debounce function
+🔟 Build a Tic Tac Toe game
+1️⃣1️⃣ Create a Snake and Ladder board game
+1️⃣2️⃣ Make a Calendar of any month like a Date Picker
+1️⃣3️⃣ Implement a throttle function
+1️⃣4️⃣ Create custom Higher Order Functions like Map, Reduce, Filter, and Sort
+1️⃣5️⃣ Design an analog clock
+1️⃣6️⃣ Build a Todo List application
+1️⃣7️⃣ Implement functionality to change all text on a page to different translations
+1️⃣8️⃣ Develop a Giphy image search and display feature (using the Giphy API) in a responsive format
+1️⃣9️⃣ Build a Connect Four game
+2️⃣0️⃣ Implement Nested Checkboxes where parent and children checkboxes are synchronized
+2️⃣1️⃣ Create a poll widget
+2️⃣2️⃣ Implement an Event Emitter
+2️⃣3️⃣ Implement the Promise.all function
+2️⃣4️⃣ Flatten a nested JavaScript array without using Array.prototype.flat()
+2️⃣5️⃣ Implement a custom Sort() function
+//--------------------------------------------------------------------------
