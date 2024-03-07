@@ -20964,3 +20964,86 @@ const items = ['item1', 'item2', 'item3']
 // }
 // let result = Object.assign({},name1,name2)
 // console.log(result)
+
+// arrow function
+// function add(a,b){
+//     return a + b 
+// }
+// console.log(add(10,20))
+
+// template literals
+// const name = 'nitesh'
+// const greeting = `hello ${name}`
+// console.log(greeting)
+
+// destructing assignment
+// const person = {
+//     name:'test',
+//     age:42,
+//     dob:'17/06/1989'
+// }
+// const {name,age} = person 
+// console.log(`Name:${name} Age ${age}`)
+
+// spread operator
+// const numbers = [1,2,3]
+// const newNumbers = [...numbers,4,5]
+// console.log(newNumbers)
+
+// rest parameter 
+// const sum = (...number) => {
+//     return number.reduce((acc,num) => {
+//         return acc+num
+//     },0);
+// };
+// console.log(sum(10,20))
+
+// async / await
+// const baseurl = 'https://jsonplaceholder.typicode.com/users'
+// const fetchData = async () => {
+//     try{
+//         const response = await fetch(`${baseurl}`);
+//         const result = await response.json()
+//         console.log(result)
+//     }
+//     catch(error){
+//         console.log(error);
+//     }
+// }
+// fetchData()
+
+// map & set 
+// const numberMap = new Map().set('one',1)
+// console.log(numberMap)
+// const numberMap1 = new Map().set('nitesh','sameet',1)
+// console.log(numberMap1)
+// const unique = new Set([1,2,3,2,1])
+// unique.forEach(number => console.log(number))
+// const unique = new Set(['nitesh','nitesh','pawan','sonu'])
+// console.log(unique)
+
+// default parameters
+// const greet = (name = 'guest') => {
+//     return `hello ${name}`
+// }
+// console.log(greet('sameet'))
+
+// modules
+// export const Example = () => {}
+// import {Example} from "../example";
+
+// map method
+// const numbers = [1,2,3,4,5]
+// const doubled = numbers.map((val) => val * 2)
+// console.log(doubled)
+
+// filter method
+// const numbers = [1,2,3,4,5]
+// const filtered = numbers.filter((val) => val >3)
+// console.log(filtered)
+
+// reduce method 
+// const numbers = [1,2,3,4,5]
+// const result = numbers.reduce((a,b) => a+b)
+// console.log(result)
+
