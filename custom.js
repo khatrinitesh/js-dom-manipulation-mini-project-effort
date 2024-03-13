@@ -21047,3 +21047,128 @@ const items = ['item1', 'item2', 'item3']
 // const result = numbers.reduce((a,b) => a+b)
 // console.log(result)
 
+
+// Master the Amazing use cases for the Spread Operator in JavaScript 🔥
+
+// string to array with spread
+// const string = 'test'
+// const array = [...string]
+// console.log(array)
+
+// spread for merging arrays
+// const a1 = [1,2,3]
+// const a2 = [4,5,6]
+// const mergea = [...a1,...a2]
+// console.log(mergea) // nice flattened array
+
+// cloning array using spread
+// const original = ['zero','one']
+// const newArray = original
+// console.log(original)
+// console.log(newArray)
+
+// get min and max value from an array in js
+// var nums = [1,2,3]
+// console.log('Minimum',Math.min(...nums))
+// console.log('Maximum',Math.max(...nums))
+
+// set to array
+// const set = new Set([1,2,3,3,4,5,6])
+// console.log(set)
+// const array1 = [...set]
+// console.log(array1)
+
+// nodelist to array
+// const divs = document.querySelectorAll('div');
+// const divsArr = [...divs]
+
+// looping over arrays 
+// const ns = [1,2,3,4,5,6]
+// const result = ns.forEach((item) => {
+//     console.log(item)
+// })
+
+// conditional statements
+// const user = {
+//     age:45
+// }
+// console.log(user.age > 55 ? 'pass' : 'fail')
+
+// working with objects
+// const person = {
+//     name:'nitesh',
+//     age:35,
+//     location:'mumbai'
+// }
+// const {name,age} = person 
+// console.log(`${name} -  ${age}`)
+
+// array manipulation 
+// const numberwise =[1,2,3]
+// const doubledNumbers = numberwise.map((val) => val * 2)
+// console.log(doubledNumbers)
+// Creating an array
+let fruits = ['apple', 'banana', 'orange', 'grape'];
+// accessing elements
+// console.log(fruits[1]);
+// modifying elements
+// console.log(fruits[1] = 'watermelon')
+// adding elements to the end of the array 
+// const pusharrayfruit = fruits.push('cherry')
+// console.log(pusharrayfruit)
+// removing the last element 
+// const poparrayfruit = fruits.pop()
+// console.log(poparrayfruit)
+// adding elements to the beginning of the array 
+// const beginngingarrayfruit = fruits.unshift('blueberry')
+// console.log(beginngingarrayfruit)
+// removing the first element 
+// const beginningarrayfruit = fruits.shift()
+// console.log(beginningarrayfruit)
+// map
+// let numbers = [1, 2, 3, 4, 5];
+// let squaredNumbers = numbers.map((val) => val * 2)
+// console.log(squaredNumbers)
+// filter
+// console.log(numbers.filter((val) => val !== 3))
+// const person = [
+//     {id:1,name:'nitesh'},
+//     {id:2,name:'sameet'},
+//     {id:3,name:'sachin'},
+//     {id:4,name:'rahul'},
+//     {id:5,name:'nitesh'},
+// ]
+// const fileredPerson = person.filter((val) => val.name === 'nitesh')
+// console.log(fileredPerson)
+
+// handling null or undefined 
+// const person = [
+//     {id:1,name:'nitesh'},
+//     {id:2,name:'sameet'},
+//     {id:3,name:'sachin'},
+//     {id:4,name:'rahul'},
+//     {id:5,name:'nitesh'},
+// ]
+// console.log(person.map((val) => val))
+
+// default function parameters and template literals
+// const createGreeting = (message,name='testing',bodyeee) => `${message} ${name} ${bodyeee}`
+// console.log(createGreeting('hi','sameet','how are you'));
+
+// asynchronous code
+// const getData = ()=> new Promise(resolve => setTimeout(() => resolve('data 1'),1000));
+// const getData2 = () => new Promise(resolve => setTimeout(() => resolve('data 2'),1100));
+// const getData3 = () => new Promise(resolve => setTimeout(() => resolve('data 3'),1200));
+// const getData4 = () => new Promise(resolve => setTimeout(() => resolve('data4'),1250));
+// const getData5 =() => new Promise(resolve => setTimeout(() => resolve('data 5'),1300));
+// const getData6 =() => new Promise(resolve => setTimeout(() => resolve('data 6'),1301));
+// getData().then((data) => console.log(data));
+// getData2().then((response) => console.log(response));
+// getData3().then((response)=> console.log(response));
+// getData4().then((response) => console.log(response));
+// getData5().then((response) => console.log(response));
+// getData6().then((response) => console.log(response));
+// console.log('hi nitesh')
+
+
+
