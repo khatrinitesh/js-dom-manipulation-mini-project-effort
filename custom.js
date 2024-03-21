@@ -21108,7 +21108,7 @@ const items = ['item1', 'item2', 'item3']
 // const doubledNumbers = numberwise.map((val) => val * 2)
 // console.log(doubledNumbers)
 // Creating an array
-let fruits = ['apple', 'banana', 'orange', 'grape'];
+// let fruits = ['apple', 'banana', 'orange', 'grape'];
 // accessing elements
 // console.log(fruits[1]);
 // modifying elements
@@ -21170,5 +21170,17 @@ let fruits = ['apple', 'banana', 'orange', 'grape'];
 // getData6().then((response) => console.log(response));
 // console.log('hi nitesh')
 
+// const nums = [1,2,3,4,5,6,6,7,7]
+// console.log([...new Set(nums)])
+
+// const user = [
+//     {id:1,name:'test1',score:55},
+//     {id:2,name:'test2',score:75},
+//     {id:3,name:'test3',score:85},
+//     {id:3,name:'test4',score:8115},
+//     {id:3,name:'test1',score:68},
+// ]
+// const filteruser = user.filter((val) => val.score >= 1000 || val.name === 'test1')
+// console.log(filteruser)
 
 
