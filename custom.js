@@ -21183,4 +21183,14 @@ const items = ['item1', 'item2', 'item3']
 // const filteruser = user.filter((val) => val.score >= 1000 || val.name === 'test1')
 // console.log(filteruser)
 
+// const fruits = ['apple', 'banana', 'orange'];
+// fruits.forEach(fruit => {
+//   console.log(fruit);
+// });
+
+// const upperCased = [];
+// fruits.forEach(fruit => {
+//   console.log(fruit.toUpperCase()); 
+// });
+
 
