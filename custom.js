@@ -21261,18 +21261,19 @@ const items = ['item1', 'item2', 'item3']
 //   console.log(findIndexById(people,2));
 //   console.log(findIndexById(people,3));
 //   console.log(findIndexById(people,15));
-const products = [
-    { id: 1, name: 'Laptop', price: 999 },
-    { id: 2, name: 'Smartphone', price: 799 },
-    { id: 3, name: 'Tablet', price: 499 },
-    { id: 4, name: 'Headphones', price: 149 },
-    { id: 5, name: 'Mouse', price: 29 }
-  ];
-  function filterProductsByName(products,searchText){
-    searchText = searchText.toLowerCase();
-    return products.filter(product => product.name.toLowerCase().includes(searchText));
-  }
-  const searchText = 'lap'
-  const filteredProducts = filterProductsByName(products,searchText);
-  console.log(filteredProducts);
+// const products = [
+//     { id: 1, name: 'Laptop', price: 999 },
+//     { id: 2, name: 'Smartphone', price: 799 },
+//     { id: 3, name: 'Tablet', price: 499 },
+//     { id: 4, name: 'Headphones', price: 149 },
+//     { id: 5, name: 'Mouse', price: 29 }
+//   ];
+//   function filterProductsByName(products,searchText){
+//     searchText = searchText.toLowerCase();
+//     return products.filter(product => product.name.toLowerCase().includes(searchText));
+//   }
+//   const searchText = 'lap'
+//   const filteredProducts = filterProductsByName(products,searchText);
+//   console.log(filteredProducts);
+
 
