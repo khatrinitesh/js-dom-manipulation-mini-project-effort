@@ -7387,7 +7387,7 @@ const wordnumber = ['nitesh', 'khatri', 1, 2, null, undefined]
 // console.log('nitesh'.trimLeft('sameet'))
 // console.log('nitesh'.trimRight('vishal'))
 // console.log('nitesh'.toLocalCompare('sameet'))
-let names = ["Zoe", "Adam", "Dan"]
+// let names = ["Zoe", "Adam", "Dan"]
 // console.log(names.toString())
 // console.log(names.join(' and '))
 // concat 
@@ -21193,4 +21193,86 @@ const items = ['item1', 'item2', 'item3']
 //   console.log(fruit.toUpperCase()); 
 // });
 
+// function sumOfPositiveNumbers(arr){
+//     let sum = 0
+//     for(let i=0;i<arr.length;i++){
+//         if(arr[i]>0){
+//             sum += arr[i]
+//         }
+//     }
+
+//     return sum;
+// }
+
+// // example usage
+// const numbers = [3, -2, 5, -8, 10];
+// console.log(sumOfPositiveNumbers(numbers));
+
+// remove duplicate
+// function removeDuplicate(arr){
+//     return Array.from(new Set(arr))
+// }
+// const numbersWithDuplicates = [1, 2, 3, 4, 5, 3, 2, 1];
+// const uniqueData = removeDuplicate(numbersWithDuplicates)
+// console.log(uniqueData);
+
+// Define your data map
+// const dataMap = {
+//     "apple": "A fruit that grows on trees and is typically red or green.",
+//     "banana": "A long curved fruit that grows in clusters and has soft pulpy flesh and yellow skin when ripe.",
+//     "orange": "A round juicy citrus fruit with a tough bright reddish-yellow rind.",
+//     "grape": "A small round fruit growing in clusters on a vine.",
+//     // You can add more key-value pairs as needed
+//   };
+
+//   console.log(dataMap['apple'])
+//   console.log(dataMap['banana'])
+
+// const names1 = ['Alice', 'Bob', 'Charlie'];
+// const ages = [25, 30, 35];
+
+// const people = names1.map((val,index) => {
+//     return{
+//         name:val,
+//         age:ages[index]
+//     }
+// })
+// console.log(people)
+// const filternames1 = names1.filter((val) => val !== 'Bob')
+// console.log(filternames1)
+// const filternames2 = ages.filter((val) => val !== 30)
+// console.log(filternames2)
+
+// Array of objects
+// const people = [
+//     { id: 1, name: 'John' },
+//     { id: 2, name: 'Jane' },
+//     { id: 3, name: 'Doe' },
+//     { id: 4, name: 'Sachin' },
+//     { id: 5, name: 'Rahul' },
+//     { id: 6, name: 'Sourav' },
+//     { id: 7, name: 'Yurvaj' },
+//     { id: 8, name: 'Kaif' },
+//   ];
+//   // Function to find the index of an object by its id
+//   function findIndexById(array,id){
+//     return array.findIndex(item => item.id === id);
+//   }
+//   console.log(findIndexById(people,2));
+//   console.log(findIndexById(people,3));
+//   console.log(findIndexById(people,15));
+const products = [
+    { id: 1, name: 'Laptop', price: 999 },
+    { id: 2, name: 'Smartphone', price: 799 },
+    { id: 3, name: 'Tablet', price: 499 },
+    { id: 4, name: 'Headphones', price: 149 },
+    { id: 5, name: 'Mouse', price: 29 }
+  ];
+  function filterProductsByName(products,searchText){
+    searchText = searchText.toLowerCase();
+    return products.filter(product => product.name.toLowerCase().includes(searchText));
+  }
+  const searchText = 'lap'
+  const filteredProducts = filterProductsByName(products,searchText);
+  console.log(filteredProducts);
 
