@@ -21193,4 +21193,21 @@ const items = ['item1', 'item2', 'item3']
 //   console.log(fruit.toUpperCase()); 
 // });
 
+// const numbers = [1,2,3,4,5]
+// const result = numbers.map((val) => val)
+// console.log(result)
+// const resultfilter = numbers.filter((val) => val % 2)
+// console.log(resultfilter)
+// const oddnumbers = numbers.filter(val => val % 2 !== 0)
+// const evennumbers = numbers.filter(val => val % 2 === 0)
+// console.log(oddnumbers)
+// console.log(evennumbers)
+// const sum = numbers.reduce((a,b) => a+b)
+// console.log(sum)
+
+// const sentence = 'hello world'
+// const word = 'world'
+// console.log(sentence,word)
+
+
 
