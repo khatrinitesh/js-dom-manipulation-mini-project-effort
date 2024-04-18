@@ -21191,9 +21191,7 @@ const items = ['item1', 'item2', 'item3']
 // const upperCased = [];
 // fruits.forEach(fruit => {
 //   console.log(fruit.toUpperCase()); 
-// });
-
-
+// })
 // const numbers = [1,2,3,4,5]
 // const result = numbers.map((val) => val)
 // console.log(result)
@@ -21292,5 +21290,3 @@ const items = ['item1', 'item2', 'item3']
 //   const searchText = 'lap'
 //   const filteredProducts = filterProductsByName(products,searchText);
 //   console.log(filteredProducts);
-
-
