@@ -9429,7 +9429,7 @@ const wordnumber = ['nitesh', 'khatri', 1, 2, null, undefined]
 // console.log(countries)
 
 // How to remove an element from the end of the array?
-let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // let elemsToDelete = 3;
 // arr.splice(arr.length - elemsToDelete)
 // console.log("modified array",arr)
@@ -21290,3 +21290,449 @@ const items = ['item1', 'item2', 'item3']
 //   const searchText = 'lap'
 //   const filteredProducts = filterProductsByName(products,searchText);
 //   console.log(filteredProducts);
+
+// Creating a new array with some elements
+// var myArray = [1, 2, 3, 4, 5];
+
+// // You can also create an empty array and then add elements to it
+// var anotherArray = [];
+// anotherArray.push('apple');
+// anotherArray.push('banana');
+// anotherArray.push('orange');
+
+// // You can mix different types of elements in an array
+// var mixArray = [1,'hello',true,{name:'john'}];
+
+// // You can also create an array with a specified length
+// var emptyArray = new Array(5);
+
+// console.log(myArray);
+// console.log(anotherArray);
+// console.log(mixArray);
+// console.log(emptyArray);
+
+// let myArray = ["apple", "banana", "orange"];
+// let elementAtIndexOne = myArray[1];
+// console.log(elementAtIndexOne);
+
+// let myString = "Hello";
+// let characterAtIndexTwo = myString.charAt(2); // Accessing the character at index 2
+// console.log(characterAtIndexTwo)
+
+// definet two arrays
+// let array1 = [1,2,3]
+// let array2 = [4,5,6]
+// // let merged = [...array1,...array2]
+// // console.log(merged);
+
+// let newArray = array1.concat(array2)
+// console.log(newArray)
+
+
+// original array
+// let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+// console.log(fruits.copyWithin(2,0,3))
+
+// const obj = {
+//     name: 'John',
+//   age: 30,
+//   city: 'New York'
+// }
+
+// const entries = Object.entries(obj)
+// console.log(entries)
+// const arr1 = ['a', 'b', 'c'];
+// const iterator = arr1.entries();
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+// console.log(iterator.next().value);
+
+
+// Example array
+// const numbers = [1, 2, 3, 4, 5];
+
+// const allEven = numbers.every(num => num % 2 === 0)
+// console.log(allEven); // Output: false, because not all numbers are even
+
+// const ages = {
+//     John: 30,
+//     Alice: 25,
+//     Bob: 35
+//   };
+
+// const allAboveTwenty = Object.values(ages).every(val => val > 20)
+// console.log(allAboveTwenty)
+
+// Creating an empty object
+
+// let person = [];
+
+// // Filling the object with key-value pairs
+// person.name = 'nitesh'
+// person.age = 34
+// person.gender = 'male'
+// console.log(person)
+
+// let person = {
+//     name: "John",
+//     age: 30,
+//     gender: "male"
+// };
+// console.log(person)
+
+// Creating an empty array
+// let fruits = [];
+// fruits.push('apple');
+// fruits.push('mango');
+// fruits.push('pineapple');
+// console.log(fruits);
+
+// Creating an array of length 5 and filling it with the value 0
+// let customerwise = new Array(5).fill('nitesh')
+// console.log(customerwise)
+
+// Creating an array of length 5 and filling only from index 1 to 3 with the value 1
+// let numbers = new Array(5).fill(0)
+// console.log(numbers);
+
+// Example array
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// filtering even numbers
+// const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// console.log(evenNumbers);
+
+// example object
+// const people = [
+//     { name: 'John', age: 30 },
+//     { name: 'Alice', age: 25 },
+//     { name: 'Bob', age: 35 },
+//     { name: 'Jane', age: 40 }
+//   ];
+
+//   // filtering people aged 30 and above
+//   const adults = people.filter((val) => val.age > 30)
+//   console.log(adults);
+
+// define an array
+// const numbers = [1,2,3,4,5]
+// const evenNumber = numbers.find(num => num % 2 === 0)
+// console.log(evenNumber);
+
+// Define an array of objects
+// const students = [
+//     { name: 'Alice', age: 20 },
+//     { name: 'Bob', age: 22 },
+//     { name: 'Charlie', age: 21 }
+//   ];
+//   const seniorStudent = students.find(student => student.age > 21)
+// console.log(seniorStudent);
+
+// Example with Array
+// const fruits = ['apple', 'banana', 'orange', 'mango'];
+// const index = fruits.findIndex(fruit => fruit.startsWith('apple'));
+// console.log(index);
+
+// if(index !== -1){
+//     console.log(`Index of the fruit starting with 'b': ${index}`);
+// } else {
+//   console.log("No fruit starting with 'b' found.");
+// }
+
+// Example with Object
+// const persons = [
+//     { id: 1, name: 'Alice' },
+//     { id: 2, name: 'Bob' },
+//     { id: 3, name: 'Charlie' },
+//     { id: 4, name: 'David' }
+//   ];
+//   const personIndex = persons.findIndex(val => val.id === 3);
+//   if(personIndex !== -1){
+//     console.log(`Index of the person with id 3: ${personIndex}`);
+//   }
+//   else{
+//     console.log("Person with id 3 not found.");
+//   }
+
+
+// example usage 
+// const numbers = [1, 2, 3, 4, 5, 2,22,55];
+// const lastTwo = numbers.findLast(num => num === 2);
+// console.log(lastTwo)
+
+// // Example array of objects
+// let people = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 25 },
+//     { name: 'Charlie', age: 35 },
+//     { name: 'David', age: 40 },
+//     { name: 'Eve', age: 20 }
+// ];
+
+// // Function to find the index of the last person with age less than 35
+// function findLastIndex(person){
+//     return person.age < 34;
+// }
+
+// // Using findLastIndex() method
+// let lastIndex = people.findIndex(findLastIndex);
+// console.log(lastIndex)
+
+// const nestedArray = [1, 2, [3, 4, [5, 6]], 7, [8]];
+// const result = nestedArray.flat(2)
+// console.log(result)
+
+
+// const arr = [1,2,3];
+// // Mapping each element to an array of itself and its double
+// const mappedArray = arr.flatMap((num) => [num,num * 2])
+// console.log(mappedArray);
+
+// const data = [
+//     { id: 1, name: 'John', tags: ['developer', 'javascript'] },
+//     { id: 2, name: 'Jane', tags: ['designer', 'css'] },
+//     { id: 3, name: 'Doe', tags: ['manager', 'leadership'] }
+//   ]
+
+//   // Extracting tags from each object and flattening the result
+//   const tagsArray = data.flatMap(obj => obj.tags)
+//   console.log(tagsArray);
+
+// Define an array
+// const numbers = [1, 2, 3, 4, 5];
+// // Iterate through the array using forEach()
+// numbers.forEach(function(number) {
+//     console.log(number)
+// });
+
+// Define an object
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+//   };
+
+// Object.entries(person).forEach(function([key,value]){
+//     console.log(`${key}:${value}`)
+// })
+
+// const doubleArray = Array.from([1, 2, 3], x => x * 2);
+// console.log(doubleArray);
+// const set = new Set([1, 2, 3]);
+// console.log(Array.from(set))
+
+// const obj = { 0: 'a', 1: 'b', 2: 'c', length: 3 };
+// console.log(Array.from(obj))
+
+// const fruits = ['apple', 'banana', 'orange', 'grape'];
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+// };
+// console.log(fruits.includes('banana'))
+// console.log(fruits.includes('watermelon'))
+
+// console.log(Object.values(person).includes('John'))
+// console.log(Object.values(person).includes('Sunil'))
+
+// let fruits = ['apple', 'banana', 'orange', 'grape', 'banana'];
+// let index = fruits.indexOf('orange')
+// console.log(index);
+
+// let person = {
+//     name: "John Doe",
+//     age: 30,
+//     email: "john@example.com"
+// };
+
+// let fruits = ["apple", "banana", "orange", "kiwi"];
+// console.log(Array.isArray(person))
+// console.log(Array.isArray(fruits))
+
+
+// var fruits = ["Apple", "Banana", "Orange"];
+// var jonedString = fruits.join('Watermelon')
+// console.log(jonedString)
+
+// var person = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+//   };
+//   var joinedString = Object.entries(person).map(([key,value]) => `${key}: ${value}`)
+//   console.log(joinedString)
+// const person = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York'
+//   };
+
+//   const objectKeys = Object.keys(person)
+//   console.log(objectKeys)
+
+//   const fruits = ['apple', 'banana', 'orange'];
+//   const arrKeys = Array.from(fruits.keys());
+//   console.log(arrKeys)
+
+// var fruits = ["Apple", "Banana", "Orange", "Apple", "Mango"];
+// var lastIndex = fruits.lastIndexOf('Apple')
+// console.log("Index of last 'Apple':",lastIndex);
+
+// var str = 'Hello world! How are you?';
+
+// var lastIndexOf = str.lastIndexOf('o');
+// console.log("Index of last :",lastIndexOf)
+
+// const myArray = [1, 2, 3, 4, 5];
+// console.log(myArray.length);
+
+// const myObject = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// };
+// // get the number of properties in the object
+// const objectLength = Object.keys(myObject).length
+// console.log(objectLength)
+
+// const people = [
+//     { name: 'Alice', age: 30 },
+//     { name: 'Bob', age: 25 },
+//     { name: 'Charlie', age: 35 }
+//   ];
+
+//   const names = people.map(person => person.name)
+//   console.log(names)
+
+// let myArray = Array.of(1,2,3,4,5)
+// console.log(myArray);
+
+// Creating an array
+// let myArray = [1, 2, 3, 4, 5];
+// console.log('Array before popping',myArray);
+
+// let poppedElement = myArray.pop();
+// console.log(poppedElement)
+
+// console.log('array after popping:',myArray)
+
+// // Creating an object
+// let person = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// };
+
+// // Creating an array
+// let fruits = ["Apple", "Banana", "Orange"];
+
+// fruits.push('mango');
+// fruits.push('watermelon')
+
+// console.log(fruits)
+
+// const numbers = [1, 2, 3, 4, 5];
+// const sum = numbers.reduce((a,b) => {
+//     return a + b 
+// })
+// console.log(sum)
+
+// function a(){
+//     console.log('aadsad')
+//     function b(){
+//         console.log('bbbb')
+//         function c(){
+//             console.log('cat')
+//         }
+//         c()
+//     }
+//     b()
+// }
+// a()
+
+// Using reduce()
+// const numbers = [1, 2, 3, 4, 5];
+// // Summing up all numbers in the array
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// console.log("Sum using reduce():", sum);
+// // Using reduceRight()
+// const numbers2 = [1, 2, 3, 4, 5];
+// // Concatenating all numbers in the array from right to left
+// const concatenatedString = numbers2.reduceRight((accumulator, currentValue) => accumulator + currentValue, "");
+// console.log("Concatenated string using reduceRight():", concatenatedString);
+
+// let numbers = [1, 2, 3, 4, 5];
+// console.log("Original array:", numbers);
+
+// numbers.reverse();
+// console.log("Reversed array:", numbers);
+
+// let str = "Hello, world!";
+// console.log("original string",str);
+// let reversedStr = str.split("").reverse().join("")
+// console.log("Reversed string:", reversedStr);
+
+// Creating an example object
+// let exampleObject = {
+//     name: "John",
+//     age: 30,
+//     city: "New York"
+// };
+
+// let exampleArray = ["apple", "banana", "orange", "grape"]
+// let shiftedElement = exampleArray.shift();
+// console.log('shifted element',shiftedElement)
+// console.log('Modified  element',exampleArray)
+
+// const exampleObject = {
+//     name: 'John',
+//     age: 30,
+//     city: 'New York',
+//     occupation: 'Software Engineer'
+//   };
+//   console.log(exampleObject);
+
+// const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
+// const slicedFruits = fruits.slice(2,3)
+// console.log(slicedFruits)
+
+// Example with Array
+// const numbers = [1, 2, 3, 4, 5];
+
+// // Check if any number in the array is greater than 3
+// const isGreaterThanThree = numbers.some(num => num > 3);
+// console.log(isGreaterThanThree)
+
+// // Example with Object
+// const person = {
+//     name: "John",
+//     age: 30,
+//     hobbies: ["Reading", "Gardening", "Cooking"]
+//   };
+
+//   const hasCookingHobby = Object.values(person.hobbies).some(hobby => hobby === 'Cooking');
+//   console.log("Does the person have a cooking hobby?", hasCookingHobby);
+
+// // array of objects
+// let students = [
+//     { name: "Alice", score: 85 },
+//     { name: "Bob", score: 70 },
+//     { name: "Charlie", score: 95 },
+//     { name: "David", score: 65 }
+// ];
+
+// students.sort((a,b) => {
+//     return score.name - score.name 
+// })
+// console.log(students);
+
+// // Example array
+// let fruits = ["Banana", "Orange", "Apple", "Mango"];
+// // Removing elements using splice()
+// let removedItems = fruits.splice(1, 2); // Removes 2 elements starting from index 1
+// console.log("Removed items:", removedItems); // Output: ["Orange", "Apple"]
+// console.log("Updated array:", fruits);
