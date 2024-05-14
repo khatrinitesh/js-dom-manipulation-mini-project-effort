@@ -21191,22 +21191,7 @@ const items = ['item1', 'item2', 'item3']
 // const upperCased = [];
 // fruits.forEach(fruit => {
 //   console.log(fruit.toUpperCase()); 
-// })
-// const numbers = [1,2,3,4,5]
-// const result = numbers.map((val) => val)
-// console.log(result)
-// const resultfilter = numbers.filter((val) => val % 2)
-// console.log(resultfilter)
-// const oddnumbers = numbers.filter(val => val % 2 !== 0)
-// const evennumbers = numbers.filter(val => val % 2 === 0)
-// console.log(oddnumbers)
-// console.log(evennumbers)
-// const sum = numbers.reduce((a,b) => a+b)
-// console.log(sum)
-
-// const sentence = 'hello world'
-// const word = 'world'
-// console.log(sentence,word)
+// });
 
 // function sumOfPositiveNumbers(arr){
 //     let sum = 0
@@ -21219,7 +21204,7 @@ const items = ['item1', 'item2', 'item3']
 //     return sum;
 // }
 
-
+// // example usage
 // const numbers = [3, -2, 5, -8, 10];
 // console.log(sumOfPositiveNumbers(numbers));
 
@@ -21291,448 +21276,168 @@ const items = ['item1', 'item2', 'item3']
 //   const filteredProducts = filterProductsByName(products,searchText);
 //   console.log(filteredProducts);
 
-// Creating a new array with some elements
-// var myArray = [1, 2, 3, 4, 5];
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 1 INTRO TO VARIABLE
+// var  previousNamingConvention = 'your firstname'
+// console.log(previousNamingConvention)
+// the let keyword is the modern syntax to create a variable
+// let firstname =  'your first name'
+// console.log(firstname);
 
-// // You can also create an empty array and then add elements to it
-// var anotherArray = [];
-// anotherArray.push('apple');
-// anotherArray.push('banana');
-// anotherArray.push('orange');
-
-// // You can mix different types of elements in an array
-// var mixArray = [1,'hello',true,{name:'john'}];
-
-// // You can also create an array with a specified length
-// var emptyArray = new Array(5);
-
-// console.log(myArray);
-// console.log(anotherArray);
-// console.log(mixArray);
-// console.log(emptyArray);
-
-// let myArray = ["apple", "banana", "orange"];
-// let elementAtIndexOne = myArray[1];
-// console.log(elementAtIndexOne);
-
-// let myString = "Hello";
-// let characterAtIndexTwo = myString.charAt(2); // Accessing the character at index 2
-// console.log(characterAtIndexTwo)
-
-// definet two arrays
-// let array1 = [1,2,3]
-// let array2 = [4,5,6]
-// // let merged = [...array1,...array2]
-// // console.log(merged);
-
-// let newArray = array1.concat(array2)
-// console.log(newArray)
+// variable declaration
+// let variableDeclaration;
 
 
-// original array
-// let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
-// console.log(fruits.copyWithin(2,0,3))
+// variable assignment the equal sign = is known as the assignment operator
+// variableDeclaration = 'value'
 
-// const obj = {
-//     name: 'John',
-//   age: 30,
-//   city: 'New York'
+
+// you output to the console with console log
+// console.log(variableDeclaration)
+
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 2 CONSTANTS
+// const christmas = '12.25.2024'
+// console.log(christmas);
+
+// May sometimes see constants named with the snake_case naming convention
+// depending on the naming convention of your development team.
+// Also may see variables named with snake_case with the letters capitalized.
+// const COLOR_GREEN = 'green'
+// console.log(COLOR_GREEN);
+
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 3 PRIMITIVE TYPES
+// Primitive types refer to simple, fundamental data.
+// The 8 data types in JavaScript are
+// string, number, BigInt, boolean, undefined, null, Symbol, and object.
+
+// There are 3 ways to create a string literal.
+// Initialize a string with single quotes
+// let favoriteFruit  = 'strawberrues'
+// console.log(favoriteFruit);
+
+//  Initialize a string with double quotes
+// let favoriteIceCream = "chocolate";
+// console.log(favoriteIceCream);
+
+// Initialize a string with backticks, ``.
+// This creates a template literal which can be used for string interpolation.
+// let favouriteProgrammingLanguage = `JavaScript`
+// console.log(favouriteProgrammingLanguage);
+
+// Assign to a number
+// let numberOfDonuts = 12;
+// console.log(numberOfDonuts);
+
+// In JavaScript, the number data type, encompasses both integers and decimal values
+// let pi = 3.14;
+// console.log(pi);
+
+// BigInt, ends with the character n, and this is for very large numeric values
+// let veryLargeNumber = 54389759347634976346n;
+// console.log(veryLargeNumber);
+
+// The boolean data type holds the value of true or false.
+// let loveCoding = true
+// console.log(loveCoding);
+
+// undefined is the default value of a variable if we do not assign it
+// let favoriteColor;
+
+// Outputting it will display undefined
+// console.log(favoriteColor);
+
+// The null data type, means value unknown or empty.
+// favoriteFruit = null;
+
+// The Symbol data type, is used to create unique identifiers for objects
+
+// The object data type, is known as a reference data type.
+// So primitive values can only contain a single thing, such as a number or a string.
+// But objects can have more complex structures and hold key-value pairs.
+// let course = {
+//     name: 'JavaScript for Beginners',
+//     hours: 3
 // }
+// console.log(course);
 
-// const entries = Object.entries(obj)
-// console.log(entries)
-// const arr1 = ['a', 'b', 'c'];
-// const iterator = arr1.entries();
-// console.log(iterator.next().value);
-// console.log(iterator.next().value);
-// console.log(iterator.next().value);
-// console.log(iterator.next().value);
-// console.log(iterator.next().value);
-// console.log(iterator.next().value);
+// Also have the typeof operator, which will return the type of the operand
+// The operand will be either a variable or a literal value.
+// console.log(typeof 3);
+// console.log(typeof 'test');
+// console.log(typeof {name:'test'});
+// console.log(typeof ['a','b','c']);
+// console.log(typeof true);
+// console.log(typeof 109234532525n);
+// console.log(typeof null);
 
+// null, is not actually an object.
+// This is from the early days of JavaScript,
+// and it returns the value of 'object' for backwards compatibility
 
-// Example array
-// const numbers = [1, 2, 3, 4, 5];
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 4 DYNAMIC TYPING
+// JavaScript is dynamically typed.
+// Meaning that you can initialize a variable to a particular data type.
+// Then you can reassign it later to a different data type.
+// Programming languages which are statically typed, such as Java or C#,
+// do not allow you to do this.
+// let firstName = 'test'
+// console.log(typeof firstName);
 
-// const allEven = numbers.every(num => num % 2 === 0)
-// console.log(allEven); // Output: false, because not all numbers are even
+// firstName = 100
+// console.log(typeof firstName)
 
-// const ages = {
-//     John: 30,
-//     Alice: 25,
-//     Bob: 35
-//   };
+// firstName = true 
+// console.log(typeof firstName)
 
-// const allAboveTwenty = Object.values(ages).every(val => val > 20)
-// console.log(allAboveTwenty)
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 5 OBJECTS
+// Objects are reference types. (They are not a primitive value)
+// Objects represent nouns. (person, place, or thing)
+// They contain state or behavior, allowing you to group together related values.
 
-// Creating an empty object
-
-// let person = [];
-
-// // Filling the object with key-value pairs
-// person.name = 'nitesh'
-// person.age = 34
-// person.gender = 'male'
-// console.log(person)
-
-// let person = {
-//     name: "John",
-//     age: 30,
-//     gender: "male"
+// Object Literals use curly braces.
+// Here you would specify key-value pairs.
+// let course = {
+//     name: 'JavaScript for Beginners',
+//     hours: 3,
+//     apartment:'evershine avami 303'
 // };
-// console.log(person)
 
-// Creating an empty array
-// let fruits = [];
-// fruits.push('apple');
-// fruits.push('mango');
-// fruits.push('pineapple');
-// console.log(fruits);
+// // You can access a property through dot notation.
+// console.log(course.name);
 
-// Creating an array of length 5 and filling it with the value 0
-// let customerwise = new Array(5).fill('nitesh')
-// console.log(customerwise)
+// // You can also reassign the value.
+// course.name = 'ReactJS for Beginners'
+// console.log(course.name);
 
-// Creating an array of length 5 and filling only from index 1 to 3 with the value 1
-// let numbers = new Array(5).fill(0)
-// console.log(numbers);
+// You can also access properties through bracket notation.
+// You would typically use dot notation however bracket notation is used
+// if you don't know the exact key/property you want to access until runtime.
+// console.log(course['name']);
+// course['name'] = 'tailwindcss'
+// console.log(course.name);
 
-// Example array
-// const numbers = [1, 2, 3, 4, 5, 6];
+// An example of how you would use bracket notation.
+// let property = 'hours'
+// console.log(course[property]);
+// let newHouse = 'apartment'
+// console.log(course[newHouse]);
 
-// filtering even numbers
-// const evenNumbers = numbers.filter((num) => num % 2 === 0);
-// console.log(evenNumbers);
-
-// example object
-// const people = [
-//     { name: 'John', age: 30 },
-//     { name: 'Alice', age: 25 },
-//     { name: 'Bob', age: 35 },
-//     { name: 'Jane', age: 40 }
-//   ];
-
-//   // filtering people aged 30 and above
-//   const adults = people.filter((val) => val.age > 30)
-//   console.log(adults);
-
-// define an array
-// const numbers = [1,2,3,4,5]
-// const evenNumber = numbers.find(num => num % 2 === 0)
-// console.log(evenNumber);
-
-// Define an array of objects
-// const students = [
-//     { name: 'Alice', age: 20 },
-//     { name: 'Bob', age: 22 },
-//     { name: 'Charlie', age: 21 }
-//   ];
-//   const seniorStudent = students.find(student => student.age > 21)
-// console.log(seniorStudent);
-
-// Example with Array
-// const fruits = ['apple', 'banana', 'orange', 'mango'];
-// const index = fruits.findIndex(fruit => fruit.startsWith('apple'));
-// console.log(index);
-
-// if(index !== -1){
-//     console.log(`Index of the fruit starting with 'b': ${index}`);
-// } else {
-//   console.log("No fruit starting with 'b' found.");
+// To demonstrate the different aspects of a JavaScript object.
+// The key-value is referred to as a property of the JavaScript object.
+// let obj = {
+//     key:'value'
 // }
+// console.log(obj);
 
-// Example with Object
-// const persons = [
-//     { id: 1, name: 'Alice' },
-//     { id: 2, name: 'Bob' },
-//     { id: 3, name: 'Charlie' },
-//     { id: 4, name: 'David' }
-//   ];
-//   const personIndex = persons.findIndex(val => val.id === 3);
-//   if(personIndex !== -1){
-//     console.log(`Index of the person with id 3: ${personIndex}`);
-//   }
-//   else{
-//     console.log("Person with id 3 not found.");
-//   }
+// JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 6 ARRAYSJS
 
 
-// example usage 
-// const numbers = [1, 2, 3, 4, 5, 2,22,55];
-// const lastTwo = numbers.findLast(num => num === 2);
-// console.log(lastTwo)
-
-// // Example array of objects
-// let people = [
-//     { name: 'Alice', age: 30 },
-//     { name: 'Bob', age: 25 },
-//     { name: 'Charlie', age: 35 },
-//     { name: 'David', age: 40 },
-//     { name: 'Eve', age: 20 }
-// ];
-
-// // Function to find the index of the last person with age less than 35
-// function findLastIndex(person){
-//     return person.age < 34;
-// }
-
-// // Using findLastIndex() method
-// let lastIndex = people.findIndex(findLastIndex);
-// console.log(lastIndex)
-
-// const nestedArray = [1, 2, [3, 4, [5, 6]], 7, [8]];
-// const result = nestedArray.flat(2)
-// console.log(result)
 
 
-// const arr = [1,2,3];
-// // Mapping each element to an array of itself and its double
-// const mappedArray = arr.flatMap((num) => [num,num * 2])
-// console.log(mappedArray);
-
-// const data = [
-//     { id: 1, name: 'John', tags: ['developer', 'javascript'] },
-//     { id: 2, name: 'Jane', tags: ['designer', 'css'] },
-//     { id: 3, name: 'Doe', tags: ['manager', 'leadership'] }
-//   ]
-
-//   // Extracting tags from each object and flattening the result
-//   const tagsArray = data.flatMap(obj => obj.tags)
-//   console.log(tagsArray);
-
-// Define an array
-// const numbers = [1, 2, 3, 4, 5];
-// // Iterate through the array using forEach()
-// numbers.forEach(function(number) {
-//     console.log(number)
-// });
-
-// Define an object
-// const person = {
-//     name: 'John',
-//     age: 30,
-//     city: 'New York'
-//   };
-
-// Object.entries(person).forEach(function([key,value]){
-//     console.log(`${key}:${value}`)
-// })
-
-// const doubleArray = Array.from([1, 2, 3], x => x * 2);
-// console.log(doubleArray);
-// const set = new Set([1, 2, 3]);
-// console.log(Array.from(set))
-
-// const obj = { 0: 'a', 1: 'b', 2: 'c', length: 3 };
-// console.log(Array.from(obj))
-
-// const fruits = ['apple', 'banana', 'orange', 'grape'];
-// const person = {
-//     name: 'John',
-//     age: 30,
-//     city: 'New York'
-// };
-// console.log(fruits.includes('banana'))
-// console.log(fruits.includes('watermelon'))
-
-// console.log(Object.values(person).includes('John'))
-// console.log(Object.values(person).includes('Sunil'))
-
-// let fruits = ['apple', 'banana', 'orange', 'grape', 'banana'];
-// let index = fruits.indexOf('orange')
-// console.log(index);
-
-// let person = {
-//     name: "John Doe",
-//     age: 30,
-//     email: "john@example.com"
-// };
-
-// let fruits = ["apple", "banana", "orange", "kiwi"];
-// console.log(Array.isArray(person))
-// console.log(Array.isArray(fruits))
 
 
-// var fruits = ["Apple", "Banana", "Orange"];
-// var jonedString = fruits.join('Watermelon')
-// console.log(jonedString)
 
-// var person = {
-//     name: "John",
-//     age: 30,
-//     city: "New York"
-//   };
-//   var joinedString = Object.entries(person).map(([key,value]) => `${key}: ${value}`)
-//   console.log(joinedString)
-// const person = {
-//     name: 'John',
-//     age: 30,
-//     city: 'New York'
-//   };
 
-//   const objectKeys = Object.keys(person)
-//   console.log(objectKeys)
 
-//   const fruits = ['apple', 'banana', 'orange'];
-//   const arrKeys = Array.from(fruits.keys());
-//   console.log(arrKeys)
 
-// var fruits = ["Apple", "Banana", "Orange", "Apple", "Mango"];
-// var lastIndex = fruits.lastIndexOf('Apple')
-// console.log("Index of last 'Apple':",lastIndex);
 
-// var str = 'Hello world! How are you?';
 
-// var lastIndexOf = str.lastIndexOf('o');
-// console.log("Index of last :",lastIndexOf)
-
-// const myArray = [1, 2, 3, 4, 5];
-// console.log(myArray.length);
-
-// const myObject = {
-//     name: "John",
-//     age: 30,
-//     city: "New York"
-// };
-// // get the number of properties in the object
-// const objectLength = Object.keys(myObject).length
-// console.log(objectLength)
-
-// const people = [
-//     { name: 'Alice', age: 30 },
-//     { name: 'Bob', age: 25 },
-//     { name: 'Charlie', age: 35 }
-//   ];
-
-//   const names = people.map(person => person.name)
-//   console.log(names)
-
-// let myArray = Array.of(1,2,3,4,5)
-// console.log(myArray);
-
-// Creating an array
-// let myArray = [1, 2, 3, 4, 5];
-// console.log('Array before popping',myArray);
-
-// let poppedElement = myArray.pop();
-// console.log(poppedElement)
-
-// console.log('array after popping:',myArray)
-
-// // Creating an object
-// let person = {
-//     name: "John",
-//     age: 30,
-//     city: "New York"
-// };
-
-// // Creating an array
-// let fruits = ["Apple", "Banana", "Orange"];
-
-// fruits.push('mango');
-// fruits.push('watermelon')
-
-// console.log(fruits)
-
-// const numbers = [1, 2, 3, 4, 5];
-// const sum = numbers.reduce((a,b) => {
-//     return a + b 
-// })
-// console.log(sum)
-
-// function a(){
-//     console.log('aadsad')
-//     function b(){
-//         console.log('bbbb')
-//         function c(){
-//             console.log('cat')
-//         }
-//         c()
-//     }
-//     b()
-// }
-// a()
-
-// Using reduce()
-// const numbers = [1, 2, 3, 4, 5];
-// // Summing up all numbers in the array
-// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-// console.log("Sum using reduce():", sum);
-// // Using reduceRight()
-// const numbers2 = [1, 2, 3, 4, 5];
-// // Concatenating all numbers in the array from right to left
-// const concatenatedString = numbers2.reduceRight((accumulator, currentValue) => accumulator + currentValue, "");
-// console.log("Concatenated string using reduceRight():", concatenatedString);
-
-// let numbers = [1, 2, 3, 4, 5];
-// console.log("Original array:", numbers);
-
-// numbers.reverse();
-// console.log("Reversed array:", numbers);
-
-// let str = "Hello, world!";
-// console.log("original string",str);
-// let reversedStr = str.split("").reverse().join("")
-// console.log("Reversed string:", reversedStr);
-
-// Creating an example object
-// let exampleObject = {
-//     name: "John",
-//     age: 30,
-//     city: "New York"
-// };
-
-// let exampleArray = ["apple", "banana", "orange", "grape"]
-// let shiftedElement = exampleArray.shift();
-// console.log('shifted element',shiftedElement)
-// console.log('Modified  element',exampleArray)
-
-// const exampleObject = {
-//     name: 'John',
-//     age: 30,
-//     city: 'New York',
-//     occupation: 'Software Engineer'
-//   };
-//   console.log(exampleObject);
-
-// const fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry'];
-// const slicedFruits = fruits.slice(2,3)
-// console.log(slicedFruits)
-
-// Example with Array
-// const numbers = [1, 2, 3, 4, 5];
-
-// // Check if any number in the array is greater than 3
-// const isGreaterThanThree = numbers.some(num => num > 3);
-// console.log(isGreaterThanThree)
-
-// // Example with Object
-// const person = {
-//     name: "John",
-//     age: 30,
-//     hobbies: ["Reading", "Gardening", "Cooking"]
-//   };
-
-//   const hasCookingHobby = Object.values(person.hobbies).some(hobby => hobby === 'Cooking');
-//   console.log("Does the person have a cooking hobby?", hasCookingHobby);
-
-// // array of objects
-// let students = [
-//     { name: "Alice", score: 85 },
-//     { name: "Bob", score: 70 },
-//     { name: "Charlie", score: 95 },
-//     { name: "David", score: 65 }
-// ];
-
-// students.sort((a,b) => {
-//     return score.name - score.name 
-// })
-// console.log(students);
-
-// // Example array
-// let fruits = ["Banana", "Orange", "Apple", "Mango"];
-// // Removing elements using splice()
-// let removedItems = fruits.splice(1, 2); // Removes 2 elements starting from index 1
-// console.log("Removed items:", removedItems); // Output: ["Orange", "Apple"]
-// console.log("Updated array:", fruits);
