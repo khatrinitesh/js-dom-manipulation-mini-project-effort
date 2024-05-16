@@ -21429,15 +21429,903 @@ const items = ['item1', 'item2', 'item3']
 // console.log(obj);
 
 // JAVASCRIPT FOR BEGINNERS NOTES  -> 2 JAVASCRIPT VARIABLES - 6 ARRAYSJS
+// Arrays are used to store lists of data.
+// We use square brackets to create an array literal.
+// let productcolors = ['blue','green'];
+// console.log(productcolors)
+
+// the elements of an array can be accessed by index 
+// we begin the index from 0 
+// so to access the element of blue
+// we would use productColors[0]
+// Arrays can contain values of any data type.
+// However we typically use arrays where all the elements are the same data type.
+// Arrays are objects.
+// Objects consist of key-value pairs.
+// In the context of arrays, the keys are an index value. (a numeric value starting from 0)
+// the data type is an object
+// console.log(typeof productcolors)
+// useful property that you will often use
+// console.log(productcolors.length)
+
+// functions are the building blocks of our applications
+// it allows us to group together statements to perform a task or calculate a value
+
+// function declaration syntax
+// function sayHi(){
+//     console.log('hi');
+// }
+// sayHi()
+
+// can also define a parameter variable within the parenthesis.
+// function sayHiPartTwo(name){
+//     console.log('hi' + " " + name)
+// }
+// sayHiPartTwo('nitesh')
+
+// Functions are a building block in our programs.
+// They enable us to group together a block of code,
+// which is a set of statements defined within curly braces.
+// We create a function for one of two options.
+// The first option is to perform some action.
+// The second option is to calculate and return some value.
+// So not all functions require us to explicitly use the return keyword.
+// By default if we don't supply an explicit return value,
+// then JavaScript will have the function return the value undefined.
+// function multiply(num1,num2){
+//     return num1 * num2
+// }
+// console.log(multiply(10,20))
+
+// If we don't specify a return keyword, then JavaScript will return undefined by default.
+// function add(num1,num2){
+//     const result = num1 + num2
+// }
+// console.log(add(20,30))
+
+// 3 javascript operators -> 2 arithmetic operators
+// An expression in JavaScript is something that produces a value.
+// An expression goes on the right side of our variable assignment.
+// In JavaScript, we have different arithmetic operators.
+// -, +, *, /, % 
+// // % is the modulo operator and it returns the remainder of division.
+// console.log(2 + 2);
+// console.log(4 - 2);
+// console.log(2 * 2);
+// console.log(9 / 3);
+// console.log(10 % 2); //the remainder of 0
+// console.log(3 ** 2); // 3^2 = 9 (raised to the power of)
+// we also have shorthand (syntactic sugar) to increment or decrement a value
+// let a = 10
+// a = a + 1 
+// a += 1
+
+// // this will increment the value of a and then return the previous value
+// a++;
+
+// // this will increment the value of a and then return the updated value
+// ++a;
+
+// a -= 1
+// a--
+// --a
+
+// 3 javascript operators -> 3 assignment operators
+// The assignmet operator is a single equal sign, =, which doesn't check for equality.
+// let programmingLanguage = 'JavaScript';
+// console.log(programmingLanguage)
+
+// 3 javascript operators -> 4 comparison operators
+// Comparison operators include...
+// >, greater than
+// >=, greater than or equal to
+// <, less than
+// <=, less than or equal to
+// The result of a comparison operator is a boolean value, true or false.
+// let num1 = 14;
+// let num2 = 20;
+// const isNumGenerator = num1 > num2 
+// console.log('isNumGenerator',isNumGenerator);
+
+// // const isNum1GreaterThanOrEqualTo  = num1 > num2 
+// // console.log('isNum1GreaterThanOrEqualTo' , isNum1GreaterThanOrEqualTo)
+
+// // const isNum1LessThan  = num1 < num2 
+// // console.log('isNum1LessThan', isNum1LessThan)
+
+// const isNum1LessThanOrEqualTo = num1 < num2 
+// console.log('isNum1LessThanOrEqualTo ',isNum1LessThanOrEqualTo )
+
+// 3 javascript operators -> 5 equality operators
+//for checking for equality we can do so through 
+// loose equality which uses ==
+// strict equality, which uses === 
+
+// let a = 2 
+// let b = '2'
+
+// // Loose equality evaluates this comparison to be truthy.
+// // Loose equality doesn't check if the data types are the same.
+// // JavaScript will perform type coersion with loose equality, converting the data types to be the same before comparing
+// // console.log(a == b)
+
+// // strict equality returns true if the data types are the same and then the values are the same
+// console.log(a === b)
+
+// 3 javascript operators -> 6 ternary operators
+// In JavaScript, we have the ternary operator.
+// It is a conditional operator that allows us to write cleaner code.
+// This can be used when you need to perform a comparison and store values.
+// Note: in this case you could just do
+// const canDrive = age >= 16; 
+// but this is just to demonstrate the syntax of the ternary operator.
+// let age = 16
+// const canDrive = age >= 16 ? true : false
+// console.log('canDrive',canDrive)
+
+// let points = 110
+// const customerType = points > 100 ? 'gold' : 'silver'
+// console.log('customerType',customerType)
+
+// 3 javascript operators -> 7 logical operators with non booleans
+// expressions are evaluated from left to right
+// when using logical operators with non-boolean values
+// rather than returning the value of true or false
+// it will return the value of the operand
+// so in the case of || (or operator)
+// console.log(false || 'steven') 
+
+// so steven is evalueted to truthy it will be the value returned
+// the OR operator returns the first truthy value
+
+// the falsy values in javascript are ...
+// undefined null 0 false '' NaN
+// anyting else that doesnt fall in this category is cinsidered truthy 
+
+// console.log(false || 1 || 2)
+
+// The JavaScript OR operator, ||, performs short-circuit evaluation.
+// Meaning it stops the expression once it can evaluate to 'truthy' or 'falsy'.
+
+
+// another example
+// let userChosenColor = 'blue'
+// let defaultColor = 'green'
+// const currentWebsitecolor = userChosenColor || defaultColor
+// console.log(currentWebsitecolor)
+
+// 4 control flow => 1 if else statements
+// Programming is powerful as it enables us to execute different code based on conditions.
+// This is what enables us to provide dynamic and personalized
+// applications to end users.
+// The fundamental programming concept that enables this is conditional statements.
+// More specifically, if-else statements.
+// let priceofChocolate = 1.99;
+// let hasAmountInCash = 5;
+// const canBuy = hasAmountInCash >= priceofChocolate
+// console.log('canBuy',canBuy);
+// console.log(typeof canBuy)
+// if(hasAmountInCash >= priceofChocolate){
+//     console.log('Enjoy your purchase');
+// } else {
+//     console.log('Sorry you do not have enough');
+// }
+// let hour = 10
+// if(hour > 6 && hour <= 12){
+//     console.log('Serving breakfast');
+// }
+// else if(hour > 12 && hour <= 14){
+//     console.log('Serving lunch');
+// }
+// else{
+//     console.log('Serving dinner');
+// }
+
+
+// 4 control flow => 10 exericse max of two numbers
+// Implement a function that accepts two numbers and returns the maximum number.
+// function max(n1,n2){
+//     return n1 >= n2 ? n1 : n2
+// }
+// console.log(max(588,430))
+
+// 4 control flow => 11 exericse fizzbuzz
+// Implement a function to accept a number.
+// Then return "FizzBuzz" if divisible by 3 and 5.
+// Or return "Fizz" if only divisible by 3.
+// Or return "Buzz" if only divisible by 5.
+// Or return the original number if not divisible by 3 or 5
+function fizzBuzz(num) {
+    if (typeof num !== 'number') return num;
+    if (num % 3 === 0 && num % 5 === 0)
+        return 'FizzBuzz';
+    else if (num % 3 === 0)
+        return 'Fizz';
+    else if (num % 5 === 0)
+        return 'Buzz';
+    else
+        return num;
+}
+
+// 4 control flow => 12 exericse even and odd number
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const evenNumbers = numbers.filter((val) => val % 2 === 0)
+// console.log('evenNumbers',evenNumbers)
+// const oddNumbers = numbers.filter((val) => val % 2 !== 0)
+// console.log('oddNumbers',oddNumbers)
+
+// 4 control flow => 2 switch case statements
+// Switch-case statements can also be used for control flow.
+// The difference between if-else statements and switch-case statements
+// is that switch-case statements are only used for equality comparisons.
+// let job = 'software developer'
+// if(job === 'software developer'){
+//     console.log('Writes code');
+// }
+// else if(job === 'designer'){
+//     console.log('makes user interface documents')
+// }
+// else if(job === 'cloud designer'){
+//     console.log('manages and deploys cloud resources');
+// }
+// else{
+//     console.log('Works directly with customers')
+// }
+
+// // Since we doing equality comparisons, this can be hard to read and reptitive.
+// // So in this case, we could use the switch-case statements.
+// switch(job){
+//     case 'software developer':console.log('write code');
+//     break;
+//     case 'designer':console.log('makes user interface documents');
+//     break;
+//     case 'Cloud Engineer':console.log('makes user interface documents');
+//     break;
+//     default:console.log('works directly with customers');
+// }
+
+// 4 control flow => 3 for loops
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// to output all the elements in the array
+// let idx = 0
+// let lengthofarray = numbers.length;
+// console.log(numbers[idx++])
+// console.log(numbers[idx++])
+// console.log(numbers[idx++])
+// console.log(numbers[idx++])
+// console.log(numbers[idx++])
+// console.log(numbers[idx])
+// you can use for loop to efficiently through an array
+// for(let idx=0;idx < numbers.length;idx++){
+//     console.log(numbers[idx])
+// }
+
+// 4 control flow => 4 while loops
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// //  we use for loops when we know the exact number of times that we want the loop to execute 
+// for(let idx=0;idx<numbers.length;idx++){
+//     console.log(numbers[idx]);
+// }
+// 4 control flow => 5 do while loops
+// Another loop in JavaScript is the do-while loop.
+// This differs from the traditional while-loop as
+// it will execute the statements within the code block,
+// and then evaluate the condition after.
+
+// This means that a do-while loop is guaranteed to execute at least once.
+// let i = 0;
+// do{
+//     i++
+//     console.log(i)
+// }
+// while(i < 100);
+// 4 control flow => 5 infinite loops
+// Infinite loops will cause your program to crash.
+// You want to ensure within your loops that you are progressively
+// getting closer to your condition being false as to termiante the loop.
+
+// 4 control flow => 7 for in loops
+// We typically use for-loops to iterate over an array
+// We also have another loop known as the for-in loop 
+// which is used to iterate over the keys of a JavaScript object.
+// A JavaScript object is a data type that allows you to store key-value pairs.
+// const course = {
+//     name: 'JavaScript for Beginners',
+//     duration: 3,
+//     setions: 7
+// };
+// console.log(course.name)
+// console.log(course.duration)
+// console.log(course.setions)
+// // We could also iterate over the keys with the for-in loop.
+// for(const key in course){
+//     console.log(course[key])
+// }
+
+// 4 control flow => 8 for of loops
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// for(const number of numbers){
+//     console.log(number)
+// }
+
+
+// 4 control flow => 9 break and continue
+// In loops, there may be specific conditions where you will want to terminate the loop.
+// This is where you would use the break statement.
+// There may also be times when you want to skip to the next iteration of the loop,
+// which is where you would use the continue statement.
+// Starting with the break keyword
+
+// break statement in for loop
+// for(let i=0;i<10;i++){
+//     if(i === 5)
+//     break;
+//     console.log(i)
+// }
+
+// break statement in the while loop
+// let i = 0
+// while(i<10){
+//     if(i === 5){
+//         break;
+//     }
+//     console.log(i)
+//     i++
+// }
+
+// break statement in the while loop
+// let i = 0;
+// while (i < 10){
+//     if(i === 5){
+//         break;
+//     }
+//     console.log(i)
+//     i++;
+// }
+// break statement in the do-while loop
+// let i = 0;
+// while (i<10){
+//     if(i ===5){
+//         break;
+//     }
+//     console.log(i)
+// }
+
+// break statement for in loop 
+// let object = { a: 1, b: 2, c: 3 };
+// for(const key in object){
+//     console.log(key)
+// }
+
+// break statement in the for of loop
+// const array = [1, 2, 3, 4, 5];
+// for(let key of array){
+//     console.log(key)
+// }
+
+// Now let us consider the continue keyword
+
+// continue statement in the for loop
+// for (let i = 0; i < 10; i++) {
+//     if (i % 2 === 0)
+//         continue;
+
+//     console.log(i);
+// }
+
+// continue statement in the while loop
+// let i = 0
+// while(i < 100){
+//     if(i % 2 === 0)
+//         continue;
+//     console.log(i);
+//     i++;
+// }
+
+// continue statement in the do-while loop
+// doWhileIdx = 0;
+// do {
+//     if (doWhileIdx % 2 === 0)
+//         continue;
+
+//     console.log(doWhileIdx);
+
+//     doWhileIdx++;
+// } while (doWhileIdx < 10);
+
+// // continue statement in the for-in loop
+// object = { a: 1, b: 2, c: 3, d: 4 };
+
+// for (const key in object) {
+//     if (object[key] % 2 === 0) continue;
+
+//     console.log(object[key]);
+// }
+
+// // continue statement in the for-of loop
+// for (let element of array) {
+//     if (element % 2 === 0) continue;
+
+//     console.log(array[element]);
+// }
+
+
+// 5 javascript objects -> 1 object literals
+// Objects are a way to store key-value pairs.
+// They allow us to group together stat and behavior that's highly related.
+// The benefit is we can make our code cohesive and organized.
+
+// Encapsulation involves grouping together data and the methods that 
+// manipulate that data into a single unit.
+// While hiding or abstracting away the internal details from outside interference or misuse
+// const dog = {
+//     name: 'Max',
+//     breed: 'Dachshund',
+//     age: 5,
+//     weightInPounds: 12,
+//     eat: function() {
+//         console.log('Chomp!');
+//     },
+//     bark() {
+//         console.log('Woof!');
+//     }
+// };
+// console.log(dog)
+
+// const example = {
+//     name:'nitesh',
+//     result:function(){
+//         console.log('result')
+//     }
+// }
+// console.log(example)
+
+
+// 5 javascript objects -> 10 garbage collection
+// In programming languages such as C or C++,
+// when you create an object you have to explicitly allocate and deallocate memory.
+// But in programming languages such as JavaScript, C#, Java, or Python
+// the languages have garbage collection to manage memory for us.
+
+// 6 javascript objects -> 11 build in math functions
+// In JavaScript, we have a built-in class called Math
+// This has static helper methods to help us do mathematical calculations.
+// It is often utilized in programming interviews.
+// Refer to the documentation at developer.mozilla.org since there are many built in methods
+// Some of the most commonly used built-in methods
+// console.log(Math.round(3.14)) 
+// console.log(Math.round(3.6)) 
+// console.log(Math.floor(4,6)) 
+// console.log(Math.ceil(4,2)) 
+// console.log(Math.max(4,6)) 
+// console.log(Math.min(4,6)) 
+// console.log(Math.pow(4,6)) 
+// console.log(Math.sqrt(25)) 
+// console.log( Math.random() );
+// let min = 1;
+// let max = 10;
+// const randomNum = Math.random() * (max - min) + min
+// // console.log(randomNum);
+// // To make it an integer value
+// const randomIntNum = Math.round( Math.random() * (max - min) + min );
+// console.log(randomNum)
+// console.log(Math.random() * ( max- min) + min)
+
+// 6 javascript objects -> 12 string methods
+// refer to the documentation at mozilla.developer.org
+// We have string literals
+// const name = 'Steven';
+// console.log(typeof name); 
+
+// const anotherName = new String('Joe');
+// console.log(typeof anotherName); 
+
+// we can access the methods of strings using dot notation or bracket notation
+// The JavaScript engine will internally wrap the string literal with the string object.
+// There are built in methods for strings that allow us to operate and manipulate strings.
+// let sentence = 'A new sentence';
+// const doesIncludeNew = sentence.includes('new');
+// console.log(doesIncludeNew)
+
+// const result = 'how are you'
+// const includesAre = result.includes('are')
+// console.log(includesAre)
+
+// can access characters by index value, where the first character of a string is at the index 0
+// console.log(sentence[3])
+
+// const startsWithA = sentence.startsWith('A');
+// console.log(startsWithA)
+// const endsWithe = sentence.endsWith('e');
+// console.log(endsWithe)
+// let updatedSentence = sentence.replace('new', 'short');
+// console.log(updatedSentence)
+
+// let input = ' username@gmail.com ';
+// console.log(input.trim())
+
+// const wordsinSentence = sentence.split(' ')
+// console.log(wordsinSentence);
+// console.log(sentence.split(" ").reverse("").join(""))
+
+// let email = 'TesTEmail@gmail.com';
+// console.log(email.toLowerCase());
+// console.log(email.toUpperCase());
+
+// 6 javascript objects -> 13 template literals
+// In previous lessons when working with strings,
+// we have used either single quotes, '', or double quotes, ""
+
+// We have another way to create a string literal and that is with backticks, ``
+// We would call this a template literal.
+// The benefit is that it allows us to use string interpolation rather than string concatenation.
+// let firstName = 'Steven';
+// let lastName = 'Garcia';
+// // string concatenation
+// let fullName = firstName + ' ' + lastName
+// console.log(fullName);
+
+// // string interpolation with a template literal
+// // ${} acts as a placeholder and within, we can specify an expression
+// // an expression is any code that would return some value
+// fullName = `${firstName} ${lastName}`
+// console.log(fullName)
+
+// 6 javascript objects -> 14 the date objects
+// In JavaScript we have a built in Date object which stores the date and time.
+// It also provides methods for data and time management.
+
+// We would use the Date object most commonly to store creation and modification times
+// for a resource in our database.
+
+// The Date object can be initialized many different ways.
+// refer to the documentation at developer.mozilla.org
+// let now = new Date();
+// console.log(now);
+// passing a number as an argument,
+// will represent the number of milliseconds since Jan 1, 1970
+// let Jan01_1970 = new Date(0); // 0 seconds since Jan 1, 1970
+// console.log(Jan01_1970);
+
+// let Dec31_1969 = new Date(-24 * 3600 * 1000);
+// console.log(Dec31_1969);
+
+// const dateOne = new Date('December 25, 2024 16:08');
+// console.log(dateOne)
+// let now = new Date();
+// const Jan1_2024 = new Date(2024, 0, 1); // Jan 1, 2024
+// console.log( now.getFullYear() );
+
+// Represented as a number,
+// so 0 = Jan, 1 = Feb, etc.
+// console.log( now.getMonth() )
+
+// difference between UTC (Coordinated Universal Time) and local time zone
+// console.log( now.getTimezoneOffset())
+
+// 6 javascript objects -> 2 factory functions
+// So if we were to create another object with the same properties
+// and methods as the dog object, it would require that we copy and paste.
+// Copy and pasting is a sign of code duplication which is somethig that 
+// we want to avoid in our programs.
+
+// const dog = {
+//     name: 'Max',
+//     breed: 'Dachshund',
+//     age: 5,
+//     weightInPounds: 12,
+//     eat: function() {
+//         console.log('Chomp!');
+//     },
+//     bark() {
+//         console.log('Woof!');
+//     }
+// };
+// This makes our code harder to read, more susceptible to bugs,
+// and more difficult to modify.
+
+// One way that we can create another dog object, it to use a factory function.
+// This refers to a function, named with the camelCase naming convention,
+// which returns an object literal.
+
+// The details are within the factory function and we pass arguments to the 
+// factory function's parameter variables. The arguments are used 
+// to create that custom object.
+// function getDog(name,breed,age,weightInPounds){
+//     return {
+//         name,
+//         breed,
+//         age,
+//         weightInPounds,
+//         eat: function() {
+//             console.log(this.name + ': Chomp!');
+//         },
+//         bark() {
+//             console.log(this.name + ': Woof!');
+//         }
+//     }
+// }
+// const anotherDog = getDog('Marley', 'Chocolate Lab', 3, 60)
+// console.log(anotherDog)
+
+// So we know that the object literal syntax creates one object.
+// We can easily use factory functions and have it return an object.
+// Factory functions provide an efficient and reusable way to create new objects
+// which the same state and behavior. (properties and methods)
+
+// However factory functions are not the common way of achieving this,
+// rather we use constructor functions.
+
+// Constructor functions construct the initial state of an object.
+// We name our constructor functions using PascalNotation.
+// We would name our constructor function as a noun, rather than a verb.
+// Then we utilize the 'this' keyword, as in 'this current object'
+// to set the state and behavior. (properties and methods)
+
+// function Dog(name, breed, age, weightInPounds) {
+//     // this is done internally
+//     // this = {};
+
+//     // Add properties to this object
+//     this.name = name;
+//     this.breed = breed;
+//     this.age = age;
+
+//     // Add methods to this object
+
+//     this.eat = function() {
+//         console.log(this.name + ': Chomp!');
+//     },
+
+//     this.bark = function() {
+//         console.log(this.name + ': Woof!');
+//     }
+
+//     // this is done internally
+//     // return this;
+// }
+
+
+// 5 javascript objects -> 4 objects are dynamic 
+// Objects in JavaScript are dynamic.
+// Meaning that we can add properties or methods at any time.
+
+// The const keyword used with an object, means that we can't reassign it.
+// But we can still change/mutate the properties and methods the object
+// that it references.
+// const person = {
+//     name:'nitesh',
+//     age:34
+// }
+// console.log(person)
+
+// We can add properties on the fly with dot notation (member notation)
+// person.favoritefood = 'dosa'
+// console.log(person)
+// person.name =' sameet'
+// console.log(person)
+// person['favoriteIceCream'] = 'chocolate';
+// console.log(person)
+
+// You could delete properties with the delete keyword
+// delete.person.favoriteIceCream
+// console.log(person)
+
+// person.eat = function(){
+//     console.log('start eating');
+// }
+// person.eat()
+
+// 5 javascript objects -> 5 constructor property
+// Every object in JavaScript has a constructor function.
+// const person = {
+//     name: 'Steven'
+// };
+// console.log( person.constructor );
+
+// let newObj = {};
+// internally JavaScript sees this as
+// let newObj = new Object();
+// so object literal syntax is syntactic sugar
+/*
+new String();
+new Boolean();
+new Number();
+*/
+
+// 5 javascript objects -> 6 functions are objects
+// Functions are objects in JavaScript
+// So this function is an object in memory
+// function add(num1, num2) {
+//     return num1 + num2;
+// }
+// So now n references this object in memory, the function named add.
+// const n = add;
+// console.log( n(2, 2) );
+// So the function named add, has members.
+// Meaning that it has properties and methods.
+
+// This will output the number of parameters that the add function has.
+// console.log(add.length)
+
+// This constructor function is an object in memory
+// function programmer(name){
+//     this.name = name;
+//     this.writeCode = function(){
+//         console.log('code in javascript')
+//     }
+// }
+// console.log(programmer.length) // 1 parameter
+// console.log(programmer.constructor) // references the constructor function
+
+// To futher demonstrate how functions are objects in JavaScript
+// const ProgrammerFunc = new Function('name', `
+//     this.name = name;
+//     this.writeCode = function() {
+//         console.log('Code in JavaScript');
+//     }
+// `);
+// const newProgrammer = new ProgrammerFunc('Steven');
+// console.log(newProgrammer);
 
 
 
+// 5 javascript objects -> 7 value vs reference types
+// We have eight different data types in JavaScript
+// Which include 7 primitive data types, which include
+// number, string, boolean, BigInt, undefined, null, and Symbol
+
+// The eight data type are objects
+// Arrays and functions fall into the object category
+
+// The reason we differentiate the data types is because of how they are allocated in memory.
+
+// So when working with primitive values, they are passed by copy.
+// Meaning that if you were to assign a variable to an existing variable (containing a primitive value)
+// Then that new variable would be given a copy of that primitive value.
+// Then changing one of the variables won't affect the other variable.
+// This is because they are two different variables and are assigned to different memory addresses.
+// let a = 10;
+// let b = a;
+
+// a = 20;
+// console.log(a);
+// console.log(b);
+
+// Now consider references types
+// a = { value:20};
+// b = a;
+// a.value = 100
+// console.log(a)
+// console.log(b)
+
+// // So they have the same value, this is because objects are passed by reference.
+// // Both of the variables a and b are assigned to the same object in memory (the same memory address)
+// // So to summarize
+// // Primitive values are copied by their value.
+// // Objects are copied by reference.
+
+// 5 javascript objects -> 8 enumerating properties of an object
+// let numbers = [1,2,3,4,5]
+// for(const elements of numbers)
+//     console.log(elements)
+
+// const dog = {
+//     name: 'Max',
+//     age: 5,
+//     eyeColor: 'blue'
+// }
+
+// for(const result in dog)
+//     console.log(dog[result])
+
+// We have another syntax for enumerating over the keys and values of an Object
+// This returns the keys of the object as an array
+// Such as: ['name', 'age', 'eyeColor']
+// const keys = Object.keys(dog)
+// console.log(keys)
+
+// for(const key of Object.keys(dog))
+//     console.log(key)
+
+// This returns the values of the object as an array
+// Such as: ['Max', 5, 'blue']
+// const values = Object.values(dog)
+// console.log(values)
+
+// const keys = Object.keys(dog)
+// console.log(keys)
+
+
+// This returns the key-value pairs of the object as an array.
+// So each element will be an array itself, [key, value]
+// Such as: [['name', 'Max'], ['age', 5], ['eyeColor', 'blue']];
+// const entries = Object.entries(dog)
+// console.log(entries);
+// for (const entry of Object.entries(dog))
+//     console.log(entry)
+
+// 5 javascript objects -> 9 cloning an objectjs
+// let a = { value: 10 };
+// let b = a 
+// b.value = 20
+// console.log(a)
+// console.log(b)
+
+// So if you wanted to have it be the same where
+// if you change one property it doesn't affect the other variable.
+// Then you would need to create a clone of that object.
+// The first argument is the object you want to copy to. (the target object)
+// Then you could pass one or more source objects whose properties and methods 
+// will be copied to the target object.
+// So this creates a copy of the object so changing one won't affect the other
+// console.log(Object.assign(b,a))
+
+// We have a more modern syntax to accomplish this, using the spread operator.
+// The spread operator is represented with three dots.
+// So this creates a copy of the object so changing one won't affect the other.
+// b = {...a}
+
+// 6 javascript arrays -> 1 into to arrays
+// Arrays are a commonly used data structure.
+// Arrays provide a collection of elements (a list of items).
+// In JavaScript arrays, the index position stores an element that can be of any data type.
+// However in real applications, all elements of an array are usually of the same data type.
+// There are many built in methods for arrays, which enable you 
+// to modify, filter, and retrieve data, using clean and modern syntax.
+
+// 6 javascript arrays -> 2 iterating in arrays
+// To iterate over an array, you could use the for-of loop.
+// const numbers = [1, 2, 3, 4, 5];
+// for (const number of numbers)
+// console.log(number)
+
+// There is another built in method in the array class, known as .forEach()
+// so you pass a callback function as the argument for .forEach()
+// numbers.forEach((value) => {
+//     console.log(value)
+// });
+
+// since the arrow function's code block is just one line
+// we can put everything on one line to simplify it
+// numbers.forEach(number => console.log(number));
+// The argument for the .forEach() method also accepts an optional second parameter,
+// which is the index of the corresponding element.
+// numbers.forEach((number, index) => console.log(`At index, ${index}: ${number}`));
+// console.log(numbers)
+
+
+// 6 javascript arrays -> 11 joining in arrays
+// To transform an array into a string, the join() method can be utilized.
+// const numbers = [1, 2, 3, 4, 5];
+// Can convert the array into a string,
+// where you specify the separate as the argument which will be placed in between the elements.
+// const joinedNumbers = numbers.join(' ')
+// console.log(joinedNumbers)
+
+// Likewise, the .split() method is available for strings,
+// this is done to convert a string into an array.
+// This will not alter the original string, rather it will return an array.
+// const courseName = 'JavaScript for Beginners';
+// const parts = courseName.split(' ');
+// console.log(parts);
+
+// So an example which shows how this could be useful,
+// consider the term, URL (Uniform Resource Locator) slug
+
+// This refers to having a descriptive path in y
 
 
 
+// Utilize method chaining
+// const courseName = 'nitesh khatri'
+// const urlSlug = courseName
+//     .toLowerCase()
+//     .split(' ')
+//     .join('-');
+
+//     console.log(urlSlug)
 
 
-
-
-
-
+// 6 javascript arrays -> 12 sorting arrays
