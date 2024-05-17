@@ -22327,5 +22327,52 @@ new Number();
 
 //     console.log(urlSlug)
 
+// const numbers = [1,2,3,4,5]
+// const fruits = ['watermelon','pineapple','grape','apple','papaya']
 
 // 6 javascript arrays -> 12 sorting arrays
+// In programming, sorting is a common operation.
+// JavaScript arrays come with a built-in sort method,
+// that allows you to easily sort array elements.
+
+// By default when you call sort on an array containing strings
+// or numbers, it sorts the elements in ascending order.
+// let characters = ['c', 'd', 'b', 'a'];
+// characters.sort();
+// console.log(characters)
+
+// Another useful method in the array data structure is .reverse()
+// This can be used to reverse the order of the elements.
+// characters.reverse();
+// console.log(characters)
+
+// When you have an array of objects, you need to provide a callback function to the sort method.
+// This function defines the sorting logic based on the properties of the object in the array.
+// let employees = [
+//     { id: 1, name: 'Jen' },
+//     { id: 2, name: 'Steven' },
+//     { id: 3, name: 'Andrew' },
+//     { id: 4, name: 'Terry' },
+// ];
+// So since we are sorting reference types, we need to pass a callback function for the .sort() method.
+// This callback function will accept two parameters which will represent two elements in this case.
+// For the callback function, consider the two parameters, obj1 and obj2.
+// employees.sort((a, b) => {
+//     // Characters are represented internally as numbers in computers based on their ASCII values.
+//     // So capital letters are considered less than lowercase letters. 
+//     // Therefore, we want to make the strings all the same case. (case insensitive)
+
+//     const lowercaseA = a.name.toLowerCase();
+//     const lowercaseB = b.name.toLowerCase();
+
+//     if (lowercaseA < lowercaseB) return -1;
+//     if (lowercaseA > lowercaseB) return 1;
+//     return 0;
+// });
+
+// In JavaScript arrays come equipped with several powerful methods
+// that allow us to process and evaluate the data within them efficiently.
+
+// console.log(employees);
+
+
