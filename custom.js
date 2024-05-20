@@ -22375,4 +22375,397 @@ new Number();
 
 // console.log(employees);
 
+// 6 javascript arrays -> 13 testing elements of an array
+// In JavaScript arrays come equipped with several powerful methods
+// that allow us to process and evaluate the data within them efficiently
+// Two such methods are .every() and .some()
+// Both of which are used to test elements in an array against a condition.
+// .every() tests whether all elements of an array pass the test of the provided function. 
+// It returns true if every element in the array satisfies the condition and false otherwise.
+// let numbers = [2, 4, 6, 8, 10];
+// so .every() can accept up to three parameters
+// 1st param: the current element of the array
+// 2nd param (optional): the index of where the element is stored
+// 3rd param (optional): the original array
+// const areAllEven = numbers.every(number => number % 2 === 0);
+// console.log(areAllEven)
+// .some() checks if at least one element in the array passes the test
+// implemented by the provided function.
+// numbers = [1, 3, 5, 7, 8, 9];
+// 1st param: the current element of the array
+// 2nd param (optional): the index of where the element is stored
+// 3rd param (optional): the original array
+// const hasOneEvenNumber = numbers.some(number => number % 2 === 0);
+// console.log(hasOneEvenNumber)
 
+// 6 javascript arrays -> 14 filtering an arrays
+// One of the most versatile built in methods for arrays in JavaScript
+// is the filter method.
+// This method is designed to go through an array and extract elements 
+// that meet a specific condition.
+// Returning a new array comprised of only those elements.
+// It's useful for creating subsets of an array that match certain criteria.
+// const numbers = [1, 2, 3, 4, 5, 6];
+// // So you pass in a callback predicate function as an argument.
+// // Once again, predicate functions are functions that return a boolean value. (true or false)
+// const evenNumbers = numbers.filter(number => number % 2 === 0);
+// console.log(evenNumbers);
+// const employees = [
+//     { id: 1, name: 'Alice', role: 'Developer' },
+//     { id: 2, name: 'Bob', role: 'Designer' },
+//     { id: 3, name: 'Charlie', role: 'Manager' },
+//     { id: 4, name: 'Danielle', role: 'Developer' },
+// ];
+// const resultFilter = employees.filter((val) => val.role !== 'Developer')
+// console.log(resultFilter);
+
+// 6 javascript arrays -> 15 mapping an arrays
+// The .map() method is a cornerstone of array manipulation.
+// It's a powerful way to process and transform array elements.
+// It operates on each element of an array,
+// applying a function that you specify, and returns a new array composed of the results.
+// So it allows you to transform data without altering the original array.
+// const numbers = [2, 4, 6, 8, 10];
+// const squaredNumbers = numbers.map(num => num * num);
+// console.log(squaredNumbers)
+// const characters = ['a', 'b', 'c', 'd'];
+// const upperdC = characters.map((val) => val.toUpperCase());
+// console.log(upperdC);
+// const employees = [
+//     { id: 1, name: 'Alice', email: 'AliCe@gmail.com' },
+//     { id: 2, name: 'Steven', email: 'STeVen@gmail.com' },
+//     { id: 3, name: 'Joe', email: 'Joe@gmail.com' },
+// ];
+// const updatedEmployees = employees.map(employee => ({
+//     ...employee,
+//     email: email.toLowerCase()
+// }));
+// console.log(updatedEmployees)
+
+// 6 javascript arrays -> 16 reducing an arrays
+// JavaScript has a very powerful array method called reduce.
+// It can transform an array into just about anything,
+// such as a number, string, object, or another array.
+// This is how you would traditionally calculate the sum of an array of numbers.
+// const numbers = [1, 10, 5, 14];
+// let sum = 0;
+
+// for(const number of numbers){
+//     sum += number
+// }
+// console.log(`total sum of ${sum}`);
+
+// There's a cleaner way to accomplish this with the sum method.
+// 1st argument is a callback function
+//      this should take in two parameters for the accumulatorValue and the currentValue
+// 2nd argument is the initial value for the accumulator
+// sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+// console.log(sum);
+
+// 6 javascript arrays -> 2 adding elements
+// So one of the most common operations when dealing with arrays
+// is adding elements.
+// Using the const keyword, we can't reassign this variable to any other value,
+// but we can modify the array (the object) that it references.
+// const numbers = [5, 4, 3, 2, 1];
+// There are 3 ways to add an element to an array.
+// Add to the beginning with .unshift()
+// Add to the middle with .splice()
+// Add to the end with .push() 
+// console.log(numbers.unshift(15));
+// console.log(numbers.unshift(17,19));
+
+// 1st arg is the index position to start from,
+// 2nd arg is the number of elements to delete
+// then can specify one or more elements to add from that index position specified from the 1st arg
+// console.log(numbers.splice(1,0,18))
+// console.log(numbers.splice(1,0,25,14))
+
+// console.log(numbers.push(7));
+// console.log(numbers.push(22));
+
+// 6 javascript arrays -> 3 finding primitive elements
+// Arrays can store both primitive data types or reference data types (objects).
+// There are three main methods we can use to check if an array contains a primitive value.
+// .indexOf()
+// .lastIndexOf()
+// .includes()
+// const numbers = [5, 4, 3, 2, 1, 3];
+// const indexOfThree = numbers.indexOf(4)
+// console.log('indexOfThree',indexOfThree);
+// console.log(numbers[indexOfThree]);
+
+// const indexOfTen = numbers.indexOf(10);
+// console.log(indexOfTen);
+// So if an element is not found, then the index will be -1
+// if you try accessing the array at the position of -1, then it will be undefined
+
+// So whenever we do .indexOf() or .lastIndexOf()
+// we would usually have a conditional statement to ensure the index position is not -1
+// if(indexOfTen === -1){
+//     console.log('10 is not found in the array');
+// }
+
+// If we are not utilizing that index value in order to access or change that element,
+// then we can just use the includes method which will return true or false.
+// if(numbers.includes(10)){
+//     console.log('10 is found in the array');
+// }
+// if(!numbers.includes(10)){
+//     console.log('10 is not found in the array');
+// }   
+
+// 6 javascript arrays -> 4 finding reference types in arrays
+// So the employees object stores 3 objects/reference types.
+// When dealing with reference types, we can use the indexOf(), lastIndexOf(), or includes()
+// methods built into arrays in order to find an element.
+// As if you compare two different objects, even if they have the same property values,
+// they won't be equal and it would be comparing their memory addresses, which differ.
+// Rather we would have to use .find(), .findIndex(), and pass in a predicate callback function
+// as the argument.
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'Jim',
+//     },
+//     {
+//         id: 2,
+//         name: 'Michael Scott',
+//     },
+//     {
+//         id: 3,
+//         name: 'Pam',
+//     },
+// ];
+// We pass a callback function which in this case is a predicate function.
+// A predicate function is one which returns a boolean value (true or false).
+// So .find() returns the first element that matches
+// let emp = employees.find(function(e){
+//     return e.name === 'Jim'
+// })
+// console.log(emp);
+
+
+// 7 javascript arrays -> 5 arrow functions
+// Previously we used the function syntax for the callback function for the find() method
+// const employees = [
+//     {
+//         id: 1,
+//         name: 'Jim',
+//     },
+//     {
+//         id: 2,
+//         name: 'Michael Scott',
+//     },
+//     {
+//         id: 3,
+//         name: 'Pam',
+//     },
+// ];
+// A predicate function is one which returns a boolean value (true or false).// Here we use the arrow function syntax.
+// So .find() returns the first element that matches
+// let employee = employees.find(e => e.name === 'Jim');
+// console.log(employee);
+
+// When you have an arrow function that has just one statement in the code block,
+// then you can put everything on one line.
+// const add = (n1,n2) => {
+//     return n1 + n2
+// }
+// console.log(add(10,20));
+
+
+// 7 javascript arrays -> 6 removing elements
+// const numbers = [1, 2, 3, 4, 5];
+// To remove elements, 
+// .pop() to remove from the end
+// .splice() to remove from the middle
+// .shift() to remove from the beginning
+// NOTE: \n within a string stands for newline,
+// const lastElement = numbers.pop();
+// // console.log(lastElement);
+// console.log(`lastElement: ${lastElement}\n`);
+// const firstElement = numbers.shift();
+// console.log(`firstElement: ${firstElement}\n`);
+// 1st arg is the index to start from
+// 2nd arg is the number of elements to remove
+// const middleElement = numbers.splice(1, 1);
+// console.log(`middleElement: ${middleElement}`);
+
+// 7 javascript arrays -> emptying an array
+// const numbers = [1, 2, 3, 4, 5];
+// If you want to clear all the elements of an array,
+// there are different ways that you can do that.
+// If the numbers array was large, then this would be inefficient.
+// while(numbers.length > 0)
+//     numbers.pop()
+// could set the length property to 0
+// numbers = [1, 2, 3, 4, 5];
+// numbers.length = 0; // we could assign it to 0, clearing/emptying the array
+// could use the .splice() method 
+// numbers = [1, 2, 3, 4, 5];
+// const deletedNumbers = numbers.splice(0,numbers.length)
+// console.log(`deletednumbers: ${deletedNumbers}`);
+
+// could reassign the array to an empty array,
+// the previous array would be garbage collected
+// numbers = [1, 2, 3, 4, 5];
+// numbers = [];
+
+// 7 javascript arrays -> 8 combining and slicing arrays
+// Let's say we have two arrays and we want to combine it into one array.
+// const exampleNumbersA = [1, 2, 3];
+// const exampleNumbersB = [4, 5, 6];
+// const combineArray = exampleNumbersA.concat(exampleNumbersB)
+// console.log(combineArray);
+// slice(startIndex, endIndex) where the endIndex is exclusive (not included)
+// The slice method will not affect the original array.
+// const firstSlice = combineArray.slice(0,4)
+// console.log(`first slice`,firstSlice);
+// If you doing this will primitive values, then the elements will be passed by copy.
+// However if you're dealing with objects, then the elements will be passed by reference.
+
+// 7 javascript arrays -> 9 spread operators
+// There is another way to combine two arrays.
+// Which is to utilize the spread operator.
+// So the spread operator can be used
+// to copy the properties of an object or the elements of an array.
+// const exampleNumbersA = [1, 2, 3];
+// const exampleNumbersB = [4, 5, 6];
+// // So rather than doing
+// // let combined = exampleNumbersA.concat(exampleNumbersB);
+// // Below is the more commonly used syntax.
+// let combined = [...exampleNumbersA, ...exampleNumbersB];
+// console.log(combined);
+
+// combined = [...exampleNumbersA, 9, ...exampleNumbersB, 10];
+// // Arrays are objects, meaning that they are passed by reference.
+// let a = [1,2]
+// let b = a 
+// // So we could also use the spread operator in order to make a copy of an array.
+// b = [...a];
+
+// 7 javascript functions -> 1 function declarations vs expressions
+// Functions are the cornerstone in JavaScript serving as reusable functions.
+// There are different ways to create a function.
+// In this lesson we'll explore function-declaration syntax
+// and function-expresson syntax.
+
+// Function declaration syntax
+// function sayhi(){
+//     console.log('hi');
+// }
+// sayhi()
+
+// Function expression syntax
+// End the curly braces with a semi-colon and utilize an anonymous function.
+// const sayHello = function(){
+//     console.log('hello');
+// }
+// sayHello();
+
+// const greeting = function sayBye(){
+//  console.log('bye');
+// }
+// greeting();
+
+
+// 7 javascript functions -> 10 the this keywords
+// The 'this' keyword is crucial because it refers to the object
+// that is currently executing the function or method.
+// The value of 'this' depends on the context in which a function
+// const course = {
+//     name:'javascript for beginners',
+//     start(){
+//         console.log(this.name);
+//     }
+// }
+// course.start();
+
+// In a function, (meaning not a method defined for an object)
+// the this keyword will reference the global object.
+// In browsers it's the window object and in Node.js it's the global object.
+// function startVideo() {
+//     // This outputs the global object in Node.js
+//     // This would output the window object in web browsers
+//     console.log(this);
+// }
+// startVideo();
+
+// Arrow functions don't have their own 'this' context.
+// Instead they inherit this from their parent scope at the time they are defined.
+// const newcourse = {
+//     name:'nitesh',
+//     happy:() =>{
+//         console.log(this.name);
+//     }
+// }
+// newcourse.happy();
+
+// This is because when using arrow functions, 
+// the 'this' keyword inherits from its parents scope.
+// So in this case, it would be the global object (in Node.js)
+
+// Since the global object doesn't have a name property,
+// then this value will be undefined.
+
+// You can explicitly set the value of 'this' using bind.
+// So bind returns a new function with it bound to a specific object,
+// but doesn't immediately invoke it.
+// function introduce(name,language) {
+//     console.log(name + ' teaches ' + language);
+// }
+// introduce('test','english');
+
+// const instructor = { name: 'Steven' };
+// const introduction = introduce.bind(instructor);
+// console.log(introduction('javascript'));
+
+// So the 'this' keyword in JavaScript plays a critical role in 
+// determining the context of function execution.
+// Its value is determined by the execution context 
+// or explicitly bound using bind.
+
+
+// 7 javascript functions - 2 hoisting
+// The function declaration syntax and function expression syntax
+// differ because of the concept of hoisting.
+// Hoisting is a process where the JavaScript engine moves all 
+// function declarations to the top of their enclosing scope.
+// With function declaration syntax, we can call/invoke a function 
+// before it is defined due to hoisting.
+// add(2,2)
+// function add(n1,n2){
+//     return n1 + n2 
+// }
+// console.log(add);
+
+// Hoisting doesn't apply with function expression syntax,
+// so you cannot call/invoke a function before it is defined.
+
+// let multiply = function(n1,n2){
+//     return n1 * n2
+// }
+// console.log(multiply(2,33));
+
+// 7 javascript functions - 3 agruments
+// function multiply(n1,n2){
+//     return n1 * n2 
+// }
+// console.log(multiply(2,3));
+
+// but if we were to call this function and only supply one argument
+// console.log(multiply(10,20));
+// If we don't supply an argument, then that parameter will be assigned the value of undefined.
+// You could also pass in more arguments than there are parameter variables defined.
+// To access those arguments, you could use the built in arguments object.
+// Every function in JavaScript has access to a special function named arguments.
+// So we just need to iterate over the arguments object.
+// function add(n1,n2){
+//     console.log(arguments);
+//     let product  = 1;
+//     for(const num of arguments)
+//         product *= num;
+//     return product;
+// }
+// console.log(add(1,2,3,4));
