@@ -22769,3 +22769,4 @@ new Number();
 //     return product;
 // }
 // console.log(add(1,2,3,4));
+
