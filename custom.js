@@ -22770,3 +22770,185 @@ new Number();
 // }
 // console.log(add(1,2,3,4));
 
+
+// 7 javascript functions - 4 the rest operator
+// Previously we covered the spread operator which is used for cloning objects in JavaScript.
+// let course = {
+//     name: 'JavaScript for Beginners',
+//     duration: '3 hours'
+// };
+// let newCourse = {...course}
+// console.log('newCourse',newCourse)
+
+// So the spread operator allows us to easily copy properties and methods
+// from one object to another. Making a clone of the object.
+// We could also modify the properties for our own custom use.
+// newCourse = { 
+//     ...course,
+//     name: 'JavaScript Pro'
+// };
+// console.log('newCourse', newCourse);
+// Now a similar syntax can be used in the context of functions.
+// So when we use, ..., in functions, we refer to it as the rest operator.
+// So unlike the spread operator which expands an array or object,
+// the rest operator allows us to gather a varying number of arguments
+// into a single array parameter.
+// This is particularly useful when we want a function 
+// to accept an indefinite number of arguments.
+// The name of the parameter doesn't matter.
+// function multiplty(...args){
+//     return args.reduce((ac,cu) => ac * cu,1)
+// }
+// console.log(multiplty(1,2,3,4))
+
+// so the parameter numbers is an array containing a varying number of values
+// based on the arguments supplied
+// function multipler(multiplierValue,...numbers){
+//     return numbers.map(num => num * multiplierValue)
+// }
+// console.log(multipler(2,1,2,3,4,5))
+
+// 7 javascript functions - 5 default parameters
+// Default parameters enhance function flexibility.
+// function writeCode(language){
+//     console.log(`write code in ${language}`)
+// }
+// writeCode('html')
+// writeCode('css')
+// writeCode('javascript')
+// writeCode('jquery')
+// writeCode('react')
+// writeCode('nextjs')
+// writeCode('tailwindcss')
+// writeCode('bootstrap')
+// writeCode('responsie media queries')
+
+// But what if we were to call writeCode() without any arguments
+// The parameter, language, would have the value of undefined by default.
+// We can assign a default value to parameters,
+// ensuring that our function behaves predictably
+// even when specific arguments aren't provided.
+// function writeProgram(language = 'javascript'){
+//     console.log(`write code in ${language}`)
+// }
+// If you set a default parameter, then all parameters that follow
+// must also be assigned a default value.
+// function codeDetails(language ='javascript',tool ='vs code'){
+//     console.log(`writing code in ${language} ${tool}`)
+// }
+// codeDetails()
+// codeDetails('python')
+// codeDetails('c#','visual studio')
+// This enables us to call/invoke our function with flexibility
+// function createUser(name,role='guest',status='active'){
+//     console.log(`User: ${name},Role:${role},Status: ${status}`)
+// }
+// // createUser('nitesh');
+// createUser('test','frontend developer','active')
+
+// 7 javascript functions - 6 getters and setters
+// // Getters and setters within JavaScript, enhance how you interact with object properties.
+// let course = {
+//     name: 'JavaScript for Beginners',
+//     duration: '3 hours',
+//     details() {
+//         return `${this.name} is ${this.duration}`;
+//     }
+// };
+// // console.log(course);
+// console.log(`${course.name} ${course.duration}`) 
+// course = {
+//     name: 'JavaScript for Beginners',
+//     duration: '3 hours',
+//     get details() {
+//         return `${this.name} is ${this.duration}`;
+//     },
+//     set details(value) {
+//         let parts = value.split(' is ');
+
+//         this.name = parts[0];
+//         this.duration = parts[1];
+//     }
+// };
+// console.log(course.name)
+// console.log(course.details)
+
+// 7 javascript functions - 7 try and catch
+// The powerful concept of error handling is needed for all JavaScript
+// applications that utilize backend APIs.
+// This is done through try-catch blocks.
+// let course = {
+//     name: 'JavaScript for Beginners',
+//     duration: '3 hours',
+//     get details() {
+//         return `${this.name} is ${this.duration}`;
+//     },
+//     set details(value) {
+//         if (typeof value !== 'string') {
+//             // Here we are throwing an exception.
+//             throw new Error(`Vallue, ${value} is not a string`);
+//         }
+
+//         let parts = value.split(' is ');
+
+//         this.name = parts[0];
+//         this.duration = parts[1];
+//     }
+// };
+// // Using try-catch blocks enable us to catch possible exceptions 
+// // so that we can gracefully handle errors without our programs crashing/terminating.
+// try{
+// course.details =  'test'
+// }
+// catch(e){
+//     console.log(`Caught an error: ${e.message}`);
+// }
+
+// Global scope, so a variable declared outside any function block or conditional
+// has a global scope. 
+// Meaning that it is accessible from any part of the code after its declaration.
+// This variable is declared in the global scope.
+// const name = 'Steven';
+// console.log(name);
+
+// Local scope refers to variables declared within blocks, functions, or conditionals.
+// So these variables are only accessible within the confines
+// of their curly braces.
+
+// {
+//     let lastName = 'Garcia';
+//     console.log(lastName);
+// }
+// however we can't access the variable, lastName, outside of the code block
+// function greet() {
+//     // So the variable, message, is a local variable
+//     const message = 'Hello World';
+//     console.log(message);
+// }
+// greet();
+
+
+// 7 javascript functions - 9 let vs var
+// The differences between the let and var keyword are a commonly asked interview question.
+// In JavaScript versions prior to ES6 (ECMAScript 2015), the var keyword was used to declare variables.
+// The var keyword is function-scoped. Meaning that it is available anywhere within a function.
+// function display(){
+//     for(var i=0;i<5;i++){
+//         console.log(i)
+//     }
+// }
+// display()
+
+// The let keyword introduces block-scoping to JavaScript.
+// This means that a variable declared with let, is only accessible within the block it's defined in.
+// function displayNumbers(){
+//     for(let i=0;i<10;i++){
+//         console.log(i)
+//     }
+// we cannot access the variable, i, outside of the block it is defined it
+    // since we declared it with the let keyword and it is therefore, block-scoped
+
+    // if we tried to access it, then it would result in a ReferenceError
+    // console.log(i);
+// }
+// displayNumbers()
