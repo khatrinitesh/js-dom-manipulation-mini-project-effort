@@ -22952,3 +22952,12 @@ new Number();
     // console.log(i);
 // }
 // displayNumbers()
+
+const abc = [6,7,8]
+const resultabc = abc.map((val) => val)
+console.log(resultabc)
+
+const resultreduce = abc.reduce((acc,cum) => {
+    return acc+cum
+})
+console.log(resultreduce)
