@@ -22953,11 +22953,52 @@ new Number();
 // }
 // displayNumbers()
 
-const abc = [6,7,8]
-const resultabc = abc.map((val) => val)
-console.log(resultabc)
+// const abc = [6,7,8]
+// const resultabc = abc.map((val) => val)
+// console.log(resultabc)
 
-const resultreduce = abc.reduce((acc,cum) => {
-    return acc+cum
-})
-console.log(resultreduce)
+// const resultreduce = abc.reduce((acc,cum) => {
+//     return acc+cum
+// })
+// console.log(resultreduce)
+
+
+// basic logic of fetch api 
+// making a simple get request
+// fetch('https://jsonplaceholder.typicode.com/posts')
+// .then(response => {
+//     if(!response.ok){
+//         throw new Error('network response was not ok' + response.statusText);
+//     }
+//     return response.json();
+// })
+// .then(data => {
+//     console.log(data)
+// })
+// .catch(error => {
+//     console.error('there was a problem with the fetch operation:',error)
+// })
+
+// making a post request
+// fetch('https://jsonplaceholder.typicode.com/posts',{
+//     method:'POST', // specify the method
+//     headers:{
+//         'Content-Type':'application/json', // set the headers
+//     },
+//     body:JSON.stringify({key:'value'}), // convert data to JSON string
+// })
+// .then(response => {
+//     if(!response.ok){
+//         throw new Error('network response was not ok' + response.statusText);
+//     }
+//     return response.json();
+// })
+// .then(data => {
+//     console.log(data)
+// })
+// .catch(error => {
+//     console.error('there was a problem with the fetch operation:',error);
+// });
+
+
+
