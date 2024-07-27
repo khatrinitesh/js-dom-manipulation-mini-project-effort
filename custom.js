@@ -23000,5 +23000,40 @@ new Number();
 //     console.error('there was a problem with the fetch operation:',error);
 // });
 
+const set = new Set([1,2,3,4]);
+set.add(5)
+set.delete(3)
+console.log(set);
+console.log(set.has(2))
+console.log(set.has(11))
+console.log(set.size);
 
+// iterating over a set 
+// for(const item of set){
+//     console.log(item)
+// }
+
+// set.forEach((val) => {
+//     console.log(val)
+// })
+
+// converting a set to an array
+// const array = Array.from(set);
+// console.log(array);
+
+// clearing all elements from a set
+// set.clear()
+// console.log(set)
+
+
+// union, intersection and difference of sets
+// const setA = new Set([1,2,3,4])
+// const setB = new Set([5,6,7,8,9])
+// const combined = [...setA,...setB]
+// console.log(combined);
+
+// const intersection = new Set([...setA].filter(x => setB.has(x)));
+// console.log(intersection);
+// const difference = new Set([...setA].filter(x => !setB.has(x)));
+// console.log(intersection);
 
